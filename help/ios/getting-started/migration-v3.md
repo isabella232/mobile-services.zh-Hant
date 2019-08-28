@@ -1,0 +1,203 @@
+---
+description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
+seo-description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
+seo-title: 移轉至4.x iOS程式庫
+solution: Marketing Cloud、Analytics
+title: 移轉至4.x iOS程式庫
+topic: 開發人員和實施
+uuid: 5668972b-f355-4e03-9df08-8ddf6809 b
+translation-type: tm+mt
+source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+
+---
+
+
+# Migrating to the 4.x iOS library{#migrating-to-the-x-ios-library}
+
+本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
+
+>[!IMPORTANT]
+>
+>The SDK uses `NSUserDefaults` to store data that is needed to calculate unique users, lifecycle metrics, and other data related to core SDK functionality.  If you modify or remove the values in `NSUserDefaults` that are expected by the SDK, unexpected behavior might result in the form of data inconsistencies.
+
+在iOS SDK程式庫的4.x版中，公用方法已整合為一個標題。此外，現在可透過類別等級方法存取此功能，因此無須追蹤指標、例項或單欄。
+
+## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+
+在第 4 版中，您已無法在應用程式中直接指派 event、eVar、prop、heir 及　list 等變數。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+
+處理規則具備以下優點:
+
+* 您可以直接變更資料對應，而不必提交更新至 App Store。
+* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
+* 對傳送額外資料的影響極小。
+
+   這些值在透過處理規則對應前，都不會出現在報表中。
+
+>[!TIP]
+>
+>Values that you were assigning directly to variables should now be added to the `data` NSDictionary.
+
+## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
+
+新的 `ADBMobileConfig.json` 檔案包含應用程式專屬的全域設定，並會取代先前版本中使用的大部分設定變數。以下是 `ADBMobileConfig.json` 檔案的範例:
+
+```js
+{ 
+    "version" : "1.0", 
+    "analytics" : { 
+        "rsids" : "coolApp", 
+        "server" : "my.CoolApp.com", 
+        "charset" : "UTF-8", 
+        "ssl" : true, 
+        "offlineEnabled" : true, 
+        "lifecycleTimeout" : 5, 
+        "privacyDefault" : "optedin", 
+        "poi" : [ 
+                    ["san francisco",37.757144,-122.44812,7000], 
+                    ["santa cruz",36.972935,-122.01725,600] 
+                ] 
+    }, 
+ "target" : { 
+  "clientCode" : "myTargetClientCode", 
+  "timeout" : 5 
+ }, 
+ "audienceManager" : { 
+  "server" : "myServer.demdex.com" 
+ } 
+}
+```
+
+
+### 移動設定檔案
+
+移動設定檔案:
+
+1. 將第一欄中為變數設定的值移至第二欄中的變數。
+1. 從您的程式碼移除舊的設定變數。
+
+### 移轉資訊
+
+以下表格列出您需要移至設定檔案的設定變數。
+
+#### 從第 3.x 版移轉
+
+將值從第一欄移至第二欄中的變數。
+
+| 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
+|--- |--- |
+| offlineTrackingEnabled | "offlineEnabled" |
+| offlineHitLimit | "batchLimit" |
+| reportSuiteIDs | "rsids" |
+| trackingServer | "server" |
+| charSet | "charset" |
+| currencyCode | "currency" |
+| ssl | "ssl" |
+| linkTrackVars | 移除，不再使用。 |
+| linkTrackEvents | 移除，不再使用。 |
+
+
+#### 從第 2.x 版移轉
+
+將值從第一欄移至第二欄中的變數。
+
+| 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
+|--- |--- |
+| trackOffline | "offlineEnabled" |
+| offlineLimit | "batchLimit" |
+| account | "rsids" |
+| trackingServer | "server"移除 `"https://"` 首碼。通訊協定前置詞會根據 "ssl" 設定自動新增。 |
+| trackingServerSecure | 移除。為了進行安全連線，請定義 "server" 然後啟用 "ssl"。 |
+| charSet | "charset" |
+| currencyCode | "currency" |
+| ssl | "ssl" |
+| linkTrackVars | 移除，不再使用。 |
+| linkTrackEvents | 移除，不再使用。 |
+| timestamp | 移除，無法再設定。 |
+| dc | 移除，不再使用。 |
+| userAgent | 移除，無法再設定。 |
+| dynamicVariablePrefix | 移除，不再使用。 |
+| visitorNamespace | 移除，不再使用。 |
+| usePlugins | 移除，不再使用。 |
+| useBestPractices  對混合測量的所有呼叫 (getChurnInstance ) | 移除，由生命週期度量取代。如需詳細資訊，請參閱[生命週期量度](//help/ios/metrics.md)。 |
+
+
+## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
+
+第 4 版 SDK 使用以下方法，取代使用以 Web 為中心的 `track` 和 `trackLink` 呼叫:
+
+* `trackState:data:` 狀態是您應用程式中可用的檢視，例如 `home dashboard`， `app settings`等等 `cart`。
+
+   這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
+
+* `trackAction:data:` 動作，例如 `logons`，和其他 `banner taps``feed subscriptions`在您的應用程式中發生的度量，以及您想要測量的度量。
+
+這兩種方法的 `data` 參數都是 `NSDictionary`，包含以內容資料傳送的名稱值組。
+
+### 事件、prop、eVar
+
+在第 4 版中，您已無法在應用程式中直接指派 event、eVar、prop、heir 及　list 等變數。SDK 現在會使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+
+處理規則具備以下優點:
+
+* 您可以直接變更資料對應，而不必提交更新至 App Store。
+* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
+* 對傳送額外資料的影響極小。
+
+   這些值在透過處理規則對應前，都不會出現在報表中。如需詳細資訊，請參閱 [處理規則與內容資料](/help/ios/getting-started/proc-rules.md).
+
+您直接指派給變數的值，應已改為新增至 `data``NSDictionary` 。This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should all be removed and the values be added to the `data` parameter.
+
+### AppSection/Server、GeoZip、交易ID、促銷活動和其他標準變數
+
+您在測量物件上設定的資料，包括以上列出的變數，應已改為新增至 `data``NSDictionary` 。與 `trackState` 或 `trackAction` 呼叫一併傳送的唯一資料是 `data` 參數中的裝載。
+
+### 取代追蹤呼叫
+
+在您的程式碼中，以呼叫 `trackState` 或 `trackAction` 取代以下方法:
+
+#### 從第 3.x 版移轉
+
+* `trackAppState (trackState)`
+* `trackEvents (trackAction)`
+* `track (trackAction)`
+* `trackWithContextData (trackAction)`
+* `trackLinkURL (trackAction)`
+
+#### 從第 2.x 版移轉
+
+* `track (trackState)`
+* `trackLink (trackAction)`
+
+## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
+
+Replace the `visitorID` variable with a call to `setUserIdentifier:`.
+
+## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+
+`ADBMobileConfig.json` 在檔案中啓用離線追蹤，所有其他離線設定都會自動完成。
+
+在您的程式碼中，移除對以下方法的呼叫:
+
+### 第 3.x 版
+
+* `setOnline`
+* `setOffline`
+
+### 第 2.x 版
+
+* `forceOffline`
+* `forceOnline`
+
+## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+
+由於處理規則中沒有該產品變數，因此您可以使用以下語法來設定 `products`:
+
+```objective-c
+//create a processing rule to set the corresponding product event. 
+// for example, set prodView event when context data a.action = "product view" 
+[ADBMobile trackAction:@"LikeButtonClicked"  
+                  data:@{@"&&products" : @";Cool Shoe"}];
+```
+
+![](assets/prod-view.png)
