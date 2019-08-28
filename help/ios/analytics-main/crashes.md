@@ -1,0 +1,70 @@
+---
+description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
+seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
+seo-title: 追蹤應用程式當機
+solution: Marketing Cloud、Analytics
+title: 追蹤應用程式當機
+topic: 開發人員和實施
+uuid: 4f819888b-148a-4ba9-ad53-78AF90 e43856
+translation-type: tm+mt
+source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+
+---
+
+
+# 追蹤應用程式當機 {#track-app-crashes}
+
+此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
+
+>[!IMPORTANT]
+>
+>您應升級至iOS SDK4.8.6版，其中包含防止報告錯誤當機的重要變更。
+
+## Adobe 何時會回報當機?
+
+如果您的應用程式在未先進入背景執行的情況下即終止，SDK 便會在下次啟動應用程式時回報當機情況。
+
+## 當機報告的運作方式為何?
+
+iOS 會使用系統通知，讓開發人員能夠在應用程式生命週期中，追蹤和回應不同的狀態和事件。
+
+Adobe Mobile iOS SDK 內含通知處理常式，可回應 `UIApplicationDidEnterBackgroundNotification` 通知。在此程式碼中，值已設定指示使用者已讓應用程式進入背景執行。在後續啟動應用程式時，如果找不到該值，就會回報當機。
+
+## 為何 Adobe 要以此方式測量當機?
+
+此種測量當機方式可為以下問題提供詳細解答:*「使用者是否刻意結束我的應用程式?」*
+
+Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會使用全域 `NSException` 處理常式，以提供更詳細的當機報告。您的應用程式不能有多個上述類型的處理常式。Adobe 了解客戶可能會使用其他當機報告提供者，因此決定不實施全域 `NSException` 處理常式，以避免出現建置錯誤的情況。
+
+## 導致回報錯誤當機的原因為何?
+
+下列情況已知為會導致 SDK 回報的意外當機:
+
+* 如果您正使用 Xcode 進行偵錯，則在應用程式於前景執行時將其重新啟動會造成當機。
+
+   >[!TIP]
+   >
+   >在這個情況下，您可以在應用程式再次從Xcode啓動應用程式之前，先接地，以避免發生當機情形。
+
+* If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
+
+   >[!TIP]
+   >
+   >Background activity that occurs beyond the `lifecycleTimeout` threshold might also result in an additional false launch.
+
+* 如果您的應用程式由於背景擷取、位置更新等原因於背景啟動，且在未曾進入前景執行的情況下即由作業系統終止，則在下次啟動 (背景或前景) 時，會導致當機。
+* 如果您以程式設計方式從 `NSUserDefaults` 刪除 Adobe 的暫停標記，而應用程式同時於背景執行時，則在下次啟動或繼續執行應用程式時會造成當機情況。
+
+## 我該如何避免收到錯誤當機報告?
+
+下列實務可協助您避免收到錯誤當機報告:
+
+* 在 iOS SDK 4.8.6 中已新增程式碼，可更精確判斷是否確實需要進行新的生命週期工作階段。
+
+   此程式碼會修正上一節所述之 2 號和 3 號的錯誤當機情況。
+
+* 確認您針對非生產用的報表套裝執行開發，應可防止 1 號錯誤當機情況發生。
+* 請勿刪除或修改 Adobe Mobile SDK 放入 `NSUserDefaults` 的任何值。
+
+   如果這些值是在SDK外部修改，則報告的資料將無效。
+
