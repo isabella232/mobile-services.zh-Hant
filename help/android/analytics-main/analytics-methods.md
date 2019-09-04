@@ -118,9 +118,10 @@ SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Ta
    >此呼叫不會傳送點擊。
 
    * 以下是此方法的語法:
-   ```java
-   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
-   ```
+
+      ```java
+      publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+      ```
 
    * 以下是此方法的範例程式碼:
 

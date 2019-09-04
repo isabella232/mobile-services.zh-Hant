@@ -145,6 +145,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    每個 POI 陣列內含 POI 名稱、該地標區域的經緯度以及半徑 (以公尺為單位)。POI 名稱可以是任何字串。送出 `trackLocation` 呼叫後，如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
 
    * 最低 SDK 版本: 4.0
+
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]

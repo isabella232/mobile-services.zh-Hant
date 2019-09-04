@@ -43,6 +43,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
 1. 使用 Firebase Cloud Messaging (FCM) API 取得註冊 ID/Token。
 
    * 如需有關設定 FCM 的詳細資訊，請參閱[在 Android 上設定 Firebase Cloud Messaging 用戶端應用程式](https://firebase.google.com/docs/cloud-messaging/android/client)。
+
    ```js
    String token = FirebaseInstanceId.getInstance().getToken();
    ```
@@ -58,6 +59,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
    以下為啟用推送點進報告的需求:
 
    * In your implementation of `FireBaseMessageService`, the Bundle object that contains the message data, which is passed into the `onMessageReceived` method with the RemoteMessage object, must be added to the Intent that is used to open the target activity on a click-through. 這可使用此 `putExtras` 方法完成。For more information, see [putExtras](https://developer.android.com/reference/android/content/Intent.html#putExtras(android.os.Bundle))).
+
    ```java
    Intent intent = new Intent(this, MainActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
