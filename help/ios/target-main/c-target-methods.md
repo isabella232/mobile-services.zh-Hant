@@ -7,7 +7,7 @@ title: iOS適用的Target方法
 topic: 開發人員和實施
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
@@ -20,7 +20,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 >[!TIP]
 >
->生命週期量度會以參數形式傳送至各 mbox 負載。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。
+>生命週期量度會以參數形式傳送至各 mbox 負載。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。如果您要在 `didFinishLaunching` 委派方法內傳送Target請求，請在Target實作代碼之前新增 `[ADBMobile trackAction:data:]` 或 `[ADBMobile trackState:data:]` 呼叫。如此一來，Target請求就會包含完整的生命週期資料。
 
 ## 類別參考：ADBTargetLocationRequest
 
