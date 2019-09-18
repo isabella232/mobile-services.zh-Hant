@@ -2,12 +2,12 @@
 description: Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。
 seo-description: Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。
 seo-title: Apple Search Ads
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Apple Search Ads
 topic: 開發人員和實施
-uuid: 790080e8-067e-4bfd-a169-0027db4 fff3
+uuid: 790080e8-067e-4bfd-a169-0027db4fdf3
 translation-type: tm+mt
-source-git-commit: 9c6923d14d1a5f30e5873299def61b0734e52429
+source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 ---
 
@@ -27,13 +27,13 @@ Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人�
 
 >[!TIP]
 >
->若要實作Apple Ads，您必須擁有iOS SDK4.13.2版或更新版本。
+>若要實作Apple Ads，您必須有iOS SDK 4.13.2版或更新版本。
 
 啟用應用程式以存取 Search Ads 屬性:
 
 1. 實施 Adobe SDK 4.13.2 版或更高版本。
 
-   如需詳細資訊，請參閱[核心實作與生命週期](/help/ios/getting-started/dev-qs.md)。
+   如需詳細資訊，請參閱 [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
 
 1. 將 iAd 架構新增至應用程式的 Xcode 專案檔中。
 
@@ -43,11 +43,10 @@ Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人�
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   此外，下列值將會從`iad`「」字典對應至一般贏取內容資料欄位:
+   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
 
-   * " `iad-campaign-id`" --&gt; " `a.referrer.campaign.trackingcode`"
-   * " `iad-campaign-name`" --&gt;" `a.referrer.campaign.name``"
-   * " `iad-adgroup-id`" --&gt; " `a.referrer.campaign.content`"
-   * " `iad-keyword`" --&gt; " `a.referrer.campaign.term`"
-   此對應程序將可讓上述的值用於標準報告中。
-
+   * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
+   * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` --&gt; `"a.referrer.campaign.content"`
+   * `"iad-keyword"` --&gt; `"a.referrer.campaign.term"`
+   此對應可確保這些值在我們的標準報表中可用。
