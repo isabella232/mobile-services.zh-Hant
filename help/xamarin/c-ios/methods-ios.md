@@ -5,9 +5,9 @@ seo-description: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元
 seo-title: iOS方法
 solution: Marketing Cloud，開發人員
 title: iOS方法
-uuid: d6a056db-80c1-44d0-970f-c961 ad01 b0 bc
+uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       ADBMobile.CollectLifecycleData();
       ```
 
-* **debugLogging**
+* **DebugLogging**
 
    傳回目前的偵錯記錄偏好設定。預設值為 `false`。
 
@@ -57,13 +57,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的語法:
 
       ```objective-c
-      public static void SetDebugLogging(bool enabled); 
-      
+      public static void SetDebugLogging(bool enabled);
+      ```
+
    * 以下是此方法的範例程式碼:
 
       ```objective-c
       ADBMobile.SetDebugLogging(true);
-      
+      ```
+
 * **LifetimeValue**
 
    傳回目前使用者的期限值。
@@ -71,21 +73,21 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的語法:
 
       ```objective-c
-      public static double LifetimeValue(); 
+      public static double LifetimeValue();
       ```
 
    * 以下是此方法的範例程式碼:
 
       ```objective-c
-      var lifetimeValue = ADBMobile.LifetimeValue(); 
+      var lifetimeValue = ADBMobile.LifetimeValue();
       ```
 
 * **PrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
-   * `ADBMobilePrivacyStatus.OptIn` - 點擊會立即傳送。
-   * `ADBMobilePrivacyStatus.OptOut` - 點擊會被捨棄。
-   * ADBMobilePrivacyStatus.Unknown - 如果啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果停用離線追蹤，會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatus.OptIn` -會立即傳送點擊。
+   * `ADBMobilePrivacyStatus.OptOut` -會捨棄點擊。
+   * ADBMobilePrivacyStatus.Unknown - 如果啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果離線追蹤已停用，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
 
    * 以下是此方法的語法:
@@ -97,15 +99,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的範例程式碼:
 
       ```objective-c
-       var privacyStatus = ADBMobile.PrivacyStatus(); 
+      var privacyStatus = ADBMobile.PrivacyStatus();
       ```
 
 
 * **SetPrivacyStatus**
 
    設定目前使用者的隱私權狀態為 status。設定為下列其中一值:
-   * `ADBMobilePrivacyStatus.OptIn` - 點擊會立即傳送。
-   * `ADBMobilePrivacyStatus.OptOut` - 點擊會被捨棄。
+   * `ADBMobilePrivacyStatus.OptIn` -會立即傳送點擊。
+   * `ADBMobilePrivacyStatus.OptOut` -會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -174,12 +176,12 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    >[!TIP]
    >
-   >此方法的目的是用於在背景中註冊接收通知的應用程式，只有當應用程式在背景時，才應從執行的程式碼中呼叫此方法。
+   >此方法適用於在背景中註冊通知的應用程式，且僅應從應用程式在背景時執行的程式碼呼叫此方法。
 
    * 以下是此方法的語法:
 
       ```objective-c
-       public static void KeepLifecycleSessionAlive();
+      public static void KeepLifecycleSessionAlive();
       ```
 
    * 以下是此方法的範例程式碼:
@@ -203,15 +205,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的範例程式碼:
 
       ```objective-c
-       var trackingId = ADBMobile.TrackingIdentifier();
+      var trackingId = ADBMobile.TrackingIdentifier();
       ```
 
 * **TrackState**
 
-   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 "title screen"、"level 1"、"pause" 等。這些狀態類似於網站上的頁面， `TrackState` 並呼叫遞增頁面檢視。如果狀態空白，則會在報表中顯示為「應用程式名稱應用程式版本(組建)」。如果在報表中看到此值，請務必在每個 `TrackState` 呼叫中設定 state。
+   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 "title screen"、"level 1"、"pause" 等。這些狀態類似於網站上的頁面，而呼叫 `TrackState` 會增加頁面檢視次數。如果狀態為空，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 如果在報表中看到此值，請務必在每個 `TrackState` 呼叫中設定 state。
 
    [!TIP]
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >這是唯一會增加頁面檢視次數的追蹤呼叫。
    >
    * 以下是此方法的語法:
 
@@ -251,7 +253,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    追蹤背景發生的動作。如此會在某些情況下阻止觸發生命週期事件。
 
    >[!TIP]
-   只有在應用程式在背景時執行的程式碼才會呼叫此方法。
+   只有在應用程式在背景時執行的程式碼中，才應呼叫此方法。
 
    * 以下是此方法的語法:
 
@@ -321,7 +323,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    * 以下是此方法的語法:
 
-      public nbsp；static void trackLifetimeValueIncrement(雙倍金額，NS字典cdata cdata)；
+      public nbsp; static voidTrackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
    * 以下是此方法的範例程式碼:
 
@@ -383,8 +385,9 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       ```objective-c
       ADBMobile.TrackTimedActionEnd  ("level2", (double  arg1,  double  arg2,  NSMutableDictionary  arg3)  =>  { 
       return  Convert.ToSByte(true); 
-      }); 
-      
+      });
+      ```
+
 * **TrackingTimedActionExists**
 
    傳回計時動作是否正在進行中。
@@ -483,8 +486,8 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的範例程式碼:
 
       ```objective-c
-       NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
-       ADBMobile.VisitorSyncIdentifiers(ids); 
+      NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
+      ADBMobile.VisitorSyncIdentifiers(ids); 
       ```
 
 ## Target methods {#section_C1E4121CAF9D43538511D857A1F549A7}
@@ -502,11 +505,11 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的範例程式碼:
 
       ```objective-c
-       NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
-       ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
-       ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
-       Console.WriteLine  (context); 
-       });
+      NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
+      ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
+      ADBMobile.TargetLoadRequest(req,    (context)  =>  { 
+      Console.WriteLine  (context); 
+      });
       ```
 
 * **TargetCreateRequest**
@@ -528,13 +531,14 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **TargetCreateOrderConfirmRequest**
 
-   建立 `ADBTargetLocationRequest`一個。
+   建立 `ADBTargetLocationRequest`。
 
    * 以下是此方法的語法:
 
       ```objective-c
       public static ADBTargetLocationRequest ADBTargetLocationRequest TargetCreateRequest (string name, string defaultContent, NSDictionary parameters);
-      
+      ```
+
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -774,7 +778,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 以下是此方法的範例程式碼:
 
       ```objective-c
-       ADBMobile.MediaStop (settings.Name, 3);
+      ADBMobile.MediaStop (settings.Name, 3);
       ```
 
 * **MediaClick**
