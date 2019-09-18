@@ -2,12 +2,12 @@
 description: '此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 seo-description: '此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 seo-title: 核心實施與生命週期
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 核心實施與生命週期
 topic: 開發人員和實施
-uuid: 96d06325-e424-470-8659-4b5431318 ee3
+uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
+source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
 
 **先決條件**
 
-在下載SDK之前，請先完成核心實作和生命週期 *中建立報表套裝*[的步驟，](/help/ios/getting-started/requirements.md) 以設定開發報表套裝並下載預先填入的配置檔案版本。
+在您下載SDK之前，請先完成 *Core實作和生命週期中建立報表套裝的步驟*[](/help/ios/getting-started/requirements.md) ，以設定開發報表套裝並下載預先填入版本的組態檔。
 
 若要下載 SDK:
 
@@ -32,7 +32,7 @@ source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
 
    * `ADBMobile.h`，此元件為用於 iOS AppMeasurement 的 Objective-C 標頭檔案。
    * `ADBMobileConfig.json`，此元件為根據您應用程式自訂的 SDK 設定檔案。
-   * `AdobeMobileLibrary.a`這是包含位元碼的大型二進位檔案，其中包含iOS裝置(armv7、armv7s、ARM64)和模擬器(i386，x86_64)的程式庫組建。
+   * `AdobeMobileLibrary.a`、啟用位元程式碼的二進位檔，其中包含iOS裝置(armv7、armv7s、arm64)和模擬器(i386、x86_64)的程式庫組建。
 
       當預期目標為 iOS 應用程式時，應連結此大型二進位檔。
 
@@ -69,12 +69,13 @@ source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
 
    ![](assets/step_4.png)
 
-1. **[!UICONTROL 在Project Navigator]**&#x200B;中，完成下列步驟：
+1. In **[!UICONTROL Project Navigator]**, complete the following steps:
 
    1. 按一下您的應用程式。
    1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤上，選取您的目標並連結&#x200B;**[!UICONTROL 「連結架構」]和**「資料庫」]區段中必要的架構和資料庫。**[!UICONTROL **
    * **iOS 應用程式目標**
       * `SystemConfiguration.framework`
+      * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
    * **iOS 延伸功能目標**
@@ -105,7 +106,7 @@ source-git-commit: f39c18e48dc72e0ed8e8e35d962a1ae028055b87
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-新增 `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` 呼叫in `application:didFinishLaunchingWithOptions`：
+新增 `collectLifecycleData`/呼 `collectLifecycleDataWithAdditionalData` 叫 `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -114,7 +115,7 @@ After you enable lifecycle, each time your app is launched, one hit is sent to m
 }
 ```
 
-### 包含其他資料與生命週期呼叫
+### 將其他資料加入生命週期呼叫
 
 若要納入其他資料與生命週期量度呼叫，請使用 `collectLifecycleDataWithAdditionalData`:
 
