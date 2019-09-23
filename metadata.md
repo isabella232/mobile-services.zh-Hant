@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: 行動服務
-solution-title: Mobile Services
+solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: 快速入門
@@ -11,7 +11,7 @@ tutorials-url: https://helpx.adobe.com/tw/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
 translation-type: tm+mt
-source-git-commit: d9cb2a642393a26ee5530beb0491649248b86286
+source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
 
@@ -33,7 +33,7 @@ metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中�
 | tutorials-url | 教學課程影片 (helpx 或 KT 教學課程其中之一) 的連結 |
 | mini-toc-levels | 決定右邊欄中顯示的標頭層級數。預設為 2 |
 | git-repo | 指定共同作業存放庫的位置。針對公開文件使用 github.com 鏡像 |
-| index | 設定索引= no用於軟啓動 |
+| 索引 | set index=no for soft launch |
 
 在 TOC.md 檔案中
 
