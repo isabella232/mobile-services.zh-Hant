@@ -1,12 +1,12 @@
 ---
 description: 以下為 Android 資料庫所提供的方法清單。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的方法清單。
 seo-title: 設定方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 設定方法
 topic: 開發人員和實施
-uuid: 663ab6c-1b97-4a3a-8c0e-dd4 c2 ec28 c01
+uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -38,7 +38,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **registerAdobeDataCallback**
 
-   * 註冊實施 `AdobeDataCallback` 介面的物件。The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. 如需哪些事件會觸發此回呼的詳細資訊，請參閱 *本主題底部的MobileDataEventNum* 。
+   * 註冊實施 `AdobeDataCallback` 介面的物件。The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. 如需觸發此回呼之事件的詳細資訊，請參 *閱本主題底部的MobileDataEventEnum* 。
 
       >[!TIP]
       >
@@ -86,8 +86,8 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       以下為隱私權狀態值:
 
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`會立即傳送點擊。
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`其被捨棄的位置。
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`，其中會立即傳送點擊。
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`，其中會捨棄。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
          如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 `ADBMobileConfig.json` 檔案中。
@@ -109,8 +109,8 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * 將目前使用者的隱私權狀態設為 `status`。
 
       您可以將隱私權狀態設定為下列其中一個值:
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`會立即傳送點擊。會立即傳送點擊。
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`其被捨棄的位置。會捨棄點擊。
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`，其中會立即傳送點擊。 會立即傳送點擊。
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`，其中會捨棄。 會捨棄點擊。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
    * 以下是此方法的語法:
 
@@ -135,7 +135,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static BigDecimal getLifetimeValue();
       ```
 
-   * 以下是此方法的程式碼範例：
+   * Here is a code sample for this method:
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -147,7 +147,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       >[!TIP]
       >
-      >如果您的應用程式升級從Experience Cloud3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂的使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
+      >If your app upgrades from the Experience Cloud 3.x to the 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
 
    * 以下是此方法的語法:
 
@@ -155,7 +155,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static String&amp getUserIdentifier();
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 此方法的程式碼範例如下：
 
       ```java
       String userId = Config.getUserIdentifier();
