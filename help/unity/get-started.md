@@ -5,7 +5,7 @@ seo-description: 此外掛程式可讓您從 Unity 應用程式傳送 Adobe Anal
 seo-title: iOS 和 Android 4.x SDK 適用的 Unity 外掛程式
 solution: Marketing Cloud，開發人員
 title: iOS 和 Android 4.x SDK 適用的 Unity 外掛程式
-uuid: 83289a73-982d-4472-a8 c8-00b562 dc80 f
+uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
 source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
@@ -22,7 +22,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 從 GitHub 或 Developer Connection 下載 [ADBMobile.unitypackage](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) 檔案。
 
-以下是 `ADBMobile.unitypackage` 檔案的內容：
+以下是檔案的內 `ADBMobile.unitypackage` 容：
 
 * 資產 (root)
 
