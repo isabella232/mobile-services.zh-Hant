@@ -1,12 +1,12 @@
 ---
 description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
 seo-title: 生命週期量度
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 生命週期量度
 topic: 開發人員和實施
-uuid: 5a371f11-6521-410f-a01 f-fc3 b280 b050 f
+uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
 translation-type: tm+mt
 source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
@@ -23,7 +23,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
 設定後，生命週期量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫傳送在參數中傳送至 Target，並以訊號形式傳送至對象管理。Analytics 和 Target 會使用相同格式，而觀眾管理則對每個量度使用不同的首碼。
 
-對於Analytics，會自動擷取與每個生命週期追蹤呼叫一起傳送的上下文資料，並使用度量或維度來報告。
+對於Analytics，每次生命週期追蹤呼叫所傳送的上下文資料都會自動擷取，並透過使用量度或維度來報告。
 
 ### 量度
 
@@ -47,7 +47,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    >[!IMPORTANT]
    >
-   >此度量不會自動儲存在Analytics量度中。您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics context data/Target parameter: `a.DailyEngUserEvent`
    * Audience Manager signal: `c_a_DailyEngUserEvent`
@@ -58,7 +58,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    >[!IMPORTANT]
    >
-   >此度量不會自動儲存在Analytics量度中。您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
    * Audience Manager signal: `c_a_MonthlyEngUserEvent`
@@ -88,7 +88,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
 * **安裝日期**
 
-   安裝後首次啟動的日期。日期格式 `MM/DD/YYYY`為。
+   安裝後首次啟動的日期。The date format is .`MM/DD/YYYY`
 
    * Analytics context data/Target parameter: `a.InstallDate`
    * Audience Manager signal: `c_a_InstallDate`
@@ -140,7 +140,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
 * **作業系統版本**
 
-   作業系統的版本。
+   The version of the OS.
 
    * Analytics context data/Target parameter: `a.OSVersion`
    * Audience Manager signal: `c_a_OSVersion`
@@ -151,7 +151,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    >[!IMPORTANT]
    >
-   >此量度不會自動儲存在Analytics變數中。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
+   >此量度不會自動儲存在Analytics變數中。 您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics context data/Target parameter: `a.DaysSinceLastUpgrade`
    * Audience Manager signal: `c_a_DaysSinceLastUpgrade`
@@ -162,7 +162,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    >[!IMPORTANT]
    >
-   >此量度不會自動儲存在Analytics變數中。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
+   >This metric is not automatically stored in an Analytics variable. 您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics context data/Target parameter: `a.LaunchesSinceUpgrade`
    * Audience Manager signal: `c_a_LaunchesSinceUpgrade`
@@ -180,7 +180,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    >[!IMPORTANT]
    >
-   >此量度不會自動儲存在Analytics變數中。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
+   >此量度不會自動儲存在Analytics變數中。 您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics context data/Target parameter: `a.CarrierName`
    * Audience Manager signal: `c_a_CarrierName`
@@ -194,17 +194,17 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-下列度量和維度會依列出的方法在行動解決方案變數中擷取。
+The following metrics and dimensions are captured in mobile solution variables by the listed method.
 
 * **位置 (10 公里以內)**
 
    Populated by `trackLocation` methods.
 
-   * Analytics上下文資料/Target參數：
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * 觀眾管理特徵：
+   * Audience Management trait:
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -242,7 +242,7 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    當裝置處於定義地標範圍內時由 `trackLocation` 方法填入。
 
-   * Analytics上下文資料/Target參數：
+   * Analytics context data/Target parameter:
 
       * `a.loc.poi`
    * 觀眾管理特徵：
@@ -254,9 +254,9 @@ source-git-commit: 6c440c2130781943796cdfb581a39a8167f5ba13
 
    當裝置處於定義地標範圍內時由 `trackLocation` 方法填入。
 
-   * Analytics上下文資料/Target參數：
+   * Analytics context data/Target parameter:
 
       * `a.loc.dist`
-   * 觀眾管理特徵：
+   * Audience Management trait:
 
       * `c_a_loc_dist`
