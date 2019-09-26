@@ -1,12 +1,12 @@
 ---
 description: 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以在伺服器呼叫上設定產品。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以在伺服器呼叫上設定產品。
 seo-title: 產品變數
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 產品變數
 topic: 開發人員和實施
-uuid: f4484022-cb8 b-4dea-9209-1a110 ba607 df
+uuid: f4484022-cb8b-4dea-9209-5a110ba607df
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -42,8 +42,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*產品* 變數會在影像要求上設定，而其他變數則設為上下文資料。所有內容資料變數都必須透過處理規則對應:
+The *products* variable is set on the image request, and the other variables are set as context data. 所有內容資料變數都必須透過處理規則對應:
 
 ![](assets/map-products.png)
 
-您無須使用處理規則對應&#x200B;*產品* 變數，因為此變數是由SDK直接在影像要求上設定的。
+您無須使用處理規則對應 *products* variable by using processing rules because this variable is set directly on the image request by the SDK.
