@@ -1,10 +1,10 @@
 ---
-description: Adobe Mobile Services的技術文件
-seo-description: 本指南概述Adobe Mobile Services的技術文件和自助說明，其中整合了Adobe Experience Cloud行動應用程式的行動行銷功能，讓您瞭解並改進使用者與行動應用程式的互動。
+description: Adobe Mobile services的技術檔案
+seo-description: 本指南概述Adobe Mobile services的技術檔案和自助服務，它將Adobe Experience cloud行動應用程式的行動行銷功能整合在一起，讓您瞭解並改善使用者與行動應用程式的互動。
 seo-title: Adobe Mobile Services
 solution: Marketing Cloud、Analytics、Experience Cloud
 title: Adobe Mobile Services
-uuid: e86a77c9-4ff1-403f-a5 a1-4afbdc4 e6 f68
+uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
 source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
@@ -13,11 +13,11 @@ source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
 # Adobe Mobile Services {#adobe-mobile-services}
 
-本指南概述Adobe Mobile Services的技術文件和自助說明，其中整合了Adobe Experience Cloud行動應用程式的行動行銷功能，讓您瞭解並改進使用者與行動應用程式的互動。
+本指南概述Adobe Mobile services的技術檔案和自助服務，它將Adobe Experience cloud行動應用程式的行動行銷功能整合在一起，讓您瞭解並改善使用者與行動應用程式的互動。
 
 >[!IMPORTANT]
 >
->必須有Adobe Analytics Mobile Marketing Add-on SKU，才能讓Mobile Services存取行動裝置收購、深層連結、地理位置和行動訊息功能。如需詳細資訊，請聯絡您的Adobe CSM。
+>Adobe Analytics Mobile Marketing附加元件SKU是必要項，以讓Mobile services存取行動裝置贏取、深層連結、地理位置和行動訊息功能。 如需詳細資訊，請洽詢您的Adobe CSM。
 
 ## 新版 Adobe Experience Cloud SDK
 
@@ -34,13 +34,13 @@ source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
 >[!IMPORTANT]
 >
->雖然您可以設定UI中的功能，但這些功能將無法運作，直到您下載產生的組態檔並將此檔案新增至SDK為止。For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
+>雖然您可以在UI中設定功能，但這些功能必須等到您下載產生的設定檔案並將此檔案新增至SDK後，才能運作。 For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.
 
 如需最新發行說明，請參閱 [Experience Cloud 發行說明](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)。
 
 ## 熱門主題 {#section_AFFBC9EDDE5B4E4493A7C2896121A773}
 
-以下是本指南的一些熱門主題：
+以下是本指南中一些熱門主題：
 
 * [快速入門](/help/using/gs/gs.md)
 * [正在登入](/help/using/gs/gs-signin.md)
@@ -53,7 +53,7 @@ source-git-commit: 20fdbba819f7c182a23a01cd06e1738ad83eba38
 
 ## 開發人員
 
-以下是一些連結以協助開發人員：
+以下是協助開發人員的一些連結：
 
 * [下載行動 SDK 和工具](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
 * [Developer](https://marketing.adobe.com/resources/help/en_US/reference/developer.html)
