@@ -1,11 +1,11 @@
 ---
 description: 期限值可讓您測量每個使用者的期限值並將其設為目標。
 seo-description: 期限值可讓您測量每個使用者的期限值並將其設為目標。
-seo-title: 訪客期限值
-solution: Marketing Cloud、Analytics
-title: 訪客期限值
+seo-title: 訪客存留期值
+solution: Marketing Cloud,Analytics
+title: 訪客存留期值
 topic: 開發人員和實施
-uuid: d830d18b-4313-43bb-8d75-37889869d0f1d
+uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,8 +22,8 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/dev-qs.md)。
-1. 匯入資料庫:
+   如需詳細資訊，請 *參閱核心實作和生命週期中的「將SDK和設定檔案新*[增至專案」](/help/ios/getting-started/dev-qs.md)。
+1. 匯入程式庫:
 
    ```objective-c
    import com.adobe.mobile.*;
@@ -45,7 +45,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLifetimeValueIncrease:increaseAmount data:contextData];
 ```
 
-上下文資料值必須映射至自訂變數：
+上下文資料值必須對應至自訂變數：
 
 ![](assets/map-variable-context-ltv.png)
 
