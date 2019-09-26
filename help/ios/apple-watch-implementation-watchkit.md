@@ -7,18 +7,27 @@ title: 使用 WatchOS 2 進行 Apple Watch 實施
 topic: 開發人員和實施
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
 
 # Apple Watch implementation with WatchOS 2{#apple-watch-implementation-with-watchos}
 
-從WatchOS 2開始，您的WatchKit擴充功能可在Apple watch上執行。 Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
+Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
 
 >[!TIP]
 >
 >從 `AdobeMobileLibrary` v4.6.0開始， `WatchConnectivity` 支援。
+
+## 全新Adobe Experience Platform Mobile SDK版本
+
+正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+
+我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+
+* 若要開始，請前往Adobe Experience Platform Launch。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 ## 入門 {#section_70BC28BB69414F169196953D3D264BC1}
 
@@ -35,7 +44,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 如需有關開發 WatchKit 應用程式的詳細資訊，請參閱 [Watch 應用程式架構](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
 
-## 設定包含的應用程式 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
+## Configure the containing app {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 在您的 Xcode 專案中完成以下步驟:
 
@@ -90,7 +99,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    } 
    ```
 
-## 設定WatchKit擴充功能 {#section_5ADE31741E514330A381F2E3CFD4A814}
+## Configure the WatchKit extension {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of your WatchKit extension’s target.
 1. 在 WatchKit 延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
@@ -130,7 +139,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 1. In your extension delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:` is called in the `ADBMobile` library, which returns a bool that indicates whether the dictionary was meant for consumption by the `ADBMobile` library. 如果其傳回 `NO`，則訊息不會從 Adobe SDK 啟動。
+   `syncSettings:` 在程式庫中 `ADBMobile` 呼叫，此程式庫會傳回一個方塊，指出字典是否是供程式庫使用 `ADBMobile` 的。 如果其傳回 `NO`，則訊息不會從 Adobe SDK 啟動。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
