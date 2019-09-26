@@ -3,10 +3,10 @@ description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasuremen
 keywords: phonegap
 seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasurement 呼叫。
 seo-title: PhoneGap 外掛程式
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: PhoneGap 外掛程式
 topic: 開發人員和實施
-uuid: f88bcf10-1f9e-4c97-b348-40db797 c9923
+uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -30,7 +30,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 >
 > If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。
 
-若要建立PhoneGap專案，請參閱 [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
+若要建立PhoneGap專案，請參 [閱PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
 
 ## 使用 npm 安裝外掛程式: {#section_43229E57C16944C0B51531CB92089189}
 
@@ -42,7 +42,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ## 手動安裝外掛程式 {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
-### 加入AppMeasurement程式庫
+### 包含AppMeasurement程式庫
 
 納入 AppMeasurement:
 
@@ -53,7 +53,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    1. 選取您要使用 AppMeasurement 程式碼的目標。
 
 1. Drag `ADB_Helper.js` into the `www` folder in your project.
-1. `res/xml` 在資料夾中，加入下列項目，開啓 `config.xml` 並註冊新外掛程式：
+1. In the `res/xml` folder, open `config.xml` and register an new plugin by adding the following:
 
    ```
    <feature name="ADBMobile_PhoneGap"> 
@@ -71,7 +71,7 @@ AppMeasurement 資料庫需要:
    1. Select **[!UICONTROL Copy items into destination group's folder (if needed)]**.
    1. Select **[!UICONTROL Create groups for any added folders]**.
    1. Select the targets where you want to use AppMeasurement code and click **[!UICONTROL Finish]**.
-   ![](assets/xcode-settings.png){width=「672」}
+   ![](assets/xcode-settings.png){width="672"}
 
 1. 在專案目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
 
