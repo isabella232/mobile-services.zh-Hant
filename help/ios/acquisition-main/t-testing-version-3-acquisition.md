@@ -2,9 +2,9 @@
 description: 以下資訊可協助您往返 V3 贏取促銷活動連結 (根據裝置指紋)。
 seo-description: 以下資訊可協助您往返 V3 贏取促銷活動連結 (根據裝置指紋)。
 seo-title: 測試 V3 贏取
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 測試 V3 贏取
-uuid: 89137cf-4839-4b37-926e-303cf8e511a5
+uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,12 +17,12 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->V贏取是指您使用Adobe Mobile Services UI中的贏取產生器建立的贏取連結。若要使用此功能，您必須將 iOS SDK 升級至 4.6.0 版或更新版本。
+> V3 贏取會參照您在 Adobe Mobile Services 使用者介面中透過「贏取產生器」所建立的贏取連結。若要使用此功能，您必須將 iOS SDK 升級至 4.6.0 版或更新版本。
 
 如果行動應用程式尚未在 App Store 上架，在您建立促銷活動連結後，請選取任一行動應用程式作為目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點選贏取連結後)，而不會影響測試連結的能力。
 
-1. 完成 [「行動應用程式贏取」中的先決條件任務](/help/ios/acquisition-main/acquisition.md)。
-1. Navigate to the **[!UICONTROL Acquisition Builder]** in the Adobe Mobile Services UI and generate an acquisition campaign URL.
+1. 完成[「行動應用程式贏取」](/help/ios/acquisition-main/acquisition.md)中的先決條件任務。
+1. 導覽至 Adobe Mobile Services 使用者介面中的&#x200B;**[!UICONTROL 「贏取產生器」]，然後產生贏取促銷活動 URL。**
 
    例如:
 
@@ -32,7 +32,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 
    如果您在贏取連結中同時參照了 iOS 和 Android 應用程式，請使用 Apple Store 作為預設商店。
-1. Open the generated link in a desktop browser and go to `https://c00.adobe.com/v3/<appid>/end`.
+1. 在電腦的瀏覽器上開啟剛才產生的連結，並前往 `https://c00.adobe.com/v3/<appid>/end`。
 
    您應會在 JSON 回應中看見 `contextData`:
 
@@ -45,12 +45,12 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    | 設定 | 值 |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. *`appid`* 應等於贏取 *`appid`* 連結中的值。 |
+   | acquisition | The server should be  `c00.adobe.com`. *`appid`* should equal the *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` 的值應大於 0。 |
 
 
 1. (條件式) 如果應用程式設定檔案中的 `ssl` 設定為 true，請更新您的贏取連結，以使用 HTTPS 通訊協定。
-1. 從您計劃安裝應用程式的行動裝置，按一下產生的連結。
+1. 按一下您計畫安裝應用程式之行動裝置所產生的連結。
 
    Adobe 伺服器 (`c00.adobe.com`) 會儲存裝置指紋，然後重新導向至 App Store。您不必僅為了測試而下載應用程式。
 1. 在您於步驟 6 中使用的同一行動裝置上，首次啟動應用程式。
@@ -65,7 +65,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    如果沒有看見上述記錄，請確定您已完成步驟 4 及步驟 5。
 
-   以下是一些可能發生錯誤的資訊：
+   以下是有關可能錯誤的一些資訊：
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`發生網路錯誤。
 
@@ -79,7 +79,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` 未包含 `contextData`在內。
+      `a.referrer.campaign.name` 不包含在中 `contextData`。
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -93,11 +93,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
       * 藉由使用 HTTP 監控工具，即可監控從應用程式傳送的點擊，以便提供贏取屬性的驗證。
 
-         You should see one `/v3/<appid>/start` request and one `/v3/<appid>/end` request sent to the acquisition server. 使用者代理程式中傳送的項目若有所不同，可能會造成屬性失效。
+         您應會看見兩則傳送至贏取伺服器的要求，一為 `/v3/<appid>/start`，一為 `/v3/<appid>/end`。使用者代理程式中傳送的項目若有所不同，可能會造成屬性失效。
 
          >[!TIP]
          >
-         >請確定 `https://c00.adobe.com/v3/<appid>/start` 具有 `https://c00.adobe.com/v3/<appid>/end` 相同的使用者代理值。
+         >請確 `https://c00.adobe.com/v3/<appid>/start` 定 `https://c00.adobe.com/v3/<appid>/end` 值與使用者代理值相同。
 
       * 贏取連結和來自 SDK 的點擊應使用相同的 HTTP/HTTPS 通訊協定。
 
