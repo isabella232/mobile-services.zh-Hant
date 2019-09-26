@@ -2,10 +2,10 @@
 description: 完成下列步驟來設定報表套裝以收集 iOS 應用程式資料。
 seo-description: 完成下列步驟來設定報表套裝以收集 iOS 應用程式資料。
 seo-title: 開始之前
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 開始之前
 topic: 開發人員和實施
-uuid: 04133f68-3618-41fd-8a13-aec5 b6 f04 df6
+uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -31,7 +31,7 @@ Analytics 管理員和應用程式開發人員必須完成以下作業:
 
 >[!IMPORTANT]
 >
->若要建立新的報表套裝並下載SDK，您必須是Analytics管理員。
+>若要建立新報表套裝並下載SDK，您必須是Analytics管理員。
 
 ### 應用程式開發人員
 
@@ -52,11 +52,11 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
    以您的 Adobe ID 登入 [Experience Cloud](https://marketing.adobe.com)。
 
-   此方法假設您的公司已布建，且您已連結您的Analytics帳戶。如需布建的詳細資訊，請參閱 [管理Experience Cloud使用者和產品](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。如需連結帳戶的詳細資訊，請參閱 [組織和帳戶連結](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)。
+   此方法假設您的公司已布建，且您已連結您的Analytics帳戶。 如需布建的詳細資訊，請參 [閱「管理Experience cloud使用者和產品」](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。 For more information about linking your account, see Organizations and account linking.[](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)
 
    >[!TIP]
    >
-   >如果您不確定您的公司是否已在Experience Cloud中布建，請使用現有的Adobe Analytics帳戶。
+   >If you are unsure whether your company has been provisioned in the Experience Cloud, use your existing Adobe Analytics account.
 
 * **Adobe Analytics**
 
@@ -74,7 +74,7 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 1. 輸入應用程式的名稱，然後選取唯一的報表套裝 ID。
 
-   `mycomobileappdev` 即是報表套裝 ID 的其中一例。您需要為開發和生產版本設定個別的報告套裝和應用程式。當您準備好要設定生產版本時，請重復這些步驟。
+   `mycomobileappdev` 即是報表套裝 ID 的其中一例。You need to set up separate report suites and apps for the development and production versions. When you are ready to set up the production version, repeat these steps.
 1. 保留&#x200B;**[!UICONTROL 「行動應用程式範本」]為已選取狀態。**
 
    此範本可讓時間戳記收集離線資料，並啟用行動解決方案變數來擷取生命週期量度。
@@ -85,7 +85,7 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 若要下載行動 SDK:
 
-1. 登入Mobile Services並以下列其中一種方式開啓您的應用程式：
+1. 登入Mobile services並以下列其中一種方式開啟您的應用程式：
 
    * 在&#x200B;**[!UICONTROL 「所有應用程式]下拉式清單中，選取您的應用程式。**
    * 在右側窗格中，找出並開啟您的應用程式。
@@ -97,5 +97,5 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 >[!TIP]
 >
->應用程式的設定檔案會自動包含在SDK下載中，因此您不需要個別下載該檔案。然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
+>SDK下載中會自動包含應用程式的設定檔案，因此您不需要另外下載該檔案。 然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
 
