@@ -2,10 +2,10 @@
 description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
 seo-description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
 seo-title: 處理規則和內容資料
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 處理規則和內容資料
 topic: 開發人員和實施
-uuid: ea892228-86f5-4980-acb8-45ae43 c6996 d
+uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -14,7 +14,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 # Processing rules and context data {#processing-rules-and-context-data}
 
-處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。如需詳細資訊，請參閱 [處理規則](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
 操作處理規則時，請記住以下資訊:
 
@@ -54,5 +54,5 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 >[!TIP]
 >
->Adobe保留命名空間 `"a."`。若要避免衝突，唯一的其他要求是，您的登入公司中的內容資料變數必須是唯一的。
+>Adobe保留命名空間 `"a."`。 若要避免衝突，唯一的其他要求是，您的登入公司中的內容資料變數必須是唯一的。
 
