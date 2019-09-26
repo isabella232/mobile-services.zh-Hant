@@ -1,12 +1,12 @@
 ---
 description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
 seo-title: Video Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Video Analytics
 topic: 開發人員和實施
-uuid: a137cc27-dc28-48c0-b08 e-2ca17 d2 c7 d
+uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -19,9 +19,9 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 >[!TIP]
 >
->在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需Adobe視訊測量解決方案的詳細資訊，請參閱 [「在Adobe Analytics中測量音訊和視訊](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)」。
+>在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需Adobe視訊測量解決方案的詳細資訊，請參 [閱在Adobe Analytics中測量音訊和視訊](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)。
 
-所有平台上測量視訊的一般程序都很相似。本內容提供開發人員作業的基本概覽和程式碼範例。下表列出會傳送至 Analytics 的媒體資料。處理規則可用來對應上下文資料至Analytics變數。
+所有平台上測量視訊的一般程序都很相似。本內容提供開發人員作業的基本概覽和程式碼範例。下表列出會傳送至 Analytics 的媒體資料。處理規則可用來將上下文資料對應至Analytics變數。
 
 ## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
@@ -33,12 +33,12 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * (**選用**) Custom Insight 變數可提供視訊路徑資訊。
 
 * **a.media.name**
-   * 變數類型：自訂分析(s. prop)
+   * 變數類型：自訂分析(s.prop)
    * (**選用**) 提供視訊路徑資訊。
 
       >[!IMPORTANT]
       >
-      >此變數必須由ExpCare啓用路徑分析。
+      >必須由ExpCare為此變數啟用路徑分析。
    * 事件類型: 自訂分析 (s.prop)
 
 * **a.media.segment**
@@ -64,26 +64,26 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       視訊測量傳送的點擊會被指派為 `video` 的內容類型。從視訊測量觀點來看，**內容類型**&#x200B;可讓您識別視訊訪客，並據此計算視訊轉換率。
 
 * **a.media.timePlayed**
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
    * 計算自上次資料收集程序 (影像要求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
 * **a.media.view**
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
    * 指出有訪客檢視了視訊的某部分。
 
       但此變數並不會提供有關訪客檢視視訊時長或觀看部分的任何資訊。
 
 * **a.media.segmentView**
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
    * 指出有訪客檢視了視訊區段的某部分。
 
       但此變數並不會提供有關訪客檢視視訊時長或觀看部分的任何資訊。
 
 * **a .media.complete**
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
    * 指出使用者已檢視完整的視訊。
 
@@ -151,7 +151,7 @@ public boolean eventFirstTime;
 
 ## Media Measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-以下是媒體測量類別中的方法：
+以下是「媒體測量」類別中的方法：
 
 * **settingsWith**
 
