@@ -1,9 +1,9 @@
 ---
 description: 下列資訊可協助您疑難排解贏取測試問題。
-keywords: Android；收購；測試
+keywords: android；贏取；測試
 seo-description: 下列資訊可協助您疑難排解贏取測試問題。
 seo-title: 疑難排解贏取測試
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 疑難排解贏取測試
 translation-type: tm+mt
 source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
@@ -13,15 +13,15 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 # 疑難排解贏取測試 {#aquistion-testing-troubleshooting}
 
-以下是測試「贏取」和一些可能解決方案時可能遇到的問題：
+以下是您在測試「贏取」和一些可能的解決方案時可能會遇到的一些問題：
 
-* 如果未另行指定，則ADBMobileConfig. json檔案應放置在資產資料夾中。
+* 若未另行指定，ADBMobileConfig.json檔案應放在資產資料夾中。
 
-* 名稱區分大小寫，因此不提供小寫字母。
+* 名稱區分大小寫，因此請勿在小寫字母中提供名稱。
 
-   您必須確保從 `Config.setContext(this.getApplicationContext())` 主要活動中呼叫。如需詳細資訊，請參閱 [設定方法](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)。
+   您需要確保從主 `Config.setContext(this.getApplicationContext())` 要活動呼叫此項。 如需詳細資訊，請參 [閱設定方法](https://docs.adobe.com/content/help/en/mobile-services/android/configuration-android/methods.html)。
 
-* 提供的Social檔案中缺少一些使用者權限，因此傳送資料和記錄離線追蹤呼叫時需要這些功能：
+* 提供的AndroidManifest.xml檔案中遺失一些使用者權限，這些權限是傳送資料並記錄離線追蹤呼叫的必要條件：
 
    ```html
    <manifest..>
@@ -31,11 +31,11 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
    </manifest>
    ```
 
-* 在您的組態中，如果反向連結逾時設定為 `referrerTimeout: 5`，表示您必須在應用程式安裝並首次啓動後，於秒內傳送安裝意圖，才會看到附加至安裝點擊的反向連結資訊。
+* 在您的設定中，如果反向連結逾時設為 `referrerTimeout: 5`，這表示您必須在應用程式第一次安裝並啟動後的5秒時間範圍內傳送安裝意圖，以查看附加至安裝點擊的反向連結資訊。
 
-   若要手動測試，請將 `referrerTimeout` 至10-15秒的時間增加，如此在安裝點擊前，就有足夠的時間傳送反向連結資訊。
+   若是手動測試，請 `referrerTimeout` 將值增加至10-15秒，如此在處理安裝點擊之前就有足夠的時間傳送反向連結資訊。
 
-* 請務必在 [「測試行銷連結」贏取中](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) 執行所有步驟，並確定您執行 `adb` 殼層後再執行下列動作：
+* 請務必依序執行 [Testing Marketing Link贏取中的所有步驟](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) ，並確定您先執行 `adb` shell，然後執行下列步驟：
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 
@@ -45,4 +45,4 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 >[!IMPORTANT]
 >
->您必須單獨執行這兩個命令，才能正確處理反向連結意圖。否則，會 `adb` 使反向連結資訊逸出，而廣播接收器收到的資料將不完整。
+>您必須獨立執行這兩個命令，才能正確處理反向連結意圖。  Otherwise, `adb` double escapes the referrer information, and the data received by the broadcast receiver will be incomplete.
