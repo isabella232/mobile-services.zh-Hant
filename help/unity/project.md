@@ -2,10 +2,10 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: 建立您的專案
+seo-title: Building your project
 solution: Marketing Cloud，開發人員
-title: 建立您的專案
-uuid: 5550a394-6f3f-4b87-b840-89621d8 a0 c1 e
+title: 建立專案
+uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -24,7 +24,8 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 1. In the **[!UICONTROL Build Phases]** tab of your project, add a link to the following libraries:
 
-   * `SystemConfiguration.framework`(此程式庫可能已連結。)
+   * `SystemConfiguration.framework`
+（此程式庫可能已連結。）
 
    * `libsqlite3.0.dylib`
 
