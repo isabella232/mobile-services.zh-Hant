@@ -1,24 +1,24 @@
 ---
 description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
 seo-description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
-seo-title: 穿戴式總覽
-solution: Marketing Cloud、Analytics
-title: 穿戴式總覽
+seo-title: 可穿戴裝置概觀
+solution: Marketing Cloud,Analytics
+title: 可穿戴裝置概觀
 topic: 開發人員和實施
-uuid: f9a5d692-0ef6-4cdf-831e-e50 be083 f083
+uuid: f9a5d692-0ef6-4cdf-831e-e50be291f083
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# 穿戴式總覽 {#wearables}
+# 可穿戴裝置概觀 {#wearables}
 
-本節中的資訊可協助您瞭解如何使用Android延伸功能從Android穿戴式應用程式收集資料。
+本節中的資訊可協助您瞭解如何使用Android擴充功能從Android穿戴式應用程式收集資料。
 
 >[!TIP]
 >
->您至少必須安裝Android SDK4.5版。
+>您必須至少已安裝Android SDK 4.5版。
 
 ## 新版 Adobe Experience Cloud SDK
 
