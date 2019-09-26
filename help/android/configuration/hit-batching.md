@@ -1,12 +1,12 @@
 ---
 description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
 seo-title: 點擊批次處理程序
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 點擊批次處理程序
 topic: 開發人員和實施
-uuid: ada35be3-242b-4b2b-a828-9fb998 dd58 b5
+uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -19,7 +19,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!IMPORTANT]
 >
->若要使用點擊批次處理，您 **必須** 啓用離線追蹤並擁有SDK4.1版或更新版本
+>To use hit batching, you must enable offline tracking and have SDK version 4.1 or later ****
 
 To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
 
