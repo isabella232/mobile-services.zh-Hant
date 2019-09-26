@@ -1,21 +1,21 @@
 ---
 description: 此資訊可協助您在 Android 應用程式中提供目標式內容。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 此資訊可協助您在 Android 應用程式中提供目標式內容。
-seo-title: Target總覽
-solution: Marketing Cloud、Analytics
-title: Target總覽
+seo-title: Target overview
+solution: Marketing Cloud,Analytics
+title: Target概觀
 topic: 開發人員和實施
-uuid: 3501b76d-f83 f-45eb-b56 d-39e6471772 e
+uuid: 3501b76d-f83f-45eb-b56d-39e64717772e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Target總覽 {#target}
+# Target概觀 {#target}
 
-本節中的資訊可協助您在Android應用程式中提供有針對性的內容。
+本節中的資訊可協助您在Android應用程式中提供目標內容。
 
 ## 新版 Adobe Experience Cloud SDK
 
