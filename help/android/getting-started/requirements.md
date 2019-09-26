@@ -2,10 +2,10 @@
 description: '設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業 '
 seo-description: '設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業 '
 seo-title: 開始之前
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 開始之前
 topic: 開發人員和實施
-uuid: 0ca9e937-8d40-4570-9df-9aic6eedf6
+uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -31,7 +31,7 @@ Analytics 管理員和應用程式開發人員必須完成以下作業:
 
 >[!IMPORTANT]
 >
->若要建立新的報表套裝並下載SDK，您必須是Analytics管理員。
+>若要建立新報表套裝並下載SDK，您必須是Analytics管理員。
 
 ### 應用程式開發人員
 
@@ -50,11 +50,11 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 ### Experience Cloud
 
-以您的 Adobe ID 登入 [Experience Cloud](https://marketing.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。如需詳細資訊，請參閱 [管理Experience Cloud使用者和產品](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+以您的 Adobe ID 登入 [Experience Cloud](https://marketing.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。For more information, see Manage Experience Cloud users and products.[](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)
 
 >[!TIP]
 >
->如果您不確定您的公司是否已在Experience Cloud中布建，請使用現有的Adobe Analytics帳戶。
+>If you are unsure whether your company has been provisioned in the Experience Cloud, use your existing Adobe Analytics account.
 
 ### Adobe Analytics
 
@@ -95,7 +95,7 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 >[!TIP]
 >
->應用程式的設定檔案會自動包含在SDK下載中，因此您不需要個別下載該檔案。然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
+>A config file for your app is automatically included in the SDK download, so you do not need to download that file separately. 然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
 
 如果您正使用 Android Studio，您也可以將以下項目新增至您應用程式的 `build.gradle` 檔:
 
