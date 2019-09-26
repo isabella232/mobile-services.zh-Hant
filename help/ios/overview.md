@@ -7,7 +7,7 @@ title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 topic: 開發人員和實施
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: a16fe85f44d2ce852e806b2cc41fb5d40952ad6d
+source-git-commit: 6d92beff55f359d667b399e66bae4cbffa4a1a0a
 
 ---
 
@@ -24,18 +24,14 @@ source-git-commit: a16fe85f44d2ce852e806b2cc41fb5d40952ad6d
 >
 >適用於Experience cloud解決方案的iOS SDK 4.x現在支援 [iOS 13和Xcode 11](https://developer.apple.com/ios/)。 為確保順暢相容，請使用最新版的4.x iOS SDK。 如需最新版本的詳細資訊，請參閱版 [本注意事項](/help/ios/rel-notes.md)。
 
-## 新版 Adobe Experience Cloud SDK
+## 全新Adobe Experience Platform Mobile SDK版本
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 Launch。
+* 若要開始，請前往Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。
 
 一些要記住的資訊:
 
