@@ -2,10 +2,10 @@
 description: 以下為 iOS 資料庫所提供的 Audience Manager 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Audience Manager 方法清單。
 seo-title: Audience Manager 方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Audience Manager 方法
 topic: 開發人員和實施
-uuid: 97658bd6-4c4f-4875-abe9-36父代4bae
+uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 以下為 iOS 資料庫所提供的 Audience Manager 方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target、Audience Manager和Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞，因此 Manager 方法會加上前置詞`audience`「audience」。
+SDK目前支援多種Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。 各方法會根據解決方案加上前置詞，因此 Manager 方法會加上前置詞`audience`「audience」。
 
 如果您已在 JSON 檔案中設定 Audience Manager，則包含生命週期量度的訊號會與 `application:didFinishLaunchingWithOptions:` : 一併傳送。
 
@@ -77,7 +77,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
       >[!IMPORTANT]
       >
-      >在4.13.x版之前，DPUUID未自動編碼。從 4.13.x 版開始，SDK 會先解除編碼傳遞的值，然後重新編碼該值。此程序可確保 SDK 不會破壞回溯相容性。
+      >在4.13.x版之前，DPUUID未自動編碼。 從 4.13.x 版開始，SDK 會先解除編碼傳遞的值，然後重新編碼該值。此程序可確保 SDK 不會破壞回溯相容性。
 
    * 以下是此方法的語法:
 
