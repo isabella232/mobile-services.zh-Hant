@@ -3,10 +3,10 @@ description: 您可以檢視可顯示您的地標與其他資料標記的互動�
 keywords: 行動
 seo-description: 您可以檢視可顯示您的地標與其他資料標記的互動地圖。
 seo-title: 地圖
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 地圖
 topic: 量度
-uuid: 3c271738-eb8 d-4-baav-54b247 bfc4 da
+uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -15,13 +15,13 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 # 地圖 {#map}
 
-您可以檢視顯示POI和其他資料標記的互動地圖。
+您可以檢視顯示POI和其他資料標籤的互動式地圖。
 
 ![](assets/map.png)
 
-以下是一些值得記住的重要資訊：
+Here is some important information to remember:
 
-* 您可以增加或減少地圖大小。
+* You can increase or decrease the size of the map.
 
    舉例來說，如果您有兩個距離很近的地標，這個功能就很有用。放大地圖可供您更詳細檢視地圖。
 * 您的地標會以藍色顯示。
@@ -34,7 +34,7 @@ Click ![layers](assets/map_layers.png) to select the following options:
 
    顯示簡單地圖。
 
-* **[!UICONTROL 衛星]**&#x200B;模式以衛星模式顯示地圖。
+* **[!UICONTROL 衛星]**&#x200B;以衛星模式顯示地圖。
 
 * **[!UICONTROL 資料標記]**
 
@@ -60,7 +60,7 @@ Click ![layers](assets/map_layers.png) to select the following options:
 
 * **[!UICONTROL 篩選]**
 
-   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱 [新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
+   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL 下載]**
 
