@@ -1,12 +1,12 @@
 ---
-description: 您可以建立或編輯行銷連結，以提供深入連結至您的行動應用程式或您的網站。
+description: You can create or edit Marketing Links to provide deep linking into your mobile app or your website.
 keywords: 行動
-seo-description: 您可以建立或編輯行銷連結，以提供深入連結至您的行動應用程式或您的網站。
+seo-description: 您可以建立或編輯行銷連結，以提供深入連結至您的行動應用程式或網站。
 seo-title: 建立或編輯行銷連結
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 建立或編輯行銷連結
 topic: 量度
-uuid: 305a8265-38de-4d19-8c79-b3912 f5 aae7 c
+uuid: 305a8265-38de-4d19-8c79-b3912f5ae7c
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,7 +15,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Create or edit marketing links{#create-or-edit-marketing-links}
 
-您可以建立或編輯行銷連結，以提供深入連結至您的行動應用程式或網站。如需詳細資訊，請參閱 [Apple Universal Links和Android App Links](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)。
+您可以建立或編輯行銷連結，以提供行動應用程式或網站的深層連結。 For more information, see Apple Universal Links and Android App Links.[](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
 
 1. In your app, in the left navigation pane, expand **[!UICONTROL Acquisition]** and click **[!UICONTROL Marketing Link Builder]**.
 1. 完成下列其中一項作業:
@@ -35,28 +35,28 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * **[!UICONTROL 新增追蹤內容資料]**:
 
-      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. 在&#x200B;**[!UICONTROL 「自訂內容資料」]下拉式清單中，選取預設標籤或您自己的標籤。**&#x200B;上下文資料用於在部署行銷連結時進行報告。
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. 在&#x200B;**[!UICONTROL 「自訂內容資料」]下拉式清單中，選取預設標籤或您自己的標籤。** Context data is used for reporting when the Marketing Link is deployed.
 
       下列預設集標記可供使用:
 
-      * **自訂上下文資料**&#x200B;指定索引鍵和值。如果您新增自訂內容資料，必須建立處理規則。如需詳細資訊，請參閱 [處理規則概述](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+      * **自訂內容資料**：指定索引鍵和值。 如果您新增自訂內容資料，必須建立處理規則。如需詳細資訊，請參 [閱處理規則概觀](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
-      * **來源**&#x200B;指定原始反向連結，例如「電子報」或「首頁」。
+      * **來源**：指定原始反向連結，例如「電子報」或「首頁」。
 
-      * **Medium**&#x200B;指定行銷媒體，例如「橫幅」或「電子郵件」。
+      * **媒體**：指定行銷媒體，例如「橫幅」或「電子郵件」。
 
-      * **內容**：指定廣告的名稱或ID與連結。
+      * **內容**：指定包含連結之廣告的名稱或ID。
 
       * **詞語**&#x200B;指定廣告的付費詞語或其他搜尋詞。
 1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 1. 在下列欄位輸入資訊:
 
-   * **(必要)** 在 **[!UICONTROL 後援URL]**&#x200B;中，指定將使用者導向至目的地無法符合的URL(例如，如果使用者位於桌面或其他不符合目的地規則的平台)。
+   * **（必要）** 在備援URL ****，指定當無法比對目標時（例如，使用者位於案頭或其他不符合目標規則的平台），使用者要導向的URL。
    * In **[!UICONTROL Marketing Link Options]**, select **[!UICONTROL Interstitials]** or **[!UICONTROL Universal and App Links]**.
 
-      如需詳細資訊，請參閱 [「Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md) 」或 [「Apple Universal Links」和「Android App Links](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)」。
+      如需詳細資訊，請參 [閱插播式](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)[或Apple Universal Links和Android應用程式連結](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)。
 
-   * **(條件性)** 如果選取 **[!UICONTROL 「通用」或「應用程式連結]** 」，則在 **[!UICONTROL 「自訂路徑]**」中，使用者可以在網域後面定義URL路徑，並使用任何查詢參數。如需詳細資訊，請參閱 [Apple Universal Links和Android App Links](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)。
+   * **(Conditional) If Universal or App Links is selected, in Custom Path, users can define the URL path after the domain with any query parameter.********** For more information, see Apple Universal Links and Android App Links.[](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)
 
 1. Click **[!UICONTROL Edit Deep Link Interstitial]** and configure the link.
 
@@ -90,9 +90,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       >
       >When you use the **[!UICONTROL Web Link]** destination type with a link to the app store, acquisition is not tracked. 若要追蹤贏取，請使用&#x200B;**[!UICONTROL 「應用程式商店」]目的地類型。**
 
-      如需詳細資訊，請參閱 [建立新連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
+      如需詳細資訊，請參 [閱建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
 
 
 
 
-1. 若要儲存行銷連結，請按一下 ![「線上」](assets/icon_elipses.png) 和「 **[!UICONTROL 儲存]**」。
+1. 若要儲存行銷連結，請按一下「 ![篩選](assets/icon_elipses.png) 」，然 **[!UICONTROL 後儲存]**。
