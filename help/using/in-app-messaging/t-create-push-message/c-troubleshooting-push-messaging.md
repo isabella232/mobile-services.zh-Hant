@@ -3,10 +3,10 @@ description: 此資訊可協助您進行推送訊息疑難排解。
 keywords: 行動
 seo-description: 此資訊可協助您進行推送訊息疑難排解。
 seo-title: 疑難排解推送訊息
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 疑難排解推送訊息
 topic: 量度
-uuid: c7be7ab7-0cfe-4296-84a8-01412f4d93f
+uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,7 +21,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 下列延遲類型可能與 Mobile Services 的推送訊息有關:
 
-* **等候Analytics點擊**
+* **等待Analytics點擊**
 
    每個報表套裝都可設定處理傳入 Analytics 點擊的時機。預設為每 1 小時。
 
@@ -33,9 +33,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    >[!TIP]
    >
-   >此計數是成功傳送至推送服務的次數。推送服務無法保證訊息一定會傳送出去。
+   >此計數是成功傳送至推送服務的數目。 推送服務無法保證訊息一定會傳送出去。
 
-   如需有關服務可靠性的詳細資訊，請參閱：
+   有關服務可靠性的詳細資訊，請參閱：
 
    * [服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
    * [訊息的期限](https://developers.google.com/cloud-messaging/concept-options#lifetime)。
@@ -94,7 +94,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
    * VRSID Definition Segment: `a.appid contains “PhotoShop_iOS_app_SF”`
 * 應用程式名稱: PhotoShop_app_iOS
    * 上層 RSID: AllAdobe PhotoShop_apps
-   * RSID：PhotoShop_ iOS_ app_ LA
+   * RSID:PhotoShop_iOS_app_LA
    * VRSID Definition Segment: `a.os contains “iOS”`
 
 In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
@@ -103,4 +103,4 @@ If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. 若每個應用程式&#x200B;**並未**&#x200B;具備有效憑證，則您的對象區段可能已無限期加入黑名單，且您未來可能無法傳送推送訊息給受影響的使用者。如需觀眾區段的詳細資訊，請參閱 [對象：定義並設定推送訊息的對象選項](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
+>After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. 若每個應用程式&#x200B;**並未**&#x200B;具備有效憑證，則您的對象區段可能已無限期加入黑名單，且您未來可能無法傳送推送訊息給受影響的使用者。如需觀眾區隔的詳細資訊，請參閱 [觀眾：定義並設定推播訊息的對象選項](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
