@@ -3,10 +3,10 @@ description: 您可顯示最近瀏覽過的應用程式的關鍵績效量度。�
 keywords: 行動
 seo-description: 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
 seo-title: 顯示 Mobile 量度
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 顯示 Mobile 量度
 topic: 量度
-uuid: 57db0b77-6b0a-4a0c-9aad-073127533fd
+uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -38,7 +38,7 @@ If the app you want to view is not displayed, search for it by typing the app's 
    1. 按一下「**[!UICONTROL 篩選]**」圖示，顯示「**嚴格篩選]」對話方塊。[!UICONTROL **
    1. Click **[!UICONTROL Add Rule]**, select an option from the drop-down list, and type the necessary information.
 
-      例如，您可以選取 **[!UICONTROL 應用程式版本]** 和版本類型 `4.5` 。You could select **[!UICONTROL Device Type]** and type `Android`.
+      例如，您可以選取「應用 **[!UICONTROL 程式版本]** 」並 `4.5` 輸入版本。 You could select **[!UICONTROL Device Type]** and type `Android`.
 
       >[!TIP]
       >
@@ -47,13 +47,13 @@ If the app you want to view is not displayed, search for it by typing the app's 
    1. Click **[!UICONTROL Update]**.
    >[!TIP]
    >
-   >**[!UICONTROL 「篩選」]** 圖示旁邊會顯示藍色泡泡，指出作用中篩選器的數目。
+   >A blue bubble displays next to the **[!UICONTROL Filter]** icon to indicate the number of active filters.
 
    To cancel filters, click the **[!UICONTROL Filter]** icon, and click **[!UICONTROL Cancel]**.
 
 * **顯示關鍵績效指標**
 
-   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。若要向下切入，請按一下關鍵績效指標旁的 ******[!UICONTROL &gt;圖示]**。圖表上的線條會以顏色編碼，您可以將滑鼠指標暫留在任何資料點上，查看特定日期的統計資料。按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
+   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。若要深入檢視，請按一 **** 下關鍵績效指標旁 **[!UICONTROL 的&gt;圖示]**。 圖表上的線條會以色彩標示，您可將滑鼠移至任何資料點上，以查看特定日期的統計資料。 按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
 
 ## Edit an app's settings {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
