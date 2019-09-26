@@ -22,7 +22,7 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 **2019年7月18日：版本4.17.8**
 
-* Adobe Target:所有請求現在都會在URL查詢參數中包含用戶端和sessionId。
+* Adobe Target: All requests now include the client and the sessionId in the URL query parameters.
 * 應用程式內傳訊: 修正透過空白點選連結 URL 觸發訊息時，Android 應用程式當機的問題。
 * 訪客 ID 服務: `Visitor.appendToURL` 和 `Visitor.getUrlVariablesAsync` API 不再將傳回的值雙重編碼。
 
