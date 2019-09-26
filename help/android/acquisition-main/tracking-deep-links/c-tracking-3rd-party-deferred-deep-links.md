@@ -3,14 +3,14 @@ description: 使用 Android SDK 來實施對第三方延期的深層連結的追
 seo-description: 使用 Android SDK 來實施對第三方延期的深層連結的追蹤。
 seo-title: 追蹤第三方延期的深層連結
 title: 追蹤第三方延期的深層連結
-uuid: 4c798e47-798-1a06-a191-6c4 d05 f6 ee61
+uuid: 4c798e47-7988-4a06-a191-6c4d05f6ee61
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# 追蹤第三方延遲的深層連結{#tracking-third-party-deferred-deep-links}
+# Tracking third-party deferred deep links{#tracking-third-party-deferred-deep-links}
 
 使用 Android SDK 來實施對第三方延期的深層連結的追蹤。
 
@@ -20,19 +20,19 @@ Adobe Mobile SDK 目前支援的深層連結，可讓應用程式開發人員使
 
 ## Facebook deep linking {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
-廣告創作者可以在 Facebook 中刊登廣告作為深層連結。當使用者點按廣告時，系統會直接傳送至資訊，表示該使用者對此應用程式有興趣。深層連結&#x200B;**並非**&#x200B;指紋識別器 URL。然而，在廣告設定期間，您可以選擇提供第三方深層連結 URL。使用 Adobe Mobile SDK 與服務的應用程式開發人員應在此欄位中輸入 Adobe Mobile Service 設定的指紋識別器 URL。如果所有項目皆已正確設定，則 Facebook SDK 會在應用程式安裝或啟動後，將此 URL 傳遞至應用程式。
+廣告創作者可以在 Facebook 中刊登廣告作為深層連結。當使用者點按廣告時，系統會直接傳送至資訊，表示該使用者對此應用程式有興趣。深層連結&#x200B;**並非**&#x200B;指紋識別器 URL。然而，在廣告設定期間，您可以選擇提供協力廠商深層連結 URL。使用 Adobe Mobile SDK 與服務的應用程式開發人員應在此欄位中輸入 Adobe Mobile Service 設定的指紋識別器 URL。如果所有項目皆已正確設定，則 Facebook SDK 會在應用程式安裝或啟動後，將此 URL 傳遞至應用程式。
 
 ## 設定 SDK {#section_834CD3109175432B8173ECB6EA7DE315}
 
 若要使用 Adobe Mobile SDK 準備新增 Facebook 深層連結支援，應用程式開發人員會完成下列作業:
 
-* Android SDK快速入門
+* Get started with the Android SDK
 
    For more information, see [Getting Started Android SDK](https://developers.facebook.com/docs/android/getting-started) .
 
-* 設定深層連結
+* Set up deep linking
 
-   如需詳細資訊，請參閱 [深層連結設定](https://developers.facebook.com/docs/app-ads/deep-linking#os)。
+   For more information, see Deep Linking Set up.[](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
 If the application is set up correctly, the `trackAdobeDeepLink()` API should enable collecting the deep link information from the Facebook acquisition campaign and send it to Adobe Mobile Service. 如果安裝點擊尚未在首次啟動時傳送至 Adobe Mobile Service，則此資訊將會新增至生命週期點擊。否則，此資訊將會以 Adobe 深層連結點擊的形式傳送。
 
@@ -53,7 +53,7 @@ If the application is set up correctly, the `trackAdobeDeepLink()` API should en
    若要在應用程式中新增 Facebook Gradle 相依性，請完成 [Android SDK 快速入門](https://developers.facebook.com/docs/android/getting-started)中的步驟。
 
 1. 若要初始化 Facebook SDK，請完成 *Android Studio 設定*&#x200B;章節中的指示。
-1. Call `trackAdobeDeepLink()` from the main activity.
+1. 從主要活動中呼叫 `trackAdobeDeepLink()`。
 
    ```java
    @Override 
