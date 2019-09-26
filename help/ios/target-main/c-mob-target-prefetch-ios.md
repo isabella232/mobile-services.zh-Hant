@@ -3,7 +3,7 @@ description: Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取
 seo-description: Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回應，盡量以最少次數擷取提供項目內容。
 seo-title: iOS 中的預先擷取選件內容
 title: iOS 中的預先擷取選件內容
-uuid: fef58042-65e2-4579-b8 f1-d21554 d2 af57
+uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回�
 
 >[!IMPORTANT]
 >
->Adobe Target中的「自動目標」、「自動分配」和「自動個人化」活動類型不支援iOS的「行動SDK」預先擷取功能。
+>Prefetch functionality in the Mobile SDKs for iOS is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
 
 此程序會減少載入時間，避免多個網路呼叫，並允許通知 Adobe Target 行動應用程式使用者造訪哪一個 mbox。預先擷取呼叫期間，會擷取並快取所有內容，而且將從快取中擷取此內容，以供包含指定 mbox 名稱之快取內容的所有未來呼叫使用。
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## 預先擷取方法 {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## 預回遷方法 {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 以下是您可以在 iOS 中用於預先擷取的方法:
 
@@ -71,11 +71,11 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 * **targetLoadRequests**
 
-   針對在要求陣列中指定的多個 mbox 位置執行批次要求。陣列中的每個物件都包含回呼函數，當內容適用於其指定的mbox位置時會呼叫此函數。
+   針對在要求陣列中指定的多個 mbox 位置執行批次要求。陣列中的每個物件都包含回呼函式，當內容可用於其指定mbox位置時，就會呼叫該函式。
 
    >[!IMPORTANT]
    >
-   >如果已請求位置的內容已快取，則會立即在提供的回呼中傳回。否則，SDK 將會傳送網路要求給 Target 伺服器以擷取內容。
+   >如果已快取所請求位置的內容，則會立即在提供的回呼中傳回。 否則，SDK 將會傳送網路要求給 Target 伺服器以擷取內容。
 
    * 以下是此方法的語法:
 
@@ -104,7 +104,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       (void) targetPrefetchClearCache; 
       ```
 
-   * 此方法沒有參數。
+   * There are no parameters for this method.
 
 * **targetRequestObjectWithName**
 
@@ -119,7 +119,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       callback:(nullablevoid(^)(NSString*__nullablecontent))callback;
       ```
 
-   * 此方法沒有參數。
+   * There are no parameters for this method.
 
 * **createTargetPrefetchObject**
 
@@ -136,13 +136,13 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 以下是 iOS 中支援預先擷取的公用類別:
 
-### 類別參考：targetPrefetchObject
+### 類別參考：TargetPreFetchObject
 
 封裝用於 mbox 預先擷取的 mbox 名稱和參數。
 
 * **`name`**
 
-   您要擷取之位置/mbox的名稱。
+   您要擷取的位置/mbox名稱。
 
    * **類型**: NSString*
 
