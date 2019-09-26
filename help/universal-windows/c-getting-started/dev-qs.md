@@ -2,10 +2,10 @@
 description: 'null'
 seo-description: 'null'
 seo-title: 開發人員快速入門
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 開發人員快速入門
 topic: 開發人員和實施
-uuid: 11c06fcf-d5 e4-4858-9a4 e-3bc66 cdd2 a48
+uuid: 11c06fcf-d5e4-4858-9a4e-3bf66cdd2a48
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -14,15 +14,15 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 # Developer quick start{#developer-quick-start}
 
-以下是如何實作Universal Windows Platform程式庫的一些資訊。
+以下是有關如何實作通用Windows平台程式庫的一些資訊。
 
 >[!IMPORTANT]
 >
->若要實作SDK，您需要Visual Studio2013或更新版本。
+>若要實作SDK，您需要Visual Studio 2013或更新版本。
 
 ## 取得 SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
 
-After you unzip the [SDK download](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) file, you will have a separate folder for each supported architecture and platform combination. 您也會有 `ADBMobileConfig.json` 檔案。如需此檔案的詳細資訊，請參閱 [ADBMobileConfig. json config檔案](/help/universal-windows/c-configuration/c.json.md)。
+After you unzip the [SDK download](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) file, you will have a separate folder for each supported architecture and platform combination. 您也會有檔 `ADBMobileConfig.json` 案。 如需此檔案的詳細資訊，請參 [閱ADBMobileConfig.json設定檔案](/help/universal-windows/c-configuration/c.json.md)。
 
 ## Select the correct version {#section_E53C5AA7D5474824A89BB32C003865A1}
 
@@ -30,11 +30,11 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 
 >[!IMPORTANT]
 >
->The version of `ADBMobile.winmd` does not reflect the version of the library. `.winmd` 此檔案僅包含中繼資料，且版本號碼為 `255.255.255.255`Microsoft根據Microsoft接受的行為。如需詳細資訊，請參閱 [如何新增WinRT C++/CX元件dll的組件資訊？](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode)。To check the version of the library you are using, check the version of the underlying `ADBMobile.dll` file.
+>The version of `ADBMobile.winmd` does not reflect the version of the library. 檔 `.winmd` 案只包含中繼資料，且版本號碼 `255.255.255.255`為，Microsoft會接受此行為。 有關詳細資訊，請 [參閱如何為WinRT C++ / CX元件dll添加元件資訊？](https://social.msdn.microsoft.com/Forums/windowsapps/en-US/6bcccaee-aa53-4770-bd5b-1205977f1ca7/how-do-i-add-assembly-information-for-a-winrt-c-cx-component-dll?forum=winappswithnativecode)。To check the version of the library you are using, check the version of the underlying `ADBMobile.dll` file.
 
 ## 語法差別 {#section_A02DE120B6D240F5AFFE7509755C4F14}
 
-可在多種程式語言中使用的通用 Windows 平台程式庫。如果您使用不同語言，本指南中的範例(JavaScript)可能需要修改。當您從WinJS使用winmd方法時，所有方法都會自動將其第一個字母設為小寫。
+可在多種程式語言中使用的通用 Windows 平台程式庫。本指南中的範例位於WinJS(JavaScript)中，如果您使用不同的語言，則可能需要修改。 When you consume winmd methods from winJS, all methods automatically have their first letter lowercased.
 
 實施間的主要差別，是上下文資料使用的資料結構。Additionally, when using the SDK in a WinJS project, use an empty string ( `""` or `''`) instead of `null` for empty string values.
 
@@ -43,9 +43,9 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 1. 啟動 Visual Studio 並開啟您的方案。
 1. In the **[!UICONTROL Solution Explorer]**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference]**.
 
-1. 選取正確版本的程式庫，然後瀏覽至關聯的ADBMobile. winmd檔案。
+1. 選取正確的程式庫版本，並瀏覽至相關的ADBMobile.winmd檔案。
 
-   如需詳細資訊，請參閱 *此頁面上的選取正確版本* 區段。
+   如需詳細資訊，請 *參閱本頁的「選擇正確的版本* 」一節。
 
 1. 按一下「**新增**」。
 
@@ -53,9 +53,9 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 
 1. In the **[!UICONTROL Solution Explorer]**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference]**.
 
-   如果您的解決方案中還有C++專案，請跳過此步驟。
+   如果您的解決方案中也有C++專案，請略過此步驟。
 
-1. 在左側的 **[!UICONTROL 「Windows]** 」索引標籤中，選取 **[!UICONTROL 「擴充功能」]**，選取並新增 **[!UICONTROL 「Visual C++2015Runtime for Universal Windows Platform Apps]**」。
+1. 在左側的 **[!UICONTROL Windows]** 標籤中，選取「擴充功能 **[!UICONTROL 」，選取並新增「通用Windows平台應用程式的]** Visual C++ 2015執行階段」 ****。
 
 1. 將這一行新增至您的類別:
 
@@ -65,9 +65,9 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 
 1. Right-click your project and click **[!UICONTROL Add]** &gt; **[!UICONTROL Existing Item]**.
 
-1. 瀏覽至 `ADBMobileConfig.json` 檔案，然後按一下 **[!UICONTROL 「新增]**」。
+1. 瀏覽至檔案 `ADBMobileConfig.json` ，然後按一下「 **[!UICONTROL 新增」]**。
 
-1. 在解決方案 `ADBMobileConfig.json` 的檔案上按一下滑鼠右鍵，然後選取 **[!UICONTROL 「屬性]**」。
+1. 在解決方案中的檔 `ADBMobileConfig.json` 案上按一下滑鼠右鍵，然後選取「 **[!UICONTROL 屬性」]**。
 
 1. Change **[!UICONTROL Build Action]** to **[!UICONTROL Content]**.
 
@@ -76,9 +76,9 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 1. 啟動 Visual Studio 並開啟您的方案。
 1. In the **[!UICONTROL Solution Explorer]**, right-click your project and select **[!UICONTROL Add]** &gt; **[!UICONTROL References]**.
 
-1. 選取正確版本的程式庫，並新增參考至關聯的ADBMobile. winmd檔案。
+1. Select the correct version  of the library and add a reference to the associated ADBMobile.winmd file.
 
-   如需詳細資訊，請參閱 *此頁面上的選取正確版本* 區段。
+   如需詳細資訊，請 *參閱本頁的「選擇正確的版本* 」一節。
 
 1. Click **[!UICONTROL Add]**.
 
@@ -104,7 +104,7 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 
 1. In the **[!UICONTROL Solution Explorer]**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference]**.
 
-1. 選取正確版本的程式庫，然後瀏覽至關聯的ADBMobile. winmd檔案。
+1. 選取正確的程式庫版本，並瀏覽至相關的ADBMobile.winmd檔案。
 
 1. Click **[!UICONTROL Add]**.
 
@@ -112,23 +112,23 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 
 1. In the **[!UICONTROL Solution Explorer]**, right-click **[!UICONTROL References]** and select **[!UICONTROL Add Reference]**.
 
-   如果您的解決方案中還有C++專案，請跳過此步驟。
+   如果您的解決方案中也有C++專案，請略過此步驟。
 
-1. 在左側的 **[!UICONTROL 「Windows]** 」索引標籤中，選取 **[!UICONTROL 「擴充功能」]** 並選取並新增 **[!UICONTROL 「Visual C++2015Runtime for Universal Windows Platform Apps]**」。
+1. 在左側的 **[!UICONTROL Windows]** 標籤中，選取「延伸功能 **[!UICONTROL 」，然後選取並新增「通用Windows平台應用程式的]** Visual C++ 2015執行階段」 ****。
 
 1. Right-click your project and select **[!UICONTROL Add]** &gt; **[!UICONTROL Existing Item]**.
 
-1. 瀏覽至 `ADBMobileConfig.json` 檔案，然後按一下 **[!UICONTROL 「新增]**」。
+1. Browse to the  file and click Add.`ADBMobileConfig.json`****
 
 1. Right-click the `ADBMobileConfig.json` file in your solution and select **[!UICONTROL Properties]**.
 
-1. 選取 **[!UICONTROL 「檔案屬性]** 」時，請確定 **[!UICONTROL 「封裝動作]** 」已設定為 **[!UICONTROL 「內容]**」。
+1. With File Properties selected, ensure Package Action is set to Content.************
 
-   對於JavaScript專案，檔案預設會設為「內容」。
+   對於JavaScript專案，預設會將檔案設為「內容」。
 
 ## Update The ADBMobileConfig.json config file {#section_0BC8CC0E4AAD4AC385FA0AEDC3C56AFE}
 
-`ADBMobileConfig.json` 檔案包含全域SDK設定，並在您完成 *新增程式庫和組態檔至專案* 區段中的步驟後，位於專案根目錄中。If your `ADBMobileConfig.json` file was not pre-configured by Adobe Mobile Services, you need to update a few values to get started.
+The `ADBMobileConfig.json` file contains global SDK settings and is located at your project root after you complete the steps in the *Add the library and config file to your project* section. If your `ADBMobileConfig.json` file was not pre-configured by Adobe Mobile Services, you need to update a few values to get started.
 
 以下是 `ADBMobileConfig.json` 檔案的範例:
 
@@ -158,25 +158,25 @@ Different `.dll/.winmd` files are provided for each supported architecture (x86,
 }
 ```
 
-至少為您使用的解決方案更新下列值：
+請至少為您所使用的解決方案更新下列值：
 
-* **Adobe Analytics**： `rsids` and `server`
+* **Adobe Analytics:  and**`rsids``server`
 
 * **Adobe Target**: `clientCode`
 
 * **Adobe Audience Manager**: `server`
 
-如需詳細資訊，請參閱 [SDK方法](/help/universal-windows/c-configuration/methods.md)。
+如需詳細資訊，請參 [閱SDK方法](/help/universal-windows/c-configuration/methods.md)。
 
 ## 除錯 {#section_3A10376A60394A15BEE483323E0CD4AA}
 
-若要啓用SDK的除錯，請呼叫 `ADBMobile.Config.setDebugLogging(true);`。
+To enable debugging for the SDK, call .`ADBMobile.Config.setDebugLogging(true);`
 
-對於C Sharp和JavaScript應用程式，您需要完成下列步驟，才能啓用原生程式碼除錯(原生程式碼除錯是C++應用程式的預設設定)：
+對於C Sharp和JavaScript應用程式，您必須完成下列步驟以啟用原生程式碼除錯（原生程式碼除錯是C++應用程式的預設設定）:
 
 ### C Sharp
 
-1. 在專案上按一下滑鼠右鍵，按一下 **[!UICONTROL 「屬性]** &gt; **[!UICONTROL 除錯」標籤]**。
+1. Right-click the project, click  **[!UICONTROL Properties]** &gt; **[!UICONTROL Debug tab]**.
 
 1. 變更除錯工具類型下拉選單為&#x200B;**「僅限原生」**。
 
