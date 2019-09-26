@@ -2,7 +2,7 @@
 description: 處理規則不支援事件序列化。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
 seo-description: 處理規則不支援事件序列化。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
 seo-title: 事件序列化
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 事件序列化
 topic: 開發人員和實施
 uuid: 19a27df4-0998-403d-800c-26ff61149208
