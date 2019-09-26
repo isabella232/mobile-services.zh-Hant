@@ -1,11 +1,11 @@
 ---
 description: 地理位置可協助您透過經緯度和 iOS 應用程式中預先定義的地標來測量位置資料。
 seo-description: 地理位置可協助您透過經緯度和 iOS 應用程式中預先定義的地標來測量位置資料。
-seo-title: 地理位置和興趣點
-solution: Marketing Cloud、Analytics
-title: 地理位置和興趣點
+seo-title: 地理位置與地標
+solution: Marketing Cloud,Analytics
+title: 地理位置與地標
 topic: 開發人員和實施
-uuid: c800ec85-a33 f-425d-b28 f-bfe8 bf229 ae8
+uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -34,16 +34,16 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
 ```
 
-如需詳細資訊，請參閱 [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)。
+For more information, see ADBMobile JSON Config.[](/help/ios/configuration/json-config/json-config.md)
 
-如果尚未設定此項目，則必須下載更新版本的 `ADBMobile.json` 檔案，並將其新增至您的應用程式。如需詳細資訊和指示，請參閱 *開始前下載SDK和測試工具*[](/help/ios/getting-started/requirements.md)。
+如果尚未設定此項目，則必須下載更新版本的 `ADBMobile.json` 檔案，並將其新增至您的應用程式。如需詳細資訊和指示，請 *參閱開始前下載SDK*[和測試工具](/help/ios/getting-started/requirements.md)。
 
 ## 追蹤地理位置和POI {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/dev-qs.md)。
-1. 匯入資料庫:
+   如需詳細資訊，請 *參閱核心實作和生命週期中的「將SDK和設定檔案新*[增至專案」](/help/ios/getting-started/dev-qs.md)。
+1. 匯入程式庫:
 
    ```objective-c
    #import "ADBMobile.h"
@@ -58,9 +58,9 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    >[!TIP]
    >
-   >您可以隨時呼叫 `trackLocation` 。
+   >您隨時都 `trackLocation` 可以打電話。
 
-   若要判斷傳遞給 `trackLocation` 呼叫的位置，請使用 [「取得使用者位置](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)」。
+   若要判斷傳遞至呼叫的位置，請 `trackLocation` 使用「 [取得使用者位置」](https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/LocationAwarenessPG/CoreLocation/CoreLocation.html)。
 
 此外，如果該位置經判斷位於定義的 POI 半徑範圍內，則 `a.loc.poi` 內容資料變數將會與 `trackLocation` 點擊一併傳入，並會在「位置」報表中報告為 POI。`a.loc.dist` 內容變數也會以公尺為單位傳送來自定義座標的距離。
 
@@ -74,7 +74,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackLocation: currentLocation data:contextData];
 ```
 
-上下文資料值必須映射至自訂變數：
+上下文資料值必須對應至自訂變數：
 
 ![](assets/map-location-context-data.png)
 
@@ -97,7 +97,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 請記住以下資訊:
 
-* `trackLocation` 請求會以等同 `trackAction` 於呼叫的方式傳送。
+* A `trackLocation` request sends in the equivalent of a `trackAction` call.
 
 * 系統不會在一般 `trackAction` 和 `trackState` 呼叫過程中傳遞 POI，因此您必須使用 `trackLocation` 呼叫來追蹤 POI。
 
