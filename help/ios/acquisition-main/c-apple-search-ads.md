@@ -16,14 +16,14 @@ source-git-commit: ebcc04ab3e80aafb9d9ec2e1fbc809c743554cb7
 
 Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。如需 Search Ads 促銷活動的詳細資訊，請參閱 [Apple Search Ads](https://searchads.apple.com)。
 
-## 福利 {#section_CEA30C652AC8470784B8054E299B80FA}
+## 優點 {#section_CEA30C652AC8470784B8054E299B80FA}
 
 以下為使用 Apple 廣告的優點:
 
 * 新增數行程式碼至應用程式中，即可輕鬆測量 Search Ads 應用程式下載促銷活動的效益。
 * 開發人員可存取下載日期/時間和帶動轉換的標得關鍵字。
 
-## 實施 Apple Ad {#section_F1094676793540CFA1DBB540174EEB6A}
+## 實作 Apple Ad {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人�
 
    If attribution = `true`, all of the `iad-*` fields will be included in the lifecycle hit.
 
-   In addition, the following values will be mapped from the `"iad"` dictionary to our typical acquisition context data fields:
+   此外，下列值將會從 `"iad"`字典對應至一般贏取內容資料欄位:
 
    * `"iad-campaign-id"` --&gt; `"a.referrer.campaign.trackingcode"`
    * `"iad-campaign-name"` --&gt; `"a.referrer.campaign.name"`
