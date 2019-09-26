@@ -3,7 +3,7 @@ description: 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，並�
 seo-description: 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，並傳送至第三方端點。
 seo-title: PII 回傳
 title: PII 回傳
-uuid: 8d1f1fb8-6842-478b-a164-e7 f727755 bd9
+uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
 translation-type: tm+mt
 source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
 
@@ -18,15 +18,15 @@ source-git-commit: 70ac08c74e11a68d94d3f10ed6d7fc133d34149d
 
 >[!TIP]
 >
->必須有支援HTTPS的端點才能使用PII回傳類型。
+>An endpoint that supports HTTPS is required to use the PII postback type.
 
 ## Tracking PII postbacks {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
-1. 新增[程式庫至您的專案並實施生命週期。
+1. 將[程式庫]新增至您的專案並實作生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
-1. 匯入資料庫:
+1. 匯入程式庫:
 
    ```java
    #import "ADBMobile.h"
