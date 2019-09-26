@@ -2,10 +2,10 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics
 topic: 開發人員和實施
-uuid: c2cf3d3-77a-be-be8 e-be4-3db10 a77996 a
+uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -14,11 +14,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 # Analytics {#analytics}
 
-將程式庫新增至專案之後，您可以在應用程式中的任何位置進行任何Analytics方法呼叫。
+將程式庫新增至專案後，您就可以在應用程式的任何地方進行任何Analytics方法呼叫。
 
 >[!TIP]
 >
->確定您匯入 `ADBMobile.h` 至類別。
+>Ensure that you import  to your class.`ADBMobile.h`
 
 ## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
@@ -46,7 +46,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 若要在應用程式中收集生命週期量度，請依下列範例新增呼叫至應用程式啟用的時間。
 
-### 預設. js中的WinJS
+### 預設。js中的WinJS
 
 ```js
 app.onactivated = function (args) { 
@@ -61,7 +61,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C# 在 App.xaml.cs 中
+### App.xaml.cs中的C#
 
 ```js
 public App() 
@@ -178,15 +178,15 @@ If you've looked at [SDK methods](/help/universal-windows/c-configuration/method
 
 >[!TIP]
 >
->Adobe保留命名空間 `a.`。除了這項限制外，上下文資料變數只需要在登入公司中是唯一的，以避免發生衝突。
+>Adobe保留命名空間 `a.`。 除此限制外，上下文資料變數在登入公司中只需是唯一的，以避免衝突。
 
 ## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。如需詳細資訊，請參閱 [產品變數](/help/universal-windows/analytics/products.md)。
+若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。 如需詳細資訊，請參閱 [產品變數](/help/universal-windows/analytics/products.md)。
 
 ## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [SDK methods](/help/universal-windows/c-configuration/methods.md) file. 啓用離線追蹤前，請注意設定檔案參考中所述的時間戳記需求。
+To store hits when the device is offline, you can enable offline tracking in the [SDK methods](/help/universal-windows/c-configuration/methods.md) file. 在啟用離線追蹤之前，請務必留意設定檔案參考中所述的時間戳記要求。
 
 ## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
 
