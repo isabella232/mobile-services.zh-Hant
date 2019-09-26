@@ -2,10 +2,10 @@
 description: 期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
 seo-description: 期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
 seo-title: 訪客期限值
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 訪客期限值
 topic: 開發人員和實施
-uuid: ba0308de-282e-46f9-a14 c-19fb6 d5 c363 e
+uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
@@ -20,10 +20,10 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ## Track the visitor lifetime value {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. 將[程式庫]新增至專案，並實施生命週期。
+1. 將[程式庫新增至您的專案並實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
-1. 匯入資料庫:
+   如需詳細資訊，請 *參閱核心實作和生命週期中的新增SDK和設定檔至IntelliJ IDEA或Eclipse*[專案](/help/android/getting-started/dev-qs.md)。
+1. 匯入程式庫:
 
    ```java
    import com.adobe.mobile.*;
