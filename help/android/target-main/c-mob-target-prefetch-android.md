@@ -3,7 +3,7 @@ description: Adobe Target 預先擷取功能使用 Android Mobile SDK，透過�
 seo-description: Adobe Target 預先擷取功能使用 Android Mobile SDK，透過快取伺服器回應，盡量以最少次數擷取提供項目內容。
 seo-title: Android 中的預先擷取選件內容
 title: Android 中的預先擷取選件內容
-uuid: 063451b8-e191-4d58-8d8-1723e310 ad1 a
+uuid: 063451b8-e191-4d58-8ed8-1723e310ad1a
 translation-type: tm+mt
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
@@ -16,7 +16,7 @@ Adobe Target 預先擷取功能使用 Android Mobile SDK，透過快取伺服器
 
 >[!IMPORTANT]
 >
->Adobe Target中的「自動目標」、「自動分配」和「自動個人化」活動類型不支援Android的Mobile SDK預先擷取功能。
+>Prefetch functionality in the Mobile SDKs for Android is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
 
 此程序會減少載入時間，避免多個網路呼叫，並允許通知 Adobe Target 行動應用程式使用者造訪哪一個 mbox。預先擷取呼叫期間，會擷取並快取所有內容，而且將從快取中擷取此內容，以供包含指定 mbox 名稱之快取內容的所有未來呼叫使用。
 
@@ -56,7 +56,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       final TargetCallback<Boolean> callback)
       ```
 
-   * 以下是此方法的參數：
+   * Here are the parameters for this method:
 
       * **targetPrefetchArray**
 
@@ -76,7 +76,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    >[!IMPORTANT]
    >
-   >如果已請求位置的內容已快取，則會立即在提供的回呼中傳回。否則，SDK 將會傳送網路要求給 Target 伺服器以擷取內容。
+   >If the content for the requested locations is already cached, it will be returned immediately in the provided callback. 否則，SDK 將會傳送網路要求給 Target 伺服器以擷取內容。
 
    * 以下是此方法的語法:
 
@@ -84,7 +84,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       public static void loadRequests( final List<TargetRequestObject> requestArray,  final Map<String, Object> profileParameters)
       ```
 
-   * 以下是此方法的參數：
+   * Here are the parameters for this method:
 
       * **requestArray**
 
@@ -104,7 +104,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       public static void clearPrefetchCache();
       ```
 
-   * 此方法沒有參數。
+   * There are no parameters for this method.
 
 * **createTargetRequestObject**
 
@@ -140,7 +140,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 以下是 Android 中支援預先擷取的公用類別:
 
-### 類別參考：targetPrefetchObject
+### 類別參考：TargetPrefetchObject
 
 封裝用於 mbox 預先擷取的 mbox 名稱和參數。
 
@@ -152,21 +152,21 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 * `mboxParameters`
 
    將針對此 `mboxParameters` 要求附加作為 `TargetPrefetchObject` 的鍵值值組集合。
-   * **類型**：地圖`<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 * **`orderParameters`**
 
    將附加至 order 節點下目前 mbox 的鍵值值組集合。
-   * **類型**：地圖 `<String, Object>`
+   * **類型**:地圖 `<String, Object>`
 
 * **`productParameters`**
 
    將附加至 product 節點下目前 mbox 的鍵值值組集合。
 
-   * **類型**：地圖 `<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 
-### 類別參考：TargetRequestObject
+### Class reference: TargetRequestObject
 
 此類別封裝 mbox 名稱、預設內容、mbox 參數，以及用於 Target 位置要求的傳回回撥。
 
@@ -180,19 +180,19 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    將針對此 `mboxParameters` 附加作為 `TargetRequestObject` 的鍵值值組集合。
 
-   * **類型：地圖`<String, Object>`**
+   * **Type: Map`<String, Object>`**
 
 * **`orderParameters`**
 
    將附加至 order 節點下目前 mbox 的鍵值值組集合。
 
-   * **類型**：地圖 `<String, Object>`
+   * **類型**:地圖 `<String, Object>`
 
 * **`productParameters`**
 
    將附加至 product 節點下目前 mbox 的鍵值值組集合。
 
-   * **類型**：地圖 `<String, Object>`
+   * **Type: Map**`<String, Object>`
 
 * **`defaultContent`**
 
@@ -204,7 +204,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    當指定的 `TargetRequestObject` 內容為可用狀態時，將呼叫函式指標。
 
-   * **類型**：Target. targetCallback`<String>`
+   * **Type: Target.TargetCallback**`<String>`
 
 
 ## Code sample {#section_BF7F49763D254371B4656E17953D520C}
