@@ -1,12 +1,12 @@
 ---
 description: 本資訊可協助您從 Android 資料庫 3.x 或 2.x 版移轉至 4.x 版。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 本資訊可協助您從 Android 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 seo-title: 移轉至 Android 4.x 資料庫
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 移轉至 Android 4.x 資料庫
 topic: 開發人員和實施
-uuid: 906e83bb-2faf-4aa2-ac9 b-3fBA6 b833 c7 e
+uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -80,9 +80,9 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### 從第 3.x 版移轉
 
-若要從3.x版移轉至4，請將組態變數/方法值移動至 `ADBMobileConfig.json` 變數。
+若要從3.x版移轉至4版，請將組態變數／方法值移至變 `ADBMobileConfig.json` 數。
 
-| 設定變數或方法 | `ADBMobileConfig.json` 檔案中的變數 |
+| 配置變數或方法 | Variable in the `ADBMobileConfig.json` file |
 |--- |--- |
 | setOfflineTrackingEnabled | "offlineEnabled" |
 | setOfflineHitLimit | "batchLimit" |
@@ -96,14 +96,14 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### 從第 2.x 版移轉
 
-若要從2.x版移轉至第版，請將值從第一欄移至第二欄中的變數。
+若要從2.x版移轉至4版，請將值從第一欄移至第二欄中的變數。
 
-| 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
+| 設定變數 | Variable in the `ADBMobileConfig.json` file |
 | --- |--- |
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server"移除 `"https://"` 首碼。通訊協定前置詞會根據 "ssl" 設定自動新增。 |
+| trackingServer | "server"，刪除首 `"https://"` 碼。 通訊協定前置詞會根據 "ssl" 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 "server" 然後啟用 "ssl"。 |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -122,11 +122,11 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 第 4 版 SDK 使用以下方法，取代使用以 Web 為中心的 `track` 和 `trackLink` 呼叫:
 
-* `trackState`這是您應用程式中可用的檢視，例如 `home dashboard`， `app settings`等等 `cart`。
+* `trackState`，這些是應用程式中可用的檢視， `home dashboard`例如 `app settings`、 `cart`等等。
 
    這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
 
-* `trackAction` 動作，例如 `logons``banner taps`應用程式 `feed subscriptions`中發生的動作，以及您想要測量的動作。
+* `trackAction` 動作，例 `logons`如 `banner taps`, `feed subscriptions`您要測量的應用程式中發生的動作。
 
 The `contextData` parameter for both of these methods is a `HashMap<String, Object>`, which contains the name-value pairs that are sent as context data.
 
@@ -170,7 +170,7 @@ Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-`ADBMobileConfig.json` 在檔案中啓用離線追蹤，所有其他離線設定都會自動完成。
+Offline tracking is enabled in the `ADBMobileConfig.json` file, and all other offline configuration is done automatically.
 
 移除對下列方法的呼叫:
 
