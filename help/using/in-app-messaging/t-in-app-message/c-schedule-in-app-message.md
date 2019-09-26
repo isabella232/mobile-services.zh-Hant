@@ -3,10 +3,10 @@ description: 您可以設定應用程式內訊息的排程選項，包含持續�
 keywords: 行動
 seo-description: 您可以設定應用程式內訊息的排程選項，包含持續時間、一週天數及當天的時間選項。
 seo-title: 排程應用程式內訊息
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 排程應用程式內訊息
 topic: 量度
-uuid: d10e691b-105a-4165-a49 d-d046 ce250 acd
+uuid: d10e691b-105a-4165-a49d-d046ce250acd
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,7 +19,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 >[!TIP]
 >
->日期範圍由您的時區定義。「特定日」和「時間範圍」則是依使用者裝置而定。
+>日期範圍由您的時區定義。 「特定日」和「時間範圍」則是依使用者裝置而定。
 
 1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
 1. Click **[!UICONTROL Schedule]**.
