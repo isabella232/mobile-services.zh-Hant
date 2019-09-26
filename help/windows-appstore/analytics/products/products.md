@@ -1,11 +1,11 @@
 ---
 description: 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
 seo-description: 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
-seo-title: 產品變數
-solution: Marketing Cloud、Analytics
+seo-title: Products variable
+solution: Marketing Cloud,Analytics
 title: 產品變數
 topic: 開發人員和實施
-uuid: 2057a564-06ae-4171-bbe7-0baffa71608 b
+uuid: 2057a564-06ae-4171-bbe7-0bafa71608b
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
@@ -16,7 +16,7 @@ source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
 
-若要設定 *`products`* 變數，請設定上下文資料索引鍵， `"&&products"`並使用定義的語法來設定值 *`products`*：
+若要設定 *`products`* 變數，請將上下文資料索引鍵設 `"&&products"`定為，並使用為下列項目定義的語法來設定值 *`products`*:
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -46,4 +46,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-您不需要使用處理規則對應 *`products`* 變數，因為它是由SDK直接在影像要求上設定。
+您不需要使用處理規 *`products`* 則來對應變數，因為它是由SDK直接在影像要求上設定。
