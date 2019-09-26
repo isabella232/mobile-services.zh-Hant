@@ -2,10 +2,10 @@
 description: 此範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 seo-description: 此範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 seo-title: 產品變數及其包含的銷售 eVar 與產品專屬事件
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 產品變數及其包含的銷售 eVar 與產品專屬事件
 topic: 開發人員和實施
-uuid: 94e882e4-b19 d-4c48-9dfb-331464490347
+uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
 source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
 
@@ -37,5 +37,5 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 >[!TIP]
 >
->如果您使用 *`&&products`* 變數觸發產品特定事件，您也必須在 *`&&events`* 變數中設定該事件，否則該事件在處理期間會被過濾掉。
+>如果您使用變數觸發產品特定事 *`&&products`* 件，您也必須在變數中設定該事件，否 *`&&events`* 則在處理期間會篩選掉該事件。
 
