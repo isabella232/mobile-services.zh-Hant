@@ -2,10 +2,10 @@
 description: 動作為發生在您要測量之 Android 應用程式中的事件。
 seo-description: 動作為發生在您要測量之 Android 應用程式中的事件。
 seo-title: 追蹤應用程式動作
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤應用程式動作
 topic: 開發人員和實施
-uuid: fe01c1df-f6 bb-4b32-b3 ef-959d2 c724 af6
+uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -22,9 +22,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
-1. 匯入資料庫:
+1. 匯入程式庫:
 
    ```java
    import com.adobe.mobile.*;
