@@ -1,9 +1,9 @@
 ---
 description: 在 Xamarin 應用程式中使用的類別和列舉清單。
 seo-description: 在 Xamarin 應用程式中使用的類別和列舉清單。
-seo-title: 類別、列舉和介面
-title: 類別、列舉和介面
-uuid: 2527b3ae-a44774 b2 e-9e90-b8 ec8 cb8 b
+seo-title: 類別、範圍和介面
+title: 類別、範圍和介面
+uuid: 2527b3ae-a447-4b2e-9e90-b3b8ec8cb47a
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
