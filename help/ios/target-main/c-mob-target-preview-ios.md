@@ -3,7 +3,7 @@ description: 目標預覽功能可協助您輕鬆執行目標活動的端對端 
 seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
 seo-title: 在 iOS 裝置上預覽目標
 title: 在 iOS 裝置上預覽目標
-uuid: d92867a4-0569-4732-a928-28f9 e2 f8 b21 e
+uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -18,9 +18,9 @@ For more information on how to set up and use Target Preview, see [Target Mobile
 
 >[!IMPORTANT]
 >
->若要使用Target Preview，您需要SDK4.14.0版或更新版本。
+>若要使用「Target預覽」，您需要SDK 4.14.0版或更新版本。
 
-## 目標預覽方法
+## Target Preview方法
 
 * **setPreviewRestartDeeplink**
 
