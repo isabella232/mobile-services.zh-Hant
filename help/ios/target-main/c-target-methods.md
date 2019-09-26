@@ -1,9 +1,9 @@
 ---
 description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
-seo-title: Adobe Mobile Services的iOS Target方法
-solution: Marketing Cloud、Analytics
-title: iOS適用的Target方法
+seo-title: iOS Target Methods for Adobe Mobile Services
+solution: Marketing Cloud,Analytics
+title: Target Methods for iOS
 topic: 開發人員和實施
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 translation-type: tm+mt
@@ -16,11 +16,11 @@ source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target、Audience Manager和Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞。例如， 方法會加上前置詞 `target`target。
+SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。 各方法會根據解決方案加上前置詞。例如， 方法會加上前置詞 `target`target。
 
 >[!TIP]
 >
->生命週期量度會以參數形式傳送至各 mbox 負載。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。如果您要在 `didFinishLaunching` 委派方法內傳送Target請求，請在Target實作代碼之前新增 `[ADBMobile trackAction:data:]` 或 `[ADBMobile trackState:data:]` 呼叫。如此一來，Target請求就會包含完整的生命週期資料。
+>生命週期量度會以參數形式傳送至各 mbox 負載。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。如果您是在委派方法內傳送Target `didFinishLaunching` 請求，請在Target實作程式碼 `[ADBMobile trackAction:data:]` 前 `[ADBMobile trackState:data:]` 新增或呼叫。 如此，Target請求將包含完整的生命週期資料。
 
 ## 類別參考：ADBTargetLocationRequest
 
@@ -36,7 +36,7 @@ NSMutableDictionary *parameters;
 
 >[!TIP]
 >
->下列常數用於自訂參數的設定時，易於使用。
+>為自訂參數設定索引鍵時，以下常數可方便使用。
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -99,7 +99,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    * 傳回: N/A
 
-   * 以下是此方法的參數：
+   * Here are the parameters for this method:
 
       * **`name`**
 
@@ -191,7 +191,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 * **targetCreateOrder&#x200B;ConfirmRequestWithName:&#x200B;orderId:&#x200B;orderTotal:&#x200B;productPurchasedId:&#x200B;parameters**
 
-   建立 `ADBTargetLocationRequest`一個。
+   建立 `ADBTargetLocationRequest`。
 
    * 以下是此方法的語法:
 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >自SDK4.10.0版起，Target不再使用Cookie。此方法會重設 thirdPartyID 和 sessionID。
+   >自SDK 4.10.0版起，Target不再使用Cookie。 此方法會重設 thirdPartyID 和 sessionID。
 
    * 以下是此方法的語法:
 
