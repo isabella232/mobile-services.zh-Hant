@@ -2,10 +2,10 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics
 topic: 開發人員和實施
-uuid: fa0ef6c4-c04 d-46955-9eb4-ada4 e9920 e6 c
+uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,11 +14,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Analytics {#analytics}
 
-將程式庫新增至專案之後，您可以在應用程式中的任何位置進行任何Analytics方法呼叫。
+將程式庫新增至專案後，您就可以在應用程式的任何地方進行任何Analytics方法呼叫。
 
 >[!TIP]
 >
->確定您匯入 `ADBMobile.h` 至類別。
+>Ensure that you import  to your class.`ADBMobile.h`
 
 ## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
 
@@ -48,7 +48,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 若要在應用程式中收集生命週期量度，請依下列範例新增呼叫至應用程式啟用的時間。
 
 
-### 預設. js中的WinJS
+### WinJS in default.js
 
 
 ```js
@@ -64,7 +64,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C# 在 App.xaml.cs 中
+### C# in App.xaml.cs
 
 ```js
 public App() 
@@ -93,7 +93,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 }
 ```
 
-### App. xaml. cpp中的C/CX
+### App.xaml.cpp中的C/CX
 
 ```js
 App::App() 
@@ -128,7 +128,7 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 ## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-如果您已查看 [「ADBMobile類別」和「方法參考」](/help/windows-appstore/c-configuration/methods.md)，您可能會懷疑如何設定事件、eVar、prop、heir和清單。在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+如果您已檢視過 [ADBMobile類別和方法參考](/help/windows-appstore/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承和清單。 在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
 處理規則具備以下優點:
 
@@ -145,9 +145,9 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 
 2013 年峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
 
-[處理規則概述](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[取得使用處理規則的授權](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[獲得使用處理規則的授權](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 我們建議您使用命名空間為內容資料變數分組，可協助您維持邏輯排序。例如，若您想要收集產品資訊，將需要定義以下變數:
 
@@ -185,15 +185,15 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 
 >[!NOTE]
 >
->Adobe保留命名空間 `a.`。除了此微小限制之外，您登入公司中的內容資料變數必須是唯一的以避免衝突。
+>Adobe保留命名空間 `a.`。 除了此微小限制之外，您登入公司中的內容資料變數必須是唯一的以避免衝突。
 
 ## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。請參閱 [產品變數](/help/windows-appstore/analytics/products/products.md)。
+若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。 See Products Variable.[](/help/windows-appstore/analytics/products/products.md)
 
 ## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). 啓用離線追蹤前，請注意設定檔案參考中所述的時間戳記需求。
+To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). 在啟用離線追蹤之前，請注意設定檔案參考中所述的時間戳記要求。
 
 ## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
 
