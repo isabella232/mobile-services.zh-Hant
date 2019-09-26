@@ -1,15 +1,15 @@
 ---
 title: 開發人員快速入門
-seo-title: BlackBerry開發人員快速入門Adobe Mobile Services
-description: BlackBerry開發人員快速入門指南可協助您瞭解實作Adobe Mobile Services的BlackBerry程式庫的程序。
-seo-description: BlackBerry開發人員快速入門指南可協助您瞭解實作Adobe Mobile Services的BlackBerry程式庫的程序。
+seo-title: Adobe Mobile services的BlackBerry開發人員快速入門
+description: BlackBerry開發人員快速入門手冊可協助您瞭解實作Adobe Mobile services專用BlackBerry程式庫的程式。
+seo-description: BlackBerry開發人員快速入門手冊可協助您瞭解實作Adobe Mobile services專用BlackBerry程式庫的程式。
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# 開發人員快速入門
+# Developer quick start
 
 此資訊可協助您瞭解實施 BlackBerry 程式庫的程序。
 
@@ -44,20 +44,20 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 1. 按一下&#x200B;**[!UICONTROL 「Include 資料夾」]欄位旁的****「新增」[!UICONTROL 。]**
 1. Navigate to the `ADBMobile-4.0.0BETA-BlackBerry` folder.
 1. Add the `public` folder to your includes.
-1. `ADBMobile-4.0.0BETA-BlackBerry` 在資料夾中，有一 `.json` 個設定檔案 `ADBMobileConfig.json`。
+1. In the `ADBMobile-4.0.0BETA-BlackBerry` folder, there is a `.json` config file named `ADBMobileConfig.json`.
 
    複製該檔案至專案的根目錄中。
 1. Right-click on your project and select **[!UICONTROL Refresh]**.
 
-   `.json` 檔案現在應該會顯示在 **[!UICONTROL 您的專案總管]**&#x200B;中。
+   The `.json` file should now be visible in your **[!UICONTROL Project Explorer]**.
 1. 開啟專案的 `bar-descriptor.xml` 檔案。
 1. 在視窗底部選取&#x200B;**[!UICONTROL 「資產」]標籤。**
 1. 確認已選取&#x200B;**[!UICONTROL 「(全部設定)」]**，然後按一下視窗&#x200B;**[!UICONTROL 「資產」]區段中的**「新增檔案」**。**
    >[!TIP]
    >
-   >QNX Momentics IDE中有個錯誤，有時會阻止這些按鈕出現。如果您看不到按鈕，請調整視窗大小，直到顯示為止。
+   >There is a bug in the QNX Momentics IDE that sometimes prevents those buttons from being visible. 如果您看不到按鈕，請調整視窗大小，直到它們出現為止。
 
-1. 按一下 **[!UICONTROL 工作區]**。
+1. 按一下「 **[!UICONTROL 工作區]**」。
 1. Find the `ADBMobileConfig.json` file in your project and click **[!UICONTROL OK]**.
 
 Your application can import the classes/interfaces from the `adobeMobileLibrary.jar` library by using `#include <ADBMobile.hpp>`.
@@ -87,6 +87,6 @@ In `bar-descriptor.xml` in the project directory, add the line `<permission>acce
 }
 ```
 
-You must at least update the `rsids` and `server` parameters. 如需詳細資訊，請參閱 [Adobe Mobile類別和方法參考](/help/blackberry/methods.md)。
+You must at least update the `rsids` and `server` parameters. 如需詳細資訊，請參 [閱Adobe Mobile類別和方法參考](/help/blackberry/methods.md)。
 
 現在您可以在 BlackBerry 10 應用程式中實施 Analytics。
