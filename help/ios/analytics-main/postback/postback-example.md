@@ -2,10 +2,10 @@
 description: 「回傳」功能的定義與原始碼範例。
 seo-description: 「回傳」功能的定義與原始碼範例。
 seo-title: 回傳範例
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 回傳範例
 topic: 開發人員和實施
-uuid: 809c5646-7a80-40b-984b-0af89d85259
+uuid: 809c5646-7a80-40df-984b-0af89d854259
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,7 +18,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!CAUTION]
 >
->此範例僅供參考。`ADBMobileConfig.json` 檔案應在 Adobe Mobile 使用者介面中設定，且不應手動修改。若您已啟用遠端訊息設定，手動編輯設定檔案可能會有危險。
+>This example is provided for informational purposes only. `ADBMobileConfig.json` 檔案應在 Adobe Mobile 使用者介面中設定，且不應手動修改。若您已啟用遠端訊息設定，手動編輯設定檔案可能會有危險。
 
 ## ADBMobileConfig.json definition {#section_0F6EC001AB6D488E815F50C7F5DA022E}
 
@@ -58,6 +58,6 @@ NSDictionary *contextData = @{@"user.name":@"bob", @"user.zip":@"90210"};
 [ADBMobile trackState:@"MainMenu" data:contextData];
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. URL會取代所有範本變數與點擊中的值。假設使用者的前一個工作階段長度為132秒，而該使用者位於iOS SDK4.6.0版中，則此為產生的URL範例：
+Because its state is `“MainMenu”`, this tracking call triggers the above postback message. URL會以點擊中的值取代所有範本變數。 假設使用者的上一個作業長度為132秒，且該使用者使用iOS SDK 4.6.0版，以下是產生的URL範例：
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-iOS&c27=cln,132`
