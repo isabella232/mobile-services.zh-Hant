@@ -2,7 +2,7 @@
 description: 以下提供一些關於如何透過里程碑視訊測量在 iOS 上測量視訊的資訊。
 seo-description: 以下提供一些關於如何透過里程碑視訊測量在 iOS 上測量視訊的資訊。
 seo-title: Video Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Video Analytics
 topic: 開發人員和實施
 uuid: d75fa415-78f6-4f50-a563-76949f040138
@@ -18,7 +18,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 >[!TIP]
 >
->在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需詳細資訊，請參閱 [「在Adobe Analytics中測量音訊和視訊](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)」。
+>在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需詳細資訊，請 [參閱「在Adobe Analytics中測量音訊和視訊」](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)。
 
 所有 平台上測量視訊的一般程序都很相似。本內容提供開發人員作業的基本概覽和程式碼範例。
 
@@ -32,7 +32,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    (選擇性) Custom Insight 變數可提供視訊路徑資訊。
 
-   * 變數類型：eVar
+   * Variable type: eVar
    * 預設過期時間: 造訪
    * Custom Insight (s.prop，用於視訊路徑)
 
@@ -40,7 +40,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    (選用) 提供視訊路徑資訊。必須由客戶服務中心為此變數啟用路徑。
 
-   * 變數類型：自訂分析(s. prop)
+   * Variable type: Custom Insight (s.prop)
    * 事件類型: 自訂分析 (s.prop)
 
 * **a.media.segment**
@@ -54,7 +54,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 視訊結束 (停止)
    Analytics 會在區段開始時計算第一個區段檢視，也就是訪客開始觀看的時候。後續的區段檢視會作為區段開始。
 
-   * 變數類型：eVar
+   * Variable type: eVar
    * 預設過期時間: 頁面檢視
 
 
@@ -62,35 +62,35 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為 `video` 的內容類型。不需專為視訊追蹤保留此變數。使用此相同變數而具有其他內容報表內容類型，可讓您分析不同內容類型中訪客的分佈情況。舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點來看，內容類型可讓您識別視訊訪客，並據此計算視訊轉換率。
 
-   * 變數類型：eVar
+   * Variable type: eVar
    * 預設過期時間: 頁面檢視
 
 * **a.media.timePlayed**
 
    計算自上次資料收集程序 (影像請求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
 
 * **a.media.view**
 
    指出有訪客檢視了視訊的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
 
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
 
 * **a.media.segmentView**
 
    指出有訪客檢視了視訊區段的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
 
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
 
 * **a.media.complete**
 
    指出使用者已檢視完整的視訊。預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。若為沒有明確結束時間的即時視訊和其他串流，您可以指定自訂的時間點來測量完成的檢視，例如在檢視多少特定時間之後。
 
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
 
 ## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
