@@ -3,10 +3,10 @@ description: 「App Store 概述」報表可提供應用程式商店量度的快
 keywords: 行動
 seo-description: 「App Store 概述」報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
 seo-title: App Store 概述報表
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: App Store 概述報表
 topic: 量度
-uuid: ac066f31-ec4 b-4b67-b839-780c2 cd1574 e
+uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -29,11 +29,11 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->Adobe Analytics中的應用程式商店量度(例如下載、排名、收入、評分等)需要與適當廠商整合。`appFigures` 目前提供整合功能，但您需要先`appFigures`向 **** 購買適當的產品及/或服務，才能啟用整合功能。如需 Data Connector 整合的詳細資訊，請參閱 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)。
+>Adobe Analytics中的應用程式商店量度，例如下載、排名、收入、評分等，需要與適當的廠商整合資料連接器。 `appFigures` 目前提供整合功能，但您需要先`appFigures`向 **** 購買適當的產品及/或服務，才能啟用整合功能。如需 Data Connector 整合的詳細資訊，請參閱 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)。
 
 >[!TIP]
 >
->除了按一下右上方的日曆圖示變更報表的日期範圍外，您還可以自訂部分向下切入報表、新增篩選器和系列(量度)、新增嚴格篩選，以及以PDF或CSV格式下載報表。For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>In addition to changing the report's date range by clicking the calendar icon in the top right, you can customize some of the drill-down reports, add filters and series (metrics), add sticky filters, and download the report in PDF or CSV format. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
 
 ## App Store 平均評分 {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
