@@ -2,18 +2,18 @@
 description: 「技術」報表可讓您查看使用您應用程式的不同裝置類型、作業系統、作業系統版本，以及行動電信業者。
 keywords: 行動
 seo-description: 「技術」報表可讓您查看使用您應用程式的不同裝置類型、作業系統、作業系統版本，以及行動電信業者。
-seo-title: 技術報告
-solution: Marketing Cloud、Analytics
-title: 技術報告
+seo-title: Technology report
+solution: Marketing Cloud,Analytics
+title: Technology report
 topic: 報表,量度
-uuid: 4b7322c4-8920-43cd-be72-5a5 bd515 ae84
+uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# 技術報告 {#technology}
+# Technology report {#technology}
 
 **[!UICONTROL 「技術」]報表可讓您查看使用您應用程式的不同裝置類型、作業系統、作業系統版本，以及行動電信業者。**
 
@@ -25,7 +25,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->除了這項資訊，您還可以檢視產品內教學課程，其中說明如何與散射環圖互動。To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>In addition to this information, you can view an in-product tutorial that describes how to interact with the sunburst chart. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
 
 ![](assets/report_technology.png)
 
@@ -51,7 +51,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->**[!UICONTROL 在電信業者]** 報告中，Wi-fi使用者會回報 `none`為。
+>在電信業 **[!UICONTROL 者報告]** 中，Wi-fi使用者報告為 `none`。
 
 
 ## 加入劃分和量度 {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,7 +60,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!IMPORTANT]
 >
->散射環愈多，處理的時間就愈久。
+>The more rings you add to the sunburst, the longer it takes to process.
 
 To add breakdowns and secondary metrics, click **[!UICONTROL Technology Breakdown]** in the title bar of the report and click **[!UICONTROL Customize]**.
 
