@@ -1,11 +1,11 @@
 ---
 description: 通用 Windows 平台程式庫所提供的 Audience Manager 方法清單。
 seo-description: 通用 Windows 平台程式庫所提供的 Audience Manager 方法清單。
-seo-title: Audience Manager方法
-solution: Marketing Cloud、Analytics
-title: Audience Manager方法
+seo-title: Audience Manager methods
+solution: Marketing Cloud,Analytics
+title: Audience manager方法
 topic: 開發人員和實施
-uuid: efbe8f33-7f53-40a6-b7 aa-a36 ac718 c047
+uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -22,9 +22,9 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 >
 >When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
 
-如果在JSON檔案中設定觀眾管理員，則會隨生命週期點擊傳送包含生命週期度量的訊號。
+如果在您的JSON檔案中設定了觀眾管理員，則包含生命週期度量的訊號會隨生命週期點擊傳送。
 
-* **getVisitorProfile(WinJS：getVisitorProfile)**
+* **GetVisitorProfile(winJS:getVisitorProfile)**
 
    傳回最近取得的訪客設定檔。如果尚未提交任何訊號，則傳回 `null`。訪客設定檔會儲存在 `SharedPreferences` 中，方便您在多次啟動應用程式時存取。
 
@@ -41,7 +41,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       var profile = ADB.AudienceManager.getVisitorProfile();
       ```
 
-* **getDpid(WinJS：getDpid)**
+* **GetDpid(winJS:getDpid)**
 
    傳回目前的 DPID。
 
@@ -58,7 +58,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       var dpid = ADB.AudienceManager.getDpid(); 
       ```
 
-* **getDpuuid(WinJS：getDpuuid)**
+* **GetDpuuid(winJS:getDpuuid)**
 
    傳回目前的 DPUUID。
 
@@ -75,7 +75,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       var dpuuid = ADB.AudienceManager.getDpuuid();
       ```
 
-* **setDpidAndDpuuid(WinJS：setDpidAndDpuuid)**
+* **SetDpidAndDpuuid(winJS:setDpidAndDpuuid)**
 
    設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
 
@@ -92,7 +92,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData(WinJS：SignalWithData)**
+* **SignalWithData(winJS:signalWithData)**
 
    傳送具有特徵的訊號給對象管理，並取得區塊回撥中傳回的相符區段。
 
