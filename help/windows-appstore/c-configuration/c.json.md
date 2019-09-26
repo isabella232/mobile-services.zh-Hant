@@ -1,18 +1,18 @@
 ---
 description: 此資訊可協助您使用 ADBMobile JSON 設定檔案。
 seo-description: 此資訊可協助您使用 ADBMobile JSON 設定檔案。
-seo-title: ADBMobileConfig. json config檔案
-solution: Marketing Cloud、Analytics
-title: ADBMobileConfig. json config檔案
+seo-title: ADBMobileConfig.json設定檔案
+solution: Marketing Cloud,Analytics
+title: ADBMobileConfig.json設定檔案
 topic: 開發人員和實施
-uuid: a45b91cc-982e-4d6c-a4 e4-d2 e4 b4 fa7556
+uuid: a45b91cc-982e-4d6c-a4e4-d2e4b4fa7556
 translation-type: tm+mt
 source-git-commit: 1dbdb998228bd3b0ae41e774b6e9aa111d8dbe1c
 
 ---
 
 
-# `ADBMobileConfig.json` config檔案 {#adbmobileconfig-json-config}
+# `ADBMobileConfig.json` 配置檔案 {#adbmobileconfig-json-config}
 
 Information to help you use the `ADBMobile.json` config file.
 
@@ -22,7 +22,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    (針對 Analytics 必要) 用來接收 Analytics 資料的一或多個報表套裝。多個報表套裝的 ID 應以逗號分隔，中間沒有空格。
 
-   * 以下是此變數的程式碼範例：
+   * Here are the code samples for this variable:
 
       ```js
       "rsids" : "rsid"
@@ -60,19 +60,19 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **batchLimit**
 
-   批次傳送點擊。例如，若設為 50，點擊會排入佇列，直到儲存至 50 個點擊才將所有佇列中的點擊一併傳送。需要 `offlineEnabled=true`。預設值為 `0` (無批次處理)。
+   批次傳送點擊。例如，若設為 50，點擊會排入佇列，直到儲存至 50 個點擊才將所有佇列中的點擊一併傳送。Requires . `offlineEnabled=true`The default value is  (No batching).`0`
 
 * **privacyDefault**
 
-   * `optedin` - 點擊會立即傳送。
-   * `optedout` - 點擊會被捨棄。
+   * `optedin` - hits are sent immediately.
+   * `optedout` - hits are discarded.
    * `optunknown` – 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       預設值為 `optedin`。
 
       >[!TIP]
       >
-      >這只會設定預設值。若已在程式碼中設定或變更此值，則程式碼設定的值會儲存在本機儲存空間，並持續使用直到變更此值，或應用程式解除安裝並重新安裝為止。
+      >這僅設定預設值。 若已在程式碼中設定或變更此值，則程式碼設定的值會儲存在本機儲存空間，並持續使用直到變更此值，或應用程式解除安裝並重新安裝為止。
 
 * **poi**
 
