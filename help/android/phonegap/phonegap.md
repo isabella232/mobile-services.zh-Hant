@@ -8,7 +8,7 @@ title: PhoneGap外掛程式總覽
 topic: 開發人員和實施
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -17,15 +17,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。若要建立PhoneGap專案，請參 [閱PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
 
-## 新版 Adobe Experience Cloud SDK
+## 全新Adobe Experience Platform Mobile SDK版本
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
->[!IMPORTANT]
->
->我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
+* 若要開始，請前往Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 
