@@ -1,9 +1,9 @@
 ---
 description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
 seo-title: Adobe Experience Platform Identity Service方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform Identity Service方法
 topic: 開發人員和實施
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
@@ -17,7 +17,7 @@ source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
 
-SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics、Target、Audience Manager和Adobe Experience Platform Identity Service。
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
 
 Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
 
@@ -27,7 +27,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
    >[!IMPORTANT]
    >
-   >此方法可能會造成封鎖網路呼叫。請勿在具時效性的執行緒上呼叫此方法。
+   >此方法可導致阻塞網路呼叫。 請勿在具時效性的執行緒上呼叫此方法。
 
    * 以下是此方法的語法:
 
@@ -147,9 +147,9 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       List<VisitorID> myVisitorIDs = Visitor.getIdentifiers(); 
       ```
 
-* **getURLVariablesAsync**
+* **getUrlVariablesAsync**
 
-   此方法在4.16.0版中引入，傳回包含訪客ID服務URL變數的適當字串。如需如何使用此方法的詳細資訊，請參閱 [Adobe Experience Platform Identity Service方法](/help/android/reference/hybrid-app.md)。
+   此方法於4.16.0版中推出，傳回包含訪客ID服務URL變數的適當格式字串。 如需使用此方法的詳細資訊，請參 [閱Adobe Experience Platform Identity Service方法](/help/android/reference/hybrid-app.md)。
 
    * 以下是此方法的語法:
 
