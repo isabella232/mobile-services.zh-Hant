@@ -5,7 +5,7 @@ seo-description: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元
 seo-title: Android方法
 solution: Marketing Cloud，開發人員
 title: Android方法
-uuid: 860af1c4-f57 e-4bcb-8308-4e316 da9 a27 b
+uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -18,9 +18,9 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
-* **debugLogging**
+* **DebugLogging**
 
-   傳回目前的偵錯記錄偏好設定，預設為false。
+   傳回目前的除錯記錄偏好設定，預設值為false。
 
    * 以下是此方法的語法:
 
@@ -54,8 +54,8 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 * **PrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
-   * `ADBMobilePrivacyStatus.OptIn` - 點擊會立即傳送。
-   * `ADBMobilePrivacyStatus.OptOut` - 點擊會被捨棄。
+   * `ADBMobilePrivacyStatus.OptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatus.OptOut` - hits are discarded.
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
    預設值設定在 [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) 檔案中。
 
@@ -75,7 +75,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **UserIdentifier**
 
-   如果已設定自訂識別碼，請傳回此識別碼。如果未設定自訂識別碼，則傳回null。預設值為 `null`。
+   如果已設定自訂識別碼，請傳回此識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
    * 以下是此方法的語法:
 
@@ -176,7 +176,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   (4.2或更新版本)設定用於SDK所建立通知的大型圖示。此圖示是當使用者在通知中心看到完整通知時所顯示的主要影像。
+   （4.2或更新版本）設定用於SDK所建立通知的大型圖示。 此圖示是當使用者在通知中心看到完整通知時所顯示的主要影像。
 
    * 以下是此方法的語法:
 
@@ -192,7 +192,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   (4.2或更新版本)設定用於SDK所建立通知的小型圖示。此圖示會顯示在狀態列中，當使用者在通知中心看到完整通知時，就會顯示次要影像。
+   （4.2或更新版本）設定用於SDK所建立通知的小型圖示。 此圖示會顯示在狀態列中，是當使用者在通知中心看到完整通知時顯示的次要影像。
 
    * 以下是此方法的語法:
 
@@ -210,7 +210,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **TrackingIdentifier**
 
-   傳回自動產生的 Analytics ID。這是應用程式專屬的唯一ID，會在初始啓動時產生並儲存起來，然後再使用。此ID會在應用程式升級之間保留，並在解除安裝時移除。
+   傳回自動產生的 Analytics ID。這是應用程式專屬的唯一ID，會在初始啟動時產生，並會從此時開始儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
 
    * 以下是此方法的語法:
 
@@ -230,7 +230,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    >[!TIP]
    >
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >這是唯一會增加頁面檢視次數的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -354,7 +354,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * Here is code sample for this method:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -424,7 +424,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **SendQueuedHits**
 
-   強制程式庫傳送離線佇列中的所有點擊，不論目前有多少點擊處於佇列中。
+   Forces the library to send all hits in the offline queue, regardless of how many hits are currently queued.
 
    * 以下是此方法的語法:
 
@@ -551,7 +551,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **CreateOrderConfirmRequest**
 
-   建立 `ADBTargetLocationRequest`一個。
+   建立 `ADBTargetLocationRequest`。
 
    * 以下是此方法的語法:
 
@@ -633,7 +633,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **AudienceSetDpidAndDpuuid**
 
-   設定 `dpid` 和 `dpuuid`。If `dpid` and `dpuuid` are set, they are sent with each signal.
+   設定 `dpid` 和 `dpuuid`。 If `dpid` and `dpuuid` are set, they are sent with each signal.
 
    * 以下是此方法的語法:
 
@@ -691,7 +691,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ## 影片 {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-如需視訊分析的詳細資訊，請參閱 [視訊分析](/help/android/analytics-main/video-qs.md)。
+如需視訊分析的詳細資訊，請參閱視 [訊分析](/help/android/analytics-main/video-qs.md)。
 
 * **MediaSettings**
 
