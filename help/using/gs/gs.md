@@ -3,10 +3,10 @@ description: 此資訊可協助您瞭解及使用 Adobe Mobile Services。
 keywords: 行動
 seo-description: 此資訊可協助您瞭解及使用 Adobe Mobile Services。
 seo-title: 快速入門
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 快速入門
 topic: 量度
-uuid: a7ae7c5a-dab8-4603-b4 cd-af73 a2 f09 f71
+uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -41,7 +41,7 @@ Adobe Mobile Services 可透過以下方式提高行動應用程式的互動率:
 
 在&#x200B;*「贏取」*&#x200B;階段，您可使用已經付費、擁有和賺取的媒體，在各個主要應用程式商店中贏取使用者下載應用程式。Adobe Mobile Services 能促進應用程式使用者的贏取程序。
 
-Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追蹤和深層連結，可讓您衡量應用程式使用者贏取管道的效益。借助追蹤哪些使用者來自哪個通道的行銷連結，您可以洞悉哪一個贏取通道對於驅動有利和參與度的使用者最有效益。
+Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追蹤和深層連結，可讓您衡量應用程式使用者贏取管道的效益。透過追蹤哪些使用者來自哪個通道的行銷連結，您可以洞悉哪些贏取通道對推動獲利及參與度最高的使用者。
 
 此外，深層連結則可將使用者直接導向您想讓他們看到的應用程式內容，且您可視需要鼓勵他們安裝應用程式。
 
@@ -121,7 +121,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追�
 
 如需有關位置的詳細資訊，請參閱下列內容:
 
-* [Mobile Services使用者指南中的位置](/help/using/location/c-location-overview.md)
+* [Mobile services使用指南中的位置](/help/using/location/c-location-overview.md)
 * Android SDK 指南中的[位置一節](/help/android/location/location.md)
 * iOS SDK 指南中的[位置一節](/help/ios/location/location.md)
 
