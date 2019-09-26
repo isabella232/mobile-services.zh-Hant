@@ -3,10 +3,10 @@ description: 自訂報表時，廣泛的靈活性對於最適合取得您需要�
 keywords: 行動
 seo-description: 自訂報表時，廣泛的靈活性對於最適合取得您需要之資料的報表類型，可能會造成一些問題。
 seo-title: 報告類型
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 報告類型
 topic: 報表,量度
-uuid: 8747b11e-31b1-47bc-ad55-db5 ab4 ef7078
+uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -21,11 +21,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 * 量度
 
-   度量可用來測量資料。量度是值，可以計數和相加，並用來查看應用程式中特定動作的發生頻率。常見量度有安裝、啟動、收入、期限值、登入。例如，每次您的應用程式啟動時，_ launches_ value會增加一。
+   度量可用來測量資料。量度是值，可以計數和相加，並用來查看應用程式中特定動作的發生頻率。常見量度有安裝、啟動、收入、期限值、登入。例如，每次您的應用程式啟動時， _launches_value會增加一。
 
 * 維度
 
-   維度可用於描述資料。維度是透過使用字串或像字串(例如郵遞區號)的數字來表示，並用來組織和劃分您的資料。例如: 作業系統版本、促銷活動名稱、產品名稱、行動電信業者。每個維度都有一組相關聯的特定值，For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   維度可用於描述資料。維度是使用字串或類似字串的數字（例如郵遞區號）來表示，並用於組織和分段您的資料。 例如: 作業系統版本、促銷活動名稱、產品名稱、行動電信業者。每個維度都有一組相關聯的特定值，For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
 
 以下是您可在 Adobe Mobile 使用者介面中產生的報表類型:
 
