@@ -7,7 +7,7 @@ title: iOS 延伸功能實施
 topic: 開發人員和實施
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -16,18 +16,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 您可以使用 iOS 延伸功能以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
 
-## 新版 Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 Launch。
+* To get started, go to Adobe Experience Platform Launch.
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。
 
 ## Recommendations for using the iOS SDK instead of your wrapper {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
@@ -45,7 +41,7 @@ In most cases when a user is using the Watch app, the containing app is running 
 
 >[!IMPORTANT]
 >
->Ensure that you have a project with at least the following targets:
+>請確定您的專案至少包含下列目標：
 >
 >* 一個要容納應用程式的目標。
 >* 一個用於延伸功能的目標。
