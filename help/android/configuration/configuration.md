@@ -1,18 +1,18 @@
 ---
 description: '以下資訊可協助您設定 Android SDK，包括 JSON 設定、點撃批次處理程序和 SDK 方法 '
 seo-description: '以下資訊可協助您設定 Android SDK，包括 JSON 設定、點撃批次處理程序和 SDK 方法 '
-seo-title: 組態概觀
-solution: Marketing Cloud、Analytics
-title: 組態概觀
+seo-title: 設定概觀
+solution: Marketing Cloud,Analytics
+title: 設定概觀
 topic: 開發人員和實施
-uuid: 207d6ee-7fc5-449d-b92 b-c2 d83 e8 e82 b4
+uuid: 207d6eae-7fc5-449d-b92b-c2d83e8e82b4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# 組態概觀 {#configuration}
+# 設定概觀 {#configuration}
 
 本節中的資訊可協助您設定Android SDK，包括JSON設定和點擊批次處理，並進一步瞭解SDK方法。
 
