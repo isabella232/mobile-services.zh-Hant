@@ -2,10 +2,10 @@
 description: 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 seo-title: 分析方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 分析方法
 topic: 開發人員和實施
-uuid: d49fe6de-cb32-9891-c567310-c567310 e59 a6
+uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -16,7 +16,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target、Audience Manager和Adobe Experience Platform Identity Service。Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。 Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
 
 上述各方法將用來傳送資料至您的 Adobe Analytics 報表套裝。
 
@@ -26,7 +26,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >這是唯一會增加頁面檢視次數的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -44,7 +44,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **trackAction:&#x200B;data:**
 
-   追蹤應用程式中的動作。您想要測量的動作(例如 `logons`、 `banner taps`和 `feed subscriptions`其他度量)會在您的應用程式中發生。
+   追蹤應用程式中的動作。Actions that you want to measure, such as , , , and other metrics, occur in your app.`logons``banner taps``feed subscriptions`
 
    >[!TIP]
    >
@@ -86,7 +86,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >只有在應用程式在背景時執行的程式碼才會呼叫此方法。
+   >This method should only be called in code that runs while your app is in the background.
 
    * 以下是此方法的語法:
 
@@ -263,7 +263,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **trackingSendQueuedHits**
 
-   需要SDK4.1。無論目前有多少點擊處於佇列中，都強制程式庫傳送離線佇列中的所有點擊。
+   Requires SDK 4.1. Regardless of how many hits are currently queued, forces the library to send all hits in the offline queue.
 
    * 以下是此方法的語法:
 
@@ -299,7 +299,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    >[!CAUTION]
    >
-   >手動清除佇列時請謹慎。此程序無法回復。
+   >手動清除佇列時請小心。 此程序無法回復。
 
    * 以下是此方法的語法:
 
@@ -321,7 +321,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    >[!IMPORTANT]
    >
-   >此方法不會增加頁面檢視次數。
+   >此方法不會增加頁面檢視。
 
    * 以下是此方法的語法:
 
