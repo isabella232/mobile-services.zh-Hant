@@ -1,23 +1,23 @@
 ---
 description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
-seo-title: Android的目標方法
-solution: Marketing Cloud、Analytics
-title: Android的目標方法
+seo-title: Target methods for Android
+solution: Marketing Cloud,Analytics
+title: Target methods for Android
 topic: 開發人員和實施
-uuid: 8e9808b2-ba80-4646-ba05-8e62 d4 fde065
+uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android的目標方法{#target-methods}
+# Target methods for Android{#target-methods}
 
 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target、Audience Manager和Adobe Experience Platform Identity Service。Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
+The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service]. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
 
 >[!TIP]
 >
@@ -33,11 +33,11 @@ public String defaultContent;
 public HashMap<String, Object> parameters;
 ```
 
-**字串常數**
+**String constants**
 
 >[!TIP]
 >
->下列常數用於自訂參數的設定時，易於使用。
+>The following constants are for ease of use when you set keys for custom parameters.
 
 ```java
 public static final String TARGET_PARAMETER_ORDER_ID   = "orderId"; 
@@ -116,44 +116,44 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    * **參數:**
 
-      以下是此方法的參數：
+      Here are the parameters for this method:
 
       * **名稱**
 
          您要擷取的 Target mbox/位置名稱。
 
-         * **類型：** 字串
+         * **** 類型：字串
       * **defaultContent**
 
          如果 Target 伺服器無法連線或使用者不符合促銷活動資格，則將會在回撥中傳回值。
 
-         * **類型：** 字串
+         * **Type:** String
       * **profileParameters**
 
          此字典中的值會根據 Target 要求進入「profileParameters」物件。
 
-         * **類型：** 地圖 `<String, Object>`
+         * **** Type: Map `<String, Object>`
       * **orderParameters**
 
          此字典中的值會根據 Target 要求進入「order」物件。
 
-         * **類型：** 地圖 `<String, Object>`
+         * **** Type: Map `<String, Object>`
       * **mboxParameters**
 
-         此字典中的值會前往Target的要求中。
+         Values in this dictionary will go in the request to Target.
 
-         * **類型：** 地圖 `<String, Object>`
+         * **** Type: Map `<String, Object>`
       * **requestLocationParameters**
 
          此字典中的值會根據 Target 要求進入「requestLocation」物件。
 
-         * **類型：** 地圖 `<String, Object>`
+         * **** Type: Map `<String, Object>`
       * **callBack**
 
          此方法將會與 Target 伺服器中的選件內容一併接受呼叫。如果 Target 伺服器無法連線或使用者不符合促銷活動資格，則將會傳回 defaultContent。
 
-         * **類型：** TargetCallback `<String>`
-   * 以下是此方法的範例程式碼：
+         * **** Type: TargetCallback `<String>`
+   * 以下是此方法的范常式式碼：
 
       ```java
       Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
