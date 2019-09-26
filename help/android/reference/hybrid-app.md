@@ -1,11 +1,11 @@
 ---
 description: 若您的應用程式會開啟行動網站內容，請確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
 seo-description: 若您的應用程式會開啟行動網站內容，請確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
-seo-title: 在應用程式和行動網頁之間追蹤訪客
-solution: Marketing Cloud、Analytics
-title: 在應用程式和行動網頁之間追蹤訪客
+seo-title: 應用程式和行動網頁之間的訪客追蹤
+solution: Marketing Cloud,Analytics
+title: 應用程式和行動網頁之間的訪客追蹤
 topic: 開發人員和實施
-uuid: 073572e-4c55-4b27-b4 a7-e4349 cde7 ff
+uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,9 +22,9 @@ Android SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲�
 
 >[!TIP]
 >
->應用程式訪客ID會持續透過升級。
+>應用程式訪客ID會在升級期間持續存在。
 
-## 行動網頁中的訪客ID
+## 行動網路中的訪客ID
 
 常見的行動網站實施會使用用於桌面網站之相同標準的 Analytics `s_code.js` 或 `AppMeasurement.js`。JavaScript 資料庫擁有其產生唯一訪客 ID 的方法，而這可能會導致您從應用程式開啟行動網站內容時，產生不同的訪客 ID。
 
@@ -34,7 +34,7 @@ Android SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲�
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
+   如需詳細資訊，請 *參閱核心實作和生命週期中的新增SDK和設定檔至IntelliJ IDEA或Eclipse*[專案](/help/android/getting-started/dev-qs.md)。
 
 1. 若要在用來開啟 Web 檢視的 URL 中附加訪客資訊，請呼叫 `visitorAppendToURL`:
 
@@ -65,7 +65,7 @@ Android SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲�
 
 ## Troubleshooting visitor tracking {#section_9B641F8569E34A089C52AA28EA4C891D}
 
-### `Visitor.appendToURL`我看不到。
+### I do not see `Visitor.appendToURL`.
 
 確認 Adobe SDK 隨附的父應用程式版本為 4.12.0 或更高版本。
 
@@ -89,5 +89,5 @@ Android SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲�
 
 >[!IMPORTANT]
 >
->若要讓Adobe驗證實施，您必須共用範例應用程式和相關網站。
+>若要允許Adobe驗證實作，您需要共用範例應用程式和相關網站。
 
