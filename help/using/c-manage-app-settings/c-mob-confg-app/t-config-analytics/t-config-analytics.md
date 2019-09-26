@@ -3,10 +3,10 @@ description: 建立新應用程式或編輯現有應用程式時，您可以在�
 keywords: 行動
 seo-description: 建立新應用程式或編輯現有應用程式時，您可以在「管理應用程式設定」頁面上配置「SDK 分析」選項。
 seo-title: 配置 SDK 分析選項
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 配置 SDK 分析選項
 topic: 量度
-uuid: fd3a21d2-6560-4e96-92Fe-b99 caac5 e834
+uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -25,7 +25,7 @@ Type information in the following fields under **[!UICONTROL SDK Analytics Optio
 
 * **[!UICONTROL 日期回溯工作階段點擊]**
 
-   啓用或停用Adobe SDK回溯作業資訊點擊的能力。工作階段資訊點擊目前包含當機和工作階段長度。啟用時，Adobe SDK 會日期回溯工作階段點擊至前一個工作階段之最後點擊的 1 秒後。這表示當機和工作階段資料會關連至事件發生的正確日期。應用程式的每個新啟動都會日期回溯一個點擊。停用時，Adobe SDK 會將工作階段資訊附加至目前的生命週期。
+   啟用或停用Adobe SDK回溯工作階段資訊點擊的功能。 工作階段資訊點擊目前包含當機和工作階段長度。啟用時，Adobe SDK 會日期回溯工作階段點擊至前一個工作階段之最後點擊的 1 秒後。這表示當機和工作階段資料會關連至事件發生的正確日期。應用程式的每個新啟動都會日期回溯一個點擊。停用時，Adobe SDK 會將工作階段資訊附加至目前的生命週期。
 
 * **[!UICONTROL 隱私]**
 
