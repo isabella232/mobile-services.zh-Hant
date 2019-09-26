@@ -2,24 +2,24 @@
 description: 在 Adobe Mobile Services UI 中，您可以排程推送訊息的傳遞時間，如立即傳遞、稍後傳遞以及設為週期性事件。這些事件可以排程為每日發生、每週發生或每月發生。
 keywords: 行動
 seo-description: 在 Adobe Mobile Services UI 中，您可以排程推送訊息的傳遞時間，如立即傳遞、稍後傳遞以及設為週期性事件。這些事件可以排程為每日發生、每週發生或每月發生。
-seo-title: 排程推送訊息
-solution: Marketing Cloud、Analytics
-title: 排程推送訊息
+seo-title: Schedule  Push Message
+solution: Marketing Cloud,Analytics
+title: 排程推播訊息
 topic: 量度
-uuid: 6810e27a-016f-4286-8Fe2-9972d85fa326
+uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# 排程：推播訊息{#schedule-push-message}
+# Schedule: push messages{#schedule-push-message}
 
 在 Adobe Mobile Services UI 中，您可以排程推送訊息的傳遞時間，如立即傳遞、稍後傳遞以及設為週期性事件。這些事件可以排程為每日發生、每週發生或每月發生。
 
 >[!TIP]
 >
->使用者可隨時修改推送訊息工作的排程設定。若沒有適用的日期可傳送重複排程訊息，例如每個月第 31 天的每月重複工作，則 2 月 31 日或當月 5 日星期二，則不會傳送訊息。
+>Users can modify the scheduling settings for a push message job at any time. 若沒有適用的日期可傳送重複排程訊息，例如每個月第 31 天的每月重複工作，則 2 月 31 日或當月 5 日星期二，則不會傳送訊息。
 
 請記住以下資訊:
 
@@ -27,18 +27,18 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 * 您可透過下列方式編輯已排程訊息:
 
-   * 將日期變更為稍後日期。
+   * 將日期變更為較晚的日期。
    * 將重複間隔變更為其他間隔。
 
       例如，若您原本有每天傳送的訊息，您可將頻率切換為每週傳送。
 
-## 排程週期性推送訊息之前
+## Before scheduling recurring push messages
 
 您&#x200B;**務必**&#x200B;先瞭解下列資訊再開始排程重複推送訊息:
 
 * **[!UICONTROL 「重複」]下拉式清單所顯示的選項視您輸入或選取的日期而定。**
 
-   例如，如果您輸入 `Saturday, October 7`，則會顯示下列選項：
+   For example, if you typed , the following options are displayed:`Saturday, October 7`
 
    * **[!UICONTROL 從不]**
    * **[!UICONTROL 每天]**
@@ -59,7 +59,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ## Schedule a recurring push message {#section_675BD754E5A04423A1751193698A978F}
 
-1. 在新推播訊息的「計劃」頁面上，選取 **[!UICONTROL 「已排程」]** 或「 **[!UICONTROL 現在」]**。
+1. On the Schedule page for a new push message, select Scheduled or Now.********
 
    For more information, see [Create a push message](/help/using/in-app-messaging/t-create-push-message/t-create-push-message.md).
 
@@ -69,15 +69,15 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 1. If you selected **[!UICONTROL Scheduled]**, click the calendar icon and select or type a start date.
 1. 輸入時間。 
-1. **[!UICONTROL 在「重復」]**&#x200B;下方，選取下列其中一個選項：
+1. Under **[!UICONTROL Repeat]**, select one of the following options:
 
    * **[!UICONTROL 從不]**
    * **[!UICONTROL 每天]**
    * **[!UICONTROL 每個星期二]**
-   * **`<Day x>`本月**
+   * **`<Day x>`of the month**
 
       視您選取或輸入的開始日而定，所顯示的選項會有所不同。
-   * **`<nth day>`每個月**
+   * **`<nth day>`每月**
 
       視您選取或輸入的開始日期而定，所顯示的值會有所不同。
 
@@ -88,7 +88,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
       此選項會以草稿格式儲存訊息。選擇此選項可以儲存尚未完成的訊息，或是儲存訊息以供其他人編輯並核准，之後再加以啟用。
 
-      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. 如果您選取推送訊息的日期和時間，則訊息會根據此排程推送。
+      If you selected **[!UICONTROL Now]** in the previous step, the draft message is sent immediately on activation. 如果您選取了推送訊息的日期和時間，則會根據此排程推送訊息。
 
    * **[!UICONTROL 儲存與排程]**
 
