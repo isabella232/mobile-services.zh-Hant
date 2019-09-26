@@ -1,11 +1,11 @@
 ---
 description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
 seo-description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
-seo-title: Android穿戴式裝置快速入門
-solution: Marketing Cloud、Analytics
-title: Android穿戴式裝置快速入門
+seo-title: Android可穿戴裝置快速入門
+solution: Marketing Cloud,Analytics
+title: Android可穿戴裝置快速入門
 topic: 開發人員和實施
-uuid: bfe5d41e-b17 c-4634-80ac-7a38671 ECB81
+uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-如需將SDK匯入專案的詳細資訊，請參閱 [核心實作與生命週期](/help/android/getting-started/dev-qs.md)。
+如需將SDK匯入專案的詳細資訊，請參閱核 [心實作和生命週期](/help/android/getting-started/dev-qs.md)。
 
 1. 將 `ADBMobileConfig.json` 檔案新增至專案的資產資料夾。
 1. 將 `adobeMobileLibrary-*.jar` 檔案新增至 libs 資料夾，或確認該檔案已由專案參照。
@@ -88,7 +88,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    }
    ```
 
-1. 新增 `WearListenerService` 至 `AndroidManifest.xml` 檔案：
+1. 新增 `WearListenerService` 至檔 `AndroidManifest.xml` 案：
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -175,7 +175,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    }
    ```
 
-1. 新增 `WearListenerService` 至 `AndroidManifest.xml` 檔案：
+1. 新增 `WearListenerService` 至檔 `AndroidManifest.xml` 案：
 
    ```java
    If you are using Google Play Services  < 8.2 
