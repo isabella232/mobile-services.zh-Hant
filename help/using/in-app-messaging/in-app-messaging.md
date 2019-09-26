@@ -3,7 +3,7 @@ description: 建立、管理和報告應用程式內以及推送訊息。
 keywords: 行動
 seo-description: 建立、管理和報告應用程式內以及推送訊息。
 seo-title: 傳訊
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 傳訊
 topic: 量度
 uuid: e32d3e35-2d09-4ddf-8919-75dc895abcb3
@@ -15,7 +15,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 # 傳訊 {#messaging}
 
-您可以建立、管理和報告應用程式內和推送訊息。
+You can create, manage, and report on in-app and push messages.
 
 ## 新版 Adobe Experience Cloud SDK
 
@@ -41,12 +41,12 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 * 原生警告
 * 本機通知
 
-為協助您瞭解應用程式內傳訊如何運作，以下是一些額外資訊：
+為協助您瞭解應用程式內訊息的運作方式，以下是其他資訊：
 
-* 應用程式內訊息需要SDK4.2版或更新版本。
-* 您必須指定誰擁有「行動應用程式管理員」權限。
+* 應用程式內訊息需要SDK 4.2版或更新版本。
+* 您必須指定擁有行動應用程式管理員權限的人員。
 
-   這些權限可讓您存取贏取連結和應用程式內訊息。如需詳細資訊，請參閱 [角色和權限](/help/using/gs/c-mob-roles-and-permissions.md)。
+   這些權限可讓您存取贏取連結和應用程式內訊息。 如需詳細資訊，請參 [閱角色和權限](/help/using/gs/c-mob-roles-and-permissions.md)。
 * 核准訊息後，訊息會自動發佈至應用程式。
 * 條件符合所設的訊息參數 (特徵、觸發器和排程) 時，SDK 就會向使用者呈現訊息。
 * 訊息可以包含自訂 HTML 或影像 (使用線上 URL)。
@@ -59,4 +59,4 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 推送訊息會傳送給選擇收到通知的使用者。您可以在 Analytics 區段或自訂區段中將這些推送訊息定位給使用者。推送訊息很適合用來與被動使用者重新互動，或是傳達與特定時間和位置相關的資訊，因為訊息會在您的應用程式外部顯示。
 
-在設定推送訊息之前，請先參閱 [「必要條件」以啓用推送訊息](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)。執行這些任務後，您必須在應用程式的設定中配置推送訊息。如需詳細資訊，請參閱[設定推送訊息](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md)。
+在您設定推播訊息之前，請參 [閱啟用推播訊息的必要條件](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)。 執行這些任務後，您必須在應用程式的設定中配置推送訊息。如需詳細資訊，請參閱 [Configure push messaging](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-push-messaging.md).
