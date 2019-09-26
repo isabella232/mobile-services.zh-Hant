@@ -1,45 +1,45 @@
 ---
-description: 您可以設定應用程式使用Apple Push Notification Service(APNS)或Firebase Cloud Messaging(FCM)。
+description: 您可以設定應用程式，使用Apple推播通知服務(APNS)或Firebase Cloud傳訊(FCM)。
 keywords: 行動
-seo-description: 您可以設定應用程式使用Apple Push Notification Service(APNS)或Firebase Cloud Messaging(FCM)。
-seo-title: 設定應用程式以使用APNS或FCM
-solution: Marketing Cloud、Analytics
-title: 設定應用程式以使用APNS或FCM
+seo-description: You can configure your app to use Apple Push Notification Service (APNS) or Firebase Cloud Messaging (FCM).
+seo-title: Configure App to use APNS or FCM
+solution: Marketing Cloud,Analytics
+title: Configure App to use APNS or FCM
 topic: 量度
-uuid: fa411f2a-ba47-4499-bbe5-1aadef6 b49 ad
+uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 translation-type: tm+mt
 source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 
 ---
 
 
-# 設定您的應用程式以使用APNS或FCM{#configure-app-to-use-apns-or-fcm}
+# Configure your app to use APNS or FCM{#configure-app-to-use-apns-or-fcm}
 
-您可以設定應用程式使用Apple Push Notification Service(APNS)或Firebase Cloud Messaging(FCM)。
+You can configure your app to use Apple Push Notification Service (APNS) or Firebase Cloud Messaging (FCM).
 
 ## Android 應用程式 {#section_41D304102CDF4586911EC1413AD35A10}
 
-### 如果您的應用程式未啓用FCM
+### If FCM is not enabled in your app
 
-若要設定您的Android應用程式在此情況下使用FCM：
+To configure your Android app to use FCM in this scenario:
 
 1. Go to [https://firebase.google.com/](https://firebase.google.com/) and log in with your Google Dev credentials.
 
-1. 按一下 **[!UICONTROL 「開始」，]** 然後選取 **[!UICONTROL 「新增專案]**」。
+1. 按一 **[!UICONTROL 下「開始]** 」並選 **[!UICONTROL 取「新增專案」]**。
 
-1. 輸入專案名稱，如果選擇加入Google Analytics for Firebase資料，請按一下接受控制器控制器條款的核取方塊。
+1. 輸入專案名稱，如果選擇使用Google Analytics for Firebase資料，請按一下接受控制器與控制器條款的核取方塊。
 
-1. 按一下 **[!UICONTROL 「建立專案]** 」，等待建立專案。
+1. 按一 **[!UICONTROL 下「建立專案]** 」，然後等待專案建立。
 
-1. 按一下建立的專案，然後顯示所建立專案的 **[!UICONTROL 「專案概述]** 」頁面。按一下「使用Android圖示」按鈕，將Android應用程式新增至專案。
+1. 按一下已建立的專案，就會 **[!UICONTROL 顯示已建立專案的「專案概述]** 」頁面。 按一下含有Android圖示的按鈕，將Android應用程式新增至專案。
 
-1. 如有需要，請輸入應用程式套件名稱、應用程式命名名稱和簽署憑證。
+1. 視需要輸入應用程式套件名稱、應用程式暱稱和簽署憑證。
 
-1. 依照設定精靈所建議的其他步驟進行。透過測試與Firebase伺服器的通訊來驗證Firebase設定後，請返回 **[!UICONTROL 「專案概述]** 」頁面。
+1. 請遵循安裝精靈建議的其他步驟。 在透過測試與Firebase伺服器的通訊來驗證Firebase設定後，請返回「專 **[!UICONTROL 案概述]** 」頁面。
 
-1. 按一下 **[!UICONTROL 「專案概述」]** 按鈕右邊的齒輪圖示，然後按一下 **[!UICONTROL 「專案設定]**」。
+1. 按一下「專案概述」按鈕右側的齒輪 **[!UICONTROL 圖示]** ，然後按一下「 **[!UICONTROL 專案設定」]**。
 
-1. 按一下 **[!UICONTROL 「雲端訊息]** 」索引標籤。
+1. 按一下「 **[!UICONTROL 雲端訊息]** 」標籤。
 
 1. Copy the **[!UICONTROL Legacy server key]** and **[!UICONTROL Sender ID]** for later use.
 
@@ -53,17 +53,17 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
    - Sender ID = 835015092250
    ```
 
-### 如果您的應用程式已啓用FCM
+### 如果您的應用程式已啟用FCM
 
-若要設定您的Android應用程式在此情況下使用FCM：
+若要設定您的Android應用程式，以在此案例中使用FCM:
 
 1. Go to [https://firebase.google.com/](https://firebase.google.com/) and log in with your Google Dev credentials.
 
-1. 按一下 **[!UICONTROL 「開始」]**。這將開啓專案索引頁面。尋找已啓用Firebase的專案，該專案會連結至您的Android應用程式，然後按一下專案卡片。
+1. 按一 **[!UICONTROL 下開始]**。 這將開啟項目索引頁。 尋找連結至Android應用程式的Firebase啟用專案，然後按一下專案卡。
 
-1. 然後應該載入專案的 **** 專案概述。按一下 **[!UICONTROL 「專案概述」]** 按鈕右邊的齒輪圖示，然後按一下 **[!UICONTROL 「專案設定]**」。
+1. 然 **[!UICONTROL 後應載入專案的「專案概述]** 」。 按一下「專案概述」按鈕右側的齒輪 **[!UICONTROL 圖示]** ，然後按一下「 **[!UICONTROL 專案設定」]**。
 
-1. 按一下 **[!UICONTROL 「雲端訊息]** 」索引標籤。
+1. 按一下「 **[!UICONTROL 雲端訊息]** 」標籤。
 
 1. Copy the **[!UICONTROL Legacy server key]** and **[!UICONTROL Sender ID]** for later use.
 
@@ -85,7 +85,7 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 
 1. 前往 [https://developer.apple.com/account](https://developer.apple.com/account) 並使用您的 [Apple Developer 帳戶](https://developer.apple.com/account)登入。
 1. Under **[!UICONTROL iOS Apps]**, select **[!UICONTROL Identifiers]**.
-1. 如果您已設定要推送的應用程式ID，請前往步驟11。
+1. 如果您已設定應用程式ID進行推播，請前往步驟11。
 1. Press the **[!UICONTROL +]** button to create a new App ID.
 1. 輸入應用程式 ID 說明。
 1. 輸入應用程式 ID 尾碼。
@@ -102,14 +102,14 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 1. 如果已經建立好推送憑證，則請跳至步驟 15。
 1. 向下捲動至&#x200B;**[!UICONTROL 「推播通知」]**，然後按一下正確的&#x200B;**[!UICONTROL 「建立憑證...」]**&#x200B;按鈕。
 
-   您按下的按鈕取決於您要建立開發或生產的憑證。
-1. 依照如何在Apple網站上建立CSR、上傳CSR及產生憑證的步驟進行。
+   The button you click depends whether you are creating a certificate for Development or Production.
+1. Follow the steps on how to create your CSR on Apple's website, upload the CSR, and generate your certificate.
 1. 向下捲動至&#x200B;**[!UICONTROL 「推播通知」]**&#x200B;區段，然後下載您剛才建立的 SSL 憑證。
-1. 按兩下已下載的憑證，將其新增至您的鑰匙圈。
+1. 連按兩下已下載的憑證，將其新增至您的鑰匙圈。
 
 ### SSL憑證和私密金鑰
 
-若要取得SSL憑證和私密金鑰(APNS)：
+若要取得您的SSL憑證和私密金鑰(APNS):
 
 1. 開啓&#x200B;**[!UICONTROL 「鑰匙圈存取」]**。
 1. Click **[!UICONTROL My Certificates]** and find the appropriate **[!UICONTROL iOS Push Services Certificate]** for your app and environment.
@@ -118,7 +118,7 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 
 1. 展開憑證，確認其包含私密金鑰。
 1. Right-click the private key and select **[!UICONTROL Export "*`<name of key>`*]**.
-1. 在對話方塊中輸入必要的資訊，然後儲存您的新 `.p12` 檔案。
+1. 在對話方塊中輸入必要資訊，並儲存新 `.p12` 檔案。
 
    您無須輸入密碼。
 
