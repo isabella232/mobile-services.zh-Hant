@@ -2,10 +2,10 @@
 description: iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以其為目標。
 seo-description: iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以其為目標。
 seo-title: iBeacon 追蹤
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: iBeacon 追蹤
 topic: 開發人員和實施
-uuid: 390883db-027e-4d12-86a16-86d514579db1
+uuid: 390883db-027e-4d12-8a16-86d514579db1
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
 
 呼叫 `trackBeacon` 時，會傳送下列信標資料至 Analytics 和 Target:
 
-* `a.beacon.uuid` - 信標的鄰近尤語系
+* `a.beacon.uuid` - ProximityUUID of the beacon
 * `a.beacon.major` – 主要信標編號，例如商店編號
 * `a.beacon.minor` – 次要信標編號，例如商店內的唯一編號
 * `a.beacon.prox` – 下列值代表使用者與信標之間的距離範圍:
@@ -28,12 +28,12 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
    * `2` 為附近
    * `3` 為遠距
 
-## 追蹤iBeacon {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## Track iBeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/dev-qs.md)。
-1. 匯入資料庫:
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
+1. 匯入程式庫:
 
    ```objective-c
    #import "ADBMobile.h"
@@ -59,7 +59,7 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-上下文資料值必須映射至自訂變數：
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-ltv.png)
 
