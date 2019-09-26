@@ -2,10 +2,10 @@
 description: 此資訊可協助您將 iOS SDK 與 Adobe Experience Cloud 搭配使用。
 seo-description: 此資訊可協助您將 iOS SDK 與 Adobe Experience Cloud 搭配使用。
 seo-title: Experience Cloud
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Experience Cloud
 topic: 開發人員和實施
-uuid: fb498937-b263-4cff-adde-8d709 f51 b950
+uuid: fb498937-b263-4cff-adde-8d709f51b950
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Experience Cloud {#experience-cloud}
 
-本節中的資訊可協助您將iOS SDK與Adobe Experience Cloud搭配使用。
+本節中的資訊可協助您搭配Adobe Experience cloud使用iOS SDK。
 
 ## 新版 Adobe Experience Cloud SDK
 
