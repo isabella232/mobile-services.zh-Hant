@@ -3,10 +3,10 @@ description: 您可以利用此資訊建立新應用程式和設定其關鍵量�
 keywords: 行動
 seo-description: 您可以利用此資訊建立新應用程式和設定其關鍵量度；設定 Adobe Analytics 和 Adobe Audience Manager 的 SDK 選項；設定贏取和 ID 服務選項；以及下載設定檔案、SDK 以及開發與測試工具。
 seo-title: 新增應用程式
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 新增應用程式
 topic: 量度
-uuid: 706b5e4d-1318-4a9e-8c69-fabf51 fa02 c
+uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -26,11 +26,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    * 按一下&#x200B;**[!UICONTROL 「新建」]以建立應用程式。**
    * To add additional apps, click Manage Apps in the left navigation menu and click **[!UICONTROL Add]**.
 
-      如需登入的詳細資訊，請參閱 [登入](/help/using/gs/gs-signin.md)。
+      For more information about signing in, see Sign in.[](/help/using/gs/gs-signin.md)
 
       >[!TIP]
       >
-      >若要管理現有應用程式，請按一下左側導覽功能表中的「管理應用程式」，然後按一下您要修改的應用程式。您可以在「應用程式資訊」頁面上進行變更。
+      >若要管理現有應用程式，請按一下左側導覽功能表中的「管理應用程式」，然後按一下您要修改的應用程式。 您可以在「應用程式資訊」頁面上進行變更。
 
 1. 在下列欄位輸入資訊:
 
@@ -42,22 +42,22 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * **[!UICONTROL 報告套裝 ID]**
 
-      此ID可唯一識別Adobe Analytics中的報表套裝。貴公司的前置詞會自動新增至 ID 開頭。
+      此ID可唯一識別Adobe Analytics中的報表套裝。 貴公司的前置詞會自動新增至 ID 開頭。
 
-   * **[!UICONTROL 複製設定從]**
+   * **[!UICONTROL 複製設定自]**
 
-      在新報表套裝中設定的變數、事件、處理規則和其他設定，就像在此報表套裝中一樣。所使用的「**複製設定來源**」報表套裝是「行動應用程式範本」，或您建立的報表套裝已啟用離線功能，在 Mobile Services 中建立的報表套裝才會啟用離線功能。
+      變數、事件、處理規則和其他設定在新報表套裝中的設定，與在此報表套裝中的設定完全相同。 所使用的「**複製設定來源**」報表套裝是「行動應用程式範本」，或您建立的報表套裝已啟用離線功能，在 Mobile Services 中建立的報表套裝才會啟用離線功能。
 
    * **[!UICONTROL 時區]**
 
-      所有報告日期都在此時區中。此設定會嘗試使用與您的瀏覽器所用時區相近的時區。
+      All reporting dates are in this time zone. 此設定會嘗試使用與您的瀏覽器所用時區相近的時區。
 
    * **[!UICONTROL 貨幣]**
 
-      收入會受到追蹤並報告為這種貨幣類型。
+      收入會被追蹤並報告為此類貨幣。
    >[!TIP]
    >
-   >若要使用虛擬報表套裝(VRS)，請參閱 [虛擬報表套裝](/help/using/manage-apps/c-mob-vrs.md)。
+   >若要使用虛擬報表套裝(VRS)，請參 [閱虛擬報表套裝](/help/using/manage-apps/c-mob-vrs.md)。
 
    * **[!UICONTROL 圖示]**
 
@@ -65,7 +65,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * **[!UICONTROL 名稱]**
 
-      (**Optional**) Type a descriptive name for the app. 此名稱可協助您快速找到應用程式，而有意義的名稱可幫助您快速瞭解應用程式的用途和設定。
+      (**Optional**) Type a descriptive name for the app. 此名稱可協助您快速找到應用程式，而有意義的名稱可協助您快速瞭解應用程式的用途和設定。
 
    * **[!UICONTROL 類型]**
 
@@ -83,7 +83,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
       * **[!UICONTROL 遊戲]**
 
-         此選項與&#x200B;**[!UICONTROL 「標準」]**&#x200B;選項類似，只是&#x200B;**「遊戲」]會將報表中所用的詞彙改成遊戲專用術語。[!UICONTROL **&#x200B;例如，使用者會變更為播放器。系統會自動為遊戲應用程式顯示遊戲專屬的報表。
+         此選項與&#x200B;**[!UICONTROL 「標準」]**&#x200B;選項類似，只是&#x200B;**「遊戲」]會將報表中所用的詞彙改成遊戲專用術語。[!UICONTROL **&#x200B;例如，使用者會變更為播放器。 系統會自動為遊戲應用程式顯示遊戲專屬的報表。
    * **[!UICONTROL 說明]**
 
       (**Optional**) Type a description for the app.
