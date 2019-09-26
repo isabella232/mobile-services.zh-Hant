@@ -2,7 +2,7 @@
 description: 您可以傳遞由任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，且不需要更新程式碼。
 seo-description: 您可以傳遞由任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，且不需要更新程式碼。
 seo-title: 應用程式內傳訊
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊
 topic: 開發人員和實施
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
@@ -41,7 +41,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
+   如需詳細資訊，請 *參閱核心實作和生命週期中的新增SDK和設定檔至IntelliJ IDEA或Eclipse*[專案](/help/android/getting-started/dev-qs.md)。
 
 1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
 
@@ -67,7 +67,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
    ```
 
-1. 匯入資料庫:
+1. 匯入程式庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -86,7 +86,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!IMPORTANT]
    >
-   >`messages` 或為 `remotes` 必要項目。
+   >`messages` 或必 `remotes` 要。
 
    若要在啟動時動態更新應用程式內訊息，必須有 `remotes` 物件且已正確設定:
 
@@ -122,15 +122,15 @@ Android Mobile SDK 可為您的應用程式內訊息追蹤以下量度:
 * 如果是全螢幕和警示樣式的應用程式內訊息:
 
    * **曝光次數**: 使用者觸發應用程式內訊息時。
-   * **點進**&#x200B;次數：使用者按下 **[!UICONTROL 「點進]**」。
-   * **取消**：使用者按下 **[!UICONTROL 取消]**。
+   * **點進次數**:當使用者按 **[!UICONTROL 下點進時]**。
+   * **取消**:當用戶按「取 **[!UICONTROL 消」時]**。
 
 * 如果是自訂的全螢幕應用程式內訊息，訊息中的 HTML 內容必須包含正確的程式碼，才能通知 SDK 追蹤以下的按鈕:
 
-   * **點進** (重新導向)範例追蹤：
+   * **點進(重新導向** )範例追蹤：
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **取消** (關閉)範例追蹤：
+   * **取消** （關閉）追蹤範例：
 
       `adbinapp://cancel`
 
@@ -140,7 +140,7 @@ Android Mobile SDK 可為您的應用程式內訊息追蹤以下量度:
 
 >[!IMPORTANT]
 >
->當您在Adobe Mobile Services中設定訊息時，會指定備援影像資產名稱，您必須確保指定的資源可用。
+>The fallback image asset name is specified when you configure the message in Adobe Mobile services, and you need to ensure that the specified resource is available.
 
 ## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
@@ -156,7 +156,7 @@ Android Mobile SDK 可為您的應用程式內訊息追蹤以下量度:
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * Here is the code example for this method:
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
