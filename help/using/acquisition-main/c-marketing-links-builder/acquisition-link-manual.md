@@ -1,27 +1,27 @@
 ---
-description: 您可以手動設定URL參數，建立行銷連結以即時贏取新的行動應用程式使用者。
+description: 您可以手動設定URL參數，以建立行銷連結，即時取得新的行動應用程式使用者。
 keywords: 行動
-seo-description: 您可以手動設定URL參數，建立行銷連結以即時贏取新的行動應用程式使用者。
-seo-title: 手動建立贏取連結
-solution: Marketing Cloud、Analytics
-title: 手動建立贏取連結
+seo-description: You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
+seo-title: Manually create Acquisition links
+solution: Marketing Cloud,Analytics
+title: Manually create Acquisition links
 topic: 量度
-uuid: d7709203-f793-4982-adaa-9c3 c914 aca2 b
+uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 translation-type: tm+mt
 source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 ---
 
 
-# 手動建立贏取連結 {#create-acquisition-link-manually}
+# Manually create Acquisition links {#create-acquisition-link-manually}
 
-您可以手動設定URL參數，建立行銷連結以即時贏取新的行動應用程式使用者。
+You can create Marketing Links to acquire new mobile app users on-the-fly by manually configuring the URL parameters.
 
 >[!IMPORTANT]
 >
->此功能需要SDK4.6版或更新版本。如需詳細資訊，請參閱 [「贏取必要條件](/help/using/acquisition-main/c-acquisition-prerequisites.md)」。
+>此功能需要SDK 4.6版或更新版本。 如需詳細資訊，請參閱「贏 [取必要條件](/help/using/acquisition-main/c-acquisition-prerequisites.md)」。
 
-下圖說明手動建立追蹤連結的元件，並顯示您在手動建立贏取連結時必須適當配置的不同URL參數。
+下圖說明手動建立追蹤連結的元件，並顯示您在手動建立贏取連結時必須正確設定的不同URL參數。
 
 ![](assets/acquisition_url.png)
 
@@ -33,7 +33,7 @@ source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 >[!TIP]
 >
->您使用的Android SDK版本對此程序沒有影響。
+>您使用的Android SDK版本對此程式沒有影響。
 
 若是 iOS，請確認您使用正確的通訊協定:
 
@@ -42,7 +42,7 @@ source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
 在符合下列條件的情況下:
 
-* `{mobile-services-app-hash}` 與設定 `acquisition:appid ` 檔案中的應用程式識別碼相符。
+* `{mobile-services-app-hash}` 與配置檔案中的應用程式標識符相 `acquisition:appid ` 匹配。
 
    You can locate `{mobile-services-app-hash}` in the Manage App Settings page under Acquisition SDK Options in the Tracking ID field.
 
@@ -100,7 +100,7 @@ source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
    如果您想比較不同贏取連結的績效，此參數為必需的報表項目。
 
-   * 範例值：2015年峰會
+   * 範例值：2015年首腦會議
 
 * **`ctxa.referrer.campaign.trackingcode`**
 
@@ -132,13 +132,13 @@ source-git-commit: 54e3b2d673356a616987537d20758bef8b044db4
 
    詞語
 
-   * 範例值：hiking+ boots
+   * 範例值：遠足和靴子
 
 
 當您手動建立贏取連結時，請記住下列資訊：
 
 * 不符合上表參數的所有參數，都會視為應用程式商店重新導向的一部分而傳遞。
-* 所有參數在技術上都是選擇性的，但如果至少指定一個商店ID，連結將無法運作。
+* All parameters are technically optional, although the link will be nonfunctional, if at least one store ID is specified.
 
    An example of a store ID is `a_g_id`/ `a_i_id`.
 
