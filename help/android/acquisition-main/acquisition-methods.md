@@ -1,12 +1,12 @@
 ---
 description: '以下為 Android 資料庫所提供的贏取方法 '
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: '以下為 Android 資料庫所提供的贏取方法 '
 seo-title: 贏取方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 贏取方法
 topic: 開發人員和實施
-uuid: 22ec432f-e7 ae-4e89-be07-26206bbacf8
+uuid: 22ec432f-e7ae-4e89-be07-26206beacf8
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
