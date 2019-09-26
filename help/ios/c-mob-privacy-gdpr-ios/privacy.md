@@ -2,10 +2,10 @@
 description: 本資訊可協助您處理 GDPR 資料刪除請求。
 seo-description: 本資訊可協助您處理 GDPR 資料刪除請求。
 seo-title: 設定使用者的選擇狀態
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 設定使用者的選擇狀態
 topic: 開發人員和實施
-uuid: 44a09a25-93c6-4e1a-b69 e-710018e8 b6 c3
+uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -22,7 +22,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 您可以透過下列設定，控制裝置上是否允許 Analytics、Target 及 Audience Manager 活動:
 
-* `privacyDefault` 在 [ADBMobile JSON設定](/help/ios/configuration/json-config/json-config.md)中。
+* `privacyDefault` in [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md).
 
    此設定會控制持續使用的初始設定，直到在程式碼中變更為止。
 
@@ -32,7 +32,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
    如需這些方法的詳細資訊，請參閱 [設定方法](/help/ios/configuration/json-config/json-config.md).
 
-以下是每個隱私權狀態的相關資訊：
+Here is information about each privacy status:
 
 * **選擇加入**
 
@@ -40,7 +40,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
    * Target: 會傳送 mbox 要求。
    * Audience Manager: 會傳送訊號和 ID 同步。
    * Value in the JSON config file: `optedin`
-   * 值in `setPrivacyStatus`： `ADBMobilePrivacyStatusOptIn`
+   * Value in : `setPrivacyStatus``ADBMobilePrivacyStatusOptIn`
 
 * **選擇退出**
 
@@ -48,7 +48,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
    * Target: 不允許 mbox 要求。
    * Audience Manager: 不允許訊號和 ID 同步。
    * Value in the JSON config file: `optedout`
-   * 值in `setPrivacyStatus`： `ADBMobilePrivacyStatusOptOut`
+   * Value in : `setPrivacyStatus``ADBMobilePrivacyStatusOptOut`
 
 * **未知**
 
@@ -59,7 +59,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
    * Target: 會傳送 mbox 要求。
    * Audience Manager: 會傳送訊號和 ID 同步。
    * Value in the JSON config file: `optunknown`
-   * 值in `setPrivacyStatus`： `ADBMobilePrivacyStatusUnknown`
+   * Value in : `setPrivacyStatus``ADBMobilePrivacyStatusUnknown`
 
 ## 範例 {#section_128AC455EE024193B5D4E5A565B53D00}
 
