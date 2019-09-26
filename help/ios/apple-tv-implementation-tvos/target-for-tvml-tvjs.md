@@ -3,7 +3,7 @@ description: 您只須替換 .xml 檔案，即可在 TVML/TVJS 應用程式中�
 seo-description: 您只須替換 .xml 檔案，即可在 TVML/TVJS 應用程式中充分利用 Adobe Target。實際做法是使用自訂的 ADBTarget XML 元素，便可指定您的頁面中要由 Target 內容替換的區域。
 seo-title: 適用於 TVML/TVJS 的 Adobe Target
 title: 適用於 TVML/TVJS 的 Adobe Target
-uuid: afd5a583-5266-43f2-8cb0-0ce89c53a57
+uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -16,7 +16,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. 如需詳細資訊，請參閱 [「使用TvOS進行Apple TV實施](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)」。
+>Before using the `ADBTarget` element in your TVML pages, you must configure your TVML/TVJS app to use the tvOS SDK. 如需詳細資訊，請參 [閱「Apple TV實作與tvOS」](/help/ios/apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)。
 
 ## 入門 {#section_88445645FD67416EAF6FDC3E3D3F5C33}
 
@@ -30,7 +30,7 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
 
 >[!TIP]
 >
->您應據此規劃要取代的項目。
+>您應據以規劃要取代的項目。
 
 您的使用案例可能會簡單如替換某標籤中的字串值，或複雜到替換整個頁面。
 
@@ -43,21 +43,21 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
    mbox 位置的名稱.
 
    * 屬性類型：字串
-   * 需要此屬性。
+   * This property is required.
 
 * **`id`**
 
    訂單ID。
 
    * 屬性類型：字串
-   * 不 **** 需要此屬性。
+   * 此屬性 **不** 必。
 
 * **`total`**
 
    訂單總計。
 
-   * 屬性類型：字串
-   * 不 **** 需要此屬性。
+   * Property type: String
+   * 此屬性 **不** 必。
 
 * **`purchasedProductIds`**
 
@@ -70,12 +70,12 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
       purchasedProductIds="product1,product2,product3" 
       ```
 
-   * 屬性類型：字串
-   * 不 **** 需要此屬性。
+   * Property type: String
+   * 此屬性 **不** 必。
 
 * **`mboxParameters`**
 
-   `mboxParameters` 的鍵值值組清單。此字串中的每個項目都會以分號分隔，而索引鍵值則由冒號分隔。
+   `mboxParameters` 的鍵值值組清單。此字串中的每個條目都以分號分隔，而鍵值以冒號分隔。
 
    * 以下是此屬性的程式碼範例：
 
@@ -84,14 +84,14 @@ The returned content from Target replaces all content between `<ADBTarget>` and 
       ```
 
    * 屬性類型：字串
-   * 不 **** 需要此屬性。
+   * 此屬性 **不** 必。
 
 * **`customParameterName`**
 
-   此屬性的值 `customParameterValue`為。
+   此屬性的值為 `customParameterValue`。
 
    * 屬性類型：字串
-   * 不 **** 需要此屬性。
+   * 此屬性 **不** 必。
 
 
 ## 範例 {#section_6D6D6E8C7FE147168FC30D83CBC06985}
