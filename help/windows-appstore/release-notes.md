@@ -2,10 +2,10 @@
 description: 適用於 Experience Cloud 解決方案之 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
 seo-description: 適用於 Experience Cloud 解決方案之 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
 seo-title: 發行說明
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 發行說明
 topic: 開發人員和實施
-uuid: 45634319-7949-4e24-b193-3f876 af97 a69
+uuid: 45634319-7949-4e24-b193-4f876af97a69
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -22,9 +22,9 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 | 功能 | 說明 |
 |--- |--- |
-| 地理位置 - 地標 | 地標可讓您設定緯度/經度中心點和決定半徑。之後程式庫決定呼叫提供的位置是否落在任一地標內。如需詳細資訊，請參閱 *Analytics中的地理位置與地標*[](/help/windows-appstore/analytics/analytics.md)。 |
-| 期限值 | 期限值可用來測量您應用程式中的使用者貢獻和使用量。每次您傳送一個值時，就會將該值新增至使用者的現有值。如需詳細資訊，請參閱 *Analytics中的期限值*[](/help/windows-appstore/analytics/analytics.md)。 |
-| 計時動作 | 計時動作可讓您輕鬆在應用程式內查看使用者完成一個端對端程序的時間。計時動作可讓您計算工作階段的時間量，以及跨工作階段的動作完成總時間。如需詳細資訊，請參閱 *Analytics* 中 [的計時動作](/help/windows-appstore/analytics/analytics.md)。 |
+| 地理位置 - 地標 | 地標可讓您設定緯度/經度中心點和決定半徑。之後程式庫決定呼叫提供的位置是否落在任一地標內。For more information, see Geo-location &amp; Points of Interest in Analytics.**[](/help/windows-appstore/analytics/analytics.md) |
+| 期限值 | 期限值是衡量使用者在應用程式中的貢獻與使用量的方法。 每次您傳送一個值時，就會將該值新增至使用者的現有值。如需詳細資訊，請參 *閱Analytics中的期限*[值](/help/windows-appstore/analytics/analytics.md)。 |
+| 計時動作 | 計時動作可讓您輕鬆在應用程式內查看使用者完成一個端對端程序的時間。計時動作可讓您計算工作階段的時間量，以及跨工作階段的動作完成總時間。如需詳細資訊，請參 *閱Analytics中的計時*[動作](/help/windows-appstore/analytics/analytics.md)。 |
 | 選擇加入/選擇退出 | 快速啟用和停用分析功能。 |
 
 
