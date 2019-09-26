@@ -2,10 +2,10 @@
 description: 本參考資料可協助您使用 Experience Cloud 解決方案的 Android SDK。
 seo-description: 本參考資料可協助您使用 Experience Cloud 解決方案的 Android SDK。
 seo-title: Android SDK參考概觀
-solution: Marketing Cloud、Analytics
-title: Android SDK參考概觀
+solution: Marketing Cloud,Analytics
+title: Android SDK reference overview
 topic: 開發人員和實施
-uuid: ce8f6dcb-0e2b-47f-99f2-fbdb97079161
+uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Android SDK reference overview {#android-sdk-reference}
 
-本節中的資訊可協助您使用適用於Experience Cloud解決方案的Android SDK。
+本節中的資訊可協助您使用Android SDK for Experience cloud解決方案。
 
 ## 新版 Adobe Experience Cloud SDK
 
