@@ -8,7 +8,7 @@ title: 生命週期量度
 topic: 開發人員和實施
 uuid: a8f3ebac-be3b-4948-82bb-105d46cff6d
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -17,22 +17,20 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 本節提供行動程式庫在實施生命週期後可自動測量的量度和維度，以及疑難排解生命週期資料的連結。 如需疑難排解的詳細資訊，請前往「疑難排解 [生命週期」資料](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)。
 
-## 新版 Adobe Experience Cloud SDK
+## 全新Adobe Experience Platform Mobile SDK版本
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
->[!IMPORTANT]
->
->我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
+* 若要開始，請前往Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 設定後，生命週期量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫傳送在參數中傳送至 Target，並以訊號形式傳送至對象管理。Analytics 和 Target 會使用相同格式，而觀眾管理則對每個量度使用不同的首碼。
 
-For Analytics, the context data that is sent with each lifecycle tracking call is automatically captured in and reported on by using the metric or dimension, and the exceptions are noted.
+對於Analytics，每次生命週期追蹤呼叫所傳送的上下文資料會使用量度或維度自動擷取並報告，並記錄例外情況。
 
 ### 量度
 
@@ -56,7 +54,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >This metric is not automatically stored in an Analytics metric. 您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics 上下文資料/目標參數: `a.DailyEngUserEvent`
    * Audience Manager 訊號: `c_a_DailyEngUserEvent`
@@ -67,7 +65,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >This metric is not automatically stored in an Analytics metric. 您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics 上下文資料/目標參數: `a.MonthlyEngUserEvent`
    * Audience Manager 訊號: `c_a_MonthlyEngUserEvent`
@@ -78,7 +76,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    >[!IMPORTANT]
    >
-   >This metric is not automatically stored in an Analytics metric. 您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics 上下文資料/目標參數: `a.LaunchEvent`
    * Audience Manager 訊號: `c_a_LaunchEvent`
@@ -236,7 +234,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    Populated by `trackLocation` methods.
 
-   * Analytics上下文資料／目標參數：
+   * Analytics Context Data/Target Parameters:
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -250,7 +248,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    由 trackLocation 方法填入。
 
-   * Analytics上下文資料／目標參數：
+   * Analytics Context Data/Target Parameters:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -264,7 +262,7 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
 
    由 trackLocation 方法填入。
 
-   * Analytics上下文資料／目標參數：
+   * Analytics Context Data/Target Parameters:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -286,53 +284,53 @@ For Analytics, the context data that is sent with each lifecycle tracking call i
    當裝置處於定義地標範圍內時由 trackLocation 方法填入。
 
    * Analytics Context Data/Target Parameters: `a.loc.dist`
-   * Audience manager特徵： `c_a_loc_dist`
+   * Audience Manager Trait: `c_a_loc_dist`
 
 * **期限值 (轉換變數)**
 
    由 trackLifetimeValue 方法填入。
 
    * Analytics Context Data/Target Parameters: `a.ltv.amount`
-   * Audience manager特徵： `c_a_ltv_amount`
+   * Audience Manager Trait: `c_a_ltv_amount`
 
 * **追蹤代碼**
 
    由「行動應用程式贏取」填入，並由 Adobe Mobile Services 自動產生。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
-   * Audience manager特徵： `c_a_referrer_campaign_trackingcode`
+   * Audience Manager Trait: `c_a_referrer_campaign_trackingcode`
 
 * ** 促銷活動
 
    行銷活動名稱，亦儲存於行銷活動變數中。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.name`
-   * Audience manager特徵： `c_a_referrer_campaign_name`
+   * Audience Manager Trait: `c_a_referrer_campaign_name`
 
 * **促銷活動內容**
 
    顯示連結的內容名稱或 ID。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
-   * Audience manager特徵： `c_a_referrer_campaign_content`
+   * Audience Manager Trait: `c_a_referrer_campaign_content`
 
 * **促銷活動媒體**
 
    行銷媒體，例如橫幅或電子郵件。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
-   * Audience manager特徵： `c_a_referrer_campaign_medium`
+   * Audience Manager Trait: `c_a_referrer_campaign_medium`
 
 * **促銷活動來源**
 
    原始轉介來源，例如電子報或社交媒體網路。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.source`
-   * Audience manager特徵： `c_a_referrer_campaign_source`
+   * Audience Manager Trait: `c_a_referrer_campaign_source`
 
 * **促銷活動詞語**
 
    您想要以此贏取追蹤的付費關鍵字或其他詞語。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.term`
-   * Audience manager特徵： `c_a_referrer_campaign_term`
+   * Audience Manager Trait: `c_a_referrer_campaign_term`
