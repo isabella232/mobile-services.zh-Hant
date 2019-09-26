@@ -1,12 +1,12 @@
 ---
 description: 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
 seo-title: Analytics 方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Analytics 方法
 topic: 開發人員和實施
-uuid: ac7c640e-9dcc-4724-b561-019cc025 d5 a7
+uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,7 +17,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Target]、Audience Manager]和Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞，例如 Experience Cloud ID 方法會加上前置詞 `analytics`。
+The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics], Target], Audience Manager], and the Adobe Experience Platform Identity Service]. 各方法會根據解決方案加上前置詞，例如 Experience Cloud ID 方法會加上前置詞 `analytics`。
 
 下列各方法將用來傳送資料至您的 Adobe Analytics 報表套裝:
 
@@ -29,7 +29,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Ta
 
    >[!TIP]
    >
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >This is the only tracking call that increments page views.
 
    * 以下是此方法的語法:
 
@@ -59,7 +59,8 @@ SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Ta
       Analytics.trackAction("heroBannerTouched",null);
       ```
 
-* **getTrackingIdentifier**&#x200B;傳回自動產生的訪客識別碼給Analytics。
+* **getTrackingIdentifier**
+Returns the automatically generated visitor identifier for Analytics.
 
    這是應用程式專屬的唯一訪客 ID，會在初次啟動時產生，並會儲存以供後續使用。ID 會在應用程式升級時保留，並於應用程式解除安裝時移除。
 
@@ -77,7 +78,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Ta
 
 * **trackLocation**
 
-   在定義的興趣點中傳送目前經緯度和位置。如需詳細資訊，請參閱 [地理位置和興趣點](/help/android/location/geo-poi.md)。
+   Sends the current latitude, longitude, and location in a defined point of interest. 如需詳細資訊，請 [參閱地理位置和地標](/help/android/location/geo-poi.md)。
 
    * 以下是此方法的語法:
 
@@ -118,10 +119,9 @@ SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Ta
    >此呼叫不會傳送點擊。
 
    * 以下是此方法的語法:
-
-      ```java
-      publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
-      ```
+   ```java
+   publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
+   ```
 
    * 以下是此方法的範例程式碼:
 
@@ -144,7 +144,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案]，包括Analytics]、Ta
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * Here is a code sample for this method:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
