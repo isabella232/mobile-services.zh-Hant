@@ -3,7 +3,7 @@ description: 新增程式庫至專案後，就可隨處在您的應用程式中�
 seo-description: 新增程式庫至專案後，就可隨處在您的應用程式中執行任何 Analytics 方法呼叫 (請務必匯入 ADBMobile.h 至類別)。
 seo-title: Analytics
 title: Analytics
-uuid: de018eda-b37 d-4afe-83a0-8011381d aff
+uuid: de018eda-b37d-4afe-83a0-8011381d7aff
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -32,7 +32,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 Lifecycle metrics are now ready to be captured, and Mobile Application Reports] appear in the **[!UICONTROL Reports]** menu in the marketing reports interface.
 
-## 收集生命週期量度 {#task_25D469C62DF84573AEB5E8E950B96205}
+## 收集生命週期度量 {#task_25D469C62DF84573AEB5E8E950B96205}
 
 1. To collect lifecycle metrics in your app, call `collectLifecycleData()` in the `ApplicationUI` constructor.
 
@@ -50,7 +50,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 ## Events, props, and eVars {#concept_B885D5A71A5D45129CE7C1C3426A7D28}
 
 
-如果您已查看 [「ADBMobile類別」和「方法參考」](/help/blackberry/methods.md)，您可能會懷疑如何設定事件、eVar、prop、heir和清單。在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+If you've looked at the ADBMobile Class and Method Reference, you are probably wondering where to set events, eVars, props, heirs, and lists. [](/help/blackberry/methods.md)在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
 處理規則具備以下優點:
 
@@ -68,7 +68,7 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 
 [處理規則](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[取得使用處理規則的授權](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[獲得使用處理規則的授權](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
 我們建議您使用命名空間為內容資料變數分組，可協助您維持邏輯排序。例如，若您想要收集產品資訊，將需要定義以下變數:
 
@@ -106,9 +106,9 @@ Lifecycle metrics are now ready to be captured, and Mobile Application Reports] 
 
 >[!TIP]
 >
->Adobe保留命名空間 `a.`。除了此微小限制之外，您登入公司中的內容資料變數必須是唯一的以避免衝突。
+>Adobe reserves the namespace . `a.`除了此微小限制之外，您登入公司中的內容資料變數必須是唯一的以避免衝突。
 
-## 啓用離線追蹤 {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
+## Enable offline tracking {#concept_402F4ECE240B4CA1B779322A7BFCB8DE}
 
 To store hits when the device is offline, you can optionally enable offline tracking in the `ADBMobileConfig.json` file.
 
@@ -116,4 +116,4 @@ To store hits when the device is offline, you can optionally enable offline trac
 
 ## 分析方法
 
-如需BlackBerry可用的Analytics方法清單，請參閱 *「Adobe行動類別」和「方法參考」* 中 [的「分析方法](/help/blackberry/m
+For a list of the Analytics methods that are available for BlackBerry, see Analytics methods in Adobe Mobile Class and Method Reference.**[](/help/blackberry/methods.md)
