@@ -2,10 +2,10 @@
 description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
 seo-description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
 seo-title: 使用 WatchOS 2 進行 Apple Watch 實施
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 使用 WatchOS 2 進行 Apple Watch 實施
 topic: 開發人員和實施
-uuid: 9498467e-db5 e-411e-a00 e-d19841 f485 de
+uuid: 9498467e-db5e-411e-a00e-d19841f485de
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,17 +14,17 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # Apple Watch implementation with WatchOS 2{#apple-watch-implementation-with-watchos}
 
-從WatchOS開始，您的WatchKit延伸模組可在Apple Watch上執行。Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
+從WatchOS 2開始，您的WatchKit擴充功能可在Apple watch上執行。 Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
 
 >[!TIP]
 >
->從 `AdobeMobileLibrary` v4.6.0開始 `WatchConnectivity` 支援。
+>從 `AdobeMobileLibrary` v4.6.0開始， `WatchConnectivity` 支援。
 
 ## 入門 {#section_70BC28BB69414F169196953D3D264BC1}
 
 >[!IMPORTANT]
 >
->確定您具有至少下列目標的專案：
+>請確定您的專案至少包含下列目標：
 >
 >* 容納應用程式
 >* WatchKit 應用程式
@@ -73,7 +73,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 1. In your app delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:` 在 `ADBMobile` 程式庫中被呼叫，會傳回一個布林值，指出字典是否用於依 `ADBMobile` 程式庫進行消費。如果其傳回 `No`，則訊息不會從 Adobe SDK 啟動。
+   `syncSettings:` 在程式庫中 `ADBMobile` 呼叫，此程式庫會傳回一個方塊，指出字典是否是供程式庫使用 `ADBMobile` 的。 如果其傳回 `No`，則訊息不會從 Adobe SDK 啟動。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -130,7 +130,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 1. In your extension delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
 
-   `syncSettings:` 在 `ADBMobile` 程式庫中被呼叫，會傳回一個布林值，指出字典是否用於依 `ADBMobile` 程式庫進行消費。如果其傳回 `NO`，則訊息不會從 Adobe SDK 啟動。
+   `syncSettings:` is called in the `ADBMobile` library, which returns a bool that indicates whether the dictionary was meant for consumption by the `ADBMobile` library. 如果其傳回 `NO`，則訊息不會從 Adobe SDK 啟動。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
