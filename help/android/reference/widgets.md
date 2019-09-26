@@ -1,12 +1,12 @@
 ---
 description: 可以使用與應用程式追蹤的同一方法來追蹤 Android 介面工具集。介面工具集會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 可以使用與應用程式追蹤的同一方法來追蹤 Android 介面工具集。介面工具集會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
 seo-title: Android Widget
-solution: Marketing Cloud、Analytics
-title: Android Widget
+solution: Marketing Cloud,Analytics
+title: Android widgets
 topic: 開發人員和實施
-uuid: 1a3718ff-967b-4c8e-ae0 b-ba15 bdbda0 a
+uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
