@@ -3,10 +3,10 @@ description: 這些資訊可協助您透過新增其他篩選器 (區段) 來自
 keywords: 行動
 seo-description: 這些資訊可協助您透過新增其他篩選器 (區段) 來自訂內建報表。
 seo-title: 新增篩選器至報表
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 新增篩選器至報表
 topic: 報表,量度
-uuid: 19c395cc-2e07-4588-825b-f2 f8 b10 a87 c1
+uuid: 19c395cc-2e07-4588-825b-f2f8b10a87c1
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -19,7 +19,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 >[!IMPORTANT]
 >
->行銷報告與分析、臨機分析、資料倉庫和其他Analytics報告介面中也提供行動應用程式量度。如果 Adobe Mobile 中沒有某劃分或報表類型，表示可能是使用其他報表介面所產生。
+>行銷報告與分析、臨機分析、資料倉庫和其他Analytics報表介面也提供行動應用程式量度。 如果 Adobe Mobile 中沒有某劃分或報表類型，表示可能是使用其他報表介面所產生。
 
 這些指示適用於任何報表，在此例中，我們以自訂&#x200B;**[!UICONTROL 「使用者與工作階段」]報表進行示範。**
 
@@ -39,7 +39,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    ![](assets/customize3.png)
 
-   若要新增Android做為篩選器，您必須重復此步驟。
+   若要新增Android作為篩選器，您必須重複此步驟。
 
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL Android]**.
 
@@ -54,7 +54,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    ![](assets/customize5.png)
 
-   您可以自訂此報告更多。從iOS8.3，您可以使用iOS8.3作業系統版本篩選器新增「首次啓動」度量，查看有多少iOS8.3客戶升級其應用程式並執行首次啓動。
+   您可以自訂此報表。 從iOS 8.3，您可以新增「首次啟動」量度與iOS 8.3作業系統版本篩選，以查看有多少iOS 8.3客戶升級了應用程式並執行了首次啟動。
 1. Under **[!UICONTROL First Launches]**, click **[!UICONTROL Add Filter]**, click **[!UICONTROL Add Rule]**, select **[!UICONTROL Operating Systems]** from the drop-down list, and select **[!UICONTROL iOS]**.
 1. Click **[!UICONTROL And]**, select **[!UICONTROL Operating System Versions]** from the drop-down list, and select **[!UICONTROL iOS 8.3]**.
 
@@ -68,4 +68,4 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    ![](assets/customize7.png)
 
-   花一些時間測試報表自訂選單上的不同選項，並且將您最喜愛的選項加入書籤。Adobe Mobile中的報表URL具有功能，可透過電子郵件傳送或新增至我的最愛。
+   花一些時間測試報表自訂選單上的不同選項，並且將您最喜愛的選項加入書籤。Report URLs in Adobe Mobile are functional and can be emailed or added to your favorites.
