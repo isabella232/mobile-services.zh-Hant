@@ -2,10 +2,10 @@
 description: 此資訊可協助您使用 iOS 應用程式中的傳訊。
 seo-description: 此資訊可協助您使用 iOS 應用程式中的傳訊。
 seo-title: 傳訊
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 傳訊
 topic: 開發人員和實施
-uuid: c6475ab4-015d-46b0-af28-5d0 df3 f4459 e
+uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
