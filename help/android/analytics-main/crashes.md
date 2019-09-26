@@ -2,10 +2,10 @@
 description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
 seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
 seo-title: 追蹤應用程式當機
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤應用程式當機
 topic: 開發人員和實施
-uuid: 3ab98c14-cdf-4060-ad88-ec07 c1 c6 f07
+uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -18,7 +18,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!TIP]
 >
->應用程式當機是生命週期度量的一部分。在追蹤當機之前，請將程式庫新增至您的專案並實施生命週期。如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
+>應用程式當機會會作為生命週期度量的一部分進行追蹤。 Before you can track crashes, add the library to your project and implement lifecycle. For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
 實施生命週期量度時，會呼叫各活動之 `Config.collectLifecycleData` 方法中的 `OnResume`。In the `onPause` method, a call is made to `Config.pauseCollectingLifeCycleData`.
 
@@ -38,7 +38,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
    >[!TIP]
    >
-   >您可以在從IDE再次啓動應用程式之前，先接地應用程式以避免此次損毀。
+   >您可以在從IDE再次啟動之前，先將應用程式背景化，以避免此次當機。
 
 1. If the last foreground Activity of your app is backgrounded and does not call `Config.pauseCollectingLifecycleData();` in `onPause`, and your app is manually closed or killed by the OS, the next launch results in a crash.
 
@@ -48,9 +48,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!IMPORTANT]
 >
->您需要依賴生命週期事件，因為包含活動的活動可執行您的程式碼。這將由片段的上層檢視處理。
+>您需要依賴包含活動可據以執行代碼的生命週期事件。 這將由片段的上層檢視處理。
 
-## (選擇性)實作活動生命週期回呼
+## （可選）實作活動生命週期回呼
 
 自 API Level 14 開始，Android 允許活動的全域生命週期回撥。For more information, see [Application](https://developer.android.com/reference/android/app/Application).
 
