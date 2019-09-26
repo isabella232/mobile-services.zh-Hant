@@ -1,12 +1,12 @@
 ---
 description: 以下資訊可協助您在 Android 裝置上往返舊版贏取促銷活動連結。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下資訊可協助您在 Android 裝置上往返舊版贏取促銷活動連結。
 seo-title: 測試舊版贏取
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 測試舊版贏取
 topic: 開發人員和實施
-uuid: bb7ace96-68eb-4f43-b3 cf-af80730 b9
+uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
 translation-type: tm+mt
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
