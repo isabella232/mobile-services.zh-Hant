@@ -28,7 +28,7 @@ source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
    >[!TIP]
    >
-   >推送訊息ID是您在步驟中所放置的ID。
+   >推播訊息ID是您在步驟1中找到的ID。
 
    由於&#x200B;**[!UICONTROL 觸發器]下拉式清單沒有此觸發器，因此您必須手動新增。**
 
