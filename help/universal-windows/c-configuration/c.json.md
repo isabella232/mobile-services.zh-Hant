@@ -1,9 +1,9 @@
 ---
 description: 此資訊可協助您使用 ADBMobile JSON 設定檔案。
 seo-description: 此資訊可協助您使用 ADBMobile JSON 設定檔案。
-seo-title: ADBMobileConfig. json config
-solution: Marketing Cloud、Analytics
-title: ADBMobileConfig. json config
+seo-title: ADBMobileConfig.json config
+solution: Marketing Cloud,Analytics
+title: ADBMobileConfig.json設定
 topic: 開發人員和實施
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
@@ -12,7 +12,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 ---
 
 
-# ADBMobileConfig. json config檔案 {#adbmobileconfig-json-config}
+# ADBMobileConfig.json設定檔案 {#adbmobileconfig-json-config}
 
 此資訊可協助您使用 ADBMobile JSON 設定檔案。
 
@@ -52,7 +52,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 `false`.
 
-   如果此項目未正確設定，將會遺失資料。如果您不確定報表套裝是否啓用時間戳記，請聯絡客戶服務。If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   如果此項目未正確設定，將會遺失資料。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    預設值為 `false`。
 
@@ -66,17 +66,17 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    批次傳送點擊。
 
-   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. 需要 `offlineEnabled=true`，而預設值為 `0` (無批次處理)。
+   For example, if set to `50`, hits are queued until 50 are stored, then all queued hits are sent. 需 `offlineEnabled=true`要，且預設值為( `0` 無批次處理)。
 
 * **privacyDefault**
 
    選項包括：
 
-   * `optedin` - 點擊會立即傳送。
-   * `optedout` - 點擊會被捨棄。
+   * `optedin` - hits are sent immediately.
+   * `optedout` -會捨棄點擊。
    * `optunknown` – 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      這只會設定預設值。若已在程式碼中設定或變更此值，則程式碼設定的值會儲存在本機儲存空間，並持續使用直到變更此值，或應用程式解除安裝並重新安裝為止。
+      這僅設定預設值。 若已在程式碼中設定或變更此值，則程式碼設定的值會儲存在本機儲存空間，並持續使用直到變更此值，或應用程式解除安裝並重新安裝為止。
 
       預設值為 `optedin`。
 
