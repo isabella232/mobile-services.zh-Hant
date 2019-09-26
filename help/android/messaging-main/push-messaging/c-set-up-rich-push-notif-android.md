@@ -3,7 +3,7 @@ description: 您可在 Android 通知內附加影像檔案。加入視覺元件�
 seo-description: 您可在 Android 通知內附加影像檔案。加入視覺元件可顯著增加使用者與推送通知的互動。
 seo-title: 接收豐富推送通知
 title: 接收豐富推送通知
-uuid: 4a0340a6-666b-49b6-907a-9afc966dfda
+uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
 translation-type: tm+mt
 source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
@@ -30,7 +30,7 @@ source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
 
 >[!IMPORTANT]
 >
->包含 `onMessageReceived()` 實作的類別會處理收到的資料。
+>The class that contains the  implementation handles the data that is received.`onMessageReceived()`
 
 If the push message contains a Media URL, the URL will be available in the `RemoteMessage` parameter that is passed to the `onMessageReceived()` function. 使用的鍵值為 `attachment-url`，如下列程式碼範例所示:
 
