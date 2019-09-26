@@ -1,21 +1,21 @@
 ---
 description: 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。
-seo-title: PhoneGap增效模組概觀
-solution: Marketing Cloud、Analytics
-title: PhoneGap增效模組概觀
+seo-title: PhoneGap外掛程式總覽
+solution: Marketing Cloud,Analytics
+title: PhoneGap外掛程式總覽
 topic: 開發人員和實施
-uuid: c5c32357-d8 df-458a-b0 e8-e0 c56040241 d
+uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# PhoneGap增效模組概觀 {#phonegap-plug-in}
+# PhoneGap外掛程式總覽 {#phonegap-plug-in}
 
-此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。若要建立PhoneGap專案，請參閱 [PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
+此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。若要建立PhoneGap專案，請參 [閱PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
 
 ## 新版 Adobe Experience Cloud SDK
 
@@ -41,15 +41,15 @@ cordova plugin add adobe-mobile-services
 
 ## 納入外掛程式
 
-1. 將 `ADBMobile_PhoneGap.java` 檔案拖曳至您的 `src` 檔案夾。
+1. 將檔案 `ADBMobile_PhoneGap.java` 拖曳至您的檔 `src` 案夾。
 
    To move this file, click **[!UICONTROL OK]**.
 
-1. 將 `ADB_Helper.js` 檔案拖曳至包含 `index.html` 檔案的資料夾
+1. 將檔 `ADB_Helper.js` 案拖曳至包含檔案的檔 `index.html` 案夾
 
    To move this file, click **[!UICONTROL OK]**.
 
-1. `res/xml` 在資料夾中，開啓 `config.xml` 檔案並新增外掛程式，加入下列項目：
+1. In the `res/xml` folder, open the `config.xml` file and register an new plugin by adding the following:
 
    ```xml
    <feature name="ADBMobile_PhoneGap"> 
@@ -63,10 +63,10 @@ cordova plugin add adobe-mobile-services
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
    ```
 
-## 加入AppMeasurement程式庫
+## 包含AppMeasurement程式庫
 
 1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. 將 `adobeMobileLibrary.jar` 檔案拖曳至您的 `src` 檔案夾。
+1. 將檔案拖 `adobeMobileLibrary.jar` 曳至您的檔 `src` 案夾。
 
    To move this file, click **[!UICONTROL OK]**.
 
