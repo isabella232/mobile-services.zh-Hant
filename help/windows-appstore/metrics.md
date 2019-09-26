@@ -1,12 +1,12 @@
 ---
 description: 列出行動程式庫可自動測量的量度和維度。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 列出行動程式庫可自動測量的量度和維度。
 seo-title: 生命週期量度
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 生命週期量度
 topic: 開發人員和實施
-uuid: c483271f-f620-46f4-aad8-d5 f02 d763 f7 d
+uuid: c483271f-f620-46f4-aad8-d5f02d763f7d
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -17,13 +17,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 列出行動程式庫可自動測量的量度和維度。
 
-如需詳細資訊，請參閱 [疑難排解生命週期資料](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)。
+如需詳細資訊，請參閱「疑難排 [解生命週期資料」](https://helpx.adobe.com/analytics/kb/troubleshoot-lifecycle-data.html)。
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-設定後，生命週期量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫在參數中傳送至 Target，並以訊號形式傳送至 Audience Manager。Analytics和Target使用相同格式，Audience Manager則會針對每個度量使用不同的首碼。
+設定後，生命週期量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫在參數中傳送至 Target，並以訊號形式傳送至 Audience Manager。Analytics和Target使用相同的格式，而Audience manager對每個量度使用不同的首碼。
 
-對於Analytics，會使用下列度量或維度自動擷取與報告隨每個生命週期追蹤呼叫傳送的上下文資料，並指出例外狀況。
+For Analytics, the context data that is sent with each lifecycle tracking call is automatically captured in and reported on by using the metric or dimension listed below, and exceptions are noted.
 
 ### 量度
 
@@ -47,7 +47,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!TIP]
    >
-   >此度量不會自動儲存在Analytics量度中。您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics context data/Target parameter: `a.DailyEngUserEvent`
    * Audience Manager signal: `c_a_DailyEngUserEvent`
@@ -58,7 +58,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!IMPORTANT]
    >
-   >此度量不會自動儲存在Analytics量度中。您必須建立處理規則，設定自訂事件來擷取此量度。
+   >此量度不會自動儲存在Analytics量度中。 您必須建立處理規則，設定自訂事件來擷取此量度。
 
    * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
    * Audience Manager signal: `c_a_MonthlyEngUserEvent`
@@ -88,7 +88,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 * **安裝日期**
 
-   安裝後首次啟動的日期。日期格式 `MM/DD/YYYY`為。
+   安裝後首次啟動的日期。日期格式為 `MM/DD/YYYY`。
 
    * Analytics context data/Target: `a.InstallDate`
    * Audience Manager: `c_a_InstallDate`
@@ -148,7 +148,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!IMPORTANT]
    >
-   >此量度不會自動儲存在Analytics變數中。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
+   >此量度不會自動儲存在Analytics變數中。 您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics context data/Target: `a.DaysSinceLastUpgrade`
    * Audience Manager: `c_a_DaysSinceLastUpgrade`
@@ -159,7 +159,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!IMPORTANT]
    >
-   >此量度不會自動儲存在Analytics變數中。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
+   >此量度不會自動儲存在Analytics變數中。 您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics context data/Target: `a.LaunchesSinceUpgrade`
    * Audience Manager: `c_a_LaunchesSinceUpgrade`
@@ -177,7 +177,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!IMPORTANT]
    >
-   >此量度不會自動儲存在Analytics變數中。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
+   >This metric is not automatically stored in an Analytics variable. 您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics context data/Target: `a.CarrierName`
    * Audience Manager: `c_a_CarrierName`
@@ -192,7 +192,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-依照說明中列出的方法，下列度量和維度會在行動解決方案變數中擷取。
+以下度量和維度會依說明中所列的方法擷取到行動解決方案變數中。
 
 ### 量度
 
@@ -201,21 +201,21 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.total`
-   * Audience Manager特徵： `c_a_action_time_total`
+   * Audience manager特徵： `c_a_action_time_total`
 
 * **應用程式中的動作時間**
 
    Populated by `trackTimedAction` methods.
 
    * Analytics context data/Target parameter: `a.action.time.inapp`
-   * Audience Manager特徵： `c_a_action_time_inapp`
+   * Audience manager特徵： `c_a_action_time_inapp`
 
 * **期限值 (事件)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Audience Manager特徵： `c_a_ltv_amount`
+   * Audience manager特徵： `c_a_ltv_amount`
 
 ## 維度
 
@@ -227,7 +227,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager特徵：
+   * Audience manager特徵：
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -237,11 +237,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    Populated by `trackLocation` methods.
 
-   * Analytics上下文資料/Target參數：
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager特徵：
+   * Audience Manager trait:
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -251,11 +251,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    Populated by `trackLocation` methods.
 
-   * Analytics上下文資料/Target參數：
+   * Analytics context data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager特徵：
+   * Audience Manager trait:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -266,18 +266,18 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    當裝置處於定義地標範圍內時由 `trackLocation` 方法填入。
 
    * Analytics context data/Target parameter: `a.loc.poi`
-   * Audience Manager特徵： `c_a_loc_poi`
+   * Audience manager特徵： `c_a_loc_poi`
 
 * **至興趣點中心的距離**
 
    當裝置處於定義地標範圍內時由 `trackLocation` 方法填入。
 
    * Analytics context data/Target parameter: `a.loc.dist`
-   * Audience Manager特徵： `c_a_loc_dist`
+   * Audience Manager trait: `c_a_loc_dist`
 
 * **期限值 (轉換變數)**
 
    Populated by `trackLifetimeValue` methods.
 
    * Analytics context data/Target parameter: `a.ltv.amount`
-   * Audience Manager特徵： `c_a_ltv_amount`
+   * Audience Manager trait: `c_a_ltv_amount`
