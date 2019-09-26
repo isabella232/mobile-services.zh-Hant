@@ -22,7 +22,7 @@ source-git-commit: a16fe85f44d2ce852e806b2cc41fb5d40952ad6d
 
 >[!IMPORTANT]
 >
->The iOS SDK 4.x for Experience Cloud Solutions is now supports [iOS 13 and Xcode 11](https://developer.apple.com/ios/). 為確保順暢相容，請使用最新版的4.x iOS SDK。 如需最新版本的詳細資訊，請參閱版 [本注意事項](/help/ios/rel-notes.md)。
+>適用於Experience cloud解決方案的iOS SDK 4.x現在支援 [iOS 13和Xcode 11](https://developer.apple.com/ios/)。 為確保順暢相容，請使用最新版的4.x iOS SDK。 如需最新版本的詳細資訊，請參閱版 [本注意事項](/help/ios/rel-notes.md)。
 
 ## 新版 Adobe Experience Cloud SDK
 
