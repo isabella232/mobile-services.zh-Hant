@@ -5,7 +5,7 @@ seo-title: 隱私權與一般資料保護法規概觀
 title: 隱私權與一般資料保護法規概觀
 uuid: 56d6f155-efec-4b3f-a972-a63155729167
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 Experience Cloud Mobile SDK 為控制器提供可配合一般資料保護規範 (GDPR) 的 API，讓使用者能夠擷取本機儲存的身分識別，以及設定資料收集與傳輸的選擇狀態旗標。
 
-## 新版 Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
->[!IMPORTANT]
->
->我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
+* To get started, go to Adobe Experience Platform Launch.
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+
+## 概述
 
 >[!IMPORTANT]
 >
@@ -37,10 +37,10 @@ Experience Cloud Mobile SDK 為控制器提供可配合一般資料保護規範 
 
 * 如要擷取來自 SDK 的資料，並將此資料傳送至您的伺服器，請使用 `getAllIdentifiersAsync` 方法。
 
-   如需詳細資訊，請參 [閱擷取儲存的識別碼](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)。
+   For more information, see Retrieving Stored Identifiers.[](/help/android/c-mob-privacy-gdpr-android/c-mob-gdpr-ret-stored-ids-android.md)
 
 * 如要設定您的選擇狀態並協助處理 GDPR 資料刪除請求，請使用以下的設定:
 
    * `privacyDefault`
    * `setPrivacyStatus`
-   如需詳細資訊，請 [參閱設定使用者的選擇狀態](/help/android/c-mob-privacy-gdpr-android/privacy.md)。
+   For more information, see Setting the User's Opt Status.[](/help/android/c-mob-privacy-gdpr-android/privacy.md)
