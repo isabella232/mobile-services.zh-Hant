@@ -3,7 +3,7 @@ description: 在您於 Adobe Mobile Services 使用者介面中設定深層連�
 seo-description: 在您於 Adobe Mobile Services 使用者介面中設定深層連結 URL 後，此 URL 會位於含有 adb_deeplink 鍵值的推送裝載中。
 seo-title: 利用深層連結實施推送訊息
 title: 利用深層連結實施推送訊息
-uuid: ee9590fc-8bd3-4111-9221-91111d9edbd84
+uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -26,7 +26,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
    * The delegate methods for `UNUserNotificationCenter`
 
-      `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` 在此方法中，您可以從 `userInfo` 字典中取得推送裝載 `adb_deeplink` 。
+      In the `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` method, you can get the push payload from the `userInfo` dictionary, in the `adb_deeplink` key.
 
 例如:
 
