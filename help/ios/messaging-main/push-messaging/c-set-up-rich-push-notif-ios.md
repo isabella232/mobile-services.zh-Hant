@@ -3,7 +3,7 @@ description: 您可在 Apple 通知內附加影像檔案。加入視覺元件可
 seo-description: 您可在 Apple 通知內附加影像檔案。加入視覺元件可顯著增加使用者與推送通知的互動。
 seo-title: 接收豐富推送通知
 title: 接收豐富推送通知
-uuid: 0dbda409-cf49-4eb8-90ee-baf27911 dc07
+uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
 translation-type: tm+mt
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
@@ -35,7 +35,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      在此方法中，您可以使用 `userInfo``attachment-url` 金鑰取得媒體URL。將檔案下載到本機目錄後，請新增本機路徑 `bestAttemptContent.attachments`。
+      在此方法中，您可使用金鑰從 `userInfo` 中取得媒體 `attachment-url` URL。 將檔案下載到本地目錄後，請將本地路徑添加到 `bestAttemptContent.attachments`。
 
       以下是此方法中的程式碼範例:
 
