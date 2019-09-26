@@ -2,11 +2,11 @@
 description: 漏斗報表可讓您識別客戶在與您的行動應用程式互動時，在哪個位置離開促銷活動或是從定義的轉換路徑轉向。您也可以使用漏斗報表來比較不同區段的動作。
 keywords: 行動
 seo-description: 漏斗報表可讓您識別客戶在與您的行動應用程式互動時，在哪個位置離開促銷活動或是從定義的轉換路徑轉向。您也可以使用漏斗報表來比較不同區段的動作。
-seo-title: 漏斗報表
-solution: Marketing Cloud、Analytics
-title: 漏斗報表
+seo-title: Funnel report
+solution: Marketing Cloud,Analytics
+title: Funnel report
 topic: 報表,量度
-uuid: 268b4ab9-2e29-4423-3f79-ad93 f52331 ede
+uuid: 268b4ab9-2e29-4423-9f79-ad93f5231ede
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -23,7 +23,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->若要儲存自訂漏斗，請在設定其設定並執行報表後儲存URL。您可將 URL 分享給他人，或將其儲存在文件中。
+>若要儲存自訂漏斗，請在您設定URL設定並執行報表後儲存該URL。 您可將 URL 分享給他人，或將其儲存在文件中。
 
 以下為此報表的範例:
 
@@ -53,7 +53,7 @@ To generate the report, click **[!UICONTROL Run]**.
    您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.** For more information, see [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
 * **[!UICONTROL 篩選]**
 
-   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱 [新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
+   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參 [閱新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
 * **[!UICONTROL 下載]**
 
    Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
