@@ -2,10 +2,10 @@
 description: 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
 seo-description: 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
 seo-title: 獨立延伸功能實施
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 獨立延伸功能實施
 topic: 開發人員和實施
-uuid: 9b47f082-b78 f-4611-968d-014c32 ede6 bc
+uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -18,7 +18,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!IMPORTANT]
 >
->若要使用單機版擴充功能，您必須擁有Mobile SDK4.13.0版或更新版本。
+>若要使用獨立擴充功能，您必須有Mobile SDK 4.13.0版或更新版本。
 
 ## 設定獨立延伸功能與 SDK 搭配使用 {#section_B7A84603BB9D4B48BB46BE8D3B9E3CF0}
 
