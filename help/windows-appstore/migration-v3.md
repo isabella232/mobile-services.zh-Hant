@@ -1,18 +1,18 @@
 ---
 description: 此節說明如何從先前的 Windows 行動 SDK 3.x 版移轉至 Experience Cloud 解決方案適用的 Windows 8.1 通用應用程式商店 4.x SDK。
 seo-description: 此節說明如何從先前的 Windows 行動 SDK 3.x 版移轉至 Experience Cloud 解決方案適用的 Windows 8.1 通用應用程式商店 4.x SDK。
-seo-title: 移轉至4.x SDK
-solution: Marketing Cloud、Analytics
-title: 移轉至4.x SDK
+seo-title: Migrate to the 4.x SDKs
+solution: Marketing Cloud,Analytics
+title: Migrate to the 4.x SDKs
 topic: 開發人員和實施
-uuid: e0fe3b7b-cda5-4a91-834c-2c7 e17 a501 a
+uuid: e0fe3b7b-cda5-4a91-834c-2c7e17a501a3
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# 移轉至4.x SDK {#migrate-to-the-x-sdks}
+# Migrate to the 4.x SDKs {#migrate-to-the-x-sdks}
 
 此節說明如何從先前的 Windows 行動 SDK 3.x 版移轉至 Experience Cloud 解決方案適用的 Windows 8.1 通用應用程式商店 4.x SDK。
 
@@ -22,7 +22,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
-您可能已注意到下載內容中包含一個新的 `ADBMobileConfig.json` 檔案。此檔案包含應用程式專用的全域設定，並取代先前版本中使用的大部分組態變數。以下是 `ADBMobileConfig.json` 檔案的範例:
+您可能已注意到下載內容中包含一個新的 `ADBMobileConfig.json` 檔案。此檔案包含應用程式專用的全域設定，並取代舊版中使用的大部分設定變數。 以下是 `ADBMobileConfig.json` 檔案的範例:
 
 ```js
 { 
@@ -54,7 +54,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## 從第 3.x 版移轉
 
-| 設定變數/方法 | `ADBMobileConfig.json` 檔案中的變數。 |
+| 設定變數/方法 | Variable in the `ADBMobileConfig.json` file. |
 |--- |--- |
 | offlineTrackingEnabled | "offlineEnabled" |
 | reportSuiteIDs | "rsids" |
@@ -78,7 +78,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## Events、Props、eVars
 
-如果您已查看 [SDK方法](/help/windows-appstore/c-configuration/methods.md)，您可能會懷疑如何設定事件、eVar、prop、heir和清單。在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+If you've looked at the SDK methods, you are probably wondering where to set events, eVars, props, heirs, and lists. [](/help/windows-appstore/c-configuration/methods.md)在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
 處理規則具備以下優點:
 
@@ -113,7 +113,7 @@ Replace the `visitorID` variable with a call to `setUserIdentifier`.
 
 ## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-檔案中已啓用離線追蹤 `ADBMobileConfig.json` 。所有其他離線設定都會自動完成。
+Offline tracking is enabled in the  file. `ADBMobileConfig.json`All other offline configuration is done automatically.
 
 在您的程式碼中，移除對以下方法的呼叫:
 
