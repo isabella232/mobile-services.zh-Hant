@@ -3,10 +3,10 @@ description: 配置應用程式內訊息的體驗選項，包含類型 (全螢�
 keywords: 行動
 seo-description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 seo-title: 體驗應用程式內訊息
-solution: Marketing Cloud、Analytics
-title: 體驗應用程式內訊息
+solution: Marketing Cloud,Analytics
+title: Experience  In-App Message
 topic: 量度
-uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fcebb0
+uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -78,7 +78,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 點進按鈕]**
 
-      **[!UICONTROL 點進]按鈕的標籤。**&#x200B;點選此按鈕會計算為成功點進。使用者重新導向至目的地。
+      **[!UICONTROL 點進]按鈕的標籤。**&#x200B;點選此按鈕會計為成功的點進。 用戶被重定向到目標。
 
    * **[!UICONTROL 目標]**
 
@@ -86,10 +86,10 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       此 URL 可能包含下列資訊:
 
-      * `{userId}`則會以使用者識別碼取代，或在未設定使用者識別碼時為空白。
-      * `{trackingId}`則會以aid(與 *s_ vi* Cookie關聯)取代。
-      * `{messageId}`則會以應用程式內訊息的唯一ID取代。
-      * `{lifetimeValue}`則會以期限值取代，若沒有期限值則加以取代。
+      * `{userId}`, which is replaced with the user identifier or is blank when the user identifier is not set.
+      * `{trackingId}`, which is replaced with the aid (correlates with s_vi cookie).**
+      * `{messageId}`, which is replaced with the unique ID for the in-app message.
+      * `{lifetimeValue}`, which is replaced with the lifetime value or 0 if no lifetime value exists.
       以下是追蹤使用者 ID 的範例: `https://www.mysite.com?uid={userId}`.
 
       If the click-through URL uses `https://` or `https://`, the URL opens in the device browser outside the app. 否則，每個平台都支援可讓您開啟或參考您的應用程式的配置 (如果應用程式在開發時就已設定為支援自訂配置)。
@@ -101,25 +101,25 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 1. (可選) 按下列圖示以預覽訊息的配置:
 
-   * **[!UICONTROL 摘要]** 會隱藏預覽窗格。
+   * **[!UICONTROL 摘要]** ，隱藏預覽窗格。
 
       Click ![preview](assets/icon_preview.png) to redisplay the preview pane.
 
    * **[!UICONTROL 變更方向]**
 
-      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). 對於Watch，方向會從圓形變更為方形表面。
+      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). 對於手錶，方向會從圓形變更為方形的手表面。
 
-   * **[!UICONTROL 預覽使用者的手錶]**
+   * **[!UICONTROL 在使用者的觀看中預覽]**
 
-      若要預覽顯示在使用者手錶上的訊息，請按一下 ![「觀看」圖示](assets/icon_watch.png)。
+      若要預覽訊息在使用者手錶上的顯示效果，請按一下「監 ![看」圖示](assets/icon_watch.png)。
 
    * **[!UICONTROL 在使用者的行動電話上預覽]**
 
-      若要預覽您的訊息，因為它會顯示在使用者的行動電話點按 ![手機圖示](assets/icon_phone.png)上。
+      若要預覽訊息在使用者行動電話上的顯示效果，請按一下 ![電話圖示](assets/icon_phone.png)。
 
    * **[!UICONTROL 在使用者的平板電腦上預覽]**
 
-      若要在使用者的平板電腦中預覽您的訊息，請按一下 ![平板電腦圖示](assets/icon_tablet.png)。
+      若要在使用者的平板電腦中預覽訊息，請按一下平板電 ![腦圖示](assets/icon_tablet.png)。
 
       在預覽窗格底部，您可以檢視上一步驟所選對象的說明。您也可以在預覽窗格底部，檢視上一步驟中所選對象的說明。
 
