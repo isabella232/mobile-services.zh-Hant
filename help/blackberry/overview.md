@@ -1,9 +1,9 @@
 ---
 description: 適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x 可讓您透過使用 Adobe Analytics 測量原生 BlackBerry 10 應用程式。
-seo-description: Experience Cloud解決方案適用的BlackBerry10SDK4.x可讓您使用Adobe Analytics測量原生BlackBerry10應用程式
+seo-description: Experience cloud解決方案專用的BlackBerry 10 SDK 4.x可讓您使用Adobe Analytics測量原生BlackBerry 10應用程式
 seo-title: 適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x
 title: 適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x
-uuid: c336db33-2cb5-48Fe-a3 f5-2d3 ced6 c3966
+uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
 translation-type: tm+mt
 source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
 
@@ -16,10 +16,10 @@ source-git-commit: 8f71ee66b364d2c484464e51775c971734381b86
 
 ## 入門 {#section_DB6175C7BD5C41E3A7D5DB175C5E01C7}
 
-若要開始使用BlackBerry SDK：
+若要開始使用BlackBerry SDK:
 
 1. 若要新增 SDK 至專案，請完成[開發人員快速入門](/help/blackberry/dev-qs.md)中的任務。
-1. 請參閱[ADBMobile類別和方法參考](/help/blackberry/methods.md)。
+1. 請參閱 [ADBMobile類別和方法參考](/help/blackberry/methods.md)。
 1. 實施 [Analytics](/help/blackberry/analytics.md).
 
 ## Supported versions {#section_45978BF5C62E4986AAB7FFD96402BF2D}
