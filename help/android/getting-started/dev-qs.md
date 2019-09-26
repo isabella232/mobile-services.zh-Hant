@@ -1,12 +1,12 @@
 ---
 description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 seo-title: 核心實施與生命週期
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 核心實施與生命週期
 topic: 開發人員和實施
-uuid: af4d11ac-8245-46a0-9b3a-4a-4a29cfbbb2
+uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 translation-type: tm+mt
 source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
@@ -21,16 +21,16 @@ source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
 >[!IMPORTANT]
 >
->若要下載SDK，您必須使用Android2.2或更新版本。
+>To download the SDK, you must use Android 2.2 or later.
 
 1. 請完成以下區段中的步驟，以設定開發報表套裝和下載預先填入版本的設定檔案:
 
    * [建立報表套裝](/help/android/getting-started/requirements.md)
    * [下載 SDK](/help/android/getting-started/requirements.md)
 
-1. 下載並解壓縮 `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` 檔案並確認下列軟體元件存在：
+1. 下載並解壓縮 `[Your_App_Name_]AdobeMobileLibrary-4.*-Android.zip` 檔案，並驗證下列軟體元件是否存在：
 
-   * `adobeMobileLibrary.jar`這個資料庫將會與Android裝置和模擬器搭配使用。
+   * `adobeMobileLibrary.jar`, which is the library that will be used with Android devices and simulators.
 
    * `ADBMobileConfig.json`，此元件為根據您應用程式自訂的 SDK 設定檔案。
    >[!IMPORTANT]
@@ -39,7 +39,7 @@ source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
 ## Add the SDK and config file to your IntelliJ IDEA or Eclipse project {#section_B89510FBB4C646AEA73A185B966E54D3}
 
-**IntelliJ IDEA專案**
+**IntelliJ IDEA project**
 
 新增 SDK 和設定檔案至您的專案:
 
@@ -81,7 +81,7 @@ AppMeasurement 資料庫需要下列權限，才能傳送資料及記錄離線�
 
 ## Set the application context {#set-application-context}
 
-您應在主要活動的 `onCreate` 方法中加入下列程式碼：
+您應在主要活動的方法中 `onCreate` 新增下列程式碼：
 
 ```java
    @Override
@@ -98,7 +98,7 @@ AppMeasurement 資料庫需要下列權限，才能傳送資料及記錄離線�
 
 **請在應用程式的各活動中完成下列步驟:**
 
-1. 匯入資料庫:
+1. 匯入程式庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -125,9 +125,9 @@ AppMeasurement 資料庫需要下列權限，才能傳送資料及記錄離線�
 
 >[!IMPORTANT]
 >
->您必須將這些呼叫新增至每個活動，以確保正確的當機報告。如需詳細資訊，請參閱 [追蹤應用程式當機](/help/android/analytics-main/crashes.md)。
+>您必須將這些呼叫新增至每個活動，以確保正確的當機報告。 如需詳細資訊，請參閱「追 [蹤應用程式當機](/help/android/analytics-main/crashes.md)」。
 
-## 包含其他資料與生命週期呼叫
+## 將其他資料加入生命週期呼叫
 
 若要納入其他資料與生命週期量度呼叫，請將其他參數傳遞至包含內容資料的 `collectLifecycleData`:
 
