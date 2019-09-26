@@ -8,7 +8,7 @@ title: PhoneGap 外掛程式
 topic: 開發人員和實施
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ---
 
@@ -17,20 +17,19 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasurement 呼叫。
 
-## 新版 Adobe Experience Cloud SDK
+## 全新Adobe Experience Platform Mobile SDK版本
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 Launch。
+* 若要開始，請前往Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。
 
-若要建立PhoneGap專案，請參 [閱PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
+## 建立PhoneGap專案
+
+To create a PhoneGap project, see PhoneGap.[](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)
 
 ## 使用 npm 安裝外掛程式: {#section_43229E57C16944C0B51531CB92089189}
 
@@ -42,7 +41,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ## 手動安裝外掛程式 {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
-### 包含AppMeasurement程式庫
+### Include the AppMeasurement library
 
 納入 AppMeasurement:
 
