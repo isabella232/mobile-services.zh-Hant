@@ -1,12 +1,12 @@
 ---
-description: 下列指示可協助您透過根據裝置指紋的行銷連結來回往返贏取促銷活動。
-keywords: Android；資料庫；行動；sdk
-seo-description: 下列指示可協助您透過根據裝置指紋的行銷連結來回往返贏取促銷活動。
-seo-title: 測試行銷連結贏取
-solution: Marketing Cloud、Analytics
-title: 測試行銷連結贏取
+description: 下列指示可協助您使用以裝置指紋為基礎的行銷連結來回往返贏取促銷活動。
+keywords: android;library;mobile;sdk
+seo-description: 下列指示可協助您使用以裝置指紋為基礎的行銷連結來回往返贏取促銷活動。
+seo-title: 測試Marketing Link贏取
+solution: Marketing Cloud,Analytics
+title: 測試Marketing Link贏取
 topic: 開發人員和實施
-uuid: 69503e01-182d-44c6-b0 fb-e1 c012 ffa3 bd
+uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -15,9 +15,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 # Testing Marketing Link acquisition {#testing-marketing-link-acquisition}
 
-下列指示可協助您透過根據裝置指紋的行銷連結來回往返贏取促銷活動。
+下列指示可協助您使用以裝置指紋為基礎的行銷連結來回往返贏取促銷活動。
 
-1. 完成 [「行動應用程式贏取」中的先決條件任務](/help/ios/acquisition-main/acquisition.md)。
+1. 完成[「行動應用程式贏取」](/help/ios/acquisition-main/acquisition.md)中的先決條件任務。
 1. In the Adobe Mobile Services UI, click **[!UICONTROL Marketing Links Builder]** and generate an acquisition Marketing Link URL that sets the App Store as the destination for iOS devices.
 
    例如:
@@ -42,7 +42,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | 設定 | 值 |
    |--- |--- |
-   | acquisition | The server should be  `c00.adobe.com`. `appid` 應等於贏取 *`appid`* 連結中的值。 |
+   | acquisition | The server should be  `c00.adobe.com`. `appid` should equal the  *`appid`* in your acquisition link. |
    | analytics | `referrerTimeout` 的值應大於 0。 |
 
 1. (條件式) 如果應用程式設定檔案中的 SSL 設定為 `false`，請更新您的贏取連結，改採 HTTP 通訊協定，而非 HTTPS。
@@ -59,9 +59,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   如果您看不到這些記錄檔，請確認您已完成步驟和5。
+   如果您未看到這些記錄檔，請確認您已完成步驟4和5。
 
-   以下是一些可能發生錯誤的資訊：
+   以下是有關可能錯誤的一些資訊：
 
    * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
 
@@ -77,7 +77,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * `Analytics - Acquisition referrer data was not complete, ignoring`
 
-      `a.referrer.campaign.name` 未包含 `contextData`在內。
+      `a.referrer.campaign.name` 不包含在中 `contextData`。
 
    * `Analytics - Acquisition referrer timed out`
 
@@ -91,16 +91,16 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * 藉由使用 HTTP 監控工具，即可監控從應用程式傳送的點擊，以便提供贏取屬性的驗證。
 
-   You should see one `/v3/<appid>/start` request and one `/v3/<appid>/end` request that are sent to the acquisition server.
+   您應會看見兩則傳送至贏取伺服器的要求，一為 `/v3/<appid>/start`，一為 `/v3/<appid>/end`。
 
 * 使用者代理程式中傳送的項目若有所不同，可能會造成屬性失效。
 
-   請確定 `https://c00.adobe.com/v3/<appid>/start` 具有 `https://c00.adobe.com/v3/<appid>/end` 相同的使用者代理值。
+   請確 `https://c00.adobe.com/v3/<appid>/start` 定 `https://c00.adobe.com/v3/<appid>/end` 值與使用者代理值相同。
 
 * 贏取連結和來自 SDK 的點擊應使用相同的 HTTP/HTTPS 通訊協定。
 
-   如果連結和點擊使用不同通訊協定，例如，連結使用HTTP且SDK使用HTTPS，則每個請求的IP位址可能會有所不同。這可能會造成屬性失效。
+   If the link and the hit are using different protocols, where for example, the link uses HTTP and the SDK uses HTTPS, the IP address might differ on some carriers for each request. 這可能會造成屬性失效。
 
-* 行銷連結會在伺服器端快取，有效期為10分鐘。
+* 行銷連結會在伺服器端快取10分鐘的過期時間。
 
-   當您變更行銷連結時，應等候大約10分鐘，再使用連結。
+   When you make changes to Marketing Links, you should wait about 10 minutes before using the links.
