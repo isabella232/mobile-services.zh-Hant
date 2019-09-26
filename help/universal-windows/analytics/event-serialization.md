@@ -2,10 +2,10 @@
 description: 處理規則不支援事件序列化。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
 seo-description: 處理規則不支援事件序列化。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
 seo-title: 事件序列化
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 事件序列化
 topic: 開發人員和實施
-uuid: 7220a001-1174-4013-91ff-e8603 d ab265
+uuid: 7220a001-1174-4013-91ff-e8603d8ab265
 translation-type: tm+mt
 source-git-commit: f5ba33fe805c502b8ae91ddafcaa0b57e68704b8
 
@@ -14,7 +14,7 @@ source-git-commit: f5ba33fe805c502b8ae91ddafcaa0b57e68704b8
 
 # 事件序列化 {#event-serialization}
 
-處理規則不支援事件序列化。在行動SDK中，您必須在上下文資料參數中使用特殊語法，直接在伺服器呼叫上設定序列化事件。
+處理規則不支援事件序列化。在行動SDK中，您必須在上下文資料參數中使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
 
 ```js
 cdata["&&events"] = "event1:12341234";
