@@ -2,10 +2,10 @@
 description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
 seo-description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
 seo-title: 追蹤應用程式動作
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤應用程式動作
 topic: 開發人員和實施
-uuid: 62017是1-5395-4d16-bde3-4c40 a2 c012 d4
+uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,8 +22,8 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/dev-qs.md)。
-1. 匯入資料庫。
+   如需詳細資訊，請 *參閱核心實作和生命週期中的「將SDK和設定檔案新*[增至專案」](/help/ios/getting-started/dev-qs.md)。
+1. 匯入程式庫.
 
    ```objective-c
    #import "ADBMobile.h"
@@ -62,7 +62,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackAction:@"myapp.SocialShare" data:contextData];
 ```
 
-上下文資料值必須映射至自訂變數：
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-action.png)
 
