@@ -2,10 +2,10 @@
 description: '以下資訊可協助您開始使用 Experience Cloud 解決方案的 Android SDK '
 seo-description: '以下資訊可協助您開始使用 Experience Cloud 解決方案的 Android SDK '
 seo-title: 快速入門
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 快速入門
 topic: 開發人員和實施
-uuid: 39c642e2-60f0-4be-b0 d1-2635ee2 c6 d01
+uuid: 39c642e2-60f0-4bbe-b0d1-2635ee2c6d01
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # 入門 {#getting-started}
 
-本節中的資訊可協助您開始使用Experience Cloud解決方案的Android SDK。
+The information in this section helps you get started with the Android SDK for Experience Cloud Solutions.
 
 ## 新版 Adobe Experience Cloud SDK
 
