@@ -2,9 +2,9 @@
 description: 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
 keywords: 行動
 seo-description: 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
-seo-title: 觀眾應用程式內訊息
-solution: Marketing Cloud、Analytics
-title: 觀眾應用程式內訊息
+seo-title: Audience  In-App Message
+solution: Marketing Cloud,Analytics
+title: Audience  In-App Message
 topic: 量度
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 translation-type: tm+mt
@@ -41,9 +41,9 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
       >[!IMPORTANT]
       >
-      >如果您選取多個觸發器，則要顯示訊息時，所有觸發器都必須發生在相同點擊上。
+      >If you select multiple triggers, for the message to display, all triggers must occur on the same hit.
 
-   * **[!UICONTROL 特徵]**&#x200B;您可以判斷在應用程式內訊息觸發的誰，並篩選(區段)對象至具有指定資料的點擊。例如，您可以定義一個規則，其中的地標包含丹佛。此篩選器能讓您對在觸發時間位於地標名稱包含丹佛的客戶顯示訊息。
+   * **[!UICONTROL 特]**&#x200B;徵：您可以決定在觸發應用程式內訊息時，應該看到該訊息的對象，並篩選（分段）具有指定資料的點擊對象。 例如，您可以定義一個規則，其中的地標包含丹佛。此篩選器能讓您對在觸發時間位於地標名稱包含丹佛的客戶顯示訊息。
 
 
 
@@ -51,7 +51,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 >[!IMPORTANT]
 >
->觸發器和特徵會使用從您的應用程式傳遞至Analytics的資料。這些值會以內容資料、已對應之變數和量度等形式傳遞。變數是以文字為主的值，量度則是數值。
+>觸發器和特徵會使用從應用程式傳遞至Analytics的資料。 這些值會以內容資料、已對應之變數和量度等形式傳遞。變數是以文字為主的值，量度則是數值。
 
 To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** &gt;  **[!UICONTROL Manage Variables &amp; Metrics]** &gt;, which displays the following tabs:
 
@@ -63,9 +63,9 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 
 ### Selecting metrics and variables {#example_AB126F03BD1C4094B791E230B3DB1189}
 
-![觸發器選項](assets/custom_trigger_matcher_options.png)
+![觸發選項](assets/custom_trigger_matcher_options.png)
 
-下列情形可協助您判斷要選擇量度或變數作為觸發器：
+The following scenarios help you determine whether to select a metric or a variable as your trigger:
 
 ### 量度
 
