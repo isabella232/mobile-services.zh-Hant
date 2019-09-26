@@ -2,10 +2,10 @@
 description: 您無法透過處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
 seo-description: 您無法透過處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
 seo-title: 產品變數
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 產品變數
 topic: 開發人員和實施
-uuid: 6eg4d27-ef86-435c-a6 f7-bd76 be1 c95 ca
+uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 translation-type: tm+mt
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
