@@ -2,7 +2,7 @@
 description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
 seo-description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
 seo-title: TVJS 方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: TVJS 方法
 topic: 開發人員和實施
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
@@ -42,8 +42,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    選項如下:
 
-   * `ADBMobilePrivacyStatusOptIn`：立即傳送點擊。
-   * `ADBMobilePrivacyStatusOptOut`：點擊會被捨棄。
+   * `ADBMobilePrivacyStatusOptIn`:點擊會立即傳送。
+   * `ADBMobilePrivacyStatusOptOut`:會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
       如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。THe default value is set in the `ADBMobileConfig.json` file.
@@ -66,9 +66,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    將目前使用者的隱私權狀態設為下列其中一個值:
 
-   * `ADBMobilePrivacyStatusOptIn`：立即傳送點擊。
-   * `ADBMobilePrivacyStatusOptOut`：點擊會被捨棄。
-   * `ADBMobilePrivacyStatusUnknown`：如果啓用離線追蹤，則會儲存點擊直到隱私權狀態變更為選擇加入(點擊點擊)或選擇退出(捨棄點擊)為止。
+   * `ADBMobilePrivacyStatusOptIn`: Hits are sent immediately.
+   * `ADBMobilePrivacyStatusOptOut`: Hits are discarded.
+   * `ADBMobilePrivacyStatusUnknown`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。
    如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -108,7 +108,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!IMPORTANT]
    >
-   >如果您的應用程式升級從Experience Cloud3.x到4.x SDK，會擷取先前的自訂或自動產生的訪客ID並儲存為自訂的使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 nil，直到設定完成為止。
+   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 nil，直到設定完成為止。
 
    * 以下是此方法的語法:
 
@@ -149,11 +149,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **setAdvertisingIdentifier**
 
-   在SDK中設定IDFA，如果已在SDK中設定，則IDFA會在生命週期中傳送。您亦可在「訊號」(回傳) 中存取 IDFA。
+   Sets the IDFA in the SDK, and if it has been set in the SDK, the IDFA is sent in lifecycle. 您亦可在「訊號」(回傳) 中存取 IDFA。
 
    >[!IMPORTANT]
    >
-   >只有當您使用廣告服務時，才能從Apple API擷取IDFA。若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
+   >Retrieve the IDFA from Apple APIs only if you are using an ad service. 若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
 
    * 以下是此方法的語法:
 
@@ -204,7 +204,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >這是唯一會增加頁面檢視次數的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -410,7 +410,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 傳回: 布林值
       * 參數: `name`
          * 類型: `String`
-         * 您需要檢查存在之計時動作的名稱。
+         * Name of the timed action for which you need to check existence.
    * 以下是此方法的範例程式碼:
 
 
@@ -427,7 +427,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >如果您的應用程式升級從Experience Cloud3.x到4.x SDK，會擷取先前的自訂或自動產生的訪客ID並儲存為自訂的使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，且會使用追蹤識別碼。如需詳細資訊，請參閱下方的 userIdentifier 列。
+   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，且會使用追蹤識別碼。如需詳細資訊，請參閱下方的 userIdentifier 列。
 
    * 以下是此方法的語法:
 
@@ -625,7 +625,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ```
 
       * 傳回: N/A
-      * 參數：無
+      * Parameter: None
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -692,7 +692,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 用來同步至此使用者之 ID 服務的識別碼。
       * 參數: `authState`
          * 類型: ADBMobileVisitorAuthenticationState
-         * 使用者驗證狀態，可能的值包括：
+         * 用戶的驗證狀態和可能的值包括：
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -714,7 +714,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       visitorSyncIdentifierWithTypeIdentifierAuthenticationState(idType, identifier, authState)
       ```
 
-      * 退貨：N/A
+      * 退貨：不適用
       * 參數: `idType`
          * 類型: `String`
          * 正在同步的識別碼類型。
@@ -722,7 +722,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 類型: `String`
          * 正在同步的識別碼值。
       * 參數: `authState`
-         * 類型：ADBMobileVisitorAuthenticationState驗證狀態。可能的值包括:
+         * 類型：使用者的ADBMobileVisitorAuthenticationStateAuthentication狀態。 可能的值包括:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -798,10 +798,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 類型: `String`
          * 用於目標要求的第三方 ID。
    * 以下是此方法的範例程式碼:
-
-      ```objective-c
-      ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
-      ```
+   ```objective-c
+   ADBMobile.targetSetThirdPartyID(‘thirdPartyID’);
+   ```
 
 * **targetPcID**
 
