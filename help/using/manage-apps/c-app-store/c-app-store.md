@@ -3,10 +3,10 @@ description: appFigures Data Connector 整合結合了 appFigures 已整合的�
 keywords: 行動
 seo-description: appFigures Data Connector 整合結合了 appFigures 已整合的行動應用程式商店分析功能和 Adobe Analytics 的直接應用程式追蹤功能，能為貴組織創造強大的分析和最佳化機會。
 seo-title: App Store
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: App Store
 topic: 量度
-uuid: a194364d-faase-4995-bdd-cf48 f9 c1 f11 b
+uuid: a194364d-faf-4995-befd-cf48f9c1f11b
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -15,11 +15,11 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 # App store{#app-store}
 
-`appFigures` 資料連接器整合結合了appFigures整合式行動應用程式商店分析的強大功能以及Adobe Analytics的直接應用程式追蹤，為您的組織建立強大的分析和最佳化機會。
+The `appFigures` data connector integration combines the power of the appFigures integrated mobile app store analytics and the direct app tracking of Adobe Analytics to create powerful analytics and optimization opportunities for your organization.
 
 >[!TIP]
 >
->在Mobile Services UI中，在您設定整合後 **[!UICONTROL ，App Store]** 功能表項目和相關聯的報表會顯示在左側導覽窗格中。
+>在Mobile Services UI中，設定整合後， **[!UICONTROL App Store]** （應用程式商店）功能表項目和相關報表會顯示在左側導覽窗格中。
 
 [Adobe Analytics 的 appFigures Data Connector](https://marketing.adobe.com/resources/help/en_US/connectors/appfigures/) 包含下列資訊:
 <!--REKHA: no idea where this guide lives-->
