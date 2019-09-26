@@ -1,9 +1,9 @@
 ---
 description: 本資訊可協助自您 Android 應用程式擷取儲存於本機的 SDK 身分識別，以及處理 GDPR 資料存取請求。
 seo-description: 本資訊可協助自您 Android 應用程式擷取儲存於本機的 SDK 身分識別，以及處理 GDPR 資料存取請求。
-seo-title: 擷取儲存的識別碼
-title: 擷取儲存的識別碼
-uuid: 6fd3d202-b0 a1-4c80-96f4-369c24 ac0 a3
+seo-title: Retrieving stored identifiers
+title: Retrieving stored identifiers
+uuid: 6fd3d202-b0a1-4c80-96f4-369fc24ac0a3
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -16,7 +16,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!IMPORTANT]
 >
->`getAllIdentifiersAsync` 此方法會擷取儲存在SDK中的身分識別。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>The `getAllIdentifiersAsync` method retrieves identities stored in the SDK. 您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
 SDK 身分識別 (若適用的話) 會儲存在本機，並於 JSON 字串中傳回，且可能包括:
 
