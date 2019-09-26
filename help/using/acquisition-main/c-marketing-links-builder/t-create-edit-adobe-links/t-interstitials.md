@@ -3,10 +3,10 @@ description: 依使用者是否已安裝應用程式 (應用程式深層連結) 
 keywords: 行動
 seo-description: 依使用者是否已安裝應用程式 (應用程式深層連結) 或未安裝 (前往網站或應用程式商店) 將使用者路由至目的地。
 seo-title: 插頁廣告
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 插頁廣告
 topic: 量度
-uuid: 7dce8ab2-2a5d-4384-ac1 e-e31 dfaa33654
+uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -17,11 +17,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 依使用者是否已安裝應用程式 (應用程式深層連結) 或未安裝 (前往網站或應用程式商店) 將使用者路由至目的地。建議可以提供路由選項讓使用者選擇，行銷人員可設定能顯示可用登陸目的地的插入式頁面，讓使用者自行選擇。
 
-若要設定插入式連結，同時建立行銷連結：
+若要設定插入式連結，同時 建立行銷連結：
 
 1. Click **[!UICONTROL Edit Deep Link Interstitial]**.
 
-   ![深層連結插播](assets/interstitial2.png)
+   ![插入式深連結](assets/interstitial2.png)
 
 1. 在下列欄位輸入資訊:
 
@@ -29,7 +29,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
       選取自訂的插入式 HTML 頁面。
 
-      行銷人員可使用自訂插播式廣告，使用自訂HTML/CSS/JS自訂插入式登陸頁面，讓您品牌化頁面。
+      透過使用自訂插入式頁面，行銷人員可以使用自訂HTML/CSS/JS來自訂插入式登陸頁面，讓您為頁面加上品牌。
 
       HTML 頁面的要求如下:
 
@@ -41,7 +41,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
          >[!TIP]
          >
-         >如果上傳自訂HTML，除非您移除上傳的檔案，否則不會使用此表格中的其他四個選項。
+         >如果您上傳自訂HTML，除非您移除已上傳的檔案，否則不會使用此表格中的其他4個選項。
    * **[!UICONTROL 影像 URL]**
 
       指定 URL 為影像資產。
