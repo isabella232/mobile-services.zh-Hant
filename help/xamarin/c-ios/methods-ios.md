@@ -4,7 +4,7 @@ keywords: Xamarin
 seo-description: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件的 iOS 方法
 seo-title: iOS方法
 solution: Marketing Cloud，開發人員
-title: iOS方法
+title: iOS methods
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
 source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
@@ -85,7 +85,7 @@ source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 * **PrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
-   * `ADBMobilePrivacyStatus.OptIn` -會立即傳送點擊。
+   * `ADBMobilePrivacyStatus.OptIn` - hits are sent immediately.
    * `ADBMobilePrivacyStatus.OptOut` -會捨棄點擊。
    * ADBMobilePrivacyStatus.Unknown - 如果啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果離線追蹤已停用，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
    The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
@@ -106,8 +106,8 @@ source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 * **SetPrivacyStatus**
 
    設定目前使用者的隱私權狀態為 status。設定為下列其中一值:
-   * `ADBMobilePrivacyStatus.OptIn` -會立即傳送點擊。
-   * `ADBMobilePrivacyStatus.OptOut` -會捨棄點擊。
+   * `ADBMobilePrivacyStatus.OptIn` - hits are sent immediately.
+   * `ADBMobilePrivacyStatus.OptOut` - hits are discarded.
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -176,7 +176,7 @@ source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
 
    >[!TIP]
    >
-   >此方法適用於在背景中註冊通知的應用程式，且僅應從應用程式在背景時執行的程式碼呼叫此方法。
+   >This method is intended to be used for apps that register for notifications while in background and should only be called from your code that runs while your app is in the background.
 
    * 以下是此方法的語法:
 
@@ -213,7 +213,7 @@ source-git-commit: f53953831e6471ea64eb2ae06ddae16ca0eab6f6
    使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 "title screen"、"level 1"、"pause" 等。這些狀態類似於網站上的頁面，而呼叫 `TrackState` 會增加頁面檢視次數。如果狀態為空，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 如果在報表中看到此值，請務必在每個 `TrackState` 呼叫中設定 state。
 
    [!TIP]
-   >這是唯一會增加頁面檢視次數的追蹤呼叫。
+   >This is the only tracking call that increments page views.
    >
    * 以下是此方法的語法:
 
