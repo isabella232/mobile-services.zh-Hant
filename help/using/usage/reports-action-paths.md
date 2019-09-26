@@ -3,10 +3,10 @@ description: 「動作路徑」報表可依據路徑分析顯示路徑圖表，�
 keywords: 行動
 seo-description: 「動作路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
 seo-title: 動作路徑報表
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 動作路徑報表
 topic: 報表,量度
-uuid: a21e5d9e-fd57-4178-9d64-87181b7 f988 b
+uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -21,7 +21,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->您可以使用漏斗報表，將導覽和動作合併為一個報表。For more information, see [Funnel](/help/using/usage/reports-funnel.md).
+>您可以使用漏斗報表將導覽和動作結合在一個報表中。 For more information, see [Funnel](/help/using/usage/reports-funnel.md).
 
 ![](assets/action_paths.png)
 
@@ -40,7 +40,7 @@ To expand, click the **[!UICONTROL +]** icon. 此選項會顯示進入或離開�
 
 展開狀態類似於漏斗。
 
-![動作路徑展開](assets/action_paths_expand.png)
+![動作路徑擴展](assets/action_paths_expand.png)
 
 To isolate the node and show paths that come into, and go out of the selected node, click the  ![focus icon](assets/icon_focus.png) icon. 下圖顯示使用者選取相片&#x200B;**之前**&#x200B;所完成的路徑:
 
@@ -74,7 +74,7 @@ To isolate the node and show paths that come into, and go out of the selected no
 
 * **[!UICONTROL 篩選]**
 
-   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱 [新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
+   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL 下載]**
 
