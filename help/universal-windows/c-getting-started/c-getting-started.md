@@ -1,9 +1,9 @@
 ---
 description: 此資訊可協助您快速入門 Experience Cloud 解決方案適用的通用 Windows 平台 SDK
 seo-description: 此資訊可協助您快速入門 Experience Cloud 解決方案適用的通用 Windows 平台 SDK
-seo-title: 快速入門
-title: 快速入門
-uuid: 5fffde5e-eb08-496c-8d3 b-d2350 e374404
+seo-title: 開始使用
+title: 開始使用
+uuid: 5fbfde5e-eb08-496c-8d3b-d2350e374404
 translation-type: tm+mt
 source-git-commit: e5ed5005c3f98d27b514a634e485f0f941138b2d
 
@@ -20,4 +20,4 @@ source-git-commit: e5ed5005c3f98d27b514a634e485f0f941138b2d
 
 1. 實作 [Analytics](/help/universal-windows/analytics/analytics-methods.md)、 [Target](/help/universal-windows/target/target-methods.md)和 [Audience Manager](/help/universal-windows/audiencemgmt/audience-manager-methods.md)。
 
-1. 如果您是從舊版升級，請檢閱 [移轉指南](/help/universal-windows/migration-v3.md)。
+1. 如果您要從舊版升級，請參閱移轉 [指南](/help/universal-windows/migration-v3.md)。
