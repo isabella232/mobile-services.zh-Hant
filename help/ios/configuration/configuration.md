@@ -2,10 +2,10 @@
 description: '以下資訊可協助您設定 iOS SDK，包括 JSON 設定、點擊批次處理程序和 SDK 方法 '
 seo-description: '以下資訊可協助您設定 iOS SDK，包括 JSON 設定、點擊批次處理程序和 SDK 方法 '
 seo-title: 設定
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 設定
 topic: 開發人員和實施
-uuid: 63261b61-e70 a-42e-a56 f-5943173c041 e
+uuid: 63261b61-e70a-42be-a56f-5943173c041e
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # 設定{#configuration}
 
-本節中的資訊可協助您設定iOS SDK，包括JSON設定、點擊批次處理和SDK方法。
+The information in this section helps you configure the iOS SDK, including JSON configuration, hit batching, and SDK methods.
 
 ## 新版 Adobe Experience Cloud SDK
 
