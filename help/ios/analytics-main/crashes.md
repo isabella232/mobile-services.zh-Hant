@@ -2,10 +2,10 @@
 description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
 seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
 seo-title: 追蹤應用程式當機
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤應用程式當機
 topic: 開發人員和實施
-uuid: 4f819888b-148a-4ba9-ad53-78AF90 e43856
+uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
@@ -18,7 +18,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->您應升級至iOS SDK4.8.6版，其中包含防止報告錯誤當機的重要變更。
+>You should upgrade to iOS SDK version 4.8.6, which contains critical changes that prevent false crashes from being reported.
 
 ## Adobe 何時會回報當機?
 
@@ -44,7 +44,7 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 
    >[!TIP]
    >
-   >在這個情況下，您可以在應用程式再次從Xcode啓動應用程式之前，先接地，以避免發生當機情形。
+   >在此案例中，您可避免當機，方法是在從Xcode再次啟動應用程式之前，先將應用程式背景化。
 
 * If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
 
@@ -66,5 +66,5 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 * 確認您針對非生產用的報表套裝執行開發，應可防止 1 號錯誤當機情況發生。
 * 請勿刪除或修改 Adobe Mobile SDK 放入 `NSUserDefaults` 的任何值。
 
-   如果這些值是在SDK外部修改，則報告的資料將無效。
+   如果這些值在SDK外部修改，則報告的資料將無效。
 
