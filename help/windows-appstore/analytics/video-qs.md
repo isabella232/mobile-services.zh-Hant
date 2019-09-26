@@ -2,10 +2,10 @@
 description: 此資訊可協助您使用視訊分析。
 seo-description: 此資訊可協助您使用視訊分析。
 seo-title: Video Analytics
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Video Analytics
 topic: 開發人員和實施
-uuid: 7d4e6668-a1 d9-41da-96c8-8bbac860 c5 b0
+uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
@@ -36,7 +36,7 @@ Video measurement is described in detail in the [Measuring audio and video in Ad
 
    事件類型: 自訂分析 (s.prop)
 
-   * 變數類型：自訂分析(s. prop)
+   * 變數類型：自訂分析(s.prop)
 
 * **a.media.segment**
 
@@ -55,7 +55,7 @@ Video measurement is described in detail in the [Measuring audio and video in Ad
 
 * **a.contentType**
 
-   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會獲指派「視訊」的內容類型。不需專為視訊追蹤保留此變數。具有使用此相同變數的其他內容報表內容類型，可讓您分析不同類型內容上造訪者的分佈情況。舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點，內容類型可讓您識別視訊訪客並計算視訊轉換率。
+   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會獲指派「視訊」的內容類型。不需專為視訊追蹤保留此變數。具有使用此相同變數的其他內容報表內容類型，可讓您分析不同類型內容上造訪者的分佈情況。舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。From a video measurement perspective, the content type lets you identify video visitors and calculate video conversion rates.
 
    * 變數類型：eVar
    * 預設過期時間: 頁面檢視
@@ -64,28 +64,28 @@ Video measurement is described in detail in the [Measuring audio and video in Ad
 
    計算自上次資料收集程序 (影像請求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
-   * 變數類型：Event
+   * 變數類型：事件
    * 類型: 計數器
 
 * **a.media.view**
 
    指出有訪客檢視了視訊的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
 
-   * 變數：Event
+   * 變數：事件
    * 類型: 計數器
 
 * **a.media.segmentView**
 
    指出有訪客檢視了視訊區段的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
 
-   * 變數類型：Event
+   * Variable type: Event
    * 類型: 計數器
 
 * **a .media.complete**
 
    指出使用者已檢視完整的視訊。預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。針對即時視訊和沒有已定義結尾的其他資料流，您可以指定測量完成的自訂點。例如，在檢視特定時間之後。
 
-   * 變數類型：Event
+   * Variable type: Event
    * 類型: 計數器
 
 
@@ -128,7 +128,7 @@ property bool isMediaAd;
 
 ## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-* **SettingSwith(WinJS：SettingSwith)**
+* **SettingsWith (winJS: settingsWith)**
 
    傳回 `MediaSetting` 物件以及指定的參數。
 
@@ -144,7 +144,7 @@ property bool isMediaAd;
       var mySettings = ADB.Media.settingsWith("name", 10, "playerName", "playerId"); 
       ```
 
-* **AdSettingSwith(WinJS：AdSettingSwith**
+* **AdSettingsWith (winJS: adSettingsWith**
 
    傳回 `MediaSettings` 物件以便用於追蹤廣告視訊。
 
@@ -160,7 +160,7 @@ property bool isMediaAd;
       var myAdSettings = ADB.Media.adSettingsWith("name", 10, "playerName", "parentName", "parentPod", 5, "myCPM"); 
       ```
 
-* **開啓(WinJS：open)**
+* **Open (winJS: open)**
 
    Tracks a media open using the settings defined in `settings`.
 
@@ -176,7 +176,7 @@ property bool isMediaAd;
       ADB.Media.open(mySettings); 
       ```
 
-* **關閉(WinJS：close)**
+* **關閉(winJS:關閉)**
 
    追蹤命名為&#x200B;*「名稱」*&#x200B;之媒體項目的媒體關閉。
 
@@ -192,7 +192,7 @@ property bool isMediaAd;
       ADB.Media.close("mediaName");
       ```
 
-* **播放(WinJS：play)**
+* **播放(winJS:播放)**
 
    Tracks a media play for the media item named *`name`* at the given *offset* (in seconds).
 
@@ -208,7 +208,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName", 0);
       ```
 
-* **完整(WinJS：complete)**
+* **Complete (winJS: complete)**
 
    在提供的&#x200B;*偏移處* (以秒為單位) 手動將媒體項目標示為已完成。
 
@@ -224,7 +224,7 @@ property bool isMediaAd;
       ADB.Media.complete("mediaName", 8); 
       ```
 
-* **停止(WinJS：stop)**
+* **停止(winJS:停止)**
 
    通知媒體模組，視訊已在指定的&#x200B;*偏移處*&#x200B;停止或暫停。
 
@@ -240,7 +240,7 @@ property bool isMediaAd;
       ADB.Media.stop("mediaName", 4);
       ```
 
-* **按一下(WinJS：click)**
+* **按一下(winJS:按一下)**
 
    通知媒體模組，媒體項目已被點按。
 
@@ -256,7 +256,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName", 3);
       ```
 
-* **追蹤(WinJS：track)**
+* **追蹤(winJS:追蹤)**
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 
