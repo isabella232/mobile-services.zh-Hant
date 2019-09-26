@@ -3,10 +3,10 @@ description: 您必須先完成這些工作才可開始在應用程式中配置�
 keywords: 行動
 seo-description: 您必須先完成這些工作才可開始在應用程式中配置推送訊息。
 seo-title: 啟用推送訊息的必要條件
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 啟用推送訊息的必要條件
 topic: 量度
-uuid: 194e6e07-b794-4152-a838-a4125 c3292 d
+uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 translation-type: tm+mt
 source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
@@ -15,17 +15,17 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 # Prerequisites to enable push messaging {#prerequisites-to-enable-push-messaging}
 
-您必須先完成這些工作，才能在應用程式中設定推送訊息。
+您必須先完成這些工作，才能在應用程式中設定推播訊息。
 
-## 為您的公司啓用Experience Cloud
+## 為您的公司啟用Experience Cloud
 
-貴公司已採用 Adobe Analytics，必須啟用 Experience Cloud。您可以驗證Adobe銷售代表的狀態。
+貴公司已採用 Adobe Analytics，必須啟用 Experience Cloud。您可以驗證您的Adobe銷售代表的狀態。
 
-## 安裝和設定Mobile SDK
+## Install and configure the Mobile SDK
 
 * **安裝 Mobile SDK**
 
-   若要設定推送訊息，您必須至少下載並安裝4.6版或更新版本的Mobile SDK。For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
+   若要設定推播訊息，您必須下載並安裝至少4.6版或更新版本的Mobile SDK。 For more information, see [Download the SDKs](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md).
 
 * **設定推播服務**
 
@@ -34,11 +34,11 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
    * [Android中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
    * [iOS中的推送訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
-## 使用您的Adobe ID登入Mobile核心服務
+## Log in to the Mobile Core Service using your Adobe ID
 
 >[!IMPORTANT]
 >
->若要使用推送服務功能，使用者必須使用其Adobe ID登入Mobile核心服務，其Analytics帳戶必須連結至其Adobe ID。如果使用者使用其現有的 Adobe Analytics 帳戶登入，將無法使用推送服務功能。
+>若要使用推播服務功能，使用者必須使用其Adobe ID登入Mobile核心服務，且其Analytics帳戶必須連結至其Adobe ID。 如果使用者使用其現有的 Adobe Analytics 帳戶登入，將無法使用推送服務功能。
 
 如果使用者沒有 Adobe ID，請執行下列步驟:
 
@@ -50,7 +50,7 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 1. (**Users**) Log in to Mobile using their Adobe ID.
 
-## 在Experience Cloud中連結使用者的帳戶
+## 在Experience cloud中連結使用者帳戶
 
 每位使用者必須從 Experience Cloud 組織連結 Analytics 解決方案帳戶。
 
@@ -66,11 +66,11 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 如需詳細資訊，請參閱[疑難排解帳戶連結](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。
 
-## 在行動使用者介面中配置推播服務和SDK ID服務
+## 在行動使用者介面中設定推播服務和SDK ID服務
 
-在您啟用應用程式的 ID 服務前，**[!UICONTROL 「推送服務」]區段為停用狀態。**&#x200B;但是，在您啓用ID服務後，就會啓用「推送服務」區段。如需啓用推送服務的詳細資訊，請參閱 [設定SDK ID服務選項](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
+在您啟用應用程式的 ID 服務前，**[!UICONTROL 「推送服務」]區段為停用狀態。**&#x200B;但是，在您啟用ID服務後，「推送服務」區段即會啟用。 如需啟用推播服務的詳細資訊，請參 [閱「設定SDK ID服務選項」](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
 
->[!IMPORTANT]：您必須按一下 **[!UICONTROL 「儲存]** 」以儲存變更並重新整理推送服務。
+>[!IMPORTANT]:您必須按一 **[!UICONTROL 下「儲存]** 」，以儲存變更並重新整理推送服務。
 >
 >在每個報表套裝中，您可以針對 Apple 和 Google 各配置一個應用程式商店應用程式。若您需要額外應用程式，例如針對生產和開發環境各配置一個應用程式，請針對這兩個環境各自設定新應用程式商店應用程式以及新報表套裝。
 
