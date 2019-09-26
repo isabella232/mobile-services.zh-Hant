@@ -3,7 +3,7 @@ description: 目標預覽功能可協助您輕鬆執行目標活動的端對端 
 seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
 seo-title: 在 Android 裝置上預覽目標
 title: 在 Android 裝置上預覽目標
-uuid: f3c82d64-009c-4929-a5 e6-3677b2977889
+uuid: f3c82d64-009c-4929-a5e6-3677b2977889
 translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
@@ -18,7 +18,7 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 >[!IMPORTANT]
 >
->若要使用Target Preview，您需要SDK4.14.0版或更新版本。
+>若要使用「Target預覽」，您需要SDK 4.14.0版或更新版本。
 
 * **setPreviewRestartDeeplink**
 
