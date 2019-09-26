@@ -1,21 +1,21 @@
 ---
 description: 此資訊可協助您傳送訊號，並從 Audience Manager 中擷取訪客區段。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 此資訊可協助您傳送訊號，並從 Audience Manager 中擷取訪客區段。
-seo-title: Audience Manager總覽
-solution: Marketing Cloud、Analytics
-title: Audience Manager總覽
+seo-title: Audience manager概觀
+solution: Marketing Cloud,Analytics
+title: Audience Manager overview
 topic: 開發人員和實施
-uuid: cfa4106d-13c1-45ba-bee6-6f992 aab9919
+uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Audience Manager總覽 {#audience-manager}
+# Audience manager概觀 {#audience-manager}
 
-本節中的資訊可協助您傳送訊號並從Audience Manager擷取訪客區段。
+本節中的資訊可協助您從Audience manager傳送訊號並擷取訪客區段。
 
 ## 新版 Adobe Experience Cloud SDK
 
