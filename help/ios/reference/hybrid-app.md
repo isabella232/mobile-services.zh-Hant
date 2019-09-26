@@ -2,10 +2,10 @@
 description: 若您的應用程式會開啟行動網站內容，您必須確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
 seo-description: 若您的應用程式會開啟行動網站內容，您必須確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
 seo-title: 應用程式和行動網站間的訪客追蹤
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 應用程式和行動網站間的訪客追蹤
 topic: 開發人員和實施
-uuid: 2d951de6-3954-4379-a4 ff-99b9695 b9869
+uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 translation-type: tm+mt
 source-git-commit: 9257d6b6c2c14d0422cda65fcc9c677ac5ac47a9
 
@@ -22,19 +22,19 @@ iOS SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲存�
 
 >[!TIP]
 >
->應用程式訪客ID會持續透過升級。
+>應用程式訪客ID會在升級期間持續存在。
 
-## 行動網頁中的訪客ID
+## Visitor IDs in the mobile web
 
 常見的行動網站實施會使用用於桌面網站之相同標準的 Analytics `s_code.js` 或 `AppMeasurement.js`。JavaScript 資料庫擁有其產生唯一訪客 ID 的方法，而這可能會導致您從應用程式開啟行動網站內容時，產生不同的訪客 ID。
 
-若要在應用程式和行動網頁中使用相同的訪客ID，並將應用程式訪客ID傳遞至URL中的行動網頁：
+若要在應用程式和行動網路中使用相同的訪客ID，並將應用程式訪客ID傳遞至URL中的行動網路：
 
-## 在應用程式和行動網頁之間實施訪客追蹤 {#section_EDC91D6C67AD43999227707C2769C65D}
+## Implement visitor tracking between an app and mobile web {#section_EDC91D6C67AD43999227707C2769C65D}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/dev-qs.md)。
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
 1. 若要在用來開啟 Web 檢視的 URL 中附加訪客資訊，請呼叫 `visitorAppendToURL`:
 
    ```objective-c
@@ -62,7 +62,7 @@ iOS SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲存�
 
 ## 疑難排解訪客追蹤 {#section_C070AE85E3CE4E9893FD4F40E73F2C92}
 
-### `[ADBMobile visitorAppendToURL:]`我看不到。
+### I do not see `[ADBMobile visitorAppendToURL:]`.
 
 確認 Adobe SDK 隨附的父應用程式版本為 4.12.0 或更高版本。
 
