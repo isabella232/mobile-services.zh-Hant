@@ -3,10 +3,10 @@ description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 keywords: 行動
 seo-description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 seo-title: 應用程式內傳訊疑難排解
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊疑難排解
 topic: 量度
-uuid: 58533aa3-4597-8525-87e4e5975e56
+uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
 translation-type: tm+mt
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
@@ -35,13 +35,13 @@ source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 請查看「管理應用程式內訊息」頁面中「狀態」欄的清單檢視，確認是否為現時訊息。
 
-## 檢視 *顯示一次*， *一律顯示*， *顯示「對象」索引標籤上的離線* 設定。
+## 在「對象 *」標籤上**，只要*「顯示」、 *「永遠顯示」* 、「顯示離線設定」即可。
 
 確定這些設定是依照您想要的方式。在&#x200B;**[!UICONTROL 「對象」]**&#x200B;標籤中，檢閱您的&#x200B;**「觸發器」]選項，該選項可讓您指定顯示訊息的頻率。[!UICONTROL **
 
 ## 如果使用啟動事件做為觸發器...
 
-啟動只會發生在新的工作階段。For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. 如需詳細資訊，請參閱 [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)。
+啟動只會發生在新的工作階段。For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. 如需詳細資訊，請參 [閱ADBMobile JSON設定](/help/ios/configuration/json-config/json-config.md)。
 
 ## 我已從遠端更新訊息，但應用程式仍顯示舊訊息。
 
