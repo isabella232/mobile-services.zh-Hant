@@ -3,10 +3,10 @@ description: 此資訊可協助您進行推送訊息疑難排解。
 keywords: 行動
 seo-description: 此資訊可協助您進行推送訊息疑難排解。
 seo-title: 疑難排解推送訊息
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 疑難排解推送訊息
 topic: 量度
-uuid: 87d7dcb6-82a8-46e3-a6 ed-7f895 a22 f2 af
+uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -33,7 +33,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
    >[!TIP]
    >
-   >推送服務不保證傳送訊息。如需服務的可靠性詳細資訊，請參閱適當文件。
+   >The push services do not guarantee a message will be sent. 如需服務的可靠性詳細資訊，請參閱適當文件。
    >
    >* **APNS**: [服務品質](https://developer.apple.com/documentation/usernotifications)
       >
