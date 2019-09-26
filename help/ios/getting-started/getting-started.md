@@ -1,18 +1,18 @@
 ---
 description: '以下資訊可協助您開始使用 Experience Cloud 解決方案的 iOS SDK '
 seo-description: '以下資訊可協助您開始使用 Experience Cloud 解決方案的 iOS SDK '
-seo-title: 快速入門概觀
-solution: Marketing Cloud、Analytics
-title: 快速入門概觀
+seo-title: Getting started overview
+solution: Marketing Cloud,Analytics
+title: Getting started overview
 topic: 開發人員和實施
-uuid: a2b9baad-b959-4b9 a-893d-99c0 f4072 e8 d
+uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# 快速入門概觀 {#getting-started}
+# Getting started overview {#getting-started}
 
 以下資訊可協助您開始使用 Experience Cloud 解決方案的 iOS SDK.
 
