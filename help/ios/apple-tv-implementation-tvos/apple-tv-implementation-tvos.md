@@ -2,10 +2,10 @@
 description: 此資訊可協助您使用 tvOS 實施 Apple TV。
 seo-description: 此資訊可協助您使用 tvOS 實施 Apple TV。
 seo-title: 使用 tvOS 實施 Apple TV
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 使用 tvOS 實施 Apple TV
 topic: 開發人員和實施
-uuid: d1571ea2-a5 de-4-a527-72abpf51 fab8
+uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -33,13 +33,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!TIP]
 >
->TvOS支援可從 `AdobeMobileLibrary` 4.7.0版開始使用。
+>tvOS支援從4.7.0 `AdobeMobileLibrary` 版開始提供。
 
 ## 入門 {#section_CAB40A5B5FC745068C8A5DF8F9AB6199}
 
 >[!TIP]
 >
->我們假設您的專案有目標，是目標TvOS的Apple TV應用程式。如需詳細資訊，請參閱 [tvOS](https://developer.apple.com/tvos/documentation/)。
+>我們假設您的專案有一個目標，即是針對tvOS的Apple TV應用程式。 如需詳細資訊，請參閱 [tvOS](https://developer.apple.com/tvos/documentation/)。
 
 ## Configure a native app for tvOS {#section_5095F19B3C4545F68E8C1E37A7E303AE}
 
