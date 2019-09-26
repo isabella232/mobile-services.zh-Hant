@@ -2,10 +2,10 @@
 description: 下表說明 iOS SDK 和 Adobe Mobile Services 所採用的不同應用程式識別碼。
 seo-description: 下表說明 iOS SDK 和 Adobe Mobile Services 所採用的不同應用程式識別碼。
 seo-title: 應用程式 ID
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 應用程式 ID
 topic: 開發人員和實施
-uuid: 24ec716-23c7-4ee8-8256-b534210367 e0
+uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
 translation-type: tm+mt
 source-git-commit: 0e22d5e080b680ff6b23462f1bc12f27d99e6d42
 
