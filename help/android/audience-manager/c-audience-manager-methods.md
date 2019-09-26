@@ -1,12 +1,12 @@
 ---
 description: 以下為 Android 資料庫所提供的 Audience Manager 方法清單。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的 Audience Manager 方法清單。
-seo-title: Audience Manager方法
-solution: Marketing Cloud、Analytics
-title: Audience Manager方法
+seo-title: Audience Manager methods
+solution: Marketing Cloud,Analytics
+title: Audience Manager methods
 topic: 開發人員和實施
-uuid: 2f6e4664-1306-41d4-9fa7-e3 a99 f1 df4 ab
+uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -17,7 +17,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 以下為 Android 資料庫所提供的 Audience Manager 方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target、Audience Manager和Adobe Experience Platform Identity Service。Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
+SDK目前支援多種Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。 Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `audience manager`.
 
 如果您已在 JSON 檔案中設定 Audience Manager，則包含生命週期量度的訊號會與生命週期點擊一併傳送。
 
@@ -73,7 +73,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    設定 DPID 和 DPUUID，而且這些值會隨著每個訊號傳送。
 
-   如果傳遞給此方法的DPUUID值包含不安全的字元，客戶必須先編碼參數，然後才能將參數傳送至SDK。
+   如果傳遞至此方法的DPUUID值包含非URL安全的字元，客戶必須先對參數進行編碼，才能將其傳遞至SDK。
 
    * 以下是此方法的語法:
 
