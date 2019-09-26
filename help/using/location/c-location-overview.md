@@ -3,7 +3,7 @@ description: 「位置概述」報表可讓您查看您的應用程式被用於�
 keywords: 行動
 seo-description: 「位置概述」報表可讓您查看您的應用程式被用於哪些不同的國家、地區和地標。
 seo-title: 概述 (位置)
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 概述 (位置)
 topic: 報表,量度
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
@@ -15,11 +15,11 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 # 概述 (位置){#overview-location}
 
-**[!UICONTROL 「位置概述]** 」報表可讓您查看使用您應用程式的不同國家、地區和興趣點(POI)。
+The **[!UICONTROL Location Overview]** report lets you see the different countries, regions, and points of interest (POI) where your app is being used.
 
 此報表以散射環視覺效果呈現您現有的資料，而您可以利用該報表探索目標的對象段 (訪客群)。建立及管理對象類似於建立及使用區段，但無法在 Experience Cloud 之中建立對象。
 
-以下是關於此報表的其他資訊：
+以下是有關此報告的其他資訊：
 
 ## Navigation and usage {#section_4A88C3849B5847BF8CF433CCFD99FDC3}
 
@@ -27,7 +27,7 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 >[!TIP]
 >
->除了這項資訊，您還可以檢視產品內教學課程，其中說明如何與散射環圖互動。若想啟動教學課程，請按一下報表標題列中的&#x200B;**[!UICONTROL 「技術劃分」]**，然後按一下&#x200B;**「i」]圖示。[!UICONTROL **
+>除了此資訊外，您還可檢視產品內教學課程，其中說明如何與散射環圖互動。 若想啟動教學課程，請按一下報表標題列中的&#x200B;**[!UICONTROL 「技術劃分」]**，然後按一下&#x200B;**「i」]圖示。[!UICONTROL **
 
 ![](assets/location.png)
 
@@ -59,7 +59,7 @@ In this illustration, the **[!UICONTROL Categories]** buttons in the upper right
 
 >[!TIP]
 >
->散射環愈多，處理的時間就愈久。
+>在散射環中加入的環越多，處理的時間就越長。
 
 若想加入劃分和次要量度，請按一下報表標題列中的&#x200B;**[!UICONTROL 「位置劃分」]**，並按一下&#x200B;**「自訂」]開啟右側邊欄。[!UICONTROL **
 
