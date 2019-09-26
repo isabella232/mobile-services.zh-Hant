@@ -2,10 +2,10 @@
 description: 此資訊可協助您使用 iOS 應用程式中的應用程式內傳訊。
 seo-description: 此資訊可協助您使用 iOS 應用程式中的應用程式內傳訊。
 seo-title: 應用程式內傳訊
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊
 topic: 開發人員和實施
-uuid: 21fa6a94-bb7 f-4c78-843b-a50 f1974 db22
+uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -25,15 +25,15 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >即使您沒有定義任何訊息，也可以完成這些步驟。定義訊息後，就會動態傳遞至您的應用程式，並顯示不會更新應用程式商店。
+   >即使您未定義任何消息，也可以完成這些步驟。 After you define messages, they are delivered dynamically to your app and displayed without an app store update.
 
 ## Enabling in-app messages {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/requirements.md)。
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/requirements.md)
 
-1. 匯入資料庫:
+1. 匯入程式庫:
 
    ```objective-c
    #import "ADBMobile.h"
@@ -67,9 +67,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >`messages` 或為 `remotes` 必要項目。
+   >`messages` or  is required.`remotes`
 
-   If these objects are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. 如需詳細資訊，請參閱 [核心實作與生命週期](/help/ios/getting-started/requirements.md)。
+   If these objects are not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. For more information, see Core Implementation and Lifecycle.[](/help/ios/getting-started/requirements.md)
 
 ## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
@@ -77,14 +77,14 @@ iOS Mobile Services SDK 可為您的應用程式內訊息追蹤以下度量:
 
 * 如果是全螢幕和警示樣式的應用程式內訊息:
 
-   * **[!UICONTROL 印象]**：當使用者觸發應用程式內訊息時。
-   * **[!UICONTROL 點進]**&#x200B;次數：使用者按下 **[!UICONTROL 「點進」]** 按鈕時。
-   * **[!UICONTROL 取消]**：當使用者推送 **[!UICONTROL 「取消」]** 按鈕時。
+   * **[!UICONTROL 印象]**:當使用者觸發應用程式內訊息時。
+   * **[!UICONTROL Click throughs: when the user pushes the Click-through button.]******
+   * **[!UICONTROL Cancels]**: when the user pushes the **[!UICONTROL Cancel]** button.
 
 * 如果是自訂的全螢幕應用程式內訊息，訊息中的 HTML 內容必須包含正確的程式碼，才能通知 SDK 追蹤以下的按鈕:
 
-   * **[!UICONTROL 點進]** (重新導向)範例追蹤： `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **[!UICONTROL 取消]** (關閉)範例追蹤： `adbinapp://cancel`
+   * **[!UICONTROL Click-through (redirect) example tracking:]**`adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL 取消]** （關閉）追蹤範例： `adbinapp://cancel`
 
 * 如果是本機 (遠端) 通知:
 
