@@ -1,9 +1,9 @@
 ---
 description: BlackBerry程式庫提供的類別和方法。
-seo-description: BlackBerry程式庫提供的類別和方法。
-seo-title: Adobe Mobile類別與方法參考
-title: Adobe Mobile類別與方法參考
-uuid: 1e42d759-be43-4bb3-ac1 a-c7 d64133 d61 c
+seo-description: Classes and methods provided by the BlackBerry library.
+seo-title: Adobe mobile類別與方法參考
+title: Adobe mobile類別與方法參考
+uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
@@ -12,9 +12,9 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 # Adobe Mobile class and method reference {#adobe-mobile-class-and-method-reference}
 
-BlackBerry程式庫提供的類別和方法。
+Classes and methods provided by the BlackBerry library.
 
-SDK目前擁有Adobe Analytics的支援，而方法是根據解決方案不同類別。
+SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用。
 
 ## SDK settings {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -44,8 +44,8 @@ SDK目前擁有Adobe Analytics的支援，而方法是根據解決方案不同�
 
    將目前使用者的隱私權狀態設為 `status`。設定為下列其中一值:
 
-   * `ADBMobilePrivacyStatusOptIn` - 點擊會立即傳送。
-   * `ADBMobilePrivacyStatusOptOut` - 點擊會被捨棄。
+   * `ADBMobilePrivacyStatusOptIn` -會立即傳送點擊。
+   * `ADBMobilePrivacyStatusOptOut` - hits are discarded.
    * `ADBMobilePrivacyStatusUnknown` – 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -153,7 +153,7 @@ SDK目前擁有Adobe Analytics的支援，而方法是根據解決方案不同�
 
    >[!TIP]
    >
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >這是唯一會增加頁面檢視次數的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -199,9 +199,9 @@ SDK目前擁有Adobe Analytics的支援，而方法是根據解決方案不同�
         ADBMobile::trackLocation(event, null);
       ```
 
-## `ADBMobileConfig.json` config檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` 配置檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-`ADBMobileConfig.json` 檔案必須放置在 *資產* 資料夾中。
+The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **rsids**
 
@@ -235,7 +235,7 @@ SDK目前擁有Adobe Analytics的支援，而方法是根據解決方案不同�
 
    >[!TIP]
    >
-   >如果報表套裝已啟用時間戳記，您的 `offlineEnabled` 組態屬性&#x200B;*必須*&#x200B;為 `true`. 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 false。如果此項目未正確設定，將會遺失資料。如果您不確定報表套裝是否啟用時間戳記，聯絡 [企業支援](https://helpx.adobe.com/contact/enterprise-support.ec.html)。
+   >如果報表套裝已啟用時間戳記，您的 `offlineEnabled` 組態屬性&#x200B;*必須*&#x200B;為 `true`. 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 false。如果此項目未正確設定，將會遺失資料。如果您不確定報表套裝是否啟用時間戳記， 聯絡 [企業支援](https://helpx.adobe.com/contact/enterprise-support.ec.html)。
 
    如果您目前回報 AppMeasurement 資料的報表套裝也可從 JavaScript 收集資料，則必須為行動資料設定個別的報表套裝，或在使用 `s.timestamp` 變數的所有 JavaScript 點擊上加上自訂時間戳記。
 
@@ -249,16 +249,16 @@ SDK目前擁有Adobe Analytics的支援，而方法是根據解決方案不同�
 
 * **batchLimit**
 
-   儲存在佇列中的離線點擊數量上限。預設值為(無限制)。
+   儲存在佇列中的離線點擊數量上限。預設值為0（無限制）。
 
 * **privacyDefault**
 
-   * `optedin` - 點擊會立即傳送。
-   * `optedout` - 點擊會被捨棄。
+   * `optedin` - hits are sent immediately.
+   * `optedout` - hits are discarded.
    * `optunknown` – 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
       如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
-   此變數僅設定初始值。如果已在程式碼中設定或變更此值，即會使用新的值直到變更此值，或應用程式解除安裝並重新安裝為止。
+   This variable sets the initial value only. 如果已在程式碼中設定或變更此值，即會使用新的值直到變更此值，或應用程式解除安裝並重新安裝為止。
 
    預設值為 `optedin`。
 
