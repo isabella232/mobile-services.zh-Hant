@@ -2,10 +2,10 @@
 description: 此資訊可協助您在 iOS 應用程式中提供目標式內容。
 seo-description: 此資訊可協助您在 iOS 應用程式中提供目標式內容。
 seo-title: Target
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: Target
 topic: 開發人員和實施
-uuid: c2b134bb-1c29-4617-bd9 e-fa394048361
+uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -14,7 +14,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 # Target{#target}
 
-本節中的資訊可協助您在iOS應用程式中提供有針對性的內容。
+本節中的資訊可協助您在iOS應用程式中提供目標內容。
 
 ## 新版 Adobe Experience Cloud SDK
 
