@@ -2,10 +2,10 @@
 description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時，例如，當使用者從首頁導覽至新聞摘要時，您應該傳送追蹤狀態呼叫。在 iOS 中，通常是使用各個檢視的 viewDidLoad 方法追蹤狀態。
 seo-description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時，例如，當使用者從首頁導覽至新聞摘要時，您應該傳送追蹤狀態呼叫。在 iOS 中，通常是使用各個檢視的 viewDidLoad 方法追蹤狀態。
 seo-title: 追蹤應用程式狀態
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤應用程式狀態
 topic: 開發人員和實施
-uuid: 12cca4eb-1f15-4cec-a58 f-76b69 edit99 d
+uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -24,8 +24,8 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期中的新增SDK和設定檔案至您的專案*[](/help/ios/getting-started/dev-qs.md)。
-1. 匯入資料庫。
+   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
+1. 匯入程式庫.
 
    ```objective-c
    #import "ADBMobile.h"
@@ -42,7 +42,7 @@ In Adobe Mobile services, the **[!UICONTROL State Name]** is reported in the *`V
 
 ## Sending additional data {#section_CFDB4F944496401786A145C209AB387C}
 
-**[!UICONTROL 除了「州名稱」外]**，您還可以隨每個追蹤動作呼叫傳送其他上下文資料：
+In addition to the **[!UICONTROL State Name]**, you can send additional context data with each track action call:
 
 ```objective-c
 NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
@@ -50,7 +50,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Home Screen" data:contextData];
 ```
 
-上下文資料值必須映射至自訂變數：
+Context data values must be mapped to custom variables:
 
 ![](assets/map-variable-context-state.png)
 
