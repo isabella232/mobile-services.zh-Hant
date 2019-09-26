@@ -2,10 +2,10 @@
 description: 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 seo-description: 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 seo-title: 計時動作
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 計時動作
 topic: 開發人員和實施
-uuid: 5a48a580-b942-4e49-9f1 b-078fa7 fcdb
+uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
 translation-type: tm+mt
 source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
@@ -31,8 +31,8 @@ source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作和生命週期中的新增SDK和設定檔案至IntelliJ* [IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
-1. 匯入資料庫:
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifeycle.**[](/help/android/getting-started/dev-qs.md)
+1. 匯入程式庫:
 
    ```java
    import com.adobe.mobile.*;
