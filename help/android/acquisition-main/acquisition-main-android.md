@@ -1,9 +1,9 @@
 ---
 description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
 seo-description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
-seo-title: 收購概觀
-solution: Marketing Cloud、Analytics
-title: 收購概觀
+seo-title: Acquisition overview
+solution: Marketing Cloud,Analytics
+title: 贏取概觀
 topic: 開發人員和實施
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
 translation-type: tm+mt
@@ -12,9 +12,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 ---
 
 
-# 收購概觀 {#acquisition}
+# Acquisition overview {#acquisition}
 
-這些資訊可協助您在Android應用程式中使用贏取追蹤連結。
+這項資訊可協助您在Android應用程式中使用贏取追蹤連結。
 
 ## 新版 Adobe Experience Cloud SDK
 
