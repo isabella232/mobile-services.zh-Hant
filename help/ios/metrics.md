@@ -7,7 +7,7 @@ title: 生命週期量度
 topic: 開發人員和實施
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: a6608bf4d36a6fb6aca00f50cc058c09dbd931b1
 
 ---
 
@@ -16,18 +16,14 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 以下是實施生命週期後，行動程式庫可自動測量的度量和維度。
 
-## 新版 Adobe Experience Cloud SDK
+## New Adobe Experience Platform Mobile SDK Release
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 Launch。
+* To get started, go to [Experience Platform Launch](https://launch.adobe.com/).
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-App messaging, push notifications or Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。
 
 
 ## Lifecycle metrics and dimensions {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -95,11 +91,11 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 >
 > The Daily Engaged Users and Monthly Engaged Users metrics are not automatically stored in an Analytics metric. **** You must create a processing rule that sets a custom event to capture these metrics.
 
-### 維度
+#### 維度
 
 * **安裝日期**
 
-   安裝後首次啟動的日期。The date format is .`MM/DD/YYYY`
+   安裝後首次啟動的日期。日期格式為 `MM/DD/YYYY`。
 
    * Analytics 上下文資料/目標: `a.InstallDate`
    * 讀者管理: `c_a_InstallDate`
@@ -189,12 +185,12 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 讀者管理: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >「上 *次升級後的天數*」、「上次升級後的啟動次數 *」和「電信業者名稱*** 」維度不會自動儲存在Analytics變數中。 您必須建立處理規則，將值複製至Analytics變數以用於報告。
+   >「上 *次升級後的天數*」、「上次升級後的啟動次數 *」和「電信業者名稱*** 」維度不會自動儲存在Analytics變數中。 You must create a processing rule to copy the values to an Analytics variable for reporting.
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-The following metrics and dimensions are captured in mobile solution variables by the listed method.
+下列度量和維度會透過列出的方法在行動解決方案變數中擷取。
 
 ### 量度
 
@@ -254,11 +250,11 @@ The following metrics and dimensions are captured in mobile solution variables b
 
    Populated by `trackLocation` methods.
 
-   * Analytics上下文資料/Target參數：
+   * Analytics Context Data/Target parameter:
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * 觀眾管理特徵：
+   * Audience Management trait:
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
