@@ -2,10 +2,10 @@
 description: 下表列出的量度與維度，可在生命週期實施後由行動資料庫自動進行測量。
 seo-description: 下表列出的量度與維度，可在生命週期實施後由行動資料庫自動進行測量。
 seo-title: 生命週期量度
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 生命週期量度
 topic: 開發人員和實施
-uuid: b795e383-d59 b-4a3 c-9e14-ffe8 fb58412 c
+uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -38,7 +38,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 >[!TIP]
 >
->說明中提供例外情形。
+>說明中提供例外。
 
 ### 量度
 
@@ -93,13 +93,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 >[!IMPORTANT]
 >
-> *每日參與使用者* 和 *每月參與使用者* 量度不會自動儲存在Analytics量度中。您必須建立處理規則，以設定自訂事件來擷取這些量度。
+> The Daily Engaged Users and Monthly Engaged Users metrics are not automatically stored in an Analytics metric. **** You must create a processing rule that sets a custom event to capture these metrics.
 
 ### 維度
 
 * **安裝日期**
 
-   安裝後首次啟動的日期。日期格式 `MM/DD/YYYY`為。
+   安裝後首次啟動的日期。The date format is .`MM/DD/YYYY`
 
    * Analytics 上下文資料/目標: `a.InstallDate`
    * 讀者管理: `c_a_InstallDate`
@@ -189,12 +189,12 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 讀者管理: `c_a_Resolution`
    >[!IMPORTANT]
    >
-   >上次升級後的 *天數*、 *上次升級*&#x200B;後的啓動次數， *以及「電信業者名稱* 」維度，都不會自動儲存在Analytics變數中。您必須建立處理規則，將值複製到Analytics變數以進行報告。
+   >「上 *次升級後的天數*」、「上次升級後的啟動次數 *」和「電信業者名稱*** 」維度不會自動儲存在Analytics變數中。 您必須建立處理規則，將值複製至Analytics變數以用於報告。
 
 
 ## Additional mobile metrics and dimensions {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-下列度量和維度會依列出的方法在行動解決方案變數中擷取。
+The following metrics and dimensions are captured in mobile solution variables by the listed method.
 
 ### 量度
 
