@@ -3,10 +3,10 @@ description: 「保留」報表 (舊稱為「首次啟動的群眾」) 是群眾
 keywords: 行動
 seo-description: 「保留」報表 (舊稱為「首次啟動的群眾」) 是群眾報表，可顯示有多少不重複使用者初次啟動您的應用程式，並且在隨後的幾個月內至少再啟動一次您的應用程式。
 seo-title: 保留報告
-solution: Marketing Cloud、Analytics
-title: 保留報告
+solution: Marketing Cloud,Analytics
+title: Retention report
 topic: 報表,量度
-uuid: e7639e7f-c9 ed-4b19-9ac5-b36774 ea9 d6
+uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
