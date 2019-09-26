@@ -5,7 +5,7 @@ seo-description: 'null'
 seo-title: 實施生命週期
 solution: Marketing Cloud，開發人員
 title: 實施生命週期
-uuid: 7ff2c194-569c-42a6-922d-dcr2 aa9 eb8 d
+uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
@@ -14,11 +14,11 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 # 實施生命週期{#implement-lifecycle}
 
-如需在實施生命週期後由行動程式庫自動測量的度量和維度的詳細資訊，請參閱 [iOS中Android](/help/android/metrics.md) 或 [生命週期中的生命週期度量](/help/ios/metrics.md)。
+如需實作生命週期後行動程式庫可自動測量的度量和維度的詳細資訊，請參閱Android中的生命週期度量 [，或iOS中](/help/android/metrics.md) 的生命週期 [](/help/ios/metrics.md)。
 
 ## iOS
 
-生命週期度量會自動收集在iOS中。
+生命週期度量會自動在iOS中收集。
 
 ## Android
 
