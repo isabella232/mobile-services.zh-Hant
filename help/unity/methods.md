@@ -2,10 +2,10 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: ADBMobile. cs方法
+seo-title: ADBMobile.cs方法
 solution: Marketing Cloud，開發人員
-title: ADBMobile. cs方法
-uuid: af504934-fedd-45d9-81e2-2a310 f4 c65 dc
+title: ADBMobile.cs方法
+uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -14,7 +14,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 # ADBMobile.cs methods {#adbmobile-cs-methods}
 
-## 設定方法
+## 配置方法
 
 * **CollectLifecycleData**
 
@@ -83,8 +83,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 * **GetPrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`：立即傳送點擊。
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`：點擊會被捨棄。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`:點擊會立即傳送。
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
       如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) 檔案中。
@@ -139,7 +139,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >此方法的目的是用於在背景中註冊接收通知的應用程式，且只有在應用程式在背景時，才應從此時執行的程式碼中呼叫。
+   >此方法適用於在背景中註冊通知的應用程式，且僅應從應用程式在背景時執行的程式碼呼叫此方法。
 
    * 以下是此方法的語法:
 
@@ -205,8 +205,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    設定目前使用者的隱私權狀態為 status。設定為下列其中一值:
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`：立即傳送點擊。
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`：點擊會被捨棄。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`: Hits are sent immediately.
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: Hits are discarded.
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -237,7 +237,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADBMobile.SetUserIdentifier("myCustomUserId"); 
       ```
 
-## 分析方法
+## Analytics methods
 
 * **GetTrackingIdentifier**
 
@@ -263,7 +263,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >這是唯一遞增頁面檢視的追蹤呼叫。
+   >這是唯一會增加頁面檢視次數的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -305,7 +305,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >只有在應用程式在背景時執行的程式碼才會呼叫此方法。
+   >This method should only be called in code that runs while your app is in the background.
 
    * 以下是此方法的語法:
 
