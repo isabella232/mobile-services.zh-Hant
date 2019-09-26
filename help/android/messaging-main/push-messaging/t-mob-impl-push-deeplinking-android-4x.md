@@ -14,11 +14,11 @@ source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 在您於 Adobe Mobile Services 使用者介面中設定深層連結 URL 後，此 URL 會位於含有 adb_deeplink 鍵值的推送裝載中。
 
-您可以呼叫 `remoteMessage.getData().get("adb_deeplink")` URL來取得URL `FirebaseMessagingService`。
+您可以呼叫以取得 `remoteMessage.getData().get("adb_deeplink")` URL `FirebaseMessagingService`。
 
 >[!TIP]
 >
->您可以根據裝載是否具有深層連結URL，定義不同的意願。
+>You can define different intents depending on whether the payload has a deep linking URL.
 
 1. 完成下列其中一項作業:
 
