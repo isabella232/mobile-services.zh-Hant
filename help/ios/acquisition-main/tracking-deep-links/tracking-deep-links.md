@@ -2,9 +2,9 @@
 description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile iOS SDK 追蹤深層連結和延期的深層連結。
 seo-description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile iOS SDK 追蹤深層連結和延期的深層連結。
 seo-title: 追蹤深層連結
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤深層連結
-uuid: 08dc2820-20fd3-419f-ac2 d-df12532578 a
+uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
 translation-type: tm+mt
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
@@ -19,12 +19,12 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ## 追蹤深層連結
 
-1. 新增 SDK 至您的專案，並實施生命週期量度。
+1. 新增 SDK 至您的專案，並實作生命週期量度。
 
-   如需詳細資訊，請參閱&#x200B;*在核心實作和生命週期中，將SDK和設定檔案新增至您*[的專案](/help/ios/getting-started/dev-qs.md)。
+   如需詳細資訊，請 *參閱核心實作和生命週期中的「將SDK和設定檔案新*[增至專案」](/help/ios/getting-started/dev-qs.md)。
 1. 註冊應用程式以處理應用程式間通訊或支援通用連結。
 
-   如需詳細資訊，請參閱 [應用程式間通訊](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) 或 [支援通用連結](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
+   For more information, see Inter-App Communications or Support Universal Links[](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10)[](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
 1. 在 openURL 中追蹤深層連結。
 
@@ -50,7 +50,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 The Adobe Mobile SDK can parse key and value pairs of data appended to any deep or Universal Link, provided that the link contains a key with a `a.deeplink.id` label and a corresponding non-null and user generated value. 若連結包含 `a.deeplink.id` 鍵值和值，所有附加至連結之資料的鍵值和值組都會經過剖析、附加至生命週期點擊，然後傳送至 Adobe Analytics。
 
-您也可以選擇附加下列一或多個保留索引鍵(使用使用者產生的值)至深層或通用連結：
+您也可以選擇將下列一或多個保留金鑰（含使用者產生的值）附加至深層或通用連結：
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
@@ -69,7 +69,7 @@ The Adobe Mobile SDK can parse key and value pairs of data appended to any deep 
    }];
    ```
 
-1. 內建控制代碼 `ADBMobileDataEventDeepLink``AdobeDataCallback`。
+1. Handle `ADBMobileDataEventDeepLink` within `AdobeDataCallback`.
 
    ```objective-c
    [ADBMobile registerAdobeDataCallback:^(ADBMobileDataEvent event, NSDictionary * _Nullable adobeData) { 
