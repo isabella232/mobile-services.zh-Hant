@@ -1,14 +1,14 @@
 ---
 description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者在按一下產生的連結後，從App Store下載並執行應用程式時，SDK會自動收集贏取資料並傳送至Adobe Mobile服務。
 keywords: android;library;mobile;sdk
-seo-description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者在按一下產生的連結後，從App Store下載並執行應用程式時，SDK會自動收集贏取資料並傳送至Adobe Mobile服務。
+seo-description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。When a user downloads and runs an app from the App store after clicking on the generated link, the SDK automatically collects and sends the acquisition data to Adobe Mobile services.
 seo-title: 行動應用程式贏取
 solution: Marketing Cloud,Analytics
 title: 行動應用程式贏取
 topic: 開發人員和實施
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 translation-type: tm+mt
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ---
 
@@ -17,18 +17,14 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者在按一下產生的連結後，從App Store下載並執行應用程式時，SDK會自動收集贏取資料並傳送至Adobe Mobile服務。
 
-## 新版 Adobe Experience Cloud SDK
+## 全新Adobe Experience Platform Mobile SDK版本
 
 正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
-* 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
+* 若要開始，請前往Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-
->[!IMPORTANT]
->
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。For more information about using Acquisition and Marketing Links with the Experience Cloud SDKs, see [Acquisition and Marketing Links](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
 
 >[!IMPORTANT]
 >
@@ -68,7 +64,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 >[!TIP]
 >
->如果您要傳送資料至多個報表套裝，請使用與報表套裝ID清單中第一個報表套裝關聯的應用程式贏取資料。
+>If you are sending data to multiple report suites, use the acquisition data from the app that is associated with the first report suite in your list of report suite IDs.
 
 本節中的更新可讓 SDK 透過贏取連結傳送贏取資料。
 
