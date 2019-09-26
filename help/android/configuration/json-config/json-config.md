@@ -2,10 +2,10 @@
 description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
 seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
 seo-title: ADBMobile JSON 設定
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: 開發人員和實施
-uuid: 1decf605-7bc3-4e73-ad52-1dex5821599 e
+uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -14,24 +14,24 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 # ADBMobile JSON config file {#adbmobile-json-config}
 
-此資訊可協助您瞭解ADBMobile. json組態檔中的變數。
+這項資訊可協助您瞭解ADBMobile.json設定檔案中的變數。
 
-## `ADBMobileConfig.json` config檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 您的應用程式可以跨多平台使用此相同的設定檔案:
 
 >[!TIP]
 >
->**在Android**&#x200B;中 `ADBMobileConfig.json` ，檔案必須放置在 `assets` 檔案夾中。
+>In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
 
 以下是JSON檔案中的變數清單，以及每個變數所需的最低SDK版本：
 
 * **acquisition**
    * 最低 SDK 版本: 4.1
    * 啟用行動應用程式贏取。
-      * `server`這是贏取伺服器在首次啓動時被檢查的贏取伺服器。
+      * `server`, which is the acquisition server that is checked at the initial launch for an acquisition referrer.
       * `appid` – 即產生的 ID，可在贏取伺服器上唯一識別此應用程式。
-   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參閱 *此變數清單中的referrerTimeout* 。
+   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參 *閱此變數清單中的* referrerTimeout。
 
 * **analyticsForwardingEnabled**
    * 最低SDK版本為4.8.0。
@@ -53,7 +53,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
          >[!IMPORTANT]
          >
-         >回溯日期作業點擊資訊會在作業資訊伺服器呼叫中傳送，並可能套用其他伺服器呼叫。
+         >回溯日期的作業點擊資訊會在作業資訊伺服器呼叫中傳送，並可能套用其他伺服器呼叫。
 
 * **batchLimit**
    * 最低 SDK 版本: 4.1
@@ -82,7 +82,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **coopUnsafe**
    * 最低 SDK 版本: 4.16.1
-   * `marketingCloud` 物件的布林屬性，在設定為 `true`時，會使裝置選擇退出Experience Cloud的Device Co-Op。
+   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
    * 預設值為 `false`.
    * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
    若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶向其申請黑名單標記。沒有啟用可這些標幟的自助式路徑。
@@ -154,7 +154,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       …/yourfile.json”`,
       ```
 
-      若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔案，請參閱 [「開始之前](/help/android/getting-started/requirements.md)」。
+      若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。要下載更新的配置檔案，請參 [閱啟動前](/help/android/getting-started/requirements.md)。
 
 * **postback**
    * 最低 SDK 版本: 4.6
@@ -185,7 +185,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
       >[!IMPORTANT]
       >
-      >「贏取」需要此變數。如果變數設為 `0` 或不包含變數，SDK 不會等待贏取資料，且不會追蹤贏取量度。
+      >贏取需要此變數。 如果變數設為 `0` 或不包含變數，SDK 不會等待贏取資料，且不會追蹤贏取量度。
 
 * **remotes**
    * 最低 SDK 版本: 4.2
