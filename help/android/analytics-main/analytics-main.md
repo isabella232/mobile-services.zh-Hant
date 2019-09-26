@@ -1,19 +1,19 @@
 ---
 description: 此資訊可協助您將 Android SDK 與 Adobe Analytics 搭配使用。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 此資訊可協助您將 Android SDK 與 Adobe Analytics 搭配使用。
-seo-title: Analytics概觀
-solution: Marketing Cloud、Analytics
-title: Analytics概觀
+seo-title: Analytics overview
+solution: Marketing Cloud,Analytics
+title: Analytics總覽
 topic: 開發人員和實施
-uuid: cc9fa1d9-bc48-4d03-854a-f7 b263580 a91
+uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Analytics概觀 {#analytics}
+# Analytics總覽 {#analytics}
 
 本節中的資訊可協助您搭配Adobe Analytics使用Android SDK。
 
@@ -28,7 +28,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 * 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
-## 產生Analytics追蹤識別碼
+## Generating Analytics tracking identifiers
 
 在 SDK 中，識別碼是用來追蹤使用者，以下為識別碼的階層關係:
 
@@ -38,7 +38,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!TIP]
 >
->Experience Cloud識別碼的正確縮寫是ECID。雖然 SDK 仍使用 MID，但這是舊稱。
+>The correct acronym for Experience Cloud Identifier is ECID. 雖然 SDK 仍使用 MID，但這是舊稱。
 
 AID 有時也稱為追蹤識別碼，是在應用程式沒有設定要使用 MID 時，由 SDK 產生的追蹤碼。此值會在啟動和應用程式更新之間保存在 `SharedPreferences`。如果使用者從裝置上刪除應用程式，然後重新安裝應用程式，或者應用程式開發人員清除了 SharedPreferences，SDK 便會產生新的識別碼。這個程序會導致 Analytics 報告中產生新的使用者。
 
