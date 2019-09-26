@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-product: 行動服務
+product: mobile-services
 solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
