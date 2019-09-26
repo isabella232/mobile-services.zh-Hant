@@ -3,10 +3,10 @@ description: 使用狀況報表顯示平均作業長度、每日和每月的參�
 keywords: 行動
 seo-description: 使用狀況報表顯示平均作業長度、每日和每月的參與使用者、升級及其他分析，協助您瞭解您的應用程式的使用狀況和使用頻率。「保留」報表可快速顯示在初次啟動、1 天、7 天和 28 天後的使用者保留層級。
 seo-title: 報表
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 報表
 topic: 報表,量度
-uuid: 2abc2bd1-dbae-4af1-9b8 d-1df2 f6 d3 a81 f
+uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
@@ -31,5 +31,5 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 * [App Store 概述報表](/help/using/usage/c-app-store-store-performance.md)
 * [自訂報表](/help/using/usage/reports-customize/reports-customize.md)
 * [新增篩選器至報表](/help/using/usage/reports-customize/t-reports-customize.md)
-* [新增系列(量度)至報表](/help/using/usage/reports-customize/t-reports-series.md)
+* [Add Series (Metrics) to Reports](/help/using/usage/reports-customize/t-reports-series.md)
 * [新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)
