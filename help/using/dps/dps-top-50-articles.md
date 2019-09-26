@@ -1,23 +1,23 @@
 ---
-description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報告僅適用於Digital Publishing Suites(DPS)客戶。
+description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報表僅適用於Digital Publishing Suites(DPS)客戶。
 keywords: 行動
-seo-description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報告僅適用於Digital Publishing Suites(DPS)客戶。
+seo-description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報表僅適用於Digital Publishing Suites(DPS)客戶。
 seo-title: 前 50 名文章
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 前 50 名文章
 topic: 量度
-uuid: 341370d1-fa87-43ca-8135-425b3 bba272 f
+uuid: 341370d1-fa87-43ca-8135-425b3bba272f
 translation-type: tm+mt
 source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
 ---
 
 
-# 前50名文章報表{#top-articles}
+# Top 50 Articles report{#top-articles}
 
-**[!UICONTROL 「前50名文章]** 」報表會顯示長條圖，排名報表會使用應用程式顯示最常閱讀的文章。此報告僅適用於DPS客戶。
+The **[!UICONTROL Top 50 Articles]** report displays a bar chart and ranked report displays the most-read articles using the app. This report is available only to DPS customers.
 
-預設報表會依讀者人數顯示最近30天的資料，但您可以自訂報表。
+雖然預設報表會依讀者人數顯示最近30天的資料，但您可以自訂報表。
 
 ![](assets/dps_top_50.png)
 
@@ -25,7 +25,7 @@ source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
 您可以為此報表配置下列選項:
 
-* **[!UICONTROL 時段]**&#x200B;按一下 **[!UICONTROL 「日曆]** 」圖示以選取自訂時段，或從下拉式清單選取預設時段。
+* **[!UICONTROL 時段]**&#x200B;按一 **[!UICONTROL 下「日曆]** 」圖示，以選取自訂時段或從下拉式清單中選取預設時段。
 
 * **[!UICONTROL 自訂]**
 
@@ -33,7 +33,7 @@ source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
 * **[!UICONTROL 篩選]**
 
-   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱 [新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
+   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
 
 * **[!UICONTROL 下載]**
 
