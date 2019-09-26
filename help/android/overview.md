@@ -1,12 +1,12 @@
 ---
 description: 適用於 Experience Cloud 解決方案的 Android SDK 4.x 可讓您測量原生 Android 應用程式、在應用程式中提供目標式內容，以及透過對象管理運用與收集對象資料。
-keywords: Android；資料庫；行動；sdk
+keywords: android;library;mobile;sdk
 seo-description: 適用於 Experience Cloud 解決方案的 Android SDK 4.x 可讓您測量原生 Android 應用程式、在應用程式中提供目標式內容，以及透過對象管理運用與收集對象資料。
 seo-title: 適用於 Experience Cloud 解決方案的 Android SDK 4.x
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 Android SDK 4.x
 topic: 開發人員和實施
-uuid: 56f1ff41-0365-41dd-bdde-245c823 dff07
+uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 translation-type: tm+mt
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
@@ -19,7 +19,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->必須有Adobe Analytics Mobile Marketing Add-on SKU，才能讓Mobile Services存取行動裝置收購、深層連結、地理位置和行動訊息功能。如需詳細資訊，請聯絡您的Adobe CSM。
+>Adobe Analytics Mobile Marketing附加元件SKU是必要項，以讓Mobile services存取行動裝置贏取、深層連結、地理位置和行動訊息功能。 如需詳細資訊，請洽詢您的Adobe CSM。
 
 ## 新版 Adobe Experience Cloud SDK
 
@@ -38,7 +38,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->雖然您可以設定UI中的功能，但這些功能將無法運作，直到您下載產生的組態檔並將此檔案新增至SDK為止。如需下載和設定SDK的詳細資訊，請參閱 [核心實作與生命週期](/help/android/getting-started/dev-qs.md)。
+>雖然您可以在UI中設定功能，但這些功能必須等到您下載產生的設定檔案並將此檔案新增至SDK後，才能運作。 如需有關下載和設定SDK的詳細資訊，請參 [閱核心實作和生命週期](/help/android/getting-started/dev-qs.md)。
 
 SDK 支援以下版本的 Android:
 
@@ -49,7 +49,7 @@ SDK 支援以下版本的 Android:
 
 * 在 4.2 版或更新版本中，所有點撃現在會透過 HTTP POST 傳送。
 
-   這對收集或報告的資料沒有影響，但您必須使用支援檢查POST資料以檢視點擊的封包分析器。
+   這對收集或報告的資料沒有影響，但您需要使用支援檢查POST資料的封包分析器來檢視點擊。
 
 * If you are upgrading from a previous version, see the [4.x Migration Guide](/help/android/getting-started/migration-v3.md).
 
