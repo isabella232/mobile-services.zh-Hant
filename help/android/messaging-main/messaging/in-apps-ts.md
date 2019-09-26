@@ -3,17 +3,17 @@ description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 keywords: 行動
 seo-description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 seo-title: 疑難排解應用程式內訊息
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 疑難排解應用程式內訊息
 topic: 量度
-uuid: 39c3a21d-92c2-4004-b00 f-99b6 f91 d3696
+uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 translation-type: tm+mt
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# 疑難排解應用程式內傳訊{#troubleshooting-in-app-messaging}
+# 疑難排解應用程式內訊息{#troubleshooting-in-app-messaging}
 
 此資訊可協助您進行應用程式內傳訊疑難排解。
 
@@ -35,11 +35,11 @@ Ensure that you have an [In-App Messaging](/help/android/messaging-main/messagin
 
 若要確認您的訊息是否為現時，請在「管理應用程式內訊息」頁面的&#x200B;**「狀態」**&#x200B;欄中，檢查訊息清單。
 
-## 檢視 *顯示一次*， *一律顯示*， *顯示「對象」索引標籤上的離線* 設定。
+## 在「對象 *」標籤上**，只要*「顯示」、 *「永遠顯示」* 、「顯示離線設定」即可。
 
 確定這些設定是依照您想要的方式。在&#x200B;**[!UICONTROL 「對象」]**&#x200B;標籤中，檢閱您的&#x200B;**「觸發器」]選項，該選項可讓您指定顯示訊息的頻率。[!UICONTROL **
 
-## 如果使用啓動事件做為觸發器…
+## 如果使用啟動事件作為觸發器……
 
 啟動只會發生在新的工作階段。如需工作階段開始時間的詳細資訊，請參閱 `lifecycleTimeout`JSON 設定[中的 ](/help/android/configuration/json-config/json-config.md) 列。
 
