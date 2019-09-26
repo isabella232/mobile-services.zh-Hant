@@ -2,7 +2,7 @@
 description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
 seo-description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
 seo-title: 贏取
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 贏取
 topic: 開發人員和實施
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
