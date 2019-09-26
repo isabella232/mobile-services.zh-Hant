@@ -2,9 +2,9 @@
 description: '下列為 iOS 資料庫提供的贏取方法 '
 seo-description: '下列為 iOS 資料庫提供的贏取方法 '
 seo-title: 贏取方法
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 贏取方法
-uuid: 6f88de57-793d-4d33-9a54-f6714289 d2 c
+uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
 translation-type: tm+mt
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
@@ -15,7 +15,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 下列為 iOS 資料庫提供的贏取方法:
 
-支援下列方法：
+The following method is supported:
 
 * **acquisitionCampaignStartForApp:data:**
 
