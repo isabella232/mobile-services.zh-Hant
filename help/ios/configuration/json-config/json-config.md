@@ -1,11 +1,11 @@
 ---
 description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
 seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
-seo-title: ADBMobile JSON config
-solution: Marketing Cloud、Analytics
+seo-title: ADBMobile JSON設定
+solution: Marketing Cloud,Analytics
 title: ADBMobile JSON config
 topic: 開發人員和實施
-uuid: d9708d59-e30 a-4f6 c-ab1 b-d9499755 d0 c2
+uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 translation-type: tm+mt
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
@@ -30,13 +30,13 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參閱下方的 *referrerTimeout*。
 
-   * `server` - 贏取伺服器，在首次啓動贏取反向連結時檢查。
+   * `server` - Acquisition server that is checked at the initial launch for an acquisition referrer.
    * `appid` – 產生的 ID，可在贏取伺服器上唯一識別此應用程式。
    * 最低 SDK 版本: 4.1
 
 * **analyticsForwardingEnabled**
 
-   `audienceManager` 物件中的屬性。`Audience Manager` 如果設定並 `analyticsForwardingEnabled` 設定為 `true`，所有Analytics流量也會轉送至Audience Manager。預設值為 `false`。
+   `audienceManager` 物件中的屬性。If `Audience Manager` is configured and `analyticsForwardingEnabled` is set to `true`, all Analytics traffic is also forwarded to Audience Manager. 預設值為 `false`。
 
    * 最低 SDK 版本: 4.8.0
 
@@ -57,7 +57,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 最低 SDK 版本: 4.6
    >[!IMPORTANT]
    >
-   >回溯日期作業點擊資訊會在作業資訊伺服器呼叫中傳送，並可能套用其他伺服器呼叫。
+   >回溯日期的作業點擊資訊會在作業資訊伺服器呼叫中傳送，並可能套用其他伺服器呼叫。
 
 
 * **batchLimit**
@@ -95,7 +95,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    以下為部分其他資訊:
 
    * 最低 SDK 版本: 4.16.1
-   * `marketingCloud` 物件的布林屬性，在設定為 `true`時，會使裝置選擇退出Experience Cloud的Device Co-Op。
+   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
    * 預設值為 `false`.
    * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
 
@@ -125,7 +125,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    啟用後，點擊會在裝置離線時排入佇列，並在稍後裝置上線時傳送。您的報表套裝必須啟用時間戳記才能使用離線追蹤功能。預設值為 `false`。
 
-   以下是一些重要資訊：
+   Here is some important information:
 
    * 如果報表套裝已啟用時間戳記，您的 `offlineEnabled` 組態屬性&#x200B;*必須*&#x200B;為 true。
    * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
@@ -136,7 +136,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **org**
 
-   指定Adobe Experience Platform Identity Service的Experience Cloud組織ID。
+   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
 
    * 最低 SDK 版本: 4.3
 
@@ -145,7 +145,6 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    每個 POI 陣列內含 POI 名稱、該地標區域的經緯度以及半徑 (以公尺為單位)。POI 名稱可以是任何字串。送出 `trackLocation` 呼叫後，如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
 
    * 最低 SDK 版本: 4.0
-
    ```js
    "poi" [ 
            ["sanfrancisco",37.757144,-122.44812,7000]
@@ -161,7 +160,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔案，請參閱 [之前](/help/ios/getting-started/requirements.md)。
+   若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。要下載更新的配置檔案，請參 [閱啟動前](/help/ios/getting-started/requirements.md)。
 
 * **postback**
 
@@ -197,7 +196,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >「贏取」需要此變數。If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >贏取需要此變數。 If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
 
    * 最低 SDK 版本: 4.1
 
@@ -239,7 +238,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >Analytics和/或對象管理需要此變數。
+   >此變數是Analytics和／或觀眾管理的必要項。
 
    * 最低 SDK 版本: 4.0
 
