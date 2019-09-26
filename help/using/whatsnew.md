@@ -1,12 +1,12 @@
 ---
 description: Adobe Mobile Services 的新發行資訊。
-keywords: 行動；發行說明；whats new
+keywords: mobile；發行說明；新功能
 seo-description: Adobe Mobile Services 的新發行資訊。
-seo-title: Adobe Mobile Services的發行說明
-solution: Marketing Cloud、Analytics
+seo-title: Release notes for Adobe Mobile Services
+solution: Marketing Cloud,Analytics
 title: 發行說明
 topic: 量度
-uuid: 522b0589-d61 f-4a9 f-952e-ba7 ce11 af2 f9
+uuid: 522b0589-d61f-4a9f-952e-ba7ce11af2f9
 translation-type: tm+mt
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
