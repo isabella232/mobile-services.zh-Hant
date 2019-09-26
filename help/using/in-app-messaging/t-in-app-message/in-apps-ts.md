@@ -3,10 +3,10 @@ description: 此訊息可協助您疑難排解應用程式內訊息的問題。
 keywords: 行動
 seo-description: 此訊息可協助您疑難排解應用程式內訊息的問題。
 seo-title: 應用程式內傳訊疑難排解
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊疑難排解
 topic: 量度
-uuid: 8813e8d8-bb1 e-46ad-83cd-98e68 f73 ce6
+uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 translation-type: tm+mt
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
@@ -37,13 +37,13 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 在&#x200B;**「管理應用程式內訊息」頁面的查「狀態」**&#x200B;欄，檢查清單檢視中的訊息是否使用中。
 
-## 檢視 *顯示一次*， *一律顯示*， *顯示「對象」頁面上的離線* 設定。
+## 在「對 *像」頁*&#x200B;面上 *，只要*&#x200B;顯示一次 *、始終顯示* ，即可顯示離線設定。
 
 檢查這些設定是否正確無誤。在「對象」頁面中，檢閱&#x200B;**「觸發器」**&#x200B;分頁標籤上的選項，該選項可讓您指定顯示訊息的頻率。
 
 ## 如果使用啟動事件做為觸發器...
 
-啟動只會發生在新的工作階段。如需有關工作階段開始時間的資訊，請參閱`lifecycleTimeout` 在 [ADBMobile JSON設定](/help/ios/configuration/json-config/json-config.md) 檔中。
+啟動只會發生在新的工作階段。如需有關工作階段開始時間的資訊，請參閱 在 `lifecycleTimeout` ADBMobile JSON [設定檔案中](/help/ios/configuration/json-config/json-config.md) 。
 
 ## 我已從遠端更新訊息，但應用程式仍顯示舊訊息。
 
@@ -77,7 +77,7 @@ SDK 會擷取在生命週期啟動時新增/更新的訊息。這僅當應用程
 
 完成下列步驟:
 
-1. 將您的訊息URL置於組態檔中，以確認遠端訊息已更新(例如， `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
+1. 在設定檔案中捲動訊息URL以確認遠端訊息已更新(例如 `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
 1. 關閉應用程式
 1. Wait for a time period that is longer than the `lifecycleTimeout` in the config file.
 1. 開啟應用程式，導覽至應顯示訊息的位置，然後驗證其是否已更新。
