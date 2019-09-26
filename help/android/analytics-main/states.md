@@ -2,10 +2,10 @@
 description: 狀態是您的應用程式中不同的畫面或檢視。
 seo-description: 狀態是您的應用程式中不同的畫面或檢視。
 seo-title: 追蹤應用程式狀態
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 追蹤應用程式狀態
 topic: 開發人員和實施
-uuid: 69c99d05-5816-4c86-97c5-d218 dc26 c129
+uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 translation-type: tm+mt
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
@@ -22,9 +22,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱 *核心實作與生命週期* 中 [的新增SDK和設定檔案至IntelliJ IDEA或Eclipse專案](/help/android/getting-started/dev-qs.md)。
+   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
 
-1. 匯入資料庫:
+1. 匯入程式庫:
 
    ```java
    import com.adobe.mobile.*;
