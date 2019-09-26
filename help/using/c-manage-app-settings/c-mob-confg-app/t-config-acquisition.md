@@ -3,10 +3,10 @@ description: 您可以在建立新應用程式或編輯現有應用程式時，�
 keywords: 行動
 seo-description: 您可以在建立新應用程式或編輯現有應用程式時，從「管理應用程式設定」頁面配置 SDK 贏取選項。
 seo-title: 配置 SDK 贏取選項
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 配置 SDK 贏取選項
 topic: 量度
-uuid: 50ce51ad-39fb-4ac7-bd94-757443d11 ca7
+uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
 source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
@@ -27,7 +27,7 @@ source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
       指定反向連結逾時值。
 
-      預設值為秒，而此值指定在傳送「首次啓動」點擊前等候贏取資訊的秒數。
+      The default value is 5 seconds, and this value specifies the number of seconds to wait for acquisition information before sending the First Launch hit.
 
    * **[!UICONTROL 更多詳情]**
 
