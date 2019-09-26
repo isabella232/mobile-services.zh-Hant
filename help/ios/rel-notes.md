@@ -27,9 +27,9 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 * 一般——已修正每次Analytics呼叫時，SDK資料會同步至配對watchOS應用程式的錯誤。
 
-**2019年8月2日：版本4.18.7**
+**August 2, 2019: Version 4.18.7**
 
-* 還原4.18.6版中所引入的變更，此變更在某些環境中造成執行11.0以上iOS版本的裝置當機。
+* Reverted a change that was introduced in version 4.18.6 which, in some environments, caused a crash on devices that were running an iOS version older than 11.0.
 
 * Adobe Target:新增屬 `requestLocationParameters` 性，可 `ADBTargetRequestObject`讓impressionId隨Target請求一起傳送。
 
