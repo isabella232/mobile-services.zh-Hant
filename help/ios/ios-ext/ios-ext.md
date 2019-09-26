@@ -2,10 +2,10 @@
 description: 您可以使用 iOS 延伸功能以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
 seo-description: 您可以使用 iOS 延伸功能以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
 seo-title: iOS 延伸功能實施
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: iOS 延伸功能實施
 topic: 開發人員和實施
-uuid: afc03Fe-403e-4643-ada1-30e403 ede238
+uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 translation-type: tm+mt
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
@@ -33,7 +33,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!IMPORTANT]
 >
->強烈建議您使用iOS SDK，而不要使用您的包裝函式。
+>我們強烈建議您使用iOS SDK，而非您的包裝函式。
 
 Apple 會將要求傳送至容納應用程式，然後再接收回應，藉此提供一組讓 Watch 應用程式與容納應用程式通訊的 API。雖然您可以將追蹤資料當作字典，從 Watch 應用程式傳送到容納應用程式，然後再呼叫容納應用程式上的任何追蹤方法來傳送資料，不過這個解決方案有其限制。
 
@@ -45,7 +45,7 @@ In most cases when a user is using the Watch app, the containing app is running 
 
 >[!IMPORTANT]
 >
->確定您具有至少下列目標的專案：
+>Ensure that you have a project with at least the following targets:
 >
 >* 一個要容納應用程式的目標。
 >* 一個用於延伸功能的目標。
@@ -53,9 +53,9 @@ In most cases when a user is using the Watch app, the containing app is running 
 
 
 
-如果您正在使用 WatchKit 應用程式，則應具備第三個目標。如需有關Apple Watch的詳細資訊，請參閱 [「開發Apple Watch](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)」。
+如果您正在使用 WatchKit 應用程式，則應具備第三個目標。For more information on developing for Apple Watch, see Developing for Apple Watch.[](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)
 
-## 設定包含的應用程式 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
+## Configure the containing app {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
 在您的 Xcode 專案中完成以下步驟:
 
@@ -78,7 +78,7 @@ In most cases when a user is using the Watch app, the containing app is running 
 
 1. 確認可建置應用程式且未發生非預期的錯誤。
 
-## 設定擴充功能 {#section_28C994B7892340AC8D1F07AF26FF3946}
+## 設定  擴充功能 {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. Ensure that the `ADBMobileConfig.json` file is a member of the extension's target.
 1. 在延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
