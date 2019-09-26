@@ -3,7 +3,7 @@ description: 行銷人員可建立追蹤連結來進行促銷，並促進對其�
 keywords: 行動
 seo-description: 行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可建立一個連結，以視情況將使用者路由至 iOS、Android 或其他平台。
 seo-title: 贏取
-solution: Marketing Cloud、Analytics
+solution: Marketing Cloud,Analytics
 title: 贏取
 topic: 量度
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
@@ -32,15 +32,15 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 >[!IMPORTANT]
 >
->雖然您可以設定UI中的功能，但這些功能將無法運作，直到您下載產生的組態檔並將此檔案新增至SDK為止。For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.)
+>Although you can configure features in the UI, these features will not work until you download the generated configuration file and add this file to the SDK. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.)
 
-您可以在可追蹤的行動應用程式行銷連結上建立、編輯、管理和檢視報表。
+您可以建立、編輯、管理和檢視可追蹤行動應用程式行銷連結的報表。
 
 >[!TIP]
 >
->此功能需要Adobe Analytics- Mobile Apps或Adobe Analytics Premium SKU。
+>這項功能需要Adobe Analytics - Mobile Apps或Adobe Analytics Premium SKU。
 
-下列「贏取」報告提供您行銷連結如何執行的深入分析：
+下列贏取報表可讓您深入瞭解行銷連結的執行方式：
 
 * **概述** {#section_5B2BA47F22694919A472AB591101237E}
 
@@ -50,7 +50,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * **連結報表** {#section_A23A640C363B43569D9D484CF49EA277}
 
-   此報表提供您的行銷連結績效的排名檢視。除了檢視含有關鍵績效指標的連結名稱之外，您也可以自訂此報表的內容。如需詳細資訊，請參閱 [自訂報表](/help/using/usage/reports-customize/t-reports-customize.md).
+   此報表提供行銷連結績效的排名檢視。 除了檢視含有關鍵績效指標的連結名稱之外，您也可以自訂此報表的內容。如需詳細資訊，請參閱 [自訂報表](/help/using/usage/reports-customize/t-reports-customize.md).
 
    請記住以下資訊:
 
