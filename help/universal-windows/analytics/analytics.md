@@ -46,7 +46,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 若要在應用程式中收集生命週期量度，請依下列範例新增呼叫至應用程式啟用的時間。
 
-### 預設。js中的WinJS
+### WinJS，在 default.js 中
 
 ```js
 app.onactivated = function (args) { 
@@ -61,7 +61,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### App.xaml.cs中的C#
+### C#，在 App.xaml.cs 中
 
 ```js
 public App() 
@@ -89,7 +89,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 }
 ```
 
-### App.xaml.cpp 中的 C++/CX
+### C++/CX，在 App.xaml.cpp 中
 
 ```js
 App::App() 
