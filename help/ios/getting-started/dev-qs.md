@@ -7,7 +7,7 @@ title: 核心實施與生命週期
 topic: 開發人員和實施
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
+source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
 
 ---
 
@@ -78,6 +78,7 @@ source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
       * `WebKit.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary.a`
+      * `CoreLocation.framework` (optional, but required for geo-tracking capabilities)
    * **iOS 延伸功能目標**
 
       * `SystemConfiguration.framework`
@@ -106,7 +107,7 @@ source-git-commit: be980e0e639d5b0df3f1b6a6f91f3ad0a5efe8d7
 
 After you enable lifecycle, each time your app is launched, one hit is sent to measure launches, upgrades, sessions, engaged users, and other [Lifecycle Metrics](/help/ios/metrics.md).
 
-新增 `collectLifecycleData`/呼 `collectLifecycleDataWithAdditionalData` 叫 `application:didFinishLaunchingWithOptions`:
+Add a `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` call in `application:didFinishLaunchingWithOptions`:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
