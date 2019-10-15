@@ -8,7 +8,7 @@ title: 生命週期量度
 topic: 開發人員和實施
 uuid: a8f3ebac-be3b-4948-82bb-105d46cff6d
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -234,7 +234,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
    Populated by `trackLocation` methods.
 
-   * Analytics Context Data/Target Parameters:
+   * Analytics上下文資料／目標參數：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -248,7 +248,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
    由 trackLocation 方法填入。
 
-   * Analytics Context Data/Target Parameters:
+   * Analytics上下文資料／目標參數：
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -262,7 +262,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
    由 trackLocation 方法填入。
 
-   * Analytics Context Data/Target Parameters:
+   * Analytics上下文資料／目標參數：
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -284,53 +284,53 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
    當裝置處於定義地標範圍內時由 trackLocation 方法填入。
 
    * Analytics Context Data/Target Parameters: `a.loc.dist`
-   * Audience Manager Trait: `c_a_loc_dist`
+   * Audience manager特徵： `c_a_loc_dist`
 
 * **期限值 (轉換變數)**
 
    由 trackLifetimeValue 方法填入。
 
    * Analytics Context Data/Target Parameters: `a.ltv.amount`
-   * Audience Manager Trait: `c_a_ltv_amount`
+   * Audience manager特徵： `c_a_ltv_amount`
 
 * **追蹤代碼**
 
    由「行動應用程式贏取」填入，並由 Adobe Mobile Services 自動產生。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.trackingcode`
-   * Audience Manager Trait: `c_a_referrer_campaign_trackingcode`
+   * Audience manager特徵： `c_a_referrer_campaign_trackingcode`
 
-* ** 促銷活動
+* **促銷活動**
 
    行銷活動名稱，亦儲存於行銷活動變數中。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.name`
-   * Audience Manager Trait: `c_a_referrer_campaign_name`
+   * Audience manager特徵： `c_a_referrer_campaign_name`
 
 * **促銷活動內容**
 
    顯示連結的內容名稱或 ID。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.content`
-   * Audience Manager Trait: `c_a_referrer_campaign_content`
+   * Audience manager特徵： `c_a_referrer_campaign_content`
 
 * **促銷活動媒體**
 
    行銷媒體，例如橫幅或電子郵件。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.medium`
-   * Audience Manager Trait: `c_a_referrer_campaign_medium`
+   * Audience manager特徵： `c_a_referrer_campaign_medium`
 
 * **促銷活動來源**
 
    原始轉介來源，例如電子報或社交媒體網路。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.source`
-   * Audience Manager Trait: `c_a_referrer_campaign_source`
+   * Audience manager特徵： `c_a_referrer_campaign_source`
 
 * **促銷活動詞語**
 
    您想要以此贏取追蹤的付費關鍵字或其他詞語。由「行動應用程式贏取」填入。
 
    * Analytics Context Data/Target Parameters: `a.referrer.campaign.term`
-   * Audience Manager Trait: `c_a_referrer_campaign_term`
+   * Audience manager特徵： `c_a_referrer_campaign_term`
