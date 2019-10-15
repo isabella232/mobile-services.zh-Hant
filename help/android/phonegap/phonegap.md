@@ -8,7 +8,7 @@ title: PhoneGap外掛程式總覽
 topic: 開發人員和實施
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 translation-type: tm+mt
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -64,7 +64,7 @@ cordova plugin add adobe-mobile-services
 ## 包含AppMeasurement程式庫
 
 1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. 將檔案拖 `adobeMobileLibrary.jar` 曳至您的檔 `src` 案夾。
+1. 將檔案 `adobeMobileLibrary.jar` 拖曳至您的檔 `src` 案夾。
 
    To move this file, click **[!UICONTROL OK]**.
 
