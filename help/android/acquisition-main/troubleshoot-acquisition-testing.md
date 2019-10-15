@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 疑難排解贏取測試
 topic: 開發人員和實施
 translation-type: tm+mt
-source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
 
 * 如果 `referrerTimeout` 在ADMobileConfig.json檔案中設為5，您必須在應用程式第一次安裝並啟動後的5秒時間範圍內傳送安裝意圖，才能查看附加至安裝點擊的反向連結資訊。
 
-   For manual testing, we recommend that you increase the  to 10-15 seconds, so that you have sufficient time to send the referrer information before the install hit is processed.`referrerTimeout`
+   若是手動測試，建議您將值增加 `referrerTimeout` 至10-15秒，如此您就有足夠的時間在處理安裝點擊之前傳送反向連結資訊。
 
 * 執行測試 [Marketing link贏取中的所有步驟](https://docs.adobe.com/content/help/en/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html) ，並確定您先 `adb shell` 執行命令，然後執行下列：
 
@@ -46,5 +46,5 @@ source-git-commit: 97202c672d7349496f83b9ac0c365dd8b3e13eda
 
 >[!IMPORTANT]
 >
->若要正確處理反向連結意圖，您必須獨立執行這兩個命令。 Otherwise  will double escape the referrer information and the data received by the broadcast receiver will be incomplete.`adb`
+>若要正確處理反向連結意圖，您必須獨立執行這兩個命令。 否 `adb` 則，將雙重逸出反向連結資訊，而廣播接收器所接收的資料將不完整。
 
