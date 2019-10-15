@@ -7,7 +7,7 @@ title: Video Analytics
 topic: 開發人員和實施
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    (選擇性) Custom Insight 變數可提供視訊路徑資訊。
 
-   * Variable type: eVar
+   * 變數類型：eVar
    * 預設過期時間: 造訪
    * Custom Insight (s.prop，用於視訊路徑)
 
@@ -40,7 +40,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    (選用) 提供視訊路徑資訊。必須由客戶服務中心為此變數啟用路徑。
 
-   * Variable type: Custom Insight (s.prop)
+   * 變數類型：自訂分析(s.prop)
    * 事件類型: 自訂分析 (s.prop)
 
 * **a.media.segment**
@@ -54,7 +54,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    * 視訊結束 (停止)
    Analytics 會在區段開始時計算第一個區段檢視，也就是訪客開始觀看的時候。後續的區段檢視會作為區段開始。
 
-   * Variable type: eVar
+   * 變數類型：eVar
    * 預設過期時間: 頁面檢視
 
 
@@ -62,7 +62,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為 `video` 的內容類型。不需專為視訊追蹤保留此變數。使用此相同變數而具有其他內容報表內容類型，可讓您分析不同內容類型中訪客的分佈情況。舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點來看，內容類型可讓您識別視訊訪客，並據此計算視訊轉換率。
 
-   * Variable type: eVar
+   * 變數類型：eVar
    * 預設過期時間: 頁面檢視
 
 * **a.media.timePlayed**
@@ -116,7 +116,7 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 [ADBMobile mediaOpenWithSettings:mediaSettings callback:nil]; 
  
 // You are now ready to play the video, for example, [movieViewController.moviePlayer play]; 
-// Note the the mediaPlay, mediaStop and mediaClose methods are called in the 
+// Note the mediaPlay, mediaStop and mediaClose methods are called in the 
 // event handlers described in the next section
 ```
 
