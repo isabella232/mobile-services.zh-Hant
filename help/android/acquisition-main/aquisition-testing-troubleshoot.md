@@ -6,7 +6,7 @@ seo-title: 疑難排解贏取測試
 solution: Marketing Cloud,Analytics
 title: 疑難排解贏取測試
 translation-type: tm+mt
-source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
+source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
@@ -45,4 +45,4 @@ source-git-commit: da8798d7ee1f05dcade31cced5404d78c9cf360a
 
 >[!IMPORTANT]
 >
->您必須獨立執行這兩個命令，才能正確處理反向連結意圖。  Otherwise, `adb` double escapes the referrer information, and the data received by the broadcast receiver will be incomplete.
+>您必須獨立執行這兩個命令，才能正確處理反向連結意圖。  否則， `adb` 重複逸出反向連結資訊，廣播接收器所接收的資料將不完整。
