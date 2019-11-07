@@ -1,18 +1,18 @@
 ---
 description: 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
 seo-description: 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
-seo-title: Geo-Location and points of interest
+seo-title: 地理位置與地標
 solution: Marketing Cloud,Analytics
 title: 地理位置與地標
 topic: 開發人員和實施
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Geo-location and points of interest {#geo-location-and-points-of-interest}
+# 地理位置與地標 {#geo-location-and-points-of-interest}
 
 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
 
@@ -24,25 +24,25 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 * 以內容資料傳遞之與中心的距離和精確度。
 
-   系統不會自動擷取上述變數。You must map these context data variables by using the instructions in the *Sending Additional Data* section below.
+   系統不會自動擷取上述變數。您必須透過以下&#x200B;*傳送其他資料*&#x200B;一節中的指示，對應此類內容資料變數。
 
 ## 動態 POI 更新 {#section_3747B310DD5147E2AAE915E762997712}
 
-自 4.2 版開始，POI 皆會在 Adobe Mobile 使用者介面中定義，並會動態同步至應用程式設定檔案。此同步需要 `analytics.poi` 在 [ADBMobile JSON設定中設定](/help/android/configuration/json-config/json-config.md):
+自 4.2 版開始，POI 皆會在 Adobe Mobile 使用者介面中定義，並會動態同步至應用程式設定檔案。此同步作業須使用 [ADBMobile JSON 設定](/help/android/configuration/json-config/json-config.md)中的 `analytics.poi` 設定:
 
 ```js
 “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
 ```
 
-如果尚未設定此項目，您必須下載更新版本的 `ADBMobile.json` 檔案，並將其新增至您的應用程式。如需詳細資訊，請 [參閱下載SDK和測試工具](/help/android/getting-started/requirements.md)。
+如果尚未設定此項目，您必須下載更新版本的 `ADBMobile.json` 檔案，並將其新增至您的應用程式。如需詳細資訊，請參閱[下載 SDK 和測試工具](/help/android/getting-started/requirements.md)。
 
-## Tracking geo-location and POIs {#section_B1616E400A7548F9A672F97FEC75AE27}
+## 追蹤地理位置和 POI {#section_B1616E400A7548F9A672F97FEC75AE27}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請 *參閱核心實作和生命週期中的新增SDK和設定檔至IntelliJ IDEA或Eclipse*[專案](/help/android/getting-started/dev-qs.md)。
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入程式庫:
+1. 匯入資料庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -57,13 +57,13 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
    >[!TIP]
    >
-   >您隨時都 `trackLocation` 可以打電話。
+   >您可以隨時呼叫 `trackLocation`。
 
-   You can use location strategies to determine the location that is passed to the `trackLocation` call. 如需詳細資訊，請參 [閱Android位置策略](https://developer.android.com/guide/topics/location/strategies.html)。
+   您可以依照定位策略一文所述，判斷傳遞至 `trackLocation` 呼叫的位置。如需詳細資訊，請參閱 [Android 定位策略](https://developer.android.com/guide/topics/location/strategies.html)。
 
 此外，如果該位置經判斷位於定義的 POI 半徑範圍內，則 `a.loc.poi` 內容資料變數將會與 `trackLocation` 點擊一併傳入，並會在&#x200B;**「位置劃分」**&#x200B;報表中報告為 POI。`a.loc.dist` 內容變數也會以公尺為單位傳送來自定義座標的距離。
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 除了位置資料之外，您還可以隨著每次追蹤位置呼叫傳送其他內容資料:
 
@@ -79,7 +79,7 @@ Analytics.trackLocation(currentLocation, locationContextData);
 
 ![](assets/map-location-context-data.png)
 
-## Location context data {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
+## 位置內容資料 {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
 經緯度會透過三種不同內容資料參數傳送，且各參數代表不同程度的精準度，其中共有六個內容資料參數。
 
@@ -101,7 +101,7 @@ Analytics.trackLocation(currentLocation, locationContextData);
 
 請記住以下資訊:
 
-* A `trackLocation` request sends in the equivalent of a `trackAction` call.
+* `trackLocation` 要求會在 `trackAction` 呼叫的同等項中傳送。
 
 * 系統不會在一般 `trackAction` 和 `trackState` 呼叫過程中傳遞 POI，因此您必須使用 `trackLocation` 呼叫來追蹤 POI。
 
