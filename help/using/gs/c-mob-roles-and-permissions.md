@@ -4,13 +4,13 @@ seo-description: 在 Adobe Analytics，您可以在管理工具首頁管理角�
 seo-title: 角色與權限
 title: 角色與權限
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
 
 ---
 
 
-# Roles and permissions{#roles-and-permissions}
+# 角色與權限{#roles-and-permissions}
 
 在 Adobe Analytics，您可以在管理工具首頁管理角色。
 
@@ -20,17 +20,17 @@ source-git-commit: c7cac006340e01d0fd1f6afe3419e6fd17294a98
 
 ### Analytics 管理員
 
-Analytics 管理員負責管理使用者群組 (其中一位是行動應用程式管理員) 和指派權限: Experience Cloud 管理員會將您的 Adobe ID 連結至您的 Adobe Analytics 帳戶，讓您可以透過您的 Adobe ID 登入 Mobile Services UI。如需關於 Experience Cloud 管理員的詳細資訊，請參閱[管理 - 使用者管理與常見問題](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+Analytics 管理員負責管理使用者群組 (其中一位是行動應用程式管理員) 和指派權限: Experience Cloud 管理員會將您的 Adobe ID 連結至您的 Adobe Analytics 帳戶，讓您可以透過您的 Adobe ID 登入 Mobile Services UI。如需關於 Experience Cloud 管理員的詳細資訊，請參閱[管理 - 使用者管理與常見問題](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 >[!TIP]
 >
->An existing Analytics Admin has the ability to assign the Analytics Admin role to any user.
+>現有的 Analytics 管理員能將 Analytics 管理員角色指派給任何使用者。
 
 如需關於此角色的詳細資訊，請參閱下列內容:
 
-* [使用者管理概觀](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/users.html)
+* [使用者管理概述](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/user-product-management/user-management/users.html)
 
-* [User and Group permission changes](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [使用者和群組權限變更](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/user-product-management/user-management/permissions-changes.html)
 
 ### 行動應用程式管理員
 
@@ -38,33 +38,33 @@ Analytics 管理員負責管理使用者群組 (其中一位是行動應用程�
 
 >[!IMPORTANT]
 >
->For some features, such as push messaging, the Analytics Admin must select the **[!UICONTROL Segment Creation]** check box in User Management.
+>推送訊息和 Analytics 管理員等部分功能必須在使用者管理中選取&#x200B;**[!UICONTROL 區段建立]**&#x200B;核取方塊。
 
-## Managing access {#section_E6939C2695AA4A0DBF432D50B2670920}
+## 管理存取權 {#section_E6939C2695AA4A0DBF432D50B2670920}
 
 以下是 Mobile Services UI 中部分存取選項的相關額外資訊:
 
-### 應用程式和報表套裝
+### 應用程式與報表套裝
 
 所有 Mobile Service 應用程式均與報表套裝相關聯。如果使用者沒有某報表套裝的存取權，則無法存取與該報表套裝相關的應用程式。
 
-### Mobile services和Analytics功能
+### Mobile Services 與 Analytics 功能
 
 如果您的公司並沒有 Analytics 合約以存取 UI 的功能 (例如推送訊息)，無論使用者的權限級別，您公司內的所有使用者都無法存取該功能。
 
-## Roles and permissions {#section_20AA029D5B8C413C8659777E79B11620}
+## 角色與權限 {#section_20AA029D5B8C413C8659777E79B11620}
 
 下列是 Mobile Services UI 的角色以及其相關的權限:
 
 ### Analytics 管理員
 
-* 所有使用者和行動應用程式管理權限
+* 所有使用者與行動應用程式的管理員權限
 * 以新的報表套裝建立應用程式
 * 從 Mobile Services 刪除應用程式
 
    >[!IMPORTANT]
    >
-   >雖然應用程式已在Mobile Services UI中刪除，但報表套裝仍存在於Analytics中。
+   >雖然已在 Mobile Services 使用者介面中刪除應用程式，但 Analytics 仍會存在該報表套裝內。
 
 * 「管理應用程式設定」
 
@@ -94,10 +94,10 @@ Analytics 管理員負責管理使用者群組 (其中一位是行動應用程�
 
 如需關於群組和使用者的詳細資訊，請參閱:
 
-* [使用者群組設定](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)
-* [新增使用者至群組](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [使用者群組設定](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/user-product-management/user-groups/groups.html)
+* [新增使用者至群組](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
 
-### Mobile services使用者
+### Mobile Services 使用者
 
 此角色具備只可檢視的權限，並可在 Mobile Services UI 提供意見反應。
 
@@ -106,7 +106,7 @@ Analytics 管理員負責管理使用者群組 (其中一位是行動應用程�
 
    >[!IMPORTANT]
    >
-   >使用者只能在Adobe Analytics中查看其可存取的報表套裝。
+   >使用者只可以在 Adobe Analytics 檢視他們具備存取權的報表套裝。
 
 * 檢視應用程式設定
 
