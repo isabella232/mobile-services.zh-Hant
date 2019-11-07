@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 追蹤應用程式當機
 topic: 開發人員和實施
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,9 +18,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!TIP]
 >
->應用程式當機會會作為生命週期度量的一部分進行追蹤。 Before you can track crashes, add the library to your project and implement lifecycle. For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+>生命週期量度過程中會追蹤應用程式當機。您需要先將資料庫新增至您的專案並實施生命週期，才能追蹤當機。如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-實施生命週期量度時，會呼叫各活動之 `Config.collectLifecycleData` 方法中的 `OnResume`。In the `onPause` method, a call is made to `Config.pauseCollectingLifeCycleData`.
+實施生命週期量度時，會呼叫各活動之 `Config.collectLifecycleData` 方法中的 `OnResume`。在 `onPause` 方法中，會呼叫 `Config.pauseCollectingLifeCycleData`。
 
 在 `pauseCollectingLifeCycleData` 中，會設定標記指示順利結束。當應用程式重新啟動或繼續執行時，`collectLifecycleData` 會檢查此標記。如果應用程式並未依標記狀態判定為順利結束，則會傳送 `a.CrashEvent` 內容資料與下個呼叫，並回報當機事件。
 
@@ -38,9 +38,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
    >[!TIP]
    >
-   >您可以在從IDE再次啟動之前，先將應用程式背景化，以避免此次當機。
+   >您可以讓應用程式在背景執行，再從 IDE 重新啟動應用程式，即可避免出現此當機情況。
 
-1. If the last foreground Activity of your app is backgrounded and does not call `Config.pauseCollectingLifecycleData();` in `onPause`, and your app is manually closed or killed by the OS, the next launch results in a crash.
+1. 如果應用程式的最後一個前景活動進入背景執行，但未在 `onPause` 中呼叫 `Config.pauseCollectingLifecycleData();`，而您的應用程式遭到手動關閉或作業系統逕行終止時，則在下次啟動應用程式時就會造成當機情況。
 
 ## 該如何處理片段?
 
@@ -48,13 +48,13 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 >[!IMPORTANT]
 >
->您需要依賴包含活動可據以執行代碼的生命週期事件。 這將由片段的上層檢視處理。
+>您需要仰賴生命週期事件，讓容納活動可針對其執行您的程式碼。這將由片段的上層檢視處理。
 
-## （可選）實作活動生命週期回呼
+## (選用) 實施活動生命週期回撥
 
-自 API Level 14 開始，Android 允許活動的全域生命週期回撥。For more information, see [Application](https://developer.android.com/reference/android/app/Application).
+自 API Level 14 開始，Android 允許活動的全域生命週期回撥。如需詳細資訊，請參閱[應用程式](https://developer.android.com/reference/android/app/Application)。
 
-You can use these callbacks to ensure that all of your Activities correctly call `collectLifecycleData()` and `pauseCollectingLifecycleData()`. 您僅需要將此程式碼新增至應用程式可能會在其中啟動的主要活動與任何其他活動:
+您可以使用這些回撥確保所有活動皆正確呼叫 `collectLifecycleData()` 和 `pauseCollectingLifecycleData()`。您僅需要將此程式碼新增至應用程式可能會在其中啟動的主要活動與任何其他活動:
 
 ```js
 import com.adobe.mobile.Config; 
@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 }
 ```
 
-To send additional context data with your lifecycle call by using `Config.collectLifecycleData(Activity activity`, `Map<String`, `Object> contextData)`, you must override the `onResume` method for that Activity and ensure that you call `super.onResume()` after manually calling `collectLifecycleData`.
+若要藉由使用 `Config.collectLifecycleData(Activity activity`、`Map<String` 及 `Object> contextData)` 透過您的生命週期呼叫傳送其他內容資料，您必須針對該活動覆寫 `onResume` 方法，並務必在手動呼叫 `collectLifecycleData` 後呼叫 `super.onResume()`。
 
 ```js
 @Override 
