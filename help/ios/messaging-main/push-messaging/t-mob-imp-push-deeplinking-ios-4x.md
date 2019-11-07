@@ -4,13 +4,13 @@ seo-description: 在您於 Adobe Mobile Services 使用者介面中設定深層�
 seo-title: 利用深層連結實施推送訊息
 title: 利用深層連結實施推送訊息
 uuid: ee9590fc-8bd3-4111-9221-9011d9edbd84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# 利用深層連結實施推送訊息 {#implement-push-messaging-with-deep-linking}
 
 在您於 Adobe Mobile Services 使用者介面中設定深層連結 URL 後，此 URL 會位於含有 `adb_deeplink` 鍵值的推送裝載中。
 
@@ -22,11 +22,11 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
    * 遠端通知的委派方法
 
-      In the `didReceiveRemoteNotification:` application or in the `didReceiveRemoteNotification:fetchCompletionHandler:` application, you can get the URL by accessing the `userInfo` dictionary with the `adb_deeplink` key.
+      在`didReceiveRemoteNotification:` 應用程式或 `didReceiveRemoteNotification:fetchCompletionHandler:` 應用程式中，您可以使用 `adb_deeplink` 索引鍵存取 `userInfo` 字典以取得 URL。
 
-   * The delegate methods for `UNUserNotificationCenter`
+   * `UNUserNotificationCenter` 的委派方法
 
-      In the `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` method, you can get the push payload from the `userInfo` dictionary, in the `adb_deeplink` key.
+      在 `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` 方法中，您可以透過 `adb_deeplink` 索引鍵中的 `userInfo` 字典取得推送裝載。
 
 例如:
 
