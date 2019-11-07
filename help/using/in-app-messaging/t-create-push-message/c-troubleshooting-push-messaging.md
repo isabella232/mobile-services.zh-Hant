@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: 疑難排解推送訊息
 topic: 量度
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Troubleshooting push messaging{#troubleshooting-push-messaging}
+# 疑難排解推送訊息{#troubleshooting-push-messaging}
 
 此資訊可協助您進行推送訊息疑難排解。
 
@@ -21,7 +21,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 下列延遲類型可能與 Mobile Services 的推送訊息有關:
 
-* **等待Analytics點擊**
+* **等候 Analytics 點擊**
 
    每個報表套裝都可設定處理傳入 Analytics 點擊的時機。預設為每 1 小時。
 
@@ -33,12 +33,12 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    >[!TIP]
    >
-   >此計數是成功傳送至推送服務的數目。 推送服務無法保證訊息一定會傳送出去。
+   >此計數為成功傳送至「推送服務」的數量。推送服務無法保證訊息一定會傳送出去。
 
-   有關服務可靠性的詳細資訊，請參閱：
+   有關服務可靠性的詳細資訊，請參閱:
 
    * [服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [訊息的期限](https://developers.google.com/cloud-messaging/concept-options#lifetime)。
+   * [訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options#lifetime).
 
 ## 為什麼我的 Android GCM API 密鑰無效?
 
@@ -70,7 +70,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
    canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
    ```
 
-   You can also check the validity of a registration token by replacing `"ABC"` with the token.
+   您也可以使用代號來取代 `"ABC"` 以檢查註冊代號的有效性。
 
 ## 為何我的 APNS 憑證無法運作?
 
@@ -78,7 +78,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * 您可能使用了沙箱憑證而非生產環境憑證。
 * 您使用不受支援的新生產環境/Sandbox 憑證。
-* You are using `.p8` file instead of a `.p12` file.
+* 您使用 `.p8` 檔案而非 `.p12` 檔案。
 
 ## 解決推送訊息問題
 
@@ -91,16 +91,16 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 * 應用程式名稱: PhotoShop_app_iOS
    * 上層 RSID: AllAdobe PhotoShop_apps
    * VRSID: PhotoShop_iOS_app_SF
-   * VRSID Definition Segment: `a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID 定義區段: `a.appid contains “PhotoShop_iOS_app_SF”`
 * 應用程式名稱: PhotoShop_app_iOS
    * 上層 RSID: AllAdobe PhotoShop_apps
-   * RSID:PhotoShop_iOS_app_LA
-   * VRSID Definition Segment: `a.os contains “iOS”`
+   * RSID: PhotoShop_iOS_app_LA
+   * VRSID 定義區段: `a.os contains “iOS”`
 
-In this example, if a Photoshop employee sends a push to the *PhotoShop_iOS_app_SF* app, all *PhotoShop_iOS_app_SF app* users receive the push message as expected. But, if the employee sends a message to the *PhotoShop_iOS_app_LA* app, because its VRSID Definition Segment is incorrect (`iOS` instead of `a.os contains "PhotoShop_iOS_app_LA"`), the message is sent to **all** iOS users in *AllAdobe PhotoShop_apps*. Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blacklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. If the segment had been defined as `a.os contains “PhotoShop_iOS_app_LA”`, the push message would have been sent to only *PhotoShop_iOS_app_LA* users.
+在此範例中，若 Photoshop 員工傳送推送至 *PhotoShop_iOS_app_SF* 應用程式，則所有 *PhotoShop_iOS_app_SF* 應用程式使用者都會如預期收到推送訊息。但是，若員工傳送訊息至 *PhotoShop_app_LA* 應用程式，由於其 VRSID 定義區段不正確 (`iOS` 而非 `a.os contains "PhotoShop_iOS_app_LA"`)，因此訊息會傳送給 *AllAdobe PhotoShop_apps* 中的&#x200B;**所有** iOS 使用者。儘管訊息仍會傳送給 *PhotoShop_iOS_app_LA* 使用者，但訊息也會將 *PhotoShop_iOS_app_SF* 使用者的推送 ID 加入黑名單，因為 *PhotoShop_iOS_app_SF* 應用程式包含不同憑證。若區段定義為 `a.os contains “PhotoShop_iOS_app_LA”`，則推送訊息原本只會傳送給 *PhotoShop_iOS_app_LA* 使用者。
 
-If passed with the *PhotoShop_IOS_app_LA* push certificate, the push identifiers for the *PhotoShop_iOS_app_SF* come back as `invalid`.
+若透過 *PhotoShop_IOS_app_LA* 推送憑證傳送，*PhotoShop_iOS_app_SF* 的推送識別碼將傳回為 `invalid`。
 
 >[!CAUTION]
 >
->After you create a push message for an app that is using a VRS and click **[!UICONTROL Save &amp; Send]**, an alert appears that reminds you ensure that each app that is listed **must** have a valid certificate. 若每個應用程式&#x200B;**並未**&#x200B;具備有效憑證，則您的對象區段可能已無限期加入黑名單，且您未來可能無法傳送推送訊息給受影響的使用者。如需觀眾區隔的詳細資訊，請參閱 [觀眾：定義並設定推播訊息的對象選項](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
+>在您針對使用 VRS 的應用程式建立推送訊息，並按一下&#x200B;**[!UICONTROL 儲存並傳送]**&#x200B;之後，系統會顯示警示以提醒您確保所列出的每個應用程式&#x200B;**必須**&#x200B;具備有效憑證。若每個應用程式&#x200B;**並未**&#x200B;具備有效憑證，則您的對象區段可能已無限期加入黑名單，且您未來可能無法傳送推送訊息給受影響的使用者。如需對象區段的詳細資訊，請參閱[對象: 定義並設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
