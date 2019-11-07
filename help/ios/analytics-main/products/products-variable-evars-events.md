@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: 產品變數及其包含的銷售 eVar 與產品專屬事件
 topic: 開發人員和實施
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events {#products-variable-with-merchandising-evars-and-product-specific-events}
+# 產品變數及其包含的銷售 eVar 與產品專屬事件 {#products-variable-with-merchandising-evars-and-product-specific-events}
 
 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 
@@ -36,5 +36,5 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 >[!TIP]
 >
->如果您使用變數來觸發產品特定事 *`&&products`* 件，您也必須在變數中設定該 *`&&events`* 事件。 如果您沒有設定事件，系統會在處理期間將其篩選掉。
+>如果您使用 *`&&products`* 變數觸發產品專屬事件，您也必須在 *`&&events`* 變數中設定該事件。如果您沒有設定事件，系統會在處理期間將其篩選掉。
 
