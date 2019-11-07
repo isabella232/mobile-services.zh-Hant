@@ -1,28 +1,28 @@
 ---
 description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
-seo-title: iOS Target Methods for Adobe Mobile Services
+seo-title: 適用於 Adobe Mobile Services 的 iOS Target 方法
 solution: Marketing Cloud,Analytics
-title: Target Methods for iOS
+title: 適用於 iOS 的 Target 方法
 topic: 開發人員和實施
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
 
 ---
 
 
-# iOS的Target方法 {#target-methods}
+# 適用於 iOS 的 Target 方法 {#target-methods}
 
 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
 
-SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。 各方法會根據解決方案加上前置詞。例如， 方法會加上前置詞 `target`target。
+SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞。例如， 方法會加上前置詞 `target`target。
 
 >[!TIP]
 >
->生命週期量度會以參數形式傳送至各 mbox 負載。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。如果您是在委派方法內傳送Target `didFinishLaunching` 請求，請在Target實作程式碼 `[ADBMobile trackAction:data:]` 前 `[ADBMobile trackState:data:]` 新增或呼叫。 如此，Target請求將包含完整的生命週期資料。
+>生命週期量度會以參數形式傳送至各 mbox 負載。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。如果您是在 `didFinishLaunching` 委派方法內傳送 Target 要求，請在 Target 實施程式碼之前新增 `[ADBMobile trackAction:data:]` 或 `[ADBMobile trackState:data:]` 呼叫。如此一來，Target 要求就會包含完整的生命週期資料。
 
-## 類別參考：ADBTargetLocationRequest
+## 類別參考 : ADBTargetLocationRequest
 
 ### 屬性
 
@@ -36,7 +36,7 @@ NSMutableDictionary *parameters;
 
 >[!TIP]
 >
->為自訂參數設定索引鍵時，以下常數可方便使用。
+>下列常數可方便您針對自訂參數設定索引鍵。
 
 ```iOS
 NSString *const ADBTargetParameterOrderId; 
@@ -52,17 +52,17 @@ NSString *const ADBTargetParameterMboxHost;
 
 >[!IMPORTANT]
 >
->* If you are using SDKs **before** version 4.14.0, see [Input Parameters](https://developers.adobetarget.com/api/#input-parameters) for parameters limitations.
+>* 如果您是使用 4.14.0 版&#x200B;**之前**&#x200B;的 SDK，請參閱 [輸入參數](https://developers.adobetarget.com/api/#input-parameters) 以瞭解參數限制。
    >
    >
-* If you are using SDKs version 4.14.0 **or after**, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters) for parameters limitations.
+* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱[批次輸入參數](https://developers.adobetarget.com/api/#batch-input-parameters)以瞭解參數限制。
 
 
 ### 方法
 
 * **targetLoadRequest:&#x200B;callback**
 
-   Sends request to your configured Target server and returns the string value of the offer that is generated in a block `callback`.
+   傳送要求至您設定的 Target 伺服器並傳回區塊`callback`中產生之選件的字串值。
 
    * 以下是此方法的語法:
 
@@ -99,7 +99,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    * 傳回: N/A
 
-   * Here are the parameters for this method:
+   * 以下是此方法的參數:
 
       * **`name`**
 
@@ -152,7 +152,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      如需基礎Target API的詳細資訊，請參閱 [Adobe Target開發人員](https://docs.adobe.com/dev/products/target/reference/delivery.html)。
+      如需底層 Target API 的詳細資訊，請參閱 [Adobe Target 開發人員](https://docs.adobe.com/dev/products/target/reference/delivery.html)。
 
 
 
@@ -264,7 +264,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    >[!TIP]
    >
-   >自SDK 4.10.0版起，Target不再使用Cookie。 此方法會重設 thirdPartyID 和 sessionID。
+   >由於使用 SDK 4.10.0 版，因此 Target 不再使用 Cookie。此方法會重設 thirdPartyID 和 sessionID。
 
    * 以下是此方法的語法:
 
