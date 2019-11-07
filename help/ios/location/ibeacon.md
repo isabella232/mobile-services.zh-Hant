@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: iBeacon 追蹤
 topic: 開發人員和實施
 uuid: 390883db-027e-4d12-8a16-86d514579db1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,7 +18,7 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
 
 呼叫 `trackBeacon` 時，會傳送下列信標資料至 Analytics 和 Target:
 
-* `a.beacon.uuid` - ProximityUUID of the beacon
+* `a.beacon.uuid` – 信標的 ProximityUUID
 * `a.beacon.major` – 主要信標編號，例如商店編號
 * `a.beacon.minor` – 次要信標編號，例如商店內的唯一編號
 * `a.beacon.prox` – 下列值代表使用者與信標之間的距離範圍:
@@ -28,12 +28,12 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
    * `2` 為附近
    * `3` 為遠距
 
-## Track iBeacons {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
+## 追蹤 iBeacon {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
-1. 匯入程式庫:
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
+1. 匯入資料庫:
 
    ```objective-c
    #import "ADBMobile.h"
@@ -51,7 +51,7 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
    [ADBMobile trackingClearCurrentBeacon];
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 除了計時動作名稱之外，您還可以隨著每次追蹤動作呼叫傳送其他內容資料:
 
@@ -59,7 +59,7 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
 [ADBMobile trackBeacon:beacon data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-Context data values must be mapped to custom variables:
+內容資料值必須對應至自訂變數:
 
 ![](assets/map-variable-context-ltv.png)
 
