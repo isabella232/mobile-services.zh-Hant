@@ -4,7 +4,7 @@ seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對
 seo-title: 在 iOS 裝置上預覽目標
 title: 在 iOS 裝置上預覽目標
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
@@ -14,13 +14,13 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
 
-For more information on how to set up and use Target Preview, see [Target Mobile Preview](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/target-mobile-preview.html).
+如需設定與使用 Target 預覽功能的詳細資訊，請參閱 [Target 行動裝置預覽](https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/mobile-apps/target-mobile-preview.html)。
 
 >[!IMPORTANT]
 >
->若要使用「Target預覽」，您需要SDK 4.14.0版或更新版本。
+>如要使用 Target 預覽功能，需使用 SDK 4.14.0 或更新版本。
 
-## Target Preview方法
+## Target 預覽方法
 
 * **setPreviewRestartDeeplink**
 
