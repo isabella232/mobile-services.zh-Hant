@@ -1,18 +1,18 @@
 ---
 description: 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 seo-description: 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
-seo-title: 計時動作
+seo-title: '計時動作 '
 solution: Marketing Cloud,Analytics
 title: 計時動作
 topic: 開發人員和實施
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Timed actions {#timed-actions}
+# 計時動作 {#timed-actions}
 
 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 
@@ -27,12 +27,12 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 * 新增內容資料後再傳遞持續時間。
 * 取消尚未傳送的點擊和持續時間。
 
-## Tracking timed actions {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## 追蹤計時動作 {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
-1. 匯入程式庫:
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
+1. 匯入資料庫:
 
    ```objective-c
    #import "ADBMobile.h"
@@ -61,7 +61,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
                             logic:nil];
    ```
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 除了計時動作名稱之外，您還可以隨著動作開始與動作更新呼叫傳送其他內容資料:
 
@@ -70,7 +70,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
                              data:@{@"myapp.ImageLiked" : imageName}];
 ```
 
-上下文資料值必須對應至自訂變數：
+內容資料值必須對應至自訂變數:
 
 ![](assets/map-variable-context-ltv.png)
 
@@ -96,6 +96,4 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
                                      NSMutableDictionary *data) { 
                                         [data setObject:@"PurchaseItem" forKey:@"Item453"]; 
                                         return YES; //return YES to send the hit, NO to cancel 
-                                     }];
-```
-
+                                     }
