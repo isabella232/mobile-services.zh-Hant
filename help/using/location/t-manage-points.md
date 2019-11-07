@@ -7,34 +7,34 @@ solution: Marketing Cloud,Analytics
 title: 管理地標
 topic: 量度
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Manage points of interest {#manage-points-of-interest}
+# 管理地標 {#manage-points-of-interest}
 
-You can create and manage POIs, which allow you to define geographical locations that you can use for correlation purposes, target with in-app messages, and so on. 在POI中傳送點擊時，POI會附加至點擊。
+您可以建立和管理 POI，藉此定義地理位置，以便用於關聯、使用應用程式內訊息定位等等。從 POI 傳送點擊時，POI 就會附加至該點擊。
 
-使用「位置」之前，請先確認下列需求：
+使用「位置」之前，請先確認下列要求:
 
 * 您必須擁有 Analytics—Mobile Apps 或 Analytics Premium。
 * 您必須啟用此應用程式的&#x200B;**[!UICONTROL 位置報表]。**
-* If you are using a version of the iOS SDK or Android SDK older than version 4.2, after adding new **[!UICONTROL Points of Interest]**, you must download a new configuration file and give it to your app developers.
+* 如果您使用的 iOS SDK 或 Android SDK 版本比 4.2 版舊，新增&#x200B;**[!UICONTROL 地標]**&#x200B;之後，您還必須下載新的設定檔案並提供給應用程式開發人員。
 
-   If you are using the iOS SDK or Android SDK version 4.2 or later, you do not need to submit an app update to the store to update your **[!UICONTROL Points of Interest]**. 在「管理地標」頁面上，按一下「儲 **[!UICONTROL 存]**」時，變更會封裝至「地標 **** 」清單，並更新即時應用程式的設定檔案。 Saving also updates the list of points in your app on the user devices, as long as the app uses the updated SDK and configuration with a remote POI URL.
+   如果您使用的是 iOS SDK 或 Android SDK 4.2 版或更新版本，就不需要再將應用程式更新提交至商店來更新&#x200B;**[!UICONTROL 地標]**。在「管理地標」頁面上按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;時，變更會封裝至&#x200B;**[!UICONTROL 地標]**&#x200B;清單中，並更新即時應用程式的設定檔案。只要您的應用程式是使用更新的 SDK 和設定及遠端 POI URL，則儲存也會在使用者裝置上更新應用程式中的地標清單。
 
-On the user's device, for a hit to be assigned to a **[!UICONTROL Points of Interest]**, location must be enabled for the app.
+在使用者裝置上，必須為應用程式啟用位置，才能將點擊指派給&#x200B;**[!UICONTROL 地標]**。
 
-To use Location, complete the following tasks:
+若要使用「位置」，請完成下列作業:
 
 1. 按一下應用程式的名稱，前往其「管理應用程式設定」頁面。
-1. Click **[!UICONTROL Location]** &gt; **[!UICONTROL Manage Points of Interest]**.
+1. 按一下&#x200B;**[!UICONTROL 位置]** &gt; **[!UICONTROL 管理地標]**。
 
    ![步驟結果](assets/poi.png)
 
-1. 在下列各欄位中輸入資訊：
+1. 在下列各欄位中輸入資訊:
 
    * **[!UICONTROL 地標名稱]**
 
@@ -44,26 +44,26 @@ To use Location, complete the following tasks:
 
    * **[!UICONTROL 緯度]**
 
-      Type the latitude of the **[!UICONTROL Point of Location]**. 您可從其他來源找到這項資訊，包括網際網路。
+      輸入&#x200B;**[!UICONTROL 地標]**&#x200B;的緯度。您可從其他來源找到這項資訊，包括網際網路。
 
    * **[!UICONTROL 經度]**
 
-      Type the longitude of the **[!UICONTROL Point of Location]**. 您可從其他來源找到這項資訊，包括網際網路。
+      輸入&#x200B;**[!UICONTROL 地標]**&#x200B;的經度。您可從其他來源找到這項資訊，包括網際網路。
 
    * **[!UICONTROL 半徑 (公尺)]**
 
-      輸入&#x200B;**[!UICONTROL 地標]涵蓋的半徑 (公尺)。** For example, if you create a POI for Denver, Colorado, you can specify a radius large enough to include the city of Denver and the surrounding areas, but exclude Colorado Springs.
+      輸入&#x200B;**[!UICONTROL 地標]涵蓋的半徑 (公尺)。**&#x200B;例如，如果您建立「科羅拉多州丹佛市」(Denver, Colorado) 的 POI，便可指定包含丹佛市與周邊地區，但不含科羅拉多泉 (Colorado Springs) 的半徑大小。
 
    * **[!UICONTROL 地圖圖示]**
 
-      選取將顯示在「概述」和「地圖 [」報表](/help/using/location/c-location-overview.md)[上的圖示](/help/using/location/c-map-points.md) 。
+      選取將顯示在[概述](/help/using/location/c-location-overview.md)和[地圖](/help/using/location/c-map-points.md)報表上的圖示。
 
-1. Add additional POIs, as needed.
+1. 視需要新增其他 POI。
 
-   我們建議您新增的POI不超過5,000個。 如果新增的地標超過 5,000 個，地標仍可儲存，但會收到警告訊息提醒您最佳實務作法是低於 5,000 個地標。
+   建議您不要新增超過 5,000 個 POI。如果新增的地標超過 5,000 個，地標仍可儲存，但會收到警告訊息提醒您最佳實務作法是低於 5,000 個地標。
 
 1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
-To delete one or more POIs, select the applicable check boxes, and click **[!UICONTROL Remove Selected]**.
+若要刪除一或多個 POI，請選取適用的核取方塊，然後按一下&#x200B;**[!UICONTROL 移除選取的項目]**。
 
-Click **[!UICONTROL Import]** or **[!UICONTROL Export]** to work with the data by using a `.csv` file instead of using the Adobe Mobile user interface.
+按一下&#x200B;**[!UICONTROL 匯入]**&#x200B;或&#x200B;**[!UICONTROL 匯出]**，即可透過 `.csv` 檔案使用資料，而不用透過 Adobe Mobile 使用者介面。
