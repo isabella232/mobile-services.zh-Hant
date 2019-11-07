@@ -2,18 +2,18 @@
 description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 keywords: 行動
 seo-description: 此資訊可協助您進行應用程式內傳訊疑難排解。
-seo-title: 疑難排解應用程式內訊息
+seo-title: 應用程式內傳訊疑難排解
 solution: Marketing Cloud,Analytics
-title: 疑難排解應用程式內訊息
+title: 應用程式內傳訊疑難排解
 topic: 量度
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# 疑難排解應用程式內訊息{#troubleshooting-in-app-messaging}
+# 應用程式內傳訊疑難排解{#troubleshooting-in-app-messaging}
 
 此資訊可協助您進行應用程式內傳訊疑難排解。
 
@@ -21,7 +21,7 @@ source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ## 應用程式中是使用最新設定和最新 SDK 嗎?
 
-Ensure that you have an [In-App Messaging](/help/android/messaging-main/messaging/messaging.md) section in your configuration (downloaded JSON file) or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+確認設定 (下載的 JSON 檔案) 中有[應用程式內傳訊](/help/android/messaging-main/messaging/messaging.md)區段或是有訊息遠端端點，以便從 Dynamic tag management 擷取訊息。
 
 ## 我的 Android 全螢幕訊息無法顯示。我已使用正確的 SDK 和配置，也符合觸發器條件。
 
@@ -29,17 +29,17 @@ Ensure that you have an [In-App Messaging](/help/android/messaging-main/messagin
 
 ## 我的 Android 本機通知訊息沒有作用。
 
-請務必在資訊清單中宣告本機通知廣播接收器。For more information, see step 2 in *Enabling In-App Messaging* in [In-App Messaging](/help/android/messaging-main/messaging/messaging.md).
+請務必在資訊清單中宣告本機通知廣播接收器。如需詳細資訊，請參閱[應用程式內傳訊](/help/android/messaging-main/messaging/messaging.md)的&#x200B;*啟用應用程式內傳訊*&#x200B;中的步驟 2。
 
 ## 這是現時訊息嗎?
 
 若要確認您的訊息是否為現時，請在「管理應用程式內訊息」頁面的&#x200B;**「狀態」**&#x200B;欄中，檢查訊息清單。
 
-## 在「對象 *」標籤上**，只要*「顯示」、 *「永遠顯示」* 、「顯示離線設定」即可。
+## 查看對象標籤中的&#x200B;*顯示一次*、*一律顯示*、*離線顯示*&#x200B;設定。
 
 確定這些設定是依照您想要的方式。在&#x200B;**[!UICONTROL 「對象」]**&#x200B;標籤中，檢閱您的&#x200B;**「觸發器」]選項，該選項可讓您指定顯示訊息的頻率。[!UICONTROL **
 
-## 如果使用啟動事件作為觸發器……
+## 如果使用啟動事件做為觸發器...
 
 啟動只會發生在新的工作階段。如需工作階段開始時間的詳細資訊，請參閱 `lifecycleTimeout`JSON 設定[中的 ](/help/android/configuration/json-config/json-config.md) 列。
 
@@ -47,7 +47,7 @@ Ensure that you have an [In-App Messaging](/help/android/messaging-main/messagin
 
 請記住以下資訊:
 
-* 動態標籤管理需要數分鐘時間，才能以您的新定義更新端點。等候一段時間，然後再試一次。
+* Dynamic Tag Management 需要數分鐘時間，才能以您的新定義更新端點。等候一段時間，然後再試一次。
 * 新啟動時才會更新設定。如果應用程式在生命週期工作階段逾時期間重新啟動，則您的新設定可能尚未下載。
 
 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
