@@ -2,27 +2,27 @@
 description: 您可以設定應用程式內訊息的排程選項，包含持續時間、一週天數及當天的時間選項。
 keywords: 行動
 seo-description: 您可以設定應用程式內訊息的排程選項，包含持續時間、一週天數及當天的時間選項。
-seo-title: 排程應用程式內訊息
+seo-title: 排程  應用程式內訊息
 solution: Marketing Cloud,Analytics
-title: 排程應用程式內訊息
+title: 排程  應用程式內訊息
 topic: 量度
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Schedule: in-app message {#schedule-in-app-message}
+# 排程: 應用程式內訊息 {#schedule-in-app-message}
 
 您可以設定應用程式內訊息的排程選項，包含持續時間、一週天數及當天的時間選項。
 
 >[!TIP]
 >
->日期範圍由您的時區定義。 「特定日」和「時間範圍」則是依使用者裝置而定。
+>日期範圍是根據您的時區定義。「特定日」和「時間範圍」則是依使用者裝置而定。
 
-1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
-1. Click **[!UICONTROL Schedule]**.
+1. 在您的應用程式中，依序按一下&#x200B;**[!UICONTROL 傳訊]** &gt; **[!UICONTROL 管理訊息]** &gt; **[!UICONTROL 建立訊息]** &gt; **[!UICONTROL 建立應用程式內訊息]**。
+1. 按一下&#x200B;**[!UICONTROL 排程]**。
 1. 完成&#x200B;**[!UICONTROL 「持續時間」]區段中的下列欄位:**
 
    * **[!UICONTROL 每天]**
@@ -53,4 +53,4 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
       將滑桿調整為指定當天要顯示訊息的時段。
 
-1. Click **[!UICONTROL Save]** or **[!UICONTROL Save &amp; Activate]**.
+1. 按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;或&#x200B;**[!UICONTROL 儲存並啟動]**。
