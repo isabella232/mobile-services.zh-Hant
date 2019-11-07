@@ -1,22 +1,22 @@
 ---
 description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
 seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
-seo-title: ADBMobile JSON設定
+seo-title: ADBMobile JSON 設定
 solution: Marketing Cloud,Analytics
-title: ADBMobile JSON config
+title: ADBMobile JSON 設定
 topic: 開發人員和實施
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config {#adbmobile-json-config}
+# ADBMobile JSON 設定 {#adbmobile-json-config}
 
 此資訊可協助您使用 `ADBMobile.json` 設定檔案。
 
-## ADBMobileConfig.json config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## ADBMobileConfig.json 設定檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 您的應用程式可以跨多平台使用此相同的設定檔案:
 
@@ -30,13 +30,13 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參閱下方的 *referrerTimeout*。
 
-   * `server` - Acquisition server that is checked at the initial launch for an acquisition referrer.
+   * `server` - 初次啟動時，系統會檢查贏取伺服器以取得贏取反向連結。
    * `appid` – 產生的 ID，可在贏取伺服器上唯一識別此應用程式。
    * 最低 SDK 版本: 4.1
 
 * **analyticsForwardingEnabled**
 
-   `audienceManager` 物件中的屬性。If `Audience Manager` is configured and `analyticsForwardingEnabled` is set to `true`, all Analytics traffic is also forwarded to Audience Manager. 預設值為 `false`。
+   `audienceManager` 物件中的屬性。如果已設定 `Audience Manager` 且 `analyticsForwardingEnabled` 已設為 `true`，所有的 Analytics 流量也會轉送至 Audience Manager。預設值為 `false`。
 
    * 最低 SDK 版本: 4.8.0
 
@@ -57,20 +57,20 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 最低 SDK 版本: 4.6
    >[!IMPORTANT]
    >
-   >回溯日期的作業點擊資訊會在作業資訊伺服器呼叫中傳送，並可能套用其他伺服器呼叫。
+   >日期回溯工作階段點撃資訊會以工作階段資訊伺服器呼叫傳送，且可能適用額外的伺服器呼叫。
 
 
 * **batchLimit**
 
    連續呼叫中可傳送的點撃數臨界值。例如，如果 `batchLimit` 設為 10，則在第 10 個點擊前的每個點擊都會先儲存在佇列中。一旦第 10 個點擊傳入，便會連續傳送全部 10 個點擊。
 
-   * Default value is `0`, which means that batching is not enabled.
-   * 需要 `offlineEnabled = true`。
+   * 預設值為 `0`，即表示未啟用批次處理程序。
+   * 需要使用 `offlineEnabled = true`。
    * 最低 SDK 版本: 4.1
 
 * **charset**
 
-   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。For more information, see [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html).
+   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/charset.html)。
 
    * 最低 SDK 版本: 4.0
 
@@ -80,7 +80,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >Target需要此變數。
+   >Target 必須有此變數。
 
    * 最低 SDK 版本: 4.0
 
@@ -90,12 +90,12 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    請記住以下資訊:
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
+   * `coopUnsafe` 設為 `true` 時，`coop_unsafe=1` 一律會附加至 Audience Manager 和訪客 ID 點擊。
    * 如果啟用 Analytics 伺服器端轉送至 Audience Manager，您也會在 Analytics 點擊看到 `coop_unsafe=1`。
    以下為部分其他資訊:
 
    * 最低 SDK 版本: 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
+   * `marketingCloud` 物件的布林值屬性一旦設為 `true`，就會導致裝置退出 Experience Cloud 的 Device Co-Op。
    * 預設值為 `false`.
    * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
 
@@ -125,10 +125,10 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    啟用後，點擊會在裝置離線時排入佇列，並在稍後裝置上線時傳送。您的報表套裝必須啟用時間戳記才能使用離線追蹤功能。預設值為 `false`。
 
-   Here is some important information:
+   以下為部分重要資訊:
 
    * 如果報表套裝已啟用時間戳記，您的 `offlineEnabled` 組態屬性&#x200B;*必須*&#x200B;為 true。
-   * If your report suite is not timestamp enabled, your `offlineEnabled` configuration property *must* be false.
+   * 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 false。
 
       如果此項目未正確設定，將會遺失資料。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務或從 Adobe Mobile Services 下載設定檔案。如果您目前回報 AppMeasurement 資料的報表套裝也可從 JavaScript 收集資料，則必須為行動資料設定個別的報表套裝，或在使用 `s.timestamp` 變數的所有 JavaScript 點擊上加上自訂時間戳記。
 
@@ -136,7 +136,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **org**
 
-   Specifies the Experience Cloud org ID for the Adobe Experience Platform Identity Service.
+   指定 Adobe Experience Platform Identity Service 的 Experience Cloud 組織 ID。
 
    * 最低 SDK 版本: 4.3
 
@@ -160,7 +160,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
    ```
 
-   若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。要下載更新的配置檔案，請參 [閱啟動前](/help/ios/getting-started/requirements.md)。
+   若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔案，請參閱[開始之前](/help/ios/getting-started/requirements.md)。
 
 * **postback**
 
@@ -174,7 +174,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
        "timeout": 0 //optional-number of seconds to wait before timingout.Defaultis2.}
    ```
 
-   The `payload` object in the code is an example payload for a message definition that would go in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   程式碼中的 `payload` 物件是會進入 `ADBMobileConfig.json` 檔案之訊息定義的裝載範例。如需詳細資訊，請參閱[回傳](/help/ios/analytics-main/postback/postback.md)。
 
    * 最低 SDK 版本: 4.6
 
@@ -196,7 +196,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >贏取需要此變數。 If the variable is set to `0`, or is not included, the SDK does not wait for acquisition data, and acquisition metrics are not tracked.
+   >「贏取」必須有此變數。如果變數設為 `0` 或不包含變數，SDK 不會等待贏取資料，且不會追蹤贏取量度。
 
    * 最低 SDK 版本: 4.1
 
@@ -224,7 +224,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    >[!IMPORTANT]
    >
-   >Analytics需要此變數。
+   >Analytics 必須有此變數。
 
    * 最低 SDK 版本: 4.0
 
@@ -232,13 +232,13 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
    Analytics 或 Audience Management 伺服器，依父節點而定。
 
-   This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. 此前置詞會由資料庫自動處理且是以 `ssl` 變數為基礎。
+   應該以伺服器網域填入此變數，不含 `https://` 或 `https://` 通訊協定前置詞。此前置詞會由資料庫自動處理且是以 `ssl` 變數為基礎。
 
    如果 `ssl` 為 `true`，會對此伺服器進行安全連線。如果 `ssl` 為 `false`，會對此伺服器進行非安全連線。
 
    >[!IMPORTANT]
    >
-   >此變數是Analytics和／或觀眾管理的必要項。
+   >Analytics 和/或 Audience Management 必須有此變數。
 
    * 最低 SDK 版本: 4.0
 
@@ -256,7 +256,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
        "timeout":0//optional-numberofsecondstowaitbeforetimingout.Defaultis2.} 
    ```
 
-   The `payload` object in the code is an sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/ios/analytics-main/postback/postback.md).
+   程式碼中的 `payload` 物件是會進入 `ADBMobileConfig.json` 檔案之訊息定義的裝載範例。如需詳細資訊，請參閱[回傳](/help/ios/analytics-main/postback/postback.md)。
 
    * 最低 SDK 版本: 4.0
 
@@ -267,7 +267,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 最低 SDK 版本: 4.0
 
 
-## Sample `ADBMobileConfig.json` file {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
+## 範例 `ADBMobileConfig.json` 檔案 {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
 以下是範例 `ADBMobileConfig.json` 檔案:
 
