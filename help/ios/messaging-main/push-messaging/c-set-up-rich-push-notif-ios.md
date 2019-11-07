@@ -4,24 +4,24 @@ seo-description: 您可在 Apple 通知內附加影像檔案。加入視覺元�
 seo-title: 接收豐富推送通知
 title: 接收豐富推送通知
 uuid: 0dbda409-cf49-4eb8-90ee-baf27911dc07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Receive rich push notifications {#receive-rich-push-notifications}
+# 接收豐富推送通知 {#receive-rich-push-notifications}
 
 您可在 Apple 通知內附加影像檔案。加入視覺元件可顯著增加使用者與推送通知的互動。
 
 在 iOS 應用程式中接收豐富推送通知:
 
-1. 完成以下所述步驟，針對應用程式實施推送訊息: [推送訊息](/help/ios/messaging-main/push-messaging/push-messaging.md).
+1. 完成以下所述步驟，針對應用程式實施推送訊息:  [推送訊息](/help/ios/messaging-main/push-messaging/push-messaging.md).
 1. 確認您可以傳送文字推送訊息至應用程式。
 1. 完成以下步驟，即可新增通知服務延伸功能:
 
-   1. In your Xcode project, select  **[!UICONTROL File]** &gt; **[!UICONTROL New]** &gt; **[!UICONTROL Target]**.
-   1. Select **[!UICONTROL Notification Service Extension]**.
+   1. 在 Xcode 專案中，選取&#x200B;**[!UICONTROL 檔案]** &gt; **[!UICONTROL 新增]** &gt; **[!UICONTROL 目標]**。
+   1. 選取&#x200B;**[!UICONTROL 通知服務擴充功能]**。
    1. 確認 `NotificationService.m` 檔案存在。
 
 1. 開啟 `NotificationService.m` 檔案，並確認下列委派方法存在:
@@ -35,7 +35,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
       (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *contentToDeliver))contentHandler;
       ```
 
-      在此方法中，您可使用金鑰從 `userInfo` 中取得媒體 `attachment-url` URL。 將檔案下載到本地目錄後，請將本地路徑添加到 `bestAttemptContent.attachments`。
+      在此方法中，您可以使用 `attachment-url` 索引鍵從 `userInfo` 取得媒體 URL。將檔案下載至本機目錄後，請將本機路徑新增至 `bestAttemptContent.attachments`。
 
       以下是此方法中的程式碼範例:
 
