@@ -6,13 +6,13 @@ solution: Marketing Cloud,Analytics
 title: 計時動作
 topic: 開發人員和實施
 uuid: 5a48a580-b942-4e49-9f1b-078fea7fccdb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
 ---
 
 
-# Timed actions {#timed-actions}
+# 計時動作 {#timed-actions}
 
 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 
@@ -27,12 +27,12 @@ source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 * 新增內容資料後再傳遞持續時間。
 * 取消尚未傳送的點擊和持續時間。
 
-## Track timed actions {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
+## 追蹤計時動作 {#section_FF5B1EDC1A5340A5B13BC0F1BF2E13E1}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifeycle.**[](/help/android/getting-started/dev-qs.md)
-1. 匯入程式庫:
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+1. 匯入資料庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -62,7 +62,7 @@ source-git-commit: 97c0dc17bcc624b38e9eb8023eb1d69d02568d11
 
    計時事件量度會儲存在行動解決方案變數中，以便自動報告。
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 除了計時動作名稱之外，您還可以隨著動作開始與動作更新呼叫傳送其他內容資料:
 
