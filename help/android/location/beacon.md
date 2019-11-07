@@ -1,13 +1,13 @@
 ---
 description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
 seo-title: 信標追蹤
 solution: Marketing Cloud,Analytics
 title: 信標追蹤
 topic: 開發人員和實施
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 呼叫 `trackBeacon` 時，會傳送下列信標資料至 Analytics 和 Target:
 
-* `a.beacon.uuid` -信標的ProximityUUID
+* `a.beacon.uuid` – 信標的 ProximityUUID
 * `a.beacon.major` – 主要信標編號 (例如商店編號)
 * `a.beacon.minor` – 次要信標編號 (例如商店內的唯一編號)
 * `a.beacon.prox` – 值 0 至 3 代表使用者與信標之間的距離範圍。
@@ -37,9 +37,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請 *參閱核心實作和生命週期中的新增SDK和設定檔至IntelliJ IDEA或Eclipse*[專案](/help/android/getting-started/dev-qs.md)。
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入程式庫:
+1. 匯入資料庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -67,7 +67,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
    Analytics.clearBeacon();
    ```
 
-## Send additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 除了信標資料之外，您還可以隨著每次 `trackBeacon` 呼叫傳送其他內容資料:
 
@@ -77,7 +77,7 @@ cdata.put("myapp.ImageLiked", imageName);
 Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 ```
 
-上下文資料值必須對應至Adobe Mobile services中的自訂變數：
+內容資料值必須對應至 Adobe Mobile Services 中的自訂變數:
 
 ![](assets/map-variable-context-ltv.png)
 
