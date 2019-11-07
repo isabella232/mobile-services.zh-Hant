@@ -4,13 +4,13 @@ seo-description: 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，�
 seo-title: PII 回傳
 title: PII 回傳
 uuid: 08f76a52-75dd-4fc1-b4cc-4f5eef93d0f7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# PII postbacks {#pii-postbacks}
+# PII 回傳 {#pii-postbacks}
 
 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，並傳送至第三方端點。
 
@@ -18,14 +18,14 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 >[!TIP]
 >
->需要支援HTTPS的端點才能使用PII回傳類型。
+>須使用支援 HTTPS 的端點才能使用 PII 回傳類型。
 
-## Tracking PII postbacks {#section_36B967B888CF467EACCDEF61DFA0B12B}
+## 追蹤 PII 回傳 {#section_36B967B888CF467EACCDEF61DFA0B12B}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請 *參閱核心實作和生命週期中的「將SDK和設定檔案新*[增至專案」](/help/ios/getting-started/dev-qs.md)。
-1. 匯入程式庫:
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
+1. 匯入資料庫:
 
    ```objective-c
    #import "ADBMobile.h"
