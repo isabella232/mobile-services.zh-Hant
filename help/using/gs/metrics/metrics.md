@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: 行動量度
 topic: 量度
 uuid: c4457f4a-9d1c-4fe9-ad4a-9eb2e37feab7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Mobile metrics{#mobile-metrics}
+# 行動量度{#mobile-metrics}
 
 您可使用 Adobe Mobile 衡量不同的量度，並收集您要用來追蹤應用程式的量度。
 
@@ -31,7 +31,7 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 * **收入**
 
-   您可以檢視應用程式商店收集的收入，以及直接使用應用程式內購買事件測量的收入。 Other cart metrics are available by [Customize Reports](/help/using/usage/reports-customize/reports-customize.md).
+   您可以檢視應用程式商店收集的收入，以及直接以應用程式內購買事件測量的收入。[自訂報表](/help/using/usage/reports-customize/reports-customize.md)即可呈現其他購物車量度。
 
 * **應用程式事件**
 
@@ -43,7 +43,7 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 * **位置和地標**
 
-   如果您的 Analytics 報表套裝已啟用地理報表，即可看到數個以位置為基準的報表。On Wi-Fi, GeoReporting accuracy is similar to that of a desktop web browser. 若使用資料連線，正確度則隨著網路提供者和要求路由方式而異。
+   如果您的 Analytics 報表套裝已啟用地理報表，即可看到數個以位置為基準的報表。若使用 Wi-Fi，地理報表的正確度與桌面版網頁瀏覽器相近。若使用資料連線，正確度則隨著網路提供者和要求路由方式而異。
 
    為提升準確度，您也可以在應用程式中加入位置和地標追蹤。這些選項可讓您報告詳細的經緯度位置資料，並使用地理圍欄技術判斷使用者是否進入預先定義的地標半徑之內。
 
