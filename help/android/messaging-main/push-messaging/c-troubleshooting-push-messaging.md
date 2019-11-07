@@ -2,18 +2,18 @@
 description: 此資訊可協助您進行推送訊息疑難排解。
 keywords: 行動
 seo-description: 此資訊可協助您進行推送訊息疑難排解。
-seo-title: 疑難排解推播訊息
+seo-title: 疑難排解推送訊息
 solution: Marketing Cloud,Analytics
-title: 疑難排解推播訊息
+title: 疑難排解推送訊息
 topic: 量度
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 ---
 
 
-# 疑難排解推播訊息 {#troubleshooting-push-messaging}
+# 疑難排解推送訊息 {#troubleshooting-push-messaging}
 
 此資訊可協助您進行推送訊息疑難排解。
 
@@ -27,16 +27,16 @@ source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 * 等候推送服務
 
-   推播服務（APNS或FCM）可能不會立即傳送訊息。 雖然此情形不常見，但曾發生過 5 至 10 分鐘延遲的現象。在「訊息」頁面中，您可按一下訊息的&#x200B;**「檢視」**&#x200B;連結，以確認推送訊息已傳送至推送服務。在報表中，成功傳送至推送服務的數量會列在&#x200B;**[!UICONTROL 「已發佈」]欄。**
+   推送服務 (APNS 或 FCM) 可能不會立即送出訊息。雖然此情形不常見，但曾發生過 5 至 10 分鐘延遲的現象。在「訊息」頁面中，您可按一下訊息的&#x200B;**「檢視」**&#x200B;連結，以確認推送訊息已傳送至推送服務。在報表中，成功傳送至推送服務的數量會列在&#x200B;**[!UICONTROL 「已發佈」]欄。**
 
    >[!TIP]
    >
-   >推播服務不保證會傳送訊息。
+   >推送服務無法保證訊息一定會傳送出去。
 
    如需服務的可靠性詳細資訊，請參閱適當文件。
 
    * **APNS**: [服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**:訊 [息的期限](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
+   * **FCM**: [訊息的生命週期](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## 為何我的推送訊息截斷或無法展開?
 
