@@ -1,28 +1,28 @@
 ---
 description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 seo-description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
-seo-title: 移轉至4.x iOS程式庫
+seo-title: 移轉至 4.x iOS 資料庫
 solution: Marketing Cloud,Analytics
-title: 移轉至4.x iOS程式庫
+title: 移轉至 4.x iOS 資料庫
 topic: 開發人員和實施
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ---
 
 
-# Migrating to the 4.x iOS library{#migrating-to-the-x-ios-library}
+# 移轉至 4.x iOS 資料庫{#migrating-to-the-x-ios-library}
 
 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 
 >[!IMPORTANT]
 >
->The SDK uses `NSUserDefaults` to store data that is needed to calculate unique users, lifecycle metrics, and other data related to core SDK functionality.  If you modify or remove the values in `NSUserDefaults` that are expected by the SDK, unexpected behavior might result in the form of data inconsistencies.
+>SDK 使用 `NSUserDefaults` 來儲存計算唯一使用者所需的資料、生命週期量度，以及有關核心 SDK 功能的其他資料。若您修改或移除 `NSUserDefaults` 中 SDK 的預期值，可能會導致資料不一致的非預期行為。
 
-在iOS SDK程式庫的4.x版中，公用方法會整合在一個標題中。 Also, the functionality is now accessible through class level methods, so you do not have to keep track of pointers, instances, or singletons.
+在 4.x 版 iOS SDK 資料庫中，公用方法已整合為一個標題。同時，功能現已可透過類別層級方法存取，因此您無須持續追蹤指標、例項或單一項目。
 
-## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## 事件、Prop 以及 eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 在第 4 版中，您已無法在應用程式中直接指派 event、eVar、prop、heir 及　list 等變數。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
@@ -36,9 +36,9 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 >[!TIP]
 >
->Values that you were assigning directly to variables should now be added to the `data` NSDictionary.
+>您之前直接指派給變數的值，現應已新增至 `data` NSDictionary。
 
-## Remove unused properties {#section_145222EAA20F4CC2977DD883FDDBBFC5}
+## 移除未使用的屬性 {#section_145222EAA20F4CC2977DD883FDDBBFC5}
 
 新的 `ADBMobileConfig.json` 檔案包含應用程式專屬的全域設定，並會取代先前版本中使用的大部分設定變數。以下是 `ADBMobileConfig.json` 檔案的範例:
 
@@ -76,7 +76,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 1. 將第一欄中為變數設定的值移至第二欄中的變數。
 1. 從您的程式碼移除舊的設定變數。
 
-### Migration information
+### 移轉資訊
 
 以下表格列出您需要移至設定檔案的設定變數。
 
@@ -84,7 +84,7 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 將值從第一欄移至第二欄中的變數。
 
-| 設定變數 | Variable in the `ADBMobileConfig.json` file |
+| 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
 |--- |--- |
 | offlineTrackingEnabled | "offlineEnabled" |
 | offlineHitLimit | "batchLimit" |
@@ -101,12 +101,12 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 將值從第一欄移至第二欄中的變數。
 
-| 設定變數 | Variable in the `ADBMobileConfig.json` file |
+| 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
 |--- |--- |
 | trackOffline | "offlineEnabled" |
 | offlineLimit | "batchLimit" |
 | account | "rsids" |
-| trackingServer | "server", remove the  prefix. `"https://"`通訊協定前置詞會根據 "ssl" 設定自動新增。 |
+| trackingServer | "server"，移除 `"https://"` 前置詞。通訊協定前置詞會根據 "ssl" 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 "server" 然後啟用 "ssl"。 |
 | charSet | "charset" |
 | currencyCode | "currency" |
@@ -119,22 +119,22 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 | dynamicVariablePrefix | 移除，不再使用。 |
 | visitorNamespace | 移除，不再使用。 |
 | usePlugins | 移除，不再使用。 |
-| useBestPractices  對混合測量的所有呼叫 (getChurnInstance ) | Remove, replaced by lifecycle metrics. 如需詳細資訊，請參閱[生命週期量度](//help/ios/metrics.md)。 |
+| useBestPractices  對混合測量的所有呼叫 (getChurnInstance ) | 移除，替換為生命週期量度。如需詳細資訊，請參閱[生命週期量度](//help/ios/metrics.md)。 |
 
 
-## Update track calls and tracking variables {#section_96E7D9B3CDAC444789503B7E7F139AB9}
+## 更新追蹤呼叫和追蹤變數 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
 
 第 4 版 SDK 使用以下方法，取代使用以 Web 為中心的 `track` 和 `trackLink` 呼叫:
 
-* `trackState:data:` 狀態是您應用程式中可用的檢視， `home dashboard`例如 `app settings`、 `cart`等等。
+* `trackState:data:` 狀態為應用程式中可用的檢視，例如 `home dashboard`、`app settings`、`cart` 等。
 
    這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
 
-* `trackAction:data:` actions , such as , , , and other metrics that occur in your app and that you want to measure.`logons``banner taps``feed subscriptions`
+* `trackAction:data:` 動作，例如`logons`、`banner taps`、`feed subscriptions`，以及您想要測量、在應用程式中發生的其他量度。
 
 這兩種方法的 `data` 參數都是 `NSDictionary`，包含以內容資料傳送的名稱值組。
 
-### Events, props, eVars
+### 事件、Prop、eVar
 
 在第 4 版中，您已無法在應用程式中直接指派 event、eVar、prop、heir 及　list 等變數。SDK 現在會使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
@@ -144,11 +144,11 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 * 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
 * 對傳送額外資料的影響極小。
 
-   這些值在透過處理規則對應前，都不會出現在報表中。如需詳細資訊，請參閱 [處理規則與內容資料](/help/ios/getting-started/proc-rules.md).
+   這些值在透過處理規則對應前，都不會出現在報表中。如需詳細資訊，請參閱[處理規則與內容資料](/help/ios/getting-started/proc-rules.md).
 
-您直接指派給變數的值，應已改為新增至 `data``NSDictionary` 。This means that calls to `setProp`, `setEvar`, and assignments to persistent context data should all be removed and the values be added to the `data` parameter.
+您直接指派給變數的值，應已改為新增至 `data``NSDictionary` 。這代表對 `setProp`、`setEvar` 的呼叫以及指派給永久內容資料的內容應已全部移除，且值應已新增至 `data` 參數。
 
-### AppSection/Server、GeoZip、交易ID、促銷活動和其他標準變數
+### AppSection/伺服器、GeoZip、交易 ID、促銷活動以及其他標準變數
 
 您在測量物件上設定的資料，包括以上列出的變數，應已改為新增至 `data``NSDictionary` 。與 `trackState` 或 `trackAction` 呼叫一併傳送的唯一資料是 `data` 參數中的裝載。
 
@@ -169,13 +169,13 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 * `track (trackState)`
 * `trackLink (trackAction)`
 
-## Custom visitor ID {#section_2CF930C13BA64F04959846E578B608F3}
+## 自訂訪客 ID {#section_2CF930C13BA64F04959846E578B608F3}
 
-Replace the `visitorID` variable with a call to `setUserIdentifier:`.
+以呼叫 `visitorID`: 取代`setUserIdentifier:` 變數。
 
-## Offline tracking {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
+## 離線追蹤 {#section_5D4CD8CD1BE041A79A8657E31C0D24C6}
 
-Offline tracking is enabled in the `ADBMobileConfig.json` file, and all other offline configuration is done automatically.
+會在 `ADBMobileConfig.json` 檔案中啟用離線追蹤，且所有其他離線設定會自動完成。
 
 在您的程式碼中，移除對以下方法的呼叫:
 
@@ -189,7 +189,7 @@ Offline tracking is enabled in the `ADBMobileConfig.json` file, and all other of
 * `forceOffline`
 * `forceOnline`
 
-## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## 產品變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 由於處理規則中沒有該產品變數，因此您可以使用以下語法來設定 `products`:
 
