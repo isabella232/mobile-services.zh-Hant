@@ -1,18 +1,18 @@
 ---
 description: 以下提供的一些資訊可協助您設定 Android 延伸功能，讓您從 Android 穿戴式裝置應用程式收集資料。
 seo-description: 以下提供的一些資訊可協助您設定 Android 延伸功能，讓您從 Android 穿戴式裝置應用程式收集資料。
-seo-title: Android可穿戴裝置附加註意事項
+seo-title: Android 穿戴式裝置其他附註
 solution: Marketing Cloud,Analytics
-title: Android可穿戴裝置附加註意事項
+title: Android 穿戴式裝置其他附註
 topic: 開發人員和實施
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android Wearables: additional notes{#android-wearables-additional-notes}
+# Android 穿戴式裝置: 其他附註{#android-wearables-additional-notes}
 
 以下提供的一些資訊可協助您設定 Android 延伸功能，讓您從 Android 穿戴式裝置應用程式收集資料。
 
@@ -21,12 +21,12 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `RunMode` = `Application`
 
-      點擊來自掌上型應用程式。
+      點擊來自於手持式應用程式。
 
    * `RunMode` = `Extension`
 
-      這款可穿戴應用打響了。
+      點擊來自於穿戴式裝置應用程式。
 
-* The SDK automatically syncs the `aid`/`vid`/`visitor` `service id`/`privacy` status from the handheld app to the wearable app, so do not call `setPrivacyStatus`/`setUserIdentifier`/`idSync` from the wearable app.
-* [可穿戴式應用程式會停用應用程式內訊息](/help/android/messaging-main/messaging/messaging.md)、 [Target](/help/android/target-main/target.md)和 [Audience Manager](/help/android/audience-manager/audiencemgmt.md) 。
+* SDK 會將手持式應用程式的 `aid`/`vid`/`visitor` `service id`/`privacy` 狀態自動同步至穿戴式應用程式，因此請勿從穿戴式應用程式呼叫 `setPrivacyStatus`/`setUserIdentifier`/`idSync`。
+* [應用程式內訊息](/help/android/messaging-main/messaging/messaging.md)、[Target](/help/android/target-main/target.md) 和 [Audience Manager](/help/android/audience-manager/audiencemgmt.md) 皆已在穿戴式應用程式中停用。
 
