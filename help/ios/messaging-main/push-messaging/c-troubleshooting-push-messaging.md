@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: 疑難排解推送訊息
 topic: 量度
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Troubleshooting push messaging {#troubleshooting-push-messaging}
+# 疑難排解推送訊息 {#troubleshooting-push-messaging}
 
 此資訊可協助您進行推送訊息疑難排解。
 
@@ -33,7 +33,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
    >[!TIP]
    >
-   >The push services do not guarantee a message will be sent. 如需服務的可靠性詳細資訊，請參閱適當文件。
+   >推送服務無法保證訊息一定會傳送出去。如需服務的可靠性詳細資訊，請參閱適當文件。
    >
    >* **APNS**: [服務品質](https://developer.apple.com/documentation/usernotifications)
       >
@@ -45,8 +45,8 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 傳送推送訊息須使用有效的推送服務憑證。Mobile Services 會在憑證接近到期或到期時通知您。如果您收到此通知，請完成下列步驟以更新憑證:
 
-1. Click **[!UICONTROL Manage App Settings]**.
-2. To delete the current certificate, scroll to **[!UICONTROL Push Services]** and click **[!UICONTROL Delete]**.
+1. 按一下&#x200B;**[!UICONTROL 管理應用程式設定]**。
+2. 若要刪除目前的憑證，請捲動至&#x200B;**[!UICONTROL 推送服務]**&#x200B;並按一下&#x200B;**[!UICONTROL 刪除]**。
 3. 設定並測試新的憑證。
 
    如需詳細資訊，請參閱[啟用推送訊息的必備條件](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
