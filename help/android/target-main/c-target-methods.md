@@ -1,29 +1,29 @@
 ---
 description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
-seo-title: Target methods for Android
+seo-title: 適用於 Android 的 Target 方法
 solution: Marketing Cloud,Analytics
-title: Target methods for Android
+title: 適用於 Android 的 Target 方法
 topic: 開發人員和實施
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Target methods for Android{#target-methods}
+# 適用於 Android 的 Target 方法{#target-methods}
 
 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions, including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service]. Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `target`.
+SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞，例如 Experience Cloud ID 方法會加上前置詞 `target`。
 
 >[!TIP]
 >
 >[生命週期量度](/help/android/metrics.md)會以參數形式傳送至各 mbox 負載。
 
-## Class reference : TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
+## 類別參考: TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
 **屬性:**
 
@@ -33,11 +33,11 @@ public String defaultContent;
 public HashMap<String, Object> parameters;
 ```
 
-**String constants**
+**字串常數**
 
 >[!TIP]
 >
->The following constants are for ease of use when you set keys for custom parameters.
+>下列常數可方便您針對自訂參數設定索引鍵。
 
 ```java
 public static final String TARGET_PARAMETER_ORDER_ID   = "orderId"; 
@@ -53,10 +53,10 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
 >[!IMPORTANT]
 >
->* If you are using SDKs **before** version 4.14.0, see [https://developers.adobetarget.com/api/#input-parameters](https://developers.adobetarget.com/api/#input-parameters) for parameters limitations.
+>* 如果您是使用 4.14.0 版&#x200B;**之前**&#x200B;的 SDK，請參閱 [](https://developers.adobetarget.com/api/#input-parameters)https://developers.adobetarget.com/api/#input-parameters 以瞭解參數限制。
    >
    >
-* If you are using SDKs version 4.14.0 **or later**, see [https://developers.adobetarget.com/api/#batch-input-parameters](https://developers.adobetarget.com/api/#batch-input-parameters) for parameters limitations.
+* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱 [](https://developers.adobetarget.com/api/#batch-input-parameters)https://developers.adobetarget.com/api/#batch-input-parameters 以瞭解參數限制。
 
 
 * **loadRequest**
@@ -116,44 +116,44 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    * **參數:**
 
-      Here are the parameters for this method:
+      以下是此方法的參數:
 
       * **名稱**
 
          您要擷取的 Target mbox/位置名稱。
 
-         * **** 類型：字串
+         * **類型:** 字串
       * **defaultContent**
 
          如果 Target 伺服器無法連線或使用者不符合促銷活動資格，則將會在回撥中傳回值。
 
-         * **Type:** String
+         * **類型:** 字串
       * **profileParameters**
 
          此字典中的值會根據 Target 要求進入「profileParameters」物件。
 
-         * **** Type: Map `<String, Object>`
+         * **類型:** 對應 `<String, Object>`
       * **orderParameters**
 
          此字典中的值會根據 Target 要求進入「order」物件。
 
-         * **** Type: Map `<String, Object>`
+         * **類型:** 對應 `<String, Object>`
       * **mboxParameters**
 
-         Values in this dictionary will go in the request to Target.
+         此字典中的值會根據 Target 要求進入。
 
-         * **** Type: Map `<String, Object>`
+         * **類型:** 對應 `<String, Object>`
       * **requestLocationParameters**
 
          此字典中的值會根據 Target 要求進入「requestLocation」物件。
 
-         * **** Type: Map `<String, Object>`
+         * **類型:** 對應 `<String, Object>`
       * **callBack**
 
          此方法將會與 Target 伺服器中的選件內容一併接受呼叫。如果 Target 伺服器無法連線或使用者不符合促銷活動資格，則將會傳回 defaultContent。
 
-         * **** Type: TargetCallback `<String>`
-   * 以下是此方法的范常式式碼：
+         * **類型:** TargetCallback `<String>`
+   * 以下是此方法的範例程式碼:
 
       ```java
       Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
