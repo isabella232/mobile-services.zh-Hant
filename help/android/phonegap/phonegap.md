@@ -1,30 +1,30 @@
 ---
 description: 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。
-seo-title: PhoneGap外掛程式總覽
+seo-title: PhoneGap 外掛程式概述
 solution: Marketing Cloud,Analytics
-title: PhoneGap外掛程式總覽
+title: PhoneGap 外掛程式概述
 topic: 開發人員和實施
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
 
 
-# PhoneGap外掛程式總覽 {#phonegap-plug-in}
+# PhoneGap 外掛程式概述 {#phonegap-plug-in}
 
-此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。若要建立PhoneGap專案，請參 [閱PhoneGap](https://helpx.adobe.com/experience-manager/6-4/mobile/using/phonegap.html)。
+此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。若要建立 PhoneGap 專案，請參閱 [PhoneGap](https://helpx.adobe.com/tw/experience-manager/6-4/mobile/using/phonegap.html)。
 
-## 全新Adobe Experience Platform Mobile SDK版本
+## 新版 Adobe Experience Platform Mobile SDK
 
-正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
-我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
-* 若要開始，請前往Adobe Experience Platform Launch。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要開始使用，請前往 Adobe Experience Platform Launch。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 
 ## 使用 npm 安裝外掛程式 {#section_43229E57C16944C0B51531CB92089189}
@@ -35,19 +35,19 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 cordova plugin add adobe-mobile-services
 ```
 
-## 手動安裝外掛程式 {#section_EA1FD59C484D44878AB509954DEE6037}
+## 手動安裝外掛程式{#section_EA1FD59C484D44878AB509954DEE6037}
 
 ## 納入外掛程式
 
-1. 將檔案 `ADBMobile_PhoneGap.java` 拖曳至您的檔 `src` 案夾。
+1. 將 `ADBMobile_PhoneGap.java` 檔案拖曳至 `src` 資料夾。
 
-   To move this file, click **[!UICONTROL OK]**.
+   若要移動此檔案，請按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. 將檔 `ADB_Helper.js` 案拖曳至包含檔案的檔 `index.html` 案夾
+1. 將 `ADB_Helper.js` 檔案拖曳至包含 `index.html` 檔案的資料夾
 
-   To move this file, click **[!UICONTROL OK]**.
+   若要移動此檔案，請按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. In the `res/xml` folder, open the `config.xml` file and register an new plugin by adding the following:
+1. 在 `res/xml` 資料夾中，開啟 `config.xml` 檔案並註冊新的外掛程式，方法是新增下列內容:
 
    ```xml
    <feature name="ADBMobile_PhoneGap"> 
@@ -61,21 +61,21 @@ cordova plugin add adobe-mobile-services
    <param name="android-package" value="com.example.phonegaptest.ADBMobile_PhoneGap" />
    ```
 
-## 包含AppMeasurement程式庫
+## 納入 AppMeasurement 資料庫
 
-1. To download the AppMeasurement library, see [Get the SDK](/help/android/getting-started/dev-qs.md).
-1. 將檔案 `adobeMobileLibrary.jar` 拖曳至您的檔 `src` 案夾。
+1. 若要下載 AppMeasurement 資料庫，請參閱[取得 SDK](/help/android/getting-started/dev-qs.md)。
+1. 將 `adobeMobileLibrary.jar` 檔案拖曳至 `src` 資料夾。
 
-   To move this file, click **[!UICONTROL OK]**.
+   若要移動此檔案，請按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. Right-click the `adobeMobileLibrary.jar file and select **[!UICONTROL Add as Library]**.
+1. 以滑鼠右鍵按一下 `adobeMobileLibrary.jar 檔案，然後選取&#x200B;**[!UICONTROL 新增為資料庫]**。
 1. 視專案需求而定，輸入資料庫的名稱、層級及位置。
-1. Drag the `ADBMobileConfig.json` file to your `assets` folder in the application root.
+1. 將 `ADBMobileConfig.json` 檔案拖曳至應用程式根目錄中的 `assets` 資料夾。
 1. 確認您已選取根應用程式，而&#x200B;**不是**&#x200B;某個應用程式中的應用程式。
 
-   To move this file, click **[!UICONTROL OK]**.
+   若要移動此檔案，請按一下&#x200B;**[!UICONTROL 確定]**。
 
-## 新增應用程式權限
+## 新增應用程式權限 
 
 AppMeasurement 資料庫需要下列權限，才能傳送資料及記錄離線追蹤呼叫:
 
@@ -116,9 +116,9 @@ android:windowSoftInputMode="adjustUnspecified|stateHidden" />
 <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
 
-## Implement custom tracking {#section_FD102B3CDAA4492FB04E56BF17E28663}
+## 實施自訂追蹤 {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
-In `html` files, add the following to the `<head>` tag where you want to use tracking:
+在您想要使用追蹤的 `html` 檔案中，新增下列內容至 `<head>` 標籤:
 
 ```
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
