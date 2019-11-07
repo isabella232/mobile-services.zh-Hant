@@ -6,25 +6,25 @@ solution: Marketing Cloud,Analytics
 title: 獨立延伸功能實施
 topic: 開發人員和實施
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Stand-alone extension implementation {#stand-alone-extension-implementation}
+# 獨立擴充功能實施 {#stand-alone-extension-implementation}
 
 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
 
 >[!IMPORTANT]
 >
->若要使用獨立擴充功能，您必須有Mobile SDK 4.13.0版或更新版本。
+>若要使用獨立擴充功能，您必須有 Mobile SDK 4.13.0 版或更新版本。
 
 ## 設定獨立延伸功能與 SDK 搭配使用 {#section_B7A84603BB9D4B48BB46BE8D3B9E3CF0}
 
 設定獨立延伸功能:
 
-1. Ensure that the `ADBMobileConfig.json` file is a member of your extension's target.
+1. 確認 `ADBMobileConfig.json` 檔案為擴充功能目標的成員。
 1. 連結下列資料庫與架構:
 
    * `AdobeMobileLibrary_Extension.a`
@@ -39,7 +39,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 1. 確認可建置應用程式且未發生非預期的錯誤。
 
-## Additional notes {#section_1C9A55E2309A44BF842310F735702B3D}
+## 其他附註 {#section_1C9A55E2309A44BF842310F735702B3D}
 
 以下為部分其他資訊:
 
