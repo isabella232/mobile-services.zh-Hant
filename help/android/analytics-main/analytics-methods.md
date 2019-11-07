@@ -1,35 +1,35 @@
 ---
 description: 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
 seo-title: Analytics 方法
 solution: Marketing Cloud,Analytics
 title: Analytics 方法
 topic: 開發人員和實施
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Analytics 方法 {#analytics-methods}
 
 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics], Target], Audience Manager], and the Adobe Experience Platform Identity Service]. 各方法會根據解決方案加上前置詞，例如 Experience Cloud ID 方法會加上前置詞 `analytics`。
+SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞，例如 Experience Cloud ID 方法會加上前置詞 `analytics`。
 
 下列各方法將用來傳送資料至您的 Adobe Analytics 報表套裝:
 
 * **trackState**
 
-   使用可選內容資料來追蹤應用程式。States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. 這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
+   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 `home dashboard`、`app settings`、`cart` 等。這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
 
-   If `state` is empty, `app name app version (build)` is displayed in reports. 如果在報表中看到這個值，請務必在每個 `state` 呼叫中設定 `trackState`。
+   如果 `state` 空白，在報表中會顯示 `app name app version (build)`。如果在報表中看到這個值，請務必在每個 `state` 呼叫中設定 `trackState`。
 
    >[!TIP]
    >
-   >This is the only tracking call that increments page views.
+   >這是唯一會遞增頁面檢視的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -43,9 +43,10 @@ The SDK currently supports multiple Adobe Experience Cloud Solutions], including
       Analytics.trackState("loginScreen",null);
       ```
 
-* **trackAction**&#x200B;追蹤應用程式中的動作。
+* **trackAction**
+追蹤應用程式中的動作。
 
-   Actions that you want to measure, such as `logons`, `banner taps`, `feed subscriptions`, and other metrics, that occur in your app.
+   您要測量的動作，例如 `logons`、`banner taps`、`feed subscriptions`，以及在應用程式中發生的其他量度。
 
    * 以下是此方法的語法:
 
@@ -60,7 +61,7 @@ The SDK currently supports multiple Adobe Experience Cloud Solutions], including
       ```
 
 * **getTrackingIdentifier**
-Returns the automatically generated visitor identifier for Analytics.
+傳回自動產生的 Analytics 訪客識別碼。
 
    這是應用程式專屬的唯一訪客 ID，會在初次啟動時產生，並會儲存以供後續使用。ID 會在應用程式升級時保留，並於應用程式解除安裝時移除。
 
@@ -78,7 +79,7 @@ Returns the automatically generated visitor identifier for Analytics.
 
 * **trackLocation**
 
-   Sends the current latitude, longitude, and location in a defined point of interest. 如需詳細資訊，請 [參閱地理位置和地標](/help/android/location/geo-poi.md)。
+   傳送目前的經緯度，以及已定義地標中的位置。如需詳細資訊，請參閱[地理位置與地標](/help/android/location/geo-poi.md)。
 
    * 以下是此方法的語法:
 
@@ -94,7 +95,7 @@ Returns the automatically generated visitor identifier for Analytics.
 
 * **trackLifetime&#x200B;ValueIncrease**
 
-   Adds `amount` to the user's lifetime value.
+   增加使用者期限值的 `amount`。
 
    * 以下是此方法的語法:
 
@@ -144,7 +145,7 @@ Returns the automatically generated visitor identifier for Analytics.
       public static void trackTimedActionUpdate(Stringaction,Map <String,Object> contextData); 
       ```
 
-   * Here is a code sample for this method:
+   * 以下是此方法的範例程式碼:
 
       ```java
       HashMap cdata = new HashMap<String Object> (); 
@@ -154,11 +155,11 @@ Returns the automatically generated visitor identifier for Analytics.
 
 * **trackTimed&#x200B;ActionEnd**
 
-   結束計時動作。If you provide `block`, you can access the final time values and can manipulate `data` before sending the final hit.
+   結束計時動作。如果您提供 `block`，則可在傳送最後一次點擊前存取最後時間值並處理 `data`。
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `true` to send a hit. Passing `null` for `block` sends the final hit.
+   >如果您提供`block`，則必須傳回 `true` 以傳送點擊。針對 `block` 傳遞 `null` 會傳送最後一次點擊。
 
    * 以下是此方法的語法:
 
