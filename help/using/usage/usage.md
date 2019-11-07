@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 報表
 topic: 報表,量度
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
@@ -28,8 +28,8 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 * [版本](/help/using/usage/c-reports-versions.md)
 * [技術](/help/using/usage/reports-technology.md)
 * [當機](/help/using/usage/c-crashes.md)
-* [App Store 概述報表](/help/using/usage/c-app-store-store-performance.md)
+* [應用程式商店概述報表](/help/using/usage/c-app-store-store-performance.md)
 * [自訂報表](/help/using/usage/reports-customize/reports-customize.md)
 * [新增篩選器至報表](/help/using/usage/reports-customize/t-reports-customize.md)
-* [Add Series (Metrics) to Reports](/help/using/usage/reports-customize/t-reports-series.md)
+* [新增系列 (量度) 至報表](/help/using/usage/reports-customize/t-reports-series.md)
 * [新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)
