@@ -1,13 +1,13 @@
 ---
 description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
 seo-title: 點擊批次處理程序
 solution: Marketing Cloud,Analytics
 title: 點擊批次處理程序
 topic: 開發人員和實施
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -19,9 +19,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!IMPORTANT]
 >
->To use hit batching, you must enable offline tracking and have SDK version 4.1 or later ****
+>若要使用點擊批次處理程序，您&#x200B;**必須**&#x200B;啟用離線追蹤，且有 SDK 4.1 版或更新版本
 
-To enable hit batching, update your `ADBMobileConfig.json` file and specify a value for `batchLimit`:
+若要啟用點擊批次處理程序，請更新 `ADBMobileConfig.json` 檔案，並指定 `batchLimit` 的值:
 
 ```js
 "analytics": {
@@ -30,7 +30,7 @@ To enable hit batching, update your `ADBMobileConfig.json` file and specify a va
 }
 ```
 
-When the value is set to a number greater than 0, the SDK queues the number of hits equal to the *`batchLimit`* value. 超過此臨界值後，佇列中的所有點擊都會傳送。
+當此值被設定為大於 0 的數字時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`* 值。超過此臨界值後，佇列中的所有點擊都會傳送。
 
 下列方法可搭配點擊批次處理程序使用:
 
