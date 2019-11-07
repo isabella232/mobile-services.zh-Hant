@@ -2,18 +2,18 @@
 description: 「技術」報表可讓您查看使用您應用程式的不同裝置類型、作業系統、作業系統版本，以及行動電信業者。
 keywords: 行動
 seo-description: 「技術」報表可讓您查看使用您應用程式的不同裝置類型、作業系統、作業系統版本，以及行動電信業者。
-seo-title: Technology report
+seo-title: 技術報表
 solution: Marketing Cloud,Analytics
-title: Technology report
+title: 技術報表
 topic: 報表,量度
 uuid: 4b7322c4-8920-43cd-bb72-5a5bd515ae84
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Technology report {#technology}
+# 技術報表 {#technology}
 
 **[!UICONTROL 「技術」]報表可讓您查看使用您應用程式的不同裝置類型、作業系統、作業系統版本，以及行動電信業者。**
 
@@ -25,7 +25,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->In addition to this information, you can view an in-product tutorial that describes how to interact with the sunburst chart. To start the tutorial, click **[!UICONTROL Technology Breakdown]** in the title bar of the report, click **[!UICONTROL Customize]**, and click the **[!UICONTROL i]** icon.
+>除了此資訊外，您也可以檢視產品內的教學課程，該教學課程會說明如何與散射環圖互動。若要啟動教學課程，請按一下報表標題列中的&#x200B;**[!UICONTROL 技術劃分]**，然後依序按一下&#x200B;**[!UICONTROL 自訂]**&#x200B;和 **[!UICONTROL i]** 圖示。
 
 ![](assets/report_technology.png)
 
@@ -44,14 +44,14 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 | 報表 | 填入方法 | 說明 |
 |--- |--- |--- |
-| 裝置 | 生命週期度量 | 依裝置類型劃分的通用度量。 |
-| 作業系統 | 自動 | 依作業系統劃分的通用度量。 |
-| 作業系統版本 | 生命週期度量 | 依作業系統版本劃分的通用度量。 |
-| 電信業者 | 自動 | 依電信業者劃分的通用度量。 |
+| 裝置 | 生命週期量度 | 依裝置類型劃分的通用量度。 |
+| 作業系統 | 自動 | 依作業系統劃分的通用量度。 |
+| 作業系統版本 | 生命週期量度 | 依作業系統版本劃分的通用量度。 |
+| 電信業者 | 自動 | 依電信業者劃分的通用量度。 |
 
 >[!TIP]
 >
->在電信業 **[!UICONTROL 者報告]** 中，Wi-fi使用者報告為 `none`。
+>在&#x200B;**[!UICONTROL 電信業者]**&#x200B;報表中，將 Wi-Fi 使用者報告為 `none`。
 
 
 ## 加入劃分和量度 {#section_15833511E82648869E7B1EFC24EF7B82}
@@ -60,16 +60,16 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!IMPORTANT]
 >
->The more rings you add to the sunburst, the longer it takes to process.
+>散射環中的環數越多，處理的時間就越久。
 
-To add breakdowns and secondary metrics, click **[!UICONTROL Technology Breakdown]** in the title bar of the report and click **[!UICONTROL Customize]**.
+若要加入劃分和次要量度，請按一下報表標題列中的&#x200B;**[!UICONTROL 技術劃分]**，然後按一下&#x200B;**[!UICONTROL 自訂]**。
 
-When you click **[!UICONTROL Add Breakdown]** or **[!UICONTROL Add Metric]**, a new item displays with the same name as the previous item in the list. 按一下新建立的劃分或量度，可存取一個下拉式清單並從中選取新項目。
+當您按一下&#x200B;**[!UICONTROL 加入劃分]**&#x200B;或&#x200B;**[!UICONTROL 新增量度]**，相應清單中就會出現一個名稱與前一個項目相同的新項目。按一下新建立的劃分或量度，可存取一個下拉式清單並從中選取新項目。
 
 ## 建立嚴格篩選 {#section_B4E355CD1FE34E4C8ADC38139ED67FC8}
 
-Click a slice in the ring to select the audience for which you want to create a sticky filter and click **[!UICONTROL Sticky Filter]**. 此篩選可讓您套用目前的篩選器，並根據篩選器執行新報表。
+按一下散射環中的某一塊，可以選取您要對其建立嚴格篩選的對象，然後按一下&#x200B;**[!UICONTROL 嚴格篩選]**。此篩選可讓您套用目前的篩選器，並根據篩選器執行新報表。
 
-## 共用報表 {#section_560DD5CED5144249B7E49461E2422100}
+## 共用報表{#section_560DD5CED5144249B7E49461E2422100}
 
 建立報表後，系統會使用您的設定建立自訂 URL，以供您複製和分享。
