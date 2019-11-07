@@ -6,34 +6,34 @@ solution: Marketing Cloud,Analytics
 title: 使用 WatchOS 2 進行 Apple Watch 實施
 topic: 開發人員和實施
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ---
 
 
-# Apple Watch implementation with WatchOS 2{#apple-watch-implementation-with-watchos}
+# 使用 WatchOS 2 進行 Apple Watch 實施{#apple-watch-implementation-with-watchos}
 
-Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. Applications that run in this environment require the `WatchConnectivity` framework to share data with their containing iOS app.
+從 WatchOS 2 開始，您的 WatchKit 延伸功能可在 Apple Watch 上執行。在此環境中執行的應用程式皆須使用 `WatchConnectivity` 架構，以與其容納 iOS 應用程式共用資料。
 
 >[!TIP]
 >
->從 `AdobeMobileLibrary` v4.6.0開始， `WatchConnectivity` 支援。
+>從 `AdobeMobileLibrary` 4.6.0 版開始，即支援 `WatchConnectivity`。
 
-## 全新Adobe Experience Platform Mobile SDK版本
+## 新版 Adobe Experience Platform Mobile SDK
 
-正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
-我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
-* 若要開始，請前往Adobe Experience Platform Launch。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要開始使用，請前往 Adobe Experience Platform Launch。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 ## 入門 {#section_70BC28BB69414F169196953D3D264BC1}
 
 >[!IMPORTANT]
 >
->請確定您的專案至少包含下列目標：
+>確保您擁有至少具備以下目標的專案:
 >
 >* 容納應用程式
 >* WatchKit 應用程式
@@ -44,12 +44,12 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
 
 如需有關開發 WatchKit 應用程式的詳細資訊，請參閱 [Watch 應用程式架構](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
 
-## Configure the containing app {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
+## 設定容納應用程式 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
 在您的 Xcode 專案中完成以下步驟:
 
 1. 將 `AdobeMobileLibrary` 資料夾拖曳到專案中。
-1. Ensure that the `ADBMobileConfig.json` file is a member of the containing app’s target.
+1. 確認 `ADBMobileConfig.json` 檔案為容納應用程式目標的成員。
 1. 在容納應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
 
    * `AdobeMobileLibrary.a`
@@ -69,7 +69,7 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
    #import “ADBMobile.h”
    ```
 
-1. Before making a call to the `ADBMobile` library, in `application:didFinishLaunchingWithOptions:` of your app delegate, configure your `WCSession`.
+1. 呼叫 `ADBMobile` 資料庫之前，請在應用程式委派的 `application:didFinishLaunchingWithOptions:` 中，設定您的 `WCSession`。
 
    ```objective-c
    // check for session availability 
@@ -80,9 +80,9 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
    }
    ```
 
-1. In your app delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
+1. 在您的應用程式委派中，實施 `session:didReceiveMessage:` 和 `session:didReceiveUserInfo:` 方法。
 
-   `syncSettings:` 在程式庫中 `ADBMobile` 呼叫，此程式庫會傳回一個方塊，指出字典是否是供程式庫使用 `ADBMobile` 的。 如果其傳回 `No`，則訊息不會從 Adobe SDK 啟動。
+   系統會在 `ADBMobile` 資料庫中呼叫 `syncSettings:`，其會傳回布林值指示是否會由 `ADBMobile` 資料庫使用字典。如果其傳回 `No`，則訊息不會從 Adobe SDK 啟動。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -99,15 +99,15 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
    } 
    ```
 
-## Configure the WatchKit extension {#section_5ADE31741E514330A381F2E3CFD4A814}
+## 設定 WatchKit 延伸功能 {#section_5ADE31741E514330A381F2E3CFD4A814}
 
-1. Ensure that the `ADBMobileConfig.json` file is a member of your WatchKit extension’s target.
+1. 確認 `ADBMobileConfig.json` 檔案為 WatchKit 延伸功能目標的成員。
 1. 在 WatchKit 延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
 
    * `AdobeMobileLibrary_Watch.a`
    * `libsqlite3.tbd`
 
-1. In your class that implements the `WKExtensionDelegate` protocol, import `WatchConnectivity` and add the `WCSessionDelegate` protocol.
+1. 在實施 `WKExtensionDelegate` 通訊協定的類別中，匯入 `WatchConnectivity` 並新增 `WCSessionDelegate` 通訊協定。
 
    ```objective-c
    #import <WatchConnectivity/WatchConnectivity.h> 
@@ -120,7 +120,7 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
    #import “ADBMobile.h”
    ```
 
-1. In `applicationDidFinishLaunching` of your extension delegate, configure your `WCSession` before making any calls to the `ADBMobile` library.
+1. 在延伸功能委派的 `applicationDidFinishLaunching` 中，設定您的 `WCSession`，然後再對 `ADBMobile` 資料庫進行任何呼叫。
 
    ```objective-c
    // check for session availability 
@@ -137,9 +137,9 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
    [ADBMobile initializeWatch];
    ```
 
-1. In your extension delegate, implement the `session:didReceiveMessage:` and `session:didReceiveUserInfo:` methods.
+1. 在您的延伸功能委派中，實施 `session:didReceiveMessage:` 和 `session:didReceiveUserInfo:` 方法。
 
-   `syncSettings:` 在程式庫中 `ADBMobile` 呼叫，此程式庫會傳回一個方塊，指出字典是否是供程式庫使用 `ADBMobile` 的。 如果其傳回 `NO`，則訊息不會從 Adobe SDK 啟動。
+   系統會在 `ADBMobile` 資料庫中呼叫 `syncSettings:`，其會傳回布林值指示是否會由 `ADBMobile` 資料庫使用字典。如果其傳回 `NO`，則訊息不會從 Adobe SDK 啟動。
 
    ```objective-c
    - (void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message { 
@@ -160,7 +160,7 @@ Starting with WatchOS 2, your WatchKit Extensions can run on an Apple Watch. App
 
 請記住以下資訊:
 
-* For WatchKit apps, `a.RunMode` will be set to `Extension`.
+* 若為 WatchKit 應用程式，`a.RunMode` 則會設為 `Extension`。
 * 由於 WatchKit 應用程式會在 Watch 上執行，因此應用程式會在 `a.AppID` 中正確回報其名稱。
 * 在 WatchOS2 應用程式中不會觸發任何生命週期呼叫。
 
