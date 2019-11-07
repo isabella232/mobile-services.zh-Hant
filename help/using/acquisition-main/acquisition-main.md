@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 贏取
 topic: 量度
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -19,28 +19,28 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ## 新版 Adobe Experience Cloud SDK
 
-正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
-我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 >[!IMPORTANT]
 >
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as Acquisition links. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。For more information about using Acquisition and Marketing Links with the Experience Cloud SDKs, see [Acquisition and Marketing Links](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links).
+> 如果您使用 Adobe Experience Platform Mobile SDK 搭配 Adobe Launch，您&#x200B;**必須**&#x200B;同時安裝 Adobe Analytics Mobile Services 擴充功能，方可使用贏取連結之類的 Adobe Mobile Services 功能。如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。如需如何將贏取及行銷連結與 Experience Cloud SDK 搭配使用的詳細資訊，請參閱[贏取與行銷連結](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#acquisition-and-marketing-links)。
 
 >[!IMPORTANT]
 >
->Although you can configure features in the UI, these features will not work until you download the generated configuration file and add this file to the SDK. For information about downloading and configuring the SDKs, see the *SDK documentation* section on this page.)
+>雖然您可在使用者介面中設定功能，但您還必須下載產生的設定檔案，並將該檔案新增到 SDK 中，這些功能才會發揮作用。如需下載和設定 SDK 的詳細資訊，請參閱本頁的 *SDK 文件*&#x200B;區段。
 
-您可以建立、編輯、管理和檢視可追蹤行動應用程式行銷連結的報表。
+您可以在可追蹤的行動應用程式行銷連結上建立、編輯、管理和檢視報表。
 
 >[!TIP]
 >
->這項功能需要Adobe Analytics - Mobile Apps或Adobe Analytics Premium SKU。
+>此功能需要 Adobe Analytics - Mobile Apps 或 Adobe Analytics Premium SKU。
 
-下列贏取報表可讓您深入瞭解行銷連結的執行方式：
+下列「贏取」報表提供行銷連結表現情形的深入分析:
 
 * **概述** {#section_5B2BA47F22694919A472AB591101237E}
 
@@ -50,10 +50,10 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * **連結報表** {#section_A23A640C363B43569D9D484CF49EA277}
 
-   此報表提供行銷連結績效的排名檢視。 除了檢視含有關鍵績效指標的連結名稱之外，您也可以自訂此報表的內容。如需詳細資訊，請參閱 [自訂報表](/help/using/usage/reports-customize/t-reports-customize.md).
+   此報表針對您的行銷連結績效提供排名視圖。除了檢視含有關鍵績效指標的連結名稱之外，您也可以自訂此報表的內容。如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/t-reports-customize.md)。
 
    請記住以下資訊:
 
    * 您可以按一下欄標題中的箭頭圖示，依遞增或遞減順序排序資料。
-   * To export the data to a PDF document, you can click **[!UICONTROL Download]**.
+   * 若要將資料匯出為 PDF 文件，您可以按一下&#x200B;**[!UICONTROL 下載]**。
    ![](assets/acquisition_name.png)
