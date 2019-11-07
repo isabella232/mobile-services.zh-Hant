@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊疑難排解
 topic: 量度
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# 應用程式內訊息疑難排解{#troubleshooting-in-app-messaging}
 
 此訊息可協助您疑難排解應用程式內訊息的問題。
 
@@ -23,7 +23,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 * 確認 SDK 的版本是 4.2 或更高版本，並已正確設定。
 
-* Ensure that you have a [Messaging](/help/using/in-app-messaging/in-app-messaging.md) section in your configuration (the downloaded JSON file) or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+* 確認設定 (下載的 JSON 檔案) 中有[傳訊](/help/using/in-app-messaging/in-app-messaging.md)區段或是有「訊息」遠端端點，以便從 Dynamic Tag Management 擷取訊息。
 
 ## 我的 Android 全螢幕訊息無法顯示。我已使用正確的 SDK 和配置，也符合觸發器條件。
 
@@ -31,19 +31,19 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ## 我的 Android 本機通知訊息沒有作用。
 
-確認已在資訊清單中宣告本機通知廣播接收器。For more information, see step #1 in [In-app messaging](/help/android/messaging-main/messaging/messaging.md).
+確認已在資訊清單中宣告本機通知廣播接收器。如需詳細資訊，請參閱[應用程式內訊息](/help/android/messaging-main/messaging/messaging.md)中的步驟 1。
 
 ## 這是現時訊息嗎?
 
 在&#x200B;**「管理應用程式內訊息」頁面的查「狀態」**&#x200B;欄，檢查清單檢視中的訊息是否使用中。
 
-## 在「對 *像」頁*&#x200B;面上 *，只要*&#x200B;顯示一次 *、始終顯示* ，即可顯示離線設定。
+## 在「對象」頁面上，查看&#x200B;*顯示一次*、*一律顯示*、*離線顯示*&#x200B;設定。
 
 檢查這些設定是否正確無誤。在「對象」頁面中，檢閱&#x200B;**「觸發器」**&#x200B;分頁標籤上的選項，該選項可讓您指定顯示訊息的頻率。
 
 ## 如果使用啟動事件做為觸發器...
 
-啟動只會發生在新的工作階段。如需有關工作階段開始時間的資訊，請參閱 在 `lifecycleTimeout` ADBMobile JSON [設定檔案中](/help/ios/configuration/json-config/json-config.md) 。
+啟動只會發生在新的工作階段。如需有關工作階段開始時間的資訊，請參閱`lifecycleTimeout`ADBMobile JSON config[ 檔案中的 ](/help/ios/configuration/json-config/json-config.md)。
 
 ## 我已從遠端更新訊息，但應用程式仍顯示舊訊息。
 
@@ -77,7 +77,7 @@ SDK 會擷取在生命週期啟動時新增/更新的訊息。這僅當應用程
 
 完成下列步驟:
 
-1. 在設定檔案中捲動訊息URL以確認遠端訊息已更新(例如 `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
+1. 對設定檔案中的訊息 URL 執行 curl 以確認遠端訊息已更新 (例如 `curl "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-542c62859662383b1a0008f4.json"`)
 1. 關閉應用程式
-1. Wait for a time period that is longer than the `lifecycleTimeout` in the config file.
+1. 等候超過設定檔案中的 `lifecycleTimeout` 時間。
 1. 開啟應用程式，導覽至應顯示訊息的位置，然後驗證其是否已更新。
