@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 動作路徑報表
 topic: 報表,量度
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
@@ -21,17 +21,17 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 >[!TIP]
 >
->您可以使用漏斗報表將導覽和動作結合在一個報表中。 For more information, see [Funnel](/help/using/usage/reports-funnel.md).
+>您可以使用漏斗報表將導覽和動作結合在一個報表中。如需詳細資訊，請參閱[漏斗](/help/using/usage/reports-funnel.md)。
 
 ![](assets/action_paths.png)
 
 每個節點 (形狀像方塊) 代表使用者在應用程式中通過路徑的一個狀態。例如，在上圖中，頂端節點代表啟動應用程式接著從圖庫中挑選相片的使用者人數。
 
-To display the options to modify the chart, click a node and click **[!UICONTROL Focus]** or **[!UICONTROL Expand]**. 例如，按一下頂端節點中的 **[!UICONTROL PhotoPicked]** 狀態後會顯示&#x200B;**[!UICONTROL 「焦點」]和**「展開」]圖示。**[!UICONTROL **
+若要顯示可用來修改圖表的選項，請按一下節點，然後選取&#x200B;**[!UICONTROL 焦點]**&#x200B;或&#x200B;**[!UICONTROL 展開]**。例如，按一下頂端節點中的 **[!UICONTROL PhotoPicked]** 狀態後會顯示&#x200B;**[!UICONTROL 「焦點」]和**「展開」]圖示。**[!UICONTROL **
 
 ![](assets/action_paths_icons.png)
 
-To expand, click the **[!UICONTROL +]** icon. 此選項會顯示進入或離開節點等其他路徑。在下圖中，狀態 1 代表正在啟動應用程式，狀態 2 代表正在挑選相片 (您先前展開的項目)，而狀態 3 則包含使用者瀏覽的不同路徑:
+若要展開，請按一下 **[!UICONTROL +]** 圖示。此選項會顯示進入或離開節點等其他路徑。在下圖中，狀態 1 代表正在啟動應用程式，狀態 2 代表正在挑選相片 (您先前展開的項目)，而狀態 3 則包含使用者瀏覽的不同路徑:
 
 * 選取項目
 * 新增項目
@@ -42,7 +42,7 @@ To expand, click the **[!UICONTROL +]** icon. 此選項會顯示進入或離開�
 
 ![動作路徑擴展](assets/action_paths_expand.png)
 
-To isolate the node and show paths that come into, and go out of the selected node, click the  ![focus icon](assets/icon_focus.png) icon. 下圖顯示使用者選取相片&#x200B;**之前**&#x200B;所完成的路徑:
+若要隔離節點，並顯示進入和離開所選節點的路徑，請按一下 ![焦點圖示](assets/icon_focus.png) 圖示。下圖顯示使用者選取相片&#x200B;**之前**&#x200B;所完成的路徑:
 
 * 旋轉項目
 * 調整項目大小
@@ -60,7 +60,7 @@ To isolate the node and show paths that come into, and go out of the selected no
 
 您可以聚焦或展開多個節點，詳細檢視使用者在您應用程式中採行的路徑。例如:
 
-![動作路徑多](assets/action_paths_mult.png)
+![動作多路徑](assets/action_paths_mult.png)
 
 您可以為此報表配置下列選項:
 
@@ -70,12 +70,12 @@ To isolate the node and show paths that come into, and go out of the selected no
 
 * **[!UICONTROL 自訂]**
 
-   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.** For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.**&#x200B;如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
 
 * **[!UICONTROL 篩選]**
 
-   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。For more information, see [Add a sticky filter](/help/using/usage/reports-customize/t-sticky-filter.md).
+   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
 
 * **[!UICONTROL 下載]**
 
-   Click **[!UICONTROL PDF]** or **[!UICONTROL CSV]** to download or open documents and share with users who do not have access to Mobile Services or to use the file in presentations.
+   按一下 **[!UICONTROL PDF]** 或 **[!UICONTROL CSV]** 可下載或開啟文件，以及分享給無法存取 Mobile Services 的使用者，或是在簡報中使用檔案。
