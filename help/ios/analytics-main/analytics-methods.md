@@ -1,32 +1,32 @@
 ---
 description: 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
-seo-title: 分析方法
+seo-title: 'Analytics 方法 '
 solution: Marketing Cloud,Analytics
-title: 分析方法
+title: Analytics 方法
 topic: 開發人員和實施
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
 
 
-# Analytics methods {#analytics-methods}
+# Analytics 方法 {#analytics-methods}
 
 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 
-SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。 Methods are prefixed according to the solution. Experience Cloud ID methods are prefixed with `track`.
+SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Adobe Experience Platform Identity Service。各方法會根據解決方案加上前置詞。Experience Cloud ID 方法會加上前置詞 `track`。
 
 上述各方法將用來傳送資料至您的 Adobe Analytics 報表套裝。
 
 * **trackState:&#x200B;data:**
 
-   States are the views that are available in your app, such as `home dashboard`, `app settings`, `cart`, and so on. 這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。如果 `state` 空白，在報表中會顯示為 *app name app version (build)*。如果在報表中看到此值，請務必在每個 `state` 呼叫中設定 `trackState`。
+   狀態為應用程式中可用的檢視，例如 `home dashboard`、`app settings`、`cart` 等。這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。如果 `state` 空白，在報表中會顯示為 *app name app version (build)*。如果在報表中看到此值，請務必在每個 `state` 呼叫中設定 `trackState`。
 
    >[!TIP]
    >
-   >這是唯一會增加頁面檢視次數的追蹤呼叫。
+   >這是唯一會遞增頁面檢視的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -44,11 +44,11 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
 * **trackAction:&#x200B;data:**
 
-   追蹤應用程式中的動作。Actions that you want to measure, such as , , , and other metrics, occur in your app.`logons``banner taps``feed subscriptions`
+   追蹤應用程式中的動作。您要測量的動作，例如`logons`、`banner taps`、`feed subscriptions`，以及在應用程式中發生的其他量度。
 
    >[!TIP]
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >如果您的程式碼會在應用程式於背景時執行 (例如，背景資料擷取)，請改為使用 `trackActionFromBackground`。
 
    * 以下是此方法的語法:
 
@@ -86,7 +86,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >This method should only be called in code that runs while your app is in the background.
+   >只有當應用程式在背景執行時，才應從此時執行的程式碼中呼叫此方法。
 
    * 以下是此方法的語法:
 
@@ -156,7 +156,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
 * **trackLifetimeValueIncrease:&#x200B;data:**
 
-   Adds `amount` to the user's lifetime value.
+   增加使用者期限值的 `amount`。
 
    * 以下是此方法的語法:
 
@@ -218,11 +218,11 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
 * **trackTimedActionEnd:&#x200B;logic:**
 
-   結束計時動作。If you provide `block`, you will have access to the final time values and be able to manipulate `data` prior to sending the final hit.
+   結束計時動作。如果您提供`block`，則可在傳送最後一次點擊前存取最後時間值並處理`data`。
 
    >[!TIP]
    >
-   >If you provide `block`, you must return `YES` to send a hit. Passing in `nil` for `block` sends the final hit.
+   >如果您提供`block`，則必須傳回 `YES` 以傳送點擊。針對`block`傳遞 `nil` 會傳送最後一次點擊。
 
    * 以下是此方法的語法:
 
@@ -263,7 +263,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
 * **trackingSendQueuedHits**
 
-   Requires SDK 4.1. Regardless of how many hits are currently queued, forces the library to send all hits in the offline queue.
+   須使用 SDK 4.1 版。無論目前排入佇列的點擊數量多寡，都會強制資料庫傳送離線佇列中的所有點擊。
 
    * 以下是此方法的語法:
 
@@ -299,7 +299,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!CAUTION]
    >
-   >手動清除佇列時請小心。 此程序無法回復。
+   >手動清除佇列時請格外小心。此程序無法回復。
 
    * 以下是此方法的語法:
 
@@ -321,7 +321,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!IMPORTANT]
    >
-   >此方法不會增加頁面檢視。
+   >此方法無法遞增頁面檢視。
 
    * 以下是此方法的語法:
 
