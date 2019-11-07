@@ -1,20 +1,20 @@
 ---
-description: 虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。This allows users to maintain their data in one report suite but manage the data as if it were in separate report suites.
-seo-description: 虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。這可讓使用者將資料維護在單一報表套裝中，但管理資料就像資料位於個別報表套裝一樣。
+description: 虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。這讓使用者可以在一個報表套裝裡保管其資料，但做法就像在個別報表套裝中管理資料。
+seo-description: 虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。這讓使用者可以在一個報表套裝裡保管其資料，但做法就像在個別報表套裝中管理資料。
 seo-title: 虛擬報表套裝
 title: 虛擬報表套裝
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 ---
 
 
-# Virtual report suites {#virtual-report-suites}
+# 虛擬報表套裝 {#virtual-report-suites}
 
-虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。這可讓使用者將資料維護在單一報表套裝中，但管理資料就像是在個別報表套裝中一樣。
+虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。這讓使用者可以在一個報表套裝裡保管其資料，但做法就像在個別報表套裝中管理資料。
 
-Apps that use VRSs do the same thing as apps that use a regular report suite, except for managing the following features:
+使用 VRS 的應用程式與使用一般報表套裝的應用程式功能相同，只有管理下列功能的方式有所差異:
 
 * 處理規則
 * evars/props/listvars/事件
@@ -24,7 +24,7 @@ Apps that use VRSs do the same thing as apps that use a regular report suite, ex
 
 這些值在上層報表套裝中受到管理，並會與屬於同一個上層報表套裝的 VRS 共用。
 
-在Adobe Mobile Services UI中可以存取下列區域，不受父報表套裝的限制：
+下列是可以在 Adobe Mobile Services 使用者介面存取的區域，不受上層報表套裝所影響:
 
 * 配置檔案
 * 管理地標
@@ -33,65 +33,65 @@ Apps that use VRSs do the same thing as apps that use a regular report suite, ex
 * 訊息連結
 * 贏取
 
-VRS可協助您完成下列工作：
+VRS 可協助您完成下列作業:
 
 * 限制資料存取權
 
-   一家跨國公司的應用程式會將資料傳送至所有地理位置的報表套裝，不過，該公司希望限制某個地區的商業使用者檢視另一個地區的資料。 The company’s admin can create a VRS to segment users by region and give permission to the VRS only to the business user who manages the region.
+   一家跨國公司的應用程式會將資料傳送至所有地理位置的報表套裝，但是，這家公司想要限制某一地區的商務使用者，讓他們無法檢視另一地區的資料。該公司的管理員可以建立 VRS，依地區將使用者區隔開來，並只向管理該地區的商務使用者授與 VRS 的權限。
 
-   這種限制方式能避免商務使用者檢視與其在所地區無關的資料。例如，EMEA地區的企業使用者不需要查看亞太地區的資料。
+   這種限制方式能避免商務使用者檢視與其在所地區無關的資料。舉例來說，位於 EMEA 的商務使用者不需要看到 APAC 地區的資料。
 
-* 允許控制應用程式內／推播訊息、位置POI、贏取和回傳，並將所有資料傳送至一個報表套裝。
+* 允許控制傳送至一個報表套裝的資料之應用程式內/推送訊息、位置 POI、贏取和回傳。
 
-   跨國公司想要將所有資料都傳送至所有地理位置的同一個報表套裝，不過，該公司希望每個地區的行銷團隊都能處理自己的應用程式內／推播訊息。 公司的管理員可以建立地區VRS，而每個團隊都可以根據該VRS管理自己的應用程式。
+   跨國公司想要將所有資料都傳送至所有地理位置的同一個報表套裝，但是，這家公司想要每個地區的行銷團隊各自處理其相關的應用程式內/推送訊息。該公司的管理員可以建立地區 VRS，讓每個團隊可以依據該 VRS 管理其個別的應用程式。
 
-   地區團隊會使用 VRS 的配置檔案來建立他們的應用程式。資料會傳送至父報表套裝，但應用程式內／推播訊息、位置POI、贏取和回傳會在從VRS建立的應用程式中控制。
+   地區團隊會使用 VRS 的配置檔案來建立他們的應用程式。資料會傳送至上層報表套裝，但應用程式內/推送訊息、位置 POI、贏取和回傳會由 VRS 建立的應用程式控制。
 
-## Create a virtual report suite in Adobe Analytics {#section_D56B90B2653847D68ECA1F9B39204330}
+## 在 Adobe Analytics 中建立虛擬報表套裝 {#section_D56B90B2653847D68ECA1F9B39204330}
 
 >[!IMPORTANT]
 >
->Only Adobe Analytics admins can create and modify virtual report suites in Adobe Analytics. To create a virtual report suite, see [Create virtual report suites](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html).
+>只有 Adobe Analytics 管理員可以在 Adobe Analytics 中建立和修改虛擬報表套裝。若要建立虛擬報表套裝，請參閱[建立虛擬報表套裝](https://docs.adobe.com/content/help/zh-Hant/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html)。
 
-每個 VRS 都有唯一的 ID。若要在Adobe Mobile Services UI中檢視父報表套裝ID，請在「管理應用程式設定」頁面的「應用程式資訊」區 **[!UICONTROL 段中]** ，按一下「更 **[!UICONTROL 多詳細資訊」]**。
+每個 VRS 都有唯一的 ID。若要在 Adobe Mobile Services 使用者介面中檢視上層報表套裝 ID，請在「管理應用程式設定」頁面的&#x200B;**[!UICONTROL 應用程式資訊]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 更多詳情]**。
 
 在 Adobe Mobile Services UI 中，您可以使用 VRS 針對組織中的特定群組建立應用程式和區段資料。舉例來說，位於西班牙的商務使用者無法看到與日本商務使用者相關的資料。
 
 >[!TIP]
 >
->您無法修改從父報表套裝繼承的值。
+>您無法修改從上層報表套裝繼承的值。
 
 VRS 是附於上層報表套裝的伺服器端區段定義，因此您無法對 VRS 執行資料收集，因為 SDK 只會傳送點擊至上層報表套裝，VRS 則反過來記錄點擊。
 
-## Virtual report suite in Adobe Mobile Services and data collection {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
+## Adobe Mobile Services 的虛擬報表套裝與資料收集 {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
-在Adobe Mobile services中，您可以根據父報表套裝或虛擬報表套裝建立應用程式。 依據虛擬報表套裝建立應用程式時，我們建議您按應程式的定義來調整 VRS 區段。
+在 Adobe Mobile Services 中，您可以依據上層報表套裝或虛擬報表套裝建立應用程式。依據虛擬報表套裝建立應用程式時，我們建議您按應程式的定義來調整 VRS 區段。
 
 >[!TIP]
 >
->推播認證會附加在Mobile Services UI的應用程式層級。
+>在 Mobile Services 使用者介面中，推送認證會附加於應用程式層級。
 
-若要確定您是否正確傳送推送訊息，請務必正確定義對象區段。如需詳細資訊，請參閱 [對象: 定義和設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+若要確定您是否正確傳送推送訊息，請務必正確定義對象區段。如需詳細資訊，請參閱[對象: 定義和設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
-## Understanding time zones {#section_498E1EED22D741C3BDED44F01FACA72A}
+## 瞭解時區 {#section_498E1EED22D741C3BDED44F01FACA72A}
 
-The time zone property on the Manage App Settings page is different from the time zone property that you use to create the VRS in Adobe Analytics. 「管理應用程式設定」頁面的時區屬性繼承自上層報表套裝，用於傳送資料到 Adobe Analytics。The property that you specify when you create the VRS in Adobe Analytics is used to display the reports in the Mobile Services UI and might be different from the parent report suite.
+「管理應用程式設定」頁面上的時區屬性，與您在 Adobe Analytics 中建立 VRS 時所用的時區屬性並不相同。「管理應用程式設定」頁面的時區屬性繼承自上層報表套裝，用於傳送資料到 Adobe Analytics。您在 Adobe Analytics 建立 VRS 時指定的屬性，用於顯示 Mobile Services 使用者介面中的報表，且可能與上層報表套裝不同。
 
-## Select a virtual report suite in the Mobile Services UI {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
+## 在 Mobile Services 使用者介面中選取虛擬報表套裝 {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
 
 若要在建立應用程式時使用 VRS，請在&#x200B;**「應用程式資訊」頁面的「報表套裝」**&#x200B;下拉式清單中選取 VRS。該清單含有上層和虛擬報表套裝。
 
 >[!IMPORTANT]
 >
->To select a VRS from the list, locate an option with the blue dot and the `vrs_` *`<company_name>`* `_` *`<unique name>`* naming convention.
+>若要從清單中選取 VRS，請找到帶有藍點的選項和 `vrs_` *`<company_name>`* `_` *`<unique name>`* 命名慣例。
 
-## Virtual Report Suite properties {#section_20ECE6243F664C4FB4347ADB4FF0458A}
+## 虛擬報表套裝屬性 {#section_20ECE6243F664C4FB4347ADB4FF0458A}
 
 下列是 VRS 的屬性:
 
 >[!TIP]
 >
->唯讀屬性繼承自父報表套裝。
+>唯讀屬性繼承自上層報表套裝。
 
 | 屬性 | 繼承自上層報表套裝 | 可編輯? | 附註 |
 |--- |--- |--- |--- |
@@ -117,7 +117,7 @@ The time zone property on the Manage App Settings page is different from the tim
 
 ## 其他資訊 {#section_4C4446F1FBE64F659BC0A2362C9F3E59}
 
-以下是虛擬報表套裝的其他資訊：
+以下是虛擬報表套裝的其他資訊:
 
-* 如需 VRS 的詳細資訊，請參閱[虛擬報表套裝](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-about.html)。
-* For more information about planning a VRS implementation, see [Virtual report suite workflow](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html).
+* 如需 VRS 的詳細資訊，請參閱[虛擬報表套裝](https://docs.adobe.com/content/help/zh-Hant/analytics/components/virtual-report-suites/vrs-about.html)。
+* 如需規劃 VRS 實作的詳細資訊，請參閱[虛擬報表套裝工作流程](https://docs.adobe.com/content/help/zh-Hant/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html)。
