@@ -1,33 +1,33 @@
 ---
 description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
-seo-title: Adobe Experience Platform Identity Service方法
+seo-title: Adobe Experience Platform Identity Service 方法
 solution: Marketing Cloud,Analytics
-title: Adobe Experience Platform Identity Service方法
+title: Adobe Experience Platform Identity Service 方法
 topic: 開發人員和實施
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc515a6e89044b9dac98b3f207c5f43b658a2ec
 
 ---
 
 
-# Adobe Experience Platform Identity Service方法{#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service 方法{#experience-cloud-id-service-methods}
 
 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
 
-The SDK currently supports multiple Adobe Experience Cloud Solutions], including Analytics, Target, Audience Manager, and the Adobe Experience Platform Identity Service.
+SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Adobe Experience Platform Identity Service。
 
-Methods are prefixed according to the solution. For example, Experience Cloud ID methods are prefixed with `visitor`. For more information, see [Experience Cloud ID Configuration](/help/android/c-marketing-cloud/mcvid.md).
+各方法會根據解決方案加上前置詞，例如 Experience Cloud ID 方法會加上前置詞 `visitor`。如需詳細資訊，請參閱 [Experience Cloud ID 設定](/help/android/c-marketing-cloud/mcvid.md)。
 
 * **公用靜態字串 appendToURL (最後字串URL)**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。您必須有 Mobile SDK 4.12+ 才能使用此方法。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。您必須有 Mobile SDK 4.12+ 才能使用此方法。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://marketing.adobe.com/resources/help/zh_TW/mcvid/mcvid-appendvisitorid.html)。
 
    >[!IMPORTANT]
    >
-   >此方法可導致阻塞網路呼叫。 請勿在具時效性的執行緒上呼叫此方法。
+   >此方法會造成封鎖網路呼叫。請勿在具時效性的執行緒上呼叫此方法。
 
    * 以下是此方法的語法:
 
@@ -66,7 +66,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
       >[!IMPORTANT]
       >
-      >This method can cause a blocking network call and should **not** be called from a UI thread.
+      >此方法會造成封鎖網路呼叫，且&#x200B;**不**&#x200B;應從使用者介面執行緒呼叫此方法。
 
 * **syncIdentifiers**
 
@@ -149,7 +149,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
 
 * **getUrlVariablesAsync**
 
-   此方法於4.16.0版中推出，傳回包含訪客ID服務URL變數的適當格式字串。 如需使用此方法的詳細資訊，請參 [閱Adobe Experience Platform Identity Service方法](/help/android/reference/hybrid-app.md)。
+   4.16.0 版導入了此方法，可傳回包含訪客 ID 服務 URL 變數的適當形式字串。如需如何使用此方法的詳細資訊，請參閱 [Adobe Experience Platform Identity Service 方法](/help/android/reference/hybrid-app.md)。
 
    * 以下是此方法的語法:
 
@@ -170,7 +170,7 @@ Methods are prefixed according to the solution. For example, Experience Cloud ID
       });
       ```
 
-## Public methods {#section_8AC744B431A3438C9B45629CA3EA0F51}
+## 公用方法 {#section_8AC744B431A3438C9B45629CA3EA0F51}
 
 ```java
 public class VisitorID { 
