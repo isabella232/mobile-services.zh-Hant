@@ -5,17 +5,17 @@ seo-title: 贏取方法
 solution: Marketing Cloud,Analytics
 title: 贏取方法
 uuid: 6f88de57-793d-4d33-9a54-f6714289fd2c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Acquisition methods {#acquisition-methods}
+# 贏取方法 {#acquisition-methods}
 
 下列為 iOS 資料庫提供的贏取方法:
 
-The following method is supported:
+支援下列方法:
 
 * **acquisitionCampaignStartForApp:data:**
 
