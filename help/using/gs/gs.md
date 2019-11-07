@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 快速入門
 topic: 量度
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -41,7 +41,7 @@ Adobe Mobile Services 可透過以下方式提高行動應用程式的互動率:
 
 在&#x200B;*「贏取」*&#x200B;階段，您可使用已經付費、擁有和賺取的媒體，在各個主要應用程式商店中贏取使用者下載應用程式。Adobe Mobile Services 能促進應用程式使用者的贏取程序。
 
-Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追蹤和深層連結，可讓您衡量應用程式使用者贏取管道的效益。透過追蹤哪些使用者來自哪個通道的行銷連結，您可以洞悉哪些贏取通道對推動獲利及參與度最高的使用者。
+Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追蹤和深層連結，可讓您衡量應用程式使用者贏取管道的效益。使用行銷連結追蹤使用者來自哪些管道，您便可洞察哪些是吸引高價值及高參與使用者最有效的贏取管道。
 
 此外，深層連結則可將使用者直接導向您想讓他們看到的應用程式內容，且您可視需要鼓勵他們安裝應用程式。
 
@@ -52,7 +52,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追�
 * 應用程式深層連結
 * 與廣告網路的回傳整合
 
-如需此階段的詳細資訊，請參閱 [贏取](/help/using/acquisition-main/acquisition-main.md).
+如需此階段的詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md).
 
 ### 分析
 
@@ -70,7 +70,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追�
 * 位置分析
 * 支援多種裝置和平台
 
-如需有關可執行並用來分析客戶的報表詳細資訊，請參閱 [報表](/help/using/usage/usage.md).
+如需有關可執行並用來分析客戶的報表詳細資訊，請參閱[報表](/help/using/usage/usage.md).
 
 ### 參與
 
@@ -82,7 +82,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追�
 * 即時分析、警告和新項目/內容可觸發應用程式內訊息。
 * 瞭解檢視、點進率和下游行為
 
-### Adobe Mobile訊息
+### Adobe Mobile 訊息
 
 您可使用推送通知和應用程式內訊息與使用者通訊。推送通知會透過裝置的作業系統傳送，而應用程式內訊息則會在使用者與應用程式互動時，直接在應用程式內傳送。應用程式內訊息通常可透過多種其他格式呈現，包括彈出式視窗和插入式連結。
 
@@ -111,7 +111,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追�
 
 在&#x200B;*「最佳化」*&#x200B;階段，您可以最佳化轉換 (訂閱、商務交易和收入等等) 並提升客戶保留率。最佳化使用者在您應用程式內的體驗，有助於您提供個人化內容，進而創造最高的投資報酬率和轉換率。
 
-如需有關測試和 Adobe Target 的詳細資訊，請前往 [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html)。
+如需有關測試和 Adobe Target 的詳細資訊，請前往 [Adobe Target](https://docs.adobe.com/content/help/zh-Hant/target/using/target-home.html)。
 
 ### 地理定位
 
@@ -121,7 +121,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，其中包括贏取追�
 
 如需有關位置的詳細資訊，請參閱下列內容:
 
-* [Mobile services使用指南中的位置](/help/using/location/c-location-overview.md)
+* [Mobile Services 使用者指南中的位置](/help/using/location/c-location-overview.md)
 * Android SDK 指南中的[位置一節](/help/android/location/location.md)
 * iOS SDK 指南中的[位置一節](/help/ios/location/location.md)
 
@@ -158,4 +158,4 @@ Adobe Mobile SDK 提供下列功能:
    * 將傳送資料至 Adobe 伺服器及第三方系統時的裝置處理負載量降到最低。
    * 佔用的記憶體空間很少，因此可將提交到應用程式商店的應用程式套件大小降到最小。
 
-如需 Adobe Mobile SDK 的詳細資訊，請參閱[適用於 Experience 解決方案的 Android SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html) 和[適用於 Experience Cloud 解決方案的 iOS SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/ios/rel-notes.html)。
+如需 Adobe Mobile SDK 的詳細資訊，請參閱[適用於 Experience 解決方案的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html) 和[適用於 Experience Cloud 解決方案的 iOS SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/rel-notes.html)。
