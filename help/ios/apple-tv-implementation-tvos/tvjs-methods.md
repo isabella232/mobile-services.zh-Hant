@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: TVJS 方法
 topic: 開發人員和實施
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -16,7 +16,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
 
-## Configuration methods {#section_5F82FD2F6A0546B3B4E80DF832E11634}
+## 設定方法 {#section_5F82FD2F6A0546B3B4E80DF832E11634}
 
 * **版本**
 
@@ -42,11 +42,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    選項如下:
 
-   * `ADBMobilePrivacyStatusOptIn`:點擊會立即傳送。
-   * `ADBMobilePrivacyStatusOptOut`:會捨棄點擊。
+   * `ADBMobilePrivacyStatusOptIn`: 會立即傳送點擊。
+   * `ADBMobilePrivacyStatusOptOut`: 會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
-      如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。THe default value is set in the `ADBMobileConfig.json` file.
+      如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 `ADBMobileConfig.json` 檔案中。
 
    * 以下是此方法的語法:
 
@@ -66,9 +66,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    將目前使用者的隱私權狀態設為下列其中一個值:
 
-   * `ADBMobilePrivacyStatusOptIn`: Hits are sent immediately.
-   * `ADBMobilePrivacyStatusOptOut`: Hits are discarded.
-   * `ADBMobilePrivacyStatusUnknown`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。
+   * `ADBMobilePrivacyStatusOptIn`: 會立即傳送點擊。
+   * `ADBMobilePrivacyStatusOptOut`: 會捨棄點擊。
+   * `ADBMobilePrivacyStatusUnknown`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
    如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -108,7 +108,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!IMPORTANT]
    >
-   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 nil，直到設定完成為止。
+   >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 nil，直到設定完成為止。
 
    * 以下是此方法的語法:
 
@@ -149,11 +149,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **setAdvertisingIdentifier**
 
-   Sets the IDFA in the SDK, and if it has been set in the SDK, the IDFA is sent in lifecycle. 您亦可在「訊號」(回傳) 中存取 IDFA。
+   在 SDK 中設定 IDFA；若已在 SDK 中設定 IDFA，則 IDFA 會在生命週期中傳送。您亦可在「訊號」(回傳) 中存取 IDFA。
 
    >[!IMPORTANT]
    >
-   >Retrieve the IDFA from Apple APIs only if you are using an ad service. 若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
+   >只有在您使用廣告服務時，才能從 Apple API 擷取 IDFA。若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
 
    * 以下是此方法的語法:
 
@@ -194,7 +194,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 表示 Adobe SDK 是否應記錄至偵錯主控台的值。
 
 
-## Analytics methods {#section_F3DB9BE225F84F86BE5F8D15164C0379}
+## Analytics 方法 {#section_F3DB9BE225F84F86BE5F8D15164C0379}
 
 * **trackStateData**
 
@@ -204,7 +204,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >這是唯一會增加頁面檢視次數的追蹤呼叫。
+   >這是唯一會遞增頁面檢視的追蹤呼叫。
 
    * 以下是此方法的語法:
 
@@ -257,7 +257,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    傳送目前的經緯度座標。
 
-   Also uses points of interest (POI) that are defined in the `ADBMobileConfig.json` file to determine whether the location that you entered as a parameter is in any of your POIs. 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
+   也會使用 `ADBMobileConfig.json` 檔案中定義的地標 (POI)，來判斷輸入做為參數的位置是否在您的任何 POI 範圍內。如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
 
    * 以下是此方法的語法:
 
@@ -368,7 +368,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    結束計時動作。
 
-   如果您提供回撥函式，則可以存取最終時間值。如果沒有提供回撥，或回撥傳回 true，則 Adobe SDK 會自動傳送點擊。從回呼傳回false時，會抑制計時動作點擊。
+   如果您提供回撥函式，則可以存取最終時間值。如果沒有提供回撥，或回撥傳回 true，則 Adobe SDK 會自動傳送點擊。若從回撥傳回 false，則會抑制計時動作點擊。
 
    * 以下是此方法的語法:
 
@@ -382,9 +382,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 即將結束的計時動作名稱。
       * 參數: `callback`
          * 類型: `function(inAppDuration, totalDuration, data)`
-         * Callback method that will have `inAppDuration` (number), `totalDuration` (number), and `data` (context data object) in its parameters.
+         * 回撥方法的參數會有: `inAppDuration` (數字)、`totalDuration` (數字) 及 `data` (內容資料物件)。
 
-            You can suppress the final hit from being sent by the SDK by returning `false` in your callback function.
+            您可以在回撥函式中傳回 `false`，藉此防止 SDK 傳送最終點擊。
       * 以下是此方法的範例程式碼:
 
          ```objective-c
@@ -410,7 +410,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 傳回: 布林值
       * 參數: `name`
          * 類型: `String`
-         * Name of the timed action for which you need to check existence.
+         * 您需要檢查是否存在的計時動作名稱。
    * 以下是此方法的範例程式碼:
 
 
@@ -427,7 +427,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    >[!TIP]
    >
-   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，且會使用追蹤識別碼。如需詳細資訊，請參閱下方的 userIdentifier 列。
+   >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，且會使用追蹤識別碼。如需詳細資訊，請參閱下方的 userIdentifier 列。
 
    * 以下是此方法的語法:
 
@@ -502,7 +502,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ```
 
 
-## Audience Manager methods {#section_0155C4DF04644EDAAF6159C420A158DE}
+## Audience Manager 方法 {#section_0155C4DF04644EDAAF6159C420A158DE}
 
 * **audienceVisitorProfile**
 
@@ -625,7 +625,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ```
 
       * 傳回: N/A
-      * Parameter: None
+      * 參數: 無
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -633,7 +633,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ```
 
 
-## ID Service methods {#section_BEB6DA612EA4423FB354B65ECC941335}
+## ID 服務方法 {#section_BEB6DA612EA4423FB354B65ECC941335}
 
 * **visitorMarketingCloudID**
 
@@ -692,7 +692,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 用來同步至此使用者之 ID 服務的識別碼。
       * 參數: `authState`
          * 類型: ADBMobileVisitorAuthenticationState
-         * 用戶的驗證狀態和可能的值包括：
+         * 使用者的驗證狀態，可能的值包括:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -714,7 +714,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       visitorSyncIdentifierWithTypeIdentifierAuthenticationState(idType, identifier, authState)
       ```
 
-      * 退貨：不適用
+      * 傳回: 不適用
       * 參數: `idType`
          * 類型: `String`
          * 正在同步的識別碼類型。
@@ -722,7 +722,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 類型: `String`
          * 正在同步的識別碼值。
       * 參數: `authState`
-         * 類型：使用者的ADBMobileVisitorAuthenticationStateAuthentication狀態。 可能的值包括:
+         * 類型: ADBMobileVisitorAuthenticationState
+使用者的驗證狀態。可能的值包括:
             * `ADBMobileVisitorAuthenticationStateUnknown`
             * `ADBMobileVisitorAuthenticationStateAuthenticated`
             * `ADBMobileVisitorAuthenticationStateLoggedOut`
@@ -762,7 +763,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ```
 
 
-## Target methods {#section_F9F7EC2B9B7C41AFBCA2458F9F138634}
+## Target 方法 {#section_F9F7EC2B9B7C41AFBCA2458F9F138634}
 
 * **targetThirdPartyID**
 
