@@ -2,24 +2,24 @@
 description: 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
 keywords: 行動
 seo-description: 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
-seo-title: 顯示 Mobile 量度
+seo-title: 顯示行動量度
 solution: Marketing Cloud,Analytics
-title: 顯示 Mobile 量度
+title: 顯示行動量度
 topic: 量度
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 ---
 
 
-# Display mobile metrics {#display-mobile-metrics}
+# 顯示行動量度 {#display-mobile-metrics}
 
 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
 
-每個應用程式所顯示的量度會根據您在建立應用程式期間選取的關鍵量度而有所不同。如需詳細資訊，請參閱 [新增應用程式](/help/using/manage-apps/t-new-app.md).
+每個應用程式所顯示的量度會根據您在建立應用程式期間選取的關鍵量度而有所不同。如需詳細資訊，請參閱[新增應用程式](/help/using/manage-apps/t-new-app.md).
 
-If the app you want to view is not displayed, search for it by typing the app's name or by clicking the drop-down list in **[!UICONTROL All Apps]**.
+如果您要檢視的應用程式未顯示，請輸入應用程式名稱或按一下&#x200B;**[!UICONTROL 完整應用程式]**&#x200B;中的下拉式清單進行搜尋。
 
 您可在「概述」頁面上執行下列任務:
 
@@ -36,30 +36,30 @@ If the app you want to view is not displayed, search for it by typing the app's 
    若要建立篩選器:
 
    1. 按一下「**[!UICONTROL 篩選]**」圖示，顯示「**嚴格篩選]」對話方塊。[!UICONTROL **
-   1. Click **[!UICONTROL Add Rule]**, select an option from the drop-down list, and type the necessary information.
+   1. 按一下&#x200B;**[!UICONTROL 新增規則]**，從下拉式清單中選取選項，然後輸入必要資訊。
 
-      例如，您可以選取「應用 **[!UICONTROL 程式版本]** 」並 `4.5` 輸入版本。 You could select **[!UICONTROL Device Type]** and type `Android`.
+      例如，您可以選取&#x200B;**[!UICONTROL 應用程式版本]**&#x200B;並輸入版本的 `4.5`。或是選取&#x200B;**[!UICONTROL 裝置類型]**，然後輸入類型 `Android`。
 
       >[!TIP]
       >
-      >You can create complex filters by using *AND* and *OR* statements.
+      >您可以使用 *AND* 和 *OR* 陳述式來建立複雜篩選器。
 
-   1. Click **[!UICONTROL Update]**.
+   1. 按一下&#x200B;**[!UICONTROL 更新]**。
    >[!TIP]
    >
-   >A blue bubble displays next to the **[!UICONTROL Filter]** icon to indicate the number of active filters.
+   >**[!UICONTROL 篩選器]**&#x200B;圖示旁會顯示一個藍色泡泡，並指出作用中篩選器的數目。
 
-   To cancel filters, click the **[!UICONTROL Filter]** icon, and click **[!UICONTROL Cancel]**.
+   若要取消篩選器，請按一下&#x200B;**[!UICONTROL 篩選器]**&#x200B;圖示，然後按一下&#x200B;**[!UICONTROL 取消]**。
 
 * **顯示關鍵績效指標**
 
-   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。若要深入檢視，請按一 **** 下關鍵績效指標旁 **[!UICONTROL 的&gt;圖示]**。 圖表上的線條會以色彩標示，您可將滑鼠移至任何資料點上，以查看特定日期的統計資料。 按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
+   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。若要深入研究，請按一下&#x200B;**[!UICONTROL 關鍵績效指標]**&#x200B;旁的 **** &gt; 圖示。圖表上的線段以不同色彩標示，將滑鼠游標移至任何資料點上方，即可查看特定日期的統計資料。按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
 
-## Edit an app's settings {#section_C1CF227A2E534A798F0073E43AD6A2D1}
+## 編輯應用程式的設定 {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. 按一下應用程式標題中的齒輪圖示，開啟「應用程式資訊」頁面。
 1. 編輯應用程式的設定。
 
-   如需每個設定的詳細資訊，請參閱 [設定您的應用程式](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   如需每個設定的詳細資訊，請參閱[設定您的應用程式](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
 
 1. 按一下&#x200B;**[!UICONTROL 儲存]**。
