@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: Video Analytics
 topic: 開發人員和實施
 uuid: d75fa415-78f6-4f50-a563-76949f040138
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ---
@@ -18,13 +18,13 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 >[!TIP]
 >
->在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需詳細資訊，請 [參閱「在Adobe Analytics中測量音訊和視訊」](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)。
+>在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需詳細資訊，請參閱[在 Adobe Analytics 中測量音訊和視訊](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html)。
 
 所有 平台上測量視訊的一般程序都很相似。本內容提供開發人員作業的基本概覽和程式碼範例。
 
-## Map player events to Analytics variables {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
+## 將播放器事件對應至 Analytics 變數 {#section_E84987F878AB4A3A83AE700FEC4C9D4D}
 
-下表列出會傳送至 Analytics 的媒體資料。使用處理規則將上下文資料對應至Analytics變數。
+下表列出會傳送至 Analytics 的媒體資料。使用處理規則，將內容資料對應至 Analytics 變數。
 
 * **a.media.name**
 
@@ -32,7 +32,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
    (選擇性) Custom Insight 變數可提供視訊路徑資訊。
 
-   * 變數類型：eVar
+   * 變數類型: eVar
    * 預設過期時間: 造訪
    * Custom Insight (s.prop，用於視訊路徑)
 
@@ -40,12 +40,12 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
    (選用) 提供視訊路徑資訊。必須由客戶服務中心為此變數啟用路徑。
 
-   * 變數類型：自訂分析(s.prop)
+   * 變數類型: Custom Insight (s.prop)
    * 事件類型: 自訂分析 (s.prop)
 
 * **a.media.segment**
 
-   (必要) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` Segments evar.
+   (必要) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst 可能會在 `1:M:0-25` 區段 eVar 中收集以下資訊。
 
    預設的視訊資料收集方法會於下列時間點收集資料:
 
@@ -54,7 +54,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
    * 視訊結束 (停止)
    Analytics 會在區段開始時計算第一個區段檢視，也就是訪客開始觀看的時候。後續的區段檢視會作為區段開始。
 
-   * 變數類型：eVar
+   * 變數類型: eVar
    * 預設過期時間: 頁面檢視
 
 
@@ -62,38 +62,38 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
    收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為 `video` 的內容類型。不需專為視訊追蹤保留此變數。使用此相同變數而具有其他內容報表內容類型，可讓您分析不同內容類型中訪客的分佈情況。舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點來看，內容類型可讓您識別視訊訪客，並據此計算視訊轉換率。
 
-   * 變數類型：eVar
+   * 變數類型: eVar
    * 預設過期時間: 頁面檢視
 
 * **a.media.timePlayed**
 
    計算自上次資料收集程序 (影像請求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型: 計數器
 
 * **a.media.view**
 
    指出有訪客檢視了視訊的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型: 計數器
 
 * **a.media.segmentView**
 
    指出有訪客檢視了視訊區段的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型: 計數器
 
 * **a.media.complete**
 
    指出使用者已檢視完整的視訊。預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。若為沒有明確結束時間的即時視訊和其他串流，您可以指定自訂的時間點來測量完成的檢視，例如在檢視多少特定時間之後。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型: 計數器
 
-## Configure media settings {#section_929945D4183C428AAF3B983EFD3E2500}
+## 設定媒體設定 {#section_929945D4183C428AAF3B983EFD3E2500}
 
 以您要用來追蹤視訊的設定，設定 `ADBMediaSettings` 物件。
 
@@ -120,9 +120,9 @@ mediaSettings.trackSeconds = 30; // sends a hit every 30 seconds
 // event handlers described in the next section
 ```
 
-## Track player events {#section_C7F43AECBC0D425390F7FCDF3035B65D}
+## 追蹤播放器事件 {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
-To measure video playback, The `mediaPlay`, `mediaStop`, and `mediaClose` methods need to be called at the appropriate times. 舉例來說，當播放器暫停時，需呼叫 `mediaStop`。播放開始或繼續時則是呼叫 `mediaPlay`。
+若要測量視訊播放，必須在適當時間呼叫 `mediaPlay`、`mediaStop` 以及 `mediaClose` 方法。舉例來說，當播放器暫停時，需呼叫 `mediaStop`。播放開始或繼續時則是呼叫 `mediaPlay`。
 
 下列範例將示範如何設定通知與呼叫媒體方法來測量視訊:
 
@@ -220,7 +220,7 @@ NSUInteger segmentNum
 NSUInteger eventType
 ```
 
-## Media measurement class and method reference {#section_50DF9359A7B14DF092634C8E913C77FE}
+## 媒體測量類別與方法參考 {#section_50DF9359A7B14DF092634C8E913C77FE}
 
 * **mediaCreateSettings&#x200B;WithName:&#x200B;length:&#x200B;playerName:&#x200B;playerID:**
 
