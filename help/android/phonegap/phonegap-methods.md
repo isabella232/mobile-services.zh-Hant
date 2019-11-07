@@ -1,29 +1,29 @@
 ---
 description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
-seo-title: PhoneGap plug-in methods
+seo-title: 'PhoneGap 外掛程式方法 '
 solution: Marketing Cloud,Analytics
-title: PhoneGap外掛程式方法
+title: PhoneGap 外掛程式方法
 topic: 開發人員和實施
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# PhoneGap plug-in methods{#phonegap-plug-in-methods}
+# PhoneGap 外掛程式方法{#phonegap-plug-in-methods}
 
 您可以使用 Android PhoneGap 增效模組方法來完成各種作業。
 
-In `html` files where you want to use tracking, add the following to the `<head>` tag:
+在您想要使用追蹤的 `html` 檔案中，新增下列內容至 `<head>` 標記:
 
 ```js
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
 
-## Configuration methods {#section_CC429F68292D4601AEEF0A91445E1185}
+## 設定方法 {#section_CC429F68292D4601AEEF0A91445E1185}
 
 * **getPrivacyStatus**
 
@@ -31,9 +31,9 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    可用的狀態包括:
 
-   * `ADB.optedIn`: The hits are sent immediately.
-   * `ADB.optedOut`: The hits are discarded.
-   * `ADB.optUnknown`:如果您的報表套 **裝已啟用** timestamp，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。 如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADB.optedIn`: 會立即傳送點擊。
+   * `ADB.optedOut`: 會捨棄點擊。
+   * `ADB.optUnknown`: 如果您的報表套裝&#x200B;**已啟用**&#x200B;時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       預設值設定在 `ADBMobileConfig.json` 檔案中。
 
@@ -49,9 +49,9 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    您可以設定下列其中一種狀態:
 
-   * `ADB.optedIn`:點擊會立即傳送。
-   * `ADB.optedOut`:會捨棄點擊。
-   * `ADB.optUnknown`:如果您的報表套 **裝已啟用** timestamp，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。 如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADB.optedIn`: 會立即傳送點擊。
+   * `ADB.optedOut`: 會捨棄點擊。
+   * `ADB.optUnknown`: 如果您的報表套裝&#x200B;**已啟用**&#x200B;時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的範例程式碼:
 
@@ -71,7 +71,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **setDebugLogging**
 
-   Enables (`true`) or disables (`false`) viewing debug information. 預設情況下，該變數為 `false`.
+   啟用 (`true`) 或停用 (`false`) 檢視偵錯資訊。預設情況下，該變數為 `false`.
 
    * 以下是此方法的範例程式碼:
 
@@ -97,7 +97,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >If your app upgrades from the Experience Cloud 3.x to 4.x SDK, the previous visitor ID (custom or automatically generated) is retrieved and stored as the custom user identifier. 如需詳細資訊，請參閱下方的 `getUserIdentifier`。此 ID 會在 SDK 升級後保留訪客資料。
+   >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。如需詳細資訊，請參閱下方的 `getUserIdentifier`。此 ID 會在 SDK 升級後保留訪客資料。
 
    若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，且會使用追蹤識別碼。
 
@@ -153,7 +153,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!IMPORTANT]
    >
-   >Calling `keepLifecycleSessionAlive` prevents your app from launching a new session the next time it is resumed from background. 只有在應用程式註冊了接收背景通知時，才能使用此方法。
+   >呼叫 `keepLifecycleSessionAlive` 可防止您的應用程式下次從背景繼續執行時啟動新的工作階段。只有在應用程式註冊了接收背景通知時，才能使用此方法。
 
    * 以下是此方法的範例程式碼:
 
@@ -187,7 +187,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!WARNING]
    >
-   >手動清除佇列時請務必小心，因為無法反轉佇列。
+   >手動清除佇列時請格外小心，因為此動作無法回復。
 
    * 以下是此方法的範例程式碼:
 
@@ -195,7 +195,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackingClearQueue(function (value) { myTempVal = value; }, function () { myTempVal = null; }); 
       ```
 
-## PII methods {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
+## PII 方法 {#section_DB27270D2CEB4D369E0090FD9D1A7F81}
 
 * **collectPII**
 
@@ -213,7 +213,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ```
 
 
-## Tracking methods {#section_7946BB753A4446FE8A3ED728AEF97D04}
+## 追蹤方法 {#section_7946BB753A4446FE8A3ED728AEF97D04}
 
 * **trackAdobeDeepLink**
 
@@ -221,7 +221,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
    >[!TIP]
    >
-   >如果生命週期呼叫是啟動事件，則會附加Adobe link資料，否則會傳送額外呼叫。
+   >如果生命週期呼叫是啟動事件，會附加 Adobe Link 資料，否則將會額外傳送呼叫。
 
    * 以下是此方法的語法:
 
@@ -237,7 +237,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackState**
 
-   使用可選內容資料來追蹤應用程式。States are the views that are available in your app, such as such as `home dashboard`, `app settings`, `cart`, and so on. 這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
+   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 `home dashboard`、`app settings`、`cart` 等。這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
 
    `cData`: JSON 物件，具有要在內容資料中傳送的鍵值值組。
 
@@ -247,7 +247,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackState(string stateName[,JSON cData]);
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```js
         ADB.trackState("login&amp;nbsp;page"); 
@@ -259,7 +259,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackAction**
 
-   追蹤應用程式中的動作。Actions include `logins`, `banner taps`, `feed subscriptions`, and other metrics that occur in your app and that you want to measure.
+   追蹤應用程式中的動作。動作包括`logins`、`banner taps`、`feed subscriptions`，以及您想要測量、在應用程式中發生的其他量度。
 
    * 以下是此方法的語法:
 
@@ -267,7 +267,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackAction(string action[,JSON cData]); 
       ```
 
-   * Here are the code samples for this method:
+   * 以下是此方法的範例程式碼:
 
       ```js
         ADB.trackAction("login");
@@ -295,7 +295,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackLifetime&#x200B;ValueIncrease**
 
-   Adds `amount` to the user's lifetime value.
+   增加使用者期限值的 `amount`。
 
    * 以下是此方法的語法:
 
@@ -333,7 +333,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **trackTimed&#x200B;ActionUpdate**
 
-   Pass in `cData` to update the context data that is associated with the `action`&gt;.
+   傳遞 `cData` 以更新與 `action`&gt; 關聯的內容資料。
 
    傳遞的 `cData` 會附加至該動作的現有資料，如果已為 `action` 定義了相同鍵值，則會覆寫資料。
 
@@ -369,7 +369,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.trackingTimedActionExists(function (value) { myTempVal = value }, function () { myTempVal = null; }); 
       ```
 
-## Beacon methods {#section_F9500D6BD95348E08E283C02B657019D}
+## 信標方法 {#section_F9500D6BD95348E08E283C02B657019D}
 
 * **trackBeacon**
 
@@ -404,7 +404,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.clearCurrentBeacon(); 
       ```
 
-## Target methods {#section_8670140C5A3F455E887830AFFDF91D59}
+## Target 方法 {#section_8670140C5A3F455E887830AFFDF91D59}
 
 * **targetLoadRequest**
 
@@ -456,7 +456,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **targetLoadRequestWithNameWithLocationParameters**
 
-   Processes a `Target` service request.
+   處理 `Target` 服務要求。
 
    * 以下是此方法的語法:
 
@@ -474,7 +474,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
 
 * **targetLoadRequestWithName**
 
-   Processes a `Target` service request.
+   處理 `Target` 服務要求。
 
    * 以下是此方法的語法:
 
@@ -554,13 +554,13 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.targetThirdPartyID(success, fail);
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```java
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
       ```
 
-## Acquisition methods {#section_EDEA25C4B2884487827069E9257A0BA6}
+## 贏取方法 {#section_EDEA25C4B2884487827069E9257A0BA6}
 
 * **acquisitionCampaignStartForApp**
 
@@ -572,7 +572,7 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.acquisitionCampaignStartForApp(appId, data, success, fail); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```java
       ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
@@ -582,11 +582,11 @@ In `html` files where you want to use tracking, add the following to the `<head>
       ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
       ```
 
-## Advertising identifier {#section_194607D101B047A19C51B19E176E1500}
+## 廣告識別碼 {#section_194607D101B047A19C51B19E176E1500}
 
-In the main activity that is generated by Cordova, call `Config.submitAdvertisingIdentifierTask()` in the `onResume()` method. For more information, see Configuration Methods.[](/help/android/configuration/methods.md)
+在 Cordova 產生的主要活動中，呼叫 `onResume()` 方法中的 `Config.submitAdvertisingIdentifierTask()`。如需詳細資訊，請參閱[設定方法](/help/android/configuration/methods.md)。
 
-## Audience Manager methods {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
+## Audience Manager 方法 {#section_1FD12B29A0AF41D3BEACBB3D624EA0E4}
 
 * **audienceGetVisitorProfile**
 
@@ -646,7 +646,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceSetDpidAndDpuuid(dpid, dpuuid, success, fail); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```java
       ADB.audienceSetDpidAndDpuuid(‘dpid’, ‘dpuuid’, function() {…}, function(){…};
@@ -666,7 +666,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceSignalWithData(success, fail, data);
       ```
 
-   * Here are the code samples for this method:
+   * 以下是此方法的範例程式碼:
 
       ```java
        ADB.audienceSignalWithData(function() {}, function() {} {‘key1’: ’value1’ ‘key2’: ‘value2’}); 
@@ -678,7 +678,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
 
 * **audienceReset**
 
-   Audience Manager UUID並清除目前的訪客資料。
+   Audience Manager UUID 並清除目前的訪客設定檔。
 
    * 以下是此方法的範例程式碼:
 
@@ -686,7 +686,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.audienceReset();
       ```
 
-## ID Service methods {#section_840B4FAEA55B466F9754148ABA15EBDA}
+## ID 服務方法 {#section_840B4FAEA55B466F9754148ABA15EBDA}
 
 * **visitorGetMarketingCloudId**
 
@@ -714,7 +714,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
       ADB.visitorSyncIdentifiers(identifiers, success, fail); 
       ```
 
-   * Here are the code samples for this method:
+   * 以下是此方法的範例程式碼:
 
       ```java
       ADB.visitorSyncIdentifiers({‘key_id_1’:’value_id_1’}, function() {…}, function() {…}));
@@ -775,7 +775,7 @@ In the main activity that is generated by Cordova, call `Config.submitAdvertisin
 
 * **visitorGetIDs**
 
-   Returns all `visitorID`s that have been synced.
+   傳回所有已同步的 `visitorID`。
 
    * 以下是此方法的語法:
 
