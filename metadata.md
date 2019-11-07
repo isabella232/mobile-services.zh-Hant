@@ -5,12 +5,12 @@ solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud/core-services.html
 solution-icon: help/assets/experience-cloud-logo-24.png
 getting-started-title: 快速入門
-getting-started-url: https://docs.adobe.com/content/help/en/mobile-services/using/get-started-ug/gs.html
+getting-started-url: https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/get-started-ug/gs.html
 tutorials-title: 教學課程
 tutorials-url: https://helpx.adobe.com/tw/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/mobile-services.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
 
 ---
