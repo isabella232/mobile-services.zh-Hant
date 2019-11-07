@@ -4,13 +4,13 @@ seo-description: 您可以將應用程式內訊息觸發器設為使用者從推
 seo-title: 從推送訊息開啟應用程式時觸發應用程式內訊息
 title: 從推送訊息開啟應用程式時觸發應用程式內訊息
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
 ---
 
 
-# Trigger an in-app message when the app is opened from a push message{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+# 從推送訊息開啟應用程式時觸發應用程式內訊息{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
 
 您可以將應用程式內訊息觸發器設為使用者從推送訊息開啟應用程式時系統傳送的推送訊息 ID。
 
@@ -28,7 +28,7 @@ source-git-commit: 114bce95e41c8e13695689dd2da2dbc04cb17ad7
 
    >[!TIP]
    >
-   >推播訊息ID是您在步驟1中找到的ID。
+   >推送訊息 ID 是您在步驟 1 找到的 ID。
 
    由於&#x200B;**[!UICONTROL 觸發器]下拉式清單沒有此觸發器，因此您必須手動新增。**
 
