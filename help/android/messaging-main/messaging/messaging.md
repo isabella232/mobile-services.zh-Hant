@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊
 topic: 開發人員和實施
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
@@ -18,18 +18,18 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ## 新版 Adobe Experience Cloud SDK
 
-正在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 >[!IMPORTANT]
 >
->我們在 2018 年 9 月時發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+>我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往[ Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 >[!IMPORTANT]
 >
-> If you are using the Adobe Experience Platform Mobile SDKs with Adobe Launch, you **must** also install the Adobe Analytics Mobile Services extension to use Adobe Mobile Services features such as in-app messaging and push notifications. 如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。For more information about using push messaging and in-app messaging with the Experience Cloud SDKs, see [Set up push messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging) and [Set up in-app messaging](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging).
+> 如果您使用 Adobe Experience Platform Mobile SDK 搭配 Adobe Launch，您&#x200B;**必須**&#x200B;同時安裝 Adobe Analytics Mobile Services 擴充功能，方可使用應用程式內訊息和推播通知之類的 Adobe Mobile Services 功能。如需詳細資訊，請參閱 [Adobe Analytics - Mobile Services](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services)。如需如何將推送訊息及應用程式內訊息與 Experience Cloud SDK 搭配使用的詳細資訊，請參閱[設定推送傳訊](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-push-messaging)與[設定應用程式內傳訊](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-analytics-mobile-services#set-up-in-app-messaging)。
 
 >[!IMPORTANT]
 >
@@ -37,13 +37,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 您可以在 Adobe Mobile Services 中建立訊息，並定義訊息顯示時機的規則。如需詳細資訊，請參閱[建立應用程式內訊息](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)。若要顯示應用程式內訊息，必須更新 SDK。即使您尚未定義任何訊息，也可以完成這些步驟。在您定義訊息後，訊息會動態傳遞至您的應用程式，且顯示時不含應用程式商店更新。
 
-## Enabling in-app messaging {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## 啟用應用程式內傳訊 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請 *參閱核心實作和生命週期中的新增SDK和設定檔至IntelliJ IDEA或Eclipse*[專案](/help/android/getting-started/dev-qs.md)。
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. Update the `AndroidManifest.xml` file to declare the full screen activity and enable the Message Notification Handler:
+1. 更新 `AndroidManifest.xml` 檔案以宣告全螢幕活動並啟用訊息通知處理常式:
 
    ```java
    <activity  
@@ -67,7 +67,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    <receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
    ```
 
-1. 匯入程式庫:
+1. 匯入資料庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -82,11 +82,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    }
    ```
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for in-app messaging.
+1. 確認 `ADBMobileConfig.json` 檔案包含應用程式內傳訊必需的設定。
 
    >[!IMPORTANT]
    >
-   >`messages` 或必 `remotes` 要。
+   >`messages` 或 `remotes` 為必要項目。
 
    若要在啟動時動態更新應用程式內訊息，必須有 `remotes` 物件且已正確設定:
 
@@ -113,36 +113,36 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    }
    ```
 
-   If this object is not configured, download an updated `ADBMobileConfig.json` file from Adobe Mobile services. 如需詳細資訊，請參閱[開始之前](/help/android/getting-started/requirements.md)。
+   如果未設定此物件，請從 Adobe Mobile Services 下載更新的 `ADBMobileConfig.json` 檔案。如需詳細資訊，請參閱[開始之前](/help/android/getting-started/requirements.md)。
 
-## Tracking in-app messages {#section_B85CDF6929564AAEA79338B55E5CB1E8}
+## 追蹤應用程式內訊息 {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
 Android Mobile SDK 可為您的應用程式內訊息追蹤以下量度:
 
 * 如果是全螢幕和警示樣式的應用程式內訊息:
 
    * **曝光次數**: 使用者觸發應用程式內訊息時。
-   * **點進次數**:當使用者按 **[!UICONTROL 下點進時]**。
-   * **取消**:當用戶按「取 **[!UICONTROL 消」時]**。
+   * **點進次數**: 使用者按下&#x200B;**[!UICONTROL 點進]**&#x200B;時。
+   * **取消**: 使用者按下&#x200B;**[!UICONTROL 取消]**&#x200B;時。
 
 * 如果是自訂的全螢幕應用程式內訊息，訊息中的 HTML 內容必須包含正確的程式碼，才能通知 SDK 追蹤以下的按鈕:
 
-   * **點進(重新導向** )範例追蹤：
+   * **點進** (重新導向) 追蹤範例:
 
       `adbinapp://confirm/?url=https://www.yoursite.com`
-   * **取消** （關閉）追蹤範例：
+   * **取消** (關閉) 追蹤範例:
 
       `adbinapp://cancel`
 
-## Local fallback image {#section_DEACC1CE549B4573B556A44A52409941}
+## 本機後援影像 {#section_DEACC1CE549B4573B556A44A52409941}
 
 建立全螢幕訊息時，您可以選擇指定後援影像。如果您的訊息無法從 Web 擷取其要使用的影像，SDK 會嘗試從應用程式資產資料夾載入相同名稱的影像。這讓您即使在使用者離線，或無法連線至預先決定的影像時，也可以用原本的形式來顯示訊息。
 
 >[!IMPORTANT]
 >
->The fallback image asset name is specified when you configure the message in Adobe Mobile services, and you need to ensure that the specified resource is available.
+>在 Adobe Mobile Services 中設定訊息時，系統會指定後援影像的資產名稱，您必須確保指定的資源可用。
 
-## Configuring notification icons {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
+## 設定通知圖示 {#section_DDA28BDBCBB748BCBECF3AB50A177D48}
 
 以下方法可讓您設定顯示在通知區域的大/小型圖示，以及當通知出現在通知匣時會顯示的大型圖示。
 
@@ -156,7 +156,7 @@ Android Mobile SDK 可為您的應用程式內訊息追蹤以下量度:
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * Here is the code example for this method:
+   * 以下是此方法的範例程式碼:
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
@@ -164,7 +164,7 @@ Android Mobile SDK 可為您的應用程式內訊息追蹤以下量度:
 
 * **Config.setLargeIconResourceId(int resourceId)**
 
-   設定用於 SDK 所建立之通知的大型圖示。此圖示是當使用者在通知中心看到完整通知時所顯示的主要影像。
+   設定用於 SDK 所建立之通知的大型圖示。此圖示是使用者在通知中心查看完整通知時所顯示的主要影像。
 
    * 以下是此方法的語法:
 
