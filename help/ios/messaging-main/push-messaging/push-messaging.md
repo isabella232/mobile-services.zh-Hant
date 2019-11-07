@@ -1,50 +1,49 @@
 ---
 description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
 seo-description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
-seo-title: Push messaging
+seo-title: 推送訊息
 solution: Marketing Cloud,Analytics
-title: 推播訊息
+title: 推送訊息
 topic: 開發人員和實施
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Push messaging {#push-messaging}
+# 推送訊息 {#push-messaging}
 
 Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
 
 >[!IMPORTANT]
 >
->The information in this topic is a suggestion for a possible implementation. 我們強烈建議您檢閱 Apple iOS 的文件，以判別最適合您應用程式的實施方式。您的實作應由您所使用的架構，以及您的應用程式要鎖定的iOS版本決定。
+>此主題中的資訊屬於可能的實施之建議。我們強烈建議您檢閱 Apple iOS 的文件，以判別最適合您應用程式的實施方式。您的實施應乃是按照您所使用的框架以及您的應用程式鎖定做為目標的 iOS 版本加以判別。
 
 若要使用推送訊息，您&#x200B;**必須**&#x200B;有 SDK 4.6 版或更新版本。
 
 >[!IMPORTANT]
 >
->Do not manually set the Experience Cloud ID inside your app. 這樣會建立新的唯一使用者，且因其選單加入狀態將不會收到推送訊息。例如，假設使用者已選擇加入在您的應用程式中接收推送訊息記錄。登入後，若您在應用程式內手動設定 ID，便會建立新的唯一使用者，且未選擇加入接收推送訊息。這個新使用者不會收到您的推送訊息。
+>請勿在應用程式內手動設定 Experience Cloud ID。這樣會建立新的唯一使用者，且因其選單加入狀態將不會收到推送訊息。例如，假設使用者已選擇加入在您的應用程式中接收推送訊息記錄。登入後，若您在應用程式內手動設定 ID，便會建立新的唯一使用者，且未選擇加入接收推送訊息。這個新使用者不會收到您的推送訊息。
 
 ## 必要條件 {#section_06655ABE973743DC965897B229A2118D}
 
-* Add the library to your project and implement lifecycle metrics.
+* 新增資料庫至您的專案與實施生命週期量度。
 
-   For more information, see [Lifecycle metrics](/help/ios/metrics.md).
+   如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。
 
 
-* ID服務必須啟用SDK。
-如需詳細資訊，請參 [閱「設定SDK ID服務選項」](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
+* SDK 必須啟用 ID 服務。如需詳細資訊，請參閱[設定 SDK ID 服務選項](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
 
 >[!IMPORTANT]
 >
->不支援將應用程式移至新的報表套裝。 若您移轉到新報表套裝，推送設定可能會損毀，且訊息可能無法傳送。
+>不支援將您的應用程式移動到新的報表套裝。若您移轉到新報表套裝，推送設定可能會損毀，且訊息可能無法傳送。
 
-## Enabling push messaging {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
+## 啟用推送訊息 {#section_CBD63C5B11FE4424BC2BF552C23F2BD9}
 
-1. Verify that the `ADBMobileConfig.json` file contains the required settings for push messaging.
+1. 確認 `ADBMobileConfig.json` 檔案包含推送訊息必需的設定。
 
-   The `"marketingCloud"` object must have its `"org"` property configured for push messaging.
+   `"marketingCloud"` 物件必須有針對推送訊息設定的 `"org"` 屬性。
 
    ```objective-c
    "marketingCloud": { 
@@ -58,9 +57,9 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
    #import "ADBMobile.h"
    ```
 
-1. 若要決定您的應用程式需要取得權限的設定，請參閱「設定遠端 [通知支援」](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)。
+1. 若要判別您的應用程式需要詢問權限之設定，請檢閱[設定遠端通知支援](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html#//apple_ref/doc/uid/TP40008194-CH6-SW1)。
 
-   以下是可能實作的範例，要求允許使用警報、標章、音效和遠端通知：
+   以下是詢問使用「警示」、「徽章」、「音效」與「遠端通知」權限的可能實施的範例:
 
    ```objective-c
    // iOS 10 and newer 
@@ -94,7 +93,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
    }
    ```
 
-1. The push token must be passed to the SDK using the `setPushIdentifier:` method in ADBMobile class.
+1. 必須使用 ADBMobile 類別中的 `setPushIdentifier:` 方法將推送代號傳送至 SDK。
 
    ```objective-c
    - (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
@@ -104,7 +103,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
    }
    ```
 
-1. 要確定環境的正確實施，請轉至「用戶 [通知」](https://developer.apple.com/documentation/usernotifications)。
+1. 若要判別適合您環境的正確實施，請前往 [UserNotifications](https://developer.apple.com/documentation/usernotifications)。
 
    此步驟可在使用者藉由點進推送訊息來開啟應用程式時，採用將 `userInfo` 字典傳遞至 SDK 的方式來協助您啟用推送報告功能。
 
@@ -138,7 +137,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
    }
    ```
 
-1. To keep your estimated push audience accurate, notify the SDK when a user manually disables push messaging for your app by calling `[ADBMobile setPushIdentifier: nil]` in the `applicationDidBecomeActive:` method in your `AppDelegate`.
+1. 為了確保您預定的推送對象正確無誤，當使用者藉由叫用您的 `AppDelegate` 中 `applicationDidBecomeActive:` 方法的 `[ADBMobile setPushIdentifier: nil]` 以手動方式停用您的應用程式的推送訊息時，系統會通知 SDK。
 
    ```objective-c
    // device running < iOS 7 
