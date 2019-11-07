@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 「管理贏取連結」
 topic: 量度
 uuid: 06b35bbc-7cd6-4375-aa17-204edab40e62
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 ---
