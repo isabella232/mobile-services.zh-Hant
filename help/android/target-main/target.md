@@ -1,25 +1,25 @@
 ---
 description: 您可以在 Android 應用程式中提供目標式內容。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 您可以在 Android 應用程式中提供目標式內容。
-seo-title: 目標配置
+seo-title: Target 設定
 solution: Marketing Cloud,Analytics
-title: Target configuration
+title: Target 設定
 topic: 開發人員和實施
 uuid: 09fe2c9c-7b60-49c3-bb9d-36a30ce7c350
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
 
 
-# Target configuration {#target-configuration}
+# Target 設定 {#target-configuration}
 
 您可以在 Android 應用程式中提供目標式內容。
 
-## Set the application context {#section_37CAE496FF894FCA821F7760605574CA}
+## 設定應用程式內容 {#section_37CAE496FF894FCA821F7760605574CA}
 
-**(Required) The  method must be called once in the  method of your main activity.**`setContext()``onCreate()`
+**(必要)** 只要主要活動的 `onCreate()` 方法中包含 `setContext()` 方法，就必須呼叫後者。
 
 例如:
 
