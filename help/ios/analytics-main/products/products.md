@@ -6,17 +6,17 @@ solution: Marketing Cloud,Analytics
 title: 產品變數
 topic: 開發人員和實施
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
 
 ---
 
 
-# Products variable {#products-variable}
+# 產品變數 {#products-variable}
 
 您無法透過處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value by using the syntax that is defined for the *`products`* variable:
+若要設定 *`products`* 變數，請將內容資料索引鍵設為 `"&&products"`，並使用針對 *`products`* 變數定義的語法來設定值:
 
 ```objective-c
 [contextData setObject:@"Category;Product;Quantity;Price[,Category;Product;Quantity;Price]" forKey:@"&&products"];
@@ -41,7 +41,7 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Order Confirmation" data:contextData]; 
 ```
 
-*`products`* 是直接在影像要求上設定的，而其他變數則設為內容資料. 所有內容資料變數都必須透過處理規則對應:
+*`products`* 是直接在影像要求上設定的，而其他變數則設為內容資料.所有內容資料變數都必須透過處理規則對應:
 
 ![](assets/map-products.png)
 
