@@ -1,35 +1,35 @@
 ---
-description: 以下是iOS程式庫所提供的Adobe Experience Platform Identity Service方法。
-seo-description: Here are the Adobe Experience Platform Identity Service methods that are provided by the iOS library.
-seo-title: Adobe Experience Platform Identity Service方法
+description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
+seo-description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
+seo-title: Adobe Experience Platform Identity Service 方法
 solution: Marketing Cloud,Analytics
-title: Adobe Experience Platform Identity Service方法
+title: Adobe Experience Platform Identity Service 方法
 topic: 開發人員和實施
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
 
 ---
 
 
-# Adobe Experience Platform Identity Service方法 {#experience-cloud-id-service-methods}
+# Adobe Experience Platform Identity Service 方法 {#experience-cloud-id-service-methods}
 
-以下是iOS程式庫所提供的Adobe Experience Platform Identity Service方法。
+以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
 
 SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Experience Cloud 訪客 ID 服務。
 
-Methods are prefixed according to the solution, and Experience Cloud ID methods are prefixed with `visitor`. 如需詳細資訊，請參閱[啟用 Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md)。
+各方法會根據解決方案加上前置詞，因此 Experience Cloud ID 方法會加上前置詞 `visitor`。如需詳細資訊，請參閱[啟用 Experience Cloud ID](/help/ios/marketing-cloud/mcvid.md)。
 
 * **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有Mobile SDK 4.12版或更新版本。 如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-appendvisitorid.html)。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://marketing.adobe.com/resources/help/zh_TW/mcvid/mcvid-appendvisitorid.html)。
 
    >[!IMPORTANT]
    >
-   >此方法可導致阻塞網路呼叫。 請勿在具時效性的執行緒上呼叫此方法。
+   >此方法會造成封鎖網路呼叫。請勿在具時效性的執行緒上呼叫此方法。
 
-   * Input: `URL<NSURL>`
-A required URL string that the visitor information will be appended to.
+   * 輸入: `URL<NSURL>`
+要附加訪客資訊的必要 URL 字串。
    * `URL<NSURL>`已附加訪客資訊的字串。
 
    * 以下是此方法的範例程式碼:
@@ -58,7 +58,7 @@ A required URL string that the visitor information will be appended to.
 
       >[!IMPORTANT]
       >
-      >This method can cause a blocking network call and should **not** be called from a UI thread.
+      >此方法會造成封鎖網路呼叫，且&#x200B;**不**&#x200B;應從使用者介面執行緒呼叫此方法。
 
 * **visitorSyncIdentifiers:**
 
@@ -98,7 +98,7 @@ A required URL string that the visitor information will be appended to.
 
 * **visitorSyncIdentifierWithType:identifier:authenticationState:**
 
-   將提供的識別碼類型和值同步至 ID 服務。Pass in the `authState` one of the following values:
+   將提供的識別碼類型和值同步至 ID 服務。在 `authState` 中以下列其中一個值傳遞:
 
    * `ADBMobileVisitorAuthenticationStateUnknown`
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
@@ -137,7 +137,7 @@ A required URL string that the visitor information will be appended to.
 
 * **visitorgetUrlVariablesAsync**
 
-   此方法於4.16.0版中推出，傳回包含訪客ID服務URL變數的適當格式字串。 如需使用此方法的詳細資訊，請參 [閱Adobe Experience Platform Identity Service方法](/help/ios/reference/hybrid-app.md)。
+   4.16.0 版導入了此方法，可傳回包含訪客 ID 服務 URL 變數的適當形式字串。如需如何使用此方法的詳細資訊，請參閱 [Adobe Experience Platform Identity Service 方法](/help/ios/reference/hybrid-app.md)。
 
    * 以下是此方法的語法:
 
@@ -165,7 +165,7 @@ A required URL string that the visitor information will be appended to.
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum {#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState enum{#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
