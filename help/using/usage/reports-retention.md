@@ -2,18 +2,18 @@
 description: 「保留」報表 (舊稱為「首次啟動的群眾」) 是群眾報表，可顯示有多少不重複使用者初次啟動您的應用程式，並且在隨後的幾個月內至少再啟動一次您的應用程式。
 keywords: 行動
 seo-description: 「保留」報表 (舊稱為「首次啟動的群眾」) 是群眾報表，可顯示有多少不重複使用者初次啟動您的應用程式，並且在隨後的幾個月內至少再啟動一次您的應用程式。
-seo-title: 保留報告
+seo-title: 保留報表
 solution: Marketing Cloud,Analytics
-title: Retention report
+title: 保留報表
 topic: 報表,量度
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# 保留報告 {#retention}
+# 保留報表 {#retention}
 
 **[!UICONTROL 保留]報表 (舊稱為「首次啟動的群眾」) 是群眾報表，可顯示有多少不重複使用者初次啟動您的應用程式，並且在隨後的幾個月內至少再啟動一次您的應用程式。**
 
@@ -27,6 +27,6 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 **[!UICONTROL 「MO」]欄中顯示在 2014 年 11 月初次啟動應用程式的使用者總人數。****[!UICONTROL 「M1」]欄中則顯示 2014 年 12 月再次啟動應用程式的使用者人數，以此類推。**
 
-To change the date range or to edit the report's rules, click **[!UICONTROL Edit]**.
+若要變更日期範圍或編輯報表規則，請按一下&#x200B;**[!UICONTROL 編輯]**。
 
 報表可以填入任何變數或量度，包括生命週期量度 (但不含計算量度)。
