@@ -2,26 +2,27 @@
 description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 keywords: 行動
 seo-description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
-seo-title: 體驗應用程式內訊息
+seo-title: 體驗  應用程式內訊息
 solution: Marketing Cloud,Analytics
-title: Experience  In-App Message
+title: 體驗  應用程式內訊息
 topic: 量度
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ---
 
 
-# Experience: in-app message {#experience-in-app-message}
+# 體驗: 應用程式內訊息 {#experience-in-app-message}
 
 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 
-1. In your app, click **[!UICONTROL Messaging]** &gt; **[!UICONTROL Manage Messages]** &gt; **[!UICONTROL Create Message]** &gt; **[!UICONTROL Create In-App]**.
+1. 在您的應用程式中，依序按一下&#x200B;**[!UICONTROL 傳訊]** &gt; **[!UICONTROL 管理訊息]** &gt; **[!UICONTROL 建立訊息]** &gt; **[!UICONTROL 建立應用程式內訊息]**。
 1. 在「體驗」頁面中輸入訊息的名稱。
 1. 填妥&#x200B;**[!UICONTROL 輸入]區段中的欄位:**
 
-   * **[!UICONTROL 類型]**：選取應用程式內訊息促銷活動的訊息類型：
+   * **[!UICONTROL 類型]**
+為您的應用程式內訊息行銷活動選取訊息類型:
 
       * **[!UICONTROL 全螢幕]**
       * **[!UICONTROL 警報]**
@@ -32,7 +33,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       >[!TIP]
       >
-      >This option is displayed only when you select the **[!UICONTROL Full Screen]** message type.
+      >只有在選取&#x200B;**[!UICONTROL 全螢幕]**&#x200B;訊息類型時，才會顯示此選項。
 
    * **[!UICONTROL 自訂]**
 
@@ -42,7 +43,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
       1. 按一下「**[!UICONTROL 下載範例]」可檢視自訂 HTML 內容範例。**
       >[!TIP]
       >
-      >This option is displayed only when you select the **[!Full Screen]** message type.
+      >只有在選取&#x200B;**[!F全螢幕]**&#x200B;訊息類型時，才會顯示此選項。
 
 
 
@@ -57,11 +58,11 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 影像 URL]**
 
-      影像的 URL。If you have sizing issues when using the full-screen template, see *My image does not fit exactly into the space provided by the template* in [Troubleshooting in-app messaging](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      影像的 URL。如果您在使用全螢幕範本時遇到調整大小的問題，請參閱[應用程式內傳訊疑難排解](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)中的&#x200B;*我的影像無法完全符合範本所提供的空間*。
 
    * **[!UICONTROL 套件影像]**
 
-      應用程式程式碼套件中影像的路徑。此選項用於畫面無影像時，或無可用影像時。舉例來說，若裝置為離線狀態，便無可用的影像。If you have sizing issues when using the full-screen template, see *My image does not fit exactly into the space provided by the template* in [Troubleshooting in-app messaging](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md).
+      應用程式程式碼套件中影像的路徑。此選項用於畫面無影像時，或無可用影像時。舉例來說，若裝置為離線狀態，便無可用的影像。如果您在使用全螢幕範本時遇到調整大小的問題，請參閱[應用程式內傳訊疑難排解](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)中的&#x200B;*我的影像無法完全符合範本所提供的空間*。
 
 
 1. 填妥&#x200B;**[!UICONTROL 文字]區段中的欄位:**
@@ -78,7 +79,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 點進按鈕]**
 
-      **[!UICONTROL 點進]按鈕的標籤。**&#x200B;點選此按鈕會計為成功的點進。 用戶被重定向到目標。
+      **[!UICONTROL 點進]按鈕的標籤。**&#x200B;點選此按鈕即計為一次成功的點進。系統會將使用者重新導向至目的地。
 
    * **[!UICONTROL 目標]**
 
@@ -86,32 +87,32 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       此 URL 可能包含下列資訊:
 
-      * `{userId}`, which is replaced with the user identifier or is blank when the user identifier is not set.
-      * `{trackingId}`, which is replaced with the aid (correlates with s_vi cookie).**
-      * `{messageId}`, which is replaced with the unique ID for the in-app message.
-      * `{lifetimeValue}`, which is replaced with the lifetime value or 0 if no lifetime value exists.
+      * `{userId}`，此資訊會以使用者識別碼取代，如果未設定使用者識別碼，則會留空。
+      * `{trackingId}`，此資訊會以 aid (與 *s_vi* Cookie 關聯) 取代。
+      * `{messageId}`，此資訊會以應用程式內訊息的唯一 ID 取代。
+      * `{lifetimeValue}`，此資訊會以期限值取代；若不存在期限值，則使用 0。
       以下是追蹤使用者 ID 的範例: `https://www.mysite.com?uid={userId}`.
 
-      If the click-through URL uses `https://` or `https://`, the URL opens in the device browser outside the app. 否則，每個平台都支援可讓您開啟或參考您的應用程式的配置 (如果應用程式在開發時就已設定為支援自訂配置)。
+      如果點進 URL 使用 `https://` 或 `https://`，URL 會在應用程式外部的裝置瀏覽器中開啟。否則，每個平台都支援可讓您開啟或參考您的應用程式的配置 (如果應用程式在開發時就已設定為支援自訂配置)。
 
       >[!TIP]
       >
-      >When you use the **[!UICONTROL Web Link]** or **[!UICONTROL Custom Link]** destination types, the destination type is not tracked. 系統只會追蹤&#x200B;**[!UICONTROL 深層連結]。** For more information, see [Destinations](/help/using/acquisition-main/c-create-destinations.md).
+      >若您使用&#x200B;**[!UICONTROL 網頁連結]**&#x200B;或&#x200B;**[!UICONTROL 自訂連結]**&#x200B;目的地類型，則不會追蹤這種目的地類型，系統只會追蹤&#x200B;**[!UICONTROL 深層連結]。**&#x200B;如需詳細資訊，請參閱[目的地](/help/using/acquisition-main/c-create-destinations.md)。
 
 
 1. (可選) 按下列圖示以預覽訊息的配置:
 
-   * **[!UICONTROL 摘要]** ，隱藏預覽窗格。
+   * **[!UICONTROL 摘要]**&#x200B;會隱藏預覽窗格。
 
-      Click ![preview](assets/icon_preview.png) to redisplay the preview pane.
+      按一下![預覽](assets/icon_preview.png)可重新顯示預覽窗格。
 
    * **[!UICONTROL 變更方向]**
 
-      To change the orientation of the preview from portrait to landscape mode, click ![orientation](assets/icon_orientation.png). 對於手錶，方向會從圓形變更為方形的手表面。
+      若要將預覽方向從縱向變更為橫向模式，請按一下![方向](assets/icon_orientation.png)。若是手錶，方向會從圓形變更為方形錶面。
 
-   * **[!UICONTROL 在使用者的觀看中預覽]**
+   * **[!UICONTROL 在使用者的手錶上預覽]**
 
-      若要預覽訊息在使用者手錶上的顯示效果，請按一下「監 ![看」圖示](assets/icon_watch.png)。
+      若要預覽訊息在使用者手錶上的顯示效果，請按一下 ![手錶圖示](assets/icon_watch.png)。
 
    * **[!UICONTROL 在使用者的行動電話上預覽]**
 
@@ -119,8 +120,8 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 在使用者的平板電腦上預覽]**
 
-      若要在使用者的平板電腦中預覽訊息，請按一下平板電 ![腦圖示](assets/icon_tablet.png)。
+      若要預覽訊息在使用者平板電腦上的顯示效果，請按一下 ![平板電腦圖示](assets/icon_tablet.png)。
 
       在預覽窗格底部，您可以檢視上一步驟所選對象的說明。您也可以在預覽窗格底部，檢視上一步驟中所選對象的說明。
 
-1. 設定 [排程選項](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)。
+1. 設定[排程選項](/help/using/in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)。
