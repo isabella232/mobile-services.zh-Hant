@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 追蹤應用程式狀態
 topic: 開發人員和實施
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ---
@@ -18,13 +18,13 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送 `trackState` 呼叫。在 Android 中，通常每次載入新活動時都會呼叫 `trackState`。
 
-## Tracking states {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## 追蹤狀態 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入程式庫:
+1. 匯入資料庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -43,11 +43,11 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
    }
    ```
 
-The `"State Name"` is reported in the `View State` variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, `View State` is reported as `Page Name`, and `state views` is reported as `page views`.
+在 Adobe Mobile Services 中，`"State Name"` 會在 `View State` 變數中回報，且每次 `trackState` 呼叫的檢視都會記錄下來。在其他 Analytics 介面中，`View State` 會回報為 `Page Name`，而 `state views` 會回報為 `page views`。
 
-## Send additional data {#section_CFDB4F944496401786A145C209AB387C}
+## 傳送其他資料 {#section_CFDB4F944496401786A145C209AB387C}
 
-In addition to the `"State Name"`, you can send additional context data with each track action call:
+除了 `"State Name"` 之外，您還可以隨著每次追蹤動作呼叫傳送其他內容資料:
 
 ```java
 @Override 
@@ -66,13 +66,13 @@ public void onCreate(Bundle savedInstanceState) {
 
 ![](assets/map-variable-context-state.png)
 
-## App state reporting {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## 應用程式狀態報表 {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 狀態通常是透過路徑報表來檢視，所以您可以了解使用者如何導覽應用程式以及最常檢視哪些狀態。
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]報表。**&#x200B;此報表是根據使用者透過您的應用程式所採取的路徑而成。A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]報表。**&#x200B;此報表是根據使用者透過您的應用程式所採取的路徑而成。範例路徑為 **[!UICONTROL 首頁]**  &gt;  **[!UICONTROL 設定]**  &gt; **[!UICONTROL 摘要]**。 |
 | Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:**「頁面」**&#x200B;報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**「路徑」[!UICONTROL 報表。]** |
 | Ad hoc analytics | 透過&#x200B;**「頁面」**&#x200B;維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**「路徑」[!UICONTROL 報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
 
