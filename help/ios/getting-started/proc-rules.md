@@ -6,22 +6,22 @@ solution: Marketing Cloud,Analytics
 title: 處理規則和內容資料
 topic: 開發人員和實施
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Processing rules and context data{#processing-rules-and-context-data}
+# 處理規則與內容資料{#processing-rules-and-context-data}
 
 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
 
 如需詳細資訊，請參閱下列內容:
 
 * 2013 年峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
-* 獲得使用處理規則的授權
+* 取得授權以使用處理規則
 
-   For more information about processing rules, see Processing rules overview.[](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+   如需處理規則的詳細資訊，請參閱[處理規則概述](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
 操作處理規則時，請記住以下資訊:
 
@@ -63,5 +63,5 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 >[!TIP]
 >
->Adobe reserves the namespace " ". `a.`除了此限制外，若要避免衝突，唯一的要求是，您的登入公司中的內容資料變數必須是唯一的。
+>Adobe 會保留命名空間「`a.`」。除了此限制外，若要避免衝突，唯一的要求是，您的登入公司中的內容資料變數必須是唯一的。
 
