@@ -1,25 +1,25 @@
 ---
 description: 此資訊可協助您了解回傳以及其運作方式。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 此資訊可協助您了解回傳以及其運作方式。
 seo-title: 回傳範例
 solution: Marketing Cloud,Analytics
 title: 回傳範例
 topic: 開發人員和實施
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Postbacks example {#postbacks-example}
+# 回傳範例 {#postbacks-example}
 
-You can use this information to help you understand what postbacks are and how they work.
+此資訊可協助您了解回傳以及其運作方式。
 
 >[!CAUTION]
 >
->This example is provided for informational purposes only. `ADBMobileConfig.json` 檔案應在 Adobe Mobile 使用者介面中設定，且不應手動修改。若您已啟用遠端訊息設定，手動編輯設定檔案可能會有危險。
+>此範例僅供參考之用。`ADBMobileConfig.json` 檔案應在 Adobe Mobile 使用者介面中設定，且不應手動修改。若您已啟用遠端訊息設定，手動編輯設定檔案可能會有危險。
 
 ## `ADBMobileConfig.json` 定義 {#section_8751E8176F3546C09420341A39758AFF}
 
@@ -52,7 +52,7 @@ You can use this information to help you understand what postbacks are and how t
 ] 
 ```
 
-## Code sample {#section_D063DE82976D4EDEA97E804BD1C4718F}
+## 程式碼範例 {#section_D063DE82976D4EDEA97E804BD1C4718F}
 
 ```js
 HashMap<String, Object> contextData = new HashMap<String, Object>(); 
@@ -61,6 +61,6 @@ contextData.put("user.zip", "90210");
 Analytics.trackState("MainMenu", contextData);
 ```
 
-Because its state is `“MainMenu”`, this tracking call triggers the above postback message. URL 會以點擊中的值取代所有範本變數。假設使用者的先前作業長度為132秒，且該使用者使用Android SDK 4.6.0版，則產生的URL如下：
+因為其狀態為 `“MainMenu”`，所以此追蹤呼叫會觸發上述回傳訊息。URL 會以點擊中的值取代所有範本變數。假設使用者的上一個工作階段為 132 秒長，且該使用者使用 Android SDK 4.6.0 版，則最後的 URL 看起來會像這樣:
 
 `https://my.server.com/?user=bob&zip=90210&c16=4.6.0-AN&c27=cln,132`
