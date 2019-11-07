@@ -1,31 +1,31 @@
 ---
 description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
 seo-description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
-seo-title: Android可穿戴裝置快速入門
+seo-title: Android 穿戴式裝置快速入門
 solution: Marketing Cloud,Analytics
-title: Android可穿戴裝置快速入門
+title: Android 穿戴式裝置快速入門
 topic: 開發人員和實施
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
 
 
-# Android Wearables: getting started{#android-wearables-getting-started}
+# Android 穿戴式裝置: 快速入門{#android-wearables-getting-started}
 
 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
 
-## Configuring the SDK for a handheld app (Android Studio) {#section_262237484EC44C58953891B105F0D000}
+## 設定手持式應用程式的 SDK (Android Studio) {#section_262237484EC44C58953891B105F0D000}
 
-如需將SDK匯入專案的詳細資訊，請參閱核 [心實作和生命週期](/help/android/getting-started/dev-qs.md)。
+如需有關將 SDK 匯入專案的詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)。
 
 1. 將 `ADBMobileConfig.json` 檔案新增至專案的資產資料夾。
 1. 將 `adobeMobileLibrary-*.jar` 檔案新增至 libs 資料夾，或確認該檔案已由專案參照。
 
    >[!TIP]
    >
-   >You might need to sync the gradle project after adding the `.jar` file.
+   >新增 `.jar` 檔案後，您可能需要同步 Gradle 專案。
 
 1. 在 `onCreate` 方法中，允許 SDK 透過 `Config.setContext` 存取應用程式內容:
 
@@ -40,7 +40,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    }
    ```
 
-1. 將下列程式碼新增至 `AndroidManifest.xml` 檔案：
+1. 將下列程式碼新增至 `AndroidManifest.xml` 檔案:
 
    ```java
        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
@@ -55,7 +55,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    ```
 
 1. 確認您的專案包含 Google play-services 資料庫。
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. 實施 `WearableListenerService` 或將對應的程式碼新增至 `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -88,7 +88,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    }
    ```
 
-1. 新增 `WearListenerService` 至檔 `AndroidManifest.xml` 案：
+1. 將 `WearListenerService` 新增至 `AndroidManifest.xml` 檔案:
 
    ```java
    If you are using Google Play Services  < 8.2 
@@ -117,7 +117,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    Permalink Edit
    ```
 
-## Configuring the SDK for a Wearable app (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
+## 設定穿戴式應用程式的 SDK (Android Studio) {#section_2268EC03E20B4A228A28BDCFEA2E9AE4}
 
 1. 完成下列其中一項作業:
 
@@ -162,7 +162,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    ```
 
 1. 確認您的專案包含 Google play-services 資料庫。
-1. Implement `WearableListenerService` or add the corresponding code to your `WearableListenerService`:
+1. 實施 `WearableListenerService` 或將對應的程式碼新增至 `WearableListenerService`:
 
    ```java
    public class WearListenerService extends WearableListenerService { 
@@ -175,7 +175,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    }
    ```
 
-1. 新增 `WearListenerService` 至檔 `AndroidManifest.xml` 案：
+1. 將 `WearListenerService` 新增至 `AndroidManifest.xml` 檔案:
 
    ```java
    If you are using Google Play Services  < 8.2 
