@@ -5,19 +5,19 @@ seo-title: 測試舊版贏取
 solution: Marketing Cloud,Analytics
 title: 測試舊版贏取
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Testing legacy acquisition {#testing-legacy-acquisition}
+# 測試舊版贏取 {#testing-legacy-acquisition}
 
 以下資訊可協助您往返舊版贏取促銷活動連結 (根據裝置指紋)。
 
 如果行動應用程式尚未在 Google Play 上架，您可以選擇任一行動應用程式，作為建立促銷活動連結時的目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點擊贏取連結後)，而不會影響測試贏取連結的能力。
 
-1. 導覽至 Adobe Mobile Services 中的&#x200B;**[!UICONTROL 使用舊版贏取連結]，然後產生贏取促銷活動 URL。**
+1. 導覽至 Adobe Mobile Services 中的&#x200B;**[!UICONTROL 使用舊版贏取連結]**，然後產生贏取促銷活動 URL。
 
    如需詳細資訊，請參閱[使用舊版贏取連結](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)。
 
