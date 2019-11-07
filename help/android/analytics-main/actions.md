@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 追蹤應用程式動作
 topic: 開發人員和實施
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
@@ -18,13 +18,13 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可能會針對每個新訂閱、每次檢視文章或每次完成某個層級時，傳送 `trackAction` 呼叫。應用程式不會自動追蹤動作，因次您必須在要追蹤的事件發生時呼叫 `trackAction`，然後將動作對應至自訂事件。
 
-## Tracking actions {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## 追蹤動作 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   For more information, see Add the SDK and Config File to your IntelliJ IDEA or Eclipse Project in Core implementation and lifecycle.**[](/help/android/getting-started/dev-qs.md)
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入程式庫:
+1. 匯入資料庫:
 
    ```java
    import com.adobe.mobile.*;
@@ -36,18 +36,18 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    Analytics.trackAction("myapp.ActionName", null);
    ```
 
-1. In the Adobe Mobile Services UI, select your app and click **[!UICONTROL Manage App Settings]**.
+1. 在 Adobe Mobile Services 使用者介面中，選取您的應用程式並按一下&#x200B;**[!UICONTROL 管理應用程式設定]**。
 1. 按一下&#x200B;**[!UICONTROL 「管理變數和衡量指標」]**，然後按一下&#x200B;**「自訂量度」]標籤。[!UICONTROL **
 
 1. 將程式碼中定義的內容資料名稱 (例如，`myapp.ActionName`) 對應至某個自訂事件。
 
    ![](assets/map-event-context-data.png)
 
-You can also set a prop to hold all action values by mapping a custom prop with a name like **[!UICONTROL Custom Actions]** and setting the value to `a.action`.
+您也可以對應具有如&#x200B;**[!UICONTROL 自訂動作]**&#x200B;之類名稱的自訂屬性，並將值設為 `a.action`，藉此設定屬性以保留所有動作值。
 
 ![](assets/map-custom-prop.png)
 
-## Sending additional data {#section_3EBE813E54A24F6FB669B2478B5661F9}
+## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
 除了動作名稱之外，您還可以隨著每次追蹤動作呼叫傳送其他內容資料:
 
@@ -61,7 +61,7 @@ Analytics.trackAction("myapp.SocialShare", exampleContextData);
 
 ![](assets/map-variable-context-action.png)
 
-## Action reporting {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## 動作報表 {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 | 介面 | 報告 |
 |--- |--- |
