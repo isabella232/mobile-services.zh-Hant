@@ -4,21 +4,21 @@ seo-description: 在您於 Adobe Mobile Services 使用者介面中設定深層�
 seo-title: 利用深層連結實施推送訊息
 title: 利用深層連結實施推送訊息
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 ---
 
 
-# Implement push messaging with deep linking {#implement-push-messaging-with-deep-linking}
+# 利用深層連結實施推送訊息 {#implement-push-messaging-with-deep-linking}
 
 在您於 Adobe Mobile Services 使用者介面中設定深層連結 URL 後，此 URL 會位於含有 adb_deeplink 鍵值的推送裝載中。
 
-您可以呼叫以取得 `remoteMessage.getData().get("adb_deeplink")` URL `FirebaseMessagingService`。
+您可以呼叫 `FirebaseMessagingService` 中的 `remoteMessage.getData().get("adb_deeplink")` 以取得 URL。
 
 >[!TIP]
 >
->You can define different intents depending on whether the payload has a deep linking URL.
+>您可以根據裝載是否含有深層連結 URL 來定義不同的目的。
 
 1. 完成下列其中一項作業:
 
@@ -30,7 +30,7 @@ source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
 
 ## 範例
 
-Here is a sample implementation for the class extending from `FirebaseMessagingService`:
+以下為延伸 `FirebaseMessagingService` 類別的範例實施:
 
 ```java
 public void onMessageReceived(RemoteMessage message) { 
