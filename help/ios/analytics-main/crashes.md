@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 追蹤應用程式當機
 topic: 開發人員和實施
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->You should upgrade to iOS SDK version 4.8.6, which contains critical changes that prevent false crashes from being reported.
+>您應升級至 iOS SDK 4.8.6 版，其中包含的重大變更可避免回報錯誤當機情況。
 
 ## Adobe 何時會回報當機?
 
@@ -44,13 +44,13 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 
    >[!TIP]
    >
-   >在此案例中，您可避免當機，方法是在從Xcode再次啟動應用程式之前，先將應用程式背景化。
+   >您可以讓應用程式在背景執行，再從 Xcode 重新啟動應用程式，即可避免在此情況下出現當機。
 
-* If your app is in the background and sends Analytics hits through a call other than `trackActionFromBackground`, `trackLocation`, or `trackBeacon`, and the app is terminated (manually or by the OS) while in the background, and the next launch will be a crash.
+* 如果您的應用程式於背景執行，並透過 `trackActionFromBackground`、`trackLocation` 或 `trackBeacon` 以外的呼叫傳送 Analytics 點擊，但該應用程式在背景執行的情況下遭到終止 (手動或由作業系統進行)，則下次啟動時將會出現當機情況。
 
    >[!TIP]
    >
-   >Background activity that occurs beyond the `lifecycleTimeout` threshold might also result in an additional false launch.
+   >背景活動發生時若超出 `lifecycleTimeout` 臨界值，可能也會導致其他錯誤啟動情況。
 
 * 如果您的應用程式由於背景擷取、位置更新等原因於背景啟動，且在未曾進入前景執行的情況下即由作業系統終止，則在下次啟動 (背景或前景) 時，會導致當機。
 * 如果您以程式設計方式從 `NSUserDefaults` 刪除 Adobe 的暫停標記，而應用程式同時於背景執行時，則在下次啟動或繼續執行應用程式時會造成當機情況。
@@ -66,5 +66,5 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 * 確認您針對非生產用的報表套裝執行開發，應可防止 1 號錯誤當機情況發生。
 * 請勿刪除或修改 Adobe Mobile SDK 放入 `NSUserDefaults` 的任何值。
 
-   如果這些值在SDK外部修改，則報告的資料將無效。
+   如果您在 SDK 外部修改這類值，則回報的資料將會無效。
 
