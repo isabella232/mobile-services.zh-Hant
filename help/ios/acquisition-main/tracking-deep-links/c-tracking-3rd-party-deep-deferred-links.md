@@ -4,34 +4,34 @@ seo-description: 使用 iOS SDK 來實施對第三方延期的深層連結的追
 seo-title: 追蹤第三方延期的深層連結
 title: 追蹤第三方延期的深層連結
 uuid: 5525b609-e926-44b9-b0f5-38e9dd7c9761
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b5be6c51c716114e597a80d475f838e23abb1b1
 
 ---
 
 
-# 追蹤協力廠商延遲的深層連結 {#tracking-third-party-deferred-deep-links}
+# 追蹤第三方延期的深層連結 {#tracking-third-party-deferred-deep-links}
 
 使用 iOS SDK 來實施對第三方延期的深層連結的追蹤。
 
-## Classic Adobe Mobile SDK deep linking {#section_D114FA1EB9664EAA82E036A990694B26}
+## 傳統 Adobe Mobile SDK 深層連結 {#section_D114FA1EB9664EAA82E036A990694B26}
 
-The Adobe Mobile SDK currently supports deep linking where the app developer is expected to call the `trackAdobeDeepLink` API and pass the deep linking URL, which is the fingerprinter URL that is generated in Adobe Mobile Services during configuration. SDK 會偵測指紋識別器，以取得贏取資料並將其附加至安裝/啟動分析呼叫內容資料，作為生命週期的一部分。此外，SDK也會從Deeplink URL參數附加Deeplink資料。 如需深層連結的詳細資訊，請參閱[追縱深層連結](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md)。
+Adobe Mobile SDK 目前支援的深層連結可讓應用程式開發人員呼叫 `trackAdobeDeepLink` API，並傳遞深層連結 URL (設定期間在 Adobe Mobile Services 中產生的指紋識別器 URL)。SDK 會偵測指紋識別器，以取得贏取資料並將其附加至安裝/啟動分析呼叫內容資料，作為生命週期的一部分。此外，SDK 也會從深層連結 URL 參數中附加深層連結資料。如需深層連結的詳細資訊，請參閱[追縱深層連結](/help/ios/acquisition-main/tracking-deep-links/tracking-deep-links.md)。
 
-## Facebook deep linking {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
+## Facebook 深層連結 {#section_6A9DACB54A2F4CDEBE9C744DEFADFDED}
 
 廣告創作者可以在 Facebook 中刊登廣告作為深層連結。當使用者點按 Facebook 上的廣告時，系統會直接傳送至資訊，表示該使用者對此應用程式有興趣。深層連結&#x200B;**並非**&#x200B;指紋識別器 URL。然而，在廣告設定期間，您可以選擇提供協力廠商深層連結 URL。使用 Experience Cloud Mobile SDK 與服務的應用程式開發人員，應在此欄位中輸入 Mobile Services 設定的指紋識別器 URL。如果所有項目皆已正確設定，則 Facebook SDK 會在應用程式安裝或啟動後，將此 URL 傳遞至應用程式。
 
-## 設定 SDK {#section_834CD3109175432B8173ECB6EA7DE315}
+## 設定 SDK{#section_834CD3109175432B8173ECB6EA7DE315}
 
 1. 設定 Facebook SDK.
 
-   如需詳細資訊，請參閱下列：
+   如需詳細資訊，請參閱以下頁面:
 
    * [iOS 版 Facebook SDK 快速入門](https://developers.facebook.com/docs/ios/getting-started)
    * [深層連結設定](https://developers.facebook.com/docs/app-ads/deep-linking#os)
 
-1. 若要設定SDK，請呼 `trackAdobeDeepLink` 叫並將URL傳遞至SDK:
+1. 若要設定 SDK，請呼叫 `trackAdobeDeepLink`，並將 URL 傳遞至 SDK:
 
    ```objective-c
    - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation 
@@ -43,11 +43,11 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
 
    >[!TIP]
    >
-   >Ensure that the deep link URL has a key with the name `a.deeplink.id`. 如果 URL 缺少 `a.deeplink.id` 參數，則不會在內容資料中附加任何 URL 參數。
+   >請確認深層連結 URL 擁有名稱為 `a.deeplink.id` 的索引鍵。如果 URL 缺少 `a.deeplink.id` 參數，則不會在內容資料中附加任何 URL 參數。
 
 如果應用程式依上述方式設定，則目前的 AMSDK 版本將會正常運作，且會將深層連結資料正確附加至安裝/啟動分析呼叫中。
 
-## 在範例應用程式中啟用功能 {#section_64C15E269E89424B8E3D029F88094620}
+## 啟用範例應用程式中的功能 {#section_64C15E269E89424B8E3D029F88094620}
 
 1. 註冊 URL 結構。
 
@@ -67,9 +67,9 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
 
 1. 連結 Facebook SDK。
 
-   ![Facebook資產](assets/link-fb-sdk.jpg)
+   ![Facebook 資產](assets/link-fb-sdk.jpg)
 
-1. 編輯 `AppDelegate`.
+1. 編輯 `AppDelegate`。
 
    1. 匯入標題。
 
@@ -100,7 +100,7 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
       @import Bolts;
       ```
 
-   1. 新增延遲深層連結的控制代碼。
+   1. 新增延期深層連結的處理常式。
 
       ```objective-c
       - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
@@ -129,7 +129,7 @@ The Adobe Mobile SDK currently supports deep linking where the app developer is 
       }
       ```
 
-   1. Call the `trackAdobeDeepLink` API and pass the deep link URL to the SDK.
+   1. 呼叫 `trackAdobeDeepLink` API 並將深層連結 URL 傳遞至 SDK。
 
       ```objective-c
       - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options { 
