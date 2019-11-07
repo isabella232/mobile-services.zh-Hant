@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 報告類型
 topic: 報表,量度
 uuid: 8747b11e-31b1-47bc-ad55-db5ab4ef7078
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -21,11 +21,11 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 * 量度
 
-   度量可用來測量資料。量度是值，可以計數和相加，並用來查看應用程式中特定動作的發生頻率。常見量度有安裝、啟動、收入、期限值、登入。例如，每次您的應用程式啟動時， _launches_value會增加一。
+   量度可用來測量資料。量度是值，可以計數和相加，並用來查看應用程式中特定動作的發生頻率。常見量度有安裝、啟動、收入、期限值、登入。例如，每次您的應用程式啟動時，_launches_value 都會增加 1。
 
 * 維度
 
-   維度可用於描述資料。維度是使用字串或類似字串的數字（例如郵遞區號）來表示，並用於組織和分段您的資料。 例如: 作業系統版本、促銷活動名稱、產品名稱、行動電信業者。每個維度都有一組相關聯的特定值，For example, the OS version dimension has values such as _iOS 7_ and _Android 4.1.2_.
+   維度可用於描述資料。維度是以字串或像是字串的數字 (如郵遞區號) 來表示，用來組織和劃分資料。例如: 作業系統版本、促銷活動名稱、產品名稱、行動電信業者。每個維度都有一組相關聯的特定值，例如，作業系統版本維度有 _iOS 7_ 和 _Android 4.1.2_ 之類的值。
 
 以下是您可在 Adobe Mobile 使用者介面中產生的報表類型:
 
@@ -39,7 +39,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 若要在時相報表中檢視維度值以及其他量度，可以使用例項量度，然後定義維度篩選器。
 
-## 趨勢報表 {#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
+## 趨勢報表{#section_C9BE9A2EDBFF4D938B9AF14C8AA67883}
 
 趨勢報表可讓您查看最常用的維度相對於量度的成效。透過此報表，您可以找出哪些值是促成量度變化的主因。
 
@@ -59,7 +59,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ![](assets/ranked.png)
 
-## 散射環報表 {#section_17A9842039174DE094A6B1E9837E35BB}
+## 散射環報表{#section_17A9842039174DE094A6B1E9837E35BB}
 
 散射環報表可提供基礎報表與劃分之類的資料。視覺效果會利用高度來呈現量度及各量度間的績效差異。每個同心圓皆代表該圓類別中的某個對象區段。您可以對對象執行動作，例如套用嚴格篩選、隱藏量度和檢視量度。
 
@@ -67,10 +67,10 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 開始教學課程的方式:
 
-1. in Manage App Settings, click **[!UICONTROL Usage]**.
+1. 按一下「管理應用程式設定」中的&#x200B;**[!UICONTROL 使用狀況]**。
 
-1. Click **[!UICONTROL Technology]** &gt; **[!UICONTROL Technology Breakdown]**.
-1. In the title bar of the report, click **[!UICONTROL Customize]**, and click the information icon.
+1. 依序按一下&#x200B;**[!UICONTROL 技術** &gt; ]**[!UICONTROL 技術劃分]**。
+1. 在報表標題列中，依序按一下&#x200B;**[!UICONTROL 自訂]**&#x200B;和資訊圖示。
 
 ![](assets/report_technology.png)
 
@@ -82,9 +82,9 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 每個節點 (方塊狀) 代表使用者瀏覽應用程式時所採行之路徑中的一個狀態。例如，在上圖中，頂端節點代表啟動應用程式後接著從圖庫中挑選相片的使用者人數。
 
-### 漏斗報表 {#section_AF3B0C899D844FC3AD1F91A2C452C92F}
+### 漏斗報表{#section_AF3B0C899D844FC3AD1F91A2C452C92F}
 
-漏斗報表可讓您識別客戶在與您的行動應用程式互動時，在哪個位置離開促銷活動或是從定義的轉換路徑轉向。您也可以使用漏斗報表來比較不同區段的動作。
+漏斗報表可讓您識別客戶在與您的行動應用程式互動時，在哪個位置離開促銷活動或是從定義的轉換路徑轉向。您也可以使用「漏斗」報表來比較不同區段的動作。
 
 漏斗視覺效果可供您查看客戶於何處退出流程。洞察客戶在每個步驟的決策，可讓您瞭解他們在哪裡停住不再往前、傾向採取哪個路徑，以及何時離開您的應用程式。
 
