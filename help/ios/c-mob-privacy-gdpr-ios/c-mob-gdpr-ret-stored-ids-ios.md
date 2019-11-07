@@ -4,21 +4,21 @@ seo-description: 本資訊可協助自您的 iOS 應用程式擷取本機儲存�
 seo-title: 擷取儲存的識別碼
 title: 擷取儲存的識別碼
 uuid: 4fb2c166-6700-4f8b-b60b-137b199e0509
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# Retrieving stored identifiers{#retrieving-stored-identifiers}
+# 擷取儲存的識別碼{#retrieving-stored-identifiers}
 
 本資訊可協助自您的 iOS 應用程式擷取本機儲存的 Experience Cloud SDK 身分識別，以及處理 GDPR 資料存取請求。
 
-如需 GDPR 的詳細資訊，請參閱 [GDPR 和您的業務](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
+如需 GDPR 的詳細資訊，請參閱 [GDPR 和您的業務](https://www.adobe.com/tw/privacy/general-data-protection-regulation.html)。
 
 >[!IMPORTANT]
 >
->The  method retrieves identities that are stored in the Experience Cloud SDKs. `getAllIdentifiersAsync`您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>`getAllIdentifiersAsync` 方法會擷取儲存於 Experience Cloud SDK 中的身分識別。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
 Experience Cloud SDK 身分識別 (若適用的話) 會儲存在本機，並於 JSON 字串中傳回，且可能包括:
 
