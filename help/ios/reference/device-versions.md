@@ -6,19 +6,19 @@ solution: Marketing Cloud,Analytics
 title: iOS 裝置版本
 topic: 開發人員和實施
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 ---
 
 
-# iOS device versions {#ios-device-versions}
+# iOS 裝置版本 {#ios-device-versions}
 
 下表包含許多 iOS 裝置傳送的 iOS 版本字串。
 
 >[!IMPORTANT]
 >
->此清單以內部測試和線上資訊為基礎，可能包含不準確或不完整的資訊。
+>此清單以內部測試和網路上的資訊為基礎，可能包含不準確或不完整的資訊。
 
 如需 iOS 裝置的詳細資訊，請前往 [The iPhone Wiki](https://theiphonewiki.com/wiki/Models) 等相關網站。
 
