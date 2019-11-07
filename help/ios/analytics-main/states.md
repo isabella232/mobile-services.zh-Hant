@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 追蹤應用程式狀態
 topic: 開發人員和實施
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ---
@@ -18,14 +18,14 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 >[!TIP]
 >
->To track states, make a call to `trackState`. 系統不會自動追蹤狀態。
+>若要追蹤狀態，請呼叫 `trackState`。系統不會自動追蹤狀態。
 
-## Tracking states {#section_380DF56C4EE4432A823940E4AE4C9E91}
+## 追蹤狀態 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   For more information, see Add the SDK and Config File to your Project in Core Implementation and Lifecycle.**[](/help/ios/getting-started/dev-qs.md)
-1. 匯入程式庫.
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
+1. 匯入資料庫。
 
    ```objective-c
    #import "ADBMobile.h"
@@ -38,11 +38,11 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
                     data:nil];
    ```
 
-In Adobe Mobile services, the **[!UICONTROL State Name]** is reported in the *`View State`* variable, and a view is recorded for each `trackState` call. 在其他 Analytics 介面中，**[!UICONTROL View State]** 會回報為 **[!UICONTROL Page Name]**，而 state views 會回報為 page views。
+在 Adobe Mobile Services 中，**[!UICONTROL 狀態名稱]**&#x200B;會在 *`View State`* 變數中回報，並且每次 `trackState` 呼叫的檢視都會記錄下來。在其他 Analytics 介面中，**[!UICONTROL View State]** 會回報為 **[!UICONTROL Page Name]**，而 state views 會回報為 page views。
 
-## Sending additional data {#section_CFDB4F944496401786A145C209AB387C}
+## 傳送其他資料 {#section_CFDB4F944496401786A145C209AB387C}
 
-In addition to the **[!UICONTROL State Name]**, you can send additional context data with each track action call:
+除了&#x200B;**[!UICONTROL 狀態名稱]**&#x200B;之外，您還可以隨著每次追蹤動作呼叫傳送其他內容資料:
 
 ```objective-c
 NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
@@ -50,16 +50,16 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Home Screen" data:contextData];
 ```
 
-Context data values must be mapped to custom variables:
+內容資料值必須對應至自訂變數:
 
 ![](assets/map-variable-context-state.png)
 
-## App state reporting {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
+## 應用程式狀態報表 {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
 狀態通常是透過路徑報表來檢視，所以您可以了解使用者如何導覽應用程式以及最常檢視哪些狀態。
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]報表。**&#x200B;此報表是根據使用者透過您的應用程式所採取的路徑而成。A sample path is  **[!UICONTROL Home]**  &gt;  **[!UICONTROL Settings]**  &gt; **[!UICONTROL Feed]**. |
+| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]報表。**&#x200B;此報表是根據使用者透過您的應用程式所採取的路徑而成。範例路徑為 **[!UICONTROL 首頁]**  &gt;  **[!UICONTROL 設定]**  &gt; **[!UICONTROL 摘要]**。 |
 | Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:**「頁面」**&#x200B;報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**「路徑」[!UICONTROL 報表。]** |
 | Ad hoc analytics | 透過&#x200B;**「頁面」**&#x200B;維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**「路徑」[!UICONTROL 報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
