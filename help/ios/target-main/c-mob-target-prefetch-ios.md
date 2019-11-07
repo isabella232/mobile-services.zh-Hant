@@ -4,7 +4,7 @@ seo-description: Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過�
 seo-title: iOS 中的預先擷取選件內容
 title: iOS 中的預先擷取選件內容
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
 
 ---
@@ -16,15 +16,15 @@ Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回�
 
 >[!IMPORTANT]
 >
->Prefetch functionality in the Mobile SDKs for iOS is not supported for Auto Target, Auto Allocate, and Automated Personalization activity types in Adobe Target.
+>iOS 版 Mobile SDK 中的預先擷取功能不支援 Adobe Target 中的自動指定目標、自動分配以及自動個人化活動類型。
 
 此程序會減少載入時間，避免多個網路呼叫，並允許通知 Adobe Target 行動應用程式使用者造訪哪一個 mbox。預先擷取呼叫期間，會擷取並快取所有內容，而且將從快取中擷取此內容，以供包含指定 mbox 名稱之快取內容的所有未來呼叫使用。
 
-預先擷取內容不會在跨啟動之間持續有效。The prefetch content is cached as long as the application lives or until the `clearPrefetchCache()` method is called.
+預先擷取內容不會在跨啟動之間持續有效。只要應用程式仍然存在，或直到呼叫 `clearPrefetchCache()` 方法為止，則會快取預先擷取內容。
 
 >[!IMPORTANT]
 >
->Target prefetch APIs have been available since SDK version 4.14.0. For more information about parameter limitations, see [Batch Input Parameters](https://developers.adobetarget.com/api/#batch-input-parameters).
+>自 SDK 4.14.0 版開始，即可使用 Target 預先擷取 API。如需有關參數限制的詳細資訊，請參閱[批次輸入參數](https://developers.adobetarget.com/api/#batch-input-parameters)。
 
 在 SDK 4.14 或更新版本中，若要指定 ，啟動 v2 批次 mbox TnT 呼叫時，系統會從 檔案中挑選 `environmentId``ADBMobileConfig.json`environmentId。若未指定此檔案中的 `environmentId`，系統就不會以 TNT 批次 mbox 呼叫傳送任何環境參數，而是為預設環境傳送選件。
 
@@ -39,7 +39,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
         }
 ```
 
-## 預回遷方法 {#section_05967F1F3A554B0FBC2C08A954554BDE}
+## 預先擷取方法 {#section_05967F1F3A554B0FBC2C08A954554BDE}
 
 以下是您可以在 iOS 中用於預先擷取的方法:
 
@@ -55,7 +55,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
                             callback:(nullable void(^)(BOOL success))callback;
       ```
 
-   * 以下是此方法的參數：
+   * 以下是此方法的參數:
 
       * **`targetPrefetchArray`**
 
@@ -67,15 +67,15 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
       * **`callback`**
 
-         完成預先擷取時叫用。Returns `true` if the prefetch was successful and `false` if the prefetch was unsuccesful.
+         完成預先擷取時叫用。如果預先擷取成功，會傳回 `true`，如果預先擷取失敗，則傳回 `false`。
 
 * **targetLoadRequests**
 
-   針對在要求陣列中指定的多個 mbox 位置執行批次要求。陣列中的每個物件都包含回呼函式，當內容可用於其指定mbox位置時，就會呼叫該函式。
+   針對在要求陣列中指定的多個 mbox 位置執行批次要求。陣列中的每個物件包含回撥函式，當內容可用於其指定的 mbox 位置時，將會叫用該函式。
 
    >[!IMPORTANT]
    >
-   >如果已快取所請求位置的內容，則會立即在提供的回呼中傳回。 否則，SDK 將會傳送網路要求給 Target 伺服器以擷取內容。
+   >如果已快取要求位置的內容，則會在提供的回撥中立即傳回內容。否則，SDK 將會傳送網路要求給 Target 伺服器以擷取內容。
 
    * 以下是此方法的語法:
 
@@ -84,7 +84,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
                withProfileParameters:(nullableNSDictionary*)profileParameters;
       ```
 
-   * 以下是此方法的參數：
+   * 以下是此方法的參數:
 
       * **`requests`**
 
@@ -104,7 +104,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       (void) targetPrefetchClearCache; 
       ```
 
-   * There are no parameters for this method.
+   * 沒有適用於此方法的參數。
 
 * **targetRequestObjectWithName**
 
@@ -119,7 +119,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       callback:(nullablevoid(^)(NSString*__nullablecontent))callback;
       ```
 
-   * There are no parameters for this method.
+   * 沒有適用於此方法的參數。
 
 * **createTargetPrefetchObject**
 
@@ -132,17 +132,17 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
       mboxParameters:(nullableNSDictionary *)mboxParameters;
       ```
 
-## Public classes {#section_A273E53F069E4327BBC8CE4910B37888}
+## 公用類別 {#section_A273E53F069E4327BBC8CE4910B37888}
 
 以下是 iOS 中支援預先擷取的公用類別:
 
-### 類別參考：TargetPreFetchObject
+### 類別參考: TargetPreFetchObject
 
 封裝用於 mbox 預先擷取的 mbox 名稱和參數。
 
 * **`name`**
 
-   您要擷取的位置/mbox名稱。
+   您要擷取的位置/mbox 名稱。
 
    * **類型**: NSString*
 
@@ -164,7 +164,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    * **類型**: NSDictionary*
 
-### 類別參考：TargetRequestObject
+### 類別參考: TargetRequestObject
 
 此類別封裝 mbox 名稱、預設內容、mbox 參數，以及用於 Target 位置要求的傳回回撥。
 
@@ -192,7 +192,7 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
    * **類型**: 函式
 
-## Code sample {#section_BF7F49763D254371B4656E17953D520C}
+## 程式碼範例 {#section_BF7F49763D254371B4656E17953D520C}
 
 以下是如何藉由使用 iOS SDK 預先擷取內容的範例:
 
