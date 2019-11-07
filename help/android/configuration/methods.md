@@ -1,23 +1,23 @@
 ---
 description: 以下為 Android 資料庫所提供的方法清單。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下為 Android 資料庫所提供的方法清單。
 seo-title: 設定方法
 solution: Marketing Cloud,Analytics
 title: 設定方法
 topic: 開發人員和實施
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 ---
 
 
-# Configuration methods{#configuration-methods}
+# 設定方法{#configuration-methods}
 
 以下為 Android 資料庫所提供的方法清單。
 
-## Initial configuration {#section_9169243ECC4744A899A8271F92090ECD}
+## 初始設定 {#section_9169243ECC4744A899A8271F92090ECD}
 
 您必須在主要活動的 `onCreate` 方法中呼叫一次以下方法:
 
@@ -34,15 +34,15 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    ````
 
 
-## SDK settings (Config Class) {#section_C1EB977043C04D2B93E5A63DB72828B6}
+## SDK 設定 (設定類別) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
 * **registerAdobeDataCallback**
 
-   * 註冊實施 `AdobeDataCallback` 介面的物件。The overwritten "call" method will be invoked with a `Config.MobileDataEvent` value and the associated data in a `Map<String, Object>` for the triggering event. 如需觸發此回呼之事件的詳細資訊，請參 *閱本主題底部的MobileDataEventEnum* 。
+   * 註冊實施 `AdobeDataCallback` 介面的物件。系統會針對觸發事件，連同 `Config.MobileDataEvent` 值以及 `Map<String, Object>` 中的關聯資料叫用覆寫的「呼叫」方法。如需關於會觸發此回撥之事件的詳細資訊，請參閱本主題底部的 *MobileDataEventEnum*。
 
       >[!TIP]
       >
-      >此方法需要4.9.0版或更新版本。
+      >此方法需使用 4.9.0 版或更新版本。
 
    * 以下是此方法的語法:
 
@@ -74,7 +74,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static String getVersion();
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -86,8 +86,8 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       以下為隱私權狀態值:
 
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`，其中會立即傳送點擊。
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`，其中會捨棄。
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`，會立即傳送點擊。
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`，會捨棄點擊。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
          如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 `ADBMobileConfig.json` 檔案中。
@@ -97,7 +97,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -109,8 +109,8 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * 將目前使用者的隱私權狀態設為 `status`。
 
       您可以將隱私權狀態設定為下列其中一個值:
-      * `MOBILE_PRIVACY_STATUS_OPT_IN`，其中會立即傳送點擊。 會立即傳送點擊。
-      * `MOBILE_PRIVACY_STATUS_OPT_OUT`，其中會捨棄。 會捨棄點擊。
+      * `MOBILE_PRIVACY_STATUS_OPT_IN`，會立即傳送點擊。會立即傳送點擊。
+      * `MOBILE_PRIVACY_STATUS_OPT_OUT`，會捨棄點擊。會捨棄點擊。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
    * 以下是此方法的語法:
 
@@ -118,7 +118,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * 以下是此方法的程式碼範例：
+   * 以下是此方法的範例程式碼:
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -135,7 +135,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static BigDecimal getLifetimeValue();
       ```
 
-   * Here is a code sample for this method:
+   * 以下是此方法的範例程式碼:
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -147,7 +147,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       >[!TIP]
       >
-      >If your app upgrades from the Experience Cloud 3.x to the 4.x SDK, the previous custom or automatically generated visitor ID is retrieved and stored as the custom user identifier. 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
+      >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
 
    * 以下是此方法的語法:
 
@@ -155,7 +155,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static String&amp getUserIdentifier();
       ```
 
-   * 此方法的程式碼範例如下：
+   * 以下是此方法的範例程式碼:
 
       ```java
       String userId = Config.getUserIdentifier();
@@ -344,7 +344,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
       >[!IMPORTANT]
       > 
-      >If you want to use the Advertising Identifier in Acquisition or Lifecycle, call it before calling `Config.collectLifecycleData`.
+      >如果您要在「贏取」或「生命週期」中使用「廣告識別碼」，請在呼叫 `Config.collectLifecycleData` 前對其呼叫。
 
       * 以下是此方法的語法:
 
