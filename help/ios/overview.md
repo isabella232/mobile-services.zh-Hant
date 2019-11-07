@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 topic: 開發人員和實施
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: 6d92beff55f359d667b399e66bae4cbffa4a1a0a
+translation-type: tm+mt
+source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
 
 ---
 
@@ -28,14 +28,14 @@ source-git-commit: 6d92beff55f359d667b399e66bae4cbffa4a1a0a
 
 在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
-我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
+我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 一些要記住的資訊:
 
-* 支援 iOS 5 或更新版本
+* 支援 iOS 8 或更新版本
 
    若是 iOS 11 或更新版本，則&#x200B;**必須**&#x200B;使用 4.13.8 或更新版本的 SDK。
 
@@ -55,4 +55,4 @@ Adobe Mobile Services 提供的新使用者介面，將 Adobe Experience Cloud �
 
 >[!IMPORTANT]
 >
->Adobe Bloodhound 已於 **2017 年 4 月 30 日**&#x200B;起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adob
+>Adobe Bloodhound 已於 **2017 年 4 月 30 日**&#x200B;起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
