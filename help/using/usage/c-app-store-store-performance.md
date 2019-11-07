@@ -2,24 +2,24 @@
 description: 「App Store 概述」報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
 keywords: 行動
 seo-description: 「App Store 概述」報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
-seo-title: App Store 概述報表
+seo-title: 應用程式商店概述報表
 solution: Marketing Cloud,Analytics
-title: App Store 概述報表
+title: 應用程式商店概述報表
 topic: 量度
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ---
 
 
-# App Store Overview report{#app-store-overview-report}
+# 應用程式商店概述報表{#app-store-overview-report}
 
 **[!UICONTROL 「App Store 概述」]報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。**
 
 >[!TIP]
 >
->In the Mobile Services UI, the **[!UICONTROL App Store]** menu item and **[!UICONTROL Overview]** report appear in the left navigation menu after you configure the integration.
+>設定整合後，Mobile Services UI 中的 **[!UICONTROL App Store]** 功能表項目和&#x200B;**[!UICONTROL 概述]**&#x200B;報表會顯示在左側導覽功能表中。
 
 **[!UICONTROL 「概述」]報表包含特定時段圖形，可顯示應用程式商店下載次數、使用您的應用程式進行的應用程式內購買次數，以及您應用程式的平均評分。**
 
@@ -29,11 +29,11 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->Adobe Analytics中的應用程式商店量度，例如下載、排名、收入、評分等，需要與適當的廠商整合資料連接器。 `appFigures` 目前提供整合功能，但您需要先`appFigures`向 **** 購買適當的產品及/或服務，才能啟用整合功能。如需 Data Connector 整合的詳細資訊，請參閱 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)。
+>Adobe Analytics 中的應用程式儲存量度 (例如下載項目、排名、收入、評分等) 需要與適當的供應商進行 Data Connector 整合。`appFigures` 目前提供整合功能，但您需要先`appFigures`向 **** 購買適當的產品及/或服務，才能啟用整合功能。如需 Data Connector 整合的詳細資訊，請參閱 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)。
 
 >[!TIP]
 >
->In addition to changing the report's date range by clicking the calendar icon in the top right, you can customize some of the drill-down reports, add filters and series (metrics), add sticky filters, and download the report in PDF or CSV format. For more information, see [Customize reports](/help/using/usage/reports-customize/reports-customize.md).
+>除了可以按一下右上角的「行事曆」圖示以變更報表的日期範圍外，您也可以自訂某些深入研究報表、新增篩選器和系列 (量度)、新增嚴格篩選以及下載 PDF 或 CSV 格式的檔案。如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
 
 ## App Store 平均評分 {#section_60D0D21824AE4450BC3E34D7ACA12A7A}
 
@@ -41,7 +41,7 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ![](assets/app_store_rating.png)
 
-You can click anywhere on the **[!UICONTROL App Store Average Rating]** widget to display a graph and chart that displays the average rating by date. 若要檢視某一天的資料，請將滑鼠移到該日期上。
+按一下 [!UICONTROL **App Store 平均評分]** Widget 的任一位置，即可顯示圖形與圖表，當中會依日期顯示平均評分。若要檢視某一天的資料，請將滑鼠移到該日期上。
 
 ![](assets/app_store_downloads_detail.png)
 
@@ -49,30 +49,30 @@ You can click anywhere on the **[!UICONTROL App Store Average Rating]** widget t
 
 此報表顯示透過下載您的應用程式而產生的收入。
 
-## 應用程式內收入 {#section_58792ED9C4B54B7D836E30CF09E8E204}
+## 應用程式內收入{#section_58792ED9C4B54B7D836E30CF09E8E204}
 
 此報表顯示使用您的應用程式進行應用程式內購買而產生的收入。
 
-## 依國家/地區的下載次數 {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## 依國家/地區的下載次數{#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 此報表顯示依國家/地區分組的應用程式下載次數。
 
 ![](assets/country.png)
 
-To display a graph and chart that displays the number of downloads per country by date, click **[!UICONTROL Downloads by Country]**. 將滑鼠移到日期上，即可檢視當天的資料。
+若要顯示依日期每個國家/地區之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依國家/地區的下載次數]**。將滑鼠移到日期上，即可檢視當天的資料。
 
 ![](assets/downloads_by_country.png)
 
-## 依應用程式商店的下載次數 {#section_F1CD1A3F0105469D879E4F280CE32484}
+## 依應用程式商店的下載次數{#section_F1CD1A3F0105469D879E4F280CE32484}
 
 此報表顯示依應用程式商店分組的應用程式下載次數。
 
 ![](assets/app_store.png)
 
-To display a graph and chart that displays the number of downloads per app store grouped by date, click **[!UICONTROL Downloads by App Store]**. 您可以將滑鼠移到日期上，即可檢視當天的資料。
+若要顯示依日期每個應用程式商店分組之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依應用程式商店的下載次數]**。您可以將滑鼠移到日期上，即可檢視當天的資料。
 
 ![](assets/app_store_downloads_detail.png)
 
-## 依名稱的應用程式內購買 {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## 依名稱的應用程式內購買{#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 此報表依名稱顯示所有應用程式內的購買。
