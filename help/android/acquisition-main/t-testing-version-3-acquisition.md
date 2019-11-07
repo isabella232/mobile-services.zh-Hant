@@ -1,32 +1,32 @@
 ---
 description: 以下資訊可協助您在 Android 裝置上往返版本 3 贏取促銷活動連結。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下資訊可協助您在 Android 裝置上往返版本 3 贏取促銷活動連結。
 seo-title: 測試第 3 版贏取
 solution: Marketing Cloud,Analytics
 title: 測試第 3 版贏取
 topic: 開發人員和實施
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ---
 
 
-# Testing V3 acquisition {#testing-version-acquisition}
+# 測試 V3 贏取 {#testing-version-acquisition}
 
 以下資訊可協助您在 Android 裝置上往返版本 3 贏取促銷活動連結。
 
 >[!IMPORTANT]
 >
->V3中的贏取是指您在Adobe Mobile Services UI中使用贏取產生器建立的贏取連結。 若要使用此功能，您必須升級至適用於 Experience Cloud 解決方案 4.6.0 版或更新版本的 Android SDK 4.x。
+>第 3 版贏取會參照您在 Adobe Mobile Services 使用者介面中透過「贏取建立器」所建立的贏取連結。若要使用此功能，您必須升級至適用於 Experience Cloud 解決方案 4.6.0 版或更新版本的 Android SDK 4.x。
 
 如果行動應用程式尚未在 Google Play 上架，則建立促銷活動連結後，您可以選取任一行動應用程式作為目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點選贏取連結後)，而不會影響測試連結的能力。查詢字串參數會傳遞至 Google Play 商店，然後在安裝時傳遞至應用程式，作為促銷活動廣播的一部分。往返行動應用程式贏取測試需要模擬此廣播類型。
 
-The app must be freshly installed, or have data cleared in **[!UICONTROL Settings]**, each time a test is run. 這樣即可確保應用程式首次啟動時，與促銷活動查詢字串參數關聯的初始生命週期量度可以順利傳送。
+應用程式必須是全新安裝，或資料已全部清除 (在&#x200B;**[!UICONTROL 設定]**&#x200B;中進行)，且每次執行測試時皆須如此。這樣即可確保應用程式首次啟動時，與促銷活動查詢字串參數關聯的初始生命週期量度可以順利傳送。
 
-1. Complete the prerequisite tasks in Mobile App Acquisition and ensure that you have correctly implemented the broadcast receiver for .[](/help/android/acquisition-main/acquisition.md)`INSTALL_REFERRER`
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]** &gt; **[!UICONTROL Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. 完成[行動應用程式贏取](/help/android/acquisition-main/acquisition.md)中的先決條件任務，然後確定您已為 `INSTALL_REFERRER` 正確實行廣播接收器。
+1. 在 Adobe Mobile Services 使用者介面中，按一下&#x200B;**[!UICONTROL 贏取]** &gt; **[!UICONTROL 行銷連結建立器]**&#x200B;並產生贏取行銷連結 URL，此 URL 會將 Google Play 設為 Android 裝置的目的地。
 
    如需詳細資訊，請參閱[行銷連結建立器](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)。
 
@@ -34,16 +34,16 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    >[!TIP]
    >
-   >If you refer to both Android and iOS apps in the acquisition link, use Google Play as the default store.
+   >如果您在贏取連結中同時參照了 Android 和 iOS 應用程式，請使用 Google Play 做為預設商店。
 
 1. 在電腦的瀏覽器中開啟剛才產生的連結。
 
    系統會將您重新導向至另一頁面 (其 URL 類似下列範例):
    `https://play.google.com/store/apps/details?id=com.adobe.android&referrer=utm_campaign%3Dadb_acq_v3%26utm_source%3Dadb_acq_v3%26utm_content%3D91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
 
-1. Copy the unique ID after `utm_content%3D`.
+1. 複製 `utm_content%3D` 後方的唯一 ID。
 
-   In the previous example, the ID is .`91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`
+   以上一個範例來說，ID 為 `91b52ce097b1464b9b47cb2995c493cc6ab2c3a3`。
 
 1. 透過於步驟 3 取得的唯一 ID 來建構贏取結束連結 (須為下列格式):
 
@@ -63,7 +63,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 
    | 設定 | 值 |
    |--- |--- |
-   | acquisition | The server should be `c00.adobe.com`.   *`appid`*  should equal the `appid`  in your acquisition link. |
+   | acquisition | 伺服器應為 `c00.adobe.com`.*`appid`* 應與您贏取連結中的 `appid` 相等。 |
    | analytics | 為了測試的目的，請將反向連結逾時設為具有足夠的時間 (60 秒以上) 來手動傳送廣播。您可以在測試結束後將逾時設定還原為原始值。 |
 
 1. 將裝置與電腦連接，解除安裝應用程式，然後重新安裝。
@@ -75,7 +75,7 @@ The app must be freshly installed, or have data cleared in **[!UICONTROL Setting
 1. 完成下列步驟:
    1. 將 `com.adobe.android` 替換為應用程式的封裝名稱。
    1. 將接收器參考更新為應用程式中促銷活動追蹤接收器位置的參考。
-   1. Replace values that are associated with `utm_content`.
+   1. 替換與 `utm_content` 關聯的值。
    如果廣播成功，您可以預期類似於以下範例的回應:
 
    `Broadcasting: Intent 
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 | Analytics - Unable to decode response(*String*). | 回應的格式不正確。 |
 | Analytics - Unable to parse response (*a JSON Response*). | JSON 字串的格式不正確。 |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | 回應中沒有 contextData 參數。 |
-| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | `a.referrer.campaign.name`  is not included in  contextData. |
+| Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | contextData 中未含有 `a.referrer.campaign.name`。 |
 | Analytics - Acquisition referrer timed out. | 無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確定在開啟贏取連結後才安裝應用程式。 |
 
 請記住以下資訊:
@@ -115,7 +115,7 @@ Broadcast completed: result=0`
 
 安裝 Java 工具:
 
-1. Download the [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) file.
+1. 下載 [`acquisitionTester.zip`](/help/android/assets/acquisitionTester.zip) 檔案。
 
 1. 解壓縮 .jar 檔案。
 
