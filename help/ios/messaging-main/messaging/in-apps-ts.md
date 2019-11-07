@@ -7,13 +7,13 @@ solution: Marketing Cloud,Analytics
 title: 應用程式內傳訊疑難排解
 topic: 量度
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ---
 
 
-# Troubleshooting in-app messaging{#troubleshooting-in-app-messaging}
+# 應用程式內傳訊疑難排解{#troubleshooting-in-app-messaging}
 
 此資訊可協助您進行應用程式內傳訊疑難排解。
 
@@ -21,7 +21,7 @@ source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ## 應用程式中是使用最新設定和最新 SDK 嗎?
 
-確認 SDK 的版本是 4.2 或更高版本，並已正確設定。Ensure that you have a `Messages` section in your configuration (downloaded JSON file), or have a Messages remote endpoint, so that it can be retrieved from dynamic tag management.
+確認 SDK 的版本是 4.2 或更高版本，並已正確設定。確認設定 (下載的 JSON 檔案) 中有`Messages`區段或是有訊息遠端端點，以便從 Dynamic tag management 擷取訊息。
 
 ## 我的 Android 全螢幕訊息無法顯示。我已使用正確的 SDK 和配置，也符合觸發器條件。
 
@@ -29,19 +29,19 @@ source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 ## 我的 Android 本機通知訊息沒有作用。
 
-請務必在資訊清單中宣告本機通知廣播接收器。For more information, see step 2 in [Enabling In-App Messages](/help/android/messaging-main/messaging/messaging.md).
+請務必在資訊清單中宣告本機通知廣播接收器。如需詳細資訊，請參閱[啟用應用程式內傳訊](/help/android/messaging-main/messaging/messaging.md)中的步驟 2。
 
 ## 這是現時訊息嗎?
 
 請查看「管理應用程式內訊息」頁面中「狀態」欄的清單檢視，確認是否為現時訊息。
 
-## 在「對象 *」標籤上**，只要*「顯示」、 *「永遠顯示」* 、「顯示離線設定」即可。
+## 查看對象標籤中的&#x200B;*顯示一次*、*一律顯示*、*離線顯示*&#x200B;設定。
 
 確定這些設定是依照您想要的方式。在&#x200B;**[!UICONTROL 「對象」]**&#x200B;標籤中，檢閱您的&#x200B;**「觸發器」]選項，該選項可讓您指定顯示訊息的頻率。[!UICONTROL **
 
 ## 如果使用啟動事件做為觸發器...
 
-啟動只會發生在新的工作階段。For more information about when a session begins, see the `lifecycleTimeout` row in the JSON Config file. 如需詳細資訊，請參 [閱ADBMobile JSON設定](/help/ios/configuration/json-config/json-config.md)。
+啟動只會發生在新的工作階段。如需工作階段開始時間的詳細資訊，請參閱 JSON 檔案設定中的 `lifecycleTimeout` 列。如需詳細資訊，請參閱 [ADBMobile JSON 設定](/help/ios/configuration/json-config/json-config.md)。
 
 ## 我已從遠端更新訊息，但應用程式仍顯示舊訊息。
 
@@ -79,7 +79,7 @@ source-git-commit: 1154bab39b5215e00d47ad8e66caeec15e4e98de
 
 若要在 iPhone X 上以全螢幕模式顯示應用程式內訊息:
 
-1. Add `viewport-fit=cover` in the meta tag.
+1. 在中繼資料標記中新增 `viewport-fit=cover`。
 
    ```html
    <meta name="viewport" content="viewport-fit=cover">
