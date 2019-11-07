@@ -1,33 +1,33 @@
 ---
 description: 以下為 iOS 資料庫所提供的方法清單。
 seo-description: 以下為 iOS 資料庫所提供的方法清單。
-seo-title: 配置方法
+seo-title: '設定方法 '
 solution: Marketing Cloud,Analytics
-title: 配置方法
+title: 設定方法
 topic: 開發人員和實施
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 ---
 
 
-# Configuration methods {#configuration-methods}
+# 設定方法 {#configuration-methods}
 
 以下為 iOS 資料庫所提供的方法清單。
 
-SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Target、Audience manager和Adobe Experience Platform Identity Service。
+SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target、Audience Manager 以及 Adobe Experience Platform Identity Service。
 
 * **setAppExtensionType**
 
    進行 Adobe Mobile SDK 設定以確定目前執行的延伸功能類型。
 
    設定為下列其中一值:
-   * `ADBMobileAppExtensionTypeRegular` -擴充功能與包含的應用程式搭售。
-   * `ADBMobileAppExtensionTypeStandAlone` -擴充功能未與包含的應用程式搭售。
+   * `ADBMobileAppExtensionTypeRegular` - 擴充功能與容納應用程式搭配。
+   * `ADBMobileAppExtensionTypeStandAlone` - 擴充功能並未與容納應用程式搭配。
    >[!TIP]
    >
-   >This method should **only** be used if your app has an extension or is a stand-alone extension. For more information, see *ADBMobileAppExtensionType* below.
+   >此方法&#x200B;**「僅」**&#x200B;在您的應用程式具有擴充功能，或為獨立擴充功能時，才可使用。如需詳細資訊，請參閱下方的 *ADBMobileAppExtensionType*。
 
    * 以下是此方法的語法:
 
@@ -63,8 +63,8 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    傳回目前使用者之隱私權狀態的列舉表示法:
 
-   * `ADBMobilePrivacyStatusOptIn` -會立即傳送點擊。
-   * `ADBMobilePrivacyStatusOptOut` -會捨棄點擊。
+   * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
+   * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 `ADBMobileConfig.json` 檔案中。
 
    * 以下是此方法的語法:
@@ -85,8 +85,8 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    設定為下列其中一值:
 
-   * `ADBMobilePrivacyStatusOptIn` -會立即傳送點擊。
-   * `ADBMobilePrivacyStatusOptOut` -會捨棄點擊。
+   * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
+   * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -123,7 +123,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂使用者識別碼。 如需詳細資訊，請參閱下方的 `userIdentifier` 列。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，且會使用追蹤識別碼。
+   >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。如需詳細資訊，請參閱下方的 `userIdentifier` 列。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，且會使用追蹤識別碼。
 
    * 以下是此方法的語法:
 
@@ -143,7 +143,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的自訂或自動產生的訪客ID並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。
+   >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。
 
    若為全新安裝的 4.x SDK，則使用者識別碼為 `nil`，直到設定完成為止。
 
@@ -213,7 +213,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >此方法適用於在背景中註冊通知的應用程式，且僅應從應用程式在背景時執行的程式碼呼叫此方法。
+   >此方法旨在用於在背景中註冊接收通知的應用程式，且只有當應用程式於背景執行時，才應從此時執行的程式碼中呼叫此方法。
 
    * 以下是此方法的語法:
 
@@ -233,7 +233,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >The preferred location to invoke this method is in `application:didFinishLaunchingWithOptions:`.
+   >叫用此方法的慣用位置位於 `application:didFinishLaunchingWithOptions:`。
 
    * 以下是此方法的語法:
 
@@ -251,11 +251,11 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    可讓您在收集生命週期量度時傳遞其他資料。
 
-   您必須從應用程式的入口點呼叫此方法。 Where applicable, this may include one or both of the methods `application:didFinishLaunchingWithOptions:` and/or `applicationWillEnterForeground:` in your AppDelegate class.
+   您必須從應用程式的進入點呼叫此方法。若適用，您的 AppDelegate 類別中可能會包含下列兩種方法其中之一或兩者皆包含 `application:didFinishLaunchingWithOptions:` 和/或 `applicationWillEnterForeground:`。
 
    >[!IMPORTANT]
    >
-   >Data that is passed to the SDK via `collectLifecycleDataWithAdditionalData:` will be persisted by the SDK in `NSUserDefaults`. SDK 會拆解任何不屬於 `NSDictionary` 或 `NSString` 類型之 `NSNumber` 參數的值。To use  `collectLifecycleDataWithAdditionalData:`, you must have SDK **version 4.4** or later.
+   >任何透過 `collectLifecycleDataWithAdditionalData:` 傳遞至 SDK 的資料將會由 SDK 保存在 `NSUserDefaults`。SDK 會拆解任何不屬於 `NSDictionary` 或 `NSString` 類型之 `NSNumber` 參數的值。若要使用 `collectLifecycleDataWithAdditionalData:`，您必須有 **SDK 4.4 版**&#x200B;或更新版本。
 
    * 以下是此方法的語法:
 
@@ -275,7 +275,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!IMPORTANT]
    >
-   >To use `overrideConfigPath`, you must have SDK version 4.2 or later.
+   >若要使用 `overrideConfigPath`，您必須有 SDK 4.2 版或更新版本。
 
    * 以下是此方法的語法:
 
@@ -296,7 +296,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!IMPORTANT]
    >
-   >This method should only be used in the  `application:didRegisterForRemoteNotificationsWithDeviceToken:` method.
+   >此方法只應在 `application:didRegisterForRemoteNotificationsWithDeviceToken:` 方法中使用。
 
    * 以下是此方法的語法:
 
@@ -318,7 +318,7 @@ SDK目前支援多個Adobe Experience cloud解決方案，包括Analytics、Targ
 
    >[!TIP]
    >
-   >Retrieve the IDFA from Apple APIs **only** if you are using an ad service. 若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
+   >「只有」****&#x200B;在您使用廣告服務時，才能從 Apple API 擷取 IDFA。若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
 
    * 以下是此方法的語法:
 
