@@ -6,35 +6,35 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: 開發人員和實施
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 ---
 
 
-# ADBMobile JSON config file {#adbmobile-json-config}
+# ADBMobile JSON 設定檔案 {#adbmobile-json-config}
 
-這項資訊可協助您瞭解ADBMobile.json設定檔案中的變數。
+此資訊可協助您瞭解 ADBMobile.json 設定檔案中的變數。
 
-## `ADBMobileConfig.json` config file reference {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
+## `ADBMobileConfig.json` 設定檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
 您的應用程式可以跨多平台使用此相同的設定檔案:
 
 >[!TIP]
 >
->In **Android**, the `ADBMobileConfig.json` file must be placed in the `assets` folder.
+>在 **Android** 中，`ADBMobileConfig.json` 檔案必須放置在 `assets` 資料夾中。
 
-以下是JSON檔案中的變數清單，以及每個變數所需的最低SDK版本：
+以下是 JSON 檔案中的變數清單，以及每個變數所需的最低 SDK 版本:
 
 * **acquisition**
    * 最低 SDK 版本: 4.1
    * 啟用行動應用程式贏取。
-      * `server`, which is the acquisition server that is checked at the initial launch for an acquisition referrer.
+      * `server`，即在初次啟動時會接受檢查是否有贏取反向連結的贏取伺服器。
       * `appid` – 即產生的 ID，可在贏取伺服器上唯一識別此應用程式。
-   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參 *閱此變數清單中的* referrerTimeout。
+   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參閱變數清單中的 *referrerTimeout*。
 
 * **analyticsForwardingEnabled**
-   * 最低SDK版本為4.8.0。
+   * 最低 SDK 版本為 4.8.0。
    * 預設值為 `false`。
 
       `audienceManager` 物件中的屬性。如果已設定 Audience Manager 且 `analyticsForwardingEnabled` 已設為 `true`，所有的 Analytics 流量也會轉送至 Audience Manager。
@@ -53,7 +53,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
          >[!IMPORTANT]
          >
-         >回溯日期的作業點擊資訊會在作業資訊伺服器呼叫中傳送，並可能套用其他伺服器呼叫。
+         >日期回溯工作階段點撃資訊會以工作階段資訊伺服器呼叫傳送，且可能適用額外的伺服器呼叫。
 
 * **batchLimit**
    * 最低 SDK 版本: 4.1
@@ -64,7 +64,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       請記住以下資訊:
 
       * 預設值為 `0`，即表示未啟用批次處理程序。
-      * 需要 `offlineEnabled = true`。
+      * 需要使用 `offlineEnabled = true`。
 
 * **charset**
    * 最低 SDK 版本: 4.0
@@ -78,19 +78,19 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
       >[!IMPORTANT]
       >
-      >Target需要此變數。
+      >Target 必須有此變數。
 
 * **coopUnsafe**
    * 最低 SDK 版本: 4.16.1
-   * The Boolean property of the `marketingCloud` object that, when set to `true`, causes the device to be opted-out of the Experience Cloud's Device Co-Op.
+   * `marketingCloud` 物件的布林值屬性一旦設為 `true`，就會導致裝置退出 Experience Cloud 的 Device Co-Op。
    * 預設值為 `false`.
    * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
    若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶向其申請黑名單標記。沒有啟用可這些標幟的自助式路徑。
 
    請記住以下資訊:
 
-   * When `coopUnsafe` is set to `true`, `coop_unsafe=1` will always be appended to Audience Manager and Visitor ID hits.
-   * If you enable Analytics server-side forwarding to Audience Manager, you will also see `coop_unsafe=1` Analytics hits.
+   * `coopUnsafe` 設為 `true` 時，`coop_unsafe=1` 一律會附加至 Audience Manager 和訪客 ID 點擊。
+   * 如果啟用 Analytics 伺服器端轉送至 Audience Manager，您也會看到 `coop_unsafe=1` Analytics 點擊。
 
 
 * **environmentId**
@@ -154,7 +154,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       …/yourfile.json”`,
       ```
 
-      若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。要下載更新的配置檔案，請參 [閱啟動前](/help/android/getting-started/requirements.md)。
+      若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔案，請參閱[開始之前](/help/android/getting-started/requirements.md)。
 
 * **postback**
    * 最低 SDK 版本: 4.6
@@ -168,7 +168,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
         "timeout": 0 // optional - number of seconds to wait before timing out.  Default is 2.}
       ```
 
-      The `payload` object in the code is a sample payload for a message definition that goes in the `ADBMobileConfig.json` file. For more information, see [Postbacks](/help/android/analytics-main/postbacks/postbacks.md).
+      程式碼中的 `payload` 物件是會進入 `ADBMobileConfig.json` 檔案之訊息定義的裝載範例。如需詳細資訊，請參閱[回傳](/help/android/analytics-main/postbacks/postbacks.md)。
 
 * **privacyDefault**
    * 最低 SDK 版本: 4.0
@@ -176,7 +176,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
       * 若為 `optedin`，點擊會立即傳送。
       * 若為 `optedout`，點擊會被捨棄。
       * 若為 `optunknown`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
-      If your report suite is not timestamp-enabled, hits are discarded until the privacy status changes to `optedin`.  這僅會設定初始值。如果已在程式碼中設定或變更此值，即會使用新的值直到再次變更，或應用程式解除安裝並重新安裝為止。
+      如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為`optedin`為止。這僅會設定初始值。如果已在程式碼中設定或變更此值，即會使用新的值直到再次變更，或應用程式解除安裝並重新安裝為止。
 
 
 * **referrerTimeout**
@@ -185,7 +185,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
       >[!IMPORTANT]
       >
-      >贏取需要此變數。 如果變數設為 `0` 或不包含變數，SDK 不會等待贏取資料，且不會追蹤贏取量度。
+      >「贏取」必須有此變數。如果變數設為 `0` 或不包含變數，SDK 不會等待贏取資料，且不會追蹤贏取量度。
 
 * **remotes**
    * 最低 SDK 版本: 4.2
@@ -209,11 +209,11 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
       >[!IMPORTANT]
       >
-      >Analytics需要此變數。
+      >Analytics 必須有此變數。
 
 * **server**
    * 最低 SDK 版本: 4.0
-   * Analytics 或 Audience Management 伺服器，依父節點而定。This variable should be populated with the server domain, without an `https://` or `https://` protocol prefix. 此前置詞會由資料庫自動處理且是以 `ssl` 變數為基礎。如果 `ssl` 為 `true`，會對此伺服器進行安全連線。如果 `ssl` 為 `false`，會對此伺服器進行非安全連線。
+   * Analytics 或 Audience Management 伺服器，依父節點而定。應該以伺服器網域填入此變數，不含 `https://` 或 `https://` 通訊協定前置詞。此前置詞會由資料庫自動處理且是以 `ssl` 變數為基礎。如果 `ssl` 為 `true`，會對此伺服器進行安全連線。如果 `ssl` 為 `false`，會對此伺服器進行非安全連線。
 
 * **ssl**
    * 最低 SDK 版本: 4.0
@@ -236,7 +236,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
    * 決定 Target 等待回應的時間長度。
 
 
-## Sample `ADBMobileConfig.json` file {#section_4655EF79744649E5A5AE19E3224C472C}
+## 範例 `ADBMobileConfig.json` 檔案 {#section_4655EF79744649E5A5AE19E3224C472C}
 
 以下是範例 `ADBMobileConfig.json` 檔案:
 
