@@ -4,7 +4,7 @@ seo-description: '在「管理應用程式設定」頁面，您可以進行下�
 seo-title: 設定您的應用程式
 title: 設定您的應用程式
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ---
@@ -28,7 +28,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
       * **贏取**
 
-         追蹤應用程式下載行銷活動的參考 URL。如需詳細資訊，請參閱 [贏取](/help/using/acquisition-main/acquisition-main.md).
+         追蹤應用程式下載行銷活動的參考 URL。如需詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md)。
 
       * **生命週期**
 
@@ -59,7 +59,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    >[!IMPORTANT]
    >
-   >Before you download the SDKs and tools, you must configure the SDK Analytics options. For more information, see Configure the SDK Analytics Options.[](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)
+   >下載 SDK 和工具之前，您必須先設定 SDK 分析選項。如需詳細資訊，請參閱[設定 SDK 分析選項](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/t-config-analytics.md)。
 
    如果您已準備好升級至 4.x SDK，或是您正在使用新的應用程式，可從「管理應用程式設定」頁面的底部下載最新 SDK 及開發工具。
 
