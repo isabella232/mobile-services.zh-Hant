@@ -120,6 +120,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >此呼叫不會傳送點擊。
 
    * 以下是此方法的語法:
+
    ```java
    publicstaticvoidtrackTimedActionStart(Stringaction,Map<String,Object>contextData);
    ```

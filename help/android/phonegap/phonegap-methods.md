@@ -202,6 +202,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    提交 PII 收集要求。
 
    * 以下是此方法的語法:
+
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```
