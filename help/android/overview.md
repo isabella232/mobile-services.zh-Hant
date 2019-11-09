@@ -59,4 +59,4 @@ Adobe Mobile Services 提供的使用者介面，將 Adobe Experience Cloud 適�
 
 >[!IMPORTANT]
 >
->Adobe Bloodhound 已於 **2017 年 4 月 30 日**&#x200B;起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care �
+>Adobe Bloodhound 已於 **2017 年 4 月 30 日**&#x200B;起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
