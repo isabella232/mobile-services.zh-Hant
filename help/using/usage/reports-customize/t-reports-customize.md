@@ -68,4 +68,4 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
    ![](assets/customize7.png)
 
-   花一些時間測試報表�
+   花一些時間測試報表自訂選單上的不同選項，並且將您最喜愛的選項加入書籤。Adobe Mobile 中的報表 URL 功能完善，可以透過電子郵件傳送或加入您的最愛。
