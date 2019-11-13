@@ -7,7 +7,7 @@ solution: Marketing Cloud，開發人員
 title: iOS 和 Android 4.x SDK 適用的 Unity 外掛程式
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
 translation-type: tm+mt
-source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
+source-git-commit: df4ff7128357a18c56d840eb5697f9c8813ad751
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
 此外掛程式可讓您從 Unity 應用程式傳送 Adobe Analytics 呼叫。
 
-上次更新: **2016 年 10 月 20 日**
+Last Updated: **November 12, 2019**
 
 ## 入門 {#section_246D1F9B32ED47EABC41BDA8D0BD0CC7}
 
@@ -28,16 +28,6 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
 
    * ADBMobile
 
-      * 示範
-
-         * ADBMobileDemo.cs
-         * BooDemo.boo
-         * BooScene.unity
-         * CSharpScene.unity
-         * JavaScriptDemo.js
-         * JavaScriptScene.unity
-         * SecondScene.unity
-         * SecondSceneScript.cs
    * 外掛程式
 
       * ADBMobile.cs
@@ -55,7 +45,6 @@ source-git-commit: 5fbba02eb61679344f638b6465e47b0d9ae5a988
          * ADBMobileWrapper.h
          * ADBMobileWrapper.mm
          * AdobeMobileLibrary.a
-
 
 
 可選資料夾: Demo 資料夾包含每個受支援指令碼語言的 Unity 場景和範例程式碼。
