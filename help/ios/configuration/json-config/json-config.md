@@ -4,10 +4,10 @@ seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
 seo-title: ADBMobile JSON 設定
 solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
+translation-type: tm+mt
+source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
 
@@ -70,7 +70,7 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **charset**
 
-   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/charset.html)。
+   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html)。
 
    * 最低 SDK 版本: 4.0
 
@@ -245,7 +245,11 @@ source-git-commit: 19264af3f4a675add6f61c27f4cdaf20033b9bb7
 
 * **ssl**
 
-   預設值為 `false`。啟用 (`true`) 或停用 (`false`) 透過 SSL (HTTPS) 傳送測量資料的能力。
+   >[!IMPORTANT]
+   >
+   > 從4.10.0版開始，如果未設定標幟，SSL預設為true。
+
+   啟用 (`true`) 或停用 (`false`) 透過 SSL (HTTPS) 傳送測量資料的能力。
 
    以下顯示「回撥」訊息範本的定義:
 
