@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ---
@@ -70,7 +70,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 * **charset**
 
-   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://marketing.adobe.com/resources/help/en_US/sc/implement/charset.html)。
+   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/charset.html)。
 
    * 最低 SDK 版本: 4.0
 
@@ -86,7 +86,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 * **coopUnsafe**
 
-   若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶向其申請黑名單標記。沒有啟用可這些標幟的自助式路徑。
+   若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶向其申請黑名單標幟。沒有啟用可這些標幟的自助式路徑。
 
    請記住以下資訊:
 
@@ -247,7 +247,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
    >[!IMPORTANT]
    >
-   > 從4.10.0版開始，如果未設定標幟，SSL預設為true。
+   > 從 4.10.0 版開始，如果標幟未設定，SSL 會預設為 true。
 
    啟用 (`true`) 或停用 (`false`) 透過 SSL (HTTPS) 傳送測量資料的能力。
 
