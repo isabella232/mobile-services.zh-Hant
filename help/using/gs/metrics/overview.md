@@ -1,14 +1,14 @@
 ---
 description: 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
-keywords: 行動
+keywords: mobile
 seo-description: 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
 seo-title: 顯示行動量度
 solution: Marketing Cloud,Analytics
 title: 顯示行動量度
-topic: 量度
+topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: ht
-source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: d028fe0f9477bc011aa8fda21a0a389808df0fce
 
 * **顯示關鍵績效指標**
 
-   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。若要深入研究，請按一下&#x200B;**[!UICONTROL 關鍵績效指標]**&#x200B;旁的 **** &gt; 圖示。圖表上的線段以不同色彩標示，將滑鼠游標移至任何資料點上方，即可查看特定日期的統計資料。按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
+   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. 圖表上的線段以不同色彩標示，將滑鼠游標移至任何資料點上方，即可查看特定日期的統計資料。按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
 
 ## 編輯應用程式的設定 {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
