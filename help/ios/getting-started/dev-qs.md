@@ -4,10 +4,10 @@ seo-description: '此資訊可協助您實施 iOS 資料庫並收集生命週期
 seo-title: 核心實施與生命週期
 solution: Marketing Cloud,Analytics
 title: 核心實施與生命週期
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
+translation-type: tm+mt
+source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
 
@@ -64,7 +64,7 @@ source-git-commit: 4db9781e6e1e75a04d9715a41c5a32c10ede1bf4
    ![](assets/step_3.png)
 
 1. 按一下&#x200B;**[!UICONTROL 完成]**。
-1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，選取 **[!UICONTROL`ADBMobileConfig.json`]**。
+1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，選取 **`ADBMobileConfig.json`**。
 1. 在&#x200B;**[!UICONTROL 檔案檢查工具]**&#x200B;中，將 JSON 檔案新增至將使用 Adobe SDK 之專案中的任何目標。
 
    ![](assets/step_4.png)
