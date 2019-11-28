@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 顯示行動量度
 topic: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 您可顯示最近瀏覽過的應用程式的關鍵績效量度。依預設，您可檢視最多 12 個應用程式。您可以在「概述」頁面上變更日期範圍、建立劃分資料的篩選器，以及編輯任何應用程式。
 
-每個應用程式所顯示的量度會根據您在建立應用程式期間選取的關鍵量度而有所不同。如需詳細資訊，請參閱[新增應用程式](/help/using/manage-apps/t-new-app.md).
+每個應用程式所顯示的量度會根據您在建立應用程式期間選取的關鍵量度而有所不同。如需詳細資訊，請參閱[新增應用程式](/help/using/manage-apps/t-new-app.md)。
 
 如果您要檢視的應用程式未顯示，請輸入應用程式名稱或按一下&#x200B;**[!UICONTROL 完整應用程式]**&#x200B;中的下拉式清單進行搜尋。
 
@@ -35,7 +35,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
    若要建立篩選器:
 
-   1. 按一下「**[!UICONTROL 篩選]**」圖示，顯示「**嚴格篩選]」對話方塊。[!UICONTROL **
+   1. 按一下「**[!UICONTROL 篩選]**」圖示，顯示「**[!UICONTROL 嚴格篩選]**」對話方塊。
    1. 按一下&#x200B;**[!UICONTROL 新增規則]**，從下拉式清單中選取選項，然後輸入必要資訊。
 
       例如，您可以選取&#x200B;**[!UICONTROL 應用程式版本]**&#x200B;並輸入版本的 `4.5`。或是選取&#x200B;**[!UICONTROL 裝置類型]**，然後輸入類型 `Android`。
@@ -53,13 +53,13 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 * **顯示關鍵績效指標**
 
-   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。To drill down, click the icon next to **[!UICONTROL Key Performance Indicators]**. 圖表上的線段以不同色彩標示，將滑鼠游標移至任何資料點上方，即可查看特定日期的統計資料。按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
+   按一下應用程式的名稱，即可顯示關鍵績效指標的相關詳細資料。圖表上的線段以不同色彩標示，將滑鼠游標移至資料點上方，即可查看特定日期的統計資料。若要深入研究，請按一下&#x200B;**[!UICONTROL 關鍵績效指標]**&#x200B;旁的圖示。圖表上的線段以不同色彩標示，將滑鼠游標移至任何資料點上方，即可查看特定日期的統計資料。按一下表格中的任何欄標題，可依遞增或遞減順序排序資料。
 
 ## 編輯應用程式的設定 {#section_C1CF227A2E534A798F0073E43AD6A2D1}
 
 1. 按一下應用程式標題中的齒輪圖示，開啟「應用程式資訊」頁面。
 1. 編輯應用程式的設定。
 
-   如需每個設定的詳細資訊，請參閱[設定您的應用程式](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md).
+   如需每個設定的詳細資訊，請參閱[設定您的應用程式](/help/using/c-manage-app-settings/c-mob-confg-app/c-mob-confg-app.md)。
 
 1. 按一下&#x200B;**[!UICONTROL 儲存]**。
