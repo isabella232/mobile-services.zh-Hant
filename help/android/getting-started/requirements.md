@@ -7,7 +7,7 @@ title: 開始之前
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 translation-type: tm+mt
-source-git-commit: 3249a0f35807b230f8200e81772957fbb255832b
+source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 ---
 
@@ -35,10 +35,9 @@ Analytics 管理員和應用程式開發人員必須完成以下作業:
 
 ### 應用程式開發人員
 
-1. 確保您的 Analytics 管理員完成[角色特定作業](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC)的 *Analytics 管理員*&#x200B;一節中的步驟。
-
+1. Ensure that your Analytics administrator has completed the steps in the *Analytics Administrators* in [Role-Specific Tasks](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC).
 1. 確認您的 Analytics 管理員完成[登入 Adobe Mobile Services 使用者介面](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)的其中一節。
-1. 報表套裝設定完成後，請完成[下載 SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46) 中的步驟。
+1. After the report suite has been configured, complete steps in the [Download the SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
 
 如需有關角色與權限的詳細資訊，請參閱[角色與權限](/help/using/gs/c-mob-roles-and-permissions.md)。
 
@@ -91,11 +90,15 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
    >[!IMPORTANT]
    >
-   >若要在右窗格中查看您的應用程式，您必須先建立應用程式。 如需建立應用程式的詳細資訊，請參 [閱「新增應用程式」](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)。
+   >若要在右窗格中查看您的應用程式，您必須先建立應用程式。 如需建立應用程式的詳細資訊，請參 [閱「新增應用程式」。](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
 
 1. 在您的應用程式中，在左窗格中按一下「管 **[!UICONTROL 理應用程式設定」]**。
-1. 在頁面底部，向下捲動至「應用程式SDK **[!UICONTROL 下載」區段]**。
-1. 下載您的平台適用的 SDK 和範例應用程式。
+
+   >[!IMPORTANT]
+   >
+   >如果您未看到「管 **[!UICONTROL 理應用程式設定」選項]**，請確定您已登入Adobe Mobile Services。 若要確認，請按一![下頁面右上方的解決方案切換器圖示](assets/solution-switcher.png)，並確保**[!UICONTROL  Adobe Mobile Services]** 顯示在左上方。
+
+1. 在「管理應用程式設定」頁面的底部，在「 **[!UICONTROL App SDK Downloads」（應用程式SDK下載）區段中]**，下載適用於您平台的SDK和範例應用程式。
 
 >[!TIP]
 >
