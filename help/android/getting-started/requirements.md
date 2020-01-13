@@ -6,7 +6,7 @@ solution: Marketing Cloud,Analytics
 title: 開始之前
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 ---
@@ -14,20 +14,20 @@ source-git-commit: 0720b2004097eb288bd8f59723eeb09a79dd81e7
 
 # 開始之前 {#before-you-start}
 
-設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業:
+設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業：
 
 ## 角色特定作業 {#section_8B9EA1FA189F4C6DB7D829F0B5844FBC}
 
-Analytics 管理員和應用程式開發人員必須完成以下作業:
+Analytics 管理員和應用程式開發人員必須完成以下作業：
 
 ### Analytics 管理員
 
-設定報表套裝並收集行動應用程式資料: 
+設定報表套裝並收集行動應用程式資料：
 
 1. 完成[登入 Adobe Mobile Services 使用者介面](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)的其中一節。
 1. 為每位應用程式開發人員建立 Analytics 帳戶。
 
-應用程式開發人員現在便擁有檢視您所建立之報表套裝的存取權。。
+應用程式開發人員現在擁有檢視您所建立之報表套裝的存取權。
 
 >[!IMPORTANT]
 >
@@ -35,21 +35,21 @@ Analytics 管理員和應用程式開發人員必須完成以下作業:
 
 ### 應用程式開發人員
 
-1. Ensure that your Analytics administrator has completed the steps in the *Analytics Administrators* in [Role-Specific Tasks](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC).
-1. 確認您的 Analytics 管理員完成[登入 Adobe Mobile Services 使用者介面](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)的其中一節。
-1. After the report suite has been configured, complete steps in the [Download the SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46).
+1. 確保您的 Analytics 管理員已完成&#x200B;*角色特定作業*&#x200B;中 [Analytics 管理員](../getting-started/requirements.md#section_8B9EA1FA189F4C6DB7D829F0B5844FBC)一節所述的步驟。
+1. 確認您的 Analytics 管理員已完成[登入 Adobe Mobile Services 使用者介面](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)的其中一節。
+1. 報表套裝設定完成後，請完成[下載 SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46) 中的步驟。
 
 如需有關角色與權限的詳細資訊，請參閱[角色與權限](/help/using/gs/c-mob-roles-and-permissions.md)。
 
-## 登入 Adobe Mobile Services 使用者介面 {#section_690A2EC4572E47869F183974E932A6A8}
+## 登入 Adobe Mobile Services 使用者介面{#section_690A2EC4572E47869F183974E932A6A8}
 
 Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告介面。完成這些步驟後，您可以下載設定檔案，其中的資料收集伺服器、報表套裝及其他許多設定均已預先設定完成。
 
-您可以透過下列其中一種方式登入 Adobe Mobile Services 使用者介面:
+您可以透過下列其中一種方式登入 Adobe Mobile Services 使用者介面：
 
 ### Experience Cloud
 
-以您的 Adobe ID 登入 [Experience Cloud](https://marketing.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。如需詳細資訊，請參閱[管理 Experience Cloud 使用者和產品](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+以您的 Adobe ID 登入 [Experience Cloud](https://marketing.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。如需詳細資訊，請參閱[管理 Experience Cloud 使用者和產品](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 >[!TIP]
 >
@@ -61,10 +61,10 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 ## 建立報表套裝 {#section_7BC602ED1ABA42C6AB722F506B5219F3}
 
-若要建立報表套裝，以收集應用程式資料並定義應用程式:
+若要建立報表套裝，以收集應用程式資料並定義應用程式：
 
-1. 在瀏覽器中輸入https://mobilemarketing.adobe.com/以登入Mobile Services [UI](https://mobilemarketing.adobe.com/) 。
-1. Click **[!UICONTROL Create an App]**.
+1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)，登入 Mobile Services 使用者介面。
+1. 按一下&#x200B;**[!UICONTROL 建立應用程式]**。
 
    如果沒有看見此按鈕，請按一下&#x200B;**[!UICONTROL 「管理應用程式]**>**[!UICONTROL &#x200B;新增」]**。
 
@@ -82,35 +82,34 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
 ## 下載 SDK {#section_044C17DF82BC4FD8A3E409C456CE9A46}
 
-若要下載行動 SDK:
+若要下載行動 SDK：
 
-1. 在瀏覽器中輸入https://mobilemarketing.adobe.com/以登入Mobile Services [UI](https://mobilemarketing.adobe.com/) 。
-1. 在左窗格中，按一下「所 **[!UICONTROL 有應用程式]**」下拉式清單，然後選取您的應用程式。
-您也可以在右窗格中選取您的應用程式。
-
-   >[!IMPORTANT]
-   >
-   >若要在右窗格中查看您的應用程式，您必須先建立應用程式。 如需建立應用程式的詳細資訊，請參 [閱「新增應用程式」。](https://docs.adobe.com/content/help/en/mobile-services/using/manage-apps-ug/t-new-app.html)
-
-1. 在您的應用程式中，在左窗格中按一下「管 **[!UICONTROL 理應用程式設定」]**。
+1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)，登入 Mobile Services 使用者介面。
+1. 在左窗格中，按一下&#x200B;**[!UICONTROL 「所有應用程式」]**下拉式清單，然後選取您的應用程式。您也可以從右窗格中選取您的應用程式。
 
    >[!IMPORTANT]
    >
-   >如果您未看到「管 **[!UICONTROL 理應用程式設定」選項]**，請確定您已登入Adobe Mobile Services。 若要確認，請按一![下頁面右上方的解決方案切換器圖示](assets/solution-switcher.png)，並確保**[!UICONTROL  Adobe Mobile Services]** 顯示在左上方。
+   >若要在右窗格中查找應用程式，請先建立應用程式。如需建立應用程式的相關資訊，請參閱[新增應用程式](https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/manage-apps-ug/t-new-app.html)。
 
-1. 在「管理應用程式設定」頁面的底部，在「 **[!UICONTROL App SDK Downloads」（應用程式SDK下載）區段中]**，下載適用於您平台的SDK和範例應用程式。
+1. 進入您的應用程式後，在左窗格中按一下&#x200B;**[!UICONTROL 「管理應用程式設定」]**。
+
+   >[!IMPORTANT]
+   >
+   >若畫面未顯示&#x200B;**[!UICONTROL 「管理應用程式設定」]**選項，請確認您是否已登入Adobe Mobile Services。若要確認，請按一下頁面右上方的![解決方案切換器](assets/solution-switcher.png)圖示，並確認左上方是否顯示**[!UICONTROL  Adobe Mobile Services]**。
+
+1. 在「管理應用程式設定」頁面底部的&#x200B;**[!UICONTROL 「應用程式 SDK 下載」]**區段中，下載適用於您平台的 SDK 和範例應用程式。
 
 >[!TIP]
 >
 >應用程式的設定檔案會自動包含在 SDK 下載中，因此您無須另外下載此檔案。然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
 
-如果您正使用 Android Studio，您也可以將以下項目新增至您應用程式的 `build.gradle` 檔:
+如果您正使用 Android Studio，您也可以將以下項目新增至您應用程式的 `build.gradle` 檔：
 
 ```java
 compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 ```
 
-請記住以下資訊:
+請記住以下資訊：
 
 * 將程式碼範例中的版本編號替換為適當的 Android SDK 版本。
 * 下載設定檔案並將其包含在您的專案中。
