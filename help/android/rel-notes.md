@@ -4,10 +4,10 @@ seo-description: 適用於 Experience Cloud 解決方案的 Android SDK 4.x 發�
 seo-title: 發行說明
 solution: Marketing Cloud,Analytics
 title: 發行說明
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: ht
-source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
+translation-type: tm+mt
+source-git-commit: 712a1107b317f02216e4df8d75fddda67a6f1feb
 
 ---
 
@@ -15,6 +15,12 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 # 發行說明 {#release-notes}
 
 以下是適用於 Experience Cloud 解決方案的 Android SDK 4.x 的發行說明、已知問題和 Hotfix 資訊:
+
+**2020年1月16日：4.18.0**
+
+* Acquisition - Added a new API, `Analytics.processGooglePlayInstallReferrerUrl(final String url)`, to support Google Play Install Referrer APIs.
+
+   如需安裝 Referrer API 的詳細資訊，請參閱[您還在使用 InstallBroadcast 嗎？在 2020 年 3 月 1 日前切換至 Play Referrer API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)。
 
 **2019 年 9 月 20 日: 4.17.10 版**
 
@@ -41,4 +47,4 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 * 訪客 ID 服務 - 將連線和讀取逾時從 2 秒增加到 5 秒。
 
 
-如需詳細瞭解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/)。
+如需詳細瞭解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)。
