@@ -95,7 +95,7 @@ Adobe Mobile Services 是行動應用程式分析與目標設定的主要報告�
 
    >[!IMPORTANT]
    >
-   >若畫面未顯示&#x200B;**[!UICONTROL 「管理應用程式設定」]**選項，請確認您是否已登入Adobe Mobile Services。若要確認，請按一下頁面右上方的![解決方案切換器](assets/solution-switcher.png)圖示，並確認左上方是否顯示**[!UICONTROL  Adobe Mobile Services]**。
+   >若畫面未顯示&#x200B;**[!UICONTROL 「管理應用程式設定」]** 選項，請確認您是否已登入Adobe Mobile Services。若要確認，請按一下頁面右上方的![解決方案切換器](assets/solution-switcher.png)圖示，並確認左上方是否顯示 **[!UICONTROL  Adobe Mobile Services]**。
 
 1. 在「管理應用程式設定」頁面底部的&#x200B;**[!UICONTROL 「應用程式 SDK 下載」]**區段中，下載適用於您平台的 SDK 和範例應用程式。
 
