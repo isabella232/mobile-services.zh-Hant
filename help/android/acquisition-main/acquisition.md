@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 行動應用程式贏取
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
-我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
@@ -34,25 +34,25 @@ source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 **在 SDK 4.18.0 版及更新版本中**:
 
-從2020年3月1日開始，Google淘汰install_referrer意圖廣播機制。 如需詳細資訊，請參 [閱StallBroadcast? 在 2020 年 3 月 1 日前切換至 Play Referrer API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)。若要繼續從Google Play商店收集安裝反向連結資訊，請更新您的應用程式以使用SDK 4.18.0版或更新版本。
+自 2020 年 3 月 1 日開始，Google 將終止支援 install_referrer 意圖廣播機制。如需詳細資訊，請參閱[仍使用 InstallBroadcast 嗎？在 2020 年 3 月 1 日前切換至 Play Referrer API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)。若要繼續從 Google Play 商店收集安裝反向連結資訊，請更新您的應用程式以使用 SDK 4.18.0 版或更新版本。
 
-取代後，您必須從新的Google API收集安裝反向連結URL，並將產生的URL傳遞至SDK，而不是建立 `BroadcastReceiver`。
+隨著支援終止，您必須從新的 Google API 收集安裝反向連結 URL，並將產生的 URL 傳遞至 SDK，而不是建立 `BroadcastReceiver`。
 
-1. 將Google Play安裝反向連結套件新增至您的Gradle檔案的相依性：
+1. 將 Google Play Install Referrer 套件新增至您的 Gradle 檔案的相依項目：
 
    `implementation 'com.android.installreferrer:installreferrer:1.1'`
 
-1. 若要從「安裝反向連結API」擷取反向連結URL，請完成「取得安裝反 [向連結」中的步驟](https://developer.android.com/google/play/installreferrer/library#install-referrer)。
+1. 若要從 Install Referrer API 擷取反向連結 URL，請完成[取得安裝反向連結](https://developer.android.com/google/play/installreferrer/library#install-referrer)中的步驟。
 
-1. 將反向連結URL傳遞至SDK:
+1. 將反向連結 URL 傳遞至 SDK：
 
    `Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);`
 
 >[!IMPORTANT]
 >
->為避免應用程式中不必要的API呼叫，Google建議您在安裝後只叫用API一次。
+>為避免應用程式發出不必要的 API 呼叫，Google 建議您只在安裝後立即叫用 API 一次。
 
-若要決定在應用程式中使用Google Play安裝反向連結API的最佳方式，請參閱Google的檔案。 以下是如何搭配Google Play安裝反向連結API使用Adobe SDK的範例：
+若要決定在應用程式中使用 Google Play Install Referrer API 的最佳方式，請參閱 Google 的文件。以下是如何將 Adobe SDK 搭配 Google Play Install Referrer API 使用的範例：
 
 ```java
 void handleGooglePlayReferrer() {
@@ -141,7 +141,7 @@ void handleGooglePlayReferrer() {
 
 1. 為贏取變數加上前置詞`adb`「。
 
-   當SDK在首次啟動時收到Adobe Mobile services的贏取資料時，資料會儲存，並可在先前向SDK註冊的 `AdobeDataCallback` 例項中使用。 如需詳細資訊，請參閱[設定方法](/help/android/configuration/methods.md)。
+   首次啟動時，SDK 從 Adobe Mobile Services 收到的贏取資料會儲存，並可在先前向 SDK 註冊的 `AdobeDataCallback` 執行個體中使用。如需詳細資訊，請參閱[設定方法](/help/android/configuration/methods.md)。
 
 1. 系統將會使用 `MobileDataEvent.MOBILE_EVENT_ACQUISITION_INSTALL` 或 `MobileDataEvent.MOBILE_EVENT_ACQUISITION_LAUNCH` 事件類型。
 
