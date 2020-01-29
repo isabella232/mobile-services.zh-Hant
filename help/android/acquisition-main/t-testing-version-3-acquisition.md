@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 測試第 3 版贏取
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
@@ -25,13 +25,13 @@ source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 >[!IMPORTANT]
 >
->如果您是使用Google Play安裝反向連結API來實作，則無法在應用程式進入Google play商店之前測試贏取。
+>如果您是使用 Google Play Install Referrer API 來實作，則在您的應用程式出現在 Google Play 商店中之前，無法測試贏取。
 
 應用程式必須是全新安裝，或資料已全部清除 (在&#x200B;**[!UICONTROL 設定]**中進行)，且每次執行測試時皆須如此。這樣即可確保應用程式首次啟動時，與促銷活動查詢字串參數關聯的初始生命週期量度可以順利傳送。
 
 1. 完成[行動應用程式贏取](/help/android/acquisition-main/acquisition.md)中的先決條件任務，然後確定您已為 `INSTALL_REFERRER` 正確實行廣播接收器。
 
-1. In the Adobe Mobile Services UI, click  **[!UICONTROL Acquisition]**>**[!UICONTROL  Marketing Links Builder]** and generate an Acquisition Marketing Link URL that sets Google Play as the destination for Android devices.
+1. 在 Adobe Mobile Services 使用者介面中，按一下&#x200B;**[!UICONTROL 「贏取]**>**[!UICONTROL &#x200B;行銷連結建立器」]**並產生贏取行銷連結 URL，此 URL 會將 Google Play 設為 Android 裝置的目的地。
 
    如需詳細資訊，請參閱[行銷連結建立器](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)。
 
@@ -68,7 +68,7 @@ source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
    | 設定 | 值 |
    |--- |--- |
-   | acquisition | The server should be `c00.adobe.com`.   *`appid`*should equal the`appid`in your acquisition link. |
+   | acquisition | 伺服器應為 `c00.adobe.com`，且 *`appid`*應與您贏取連結中的`appid`相等。 |
    | analytics | 為了測試的目的，請將反向連結逾時設為具有足夠的時間 (60 秒以上) 來手動傳送廣播。您可以在測試結束後將逾時設定還原為原始值。 |
 
 1. 將裝置與電腦連接，解除安裝應用程式，然後重新安裝。
