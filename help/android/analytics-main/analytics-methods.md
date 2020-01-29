@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: Analytics 方法
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
 
 ---
@@ -237,7 +237,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **processReferrer**
 
-   從Google Play商店處理反向連結促銷活動資料，以供日後使用。
+   處理來自 Google Play 商店的反向連結行銷活動資料，以供日後使用。
 
    * 以下是此方法的語法:
 
@@ -255,15 +255,15 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    >[!IMPORTANT]
    >
-   > 此API可從SDK 4.18.0版開始使用
+   > 此 API 從 SDK 4.18.0 版開始提供使用
 
-   從提供的Google play安裝反向連結URL擷取贏取資料。
+   從提供的 Google Play 安裝反向連結 URL 擷取贏取資料。
 
-   從此API收集的資料會在傳送至Analytics的安裝點擊時傳送，並可在Adobe資料回呼中使用。
+   從此 API 收集的資料會在傳送至 Analytics 的安裝點擊時傳送，並可在Adobe資料回撥中使用。
 
-   如果SDK已收集反向連結資料，呼叫此方法會導致無操作。
+   如果 SDK 已收集反向連結資料，呼叫此方法會導致無操作。
 
-   如需如何擷取反向連結URL的詳細資訊，請參閱Google檔案：https://developer.android.com/google/play/installreferrer/library。
+   如需如何擷取反向連結 URL 的詳細資訊，請參閱 Google 文件：https://developer.android.com/google/play/installreferrer/library。
 
    * 以下是此方法的語法:
 
