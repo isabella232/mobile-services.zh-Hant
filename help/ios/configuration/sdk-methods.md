@@ -3,11 +3,11 @@ description: 以下為 iOS 資料庫所提供的方法清單。
 seo-description: 以下為 iOS 資料庫所提供的方法清單。
 seo-title: '設定方法 '
 solution: Marketing Cloud,Analytics
-title: 設定方法
-topic: 開發人員和實施
+title: '設定方法 '
+topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
 
 ---
 
@@ -268,6 +268,40 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       ```objective-c
       [ADBMobile collectLifecycleDataWithAdditionalData:@{@"entryType":@"appShortcutIcon"}]; 
       ```
+
+* **pauseCollectingLifecycleData**
+
+   使用此API可暫停生命週期資料的收集。 如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。
+
+   >[!IMPORTANT]
+   >
+   >在委派方 `applicationDidEnterBackground` 法中，您必須先呼叫該方 `pauseCollectingLifecycleData` 法。
+   >
+   >提供API是為了緩解iOS 13中iPhone7/7s或舊版裝置上作業長度量度異常的問題。 這是由於iOS 13中發生了一些未知的變更，當您回溯應用程式時，iOS沒有留出足夠的時間讓背景工作完成。
+
+   * 以下是此方法的語法:
+
+      ```objective-c
+      + (void) pauseCollectingLifecycleData;
+      ```
+
+   * 以下是此方法的範例程式碼:
+
+      ```objective-c
+      - (void)applicationDidEnterBackground:(UIApplication *)application{
+          // manually stop the lifecycle of SDK
+          // important: do NOT call any track state or track action after this line
+          [ADBMobile pauseCollectingLifecycleData];   
+      
+      
+          // the following code is optional, may help to mitigate the issue a bit more. If you have other logic to run here that probably takes more than 10ms, then there is no need to add this line of code.
+          [NSThread sleepForTimeInterval:0.01];
+      
+      
+          // app's code to handle applicationDidEnterBackground
+      }
+      ```
+
 
 * **overrideConfigPath**
 
