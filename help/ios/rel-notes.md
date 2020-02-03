@@ -4,10 +4,10 @@ seo-description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 發行�
 seo-title: 發行說明
 solution: Marketing Cloud,Analytics
 title: 發行說明
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
+translation-type: tm+mt
+source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 ---
 
@@ -15,6 +15,14 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 # 發行說明 {#release-notes}
 
 以下是適用於 Experience Cloud 解決方案的 iOS SDK 4.x 的發行說明、已知問題和 Hotfix 資訊:
+
+**2020年2月4日：4.19.0版**
+
+* 生命週期——新增一個APIpauseCollectingLifecycleData，以緩解從某些舊iOS裝置回報的異常作業長度資料。
+
+**2019年11月8日：版本4.18.9**
+
+* 在應用程式訊息中——已修正無法將快取或打包的影像載入全螢幕訊息的錯誤。
 
 **2019 年 9 月 20 日: 4.18.8 版**
 
@@ -52,4 +60,4 @@ source-git-commit: 7fe7c78262a6d35dd27787554bb4f9ee92faa952
 
 * 訪客 ID 服務 - `setPushIdentifier` API 呼叫現在會在每次呼叫時將同步處理呼叫傳送至訪客 ID 服務。
 
-如需詳細瞭解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/)。
+如需詳細瞭解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)。
