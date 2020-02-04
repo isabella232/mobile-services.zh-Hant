@@ -7,7 +7,7 @@ title: 快速入門概述
 topic: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 translation-type: tm+mt
-source-git-commit: 71e11b23badfcddaa8c2e61a12197982dfd31f57
+source-git-commit: a424eb9be750e22e7130dae0d1c54a081ac475cd
 
 ---
 
@@ -25,5 +25,6 @@ source-git-commit: 71e11b23badfcddaa8c2e61a12197982dfd31f57
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
->[！重要]
+>[!IMPORTANT]
+>
 >自2020年4月1日起，Apple將不再支援UIWebView API。 若要避免任何問題，請確定您使用v4 SDK for iOS 4.18.8或更新版本。 如需UIWebView API的詳細資訊，請參 [閱UIWebView](https://developer.apple.com/documentation/uikit/uiwebview)。
