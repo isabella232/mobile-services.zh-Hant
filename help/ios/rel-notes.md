@@ -6,8 +6,8 @@ solution: Marketing Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
+translation-type: tm+mt
+source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 **2020 年 2 月 4 日：4.19.0 版**
 
-* 生命週期 -  新增 API (pauseCollectingLifecycleData)，以緩解某些舊 iOS 裝置回報的作業長度異常資料。
+* 生命週期——新增一個新APIpauseCollectingLifecycleData，以緩解某些舊iOS裝置回報的作業階段長度資料異常。
 
 **2019 年 11 月 8 日：4.18.9 版**
 
@@ -60,4 +60,4 @@ source-git-commit: c7a0fde8b981ae5cfb0f54131d8ae59a008825b3
 
 * 訪客 ID 服務 - `setPushIdentifier` API 呼叫現在會在每次呼叫時將同步處理呼叫傳送至訪客 ID 服務。
 
-如需詳細了解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/)。
+如需詳細了解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)。
