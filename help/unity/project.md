@@ -2,12 +2,12 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: Building your project
-solution: Marketing Cloud，開發人員
+seo-title: 建立專案
+solution: Marketing Cloud,Developer
 title: 建立專案
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
@@ -39,13 +39,13 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 如果您需要使用您自己的自訂資訊清單檔案，應新增下列變更。
 
-新增下列項目的權限:
+新增下列項目的權限：
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
 
 ```java
-<uses-permission android:name="android.permission.INTERNET" /> 
+<uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
@@ -53,16 +53,6 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ```java
 <activity android:name="com.adobe.mobile.MessageFullScreenActivity"  
-android:theme="@android:style/Theme.Translucent.NoTitleBar" /> 
-<receiver android:name="com.adobe.mobile.MessageNotificationHandler" /> 
-```
-
-如果您使用贏取，請新增下列接收器：
-
-```java
-<receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true"> 
-   <intent-filter> 
-      <action android:name="com.android.vending.INSTALL_REFERRER" /> 
-   </intent-filter> 
-</receiver>
+android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+<receiver android:name="com.adobe.mobile.MessageNotificationHandler" />
 ```
