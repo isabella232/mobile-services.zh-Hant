@@ -7,7 +7,7 @@ solution: Marketing Cloud,Developer
 title: 呼叫資料庫
 uuid: 74c30379-6cdf-4318-9db8-e14fb63aa18a
 translation-type: tm+mt
-source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
+source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 ---
 
@@ -18,8 +18,4 @@ source-git-commit: 7cb277652eaeedff7253a4f3c42208ceaf78acb7
 
 * **C#:** 使用 `com.adobe.mobile;`
 
-* **JavaScript:** 匯入 `com.adobe.mobile;`
-
-* **boo:** 匯入 `com.adobe.mobile;`
-
-After you import the namespace, you can make calls directly to the plug-in via the static methods of the ADBMobile class.
+匯入命名空間後，您可以透過ADBMobile類別的靜態方法直接對外掛程式進行呼叫。
