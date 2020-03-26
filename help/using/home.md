@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
+source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
 
 ---
 
@@ -56,7 +56,7 @@ source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
 以下是可協助開發人員的連結:
 
 * [下載行動 SDK 和工具](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-analytics/download-sdk.md)
-* [Developer](https://marketing.adobe.com/resources/help/en_US/reference/developer.html)
+* [Developer](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)
 
 ## 社群資源
 
@@ -74,16 +74,16 @@ source-git-commit: 6cb8c0a12c39287209e9f0060ace179ab563cd61
 
 下列平台提供原生程式庫：
 
-* [適用於 Experience Cloud 解決方案的 Android SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [適用於 Experience Cloud 解決方案的 iOS SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
-* [iOS和Android 4.x SDK專用的Unity外掛程式](https://docs.adobe.com/content/help/en/mobile-services/unity/get-started.html)
-* [Experience Cloud解決方案4.x SDK的Xamarin元件](https://docs.adobe.com/content/help/en/mobile-services/xamarin/get-started.html)
-* [適用於Experience Cloud解決方案的通用Windows平台SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/universal-windows/overview.html)
-* [Windows 8.1 通用應用程式商店](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/overview.html)
+* [適用於 Experience Cloud 解決方案的 Android SDK 4.x](/help/android/overview.md)
+* [適用於 Experience Cloud 解決方案的 iOS SDK 4.x](/help/ios/overview.md)
+* [iOS和Android 4.x SDK專用的Unity外掛程式](/help/unity/get-started.md)
+* [Experience Cloud解決方案4.x SDK的Xamarin元件](/help/xamarin/get-started.md)
+* [適用於Experience Cloud解決方案的通用Windows平台SDK 4.x](/help/universal-windows/overview.md)
+* [Windows 8.1 通用應用程式商店](/help/windows-appstore/overview.md)
 
-   * [Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能](https://docs.adobe.com/content/help/en/mobile-services/windows-universal-appstore/win-vse-4x.html)
+   * [Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能](/help/windows-appstore/extensions/win-vse-4x.md)
 
-* [Experience Cloud解決方案專用的BlackBerry 10 SDK 4.x](https://docs.adobe.com/content/help/en/mobile-services/blackberry/overview.html)
+* [Experience Cloud解決方案專用的BlackBerry 10 SDK 4.x](/help/blackberry/overview.md)
 
 ## Adobe Mobile 快速入門網路研討會 {#section_420EA66F39FE44B9B531ADF5F5465543}
 
