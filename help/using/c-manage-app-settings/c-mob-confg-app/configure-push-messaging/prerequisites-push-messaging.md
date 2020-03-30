@@ -70,7 +70,7 @@ source-git-commit: 92b1e430293fbded666e8af3f01393898c0e5811
 
 在您啟用應用程式的 ID 服務前，**[!UICONTROL 「推送服務」]區段為停用狀態。**&#x200B;但是一旦您啟用 ID 服務，「推送服務」區段即會啟用。如需啟用推送服務的詳細資訊，請參閱[設定 SDK ID 服務選項](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
 
->[!IMPORTANT]: 您必須按一下&#x200B;**[!UICONTROL 儲存]**，才可以儲存變更並重新整理「推送服務」。
+>[!IMPORTANT]: 您必須按一下 &#x200B;**[!UICONTROL 儲存]**，才可以儲存變更並重新整理「推送服務」。
 >
 >在每個報表套裝中，您可以針對 Apple 和 Google 各配置一個應用程式商店應用程式。若您需要額外應用程式，例如針對生產和開發環境各配置一個應用程式，請針對這兩個環境各自設定新應用程式商店應用程式以及新報表套裝。
 
