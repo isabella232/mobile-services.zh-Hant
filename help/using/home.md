@@ -6,7 +6,7 @@ solution: Marketing Cloud, Analytics, Experience Cloud
 title: Adobe Mobile Services
 uuid: e86a77c9-4ff1-403f-a5a1-4afbdc4e6f68
 translation-type: tm+mt
-source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
+source-git-commit: 9e3f199582351165d0a76ce5042b5eaeec2cc981
 
 ---
 
@@ -19,9 +19,17 @@ source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
 >
 >您必須有 Adobe Analytics Mobile Marketing 附加元件 SKU，才能讓 Mobile Services 存取行動裝置贏取、深層連結、地理位置以及行動裝置傳訊功能。如需詳細資訊，請聯絡您的 Adobe CSM。
 
-## 全新Adobe Experience Cloud SDK版本
+## 宣佈終止對4x SDK的支援
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? Click [here](https://aep-sdks.gitbook.io/docs/) for our latest documentation.
+在2020年9月30日之後，客戶可以繼續下載和使用第4版SDK，但是客戶服務將不提供支援或存取論壇。 Adobe Experience Platform Mobile SDK（先前稱為v5）將獨家支援即將推出的Adobe Experience Cloud功能。
+
+如需詳細資訊，請參閱支 [援常見問](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq) 答集結束。
+
+建議您在可行時移轉至新的Experience Platform Mobile SDK。
+
+## 新版 Adobe Experience Cloud SDK
+
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
 
@@ -40,7 +48,7 @@ source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
 
 ## 熱門主題 {#section_AFFBC9EDDE5B4E4493A7C2896121A773}
 
-以下是本指南中的幾個熱門主題:
+以下是本指南中的幾個熱門主題：
 
 * [快速入門](/help/using/gs/gs.md)
 * [正在登入](/help/using/gs/gs-signin.md)
@@ -60,33 +68,33 @@ source-git-commit: 322fdab0ff5eeb54fdbb04502508849e86d05a50
 
 ## 社群資源
 
-以下是其他資源:
+以下是其他資源：
 
 * [Experience Cloud 論壇](https://forums.adobe.com/community/experience-cloud)
-* [Adobe Marketing Cloud社群](https://helpx.adobe.com/marketing-cloud.html?promoid=KAWSE)
+* [Adobe Marketing Cloud 社群](https://helpx.adobe.com/marketing-cloud.html?promoid=KAWSE)
 * [Idea Exchange](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe 培訓和教學課程](https://helpx.adobe.com/learning.html?promoid=KAUDK)
 * [精選解決方案中心](https://www.adobe.com/marketing-cloud.html)
 
 ## SDK 文件 {#section_3A500233347C4305AB545E298A827CEA}
 
-除了使用指南外，您也可以下載軟體開發套件(SDK)，其中包含自訂套件，其中包含您在Adobe Mobile中設定應用程式所需之設定檔案的預先填入版本。
+除了使用者指南，您還可下載軟體開發套件 (SDK)，其中涵蓋自訂套件，包括您需要用來在 Adobe Mobile 中設定應用程式的設定檔案預先填入版本。
 
-下列平台提供原生程式庫：
+提供適用於下列平台的原生程式庫：
 
 * [適用於 Experience Cloud 解決方案的 Android SDK 4.x](/help/android/overview.md)
 * [適用於 Experience Cloud 解決方案的 iOS SDK 4.x](/help/ios/overview.md)
-* [iOS和Android 4.x SDK專用的Unity外掛程式](/help/unity/get-started.md)
-* [Experience Cloud解決方案4.x SDK的Xamarin元件](/help/xamarin/get-started.md)
-* [適用於Experience Cloud解決方案的通用Windows平台SDK 4.x](/help/universal-windows/overview.md)
+* [iOS 和 Android 4.x SDK 適用的 Unity 外掛程式](/help/unity/get-started.md)
+* [適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件](/help/xamarin/get-started.md)
+* [適用於 Experience Cloud 解決方案的 Universal Windows Platform SDK 4.x](/help/universal-windows/overview.md)
 * [Windows 8.1 通用應用程式商店](/help/windows-appstore/overview.md)
 
-   * [Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能](/help/windows-appstore/extensions/win-vse-4x.md)
+   * [適用於 Experience Cloud 解決方案 4.x SDK 的 Windows Visual Studio 延伸模組](/help/windows-appstore/extensions/win-vse-4x.md)
 
-* [Experience Cloud解決方案專用的BlackBerry 10 SDK 4.x](/help/blackberry/overview.md)
+* [適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x](/help/blackberry/overview.md)
 
 ## Adobe Mobile 快速入門網路研討會 {#section_420EA66F39FE44B9B531ADF5F5465543}
 
-請觀看 *Adobe Mobile 快速入門*&#x200B;網路研討會。( [播放](https://adobe.ly/PsxCFn))
+請觀看 *Adobe Mobile 快速入門*&#x200B;網路研討會。([播放](https://adobe.ly/PsxCFn))
 
 [  ![](assets/webinar.png) ](https://adobe.ly/PsxCFn)
