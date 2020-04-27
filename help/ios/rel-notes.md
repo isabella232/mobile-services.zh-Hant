@@ -1,13 +1,13 @@
 ---
-description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 發行說明和已知問題。
-seo-description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 發行說明和已知問題。
+description: Experience Cloud解決方案專用iOS SDK 4.x的發行說明和已知問題。
+seo-description: Experience Cloud解決方案專用iOS SDK 4.x的發行說明和已知問題。
 seo-title: 發行說明
 solution: Marketing Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
+translation-type: tm+mt
+source-git-commit: c9ee89ef5039c52ebab41a9495f1794c08a415ba
 
 ---
 
@@ -15,6 +15,15 @@ source-git-commit: b608516b0103db3ae0eed1deaa4fb9733a98f7fa
 # 發行說明 {#release-notes}
 
 以下是適用於 Experience Cloud 解決方案的 iOS SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
+
+**2020年3月24日：版本4.19.2**
+
+* 一般——已修正Target程式碼中的某些漏洞。
+
+**2020年3月12日：4.19.1版**
+
+* 一般——解決當Swiftenums包含在追蹤呼叫的上下文資料中時，可能造成當機的問題。
+* Target - Target作業階段ID現在會在傳送至Adobe Analytics的Target內部Analytics點擊中，新增為內容資料參數「a.target.sessionId」。
 
 **2020 年 2 月 4 日：4.19.0 版**
 
