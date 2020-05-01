@@ -1,14 +1,14 @@
 ---
 description: 以下為 Android 資料庫所提供的方法清單。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的方法清單。
 seo-title: 設定方法
 solution: Marketing Cloud,Analytics
 title: 設定方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -31,8 +31,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       setContentView(R.layout.main);
       Config.setContext(this.getApplicationContext());
     }
-   ````
-
+   ```
 
 ## SDK 設定 (設定類別) {#section_C1EB977043C04D2B93E5A63DB72828B6}
 
@@ -50,7 +49,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static void registerAdobeDataCallback(final AdobeDataCallback&amp;nbsp;callback);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
         Config.registerAdobeDataCallback(new Config.AdobeDataCallback() {
@@ -84,7 +83,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
    * 傳回目前使用者之隱私權狀態的列舉表示法。
 
-      以下為隱私權狀態值:
+      以下是隱私權狀態值：
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`，會立即傳送點擊。
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`，會捨棄點擊。
@@ -164,7 +163,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **setUserIdentifier**
 
    * 將使用者識別碼設為 `identifier`。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void setUserIdentifer(String identifier);
@@ -179,13 +178,13 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **getDebugLogging**
 
    * 傳回目前的偵錯記錄偏好設定。預設值為 `false`。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static Boolean getDebugLogging(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Boolean debugging = Config.getDebugLogging(); 
@@ -193,13 +192,13 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **setDebugLogging**
    * 將偵錯記錄偏好設定設為 `debugLogging`。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void setDebugLogging(Boolea debugLogging);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.setDebugLogging(true);
@@ -273,7 +272,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**4.2 版或更新版本**) 設定用於 SDK 所建立之通知的小型圖示。此圖示在使用者於通知中心查看完整通知時會出現在狀態列，且是所顯示影像的次要影像。
+   * (**4.2版或更新版本**)設定用於SDK所建立通知的小型圖示。 此圖示將出現在狀態列中，且將是當使用者在通知中心看到完整通知時所顯示的次要影像。
    * 以下是此方法的語法:
 
       ```java
@@ -288,7 +287,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**4.2 版或更新版本**) 設定用於 SDK 所建立之通知的大型圖示。此圖示會是使用者在通知中心查看完整通知時所顯示的主要影像。
+   * (**4.2版或更新版本**)設定用於SDK所建立通知的大型圖示。 此圖示會是使用者在通知中心查看完整通知時所顯示的主要影像。
    * 以下是此方法的語法:
 
       ```java
@@ -303,14 +302,14 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**4.2 版或更新版本**) 可讓您在應用程式啟動時載入另一個 ADBMobile JSON 設定檔案。應用程式會使用另一個設定，直到關閉為止。
+   * (**4.2版或更新版本**)可讓您在應用程式啟動時載入不同的ADBMobile JSON設定檔案。 應用程式會使用另一個設定，直到關閉為止。
    * 以下是此方法的語法:
 
       ```java
       public static void overrideConfigStream(final InputStream configInput);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
        try {
