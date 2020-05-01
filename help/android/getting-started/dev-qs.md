@@ -1,14 +1,14 @@
 ---
 description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 seo-title: 核心實施與生命週期
 solution: Marketing Cloud,Analytics
 title: 核心實施與生命週期
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: ht
-source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
+translation-type: tm+mt
+source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 >
 >若要下載 SDK，您必須使用 Android 2.2 或更新版本。
 
-1. 請完成以下區段中的步驟，以設定開發報表套裝和下載預先填入版本的設定檔案:
+1. 請完成下列章節中的步驟，以設定開發報表套裝並下載預先填入版本的設定檔案：
 
    * [建立報表套裝](/help/android/getting-started/requirements.md)
    * [下載 SDK](/help/android/getting-started/requirements.md)
@@ -48,10 +48,10 @@ source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 1. 在專案導覽面板中，以滑鼠右鍵按一下您的專案。
 1. 選取&#x200B;**[!UICONTROL 開啟模組設定]**。
 1. 在&#x200B;**[!UICONTROL 專案設定]**&#x200B;下，選取&#x200B;**[!UICONTROL 資料庫]**。
-1. 按一下 **[!UICONTROL +]** 圖示以新增資料庫。
+1. Click the **[!UICONTROL +]** icon to add a new library.
 1. 選取 **[!UICONTROL Java]** 並導覽至 `adobeMobileLibrary.jar` 檔案。
 1. 選取您計劃使用行動資料庫所在的模組。
-1. 按一下&#x200B;**[!UICONTROL 「套用」]**&#x200B;與&#x200B;**[!UICONTROL 「確定」]，以關閉「模組設定」視窗。**
+1. 按一下&#x200B;**[!UICONTROL 「套用」]**&#x200B;與&#x200B;**[!UICONTROL 「確定」]**，以關閉「模組設定」視窗。
 
 **Eclipse 專案**
 
@@ -59,11 +59,11 @@ source-git-commit: c4da3599c858bfbccb7af954df75f94eb7d8e99a
 
 1. 將 `ADBMobileConfig.json` 檔案新增至專案中的 `assets` 資料夾。
 1. 在 **[!UICONTROL Eclipse IDE]** 中，以滑鼠右鍵按一下專案名稱。
-1. 按一下&#x200B;**[!UICONTROL 建立路徑]** &gt; **[!UICONTROL 新增外部封存檔]**。
+1. Click  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]**.
 1. 選擇 `adobeMobileLibrary.jar`.
 1. 按一下&#x200B;**[!UICONTROL 開啟]**。
-1. 再次以滑鼠右鍵按一下專案，然後選取&#x200B;**[!UICONTROL 組建路徑]** &gt; **[!UICONTROL 設定組建路徑]**。
-1. 在&#x200B;**[!UICONTROL 「排序和匯出」]**&#x200B;標籤上，確認已選取 **`adobeMobileLibrary.jar`。**
+1. Right-click the project again and select **[!UICONTROL Build Path]** > **[!UICONTROL Configure Build Path]**.
+1. 在&#x200B;**[!UICONTROL 「排序和匯出」]**&#x200B;標籤上，確認已選取 **`adobeMobileLibrary.jar`**。
 
 ## 新增應用程式權限 {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
@@ -90,13 +90,13 @@ AppMeasurement 資料庫需要下列權限，才能傳送資料及記錄離線�
      setContentView(R.layout.main);
      Config.setContext(this.getApplicationContext());
    }
-````
+```
 
 ## 實施生命週期量度 {#section_BA686C09021F474AADDE8690BBB910F7}
 
 啟用生命週期後，每當您的應用程式啟動時，就會傳送一次點擊以測量啟動數、升級數、工作階段數、參與使用者數，以及許多其他量度。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-**請在應用程式的各活動中完成下列步驟:**
+**在應用程式的每個活動中完成下列步驟：**
 
 1. 匯入資料庫:
 
