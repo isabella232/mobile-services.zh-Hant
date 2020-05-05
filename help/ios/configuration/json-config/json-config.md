@@ -1,13 +1,13 @@
 ---
-description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
-seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔案。
+description: 此資訊可協助您使用ADBMobile.json設定檔案。
+seo-description: 此資訊可協助您使用ADBMobile.json設定檔案。
 seo-title: ADBMobile JSON 設定
 solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
    啟用行動應用程式贏取。
 
-   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參閱下方的 *referrerTimeout*。
+   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。For more information, see *referrerTimeout* below.
 
    * `server` - 初次啟動時，系統會檢查贏取伺服器以取得贏取反向連結。
    * `appid` – 產生的 ID，可在贏取伺服器上唯一識別此應用程式。
@@ -44,15 +44,15 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
    啟用/停用 Adobe SDK 日期回溯工作階段資訊點擊的能力。
 
-   工作階段資訊點擊目前包括當機和工作階段長度，可予以啟用或停用。
+   工作階段資訊點擊目前包含當機和工作階段長度，可啟用或停用。
 
    * 若將值設為 `false`，表示&#x200B;**停用**&#x200B;點擊。
 
-      SDK 會回復到 4.1 版之前的行為，將先前工作階段的工作階段資訊與後續工作階段的首次點擊混為一談。Adobe SDK 也會將工作階段資訊附加至目前的生命週期，以免導致誇大不實的造訪計數。由於造訪數據不再有誇大失真的問題，因此可發現造訪計數立即下降。
+      SDK會返回其4.1之前的行為，即將上一個作業的作業資訊與後續作業的第一次點擊整合。 Adobe SDK也會將工作階段資訊附加至目前的生命週期，以避免造成誇大的造訪。 由於不再建立誇大的造訪，造訪計數會立即下降。
 
    * 若您未提供值，系統的預設值會是 `true`，亦即&#x200B;**啟用**&#x200B;點擊。
 
-      啟用這些點撃後，Adobe SDK 會日期回溯工作階段點擊至前一個工作階段之最後點擊的 1 秒後。這表示當機和工作階段資料會關聯至事件發生的正確日期。副作用是 SDK 可能會為該日期回溯點撃建立一次造訪。應用程式每次重新啟動，日期都會回溯一個點擊。
+      啟用點擊後，Adobe SDK會將作業資訊點擊日期回溯至上一個作業中最後一次點擊後的1秒。 這表示當機和工作階段資料會與發生的正確日期產生關聯。 一個副作用是SDK可能會建立回溯日期點擊的瀏覽。 應用程式每次重新啟動，日期都會回溯一個點擊。
 
    * 最低 SDK 版本: 4.6
    >[!IMPORTANT]
@@ -70,7 +70,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 * **charset**
 
-   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/charset.html)。
+   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)。
 
    * 最低 SDK 版本: 4.0
 
@@ -109,15 +109,15 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 * **lifecycleTimeout**
 
-   預設值為 300 秒。
+   預設值為300秒。
 
-   指定在兩次應用程式啟動之間須經過的時間長度 (以秒為單位)，但在啟動前視同新的工作階段。這個逾時值也套用至將應用程式傳送至背景並重新啟動時。應用程式在背景花的時間，不算在作業階段長度中。
+   指定在應用程式啟動之間，但在啟動被視為新作業之前，必須經過的時間長度（以秒為單位）。 此逾時也會在您的應用程式傳送至背景並重新啟動時套用。 您的應用程式在背景逗留的時間不會包含在工作階段長度中。
 
    * 最低 SDK 版本: 4.0
 
 * **messages**
 
-   由 Adobe Mobile Services 自動產生，可定義應用程式內傳訊的設定。如需詳細資訊，請參閱下方的&#x200B;*訊息說明*&#x200B;一節。
+   由Adobe Mobile Services自動產生，定義應用程式內傳訊的設定。 如需詳細資訊，請參閱下 *方的訊息說明* 一節。
 
    * 最低 SDK 版本: 4.2
 
@@ -130,7 +130,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
    * 如果報表套裝已啟用時間戳記，您的 `offlineEnabled` 組態屬性&#x200B;*必須*&#x200B;為 true。
    * 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 false。
 
-      如果此項目未正確設定，將會遺失資料。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務或從 Adobe Mobile Services 下載設定檔案。如果您目前回報 AppMeasurement 資料的報表套裝也可從 JavaScript 收集資料，則必須為行動資料設定個別的報表套裝，或在使用 `s.timestamp` 變數的所有 JavaScript 點擊上加上自訂時間戳記。
+      如果未正確設定，資料將會遺失。 如果您不確定報表套裝是否啟用時間戳記，請聯絡客戶服務或從Adobe Mobile服務下載設定檔。 如果您目前回報 AppMeasurement 資料的報表套裝也可從 JavaScript 收集資料，則必須為行動資料設定個別的報表套裝，或在使用 `s.timestamp` 變數的所有 JavaScript 點擊上加上自訂時間戳記。
 
    * 最低 SDK 版本: 4.0
 
@@ -187,13 +187,13 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
       如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      這僅會設定初始值。如果已在程式碼中設定或變更此值，即會使用新的值直到再次變更，或應用程式解除安裝並重新安裝為止。預設值為 `optedin`。
+      這只會設定初始值。 如果已在程式碼中設定或變更此值，即會使用新的值直到再次變更，或應用程式解除安裝並重新安裝為止。預設值為 `optedin`。
 
    * 最低 SDK 版本: 4.0
 
 * **referrerTimeout**
 
-   在逾時前，於初次啟動時，SDK 等待贏取反向連結資料的秒數。如果您正在使用贏取，我們建議您設定 5 秒逾時。
+   SDK在初始啟動時等待贏取反向連結資料，然後逾時的秒數。 如果您使用贏取，我們建議使用5秒逾時。
 
    >[!IMPORTANT]
    >
@@ -213,7 +213,7 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 * **rsids**
 
-   用來接收 Analytics 資料的一或多個報表套裝。多個報表套裝的 ID 應以逗號分隔，中間沒有空格。
+   要接收Analytics資料的一或多個報表套裝。 多個報表套裝ID應以逗號分隔，中間不應有空格。
 
    ```js
    "rsids": "rsid"
@@ -343,58 +343,56 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 ## 訊息說明 {#section_B97D654BA92149CE91F525268D7AD71F}
 
-訊息節點是由 Adobe Mobile Services 自動產生，通常無須手動變更。以下說明可供疑難排解之用:
+訊息節點由Adobe Mobile Services自動產生，通常不需要手動變更。 提供下列說明供疑難排解之用：
 
-* "messageId"
+* &quot;messageId&quot;
 
-   * 產生的 ID，必要
+   * 產生的ID，必要
 
-* "template"
+* &quot;範本&quot;
 
-   * "alert"、"fullscreen" 或 "local"
-   * 要求
+   * &quot;alert&quot;、&quot;fullscreen&quot;或&quot;local&quot;
+   * 必要
 
-* "payload"
+* &quot;payload&quot;
 
-   * "html"
+   * &quot;html&quot;
 
       * 僅限全螢幕範本，必要
-      * html 定義訊息
-   * "image"
+      * html定義訊息
+   * &quot;image&quot;
 
-      * 僅限全螢幕，選用
-      * 用於全螢幕影像的 url 至影像
-   * "altImage"
+      * 僅限全螢幕，可選
+      * 用於全螢幕影像的影像URL
+   * &quot;altImage&quot;
 
-      * 僅限全螢幕，選用
-      * 要使用的套件影像名稱 (如果
+      * 僅限全螢幕，可選
+      * 若URL指定於
          `image`中指定的 URL 無法連線)
-   * "title"
+   * &quot;title&quot;
 
-      * 全螢幕及提示，必要
-      * 全螢幕或提示訊息的標題文字
-   * "content"
+      * 全螢幕和警報，必要
+      * 全螢幕或警報訊息的標題文字
+   * &quot;內容&quot;
 
-      * 提示及本機通知，必要
-      * 提示訊息的子文字，或本機通知訊息的通知文字
-   * "confirm"
+      * 警報和本機通知，必要
+      * 警報消息的子文本，或本地通知消息的通知文本
+   * &quot;確認&quot;
 
-      * 提示，選用
-      * 用於確認按鈕的文字
-   * "cancel"
+      * 警報，可選
+      * 確認按鈕中使用的文字
+   * &quot;取消&quot;
 
-      * 提示，必要
-      * 用於取消按鈕的文字
-   * "url"
+      * 警報，必要
+      * 「取消」按鈕中使用的文字
+   * &quot;url&quot;
 
-      * 提示，選用
-      * 按下確認按鈕後要載入的 url 動作
-   * "wait"
+      * 警報，可選
+      * 在按下確認按鈕時要載入的URL動作
+   * &quot;wait&quot;
 
-      * 本機通知，必要
-      * 符合條件後，發佈本機通知的等待時間 (以秒為單位)
-
-
+      * 本地通知，必需
+      * 在符合本機通知的標準後，等待（以秒為單位）張貼本機通知的時間
 
 
 
@@ -402,63 +400,65 @@ source-git-commit: bb7fc1c1fc6e88549a1673baedae19f808d222f0
 
 
 
-* "showOffline"
 
-   * true 或 false
-   * 預設為 false
 
-* "showRule"
+* &quot;showOffline&quot;
 
-   * "always"、"once" 或 "untilClick"
-   * 要求
+   * true或false
+   * default is false
 
-* "endDate"
+* &quot;showRule&quot;
 
-   * 自 1970 年 1 月 1 日起的秒數
+   * 「always」、「once」或「untilClick」
+   * 必要
+
+* &quot;endDate&quot;
+
+   * 自1970年1月1日以來的秒數
    * 預設為 2524730400
 
-* "startDate"
+* &quot;startDate&quot;
 
-   * 自 1970 年 1 月 1 日起的秒數
+   * 自1970年1月1日以來的秒數
    * 預設為 0
 
-* "audiences"
+* &quot;audiences&quot;
 
-   定義訊息顯示方式的物件陣列:
+   定義訊息顯示方式的物件陣列：
 
-   * "key"
+   * &quot;key&quot;
 
       在點擊中尋找的變數名稱，為必要項目。
 
-   * "matches"
+   * &quot;matches&quot;
 
-      比較時使用的比對器類型:
+      比較時使用的比對器類型：
 
-      * eq = 相等
-      * ne = 不相等
-      * co = 包含
-      * ne = 不包含
-      * sw = 以此開頭
-      * ew = 以此結尾
-      * ex = 存在
-      * ne = 不存在
-      * lt = 小於
-      * le = 小於或等於
-      * gt = 大於
-      * ge = 大於或等於
-   * "values"
+      * eq =等於
+      * ne =不等於
+      * co = contains
+      * nc =不包含
+      * sw =開頭為
+      * ew =結尾為
+      * ex = exists
+      * nx =不存在
+      * lt =小於
+      * le =小於或等於
+      * gt =大於
+      * ge =大於或等於
+   * &quot;values&quot;
 
-      用於比對下列變數值的值陣列:
+      用於比對下列變數值的值陣列：
 
       * key
-      * 與符合項目中的
+      * 匹配器輸入
       * matches
 
 
-* "triggers"
+* &quot;triggers&quot;
 
-   與適用對象相同，但此處是動作，而非適用對象:
+   與適用對象相同，但此處是動作，而非適用對象：
 
-   * "key"
-   * "matches"
-   * "values"
+   * &quot;key&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;
