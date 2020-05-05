@@ -4,10 +4,10 @@ seo-description: Adobe Experience Platform Identity Service 提供跨 Experience
 seo-title: Experience Cloud ID
 solution: Marketing Cloud,Analytics
 title: Experience Cloud ID
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方�
 
 >[!TIP]
 >
->除非您使用 Adobe Experience Platform Identity Service，否則無須填入 Experience Cloud ID。如需詳細資訊，請參閱 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/zh_TW/mcvid/)。
+>除非您使用 Adobe Experience Platform Identity Service，否則無須填入 Experience Cloud ID。如需詳細資訊，請參閱 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.html)。
 
 **需要 SDK 4.3 版或更新版本**
 
@@ -49,4 +49,4 @@ Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方�
 
    如果這些值不存在，請從 Adobe Mobile Services 下載更新的 `ADBMobileConfig.json` 檔案。如需詳細資訊，請參閱 [ADBMobile JSON 設定](/help/ios/getting-started/requirements.md)。
 
-設定後，即會產生一個 Experience Cloud ID 並包含在所有點撃中。其他訪客 ID，例如自訂和自動產生的 ID，會繼續在每次點撃時一併傳送。
+設定後，會產生Experience Cloud ID，並包含在所有點擊上。 其他訪客 ID，例如自訂和自動產生的 ID，會繼續在每次點撃時一併傳送。
