@@ -4,10 +4,10 @@ seo-description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform I
 seo-title: Adobe Experience Platform Identity Service 方法
 solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: ht
-source-git-commit: cbbb85b4d117fcaa502a1e01423f1f5d3b2ecc2b
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
@@ -22,7 +22,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **`+`(nullable NSURL`*`)visitorAppendToURL:(nullable NSURL`*`)url;**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://marketing.adobe.com/resources/help/zh_TW/mcvid/mcvid-appendvisitorid.html)。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/methods/appendvisitorid.html)。
 
    >[!IMPORTANT]
    >
@@ -44,7 +44,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    從 ID 服務中擷取 Experience Cloud ID。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       + (NSString  *)  visitorMarketingCloudID;
@@ -62,7 +62,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **visitorSyncIdentifiers:**
 
-   透過 Experience Cloud ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
+   透過Experience Cloud ID，您可以設定可與每個訪客關聯的其他客戶ID。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
    * 以下是此方法的語法:
 
@@ -157,7 +157,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 ## ADBVisitorID interface {#section_2FF74454D25C4ADABAC5E43CBFAAEC26}
 
-**公用方法:**
+**公用方法：**
 
 ```objective-c
 - (nullable NSString *) idType; 
@@ -165,7 +165,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 - (ADBMobileVisitorAuthenticationState) authenticationState; 
 ```
 
-## ADBMobileVisitorAuthenticationState enum{#section_A55A3F336DDF4F838900632087F51430}
+## ADBMobileVisitorAuthenticationState列舉 {#section_A55A3F336DDF4F838900632087F51430}
 
 ```objective-c
 ADBMobileVisitorAuthenticationStateUnknown, 
