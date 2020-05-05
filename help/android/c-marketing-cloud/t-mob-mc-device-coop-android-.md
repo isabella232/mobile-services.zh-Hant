@@ -1,26 +1,26 @@
 ---
-description: 若要開始使用 Experience Cloud Device Co-op，請聯絡您的 Adobe 代表。
-seo-description: 若要開始使用 Experience Cloud Device Co-op，請聯絡您的 Adobe 代表。
+description: 若要開始使用Experience Cloud Device Co-op，請連絡您的Adobe代表。
+seo-description: 若要開始使用Experience Cloud Device Co-op，請連絡您的Adobe代表。
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 ---
 
 
 # Experience Cloud Device Co-op {#experience-cloud-device-co-op}
 
-若要開始使用 Experience Cloud Device Co-op，請聯絡您的 Adobe 代表。
+若要開始使用Experience Cloud Device Co-op，請連絡您的Adobe代表。
 
-若要啟用您的行動應用程式以使用 Experience Cloud Device Co-op，請針對 Experience Cloud Android SDK 完成下列步驟:
+若要為Experience Cloud Device Co-op啟用行動應用程式，請完成Experience Cloud Android SDK的下列步驟：
 
 >[!IMPORTANT]
 >
 >此功能需使用 Android SDK 4.8.3 版或更新版本。
 
-自 SDK 4.16.1 版開始，Device Co-op 成員可將其行動裝置資料退出 Experience Cloud Device Co-op。如需詳細資訊，請參閱[適用於 ](/help/android/configuration/json-config/json-config.md)isCoopSafe`visitorAPI.js` 的 ADBMobile JSON Config[ 和 ](https://marketing.adobe.com/resources/help/zh_TW/mcvid/mcvid-coopsafe.html) 方法。
+從SDK 4.16.1版開始，Device Co-op會員可以從Experience Cloud Device Co-op選擇其行動裝置資料。 如需詳細資訊，請 [參閱ADBMobile JSON設定](/help/android/configuration/json-config/json-config.md) ，以 `visitorAPI.js` 及isCoopSafe [的方法](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/coopsafe.html)。
 
 1. 實施 Adobe Mobile SDK。
 
