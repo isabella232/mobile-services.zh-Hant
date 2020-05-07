@@ -7,7 +7,10 @@ title: 發行說明
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 76%
 
 ---
 
@@ -15,6 +18,14 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 # 發行說明 {#release-notes}
 
 以下是適用於 Experience Cloud 解決方案的 Android SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
+
+**2020年4月3日： 4.18.2**
+
+* 在應用程式訊息中——基於安全性原因，SDK所建立的WebViews現在會將屬性&#39;setAllowFileAccess&#39;設定為false。
+
+**2020年3月12日： 4.18.1**
+
+* Target - Target作業階段ID現在會在傳送至Adobe Analytics的內部Analytics-for-Target點擊中，新增為內容資料參數&quot;a.target.sessionId&quot;。
 
 **2020 年 1 月 16 日：4.18.0**
 
