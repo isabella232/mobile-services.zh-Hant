@@ -7,7 +7,7 @@ solution: Marketing Cloud,Analytics
 title: 設定方法
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ---
@@ -19,10 +19,10 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 ## 初始設定 {#section_9169243ECC4744A899A8271F92090ECD}
 
-您必須在主要活動的 `onCreate` 方法中呼叫一次以下方法:
+您必須在主要活動的 `onCreate` 方法中呼叫一次以下方法：
 
 * `setContext`
-以下是此方法的範例程式碼:
+以下是此方法的範例程式碼：
 
    ```java
     @Override
@@ -37,13 +37,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **registerAdobeDataCallback**
 
-   * 註冊實施 `AdobeDataCallback` 介面的物件。系統會針對觸發事件，連同 `Config.MobileDataEvent` 值以及 `Map<String, Object>` 中的關聯資料叫用覆寫的「呼叫」方法。如需關於會觸發此回撥之事件的詳細資訊，請參閱本主題底部的 *MobileDataEventEnum*。
+   * 註冊實作 `AdobeDataCallback` 介面的物件。系統會針對觸發事件，連同 `Config.MobileDataEvent` 值以及 `Map<String, Object>` 中的關聯資料叫用覆寫的「呼叫」方法。如需關於會觸發此回撥之事件的詳細資訊，請參閱本主題底部的 *MobileDataEventEnum*。
 
       >[!TIP]
       >
       >此方法需使用 4.9.0 版或更新版本。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void registerAdobeDataCallback(final AdobeDataCallback&amp;nbsp;callback);
@@ -67,13 +67,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 * **getVersion**
 
    * 傳回 Adobe Mobile 程式庫的目前版本。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static String getVersion();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       String libraryVersion = Config.getVersion(); 
@@ -83,20 +83,20 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
    * 傳回目前使用者之隱私權狀態的列舉表示法。
 
-      以下是隱私權狀態值：
+      隱私權狀態值如下：
 
       * `MOBILE_PRIVACY_STATUS_OPT_IN`，會立即傳送點擊。
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`，會捨棄點擊。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
 
          如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 `ADBMobileConfig.json` 檔案中。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static MobilePrivacyStatus getPrivacyStatus(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       MobilePrivacyStatus privacyStatus Config.getPrivacyStatus();
@@ -107,17 +107,17 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
    * 將目前使用者的隱私權狀態設為 `status`。
 
-      您可以將隱私權狀態設定為下列其中一個值:
+      您可以將隱私權狀態設定為下列其中一個值：
       * `MOBILE_PRIVACY_STATUS_OPT_IN`，會立即傳送點擊。會立即傳送點擊。
       * `MOBILE_PRIVACY_STATUS_OPT_OUT`，會捨棄點擊。會捨棄點擊。
       * `MOBILE_PRIVACY_STATUS_UNKNOWN`，如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void setPrivacyStatus(MobilePrivacyStatus status); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.setPrivacyStatus(MobilePrivacyStatus.MOBILE_PRIVACY_STATUS_OPT_IN); 
@@ -128,13 +128,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
    * 傳回目前使用者的期限值。預設值為 `0`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static BigDecimal getLifetimeValue();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       BigDecimal currentLifetimeValue Config.getLifetimeValue(); 
@@ -148,13 +148,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
       >
       >如果您的應用程式從 Experience Cloud 3.x 升級至 4.x SDK，應用程式會擷取先前的訪客 ID (自訂或自動產生) 並將其儲存為自訂使用者識別碼。這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static String&amp getUserIdentifier();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       String userId = Config.getUserIdentifier();
@@ -169,7 +169,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
       public static void setUserIdentifer(String identifier);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.setUserIdentifier("billybob"); 
@@ -207,13 +207,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 * **collectLifecycleData**
    * 向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/android/configuration/methods.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void collectLifecycleData(final Activity activity,final Map<String, Object>contextData); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       @Override
@@ -223,7 +223,7 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
         } 
       ```
 
-      含額外內容資料:
+      含額外內容資料：
 
       ```java
       @Override
@@ -235,13 +235,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 * **collectLifecycleData (Activity activity)**
 
    * (**4.2 版或更新版本**) 向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void collectLifecycleData(final Activity activity);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       @Overrideprotected void onResume() {
@@ -254,13 +254,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
    * 向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，`onPause` 以收集時間戳記，用於判斷前一個工作階段長度。這也會設定旗標，讓生命週期得知應用程式並未當機。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void pauseCollectingLifecycleData(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       @Override
@@ -272,14 +272,14 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **setSmallIconResourceId(int resourceId)**
 
-   * (**4.2版或更新版本**)設定用於SDK所建立通知的小型圖示。 此圖示將出現在狀態列中，且將是當使用者在通知中心看到完整通知時所顯示的次要影像。
-   * 以下是此方法的語法:
+   * (**4.2 版或更新版本**) 設定 SDK 建立通知所使用的小型圖示。此圖示會顯示在狀態列中，亦即當使用者在通知中心看到完整通知時，畫面所顯示的次要影像。
+   * 以下是此方法的語法：
 
       ```java
       public static void setSmallIconResourceId(final int resourceId); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.setSmallIconResourceId(R.drawable.appIcon);
@@ -287,14 +287,14 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **setLargeIconResourceId(int resourceId)**
 
-   * (**4.2版或更新版本**)設定用於SDK所建立通知的大型圖示。 此圖示會是使用者在通知中心查看完整通知時所顯示的主要影像。
-   * 以下是此方法的語法:
+   * (**4.2 版或更新版本**) 設定 SDK 建立通知所使用的大型圖示。此圖示會是使用者在通知中心查看完整通知時所顯示的主要影像。
+   * 以下是此方法的語法：
 
       ```java
       public static void setLargeIconResourceId(final int  resourceId);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```Java
       Config.setLargeIconResourceId(R.drawable.appIcon);
@@ -302,8 +302,8 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 
 * **overrideConfigStream(InputStream configInput)**
 
-   * (**4.2版或更新版本**)可讓您在應用程式啟動時載入不同的ADBMobile JSON設定檔案。 應用程式會使用另一個設定，直到關閉為止。
-   * 以下是此方法的語法:
+   * (**4.2 版或更新版本**) 讓您在應用程式啟動時載入其他 ADBMobile JSON 設定檔。應用程式會使用另一個設定，直到關閉為止。
+   * 以下是此方法的語法：
 
       ```java
       public static void overrideConfigStream(final InputStream configInput);
@@ -323,13 +323,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
 * **setPushIdentifier**
 
    * 設定用於推送通知的裝置代號。
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void setPushIdentifier(final String registrationId); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       ...// note the code to retreive the push token must run in the background
@@ -345,13 +345,13 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
       > 
       >如果您要在「贏取」或「生命週期」中使用「廣告識別碼」，請在呼叫 `Config.collectLifecycleData` 前對其呼叫。
 
-      * 以下是此方法的語法:
+      * 以下是此方法的語法：
 
          ```java
          public static void submitAdvertisingIdentifierTask(final Callable<String> task); 
          ```
 
-      * 以下是此方法的範例程式碼:
+      * 以下是此方法的範例程式碼：
 
          ```java
          @Override
