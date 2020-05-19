@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: Experience Cloud ID 設定
 topic: Developer and implementation
 uuid: 8ebdf2bf-c581-448f-9542-f99a19784fe7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '270'
+ht-degree: 100%
 
 ---
 
@@ -24,19 +27,19 @@ Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方�
 >
 >此功能需使用 SDK 4.3 版或更新版本。
 
-若要啟用 Experience Cloud ID:
+若要啟用 Experience Cloud ID：
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入資料庫:
+1. 匯入資料庫：
 
    ```java
    import com.adobe.mobile.*;
    ```
 
-1. 確認 `ADBMobileConfig.json` 檔案包含 `marketingCloudorg`:
+1. 確認 `ADBMobileConfig.json` 檔案包含 `marketingCloudorg`：
 
    ```js
    "marketingCloud" : { 
@@ -44,7 +47,7 @@ Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方�
    }
    ```
 
-   Experience Cloud 組織 ID 會唯一識別 Adobe Experience Cloud 中的每一間客戶公司，並與以下值類似: 
+   Experience Cloud 組織 ID 會不重複識別 Adobe Experience Cloud 中的每一間客戶公司，其格式與以下值類似：
 
    ```js
    016D5C175213CCA80A490D05@AdobeOrg`
@@ -56,4 +59,4 @@ Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方�
 
    如果未設定這些 ID，請從 Adobe Mobile Services 下載更新的 `ADBMobileConfig.json` 檔案。如需詳細資訊，請參閱[開始之前](/help/android/getting-started/requirements.md)。
 
-設定完成後，會產生Experience Cloud ID，並包含在所有點擊上。 其他ID（例如自訂和自動產生的ID）會持續隨每次點擊傳送。
+完成設定後，系統會產生一組 Experience Cloud ID，並包含在所有點撃中。其他 ID (例如自訂和自動產生的 ID) 會繼續在每次點撃時一併傳送。
