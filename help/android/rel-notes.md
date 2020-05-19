@@ -1,16 +1,16 @@
 ---
-description: Experience Cloud解決方案專用Android SDK 4.x的發行說明和已知問題。
-seo-description: Experience Cloud解決方案專用Android SDK 4.x的發行說明和已知問題。
+description: Experience Cloud 解決方案專用 Android SDK 4.x 的發行說明和已知問題。
+seo-description: Experience Cloud 解決方案專用 Android SDK 4.x 的發行說明和已知問題。
 seo-title: 發行說明
 solution: Marketing Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a2a2ea4bd3826b061b198e684dd31d9328137d7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 76%
 
 以下是適用於 Experience Cloud 解決方案的 Android SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
 
-**2020年4月3日： 4.18.2**
+**2020 年 4 月 3 日：4.18.2**
 
-* 在應用程式訊息中——基於安全性原因，SDK所建立的WebViews現在會將屬性&#39;setAllowFileAccess&#39;設定為false。
+* 應用程式內傳訊：基於安全考量，SDK 建立的 WebViews 現在會將屬性「setAllowFileAccess」設為等同於 false。
 
-**2020年3月12日： 4.18.1**
+**2020 年 3 月 12 日：4.18.1**
 
-* Target - Target作業階段ID現在會在傳送至Adobe Analytics的內部Analytics-for-Target點擊中，新增為內容資料參數&quot;a.target.sessionId&quot;。
+* Target – Target 現在會在傳送至 Adobe Analytics 的內部 Analytics-for-Target 點擊中，以內容資料參數「a.target.sessionId」的形式新增工作階段 ID。
 
 **2020 年 1 月 16 日：4.18.0**
 
@@ -58,4 +58,4 @@ ht-degree: 76%
 * 訪客 ID 服務 - 將連線和讀取逾時從 2 秒增加到 5 秒。
 
 
-如需詳細瞭解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)。
+如需詳細了解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)。
