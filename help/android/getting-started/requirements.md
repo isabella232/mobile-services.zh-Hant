@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: 開始之前
 topic: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ Analytics 管理員和應用程式開發人員必須完成以下作業：
 
 設定報表套裝並收集行動應用程式資料：
 
-1. 請完成「登入Adobe Mobile Services [UI」中的其中一節](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)。
+1. 完成[登入 Adobe Mobile Services UI](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8) 任一節的指示。
 1. 為每位應用程式開發人員建立 Analytics 帳戶。
 
 應用程式開發人員現在擁有檢視您所建立之報表套裝的存取權。
@@ -39,11 +42,11 @@ Analytics 管理員和應用程式開發人員必須完成以下作業：
 1. 確認您的 Analytics 管理員已完成[登入 Adobe Mobile Services 使用者介面](../getting-started/requirements.md#section_690A2EC4572E47869F183974E932A6A8)的其中一節。
 1. 報表套裝設定完成後，請完成[下載 SDK](../getting-started/requirements.md#section_044C17DF82BC4FD8A3E409C456CE9A46) 中的步驟。
 
-如需角色和權限的詳細資訊，請參 [閱角色和權限](/help/using/gs/c-mob-roles-and-permissions.md)。
+如需角色和權限的詳細資訊，請參閱[角色和權限](/help/using/gs/c-mob-roles-and-permissions.md)。
 
-## 登入Adobe Mobile Services UI {#section_690A2EC4572E47869F183974E932A6A8}
+## 登入 Adobe Mobile Services UI {#section_690A2EC4572E47869F183974E932A6A8}
 
-Adobe Mobile Services是行動應用程式分析和定位的主要報表介面。 完成這些步驟後，您可以下載已預先設定資料收集伺服器、報表套裝和許多其他設定的設定檔。
+Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面。完成上述步驟後，您就可以下載已預先設定資料收集伺服器、報表套裝和其他諸多設定的設定檔。
 
 您可以透過下列其中一種方式登入 Adobe Mobile Services 使用者介面：
 
@@ -101,7 +104,7 @@ Adobe Mobile Services是行動應用程式分析和定位的主要報表介面�
 
 >[!TIP]
 >
->應用程式的設定檔案會自動包含在 SDK 下載中，因此您無須另外下載此檔案。然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
+>應用程式的設定檔會自動包含在 SDK 下載中，因此您無須另外下載此檔案。然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔。
 
 如果您正使用 Android Studio，您也可以將以下項目新增至您應用程式的 `build.gradle` 檔：
 
@@ -111,5 +114,5 @@ compile 'com.adobe.mobile:adobeMobileLibrary:4.13.7'
 
 請記住以下資訊：
 
-* 將程式碼範例中的版本號碼取代為Android SDK的適當版本。
-* 下載設定檔案並將它加入您的專案中。
+* 以適用的 Android SDK 版本取代程式碼範例中的版本編號。
+* 下載設定檔，並將其加入您的專案。
