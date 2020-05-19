@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: App Store
 topic: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '199'
+ht-degree: 100%
 
 ---
 
@@ -21,18 +24,18 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 >
 >在 Mobile Services 使用者介面中設定整合後，**[!UICONTROL App Store]** 選單項目和相關報表會顯示在左側導覽窗格中。
 
-[appFigures Data Connector for Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/appfigures/appfigures-overview.html) 包含下列資訊：
+[appFigures Data Connector for Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/analytics/import/dataconnectors/appfigures/appfigures-overview.html) 包含下列資訊：
 
 * 整合的主要優點和功能
-* 實施整合，包括：
+* 實作整合作業，包括：
 
-   * Adobe Analytics需求
-   * appFigures需求
+   * Adobe Analytics 需求
+   * appFigures 需求
    * 定價
-   * Analytics整合變數
+   * Analytics 整合變數
 
 * 設定整合
-* 整合中包含的量度和維度
+* 整合中包括的量度和維度
 * 區段應用程式資料
 
-如需App Store報表的詳細資訊，請參閱「 [App Store概述報表」](/help/using/usage/c-app-store-store-performance.md)。
+如需 App Store 報表的詳細資訊，請參閱 [App Store 概觀報表](/help/using/usage/c-app-store-store-performance.md)。
