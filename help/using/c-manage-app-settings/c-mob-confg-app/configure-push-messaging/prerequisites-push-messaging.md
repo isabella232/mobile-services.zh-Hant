@@ -1,21 +1,24 @@
 ---
-description: 您必須先完成這些工作才可開始在應用程式中配置推送訊息。
+description: 您必須先完成這些工作，才可開始在應用程式中設定推送訊息。
 keywords: mobile
-seo-description: 您必須先完成這些工作才可開始在應用程式中配置推送訊息。
+seo-description: 您必須先完成這些工作，才可開始在應用程式中設定推送訊息。
 seo-title: 啟用推送訊息的必要條件
 solution: Marketing Cloud,Analytics
 title: 啟用推送訊息的必要條件
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+workflow-type: ht
+source-wordcount: '646'
+ht-degree: 100%
 
 ---
 
 
 # 啟用推送訊息的必要條件 {#prerequisites-to-enable-push-messaging}
 
-您必須先完成這些工作才可開始在應用程式中設定推送訊息。
+您必須先完成這些工作才 可開始在應用程式中 設定推送訊息。
 
 ## 為貴公司啟用 Experience Cloud
 
@@ -29,7 +32,7 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 * **設定推送服務**
 
-   您必須在行動 SDK 中設定推送服務。如需詳細資訊，請參閱下列內容:
+   您必須在行動 SDK 中設定推送服務。如需詳細資訊，請參閱下列內容：
 
    * [Android 中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
    * [iOS 中的推播訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
@@ -38,9 +41,9 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 >[!IMPORTANT]
 >
->若要使用推送服務功能，使用者必須使用其 Adobe ID 登入 Mobile 核心服務，且其 Analytics 帳戶必須連結至他們的 Adobe ID。如果使用者使用其現有的Adobe Analytics帳戶登入，則無法使用推播服務功能。
+>若要使用推送服務功能，使用者必須使用其 Adobe ID 登入 Mobile 核心服務，且其 Analytics 帳戶必須連結至他們的 Adobe ID。如果使用者以其現有 Adobe Analytics 帳戶登入，就無法使用推送服務功能。
 
-如果使用者沒有Adobe ID，請完成下列步驟：
+如果使用者沒有 Adobe ID，請完成下列步驟：
 
 1. (**Experience Cloud 系統管理員**) 邀請使用者前往 Experience Cloud。
 
@@ -54,13 +57,13 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 每位使用者必須從 Experience Cloud 組織連結 Analytics 解決方案帳戶。
 
-1. 若要使用 Adobe ID 登入 Experience Cloud，請在瀏覽器中輸入 [](https://marketing.adobe.com)https://marketing.adobe.com。
+1. 若要使用 Adobe ID 登入 Experience Cloud，請在瀏覽器中輸入 [https://marketing.adobe.com](https://marketing.adobe.com)。
 
 1. 在右上角選取 Analytics 公司名稱。
 
 1. 按一下&#x200B;**[!UICONTROL 「新增組織」]**，接著從下拉式清單中選取&#x200B;**[!UICONTROL 「Adobe SiteCatalyst/Adobe Social」。]**
 
-1. 輸入公司名稱以及所指定之公司的舊憑證，然後按一下&#x200B;**[!UICONTROL 連結帳戶]**。
+1. 輸入公司名稱以及所指定之公司的舊憑證，然後按一下&#x200B;**[!UICONTROL 「連結帳戶」]**。
 
    Adobe ID 現在已連結至您的 Analytics 帳戶、公司以及登入憑證。
 
@@ -70,24 +73,24 @@ source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
 
 在您啟用應用程式的 ID 服務前，**[!UICONTROL 「推送服務」]**&#x200B;區段為停用狀態。但是一旦您啟用 ID 服務，「推送服務」區段即會啟用。如需啟用推送服務的詳細資訊，請參閱[設定 SDK ID 服務選項](/help/using/c-manage-app-settings/c-mob-confg-app/t-config-visitor.md)。
 
->[!IMPORTANT]: 您必須按一下 **[!UICONTROL 儲存]**，才可以儲存變更並重新整理「推送服務」。
+>[!IMPORTANT]您必須按一下&#x200B;**[!UICONTROL 「儲存」]**，才可以儲存變更並重新整理「推送服務」。
 >
->您可以在每個報表套裝中為Apple設定一個應用程式商店應用程式，並為Google設定一個應用程式商店應用程式。 例如，如果您需要其他應用程式，例如一個用於生產環境，另一個用於開發環境，請針對每個環境設定新的應用程式商店應用程式和新的報表套裝。
+>您可以在每個報表套裝中，為 Apple 設定一個應用程式商店應用程式，同時也為 Google 設定一個。如果您還需要其他應用程式，例如一個用於生產環境，另一個用於開發環境，那麼，請為每個環境設定新的應用程式商店應用程式和新的報表套裝。
 
-* 若是 **Apple**，請拖放您的私密金鑰和／或憑證。 如果您的私密金鑰是密碼加密的，請輸入其密碼。
+* **Apple**：請拖放您的私密金鑰和/或憑證。如果您的私密金鑰以密碼加密，請輸入密碼。
 
    * 如果設定的是&#x200B;**私密金鑰**，請將私密金鑰檔案拖放至方塊中。
 
-      您也可以按一下「**[!UICONTROL 瀏覽]**」來選取檔案。此檔案包含私密金鑰。此檔案中可能也包含憑證 (`.p12`、`pkcs12`、`.pfx`、`.key`、`.pem`)。
+      您也可以按一下&#x200B;**[!UICONTROL 「瀏覽」]**&#x200B;來選取檔案。此檔案包含私密金鑰。此檔案中可能也包含憑證 (`.p12`、`pkcs12`、`.pfx`、`.key`、`.pem`)。
 
-   * 對於「 **私密金鑰密碼**」，如果您的私密金鑰檔案已加密，請輸入密碼。
+   * 若為&#x200B;**「私密金鑰密碼」**，如果您的私密金鑰檔案有加密，請輸入密碼。
 
-      （條件性）若是 **憑證**，請將憑證檔案拖放至方塊中。 您也可以按一下「**[!UICONTROL 瀏覽]**」來選取檔案。如果私密金鑰檔案中同時包含憑證 (`.cert`、`.cer`、`.crt`、`.pem`)，則此欄位非必填欄位。
+      (有條件) 若為&#x200B;**「憑證」**，請將憑證檔案拖放至方塊中。您也可以按一下&#x200B;**[!UICONTROL 「瀏覽」]**&#x200B;來選取檔案。如果私密金鑰檔案中同時包含憑證 (`.cert`、`.cer`、`.crt`、`.pem`)，則此欄位非必填欄位。
 
-* **Google:**&#x200B;請指定應用程式的 API 密鑰。
+* **Google**：請指定應用程式的 API 密鑰。
 
-   按一下&#x200B;**[!UICONTROL 「測試」]**，驗證應用程式和 Mobile Services 是否已正確設定。此選項對除錯和疑難排解非常有用。
+   按一下&#x200B;**[!UICONTROL 「測試」]**，驗證應用程式和 Mobile Services 是否已正確設定。此選項對偵錯和疑難排解很實用。
 
-   輸入您要傳送訊息之裝置的推播Token。 以逗號分隔清單指定代號，即可傳送訊息給多部裝置。
+   輸入您要傳送訊息之裝置的推送代號。以逗號分隔清單指定代號，即可傳送訊息給多部裝置。
 
    ![推送測試訊息](assets/push_test_list.png)
