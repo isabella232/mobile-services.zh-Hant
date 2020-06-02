@@ -1,9 +1,13 @@
 ---
 product: mobile-services
-audience: 終端使用者
+audience: end-user
 user-guide-title: Mobile Services 使用者說明
-translation-type: ht
-source-git-commit: 6e6b5df2b83591f4bd4eb0db0c664bd36a6abc2c
+user-guide-description: Mobile Services is an end-to-end solution that helps you acquire and engage mobile app users and analyze and optimize their experiences.
+translation-type: tm+mt
+source-git-commit: e39a31d765bebf4f80eed47e04056108f424b905
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 100%
 
 ---
 
