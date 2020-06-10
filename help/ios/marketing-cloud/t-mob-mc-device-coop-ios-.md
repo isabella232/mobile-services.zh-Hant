@@ -4,11 +4,11 @@ seo-description: 若要開始使用 Experience Cloud Device Co-op，請洽詢您
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 89%
 
 ---
 
@@ -41,10 +41,10 @@ ht-degree: 100%
 
 * 最低 SDK 版本：4.16.1
 * `marketingCloud` 物件的布林值屬性一旦設為 `true`，就會導致裝置退出 Experience Cloud 的 Device Co-Op。
-* 預設值為 `false`.
+* 預設值為 `false`。
 * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
 
-若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶向其申請黑名單標幟。沒有啟用可這些標幟的自助式路徑。
+For Device Co-op members who require this value be set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. 沒有啟用可這些標幟的自助式路徑。
 
 請記住以下資訊：
 
