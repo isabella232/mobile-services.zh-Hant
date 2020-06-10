@@ -1,14 +1,17 @@
 ---
 description: 您可以定義和設定推送訊息的對象選項，包含日期範圍選項、Analytics 區段和自訂區段。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以定義和設定推送訊息的對象選項，包含日期範圍選項、Analytics 區段和自訂區段。
 seo-title: 對象  定義和設定推送訊息的對象區段
 solution: Marketing Cloud,Analytics
 title: 對象  定義和設定推送訊息的對象區段
-topic: 量度
+topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: ht
-source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 72%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
 ## 定義對象區段 {#section_7C4D2393CF7441959FE2381A02867CAC}
 
-建立推送訊息的對象區段後，該區段便會與一個或多個應用程式的使用者建立關聯，因為報表套裝或虛擬報表套裝可能會包含一個或多個應用程式的資料。如需虛擬報表套裝的詳細資訊，請參閱[虛擬報表套裝](/help/using/manage-apps/c-mob-vrs.md)。
+建立推播訊息的對象區段時，該區段可能會涉及一個或多個應用程式的使用者，因為報表套裝或虛擬報表套裝可能包含一個或多個應用程式的資料。 For more information about virtual report suites, see [Virtual report suites](/help/using/manage-apps/c-mob-vrs.md).
 
-在 Adobe Mobile Services 中，行銷人員只會在個平台推送一個應用程式。如果行銷人員嘗試推送至含有來自多個應用程式的使用者的區段時，便會顯示警告訊息，通知他們繼續操作的話，可能會引致嚴重的推送失敗，也有可能會導致使用者列入黑名單。如果您遇到推送失敗，請參閱&#x200B;*解決推送失敗*，位置在:  [疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。
+在Adobe Mobile Services中，行銷人員可能只會推送至每個平台一個應用程式。 如果行銷人員嘗試推送至包含來自多個應用程式之使用者的區段，會顯示警告，指出繼續作業可能導致嚴重的推播失敗，並可能導致使用者的拒絕清單。 如果您遇到推送失敗，請參閱&#x200B;*解決推送失敗*，位置在:  [疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。
 
 若要使用區段定義中的 Audience Manager 資料，請參閱 [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html)。
 
 >[!IMPORTANT]
 >
->如果應用程式使用者被列入黑名單，行銷人員可以&#x200B;**永不**&#x200B;傳送推送訊息給受影響的使用者。
+>If app users are deny listed, marketers can **never** send push messages to those affected users again.
 
 如果選擇含有來自多個應用程式的使用者之對象區段，您可能會看到下列警告:
 
@@ -39,7 +42,7 @@ source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 >
 >版本編號為選填。
 
-最多會移除 6 組版本編號以及 5 組套件 ID 編號。
+最多會移除6組版本編號和5組套件ID編號。
 
 例如:
 
@@ -48,7 +51,7 @@ source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 * `Bea[rd]cons 1.2.3.4.5.6.7 (1111)` 將顯示為 `Bea[rd]cons .7`
 * `Bea[rd]cons 1.2.3. (1.2.3.4.5.6)` 將顯示為 `Bea[rd]cons (.6)`
 
-若要繼續將推送訊息傳送至列出的應用程式，請選取&#x200B;**「是，我要繼續。」**&#x200B;核取方塊，然後按一下&#x200B;**[!UICONTROL 傳送]**。
+若要繼續將推送訊息傳送至列出的應用程式，請選取&#x200B;**[!UICONTROL 「是，我要繼續。」]**&#x200B;核取方塊，然後按一下&#x200B;**[!UICONTROL 傳送]**。
 
 ## 最佳作法
 
@@ -59,11 +62,11 @@ source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
 ### 範例
 
-以下一些範例能協助您瞭解如何正確定義區段:
+以下是一些範例，可協助您瞭解如何正確定義區段：
 
-**正確做法**: 行銷人員會針對一個應用程式的 iOS 和 Android 版本提供推送憑證，例如 Adobe Photoshop。行銷人員可能會將推送通知傳送至橫跨兩個平台的使用者區段。
+**執行**: 行銷人員會針對一個應用程式的iOS和Android版本（例如Adobe Photoshop）提供推播憑證。 行銷人員可能會傳送推播通知給橫跨兩個平台的使用者區段。
 
-**錯誤做法**: 行銷人員會針對一個應用程式的 iOS 和 Android 版本提供推送憑證，例如 Adobe Photoshop。如果行銷人員建立推送通知，並在最近 30 天內推送至&#x200B;*所有作用中使用者的區段*，只有 Adobe Photoshop iOS 和 Android 應用程式的使用者會收到推送通知，而所有 Adobe Illustrator iOS 和 Android 應用程式的使用者都會列入黑名單。如需更多詳情，請參閱&#x200B;*解決推送訊息失敗*&#x200B;中的範例，位置在:  [疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)。
+**不要**: 行銷人員針對單一應用程式的iOS和Android版本提供推播憑證，例如Adobe Photoshop。 如果行銷人員在過去30天內建立並推送至所有使用中使用者的區段 **，則只有Adobe Photoshop iOS和Android應用程式的使用者會收到推送，而所有Adobe Illustrator iOS和Android應用程式的使用者都會被拒絕列出。 如需更多詳情，請參閱&#x200B;*解決推送訊息失敗*&#x200B;中的範例，位置在:  [疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)。
 
 ## 設定對象區段 {#section_A92C60885A30421B8150820EC1CCBF13}
 
@@ -75,9 +78,9 @@ source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
    * **[!UICONTROL 「預估選擇加入對象」]**&#x200B;是指符合 Adobe Analytics 區段的裝置數量&#x200B;**及**&#x200B;選擇加入的裝置數量。
 
-      您可以檢視所選區段中，選擇收到訊息以及將會收到推送訊息的預計使用者人數。應用程式使用者的總人數會顯示在預計值下方，無論其選擇加入狀態為何。
+      您可以檢視所選區段中選擇接收訊息並將接收推播訊息的使用者人數預估。 應用程式使用者總數會顯示在估計值下方，無論選擇加入狀態為何。
 
-   * **[!UICONTROL 「總計」]是指符合 Adobe Analytics 區段的裝置數量。**
+   * **[!UICONTROL 「總計」]**&#x200B;是指符合 Adobe Analytics 區段的裝置數量。
 
    * 推送訊息會傳送至作為已定義 Adobe Analytics 區段一部分的裝置&#x200B;**以及**&#x200B;已選擇加入推送訊息的裝置。
 
@@ -95,7 +98,7 @@ source-git-commit: f28ea0db13b8d8f209d7521d1f61f1c290e688aa
 
    * **[!UICONTROL 期間為]**
 
-      輸入用於預計對象的時間範圍。從&#x200B;**[!UICONTROL 「於此期間」]下拉式清單中選取一個選項:**
+      輸入用於預計對象的時間範圍。從&#x200B;**[!UICONTROL 「於此期間」]**&#x200B;下拉式清單中選取一個選項:
 
    * **[!UICONTROL 「最近」]**&#x200B;可讓您選取相對於排定推送訊息之時間的時間範圍 (例如最近 7 天、最近 30 天或最近 60 天)。
 
