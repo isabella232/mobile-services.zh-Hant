@@ -1,14 +1,17 @@
 ---
 description: 您可以檢視應用程式內和推送訊息的訊息報表。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以檢視應用程式內和推送訊息的訊息報表。
 seo-title: 檢視訊息報表
 solution: Marketing Cloud,Analytics
 title: 檢視訊息報表
-topic: 量度
+topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: ht
-source-git-commit: 44f531ad140827d563255fad197811185c5337c9
+translation-type: tm+mt
+source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 78%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 44f531ad140827d563255fad197811185c5337c9
 
 您可以檢視應用程式內和推送訊息的訊息報表。
 
-1. 按一下&#x200B;**[!UICONTROL 報表]**&#x200B;欄中的 ![報表圖示](assets/icon_report.png) 即可檢視訊息。
+1. 按一下![報表](assets/icon_report.png)欄中的 **[!UICONTROL 報表圖示]** 即可檢視訊息。
 1. (**選擇性**) 為報表建立嚴格篩選，或按一下&#x200B;**[!UICONTROL 日曆]**&#x200B;圖示來變更時段。
 
    如需建立嚴格篩選的詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
@@ -79,13 +82,13 @@ source-git-commit: 44f531ad140827d563255fad197811185c5337c9
 
    * pushID 無效
 
-   * 指定的目標推送平台 (APNS、FCM 等) 不適用於該工作的應用程式。例如，平台可能會收集 iOS 推送代碼，但並未配置 APNS 服務。
+   * 指定的目標推送平台 (APNS、FCM 等) 不適用於該工作的應用程式。例如，平台可能會收集iOS推播Token，但未設定APNS服務。
 
-   * 訊息可能因為推送服務未正確設定或 Mobile Services 系統故障而傳送失敗。
+   * 訊息可能因推送服務未正確設定或Mobile Services系統關閉而失敗。
    >[!IMPORTANT]
    >
-   >如果您遇到異常大量的失敗，請檢查推送服務配置。如果推送服務的配置看起來正確，請聯絡 Adobe 客戶服務。
+   >如果您有異常大量的失敗，請檢查您的推播服務設定。 如果推播服務似乎已正確設定，請連絡Adobe客戶服務。
 
 * **[!UICONTROL 列入黑名單]**
 
-   已無效而不可傳送至 APNS 或 FCM 的裝置代號數量。這通常表示裝置已解除安裝應用程式，或使用者變更其接收訊息的選擇加入設定。Android 和 iOS 不同之處在於代號列入黑名單的時間。Android 代號會立即顯示在列入黑名單計數中。iOS 代號最初會顯示為已發佈，但會根據來自 APNS 的回饋在後續訊息中顯示為列入黑名單。
+   已無效而不可傳送至 APNS 或 FCM 的裝置代號數量。這通常表示裝置已解除安裝應用程式，或使用者變更其接收訊息的選擇加入設定。Android和iOS對於Token被計為拒絕列出的時間不同。 Android Token會立即顯示在拒絕清單計數中。 iOS Token最初會顯示為已發佈，但根據來自APNS的回饋，會顯示為deny列於後續訊息。
