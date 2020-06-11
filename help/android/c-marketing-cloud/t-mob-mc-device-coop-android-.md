@@ -5,9 +5,9 @@ seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '290'
 ht-degree: 90%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 90%
 * 預設值為 `false`。
 * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
 
-For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. 沒有啟用可這些標幟的自助式路徑。
+For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. 沒有啟用可這些標幟的自助式路徑。
 
 請記住以下資訊：
 
