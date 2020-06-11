@@ -7,9 +7,9 @@ title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 translation-type: tm+mt
-source-git-commit: e6af295ddc5fea2a3e649b659894e6c6123a3457
+source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 92%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 92%
    * 預設值為 `false`。
    * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
 
-   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a deny list flag on your Device Co-op account. 沒有啟用可這些標幟的自助式路徑。
+   For Device Co-op members who require this value set to `true`, you need to work with the Co-op team to request a blocklist flag on your Device Co-op account. 沒有啟用可這些標幟的自助式路徑。
 
    請記住以下資訊：
 
