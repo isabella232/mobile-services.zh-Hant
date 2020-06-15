@@ -8,9 +8,9 @@ title: 檢視訊息報表
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+source-git-commit: 33297c9e6537f664222c91a44c20bb9ab2ee310a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '493'
 ht-degree: 78%
 
 ---
@@ -89,6 +89,6 @@ ht-degree: 78%
    >
    >如果您有異常大量的失敗，請檢查您的推播服務設定。 如果推播服務似乎已正確設定，請連絡Adobe客戶服務。
 
-* **[!UICONTROL 封鎖清單]**
+* **[!UICONTROL 拒絕清單]**
 
-   已無效而不可傳送至 APNS 或 FCM 的裝置代號數量。這通常表示裝置已解除安裝應用程式，或使用者變更其接收訊息的選擇加入設定。Android和iOS對於預付碼被計為區塊清單的時間不同。 Android Token會立即顯示在區塊清單計數中。 iOS Token最初會顯示為已發佈，但根據來自APNS的回饋，會顯示為後續訊息上的區塊。
+   已無效而不可傳送至 APNS 或 FCM 的裝置代號數量。這通常表示裝置已解除安裝應用程式，或使用者變更其接收訊息的選擇加入設定。Android和iOS對於預付碼被計為區塊清單的時間不同。 Android Token會立即顯示在拒絕清單（區塊清單）計數中。 iOS Token最初會顯示為已發佈，但根據來自APNS的回饋，會顯示為後續訊息上的區塊。
