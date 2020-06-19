@@ -95,7 +95,6 @@ ht-degree: 98%
 
    * `coopUnsafe` 設為 `true` 時，`coop_unsafe=1` 一律會附加至 Audience Manager 和訪客 ID 點擊。
    * 如果啟用 Analytics 伺服器端轉送至 Audience Manager，您也會在 Analytics 點擊看到 `coop_unsafe=1`。
-
    部分其他資訊如下：
 
    * 最低 SDK 版本：4.16.1
