@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -21,21 +21,21 @@ ht-degree: 92%
 
 ## `ADBMobileConfig.json` 設定檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-您的應用程式可以跨多平台使用此相同的設定檔案:
+您的應用程式可以跨多平台使用此相同的設定檔案：
 
 >[!TIP]
 >
 >在 **Android** 中，`ADBMobileConfig.json` 檔案必須放置在 `assets` 資料夾中。
 
-以下是 JSON 檔案中的變數清單，以及每個變數所需的最低 SDK 版本:
+以下是 JSON 檔案中的變數清單，以及每個變數所需的最低 SDK 版本：
 
 * **acquisition**
-   * 最低 SDK 版本: 4.1
+   * 最低 SDK 版本：4.1
    * 啟用行動應用程式贏取。
       * `server`，即在初次啟動時會接受檢查是否有贏取反向連結的贏取伺服器。
       * `appid` – 即產生的 ID，可在贏取伺服器上唯一識別此應用程式。
 
-   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔案。如需詳細資訊，請參閱變數清單中的 *referrerTimeout*。
+   如果缺少此區段，請啟用行動應用程式贏取並重新下載 SDK 設定檔。如需詳細資訊，請參閱變數清單中的 *referrerTimeout*。
 
 * **analyticsForwardingEnabled**
    * 最低 SDK 版本為 4.8.0。
@@ -44,7 +44,7 @@ ht-degree: 92%
       `audienceManager` 物件中的屬性。如果已設定 Audience Manager 且 `analyticsForwardingEnabled` 已設為 `true`，所有的 Analytics 流量也會轉送至 Audience Manager。
 
 * **backdateSessionInfo**
-   * 最低 SDK 版本: 4.6.
+   * 最低 SDK 版本：4.6.
    * 啟用/停用 Adobe SDK 日期回溯工作階段資訊點擊的能力。
 
       工作階段資訊點擊目前包含當機和工作階段長度，可予以啟用或停用。
@@ -60,24 +60,24 @@ ht-degree: 92%
          >日期回溯工作階段點撃資訊會以工作階段資訊伺服器呼叫傳送，且可能適用額外的伺服器呼叫。
 
 * **batchLimit**
-   * 最低 SDK 版本: 4.1
+   * 最低 SDK 版本：4.1
    * 連續呼叫中可傳送的點撃數臨界值。
 
-      例如，如果 `batchLimit` 設為 10，則在第 10 個點擊前的每個點擊都會先儲存在佇列中。當第10個點擊傳入時，會連續傳送所有10個點擊。
+      例如，如果 `batchLimit` 設為 10，則在第 10 個點擊前的每個點擊都會先儲存在佇列中。第 10 個點擊傳入時，系統便會連續傳送全部 10 個點擊。
 
-      請記住以下資訊:
+      請記住以下資訊：
 
       * 預設值為 `0`，即表示未啟用批次處理程序。
       * 需要使用 `offlineEnabled = true`。
 
 * **charset**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 定義您用於傳送至 Analytics 之資料的字元集。
 
       字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。
 
 * **clientCode**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 您獲派的用戶端代碼。
 
       >[!IMPORTANT]
@@ -85,7 +85,7 @@ ht-degree: 92%
       >Target 必須有此變數。
 
 * **coopUnsafe**
-   * 最低 SDK 版本: 4.16.1
+   * 最低 SDK 版本：4.16.1
    * `marketingCloud` 物件的布林值屬性一旦設為 `true`，就會導致裝置退出 Experience Cloud 的 Device Co-Op。
    * 預設值為 `false`。
    * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
@@ -99,13 +99,13 @@ ht-degree: 92%
 
 
 * **environmentId**
-   * 最低 SDK 版本: 4.14
+   * 最低 SDK 版本：4.14
    * 您想使用之環境的 ID。
 
       您可以指定有效的 ID (`environmentId=8`)，要是沒有 `environmentId`，系統會使用預設的生產環境。
 
 * **lifecycleTimeout**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 預設值為 300 秒。
 
       指定應用程式啟動後，直至系統將該次啟動視為新工作階段之間須經過的時間長度 (以秒為單位)。您的應用程式傳送至背景並重新啟動時，此逾時也適用。
@@ -114,12 +114,12 @@ ht-degree: 92%
 
 * **messages**
 
-   * 最低 SDK 版本: 4.2
+   * 最低 SDK 版本：4.2
    * 由 Adobe Mobile Services 自動產生，定義應用程式內傳訊的設定。如需詳細資訊，請參閱下方的&#x200B;*訊息說明*&#x200B;一節。
 
 * **offlineEnabled**
 
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 啟用後，點擊會在裝置離線時排入佇列，並在稍後裝置上線時傳送。
 
       您的報表套裝必須啟用時間戳記才能使用離線追蹤功能。
@@ -130,17 +130,17 @@ ht-degree: 92%
       >
       >如果報表套裝已啟用時間戳記，您的 `offlineEnabled` 組態屬性&#x200B;**必須**&#x200B;為 true。如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;**必須**&#x200B;為 false。
       >
-      >若未正確設定，資料將會遺失。如果您不確定報表套裝是否啟用時間戳記，請聯絡客戶服務或從Adobe Mobile服務下載設定檔。
+      >若未正確設定，資料將會遺失。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務人員，或從 Adobe Mobile Services 下載設定檔。
 
       如果您目前回報 AppMeasurement 資料的報表套裝也可從 JavaScript 收集資料，則必須為行動資料設定個別的報表套裝，或在使用 `s.timestamp` 變數的所有 JavaScript 點擊上加上自訂時間戳記。
 
 * **org**
 
-   * 最低 SDK 版本: 4.3
+   * 最低 SDK 版本：4.3
    * 指定 ID 服務的 Experience Cloud 組織 ID。
 
 * **poi**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 每個地標 (POI) 陣列內含 POI 名稱、該地標區域的經緯度以及半徑 (以公尺為單位)。
 
       POI 名稱可以是任何字串。送出 `trackLocation` 呼叫後，如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
@@ -152,18 +152,18 @@ ht-degree: 92%
              ]
       ```
 
-      自 4.2 版開始，POI 皆會在 Adobe Mobile 介面中定義，並會動態同步至應用程式設定檔案。此同步需使用 `analytics.poi` 設定：
+      自 4.2 版開始，POI 皆會在 Adobe Mobile 介面中定義，並會動態同步至應用程式設定檔。此同步需使用 `analytics.poi` 設定：
 
       ```javascript
       “analytics.poi“: `https://assets.adobedtm.com/`
       …/yourfile.json”`,
       ```
 
-      若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔案，請參閱[開始之前](/help/android/getting-started/requirements.md)。
+      若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔，請參閱[開始之前](/help/android/getting-started/requirements.md)。
 
 * **postback**
-   * 最低 SDK 版本: 4.6
-   * 以下是「回撥」訊息範本的定義:
+   * 最低 SDK 版本：4.6
+   * 以下是「回撥」訊息範本的定義：
 
       ```javascript
       "payload":{
@@ -176,7 +176,7 @@ ht-degree: 92%
       程式碼中的 `payload` 物件是會進入 `ADBMobileConfig.json` 檔案之訊息定義的裝載範例。如需詳細資訊，請參閱[回傳](/help/android/analytics-main/postbacks/postbacks.md)。
 
 * **privacyDefault**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 預設值為 `optedin`。
       * 若為 `optedin`，點擊會立即傳送。
       * 若為 `optedout`，點擊會被捨棄。
@@ -186,7 +186,7 @@ ht-degree: 92%
 
 
 * **referrerTimeout**
-   * 最低 SDK 版本: 4.1
+   * 最低 SDK 版本：4.1
    * SDK 在初始啟動到逾時前等待贏取反向連結資料的秒數。如果您使用贏取，建議將逾時設為 5 秒。
 
       >[!IMPORTANT]
@@ -194,15 +194,15 @@ ht-degree: 92%
       >「贏取」必須有此變數。如果變數設為 `0` 或不包含變數，SDK 不會等待贏取資料，且不會追蹤贏取量度。
 
 * **remotes**
-   * 最低 SDK 版本: 4.2
-   * 自動設定並為動態設定檔案定義 Adobe 已裝載端點。
+   * 最低 SDK 版本：4.2
+   * 自動設定並為動態設定檔定義 Adobe 已裝載端點。
 
-      每個設定檔案的最後一次更新時間將對每次啟動時的當前版本進行檢查，且會下載並儲存更新。
+      每個設定檔的最後一次更新時間將對每次啟動時的當前版本進行檢查，且會下載並儲存更新。
       * `analytics.poi` 是裝載 POI 設定的端點。
       * `messages` 是裝載應用程式內訊息設定的端點。
 
 * **rsids**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 要接收 Analytics 資料的一或多個報表套裝。多個報表套裝 ID 應以逗號分隔，且中間不應有空格。
 
       ```javascript
@@ -218,16 +218,16 @@ ht-degree: 92%
       >Analytics 必須有此變數。
 
 * **server**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * Analytics 或 Audience Management 伺服器，依父節點而定。應該以伺服器網域填入此變數，不含 `https://` 或 `https://` 通訊協定前置詞。此前置詞會由資料庫自動處理且是以 `ssl` 變數為基礎。如果 `ssl` 為 `true`，會對此伺服器進行安全連線。如果 `ssl` 為 `false`，會對此伺服器進行非安全連線。
 
 * **ssl**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 預設值為 `false`。
 
       啟用 (`true`) 或停用 (`false`) 透過 SSL (HTTPS) 傳送測量資料的能力。
 
-      以下顯示「回撥」訊息範本的定義:
+      以下顯示「回撥」訊息範本的定義：
 
       ```javascript
       "payload": {
@@ -238,7 +238,7 @@ ht-degree: 92%
       ```
 
 * **timeout**
-   * 最低 SDK 版本: 4.0
+   * 最低 SDK 版本：4.0
    * 決定 Target 等待回應的時間長度。
 
 
@@ -371,11 +371,11 @@ ht-degree: 92%
 
 
 * &quot;audiences&quot;
-   * 定義消息顯示方式的對象陣列
+   * 定義訊息顯示方式的物件陣列：
    * &quot;key&quot;
-      * 變數名稱，以在點擊中尋找，此為必要
+      * 要在點擊中尋找的變數名稱，必填
 * &quot;matches&quot;
-   * 比較時使用的匹配器類型
+   * 比較時使用的比對器類型
    * eq = 等於
    * ne = 不等於
    * co = 包含
@@ -389,12 +389,12 @@ ht-degree: 92%
    * gt = 大於
    * ge = 大於或等於
 * &quot;values&quot;
-   * 值陣列，用來比對中
+   * 比對變數值所使用的值陣列，值命名於：
       * key
       * with the matcher type in
       * matches
 * &quot;triggers&quot;
-   * 與觀眾相同，但這是動作，而非觀眾
+   * 與適用對象相同，但此處是指動作，而非對象本身
    * &quot;key&quot;
    * &quot;matches&quot;
    * &quot;values&quot;
