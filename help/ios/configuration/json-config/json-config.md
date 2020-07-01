@@ -21,7 +21,7 @@ ht-degree: 98%
 
 ## ADBMobileConfig.json 設定檔參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
-您的應用程式可以跨多平台使用此同一設定檔：
+您的應用程式可以跨多平台使用此相同的設定檔案：
 
 >[!TIP]
 >
@@ -95,6 +95,7 @@ ht-degree: 98%
 
    * `coopUnsafe` 設為 `true` 時，`coop_unsafe=1` 一律會附加至 Audience Manager 和訪客 ID 點擊。
    * 如果啟用 Analytics 伺服器端轉送至 Audience Manager，您也會在 Analytics 點擊看到 `coop_unsafe=1`。
+
    部分其他資訊如下：
 
    * 最低 SDK 版本：4.16.1
@@ -451,7 +452,7 @@ ht-degree: 98%
       * ge = 大於或等於
    * &quot;values&quot;
 
-      用於比對下列變數值的值陣列：
+      比對變數值所使用的值陣列，值命名於：
 
       * key
       * with the matcher type in
@@ -460,7 +461,7 @@ ht-degree: 98%
 
 * &quot;triggers&quot;
 
-   與適用對象相同，但此處是動作，而非適用對象：
+   與適用對象相同，但此處是指動作，而非對象本身：
 
    * &quot;key&quot;
    * &quot;matches&quot;
