@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 78%
+ht-degree: 91%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 78%
 
 您可以檢視應用程式內和推送訊息的訊息報表。
 
-1. 按一下![報表](assets/icon_report.png)欄中的 **[!UICONTROL 報表圖示]** 即可檢視訊息。
-1. (**選擇性**) 為報表建立嚴格篩選，或按一下&#x200B;**[!UICONTROL 日曆]**&#x200B;圖示來變更時段。
+1. 按一下![報表](assets/icon_report.png)欄中的 **[!UICONTROL 報表圖示]**，即可檢視訊息。
+1. (**選用**) 為報表建立嚴格篩選，或按一下&#x200B;**[!UICONTROL 日曆]**&#x200B;圖示來變更時段。
 
    如需建立嚴格篩選的詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
 
@@ -31,13 +31,13 @@ ht-degree: 78%
 
 ## 應用程式內訊息 {#section_90B79BA58E8141F78538C187EB1BF8C7}
 
-如果您檢視的是應用程式內訊息的報表，報表外觀會類似於下圖:
+如果您檢視的是應用程式內訊息的報表，報表外觀會類似於下圖：
 
 ![報表訊息](assets/report_message.png)
 
 ### 應用程式內訊息量度
 
-以下是可用於應用程式內訊息的量度清單:
+以下是可用於應用程式內訊息的量度清單：
 
 * **[!UICONTROL 曝光次數]**，即訊息觸發時。
 
@@ -49,7 +49,7 @@ ht-degree: 78%
 
 ## 推送訊息 {#section_BEAFD858CA194185B6F88903446058E9}
 
-如果您檢視的是推送訊息的報表，報表外觀會類似於下圖:
+如果您檢視的是推送訊息的報表，報表外觀會類似於下圖：
 
 ![推送訊息](assets/report_message_push.png)
 
@@ -57,7 +57,7 @@ ht-degree: 78%
 
 ### 推送訊息量度
 
-以下是可用於推送訊息的量度清單:
+以下是可用於推送訊息的量度清單：
 
 * **[!UICONTROL 時間]**
 
@@ -65,7 +65,7 @@ ht-degree: 78%
 
 * **[!UICONTROL 狀態]**
 
-   訊息的狀態，可用的狀態如下:
+   訊息的狀態，可用的狀態如下：
 
    * **[!UICONTROL 已取消]**
    * **[!UICONTROL 已排程]**
@@ -78,16 +78,16 @@ ht-degree: 78%
 
 * **[!UICONTROL 顯示]**
 
-   未成功傳送至 APNS/FCM 的裝置代號數量。失敗的可能原因:
+   未成功傳送至 APNS/FCM 的裝置代號數量。失敗的可能原因：
 
    * pushID 無效
 
-   * 指定的目標推送平台 (APNS、FCM 等) 不適用於該工作的應用程式。例如，平台可能會收集iOS推播Token，但未設定APNS服務。
+   * 指定的目標推送平台 (APNS、FCM 等) 不適用於該工作的應用程式。例如，平台可能收集 iOS 推送 Token，但未設定 APNS 服務。
 
-   * 訊息可能因推送服務未正確設定或Mobile Services系統關閉而失敗。
+   * 訊息可能因推送服務未正確設定或 Mobile Services 系統故障而推送失敗。
    >[!IMPORTANT]
    >
-   >如果您有異常大量的失敗，請檢查您的推播服務設定。 如果推播服務似乎已正確設定，請連絡Adobe客戶服務。
+   >如果訊息推送失敗的情形異常頻繁，請檢查推送服務設定。如果推送服務設定正確，請連絡 Adobe 客戶服務人員。
 
 * **[!UICONTROL 封鎖清單]**
 
