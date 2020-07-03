@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 疑難排解推送訊息
 topic: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 此資訊可協助您進行推送訊息疑難排解。
 
-## 為什麼有時候推送訊息的傳送會延遲?
+## 為什麼有時候推送訊息的傳送會延遲？
 
 下列延遲類型可能與 Mobile Services 的推送訊息有關：
 
@@ -100,10 +100,10 @@ APNS 認證失效的可能原因如下：
    * RSID：PhotoShop_iOS_app_LA
    * VRSID 定義區段：`a.os contains “iOS”`
 
-此範例中，若 Photoshop 員工傳送推送至 *PhotoShop_iOS_app_SF* 應用程式，則所有 *PhotoShop_iOS_app_SF* 應用程式使用者都會如期收到推送訊息。但是，若員工傳送訊息至 *PhotoShop_app_LA* 應用程式，由於其 VRSID 定義區段不正確 (`iOS` 而非 `a.os contains "PhotoShop_iOS_app_LA"`)，因此訊息會傳送給 *AllAdobe PhotoShop_apps* 中的&#x200B;**所有** iOS 使用者。Although the message still goes to *PhotoShop_iOS_app_LA* users, the message also blocklists the push IDs for *PhotoShop_iOS_app_SF* users because the *PhotoShop_iOS_app_SF* app has a different certificate. 若區段定義為 `a.os contains “PhotoShop_iOS_app_LA”`，則推送訊息原本只會傳送給 *PhotoShop_iOS_app_LA* 使用者。
+此範例中，若 Photoshop 員工傳送推送至 *PhotoShop_iOS_app_SF* 應用程式，則所有 *PhotoShop_iOS_app_SF* 應用程式使用者都會如期收到推送訊息。但是，若員工傳送訊息至 *PhotoShop_app_LA* 應用程式，由於其 VRSID 定義區段不正確 (`iOS` 而非 `a.os contains "PhotoShop_iOS_app_LA"`)，因此訊息會傳送給 *AllAdobe PhotoShop_apps* 中的&#x200B;**所有** iOS 使用者。儘管訊息仍會傳送給 *PhotoShop_iOS_app_LA* 使用者，但訊息也會將 *PhotoShop_iOS_app_SF* 使用者的推送 ID 加入封鎖名單，因為 *PhotoShop_iOS_app_SF* 應用程式具有不同憑證。若區段定義為 `a.os contains “PhotoShop_iOS_app_LA”`，則推送訊息原本只會傳送給 *PhotoShop_iOS_app_LA* 使用者。
 
 若透過 *PhotoShop_IOS_app_LA* 推送憑證傳送，*PhotoShop_iOS_app_SF* 的推送識別碼將傳回為 `invalid`。
 
 >[!CAUTION]
 >
->在您針對使用 VRS 的應用程式建立推送訊息，並按一下&#x200B;**[!UICONTROL 儲存並傳送]**&#x200B;之後，系統會顯示警示以提醒您確保所列出的每個應用程式&#x200B;**必須**&#x200B;具備有效憑證。If each app does **not** have a valid certificate, your audience segments might be indefinitely blocklisted, and you might not be able to send future push messages to the affected users. 如需對象區段的詳細資訊，請參閱[對象：定義並設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
+>在您針對使用 VRS 的應用程式建立推送訊息，並按一下&#x200B;**[!UICONTROL 儲存並傳送]**&#x200B;之後，系統會顯示警示以提醒您確保所列出的每個應用程式&#x200B;**必須**&#x200B;具備有效憑證。若每個應用程式&#x200B;**並未**&#x200B;具備有效憑證，則您的對象區段可能已無限期列入封鎖名單，且您未來可能無法傳送推送訊息給受影響的使用者。如需對象區段的詳細資訊，請參閱[對象：定義並設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
