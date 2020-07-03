@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 對象  定義和設定推送訊息的對象區段
 topic: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1021'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 90%
 
 建立推送訊息的對象區段時，由於報表套裝或虛擬報表套裝可能包含一或多個應用程式的資料，因此該區段可能涵蓋一或多個應用程式的使用者。如需虛擬報表套裝的詳細資訊，請參閱[虛擬報表套裝](/help/using/manage-apps/c-mob-vrs.md)。
 
-在 Adobe Mobile Services 中，行銷人員可能只可依各平台推送至一個應用程式。如果行銷人員嘗試推送至包含來自多個應用程式之使用者的區段，會顯示警告，指出繼續作業可能導致嚴重的推送失敗，並可能造成使用者的封鎖。 如果您遇到推送失敗的問題，請參閱&#x200B;*解決推送失敗*，位置如下：[疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。
+在 Adobe Mobile Services 中，行銷人員可能只可依各平台推送至一個應用程式。如果行銷人員嘗試推送至含有多個應用程式使用者的區段，系統會發出警告，指出繼續操作可能會導致推送嚴重失敗，且使用者會被列入封鎖名單。如果您遇到推送失敗的問題，請參閱&#x200B;*解決推送失敗*，位置如下：[疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。
 
 若要使用區段定義中的 Audience Manager 資料，請參閱 [Audience Analytics](https://docs-author-stg.corp.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html)。
 
 >[!IMPORTANT]
 >
->If app users are blocklisted, marketers can **never** send push messages to those affected users again.
+>如果應用程式使用者被列入封鎖名單，行銷人員可以&#x200B;**永不**&#x200B;傳送推送訊息給受影響的使用者。
 
 如果選擇含有來自多個應用程式的使用者之對象區段，您可能會看到下列警告：
 
@@ -66,7 +66,7 @@ ht-degree: 90%
 
 **建議**：行銷人員針對單一應用程式的 iOS 和 Android 版本 (例如 Adobe Photoshop) 提供推送憑證。行銷人員可能會傳送推送通知至橫跨兩個平台的使用者區段。
 
-**避免**：行銷人員針對單一應用程式的 iOS 和 Android 版本 (例如 Adobe Photoshop) 提供推送憑證。If the marketer creates and pushes to a segment of *all active users in the last 30 days*, only the users of the Adobe Photoshop iOS and Android app receive the push, and all of the Adobe Illustrator iOS and Android app users will be blocklisted. 如需更多詳情，請參閱&#x200B;*解決推送訊息失敗*&#x200B;中的範例，位置如下：[疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)。
+**避免**：行銷人員針對單一應用程式的 iOS 和 Android 版本 (例如 Adobe Photoshop) 提供推送憑證。如果行銷人員建立並推送至&#x200B;*過去 30 天內所有活躍使用者*&#x200B;區段，只有 Adobe Photoshop iOS 和 Android 版應用程式的使用者會收到推送訊息，所有 Adobe Illustrator iOS 和 Android 版應用程式的使用者則會被列入封鎖名單。如需更多詳情，請參閱&#x200B;*解決推送訊息失敗*&#x200B;中的範例，位置如下：[疑難排解推送訊息](/help/using/in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)。
 
 ## 設定對象區段 {#section_A92C60885A30421B8150820EC1CCBF13}
 
