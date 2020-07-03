@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 檢視訊息報表
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 91%
 
    成功傳送至 Apple 推送通知服務/Firebase 雲端通訊 (APNS/FCM) 以傳送訊息至使用者裝置的裝置代號數量。
 
-* **[!UICONTROL 顯示]**
+* **[!UICONTROL 已失敗]**
 
    未成功傳送至 APNS/FCM 的裝置代號數量。失敗的可能原因：
 
@@ -89,6 +89,6 @@ ht-degree: 91%
    >
    >如果訊息推送失敗的情形異常頻繁，請檢查推送服務設定。如果推送服務設定正確，請連絡 Adobe 客戶服務人員。
 
-* **[!UICONTROL 封鎖清單]**
+* **[!UICONTROL 已列入封鎖名單]**
 
-   已無效而不可傳送至 APNS 或 FCM 的裝置代號數量。這通常表示裝置已解除安裝應用程式，或使用者變更其接收訊息的選擇加入設定。Android和iOS對於預付碼被計為區塊清單的時間不同。 Android Token會立即顯示在區塊清單計數中。 iOS Token最初會顯示為已發佈，但根據來自APNS的回饋，會顯示為後續訊息上的區塊。
+   已無效而不可傳送至 APNS 或 FCM 的裝置代號數量。這通常表示裝置已解除安裝應用程式，或使用者變更其接收訊息的選擇加入設定。對於何時將 Token 計入封鎖名單，Android 和 iOS 有不同的處理方式。Android 版中，Token 會立即計入封鎖名單計數。iOS 版中，Token 最初會顯示為已發佈，但會根據 APNS 的回饋，在後續訊息中才會顯示為已列入封鎖名單。
