@@ -4,10 +4,13 @@ seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯
 seo-title: 追蹤應用程式當機
 solution: Marketing Cloud,Analytics
 title: 追蹤應用程式當機
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ![](assets/android-lifecycle.png)
 
-如需有關 Android 活動生命週期的詳細資訊，請參閱[活動](https://developer.android.com/guide/components/activities.html)。
+For more information about the Android activity lifecycle, see [Activities](https://developer.android.com/guide/components/activities.html).
 
 *此 Android 生命週期圖說是由[Android Open Source Project 建立和共用](https://source.android.com/)，並根據[Creative Commons 2.5 屬性授權](https://creativecommons.org/licenses/by/2.5/)中的條款來使用。*
 
@@ -44,7 +47,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ## 該如何處理片段?
 
-各片段中皆有與活動類似的應用程式生命週期事件。然而，如果片段未連接至活動，則無法使用。
+各片段中皆有與活動類似的應用程式生命週期事件。但是，片段不能在未附加至活動時處於活動狀態。
 
 >[!IMPORTANT]
 >
