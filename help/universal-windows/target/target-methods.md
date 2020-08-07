@@ -1,30 +1,33 @@
 ---
-description: 通用 Windows 平台程式庫所提供的 Target 方法清單。
-seo-description: 通用 Windows 平台程式庫所提供的 Target 方法清單。
+description: 通用Windows平台程式庫提供的Target方法清單。
+seo-description: 通用Windows平台程式庫提供的Target方法清單。
 seo-title: Target 方法
 solution: Marketing Cloud,Analytics
 title: Target 方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
 
-# Target methods {#target-methods}
+# Target 方法 {#target-methods}
 
-通用 Windows 平台程式庫所提供的 Target 方法清單。
+通用Windows平台程式庫提供的Target方法清單。
 
-SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics、Target 以及 Audience Manager。
+SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。
 
 [生命週期度量](/help/universal-windows/metrics.md) ，會以參數的形式傳送至每個mbox載入。
 
 >[!TIP]
 >
->When you consume `winmd` methods from winJS (JavaScript), all methods automatically have their first letter lowercased.
+>當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
 
-## 類別參考: TargetLocationRequest
+## 類別參考：TargetLocationRequest
 
 ## 屬性
 
@@ -72,13 +75,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```csharp
       static Windows::Foundation::IAsyncOperation<Platform::String ^> ^LoadRequest(TargetLocationRequest ^request);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```js
       var fADB = ADBMobile; 
@@ -89,15 +92,15 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest(winJS:createRequest)**
 
-   使用指定的參數建立 `TargetLocationRequest` 物件。
+   Creates a `TargetLocationRequest` object with the given parameters.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```csharp
       static TargetLocationRequest ^CreateRequest(Platform::String ^name, Platform::String ^defaultContent,Windows::Foundation::Collections::IMap<Platform::String^,Platform::Object^> ^parameters); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```js
       var ADB = ADBMobile;
@@ -106,15 +109,15 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest(winJS:createOrder &#x200B; ConfirmRequest)**
 
-   使用指定的參數建立 `TargetLocationRequest` 物件。
+   Creates a `TargetLocationRequest` object with the given parameters.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```csharp
       static TargetLocationRequest ^CreateOrderConfirmRequest(Platform::String ^name, Platform::String ^orderId,Platform::String ^orderTotal,Platform::String ^productPurchasedId,Windows::Foundation::Collections::IMap<Platform::String^,Platform::Object^> ^parameters); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```js
       varADB = ADBMobile;
@@ -123,31 +126,31 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **ClearCookies(winJS:clearCookie)**
 
-   在目前裝置上清除應用程式中的 Target cookies。
+   清除目前裝置上應用程式的Target Cookie。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```csharp
       static void ClearCookies();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```js
       ADBMobile.Target.clearCookies();
       ```
 
-* **GetPcId (winJS: getPcId)**
+* **GetPcId(winJS:getPcId)**
 
-   傳回目前裝置的 PC ID cookie。
+   傳回目前裝置的PC ID Cookie。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```csharp
       staticPlatform::String ^GetPcId();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```js
       autopcId = ADBMobile.Target.getPcId();
@@ -155,17 +158,16 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId(winJS:getSessionId)**
 
-   傳回目前裝置的工作階段 ID cookie。
+   傳回目前裝置的作業階段ID Cookie。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```csharp
       staticPlatform::String ^GetSessionId();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```js
        autosessionId=ADBMobile.Target.getSessionId(); 
       ```
-
