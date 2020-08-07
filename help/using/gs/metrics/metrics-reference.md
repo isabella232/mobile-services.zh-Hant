@@ -1,14 +1,17 @@
 ---
 description: 這是預設行動量度和維度的參考資訊。
-keywords: 行動
+keywords: mobile
 seo-description: 這是預設行動量度和維度的參考資訊。
 seo-title: 行動量度和維度參考
 solution: Marketing Cloud,Analytics
 title: 行動量度和維度參考
-topic: 量度
+topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: ht
-source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 94%
 
 ---
 
@@ -38,6 +41,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
    於特定一天使用應用程式時觸發。
 
    >[!TIP]
+   >
    >每日參與使用者事件不會自動儲存至 Analytics 量度。您必須建立處理規則，設定自訂事件來擷取此量度。
 
 * **每月參與使用者**
@@ -56,7 +60,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 * **當機**
 
-   應用程式未正常退出時觸發。此事件會在應用程式當機後開啟時傳送。
+   在應用程式無法正確退出時觸發。 當應用程式在當機後啟動時，就會傳送此事件。
 
    >[!TIP]
    >如果未呼叫 quit，系統便會將該應用程式視為當機。
@@ -71,7 +75,7 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 * **安裝日期**
 
-   安裝後首次啟動的日期。日期格式為 *MM/DD/YYYY*。
+   安裝後首次啟動的日期。 日期格式為 *MM/DD/YYYY* 。
 
 * **應用程式 ID**
 
@@ -131,4 +135,4 @@ source-git-commit: 056bb3edb94c2ceb2961bbe8e4851c20429e1ea2
 
 * **解析度**
 
-   寬和高 (以
+   寬和高 (以實際像素表示)。
