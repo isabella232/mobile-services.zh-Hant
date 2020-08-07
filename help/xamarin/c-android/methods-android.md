@@ -1,34 +1,37 @@
 ---
-description: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件的 Android 方法
+description: Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 keywords: Xamarin
-seo-description: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件的 Android 方法
+seo-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 seo-title: Android方法
-solution: Marketing Cloud，開發人員
+solution: Marketing Cloud,Developer
 title: Android方法
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1767'
+ht-degree: 66%
 
 ---
 
 
-# Android methods{#android-methods}
+# Android方法{#android-methods}
 
-適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件的 Android 方法
+Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
-## Configuration methods {#section_405AA09390E346E5BB7B1F4E0F65F51E}
+## 設定方法 {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
    傳回目前的除錯記錄偏好設定，預設值為false。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static Boolean DebugLogging;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       getter: var debuglog = Config.DebugLogging;
@@ -39,33 +42,34 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    傳回目前使用者的期限值。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static BigDecimal LifetimeValue; 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
        var lifetimeValue = Config.LifetimeValue;
       ```
 
-* **PrivacyStatus**
+* **隱私權狀態**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
-   * `ADBMobilePrivacyStatus.OptIn` - hits are sent immediately.
-   * `ADBMobilePrivacyStatus.OptOut` - hits are discarded.
+   * `ADBMobilePrivacyStatus.OptIn` – 會立即傳送點擊。
+   * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
-   預設值設定在 [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) 檔案中。
 
-   * 以下是此方法的語法:
+   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
+
+   * 以下是此方法的語法：
 
       ```java
       public static MobilePrivacyStatus PrivacyStatus; 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       getter: var privacyStatus = Config.PrivacyStatus; 
@@ -73,17 +77,17 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       ```
 
 
-* **UserIdentifier**
+* **使用者識別碼**
 
    如果已設定自訂識別碼，請傳回此識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static UserIdentifier();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       getter: var userId = Config.UserIdentifier;
@@ -94,13 +98,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    取得資料庫版本。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static string Version;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var version = ADBMobile.Version;
@@ -108,47 +112,47 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **PauseCollectingLifecycleData**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停以收集時間戳記，用於判斷前一個工作階段長度。這也會設定旗標，讓生命週期正確得知應用程式並未當機。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void PauseCollectingLifecycleData (); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.PauseCollectingLifecycleData();
       ```
 
-* **CollectLifecycleData (Activity activity)**
+* **CollectLifecycleData(Activity activity)**
 
-   (4.2 或更新版本) 向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   （4.2或更新版本）向SDK指出應收集生命週期資料，以便用於SDK中的所有解決方案。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void collectLifecycleData(Activity activity); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.CollectLifecycleData (this);
       ```
 
-* **CollectLifecycleData (Activity activity)**
+* **CollectLifecycleData(Activity activity)**
 
-   (4.2 或更新版本) 向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   （4.2或更新版本）向SDK指出應收集生命週期資料，以便用於SDK中的所有解決方案。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void collectLifecycleData(Activity activity, IDictionary<string, Object> context));
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       IDictionary<string, Java.Lang.Object> context = new Dictionary<string, 
@@ -159,15 +163,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. 應用程式會使用另一個設定，直到關閉為止。
+   （4.2或更新版本）可讓您在應用程式啟動時載 `ADBMobile JSON` 入不同的設定檔案。 應用程式會使用另一個設定，直到關閉為止。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void OverrideConfigStream (Stream stream);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Stream st1 = Assets.Open ("ADBMobileConfig-2.json"); 
@@ -176,7 +180,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   （4.2或更新版本）設定用於SDK所建立通知的大型圖示。 此圖示是當使用者在通知中心看到完整通知時所顯示的主要影像。
+   （4.2或更新版本）設定用於SDK所建立通知的大型圖示。 此圖示是使用者在通知中心查看完整通知時所顯示的主要影像。
 
    * 以下是此方法的語法:
 
@@ -184,7 +188,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       public static void SetLargeIconResourceId( int resourceId);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Config.SetLargeIconResourceId(R.drawable.appIcon);
@@ -194,31 +198,31 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    （4.2或更新版本）設定用於SDK所建立通知的小型圖示。 此圖示會顯示在狀態列中，是當使用者在通知中心看到完整通知時顯示的次要影像。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void SetSmallIconResourceId( int resourceId); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
        Config.SetSmallIconResourceId(R.drawable.appIcon);
       ```
 
-## Analytics methods {#section_63CF636104EF41F790C3E4190D755BBA}
+## Analytics 方法 {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
-   傳回自動產生的 Analytics ID。這是應用程式專屬的唯一ID，會在初始啟動時產生，並會從此時開始儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
+   傳回自動產生的Analytics ID。 這是應用程式專屬的唯一ID，會在初始啟動時產生，並會從此時開始儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static string TrackingIdentifier;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Var trackingId = Analytics.TrackingIdentifier
@@ -226,19 +230,19 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **TrackState**
 
-   使用可選內容資料來追蹤應用程式。`States`為應用程式中可用的檢視，例如 "title screen"、"level 1"、"pause" 等。這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果狀態空白，在報表中會顯示為「應用程式名稱 應用程式版本 (組建)」。如果在報表中看到此值，請務必在每個 `TrackState` 呼叫中設定 state。
+   使用可選內容資料來追蹤應用程式。`States` 是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果狀態為空白，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
-   >這是唯一會增加頁面檢視次數的追蹤呼叫。
+   >這是唯一會遞增頁面檢視的追蹤呼叫。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackState (string state, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var cdata = new Dictionary<string, Java.Lang.Object>(); 
@@ -249,20 +253,20 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **TrackAction**
 
-   追蹤應用程式中的動作。動作是發生在應用程式中而且您想測量的項目，例如「死亡」、「獲得的層級」、「饋送訂閱」以及其他度量。
+   追蹤應用程式中的動作。動作是您要測量的應用程式中發生的事，例如「死亡」、「獲得的層級」、「動態消息訂閱」和其他度量。
 
    >[!TIP]
    >
    >
-   >If you have code that might run while the app is in the background (for example, a background data retrieval), use `trackActionFromBackground` instead.
+   >如果您的程式碼會在應用程式於背景時執行 (例如，背景資料擷取)，請改為使用 `trackActionFromBackground`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackAction(string action, IDictionary<string,Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var cdata = new Dictionary<string, Java.Lang.Object> (); 
@@ -275,13 +279,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    傳送目前的經緯度座標。Also uses points of interest defined in the `ADBMobileConfig.json` file to determine whether the location that was provided as a parameter is in any of your POIs. 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackLocation(Location location, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
        Location loc = new Location(LocationManager.GpsProvider);;
@@ -295,13 +299,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    追蹤使用者何時進入信標鄰近地區。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackBeacon (string uuid, string major, string minor,  Analytics.BEACON_PROXIMITY prox, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.TrackBeacon ("UUID", "1", "2", 
@@ -312,13 +316,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackingClearCurrentBeacon();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.ClearBeacon(); 
@@ -328,13 +332,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    增加使用者期限值的量。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackLifetimeValueIncrease (double amount, IDictionary<string,Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.TrackLifetimeValueIncrease(5,null);
@@ -348,13 +352,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
    >
    > 此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * Here is code sample for this method:
+   * 以下是此方法的範例程式碼:
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -362,19 +366,19 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **TrackTimedActionUpdate**
 
-   傳遞資料以更新與指定動作關聯的內容資料。傳遞的資料會附加至特定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
+   傳入資料以更新與指定動作相關聯的上下文資料。 傳入的資料會附加至指定動作的現有資料，並覆寫資料（如果已為動作定義相同的索引鍵）。
 
    >[!TIP]
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackTimedActionUpdate(string action, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var updatedData = new Dictionary<string, Java.Lang.Object> (); 
@@ -386,14 +390,14 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    結束計時動作。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackTimedActionEnd(string action,
         Analytics.ITimedActionBlock block);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.TrackTimedActionEnd ("level2", new TimedActionBlock()); 
@@ -410,13 +414,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    傳回計時動作是否正在進行中。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static bool TrackingTimedActionExists(string action); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var level2InProgress = Analytics.TrackingTimedActionExists("level2"); 
@@ -424,15 +428,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **SendQueuedHits**
 
-   Forces the library to send all hits in the offline queue, regardless of how many hits are currently queued.
+   強製程式庫傳送離線佇列中的所有點擊，不論目前佇列的點擊數為何。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void SendQueuedHits();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.SendQueuedHits(); 
@@ -442,13 +446,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    清除離線佇列中的所有點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void ClearQueue(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.ClearQueue(); 
@@ -458,13 +462,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    擷取離線佇列中目前的點擊數。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static long QueueSize(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var queueSize = Analytics.QueueSize();
@@ -476,13 +480,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    從 ID 服務中擷取 Experience Cloud ID。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static string MarketingCloudId;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var mcid = Visitor.MarketingCloudId;
@@ -490,15 +494,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **SyncIdentifiers**
 
-   透過 Experience Cloud ID，您可以設定額外的客戶 ID 來與每個訪客產生關聯。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
+   透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void SyncIdentifiers((IDictionary<string> identifiers);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       IDictionary<string,string> ids = new Dictionary<string, string> ();
@@ -506,19 +510,19 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       Visitor.SyncIdentifiers (ids);
       ```
 
-## Target methods {#section_C1E4121CAF9D43538511D857A1F549A7}
+## Target 方法 {#section_C1E4121CAF9D43538511D857A1F549A7}
 
 * **LoadRequest**
 
    Sends a request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void LoadRequest (TargetLocationRequest request, Target.ITargetCallback callback); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       class TargetBlock: Java.Lang.Object, Target.ITargetCallback{ 
@@ -533,15 +537,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **CreateRequest**
 
-   方便讓建構函式使用指定的參數來建立 `ADBTargetLocationRequest` 物件。
+   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static TargetLocationRequest TargetCreateRequest(string name,string defaultContent,IDictionary<string,string> parameters); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       IDictionary<string, Java.Lang.Object> parameters = new Dictionary> string, Java.Lang.Object> (); 
@@ -553,13 +557,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    建立 `ADBTargetLocationRequest`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static TargetLocationRequest TargetCreateRequest (string name, string defaultContent, IDictionary<;string, string> parameters);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       var orderConfirm = Target.CreateOrderConfirmRequest ("myOrder", "12345", "29.41", "cool stuff", null); 
@@ -569,13 +573,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    清除應用程式中的Target Cookie。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void ClearCookies(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Target.ClearCookies (); 
@@ -583,17 +587,17 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
-* **VisitorProfile**
+* **訪客資料**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何信號則傳回 nil。訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
+   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回nil。 訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static IDictionary<string, Object> VisitorProfile; 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       NSDictionary profile = AudienceManager.VisitorProfile; 
@@ -603,13 +607,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    Returns the current `DPID`.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static string Dpuuid; 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       string currentDpid = AudienceManager.Dpid;
@@ -619,13 +623,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    Returns the current `DPUUID`.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static string AudienceDpuuid; 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       string currentDpuuid = AudienceManager.Dpuuid;
@@ -633,15 +637,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **AudienceSetDpidAndDpuuid**
 
-   設定 `dpid` 和 `dpuuid`。 If `dpid` and `dpuuid` are set, they are sent with each signal.
+   設定 `dpid` 和 `dpuuid`。 如果 `dpid` 已設 `dpuuid` 定，則會隨每個訊號傳送。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void AudienceSetDpidAndDpuuid (string Dpid, String Dpuuid);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       AudienceManager.SetDpidAndDpuuid ("testDpid", "testDpuuid");
@@ -651,13 +655,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>` callback.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void SignalWithData (IDictionary<string, Object> audienceData, AudienceManager.IAudienceManagerCallback callback); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       class AudienceManagerCallback: Java.Lang.Object, 
@@ -675,15 +679,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **重設**
 
-   重設觀眾管理員 `UUID` 並清除目前的訪客描述檔。
+   Resets audience manager `UUID` and purges current visitor profile.
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void Reset ();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
        AudienceManager.Reset ();
@@ -703,7 +707,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       public static MediaSettings SettingsWith (string name, double length, string playerName, string playerID);  
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       MediaSettings settings = Media.SettingsWith("name1", 10, "playerName1", "playerID1");
@@ -721,7 +725,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       double parentPodPosition, string CPM); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       MediaSettings adSettings = Media.AdSettingsWith ("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1"); 
@@ -737,7 +741,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       public static void Open (MediaSettings settings, Media.IMediaCallback callback);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       MediaSettings settings = Media.SettingsWith ("name1", 10, "playerName1", "playerID1"); 
@@ -749,17 +753,17 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       }
       ```
 
-* **Close**
+* **關閉**
 
-   關閉媒體項目具名名稱。
+   關閉命名為「名稱」的媒體項目。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void Close(string name);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Media.Close (settings.Name); 
@@ -767,15 +771,15 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **播放**
 
-   在指定的偏移處 (以秒為單位) 播放媒體項目具名名稱。
+   在指定的偏移處 (以秒為單位) 播放命名為「名稱」的媒體項目。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void Play ( string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Media.Play (settings.Name, 0); 
@@ -783,31 +787,31 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * **完成**
 
-   在提供的偏移處 (以秒為單位) 手動標示媒體項目為已完成。
+   在提供的偏移處 (以秒為單位) 手動將媒體項目標示為已完成。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void Complete (string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Media.Complete (settings.Name, 5); 
       ```
 
-* **Stop**
+* **停止**
 
    通知媒體模組，視訊已在指定的偏移處停止或暫停。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void Stop ( string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Media.Stop (settings.Name, 3);
@@ -823,7 +827,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
       public static void Click ( string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Media.Click (settings.Name, 3); 
@@ -833,13 +837,13 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void Track ( string name, NSDictionary data); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Media.Track (settings.Name, null); 
