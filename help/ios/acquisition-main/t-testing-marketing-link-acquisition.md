@@ -1,14 +1,17 @@
 ---
 description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
 seo-title: 測試行銷連結贏取
 solution: Marketing Cloud,Analytics
 title: 測試行銷連結贏取
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +36,8 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    您應會在 JSON 回應中看見 contextData:
 
-   ```js{"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
+   ```js
+   {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
    {"a.launch.campaign.trackingcode":"twdf4546","a.referrer.campaign.name":"iOS Demo","a.referrer.campaign.trackingcode":"twdf4546"}
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
@@ -42,7 +46,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | 設定 | 值 |
    |--- |--- |
-   | acquisition | 伺服器應為  `c00.adobe.com`.`appid` 應與您贏取連結中的 *`appid`* 相等。 |
+   | acquisition | 伺服器應為 `c00.adobe.com`，且 `appid` 應與您贏取連結中的 *`appid`* 相等。 |
    | analytics | `referrerTimeout` 的值應大於 0。 |
 
 1. (條件式) 如果應用程式設定檔案中的 SSL 設定為 `false`，請更新您的贏取連結，改採 HTTP 通訊協定，而非 HTTPS。
@@ -81,7 +85,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * `Analytics - Acquisition referrer timed out`
 
-      無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確定在開啟贏取連結後才安裝應用程式，而且使用的網路應與您點選 URL 並開啟應用程式時所用的網路相同。
+      無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確保在安裝應用程式之前已開啟贏取連結，而且當您按一下URL並開啟應用程式時，使用的是相同的網路。
 
 請記住以下資訊:
 
