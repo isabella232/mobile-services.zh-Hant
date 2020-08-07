@@ -5,10 +5,13 @@ seo-description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種�
 seo-title: PhoneGap 外掛程式方法
 solution: Marketing Cloud,Analytics
 title: PhoneGap 外掛程式方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: bd830fe5-804a-4d0a-bbb6-99a6d8da6a03
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 96%
 
 ---
 
@@ -87,7 +90,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **trackingIdentifier**
 
-   傳回自動產生的訪客識別碼。這是應用程式專屬的唯一訪客 ID，會在應用程式初次啟動時產生，並會儲存以供後續使用。此 ID 會在應用程式升級時保留，並於應用程式解除安裝時移除。
+   傳回自動產生的訪客識別碼。這是應用程式專屬的獨特訪客ID，會在應用程式初次啟動時產生，並會從此時開始儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝應用程式時移除。
 
    >[!TIP]
    >
@@ -123,13 +126,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    設定用於推送通知的裝置代號。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```javascript
       ADB.setPushIdentifier(pushIdentifier,success,fail);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```javascript
       ADB.setPushIdentifier('test_push_identifier',function(value){alert('success');},function(value){alert('fail');
@@ -322,7 +325,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **trackActionFromBackground**
 
-   追蹤背景發生的動作。如此會在某些情況下阻止觸發生命週期事件。
+   追蹤背景中發生的動作。 這會在特定情境中抑制生命週期事件觸發。
 
    * 以下是此方法的語法:
 
@@ -360,7 +363,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    增加使用者期限值的 `amount`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       ADB.trackLifetimeValueIncrease(amount[,JSONcData]);
@@ -380,7 +383,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       ADB.trackTimedActionStart(action[,JSONcData]);
@@ -400,7 +403,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       ADB.trackTimedActionUpdate(Stringaction[,JSONcData]);
@@ -510,7 +513,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADB.targetLoadRequestWithRequestName(success, fail, name, defaultContent, profileParameters, orderParameters, mboxParameters); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       ADB.targetLoadRequestWithName(
@@ -534,7 +537,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADB.targetSessionID(success,fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
         ADB.targetSessionID(function(value){alert(value);},function(value){alert('fail');}); 
@@ -550,7 +553,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADB.targetPcID(success,fail);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       ADB.targetPcID(function(value){alert(value);},function(value){alert('fail');});
@@ -576,7 +579,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    取得 Target 的自訂訪客 ID。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       ADB.targetThirdPartyID(success,fail); 
@@ -723,7 +726,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADB.visitorGetMarketingCloudId(success,fail);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       ADB.visitorGetMarketingCloudId(function(value){mcid=value;},function(){mcid=null;}); 
@@ -807,7 +810,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ADB.visitorGetIDs(success,fail)
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       ADB.visitorGetIDs(function(value){alert(value);},function(value){alert('fail');}); 
