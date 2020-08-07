@@ -4,10 +4,13 @@ seo-description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單�
 seo-title: 適用於 Adobe Mobile Services 的 iOS Target 方法
 solution: Marketing Cloud,Analytics
 title: 適用於 iOS 的 Target 方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: ht
-source-git-commit: 8dc075603544aaab7fdedb1ff10a12f7fa7e21f5
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
@@ -230,13 +233,13 @@ NSString *const ADBTargetParameterMboxHost;
 
    傳回第三方 ID。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       + (nullable NSString *) targetThirdPartyID;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       NSString *thirdPartyId = [ADBMobile targetThirdPartyID];
@@ -246,7 +249,7 @@ NSString *const ADBTargetParameterMboxHost;
 
    設定第三方 ID。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       + (void) targetSetThirdPartyID:(nullable NSString *)thirdPartyID;
@@ -272,7 +275,7 @@ NSString *const ADBTargetParameterMboxHost;
       + (void) targetClearCookies;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       [ADBMobile targetClearCookies];
@@ -282,13 +285,13 @@ NSString *const ADBTargetParameterMboxHost;
 
    傳回 PcID。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       + (nullable NSString *) targetPcID;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       NSString *myTargetPcID = [ADBMobile targetPcID];
