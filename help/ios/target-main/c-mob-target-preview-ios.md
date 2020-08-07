@@ -4,8 +4,11 @@ seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對
 seo-title: 在 iOS 裝置上預覽目標
 title: 在 iOS 裝置上預覽目標
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 * **setPreviewRestartDeeplink**
 
-   設定應用程式深層連結，只要在預覽模式中套用預覽選項，該深層連結就會觸發。
+   設定在「預覽」模式中套用預覽選取範圍時，將觸發的應用程式預覽。
 
    * 以下是此方法的語法:
 
@@ -32,7 +35,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
        + (void) targetPreviewRestartDeepLink:(nullable NSString *)callbackURL;
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
