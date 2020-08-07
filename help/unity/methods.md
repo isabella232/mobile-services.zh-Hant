@@ -7,12 +7,15 @@ solution: Marketing Cloud,Developer
 title: ADBMobile.cs方法
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 65%
 
 ---
 
 
-# ADBMobile.cs methods {#adbmobile-cs-methods}
+# ADBMobile.cs方法 {#adbmobile-cs-methods}
 
 ## 設定方法
 
@@ -20,7 +23,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void CollectLifecycleData();
@@ -32,9 +35,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.CollectLifecycleData();
       ```
 
-* **EnableLocalNotifications (僅限 iOS)**
+* **EnableLocalNotifications（僅限iOS）**
 
-   在應用程式中啟用本機通知。
+   在您的應用程式中啟用本機通知。
 
    * 以下是此方法的語法：
 
@@ -85,9 +88,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
    傳回目前使用者之隱私權狀態的列舉表示法。
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: 會立即傳送點擊。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: 會捨棄點擊。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。
 
-      如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在 [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) 檔案中。
+      如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
 
    * 以下是此方法的語法：
 
@@ -103,7 +106,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **GetUserIdentifier**
 
-   如果有設定自訂識別碼，傳回自訂使用者識別碼。如果未設定自訂識別碼，則傳回 null。預設值為 `null`。
+   如果已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
    * 以下是此方法的語法：
 
@@ -133,7 +136,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       var version = ADBMobile.GetVersion();
       ```
 
-* **KeepLifecycleSessionAlive (僅限 iOS)**
+* **KeepLifecycleSessionAlive（僅限iOS）**
 
    向 SDK 指出不論設定檔案中的生命週期工作階段逾時值為何，您下次從背景恢復時都不應啟動新的工作階段。
 
@@ -153,11 +156,11 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.KeepLifecycleSessionAlive();
       ```
 
-* **PauseCollectingLifecycleData (僅限 Android)**
+* **PauseCollectingLifecycleData（僅限Android）**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停以收集時間戳記，用於判斷前一個工作階段長度。這也會設定旗標，讓生命週期正確得知應用程式並未當機。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void PauseCollectingLifecycleData();
@@ -169,9 +172,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.PauseCollectingLifecycleData();
       ```
 
-* **SetContext (僅限 Android)**
+* **SetContext（僅限Android）**
 
-   向 SDK 指出應從 UnityPlayer 的目前活動設定 SDK 的應用程式內容.
+   向SDK指出應從UnityPlayer的目前活動設定其應用程式內容。
 
    * 以下是此方法的語法：
 
@@ -187,7 +190,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetDebugLogging**
 
-   設定偵錯記錄偏好設定為啟用。
+   將調試記錄首選項設定為啟用。
 
    * 以下是此方法的語法：
 
@@ -203,11 +206,11 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetPrivacyStatus**
 
-   設定目前使用者的隱私權狀態為 status。設定為下列其中一值：
+   將當前用戶的隱私狀態設定為狀態。 設定為下列其中一值：
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`: 會立即傳送點擊。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`: 會捨棄點擊。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。 如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法：
 
@@ -223,7 +226,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **SetUserIdentifier**
 
-   設定使用者識別碼為 userId。
+   將使用者識別碼設為userId。
 
    * 以下是此方法的語法：
 
@@ -243,7 +246,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
    擷取分析追蹤識別碼。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static string GetTrackingIdentifier();
@@ -257,9 +260,9 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackState**
 
-   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 &quot;title screen&quot;、&quot;level 1&quot;、&quot;pause&quot; 等。這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。
+   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。
 
-   If state is empty, it displays as *`app name app version (build)`* in reports. 如果在報表中看到此值，請務必在每個 `TrackState` 呼叫中設定 state。
+   如果狀態為空白，則會顯示為報 *`app name app version (build)`* 表中。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
 
    >[!TIP]
    >
@@ -281,13 +284,13 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackAction**
 
-   追蹤應用程式中的動作。動作是發生在應用程式中而且您想測量的項目，例如「死亡」、「獲得的層級」、「饋送訂閱」以及其他度量。
+   追蹤應用程式中的動作。動作是您要測量的應用程式中發生的事，例如「死亡」、「獲得的層級」、「動態消息訂閱」和其他度量。
 
    >[!TIP]
    >
    >如果您的程式碼會在應用程式於背景時執行 (例如，背景資料擷取)，請改為使用 `trackActionFromBackground`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackAction(string action, Dictionary<string, object> cdata);
@@ -299,15 +302,15 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       ADBMobile.TrackAction("level gained", null);
       ```
 
-* **TrackActionFromBackground (僅限 iOS)**
+* **TrackActionFromBackground（僅限iOS）**
 
-   追蹤背景發生的動作。如此會在某些情況下阻止觸發生命週期事件。
+   追蹤背景中發生的動作。 這會在特定情境中抑制生命週期事件觸發。
 
    >[!TIP]
    >
    >只有當應用程式在背景執行時，才應從此時執行的程式碼中呼叫此方法。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata);
@@ -321,7 +324,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackLocation**
 
-   傳送目前的經緯度座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供做為參數的地點是否位在您的 POI 中。如果目前座標位在定義的 POI 中，則會填入內容資料變數並以 TrackLocation 呼叫傳送。
+   傳送目前的經緯度座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供做為參數的地點是否位在您的 POI 中。如果目前座標在已定義的POI中，則會填入內容資料變數，並隨TrackLocation呼叫傳送。
 
    * 以下是此方法的語法：
 
@@ -339,7 +342,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
    追蹤使用者何時進入信標鄰近地區。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata);
@@ -349,7 +352,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackingClearCurrentBeacon();
@@ -363,7 +366,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackLifetimeValueIncrease**
 
-   增加使用者期限值的量。
+   增加使用者期限值的金額。
 
    * 以下是此方法的語法：
 
@@ -385,7 +388,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata);
@@ -399,13 +402,13 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **TrackTimedActionUpdate**
 
-   傳遞資料以更新與特定動作關聯的內容資料。傳遞的資料會附加至特定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
+   傳遞資料以更新與指定動作相關的上下文資料。 傳入的資料會附加至指定動作的現有資料，並覆寫資料（如果已為動作定義相同的索引鍵）。
 
    >[!TIP]
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata);
@@ -519,7 +522,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
 
 * **VisitorSyncIdentifiers**
 
-   透過 Experience Cloud ID，您可以設定額外的客戶 ID 來與每個訪客產生關聯。訪客 API 可接受同一名訪客的多個客戶 ID，以及用來區分不同客戶 ID 之範圍的客戶類型識別碼。此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
+   透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一訪客的多個客戶ID，以及客戶類型識別碼，以區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
 
    * 以下是此方法的語法：
 
@@ -547,7 +550,7 @@ source-git-commit: 0d50c7e6674de33b8190e74c113ae010ff226e97
       public static void ProcessGooglePlayInstallReferrerUrl(string referrerUrl);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       // in actual implementation, the referrer url should be retrieved
