@@ -4,10 +4,13 @@ seo-description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
 seo-title: TVJS 方法
 solution: Marketing Cloud,Analytics
 title: TVJS 方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    傳回 Adobe Mobile 程式庫的目前版本。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       version()
@@ -38,9 +41,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **privacyStatus**
 
-   傳回目前使用者之隱私權狀態列舉的 NSUInteger 表示法。
+   傳回目前使用者隱私權狀態列舉的NSUInteger表示法。
 
-   選項如下:
+   以下是選項：
 
    * `ADBMobilePrivacyStatusOptIn`: 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut`: 會捨棄點擊。
@@ -69,6 +72,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * `ADBMobilePrivacyStatusOptIn`: 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut`: 會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown`: 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。
+
    如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 以下是此方法的語法:
@@ -77,7 +81,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       setPrivacyStatus(privacyStatus)
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       ADBMobile.setPrivacyStatus(ADBMobilePrivacyStatusOptIn);
@@ -88,7 +92,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    傳回目前使用者的期限值。預設值為 `0`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       lifetimeValue()
@@ -134,7 +138,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       setUserIdentifier(userId)
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       ADBMobile.setUserIdentifier(‘myUserId’);
@@ -145,7 +149,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    * 參數:  `userID`
 
       * 類型: 字串
-      * 該使用者的新識別碼。
+      * 此使用者的新識別碼。
 
 * **setAdvertisingIdentifier**
 
@@ -155,13 +159,13 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    >
    >只有在您使用廣告服務時，才能從 Apple API 擷取 IDFA。若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       setAdvertisingIdentifier(idfa)
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       ADBMobile.setAdvertisingIdentifier(‘myIdfa’);
@@ -182,7 +186,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       setDebugLogging(logging)
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```objective-c
       `ADBMobile.setDebugLogging(true);
@@ -217,8 +221,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
          * 類型: `String`
          * 頁面狀態名稱
       * 參數: `contextData`
-         * 類型: 物件
-         * 此點擊的其他內容資料。
+         * 類型：物件
+         * 此點擊的其他上下文資料。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -241,10 +245,10 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 傳回: N/A
       * 參數: `actionName`
          * 類型: 字串
-         * 正在追蹤的動作名稱。
+         * 所追蹤動作的名稱。
       * 參數: `contextData`
-         * 類型: 物件
-         * 此點擊的其他內容資料。
+         * 類型：物件
+         * 此點擊的其他上下文資料。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -267,14 +271,14 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
       * 傳回: N/A
       * 參數: `lat`
-         * 類型: 數字
+         * 類型：數字
          * 位置的緯度。
       * 參數: `lon`
-         * 類型: 數字
+         * 類型：數字
          * 位置的經度。
       * 參數: `contextData`
-         * 類型: 物件
-         * 此點擊的其他內容資料。
+         * 類型：物件
+         * 此點擊的其他上下文資料。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -296,8 +300,8 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
       * 傳回: N/A
       * 參數: `increaseAmount`
-         * 類型: 數字
-         * 要增加至使用者目前期限值的量。
+         * 類型：數字
+         * 要新增至使用者目前期限值的金額。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -313,7 +317,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       trackTimedActionStartData(name [, contextData])
@@ -322,10 +326,10 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 傳回: N/A
       * 參數: `name`
          * 類型: 字串
-         * 即將開始的計時動作名稱。
+         * 正在啟動的計時動作的名稱。
       * 參數: `contextData`
-         * 類型: 物件
-         * 此點擊的其他內容資料。
+         * 類型：物件
+         * 此點擊的其他上下文資料。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -335,15 +339,15 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **trackTimedActionUpdateData**
 
-   傳遞資料以更新與指定動作關聯的內容資料。
+   傳入資料以更新與指定動作相關聯的上下文資料。
 
-   傳遞的資料會附加至指定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
+   傳遞的資料會附加至指定動作的現有資料，如果已為動作定義相同的索引鍵，則會覆寫資料。
 
    >[!TIP]
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```objective-c
       trackTimedActionUpdateData(name [, contextData])
@@ -352,10 +356,10 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 傳回: N/A
       * 參數: `name`
          * 類型: 字串
-         * 即將更新的計時動作名稱。
+         * 正在更新的計時動作的名稱。
       * 參數: `contextData`
-         * 類型: 物件
-         * 此點擊的其他內容資料。
+         * 類型：物件
+         * 此點擊的其他上下文資料。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -368,7 +372,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    結束計時動作。
 
-   如果您提供回撥函式，則可以存取最終時間值。如果沒有提供回撥，或回撥傳回 true，則 Adobe SDK 會自動傳送點擊。若從回撥傳回 false，則會抑制計時動作點擊。
+   如果您提供回呼函式，則可存取最終時間值。 如果未提供回呼，或回呼傳回true,Adobe SDK會自動傳送點擊。 若從回撥傳回 false，則會抑制計時動作點擊。
 
    * 以下是此方法的語法:
 
@@ -379,7 +383,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       * 傳回: N/A
       * 參數: `name`
          * 類型: 字串
-         * 即將結束的計時動作名稱。
+         * 要結束的計時動作的名稱
       * 參數: `callback`
          * 類型: `function(inAppDuration, totalDuration, data)`
          * 回撥方法的參數會有: `inAppDuration` (數字)、`totalDuration` (數字) 及 `data` (內容資料物件)。
@@ -423,7 +427,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
    傳回自動產生的訪客識別碼。
 
-   這是由 Adobe 伺服器所產生的應用程式專屬唯一訪客 ID。如果產生 ID 時無法連線至 Adobe 伺服器，則會改由透過 Apple 的 CFUUID 產生 ID。此值會在初次啟動時產生，然後儲存以供後續使用。此 ID 會在應用程式升級時保留、在標準應用程式備份程序期間儲存並還原，以及在應用程式解除安裝時移除。
+   這是Adobe伺服器產生的應用程式專屬唯一訪客ID。 如果在產生時無法到達Adobe的伺服器，則會使用Apple的CFUUID產生ID。 值會在初始啟動時產生，並會從此儲存及使用。 此ID會在應用程式升級時保留，在標準應用程式備份程式期間儲存並還原，並在解除安裝應用程式時移除。
 
    >[!TIP]
    >
@@ -598,11 +602,11 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
       ```
 
       * 參數: `traits`
-         * 類型: 物件
-         * 該使用者的特徵字典。
+         * 類型：物件
+         * 此使用者的特徵字典。
       * 參數: `callback`
-         * 類型: 函式 (設定檔)
-         * 在回撥函式參數中從 Audience Manager 傳回的設定檔。
+         * 類型：函式（描述檔）
+         * 回呼函式參數中從Audience Manager傳回的描述檔。
    * 以下是此方法的範例程式碼:
 
       ```objective-c
@@ -656,7 +660,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 * **visitorSyncIdentifiers**
 
-   除了 Experience Cloud ID 之外，您還可以設定額外的客戶 ID 來與每個訪客產生關聯。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
+   除了Experience Cloud ID之外，您還可以設定其他客戶ID來與每個訪客建立關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
 
    * 以下是此方法的語法:
 
