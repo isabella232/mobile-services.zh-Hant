@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 設定方法
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 100%
 
 ---
 
@@ -248,8 +251,8 @@ source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
         super.onResume()
         // assume being called in an Activity class Config.collectLifecycleData(this);
         } 
-        ```
-      
+      ```
+
 * **pauseCollecting&#x200B;LifecycleData**
 
    * 向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，`onPause` 以收集時間戳記，用於判斷前一個工作階段長度。這也會設定旗標，讓生命週期得知應用程式並未當機。如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
