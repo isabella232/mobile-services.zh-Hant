@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: Analytics 方法
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: ht
-source-git-commit: 657e8b93d1516690ad21d6cf504f9c8f611747b6
+translation-type: tm+mt
+source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +34,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >這是唯一會遞增頁面檢視的追蹤呼叫。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void trackState(String state, Map<String, Object> contextData);
@@ -63,7 +66,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 * **getTrackingIdentifier**
 傳回自動產生的 Analytics 訪客識別碼。
 
-   這是應用程式專屬的唯一訪客 ID，會在初次啟動時產生，並會儲存以供後續使用。ID 會在應用程式升級時保留，並於應用程式解除安裝時移除。
+   這是應用程式專屬的獨特訪客ID，會在初次啟動時產生，並會從此儲存及使用。 ID會在應用程式升級時保留，並在解除安裝應用程式時移除。
 
    * 以下是此方法的語法:
 
@@ -97,7 +100,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    增加使用者期限值的 `amount`。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void trackLifetimeValueIncrease(BigDecimal amount, Map<String, Object> contextData);
@@ -119,7 +122,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
    ```java
    public static void trackTimedActionStart(String action, Map<String, Object> contextData);
@@ -140,7 +143,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void trackTimedActionUpdate(String action, Map<String, Object> contextData);
@@ -239,13 +242,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    處理來自 Google Play 商店的反向連結行銷活動資料，以供日後使用。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void processReferrer(final Context context, final Intent intent);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.processReferrer(getApplicationContext(), intent);
@@ -265,13 +268,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    如需如何擷取反向連結 URL 的詳細資訊，請參閱 Google 文件：https://developer.android.com/google/play/installreferrer/library。
 
-   * 以下是此方法的語法:
+   * 以下是此方法的語法：
 
       ```java
       public static void processGooglePlayInstallReferrerUrl(final String referrerUrl);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 以下是此方法的範例程式碼：
 
       ```java
       Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);
