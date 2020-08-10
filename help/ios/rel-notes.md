@@ -6,11 +6,11 @@ solution: Marketing Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 48c3addeb929f3356990ef55b44f93dd4bb2f728
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 95%
 
 以下是適用於 Experience Cloud 解決方案之 iOS SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
 
-**2020年7月16日： 版本4.19.3**
+**2020 年 7 月 16 日：4.19.3 版**
 
-* 一般——修正在查詢參數中具有多個等號的深層連結URL無法正確處理的錯誤。
+* 一般 - 修正具有多個 Equals 登入查詢參數的深度連結 URL 無法正確處理的錯誤。
 
 **2020 年 3 月 24 日：4.19.2 版**
 
