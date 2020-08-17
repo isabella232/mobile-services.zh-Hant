@@ -7,18 +7,18 @@ solution: Marketing Cloud,Analytics
 title: 行動量度和維度參考
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '637'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 行動量度和維度參考 {#mobile-metrics-and-dimensions-reference}
 
-這些資訊可協助您進一步瞭解預設行動量度和維度。
+這些資訊可協助您進一步了解預設行動量度和維度。
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 ## 量度 {#section_6704C815147D44AF96151D626BEB813C}
 
-以下是預設行動量度的清單:
+以下是預設行動量度的清單：
 
 * **首次啟動**
 
@@ -60,7 +60,7 @@ ht-degree: 94%
 
 * **當機**
 
-   在應用程式無法正確退出時觸發。 當應用程式在當機後啟動時，就會傳送此事件。
+   應用程式未正確退出時觸發。一旦應用程式於當機後啟動，就會傳送此事件。
 
    >[!TIP]
    >如果未呼叫 quit，系統便會將該應用程式視為當機。
@@ -71,15 +71,15 @@ ht-degree: 94%
 
 ## 維度 {#section_1784C7E859F64CCEB95C5DD1DCF5C98D}
 
-以下是預設行動維度的清單:
+以下是預設行動維度的清單：
 
 * **安裝日期**
 
-   安裝後首次啟動的日期。 日期格式為 *MM/DD/YYYY* 。
+   安裝後首次啟動的日期。日期格式為 *YYYY/MM/DD*。
 
 * **應用程式 ID**
 
-   以下列格式儲存應用程式名稱和版本: `[AppName] [BundleVersion]`.例如, `myapp 1.1`.
+   以下列格式儲存應用程式名稱和版本：`[AppName] [BundleVersion]`，例如：`myapp 1.1`。
 
 * **啟動次數**
 
