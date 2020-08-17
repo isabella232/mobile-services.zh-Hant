@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # ADBMobile JSON 設定檔案 {#adbmobile-json-config}
 
-此資訊可協助您瞭解 ADBMobile.json 設定檔案中的變數。
+此資訊可協助您了解 ADBMobile.json 設定檔案中的變數。
 
 ## `ADBMobileConfig.json` 設定檔案參考 {#section_5AD4EDF87E304980B4AC4A5657FDA8B9}
 
