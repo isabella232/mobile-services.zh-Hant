@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 要附加訪客資訊的必要 URL 字串。
    * `URL<NSURL>`已附加訪客資訊的字串。
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
        NSURL *url = [NSURL URLWithString:@"https://www.example.com"];  
@@ -47,13 +47,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    從 ID 服務中擷取 Experience Cloud ID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (NSString  *)  visitorMarketingCloudID;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       NSString *mcid = [ADBMobile visitorMarketingCloudID]; 
@@ -67,13 +67,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    透過 Experience Cloud ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void)  visitorSyncIdentifiers:(NSDictionary  *)identifiers;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile visitorSyncIdentifiers:@{@"idType":@"idValue"}];
@@ -87,13 +87,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
    * `ADBMobileVisitorAuthenticationStateLoggedOut`
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void) visitorSyncIdentifiers:(nullable NSDictionary  *)identifiers  authenticationState:(ADBMobileVisitorAuthenticationState)authState; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile visitorSyncIdentifiers:@{@"myIdType":@"valueForUser"}  authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated]; 
@@ -107,7 +107,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    * `ADBMobileVisitorAuthenticationStateAuthenticated`
    * `ADBMobileVisitorAuthenticationStateLoggedOut`
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void) visitorSyncIdentifierWithType:(nullable NSString *)identifierType  
@@ -115,7 +115,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       (ADBMobileVisitorAuthenticationState)authState; 
       ```
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       [ADBMobile visitorSyncIdentifierWithType:@"myIdType" identifier:@"valueForUser"  
@@ -126,13 +126,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    擷取一連串唯讀 `ADBVisitorID` 物件。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (nullable NSArray *) visitorGetIDs;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       NSArray *myVisitorIDs = [ADBMobile visitorGetIDs];
@@ -142,13 +142,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    4.16.0 版導入了此方法，可傳回包含訪客 ID 服務 URL 變數的適當形式字串。如需如何使用此方法的詳細資訊，請參閱 [Adobe Experience Platform Identity Service 方法](/help/ios/reference/hybrid-app.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objectivec
       + (void) visitorGetUrlVariablesAsync:(nullable void (^)(NSString* __nullable urlVariables))callback;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objectivec
       NSString *urlString = @"https://www.mydomain.com/index.php"; 
