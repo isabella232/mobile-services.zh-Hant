@@ -2,25 +2,25 @@
 description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
 keywords: android;library;mobile;sdk
 seo-description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
-seo-title: 'PhoneGap 外掛程式方法 '
+seo-title: PhoneGap 外掛程式方法
 solution: Marketing Cloud,Analytics
-title: 'PhoneGap 外掛程式方法 '
+title: PhoneGap 外掛程式方法
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # PhoneGap 外掛程式方法{#phonegap-plug-in-methods}
 
-您可以使用 Android PhoneGap 增效模組方法來完成各種作業。
+您可以使用 Android PhoneGap 外掛程式方法來完成各種作業。
 
-在您想要使用追蹤的 `html` 檔案中，新增下列內容至 `<head>` 標記:
+在您想要使用追蹤的 `html` 檔案中，對 `<head>` 標記新增下列內容：
 
 ```js
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
@@ -32,15 +32,15 @@ ht-degree: 97%
 
    傳回目前使用者的隱私權狀態。
 
-   可用的狀態包括:
+   可用的狀態包括：
 
-   * `ADB.optedIn`: 會立即傳送點擊。
-   * `ADB.optedOut`: 會捨棄點擊。
-   * `ADB.optUnknown`: 如果您的報表套裝&#x200B;**已啟用**&#x200B;時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADB.optedIn`：立即傳送點擊。
+   * `ADB.optedOut`：捨棄點擊。
+   * `ADB.optUnknown`：如果您的報表套裝&#x200B;**已啟用**&#x200B;時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       預設值設定在 `ADBMobileConfig.json` 檔案中。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       getPrivacyStatus(function (value) { myTempVal = value; }, function () {myTempVal = null;}); 
@@ -50,13 +50,13 @@ ht-degree: 97%
 
    將目前使用者的隱私權狀態設為 `status`。
 
-   您可以設定下列其中一種狀態:
+   您可以設定下列其中一種狀態：
 
-   * `ADB.optedIn`: 會立即傳送點擊。
-   * `ADB.optedOut`: 會捨棄點擊。
-   * `ADB.optUnknown`: 如果您的報表套裝&#x200B;**已啟用**&#x200B;時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADB.optedIn`：立即傳送點擊。
+   * `ADB.optedOut`：捨棄點擊。
+   * `ADB.optUnknown`：如果您的報表套裝&#x200B;**已啟用**&#x200B;時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝&#x200B;**沒有**&#x200B;啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.setPrivacyStatus('ADB.optedIn');
@@ -66,7 +66,7 @@ ht-degree: 97%
 
    傳回目前使用者的期限值。預設值為 0。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.getLifetimeValue(function (value) { myTempVal = value }, function () { myTempVal = null; }); 
@@ -74,9 +74,9 @@ ht-degree: 97%
 
 * **setDebugLogging**
 
-   啟用 (`true`) 或停用 (`false`) 檢視偵錯資訊。預設情況下，該變數為 `false`.
+   啟用 (`true`) 或停用 (`false`) 檢視偵錯資訊。預設情況下，該變數為 `false`。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.setDebugLogging(true);
@@ -86,7 +86,7 @@ ht-degree: 97%
 
    取得資料庫版本。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.getVersion(function (value) { versionNum = value }, function () { versionNum = 1.0;});
@@ -96,7 +96,7 @@ ht-degree: 97%
 
    傳回自動產生的訪客識別碼。
 
-   這是應用程式專屬的獨特訪客ID，會在應用程式初次啟動時產生，並自此儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝應用程式時移除。
+   這是應用程式專屬的唯一訪客 ID，會在初次啟動時產生，並會從此時間點儲存及使用。ID 會在應用程式升級時保留，並在解除安裝應用程式時移除。
 
    >[!TIP]
    >
@@ -104,7 +104,7 @@ ht-degree: 97%
 
    若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，且會使用追蹤識別碼。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.trackingIdentifier(function (value) { myTempVal = value; }, function () { myTempVal = null; }); 
@@ -114,7 +114,7 @@ ht-degree: 97%
 
    若已設定自訂使用者識別碼，將會傳回此識別碼，否則會傳回 `null`。預設值為 `null`。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       getUserIdentifier(function(value) { myTempVal = value; }, function () { myTempVal = null; });
@@ -124,7 +124,7 @@ ht-degree: 97%
 
    將使用者識別碼設為 `identifier`。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.setUserIdentifier('testUser');
@@ -138,13 +138,13 @@ ht-degree: 97%
    getUserIdentifier(function (value) { myTempVal = value; }, function () { myTempVal = null; });
    ```
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       ADB.setPushIdentifier(pushIdentifier, success, fail);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.setPushIdentifier('test_push_identifier',function (value) { alert('success'); },function (value) { alert('fail'); }); 
@@ -158,7 +158,7 @@ ht-degree: 97%
    >
    >呼叫 `keepLifecycleSessionAlive` 可防止您的應用程式下次從背景繼續執行時啟動新的工作階段。只有在應用程式註冊了接收背景通知時，才能使用此方法。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.keepLifecycleSessionAlive(); 
@@ -168,7 +168,7 @@ ht-degree: 97%
 
    不論目前的批次選項為何，都會強制資料庫傳送排入佇列的所有點擊。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.trackingSendQueuedHits();
@@ -178,7 +178,7 @@ ht-degree: 97%
 
    取得或設定離線佇列中儲存的追蹤呼叫數目。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.trackingGetQueueSize(function (value) { myTempVal = value;}, function () { myTempVal = null;}); 
@@ -192,7 +192,7 @@ ht-degree: 97%
    >
    >手動清除佇列時請格外小心，因為此動作無法回復。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.trackingClearQueue(function (value) { myTempVal = value; }, function () { myTempVal = null; }); 
@@ -204,13 +204,13 @@ ht-degree: 97%
 
    提交 PII 收集要求。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
    ```javascript
    ADB.collectPII(piiData,success, fail);
    ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```javascript
       ADB.collectPII({'k1':'v1','k2':'v2','k3':'v3'}, function (value) { alert('success') },function (value) { alert('fail') ;});
@@ -227,13 +227,13 @@ ht-degree: 97%
    >
    >如果生命週期呼叫是啟動事件，會附加 Adobe Link 資料，否則將會額外傳送呼叫。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```js
       ADB.trackAdobeDeepLink(deeplinkURL, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.trackAdobeDeepLink('xyz-deeplink-url',function (value) { alert('success'); },function (value) { alert('fail') }); 
@@ -243,15 +243,15 @@ ht-degree: 97%
 
    使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如 `home dashboard`、`app settings`、`cart` 等。這些狀態類似於網站上的頁面，且 `trackState` 呼叫會遞增頁面檢視。
 
-   `cData`: JSON 物件，具有要在內容資料中傳送的鍵值值組。
+   `cData`：JSON 物件，具有要在內容資料中傳送的鍵值值組。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```js
       ADB.trackState(string stateName[,JSON cData]);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
         ADB.trackState("login&amp;nbsp;page"); 
@@ -265,13 +265,13 @@ ht-degree: 97%
 
    追蹤應用程式中的動作。動作包括`logins`、`banner taps`、`feed subscriptions`，以及您想要測量、在應用程式中發生的其他量度。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```js
       ADB.trackAction(string action[,JSON cData]); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
         ADB.trackAction("login");
@@ -285,13 +285,13 @@ ht-degree: 97%
 
    傳送目前的 x 和 y 座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供做為參數的地點是否位在您的 POI 中。如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.trackLocation(x, y[,JSON cData]); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.trackLocation('40.431596', '-111.893713'); 
@@ -301,13 +301,13 @@ ht-degree: 97%
 
    增加使用者期限值的 `amount`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       ADB.trackLifetimeValueIncrease(amount[,JSON cData]); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.trackLifetimeValueIncrease('10.01'); 
@@ -323,13 +323,13 @@ ht-degree: 97%
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       ADB.trackTimedActionStart(action[,JSON cData]);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.trackTimedActionStart("cartToCheckout"); 
@@ -341,13 +341,13 @@ ht-degree: 97%
 
    傳遞的 `cData` 會附加至該動作的現有資料，如果已為 `action` 定義了相同鍵值，則會覆寫資料。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.trackTimedActionUpdate(String action[,JSON cData]);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.trackTimedActionUpdate("cartToCheckout",{'SampleContextDataKey3':'SampleContextDataVal3','SampleContextDataKey4':'SampleContextDataVal4'});
@@ -357,7 +357,7 @@ ht-degree: 97%
 
    結束計時動作。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.trackTimedActionEnd("cartToCheckout"); 
@@ -367,7 +367,7 @@ ht-degree: 97%
 
    傳回計時動作是否正在進行中。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.trackingTimedActionExists(function (value) { myTempVal = value }, function () { myTempVal = null; }); 
@@ -379,13 +379,13 @@ ht-degree: 97%
 
    追蹤使用者何時進入信標鄰近地區。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```js
       ADB.trackBeacon(uuid, major, minor, proximity, cData) 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.trackBeacon('2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6', 1, 2, 
@@ -396,13 +396,13 @@ ht-degree: 97%
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```js
       ADB.clearCurrentBeacon(success, fail)
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```js
       ADB.clearCurrentBeacon(); 
@@ -414,13 +414,13 @@ ht-degree: 97%
 
    傳送要求至您設定的 `Target` 伺服器並傳回選件的字串值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetLoadRequest(success, fail, name, defaultContent, parameters);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetLoadRequest(function&nbsp;(value)
@@ -431,13 +431,13 @@ ht-degree: 97%
 
    傳送要求至您設定的 `Target` 伺服器。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetLoadOrderConfirmRequest(success, fail name orderId, orderTotal, productPurchaseId, parameters); 
       ```
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetLoadRequest(function (value) { myTempVal = value }
@@ -452,7 +452,7 @@ ht-degree: 97%
 
    清除共用 Cookie 儲存空間中的 `Target` Cookie。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetClearCookies(); 
@@ -462,7 +462,7 @@ ht-degree: 97%
 
    處理 `Target` 服務要求。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetLoadRequestWithNameWithLocationParameters(
@@ -470,7 +470,7 @@ ht-degree: 97%
         ); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetLoadRequestWithNameWithLocationParameters  (function () { alert('success'); }, function () { alert('fail'); }, ;'bannerOffer', 'none', {'hp':'hp_val_new','hp.company':'adobe', 'hp.val2':'hp_val2'}, {'hp':'hp_val_new','hp.company':'adobe', 'hp.val2':'hp_val2'},{'hp':'hp_val_new','hp.company':'adobe', 'hp.val2':'hp_val2'},{'hp':'hp_val_new','hp.company':'adobe', 'hp.val2':'hp_val2'});
@@ -480,13 +480,13 @@ ht-degree: 97%
 
    處理 `Target` 服務要求。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetLoadRequestWithRequestName(success, fail, name, defaultContent, profileParameters, orderParameters, mboxParameters);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetLoadRequestWithName(
@@ -504,13 +504,13 @@ ht-degree: 97%
 
    透過 Target 伺服器取得針對此訪客傳回之 `SessionID` Cookie 的值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetSessionID (success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetSessionID(function (value) { alert(value) },function (value){ alert('fail'); });  
@@ -520,13 +520,13 @@ ht-degree: 97%
 
    透過 `PcID` 伺服器取得針對此訪客傳回之 `Target` Cookie 的值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetPcID (success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetPcID(function  (value) { alert(value) },function (value) { alert('fail'); });
@@ -536,13 +536,13 @@ ht-degree: 97%
 
    設定 Target 的自訂訪客 ID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       ADB.targetSetThirdPartyID(thirdPartyID, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.targetSetThirdPartyID('test-third-party-id' function (value) { alert('success'); },function (value) { alert('fail'); }); 
@@ -552,13 +552,13 @@ ht-degree: 97%
 
    取得 Target 的自訂訪客 ID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.targetThirdPartyID(success, fail);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
        ADB.targetThirdPartyID(function (value) { alert(value); },function (value) { alert('fail')__;});
@@ -570,13 +570,13 @@ ht-degree: 97%
 
    傳送要求至您設定的 Target 伺服器並傳回選件的字串值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.acquisitionCampaignStartForApp(appId, data, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
@@ -596,13 +596,13 @@ ht-degree: 97%
 
    取得訪客的設定檔。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.audienceGetVisitorProfile(); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.audienceGetVisitorProfile(function(value) { profile = value;}, function() { profile = null; }); 
@@ -612,13 +612,13 @@ ht-degree: 97%
 
    傳回 DPUUID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.audienceGetDpuuid(success fail);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.audienceGetDpuuid(function(value) { dpuuid = value;}, function(){dpuuid = null; }); 
@@ -628,13 +628,13 @@ ht-degree: 97%
 
    傳回 DPID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.audienceGetDpid(success, fail);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.audienceGetDpid(function(value){dpid = value;}, function() {dpid =  null;}); 
@@ -644,13 +644,13 @@ ht-degree: 97%
 
    設定 DPID 和 DPUUID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.audienceSetDpidAndDpuuid(dpid, dpuuid, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.audienceSetDpidAndDpuuid(‘dpid’, ‘dpuuid’, function() {…}, function(){…};
@@ -664,13 +664,13 @@ ht-degree: 97%
 
    處理 Audience Manager 服務要求。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.audienceSignalWithData(success, fail, data);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
        ADB.audienceSignalWithData(function() {}, function() {} {‘key1’: ’value1’ ‘key2’: ‘value2’}); 
@@ -684,7 +684,7 @@ ht-degree: 97%
 
    Audience Manager UUID 並清除目前的訪客設定檔。
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.audienceReset();
@@ -696,13 +696,13 @@ ht-degree: 97%
 
    從 ID 服務傳回 Experience Cloud ID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.visitorGetMarketingCloudId(success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.visitorGetMarketingCloudId(function (value) { mcid = value;},function (){ mcid = null;});
@@ -712,13 +712,13 @@ ht-degree: 97%
 
    將提供的識別碼與 ID 服務同步。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.visitorSyncIdentifiers(identifiers, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.visitorSyncIdentifiers({‘key_id_1’:’value_id_1’}, function() {…}, function() {…}));
@@ -732,14 +732,14 @@ ht-degree: 97%
 
    將提供的識別碼同步至 ID 服務。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.visitorSyncIdentifiersWithAuthenticationState
       (identifiers, authenticationState, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.visitorSyncIdentifiersWithAuthenticationState({'k1':'v1','k2':'v2','k3':'v3'}, ADB.mobileVisitorAuthenticationStateAuthenticated, function (value) { alert('success'); },function (value) { alert('fail'); }); 
@@ -749,13 +749,13 @@ ht-degree: 97%
 
    將提供的識別碼同步至 ID 服務。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.visitorSyncIdentifierWithType(identifierType, identifier authenticationState, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.visitorSyncIdentifierWithType('test-identifier-type', 'test-identifier', ADB.mobileVisitorAuthenticationStateAuthenticated, function (value) { alert('success') },function (value) { alert('fail'); }); 
@@ -765,13 +765,13 @@ ht-degree: 97%
 
    附加訪客識別碼至指定 URL。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
        ADB.visitorAppendToURL(urlToAppend, success, fail); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.visitorAppendToURL('test_visitor_url', function (value) alert(value);},'');
@@ -781,13 +781,13 @@ ht-degree: 97%
 
    傳回所有已同步的 `visitorID`。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       ADB.visitorGetIDs (success, fail);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       ADB.visitorGetIDs(function (value) { alert(value); },function (value) { alert('fail') ;}); 
