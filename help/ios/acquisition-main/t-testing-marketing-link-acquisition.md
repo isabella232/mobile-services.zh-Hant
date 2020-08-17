@@ -1,29 +1,29 @@
 ---
-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
+description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (以裝置指紋為基礎)。
 keywords: android;library;mobile;sdk
-seo-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
+seo-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (以裝置指紋為基礎)。
 seo-title: 測試行銷連結贏取
 solution: Marketing Cloud,Analytics
 title: 測試行銷連結贏取
 topic: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # 測試行銷連結贏取 {#testing-marketing-link-acquisition}
 
-下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
+下列說明可協助您利用行銷連結往返贏取促銷活動 (以裝置指紋為基礎)。
 
 1. 完成[行動應用程式贏取](/help/ios/acquisition-main/acquisition.md)中的先決條件任務。
 1. 在 Adobe Mobile Services 使用者介面中，按一下&#x200B;**[!UICONTROL 行銷連結產生器]**&#x200B;並產生贏取行銷連結 URL，此 URL 會將 App Store 設為 iOS 裝置的目的地。
 
-   例如:
+   例如：
 
    ```
    https://c00.adobe.com/v3/da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d/start?a_dl=57477650072932ec6d3a470f
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 1. 在 iOS 裝置上開啟剛才產生的連結，然後開啟 `https://c00.adobe.com/v3/<appid>/end`。
 
-   您應會在 JSON 回應中看見 contextData:
+   您應會在 JSON 回應中看見 contextData：
 
    ```js
    {"fingerprint":"bae91bb778f0ad52e37f0892961d06ac6a5c935b","endCallbacks":["***"],"timestamp":1464301217,"appguid":"da120731d6c09658b82d8fac78da1d5fc2d09c48e21b3a55f9e2d7344e08425d","contextData":
@@ -42,14 +42,14 @@ ht-degree: 94%
    ,"adobeData":{"unique_id":"8c14098d7c79e8a180c15e4b2403549d3cc21ea8","deeplinkid":"57477650072932ec6d3a470f"}}
    ```
 
-1. 確認設定檔案中的下列設定是否正確:
+1. 確認設定檔案中的下列設定是否正確：
 
    | 設定 | 值 |
    |--- |--- |
    | acquisition | 伺服器應為 `c00.adobe.com`，且 `appid` 應與您贏取連結中的 *`appid`* 相等。 |
    | analytics | `referrerTimeout` 的值應大於 0。 |
 
-1. (條件式) 如果應用程式設定檔案中的 SSL 設定為 `false`，請更新您的贏取連結，改採 HTTP 通訊協定，而非 HTTPS。
+1. (視條件調整) 如果應用程式設定檔案中的 SSL 設定為 `false`，請更新您的贏取連結，改採 HTTP 通訊協定，而非 HTTPS。
 1. 在您要安裝應用程式的行動裝置上，按一下剛才產生的連結。
 
    Adobe 伺服器 (`c00.adobe.com`) 會儲存裝置指紋，然後重新導向至 App Store。您不必僅為了測試而下載應用程式。
@@ -58,16 +58,16 @@ ht-degree: 94%
    您可以刪除應用程式並重新安裝 (如有必要)。
 1. (選擇性) 啟用 SDK 的偵錯記錄以取得其他資訊。
 
-   如果一切正常運作，您應會看見下列記錄:
+   如果一切正常運作，您應會看見下列記錄：
 
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
    如果沒有看見這些記錄，請確認您已完成步驟 4 及步驟 5。
 
-   以下是一些有關可能錯誤的資訊:
+   可能錯誤的相關資訊如下：
 
-   * `Analytics - Unable to retrieve acquisition service response (<error message>)`:
+   * `Analytics - Unable to retrieve acquisition service response (<error message>)`：
 
       發生網路錯誤。
 
@@ -85,9 +85,9 @@ ht-degree: 94%
 
    * `Analytics - Acquisition referrer timed out`
 
-      無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確保在安裝應用程式之前已開啟贏取連結，而且當您按一下URL並開啟應用程式時，使用的是相同的網路。
+      無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。同時，您也需在安裝應用程式前即確保開啟贏取連結，而且當您按下 URL 並開啟應用程式時，使用的是相同的網路。
 
-請記住以下資訊:
+請記住以下資訊：
 
 * 贏取伺服器會根據連結點擊 (步驟 6) 和應用程式啟動時 (步驟 7) 所記錄的 IP 位址和使用者代理程式資訊，來提供屬性配對。
 
