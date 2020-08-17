@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 啟用推送訊息的必要條件
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->You must click **[!UICONTROL Save]** to save your changes and refresh the Push Services.
+>您必須按一下&#x200B;**[!UICONTROL 「儲存」]**，才可以儲存變更並重新整理「推送服務」。
 >
 >您可以在每個報表套裝中，為 Apple 設定一個應用程式商店應用程式，同時也為 Google 設定一個。如果您還需要其他應用程式，例如一個用於生產環境，另一個用於開發環境，那麼，請為每個環境設定新的應用程式商店應用程式和新的報表套裝。
 
