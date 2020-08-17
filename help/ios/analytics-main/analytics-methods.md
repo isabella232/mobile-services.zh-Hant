@@ -6,9 +6,9 @@ solution: Marketing Cloud,Analytics
 title: 'Analytics 方法 '
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -31,14 +31,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >這是唯一會遞增頁面檢視的追蹤呼叫。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void)  trackState:(NSString  *)state
                       data:(NSDictionary  *)data;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackState:@"loginScreen"
@@ -53,14 +53,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >如果您的程式碼會在應用程式於背景時執行 (例如，背景資料擷取)，請改為使用 `trackActionFromBackground`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void)  trackAction:(NSString  *)action
                         data:(NSDictionary  *)data; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackAction:@"heroBannerTouched"
@@ -71,13 +71,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    擷取分析追蹤識別碼。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (NSString *) trackingIdentifier; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       NSString *trackingId = [ADBMobile trackingIdentifier];
@@ -91,14 +91,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >只有當應用程式在背景執行時，才應從此時執行的程式碼中呼叫此方法。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
        +  (void)  trackActionFromBackground:(NSString  *)action
                                        data:(NSDictionary  *)data; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackActionFromBackground:@"downloadedUpdate"
@@ -109,14 +109,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳送目前的 x 和 y 座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供為參數的位置是否在您的任何 POI 中。如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void)  trackLocation:(CLLocation  *)location
                           data:(NSDictionary  *)data; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackLocation:userLocation
@@ -127,14 +127,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    追蹤使用者何時進入信標鄰近地區。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void)  trackLocation:(CLBeacon  *)beacon
                           data:(NSDictionary  *)data;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackBeacon:beacon
@@ -145,13 +145,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void) trackingClearCurrentBeacon;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile trackingClearCurrentBeacon];
@@ -161,14 +161,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    增加使用者期限值的 `amount`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
        +  (void)  trackLifetimeValueIncrease:(NSDecimalNumber  *)amount
                                        data:(NSDictionary  *)data; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackLifetimeValueIncrease:30
@@ -183,14 +183,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void)  trackTimedActionStart:(NSString  *)action
                                   data:(NSDictionary  *)data; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackTimedActionStart:@"cartToCheckout"
@@ -205,14 +205,14 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
        +  (void)  trackTimedActionUpdate:(NSString  *)action
                                     data:(NSDictionary  *)data; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackTimedActionUpdate:@"cartToCheckout"
@@ -227,7 +227,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >如果您提供`block`，則必須傳回 `YES` 以傳送點擊。針對`block`傳遞 `nil` 會傳送最後一次點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +  (void)  trackTimedActionEnd:(NSString  *)action
@@ -236,7 +236,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
                                                   NSMutableDictionary *data))block; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile  trackTimedActionEnd:@"cartToCheckout"
@@ -252,13 +252,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回計時動作是否正在進行中。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (BOOL) trackingTimedActionExists:(NSString *)action;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       BOOL *actionExists = [ADBMobile trackingTimedActionExists];
@@ -268,13 +268,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    須使用 SDK 4.1 版。無論目前排入佇列的點擊數量多寡，都會強制資料庫傳送離線佇列中的所有點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void) trackingSendQueuedHits;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile trackingSendQueuedHits]; 
@@ -284,13 +284,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    擷取離線佇列中目前的點擊數。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
        + (NSUInteger) trackingGetQueueSize;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       NSUInteger *queueSize = [ADBMobile trackingGetQueueSize];
@@ -304,13 +304,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >手動清除佇列時請格外小心。此程序無法回復。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void) trackingClearQueue;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile trackingClearQueue]; 
@@ -326,13 +326,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >此方法無法遞增頁面檢視。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void) trackPushMessageClickThrough:(NSDictionary *)userInfo;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       -  (void)application:(UIApplication  *)application  
