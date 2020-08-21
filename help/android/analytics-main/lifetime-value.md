@@ -1,28 +1,31 @@
 ---
-description: 期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
-seo-description: 期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
+description: 期限值可讓您測量並定位每個Android使用者的期限值。 此值可用來儲存期限購買、廣告檢視、視訊完成、社交分享、像片上傳等。
+seo-description: 期限值可讓您測量並定位每個Android使用者的期限值。 此值可用來儲存期限購買、廣告檢視、視訊完成、社交分享、像片上傳等。
 seo-title: 訪客期限值
 solution: Marketing Cloud,Analytics
 title: 訪客期限值
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 52%
 
 ---
 
 
 # 訪客期限值 {#visitor-lifetime-value}
 
-期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
+期限值可讓您測量並定位每個Android使用者的期限值。 此值可用來儲存期限購買、廣告檢視、視訊完成、社交分享、像片上傳等。
 
 每次您以 `trackLifetimeValueIncrease` 傳送一個值時，就會將該值新增至現有值。期限值儲存在裝置上，且可透過呼叫 `lifetimeValue` 隨時擷取。
 
 ## 追蹤訪客期限值 {#section_390943A49AF841F2941E65D6DF2B3F5A}
 
-1. 新增 [資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 1. 匯入資料庫:
 
    ```java
