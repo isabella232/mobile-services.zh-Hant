@@ -1,32 +1,35 @@
 ---
-description: 您可以設定推送訊息和豐富推送訊息的體驗選項，包括名稱、訊息文字和目的地選項。您也可以配置進階選項，包含 iOS 裝置的裝載選項和自訂選項。
-keywords: 行動
-seo-description: 您可以設定推送訊息和豐富推送訊息的體驗選項，包括名稱、訊息文字和目的地選項。您也可以配置進階選項，包含 iOS 裝置的裝載選項和自訂選項。
+description: 您可以設定推播訊息和多樣化推播訊息的體驗選項，包括名稱、訊息文字和目標選項。 您也可以設定進階選項，包括iOS裝置的裝載選項和自訂選項。
+keywords: mobile
+seo-description: 您可以設定推播訊息和多樣化推播訊息的體驗選項，包括名稱、訊息文字和目標選項。 您也可以設定進階選項，包括iOS裝置的裝載選項和自訂選項。
 seo-title: 體驗  推送訊息
 solution: Marketing Cloud,Analytics
 title: 體驗  推送訊息
-topic: 量度
+topic: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 74%
 
 ---
 
 
 # 體驗: 推送訊息 {#experience-push-message}
 
-您可以設定推送訊息和豐富推送訊息的體驗選項，包括名稱、訊息文字和目的地選項。您也可以配置進階選項，包含 iOS 裝置的裝載選項和自訂選項。
+您可以設定推播訊息和多樣化推播訊息的體驗選項，包括名稱、訊息文字和目標選項。 您也可以設定進階選項，包括iOS裝置的裝載選項和自訂選項。
 
 1. 在新推送訊息的「對象」頁面上，按一下&#x200B;**[!UICONTROL 體驗]**。
 
    ![體驗推送訊息畫面](assets/experience-push-message.png)
 
 1. 輸入此訊息的名稱。
-1. 在&#x200B;**[!UICONTROL 訊息]區段的下列欄位中輸入資訊:**
+1. 在&#x200B;**[!UICONTROL 訊息]**&#x200B;區段的下列欄位中輸入資訊:
 
    * **[!UICONTROL 內容]**
 
-      指定訊息的文字。您最多可以指定 140 個字元。
+      指定訊息的文字。 最多可指定140個字元。
 
    * **[!UICONTROL 媒體 URL]**
 
@@ -45,7 +48,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       >[!TIP]
       >
-      >若您使用***網頁連結**&#x200B;或&#x200B;**[!UICONTROL 自訂連結]目的地類型，則不會追蹤這種目的地類型，**&#x200B;系統只會追蹤&#x200B;**[!UICONTROL 深層連結]。**
+      >若您使用*****&#x200B;網頁連結或&#x200B;**[!UICONTROL 自訂連結]**&#x200B;目的地類型，則不會追蹤這種目的地類型，系統只會追蹤&#x200B;**[!UICONTROL 深層連結]**。
 
 ## 豐富推送通知需求
 
@@ -54,27 +57,27 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 * **支援的版本**
 
    下列版本支援豐富推送通知:
-   * Android 4.1.0 或更新版本
-   * iOS 10 或更新版本
+   * Android 4.1.0或更新版本
+   * iOS 10或更新版本
 
       >[!IMPORTANT]
       >
       >請記住以下資訊:
       >* 傳送至較舊版本的豐富推送訊息仍會如期傳送，但只會顯示文字。
-      >* 目前不支援監看功能。
+      >* 目前沒有手錶支援。
 
 
 * **檔案格式**
 
-   以下是支援的檔案格式:
-   * 影像: JPG 和 PNG
-   * 動畫 (僅限 iOS): GIF
-   * 影片 (僅限 iOS): MP4
+   以下是支援的檔案格式：
+   * 影像：JPG和PNG
+   * 動畫（僅限iOS）:GIF
+   * 影片（僅限iOS）:MP4
 
 * **URL 格式**
-   * 僅限 HTTPS
+   * 僅HTTPS
 
-* **大小調整**
+* **調整大小**
    * 影像須為 2:1 格式，否則將會被裁切。
 
 如需關於設定豐富推送通知的詳細資訊，請參閱下列內容:
@@ -104,7 +107,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 1. (可選) 按下列圖示以預覽訊息的配置:
 
-   * **[!UICONTROL x摘要**
+   * **[!UICONTROL x摘要]**
 
       隱藏預覽窗格。按一下![預覽](assets/icon_preview.png)可重新顯示預覽窗格。
 
@@ -126,9 +129,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
    在預覽窗格底部，您可以檢視上一步驟所選對象的說明。
 
 1. (**選擇性**) 按一下&#x200B;**[!UICONTROL 測試]**&#x200B;推送您的訊息至指定裝置，以用於進行測試。
-1. 選取服務並輸入至少一個想要推送訊息的裝置之推送代號。
+1. 選取服務，並輸入您要推送訊息至之至少一個裝置的推送Token。
 
-   以逗號分隔的清單指定代號，即可推送訊息至一個以上裝置。
+   以逗號分隔的清單指定代號，將訊息推送至多個裝置。
 
 1. 設定訊息的排程選項。
 
