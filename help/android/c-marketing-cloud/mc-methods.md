@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: ht
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static String getMarketingCloudId(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       String = Visitor.getMarketingCloudId();
@@ -75,7 +75,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    透過 Experience Cloud ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void syncIdentifiers(Map<String, String> identifiers); 
@@ -99,7 +99,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT`
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void syncIdentifier(final String identifierType, final String identifier, final VisitorID.VisitorIDAuthenticationState authenticationState);
@@ -120,7 +120,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_AUTHENTICATED`
    * `VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT`
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void syncIdentifiers(final Map<String String> identifiers, final VisitorID.VisitorIDAuthenticationState authenticationState);
@@ -154,7 +154,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    4.16.0 版導入了此方法，可傳回包含訪客 ID 服務 URL 變數的適當形式字串。如需如何使用此方法的詳細資訊，請參閱 [Adobe Experience Platform Identity Service 方法](/help/android/reference/hybrid-app.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void getUrlVariablesAsync(final VisitorCallback callback);
