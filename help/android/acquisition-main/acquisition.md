@@ -7,8 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 行動應用程式贏取
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: ht
-source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -28,9 +31,9 @@ source-git-commit: 8a25259732a916f977f733cd22971b1d847aae5f
 
 >[!IMPORTANT]
 >
->若要使用 Acquisition，您&#x200B;**必須**&#x200B;有 SDK 4.1 版或更新版本。
+>To use Acquisition, you **must** have SDK version 4.1 or later.
 
-贏取連結必須在 Adobe Mobile Services 中建立。如需詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md)。
+贏取連結必須在Adobe Mobile Services中建立。 如需詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md)。
 
 **在 SDK 4.18.0 版及更新版本中**:
 
@@ -121,7 +124,7 @@ void handleGooglePlayReferrer() {
 
 如果您無法使用在 Adobe Mobile Services 中建立的贏取連結，仍可透過 Google Play Acquisition 由 SDK 收集和傳送贏取資料。
 
-收集來自標準 Google Play Acquisition 促銷活動的贏取資料:
+收集來自標準 Google Play Acquisition 促銷活動的贏取資料：
 
 * 使用標準 Google Play 商店贏取方法。
 
@@ -155,9 +158,9 @@ void handleGooglePlayReferrer() {
 
 ## 追蹤行動裝置贏取 {#section_CEA30C652AC8470784B8054E299B80FA}
 
-1. 新增資料庫 [至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
 1. 匯入資料庫:
 
