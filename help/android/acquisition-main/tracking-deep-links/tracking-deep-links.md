@@ -1,14 +1,17 @@
 ---
 description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
 seo-title: 在 Adobe Mobile Services 中追蹤深層連結
 solution: Marketing Cloud,Analytics
 title: 追蹤深層連結
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 88%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    }
    ```
 
-只要連結中包含附有 `a.deeplink.id` 標籤的索引鍵以及使用者自行產生的非空對應數值，Adobe Mobile SDK 就可剖析附加至任何深層或通用連結之資料的索引鍵/值組。只要連結包含 `a.deeplink.id` 索引鍵/值，所有附加至連結之資料的索引鍵/值組都會經過剖析、附加至生命週期點擊，然後傳送至 Adobe Analytics。
+The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. 只要連結包含 `a.deeplink.id` 鍵值和值，所有附加至連結之資料的鍵值和值組都會經過剖析、附加至生命週期點擊，然後傳送至 Adobe Analytics。
 
 此外，您可以將下列其中一或多組保留的索引鍵 (搭配使用者產生的值) 附加至深層或通用連結:
 
@@ -56,7 +59,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 ## 追蹤延期的深層連結 (與行銷連結搭配使用)
 
-在延期的深層連結中，Adobe SDK 會開啟含有深層連結的新目的，作為目的資料。會使用上述程式碼，將此程序當作外部深層連結來處理。
+透過延期的深層連結，Adobe SDK 能開啟新的目的，並以深層連結作為目的資料。系統會使用上述程式碼，以外部深層連結形式處理此程序。
 
 ## 深層連結公開資訊 {#section_1815396353614DA8A63D8D92112217E7}
 
