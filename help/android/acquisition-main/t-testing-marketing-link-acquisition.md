@@ -1,14 +1,17 @@
 ---
 description: 下列說明可協助您在 Android 裝置上利用行銷連結往返贏取促銷活動。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 下列說明可協助您在 Android 裝置上利用行銷連結往返贏取促銷活動。
 seo-title: 測試行銷連結贏取
 solution: Marketing Cloud,Analytics
 title: 測試行銷連結贏取
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 78%
 
 ---
 
@@ -17,12 +20,12 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 下列說明可協助您在 Android 裝置上利用行銷連結往返贏取促銷活動。
 
-如果您的行動應用程式尚未在 Google Play 上架，您可以選擇任一行動應用程式，做為建立行銷連結時的目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點擊贏取連結後)，而不會影響測試贏取連結的能力。查詢字串參數會傳遞至 Google Play 商店，然後在安裝時傳遞至應用程式，作為促銷活動廣播的一部分。往返行動應用程式贏取測試需要模擬此廣播類型。
+如果您的行動應用程式尚未在 Google Play 上架，您可以選擇任一行動應用程式，做為建立行銷連結時的目的地。這只會影響贏取伺服器在您按一下贏取連結後，重新導向至您的應用程式，而不會影響測試贏取連結的能力。 查詢字串參數會傳遞至Google Play商店，在安裝時會作為促銷活動廣播的一部分傳遞至應用程式。 來回往返行動應用程式的贏取測試需要模擬這種廣播類型。
 
 應用程式必須是全新安裝，或資料已全部清除 (在&#x200B;**[!UICONTROL 設定]**&#x200B;中進行)，且每次執行測試時皆須如此。這樣即可確保應用程式首次啟動時，與促銷活動查詢字串參數關聯的初始生命週期量度可以順利傳送。
 
 1. 完成[行動應用程式贏取](/help/android/acquisition-main/acquisition.md)中的先決條件任務，然後確定您已為 `INSTALL_REFERRER` 正確實行廣播接收器。
-1. 在 Adobe Mobile Services 使用者介面中，按一下&#x200B;**[!UICONTROL 贏取]** &gt; **[!UICONTROL 行銷連結建立器]**&#x200B;並產生贏取行銷連結 URL，此 URL 會將 Google Play 設為 Android 裝置的目的地。
+1. 在 Adobe Mobile Services 使用者介面中，按一下&#x200B;**[!UICONTROL 「贏取]** > **[!UICONTROL 行銷連結建立器」]**&#x200B;並產生贏取行銷連結 URL，此 URL 會將 Google Play 設為 Android 裝置的目的地。
 
    如需詳細資訊，請參閱[行銷連結建立器](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)。
 
@@ -70,7 +73,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    | 設定 | 值 |
    |--- |--- |
    | acquisition | 伺服器應為 `c00.adobe.com`，且 *`appid`* 應與您贏取連結中的 `appid` 相等。 |
-   | analytics | 為了測試的目的，請將反向連結逾時設為具有足夠的時間 (60 秒以上) 來手動傳送廣播。您可以在測試結束後將逾時設定還原為原始值。 |
+   | analytics | 為進行測試，請設定反向連結逾時，以允許手動傳送廣播的足夠時間（60秒或更長）。 您可以在測試後還原原始逾時設定。 |
 
 1. 將裝置與電腦連接，解除安裝應用程式，然後重新安裝。
 1. 啟動 ADB 殼層，然後啟動裝置上的應用程式。
@@ -105,9 +108,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    "Analytics - Received Referrer Data(<A JSON Response>)"
    ```
 
-   如果您沒有看見這些記錄，請確認您已完成步驟 6 至步驟 10。
+   如果您未看到這些記錄檔，請確認您已完成執行步驟6至10。
 
-   下表包含了可能錯誤的額外資訊:
+   下表包含可能錯誤的其他資訊：
 
    | 錯誤 | 說明 |
    |--- |--- |
@@ -115,11 +118,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
    | Analytics - Unable to parse response (`a JSON Response`). | JSON 字串的格式不正確。 |
    | Analytics - Unable to parse acquisition service response (no `contextData` parameter in response). | 回應中沒有 `contextData` 參數。 |
    | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | contextData 中未含有 `a.referrer.campaign.name`。 |
-   | Analytics - Acquisition referrer timed out. | 無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確定在開啟贏取連結後才安裝應用程式。 |
+   | Analytics - Acquisition referrer timed out. | 無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確保在安裝應用程式之前已開啟贏取連結。 |
 
 請記住以下資訊:
 
-* 藉由使用 HTTP 監控工具，即可監控從應用程式傳送的點擊，以便確認贏取屬性。
+* 從應用程式傳送的點擊可透過使用HTTP監控工具來驗證贏取歸因來監控。
 * 如需有關如何廣播 `INSTALL_REFERRER` 的詳細資訊，請參閱 Google Developers Guide (Google 開發人員指南) 中的 [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (測試 Google Play 促銷活動測量)。
 * 您可以使用隨附的 `acquisitionTest.jar` Java 工具來協助您取得唯一 ID 和廣播安裝反向連結，如此將可協助您取得步驟 3 至步驟 10 中的資訊。
 
@@ -128,9 +131,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 安裝 Java 工具:
 
 1. 下載 [`acquistionTester.zip`](../assets/acquisitionTester.zip) 檔案。
-1. 解壓縮 .jar 檔案。
+1. 解壓縮。jar檔案。
 
-   您可以在命令列上執行 .jar 檔案。
+   可以在命令行上運行。jar檔案。
 
 例如:
 
