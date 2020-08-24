@@ -1,13 +1,16 @@
 ---
-description: 此延伸模組使您能以更輕鬆的方式新增 Experience Cloud 解決方案 4.x Windows SDK 的參考至您的專案。
-seo-description: 此延伸模組使您能以更輕鬆的方式新增 Experience Cloud 解決方案 4.x Windows SDK 的參考至您的專案。
-seo-title: 適用於Experience cloud解決方案4.x SDK的Windows Visual studio擴充功能
+description: 本擴充功能可讓您更輕鬆地在專案中新增Experience Cloud Solutions 4.x Windows SDK的參考。
+seo-description: 本擴充功能可讓您更輕鬆地在專案中新增Experience Cloud Solutions 4.x Windows SDK的參考。
+seo-title: 適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能
 solution: Marketing Cloud,Analytics
-title: 適用於Experience cloud解決方案4.x SDK的Windows Visual studio擴充功能
-topic: 開發人員和實施
+title: 適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能
+topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 2%
 
 ---
 
@@ -18,22 +21,22 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 ## 從GitHub安裝程式庫 {#section_F55DB6241EF1475286C05FEAEBF996A3}
 
-1. 從 [GitHub](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases) 下載 Windows 通用 SDK。
-1. 在本機解壓縮下載檔案。
-1. Double-click the ADBMobileUniversalWindowsVSIX.vsix file to open the installer.**[!UICONTRTOL ]**
-1. Select Global Location and install the library.****
+1. 從 [GitHub下載Windows Universal SDK](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)。
+1. 將下載的檔案解壓縮至本機。
+1. 連按兩下 **[!UICONTRTOL ADBMobileUniversalWindowsVSIX.vsix]** 檔案以開啟安裝程式。
+1. 選擇 **[!UICONTROL 全局位置]** ，然後安裝庫。
 
-## Add references to your project {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
+## 新增專案參照 {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
 
-1. 開啟您的 Windows 10 專案。
-1. Open the Reference Manager dialogue box.
+1. 開啟您的Windows 10專案。
+1. 開啟「參考管理器」(Reference Manager)對話框。
 
    ![](assets/ref_manager.png)
 
-1. On the Extensions tab, locate and select UICONTROL Adobe Mobile SDK.******[]**
-1. 按一下&#x200B;**[!UICONTROL 「確定」]以儲存。**
+1. 在「延伸 **[!UICONTROL 功能]** 」標籤上，找到並選 **[!UICONTROL 取Adobe Mobile SDK]**。
+1. 按一 **[!UICONTROL 下「確定]** 」以儲存它。
 
-   The Adobe Mobile SDK will be added to your project. If the **[UICONTROL Microsoft Visual C++ Runtime]** package has not yet been added, this package will also be added to your project.
+   Adobe Mobile SDK將會新增至您的專案。 如果 **[!UICONTROL Microsoft Visual C++ Runtime]** Package尚未新增，此套件也將新增至您的專案。
 
-1. In the Configuration Manager, select a a platform type and begin testing your app.
+1. 在「設定管理員」中，選取平台類型並開始測試您的應用程式。
 
