@@ -7,7 +7,7 @@ title: 適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴�
 topic: Developer and implementation
 uuid: e48faf54-8b08-4224-9d80-e553a983129e
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. 從 [GitHub下載Windows Universal SDK](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases)。
 1. 將下載的檔案解壓縮至本機。
-1. 連按兩下 **[!UICONTRTOL ADBMobileUniversalWindowsVSIX.vsix]** 檔案以開啟安裝程式。
+1. 連按兩下 **[!UICONTROL ADBMobileUniversalWindowsVSIX.vsix]** 檔案以開啟安裝程式。
 1. 選擇 **[!UICONTROL 全局位置]** ，然後安裝庫。
 
 ## 新增專案參照 {#section_00C14FE9243D4330BE1F4BB56FCF08B1}
