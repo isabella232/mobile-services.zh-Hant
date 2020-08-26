@@ -7,7 +7,7 @@ title: 開發人員快速入門
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 ## 選擇正確的版本 {#section_E53C5AA7D5474824A89BB32C003865A1}
 
-每個 `.dll`目標平 `.winmd` 台(Windows 8.1、Windows Phone 8.1)和支援的架構(x86、x64、ARM)都提供不同的／檔案。 這些檔案根據以下內容分為資料夾結構：
+每個 `.dll`目標平 `.winmd` 台(Windows 8.1、Windows Phone 8.1)和支援的架構(x86、x64、ARM)都提供不同的檔案。 這些檔案根據以下內容分為資料夾結構：
 
 ![](assets/folder-structure.png)
 
@@ -44,7 +44,7 @@ Windows 8.1 Universal App Store程式庫可用於數種程式設計語言。 本
 ## 將程式庫和設定檔案新增至您的專案- C Sharp {#section_93C25D893B4A4CD3B996CF3C5590C8DC}
 
 1. 啟動Visual Studio並開啟您的解決方案。
-1. 在「解決方 **案總管**」中，以滑鼠右鍵按一下「 **[!UICONTROL 參考]** 」並選取「 **[!UIUCONTROL 新增參考」]**。
+1. 在「解決方 **案總管**」中，以滑鼠右鍵按一下「 **[!UICONTROL 參考]** 」並選取「 **[!UICONTROL 新增參考」]**。
 
 1. 選擇正確的程式庫版本，並瀏覽至相關的 `ADBMobile.winmd` 檔案。
 
@@ -62,7 +62,7 @@ Windows 8.1 Universal App Store程式庫可用於數種程式設計語言。 本
 
    如果您的解決方案中也有C++專案，請略過此步驟。
 
-1. 在左側的 **Windows** 標籤中，選取「擴充功能 **[!UICONTROL 」，然後選取並新增]** Microsoft Visual C++ 2013 Runtime Package for Windows ****。
+1. 在左側的 **Windows** 標籤中，選取「 **[!UICONTROL Extensions]**」，然後選取並新增適用於Windows的 **[!UICONTROL Microsoft Visual C++ 2013 Runtime Package]**。
 
 1. 將下列行添加到類中：
 
