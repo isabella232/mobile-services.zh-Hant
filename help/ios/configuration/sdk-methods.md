@@ -6,8 +6,11 @@ solution: Marketing Cloud,Analytics
 title: 設定方法
 topic: Developer and implementation
 uuid: 623c7b07-fbb3-4d39-a5c4-e64faec4ca29
-translation-type: ht
-source-git-commit: ea4b054fbeea3967c28ee938aed5997a4c287a0d
+translation-type: tm+mt
+source-git-commit: 527f93ae4ec910d1d1ea3637eb3a62d749a14397
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 86%
 
 ---
 
@@ -20,11 +23,12 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **setAppExtensionType**
 
-   進行 Adobe Mobile SDK 設定以確定目前執行的延伸功能類型。
+   設定Adobe Mobile SDK設定，以判斷目前正在執行的擴充功能類型。
 
    設定為下列其中一值：
    * `ADBMobileAppExtensionTypeRegular` - 擴充功能與容納應用程式搭配。
    * `ADBMobileAppExtensionTypeStandAlone` - 擴充功能並未與容納應用程式搭配。
+
    >[!TIP]
    >
    >此方法&#x200B;**「僅」**&#x200B;在您的應用程式具有擴充功能，或為獨立擴充功能時，才可使用。如需詳細資訊，請參閱下方的 *ADBMobileAppExtensionType*。
@@ -47,7 +51,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回 Adobe Mobile 程式庫的目前版本。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +(NSString*) version;
@@ -95,7 +99,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       + (void) setPrivacyStatus:(ADBMobilePrivacyStatus)status;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile setPrivacyStatus:ADBMobilePrivacyStatusOptIn];
@@ -105,13 +109,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回目前使用者的期限值。預設值為 `0`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (NSDecimalNumber *) lifetimeValue;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       NSDecimalNumber *lifeValue = [ADBMobile lifetimeValue];
@@ -119,7 +123,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **trackingIdentifier**
 
-   傳回自動產生的訪客識別碼。這是由 Adobe 伺服器所產生的應用程式專屬唯一訪客 ID。如果產生 ID 時無法連線至 Adobe 伺服器，則會改由透過 Apple 的 CFUUID 產生 ID。此值會在初次啟動時產生，然後儲存以供後續使用。此 ID 會在應用程式升級時保留、在標準應用程式備份程序期間儲存並還原，以及在解除安裝時移除。
+   傳回自動產生的訪客識別碼。這是由 Adobe 伺服器產生的應用程式專屬唯一訪客 ID。如果在產生時無法到達Adobe的伺服器，則會使用Apple的CFUUID產生ID。 值會在初始啟動時產生，並會從該點開始儲存及使用。 此ID會在應用程式升級時保留，在標準應用程式備份程式期間儲存並還原，並在解除安裝時移除。
 
    >[!TIP]
    >
@@ -163,7 +167,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    將使用者識別碼設為 `identifier`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       +(void)setUserIdentifier:(NSString*)identifier;
@@ -179,13 +183,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回目前的偵錯記錄偏好設定。預設值為 `NO`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (BOOL) debugLogging;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       BOOL debugging = [ADBMobile debugLogging];
@@ -195,13 +199,13 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    將偵錯記錄偏好設定設為 `debug`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       + (void) setDebugLogging:(BOOL)debug;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile setDebugLogging:YES];
@@ -221,7 +225,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       + (void) keepLifecycleSessionAlive;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       [ADBMobile keepLifecycleSessionAlive]; 
@@ -305,7 +309,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **overrideConfigPath**
 
-   可讓您在應用程式啟動時載入另一個 ADBMobile JSON 設定檔案。應用程式會使用另一個設定，直到關閉為止。
+   可讓您在應用程式啟動時載入不同的ADBMobile JSON設定檔案。 應用程式會使用另一個設定，直到關閉為止。
 
    >[!IMPORTANT]
    >
@@ -317,7 +321,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
        + (void) overrideConfigPath: (nullableNSString *) path;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```objective-c
       NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ExampleJSONFile" ofType:@"json"]; 
@@ -348,13 +352,16 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **setAdvertisingIdentifier**
 
-   在 SDK 中設定 IDFA。如果 SDK 中已設定 IDFA，則 IDFA 會在生命週期中傳送。您亦可在「訊號」(回傳) 中存取 IDFA。
+   在 SDK 中設定 IDFA。如果已在SDK中設定IDFA,IDFA將在生命週期中傳送。 您也可以在「訊號（回傳）」中存取。
 
    >[!TIP]
    >
    >「只有」****&#x200B;在您使用廣告服務時，才能從 Apple API 擷取 IDFA。若您擷取了 IDFA 卻不當使用，您的應用程式可能會遭到拒絕。
-
-   * 以下是此方法的語法：
+   >
+   >如果您的應用程式需要IDFA，請查看 [Apple的檔案](https://developer.apple.com/documentation/adsupport) ，以詢問使用者在廣告追蹤上的偏好設定並擷取IDFA值。
+   >
+   >對於iOS 14+，必須實作新的 [應用程式追蹤透明度架構](https://developer.apple.com/documentation/apptrackingtransparency) ，才能成功擷取IDFA值。
+   * 此方法的語法如下：
 
       ```objective-c
       +(void) setAdvertisingIdentifier:(NSString*)identifier;
@@ -363,7 +370,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    * 以下是此方法的範例程式碼：
 
       ```objective-c
-      NSString *idfa = [[[ASIdentifierManager sharedManager]advertisingIdentifier] UUIDString]; 
+      NSString *idfa = // retrieve IDFA using AdSupport (before iOS 14.0) and/or AppTrackingTransparency (iOS 14.0+)
       [ADBMobile setAdvertisingIdentifier:idfa]; 
       ```
 
