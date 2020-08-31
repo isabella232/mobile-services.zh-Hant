@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 新增應用程式
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,11 +64,11 @@ ht-degree: 98%
 
    * **[!UICONTROL 圖示]**
 
-      (**選擇性**) 若要瀏覽並選取應用程式的圖示，請按一下&#x200B;**[!UICONTROL 圖示]**。
+      (**選用**) 若要瀏覽並選取應用程式的圖示，請按一下&#x200B;**[!UICONTROL 圖示]**。
 
    * **[!UICONTROL 名稱]**
 
-      (**選擇性**) 為應用程式輸入描述性名稱。此名稱可協助您快速找到應用程式，而有意義的名稱有助於迅速了解應用程式的用途和設定。
+      (**選用**) 為應用程式輸入描述性名稱。此名稱可協助您快速找到應用程式，而有意義的名稱有助於迅速了解應用程式的用途和設定。
 
    * **[!UICONTROL 類型]**
 
@@ -78,7 +78,7 @@ ht-degree: 98%
 
       * **[!UICONTROL 標準]**
 
-         You can leave the **[!UICONTROL Standard]** option selected for most apps.
+         您可以讓大部分應用程式都保留選取&#x200B;**[!UICONTROL 「標準」]**&#x200B;選項。
 
       * **[!UICONTROL 發佈]**
 
@@ -89,7 +89,7 @@ ht-degree: 98%
          此選項與&#x200B;**[!UICONTROL 「標準」]**&#x200B;選項類似，只是&#x200B;**[!UICONTROL 「遊戲」]**&#x200B;會將報表中所用的詞彙改成遊戲專用術語，例如將使用者變更為玩家。系統會自動為遊戲應用程式顯示遊戲專屬的報表。
    * **[!UICONTROL 說明]**
 
-      (**選擇性**) 為應用程式輸入說明。
+      (**選用**) 為應用程式輸入說明。
 
 
 
