@@ -1,21 +1,21 @@
 ---
-description: 回傳可讓您將Adobe Mobile收集的資料傳送至個別的第三方伺服器。 透過運用您用來顯示應用程式內訊息的相同觸發器和特性，您可以設定Mobile Services將自訂資料傳送至第三方目的地。
-seo-description: 回傳可讓您將Adobe Mobile收集的資料傳送至個別的第三方伺服器。 透過運用您用來顯示應用程式內訊息的相同觸發器和特性，您可以設定Mobile Services將自訂資料傳送至第三方目的地。
+description: 回傳可讓您將 Adobe Mobile 所收集的資料傳送至個別的第三方伺服器。運用相同的觸發器和您使用的特性來顯示應用程式內訊息，您便可以設定 Mobile Services 將自訂資料傳送至第三方目的地。
+seo-description: 回傳可讓您將 Adobe Mobile 所收集的資料傳送至個別的第三方伺服器。運用相同的觸發器和您使用的特性來顯示應用程式內訊息，您便可以設定 Mobile Services 將自訂資料傳送至第三方目的地。
 seo-title: 設定回傳
 title: 設定回傳
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
 # 設定回傳 {#configure-postbacks}
 
-回傳可讓您將Adobe Mobile收集的資料傳送至個別的第三方伺服器。 透過運用您用來顯示應用程式內訊息的相同觸發器和特性，您可以設定Mobile Services將自訂資料傳送至第三方目的地。
+回傳可讓您將 Adobe Mobile 所收集的資料傳送至個別的第三方伺服器。運用相同的觸發器和您使用的特性來顯示應用程式內訊息，您便可以設定 Mobile Services 將自訂資料傳送至第三方目的地。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 71%
 
 1. 按一下所需應用程式的名稱，前往「管理應用程式設定」頁面，然後按一下右上方的&#x200B;****「管理回傳」。
 1. 按一下&#x200B;**[!UICONTROL 建立回傳]**。
-1. 在欄位中輸入下列資訊:
+1. 在欄位中輸入下列資訊：
 
    * **[!UICONTROL 回傳類型]**
 
@@ -54,11 +54,11 @@ ht-degree: 71%
       指定會觸發回傳的一或多個資料標籤和條件。例如，您可選擇&#x200B;**[!UICONTROL 當機]**&#x200B;作為觸發器，選擇&#x200B;**[!UICONTROL 存在]**&#x200B;作為條件，應用程式當機時即會觸發回傳。您也可指定啟用回傳的量度。例如，您可選擇&#x200B;**[!UICONTROL 裝置名稱]**&#x200B;作為觸發器，選擇&#x200B;**[!UICONTROL 等於]**&#x200B;和 **[!UICONTROL iPhone 6 Plus]** 作為條件，應用程式在 iPhone 6 Plus 裝置上當機時即會啟用回傳。
 
    * **[!UICONTROL 特徵]**
-   指定可以在觸發時查看訊息的使用者，Options include **[!UICONTROL Session Length]**, **[!UICONTROL First Launch Date]**, and **[!UICONTROL App ID]**.
+   指定可以在觸發時查看訊息的使用者，選項包括&#x200B;**[!UICONTROL 工作階段長度]**、**[!UICONTROL 首次啟動日期]**&#x200B;和&#x200B;**[!UICONTROL 應用程式 ID]**。
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**&#x200B;建立回傳，並將其新增至&#x200B;**[!UICONTROL 「管理回傳」]**&#x200B;清單。
 
-   若要日後再啟用回傳，請執行下列任一項動作:
+   若要日後再啟用回傳，請執行下列任一項動作：
 
    * 在&#x200B;**[!UICONTROL 管理回傳]**&#x200B;清單中，選取回傳旁邊的核取方塊，然後按一下&#x200B;**[!UICONTROL 啟用選取的項目]**。
    * 按一下「**[!UICONTROL 儲存並啟動]**」，儲存變更並立即啟用回傳。
