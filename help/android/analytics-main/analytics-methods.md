@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Analytics 方法
 topic: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void trackState(String state, Map<String, Object> contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.trackState("loginScreen", null);
@@ -57,7 +57,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void trackAction(String state, Map<String, Object> contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.trackAction("heroBannerTouched", null);
@@ -74,7 +74,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static String getTrackingIdentifier();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       String trackingId = Analytics.getTrackingIdentifier();
@@ -90,7 +90,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void trackLocation(Location location, Map<String, Object> contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.trackLocation(userLocation, null);
@@ -106,7 +106,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void trackLifetimeValueIncrease(BigDecimal amount, Map<String, Object> contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.trackLifetimeValueIncrease(new BigDecimal(30), null);
@@ -128,7 +128,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    public static void trackTimedActionStart(String action, Map<String, Object> contextData);
    ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.trackTimedActionStart("cartToCheckout", null)
@@ -149,7 +149,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void trackTimedActionUpdate(String action, Map<String, Object> contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       HashMap cdata = new HashMap<String Object> ();
@@ -171,7 +171,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void trackTimedActionEnd(String action, TimedActionBlock<Boolean> logic);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.trackTimedActionEnd("cartToCheckout",new
@@ -196,7 +196,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void sendQueuedHits();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.sendQueuedHits();
@@ -212,7 +212,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static long getQueueSize();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       long queueSize = Analytics.getQueueSize();
@@ -228,7 +228,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void clearQueue();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.clearQueue();
@@ -248,7 +248,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void processReferrer(final Context context, final Intent intent);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.processReferrer(getApplicationContext(), intent);
@@ -274,7 +274,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void processGooglePlayInstallReferrerUrl(final String referrerUrl);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.processGooglePlayInstallReferrerUrl(referrerUrl);
