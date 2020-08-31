@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 行動應用程式贏取
 topic: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->To use Acquisition, you **must** have SDK version 4.1 or later.
+>若要使用 Acquisition，您&#x200B;**必須**&#x200B;有 SDK 4.1 版或更新版本。
 
-贏取連結必須在Adobe Mobile Services中建立。 如需詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md)。
+贏取連結必須在 Adobe Mobile Services 中建立。如需詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md)。
 
-**在 SDK 4.18.0 版及更新版本中**:
+**在 SDK 4.18.0 版及更新版本中**：
 
 自 2020 年 3 月 1 日開始，Google 將終止支援 install_referrer 意圖廣播機制。如需詳細資訊，請參閱[仍使用 InstallBroadcast 嗎？在 2020 年 3 月 1 日前切換至 Play Referrer API](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html)。若要繼續從 Google Play 商店收集安裝反向連結資訊，請更新您的應用程式以使用 SDK 4.18.0 版或更新版本。
 
@@ -120,7 +120,7 @@ void handleGooglePlayReferrer() {
 }
 ```
 
-**在 SDK 4.13.1 版及更新版本中**:
+**在 SDK 4.13.1 版及更新版本中**：
 
 如果您無法使用在 Adobe Mobile Services 中建立的贏取連結，仍可透過 Google Play Acquisition 由 SDK 收集和傳送贏取資料。
 
@@ -140,7 +140,7 @@ void handleGooglePlayReferrer() {
 
    * 屬於 Google Play 贏取資料一部分的自訂鍵值將會使用`a.acquisition.custom.`「」建立命名空間。
 
-如果您有使用在 Adobe Mobile Services 中建立的贏取連結，請完成下列作業以新增自訂資料至贏取連結:
+如果您有使用在 Adobe Mobile Services 中建立的贏取連結，請完成下列作業，新增自訂資料至贏取連結：
 
 1. 為贏取變數加上前置詞`adb`「。
 
@@ -162,13 +162,13 @@ void handleGooglePlayReferrer() {
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入資料庫:
+1. 匯入資料庫：
 
    ```java
    import com.adobe.mobile.*;
    ```
 
-1. 針對反向連結實施 `BroadcastReceiver`:
+1. 針對反向連結實作 `BroadcastReceiver`：
 
    ```java
    package com.your.package.name;  // replace with your app package name
@@ -185,7 +185,7 @@ void handleGooglePlayReferrer() {
    }
    ```
 
-1. 更新 `AndroidManifest.xml` 以啟用於先前步驟建立的 `BroadcastReceiver`:
+1. 更新 `AndroidManifest.xml` 以啟用前述步驟中建立的 `BroadcastReceiver`：
 
    ```xml
    <receiver android:name="com.your.package.name.GPBroadcastReceiver" android:exported="true">
@@ -195,7 +195,7 @@ void handleGooglePlayReferrer() {
    </receiver>
    ```
 
-1. 確認 `ADBMobileConfig.json` 檔案包含必要的贏取設定:
+1. 確認 `ADBMobileConfig.json` 檔案包含必要的贏取設定：
 
    ```xml
    "acquisition": {
