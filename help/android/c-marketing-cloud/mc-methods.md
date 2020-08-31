@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '449'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
    >
    >此方法會造成封鎖網路呼叫。請勿在具時效性的執行緒上呼叫此方法。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static String appendToURL(final String URL) 
@@ -40,7 +40,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
       附加訪客資訊的必要 URL 字串。
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       String urlSample = "https://example.com";`
@@ -55,13 +55,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    從訪客 ID 服務中擷取 Experience Cloud ID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static String getMarketingCloudId(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       String = Visitor.getMarketingCloudId();
@@ -81,7 +81,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void syncIdentifiers(Map<String, String> identifiers); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Map<String,String> identifiers = new HashMap<String, String>();
@@ -105,7 +105,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void syncIdentifier(final String identifierType, final String identifier, final VisitorID.VisitorIDAuthenticationState authenticationState);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Visitor.syncIdentifier("myIdType", "valueForUser", VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT);
@@ -126,7 +126,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void syncIdentifiers(final Map<String String> identifiers, final VisitorID.VisitorIDAuthenticationState authenticationState);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Map<String, String> identifiers = new HashMap<String, String>();
@@ -138,13 +138,13 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    擷取唯讀 `ADBVisitorID` 物件清單。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static List<VisitorID> getIdentifiers(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       List<VisitorID> myVisitorIDs = Visitor.getIdentifiers(); 
@@ -160,7 +160,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void getUrlVariablesAsync(final VisitorCallback callback);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       final String urlString = https://www.mydomain.com/index.php; 
