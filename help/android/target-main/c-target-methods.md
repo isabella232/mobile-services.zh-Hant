@@ -7,9 +7,9 @@ solution: Marketing Cloud,Analytics
 title: 適用於 Android 的 Target 方法
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
 ht-degree: 100%
 
@@ -26,9 +26,9 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 >
 >[生命週期量度](/help/android/metrics.md)會以參數形式傳送至各 mbox 負載。
 
-## 類別參考: TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
+## 類別參考：TargetLocationRequest {#section_A8CC898922164E819EC730DC92A6742B}
 
-**屬性:**
+**屬性：**
 
 ```java
 public String name; 
@@ -66,13 +66,13 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    傳送要求至您設定的 Target 伺服器並傳回區塊回撥中產生之選件的字串值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void loadRequest(TargetLocationRequest request, TargetCallback<String> callback);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.loadRequest(heroBannerRequest, new Target.TargetCallback<String>() {  @Override  public void call(String item) {   // do something with item  } });
@@ -82,14 +82,14 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    傳送要求至您設定的 Target 伺服器並傳回區塊回撥中產生之選件的字串值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void loadRequest(final String name final String defaultContent, final Map `<String, Object>` profileParameters, 
                                      final Map `<String, Object>` orderParameters,final Map `<String Object>` mboxParameters, final TargetCallback<String> callback)
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
@@ -109,54 +109,54 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    傳送要求至您設定的 Target 伺服器並傳回 TargetCallback 中產生之選件的字串值。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void loadRequest(final String name, final String defaultContent, final Map<String, Object> profileParameters, final Map<String, Object> orderParameters, final Map<String, Object> mboxParameters, final Map<String, Object> requestLocationParameters, final TargetCallback<String> callback);
       ```
 
-   * **傳回:** N/A
+   * **傳回：** N/A
 
-   * **參數:**
+   * **參數：**
 
-      以下是此方法的參數:
+      此方法的參數如下：
 
       * **名稱**
 
          您要擷取的 Target mbox/位置名稱。
 
-         * **類型:** 字串
+         * **類型：**&#x200B;字串
       * **defaultContent**
 
          如果 Target 伺服器無法連線或使用者不符合促銷活動資格，則將會在回撥中傳回值。
 
-         * **類型:** 字串
+         * **類型：**&#x200B;字串
       * **profileParameters**
 
          此字典中的值會根據 Target 要求進入「profileParameters」物件。
 
-         * **類型:** 對應 `<String, Object>`
+         * **類型：**&#x200B;對應 `<String, Object>`
       * **orderParameters**
 
          此字典中的值會根據 Target 要求進入「order」物件。
 
-         * **類型:** 對應 `<String, Object>`
+         * **類型：**&#x200B;對應 `<String, Object>`
       * **mboxParameters**
 
          此字典中的值會根據 Target 要求進入。
 
-         * **類型:** 對應 `<String, Object>`
+         * **類型：**&#x200B;對應 `<String, Object>`
       * **requestLocationParameters**
 
          此字典中的值會根據 Target 要求進入「requestLocation」物件。
 
-         * **類型:** 對應 `<String, Object>`
+         * **類型：**&#x200B;對應 `<String, Object>`
       * **callBack**
 
          此方法將會與 Target 伺服器中的選件內容一併接受呼叫。如果 Target 伺服器無法連線或使用者不符合促銷活動資格，則將會傳回 defaultContent。
 
-         * **類型:** TargetCallback `<String>`
-   * 以下是此方法的範例程式碼:
+         * **類型：** TargetCallback `<String>`
+   * 此方法的程式碼範例如下：
 
       ```java
       Map `<String, Object>` profileParameters = new HashMap `<String, Object>`(); profileParameters.put(“profile-parameter-key”, “profile-parameter-value”); 
@@ -185,13 +185,13 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    使用指定的參數建立 TargetLocationRequest 物件。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static TargetLocationRequest createOrderConfirmRequest(String name, String orderId, String orderTotal, String productPurchasedId, Map<String, Object> parameters);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       TargetLocationRequest orderConfirm = Target.createOrderConfirmRequest("orderConfirm", "order", "47.88", "3722", null);
@@ -201,13 +201,13 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    使用指定的參數建立 TargetLocationRequest 物件。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static TargetLocationRequest createRequest(String name, String defaultContent, Map<String, Object> parameters);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       TargetLocationRequest heroBannerRequest = Target.createRequest("heroBanner", "default.png", null);
@@ -217,13 +217,13 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    清除應用程式中的目標 Cookie。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void clearCookies();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.clearCookies();
@@ -233,13 +233,13 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 
    傳回 pcID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static String getPcID();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.getPcID();
@@ -255,7 +255,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
       public static String getSessionID();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.getSessionID();
@@ -271,7 +271,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
       public static String setThirdPartyID(final String thirdPartyId);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.setThirdPartyID(“third-party-id”);
@@ -287,7 +287,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
       public static String getThirdPartyID();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       String thirdPartyId = Target.getThirdPartyID();
