@@ -7,11 +7,11 @@ solution: Marketing Cloud,Analytics
 title: 追蹤深層連結
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 88%
 
 1. 新增 SDK 至您的專案，並實作生命週期量度。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
 1. 註冊應用程式以處理 URL。
 
    如需詳細資訊，請參閱 [URL](https://developer.android.com/training/basics/intents/filters.html)。
 1. 透過使用 `collectLifecycleData` 將搭配深層連結目的的活動傳遞至 Adobe SDK。
 
-   以下為追蹤深層連結的範例:
+   追蹤深層連結的範例如下：
 
    ```java
    public class ParseDeepLinkActivity extends Activity { 
@@ -45,9 +45,9 @@ ht-degree: 88%
    }
    ```
 
-The Adobe Mobile SDK can parse key and value pairs of data that is appended to any Deep or Universal Link as long as the link contains a key with the `a.deeplink.id` label and a corresponding non-null and user-generated value. 只要連結包含 `a.deeplink.id` 鍵值和值，所有附加至連結之資料的鍵值和值組都會經過剖析、附加至生命週期點擊，然後傳送至 Adobe Analytics。
+只要連結中包含附有 `a.deeplink.id` 標籤的索引鍵，以及使用者自行產生的非空對應數值，Adobe Mobile SDK 就可剖析附加至任何深層或通用連結之資料的索引鍵/值組。只要連結包含 `a.deeplink.id` 鍵值和值，所有附加至連結之資料的鍵值和值組都會經過剖析、附加至生命週期點擊，然後傳送至 Adobe Analytics。
 
-此外，您可以將下列其中一或多組保留的索引鍵 (搭配使用者產生的值) 附加至深層或通用連結:
+此外，您可以將下列其中一或多組保留的索引鍵 (搭配使用者產生的值) 附加至深層或通用連結：
 
 * `a.launch.campaign.trackingcode`
 * `a.launch.campaign.source`
