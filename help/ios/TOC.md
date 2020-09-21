@@ -1,14 +1,18 @@
 ---
 product: mobile-services
-audience: 終端使用者
-user-guide-title: Mobile Services iOS 說明
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+audience: end-user
+user-guide-title: Mobile Services iOS指南
+breadcrumb-title: iOS Guide
+translation-type: tm+mt
+source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 97%
 
 ---
 
 
-# Mobile Services iOS 說明 {#ios}
+# Mobile Services iOS Guide {#ios}
 
 + [適用於 Experience Cloud 解決方案的 iOS SDK 4.x](overview.md)
 + [發行說明](rel-notes.md)
