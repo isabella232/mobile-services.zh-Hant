@@ -1,14 +1,17 @@
 ---
 description: 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 Android AppMeasurement 呼叫。
 seo-title: PhoneGap 外掛程式概述
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式概述
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -29,13 +32,13 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ## 使用 npm 安裝外掛程式 {#section_43229E57C16944C0B51531CB92089189}
 
-執行以下命令:
+運行以下命令：
 
 ```java
 cordova plugin add adobe-mobile-services
 ```
 
-## 手動安裝外掛程式{#section_EA1FD59C484D44878AB509954DEE6037}
+## 手動安裝外掛程式 {#section_EA1FD59C484D44878AB509954DEE6037}
 
 ## 納入外掛程式
 
