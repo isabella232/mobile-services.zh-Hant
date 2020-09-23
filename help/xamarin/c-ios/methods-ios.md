@@ -3,11 +3,11 @@ description: Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法�
 keywords: Xamarin
 seo-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 seo-title: iOS方法
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: iOS方法
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
-source-git-commit: 70c79d404c29a8a35b5eadbb3ad99f953a5166e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 70%
@@ -31,7 +31,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void CollectLifecycleData();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.CollectLifecycleData();
@@ -47,7 +47,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static bool DebugLogging(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var debugEnabled = ADBMobile.DebugLogging();
@@ -63,7 +63,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void SetDebugLogging(bool enabled);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.SetDebugLogging(true);
@@ -79,7 +79,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static double LifetimeValue();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var lifetimeValue = ADBMobile.LifetimeValue();
@@ -100,7 +100,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static ADBPrivacyStatus PrivacyStatus();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var privacyStatus = ADBMobile.PrivacyStatus();
@@ -114,13 +114,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```objective-c
       public static void SetPrivacyStatus(ADBPrivacyStatus status) 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.SetPrivacyStatus(ADBMobilePrivacyStatus.OptIn); 
@@ -136,7 +136,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string UserIdentifier(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var userId = ADBMobile.UserIdentifier(); 
@@ -152,7 +152,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string UserIdentifier();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
@@ -168,7 +168,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string Version();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var version = ADBMobile.Version();
@@ -188,7 +188,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void KeepLifecycleSessionAlive();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.KeepLifecycleSessionAlive();
@@ -206,7 +206,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string TrackingIdentifier();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var trackingId = ADBMobile.TrackingIdentifier();
@@ -226,7 +226,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackState(string state, NSDictionary cdata); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary contextData; 
@@ -248,7 +248,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackAction(string action, NSDictionary cdata); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackAction("level gained", null); 
@@ -268,7 +268,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackActionFromBackground(string action, NSDictionary cdata); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackActionFromBackground("majorLocationChange", null);
@@ -284,7 +284,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackLocation(CLLocation location, NSDictionary cdata); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       CoreLocation.CLLocation l = new CoreLocation.CLLocation  (111.111, 44.156);
@@ -301,7 +301,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackBeacon( CLBeacon beacon, NSDictionary cdata);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       CoreLocation.CLBeacon beacon = new CoreLocation.CLBeacon (); 
@@ -318,7 +318,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackingClearCurrentBeacon();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackingClearCurrentBeacon();
@@ -332,7 +332,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
       public nbsp; static voidTrackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackLifetimeValueIncrease(5, null); 
@@ -352,7 +352,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackTimedActionStart(string action, NSDictionary cdata); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackTimedActionStart("level2", null);
@@ -372,7 +372,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackTimedActionUpdate(string action, NSDictionary cdata); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary updatedData = NSDictionary.FromObjectAndKey (NSObject.FromObject("val2"), NSObject.FromObject ("key2")); 
@@ -389,7 +389,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackTimedActionEnd(string action, Func<double, double, NSMutableDictionary, sbyte> block); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackTimedActionEnd  ("level2", (double  arg1,  double  arg2,  NSMutableDictionary  arg3)  =>  { 
@@ -407,7 +407,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static bool TrackingTimedActionExists(string action); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackTimedActionEnd  ("timedAction",  (double  inAppDuration, 
@@ -426,7 +426,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackingSendQueuedHits();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TrackingSendQueuedHits(); 
@@ -442,7 +442,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TrackingClearQueue(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
        ADBMobile.TrackingClearQueue();
@@ -452,13 +452,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
    擷取離線佇列中目前的點擊數。
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       public static int TrackingGetQueueSize();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
@@ -476,7 +476,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string GetMarketingCloudID(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       var mcid = ADBMobile.GetMarketingCloudID();
@@ -511,7 +511,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void TargetLoadRequest (ADBTargetLocationRequest request, Action<NSString> callback); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
@@ -531,7 +531,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static ADBTargetLocationRequest ADBTargetLocationRequest TargetCreateRequest (string name, string defaultContent, NSDictionary parameters); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary  dict  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
@@ -548,7 +548,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static ADBTargetLocationRequest ADBTargetLocationRequest TargetCreateRequest (string name, string defaultContent, NSDictionary parameters);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TargetCreateOrderConfirmRequest ("myOrder", "12345", "29.41", "cool stuff", null); 
@@ -558,13 +558,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
    清除應用程式中的目標 Cookie。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```objective-c
       public static void TargetClearCookies(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.TargetClearCookies(); 
@@ -582,7 +582,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static NSDictionary AudienceVisitorProfile (); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary profile = ADBMobile.AudienceVisitorProfile();
@@ -598,7 +598,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string AudienceDpid ();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       string currentDpid = ADBMobile.AudienceDpid();
@@ -614,7 +614,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static string AudienceDpuuid ();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       string currentDpuuid = ADBMobile.AudienceDpuuid(); 
@@ -630,7 +630,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void AudienceSetDpidAndDpuuid (NSDictionary data, Action<NSDictionary> callback); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.AudienceSetDpidAndDpuuid ("testDppid", "testDpuuid")
@@ -646,7 +646,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void AudienceSignalWithData (NSDictionary data, Action<NSDictionary> callback); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary  audienceData  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("key1")); 
@@ -685,7 +685,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static ADBMediaSettings MediaCreateSettings ([string name, double length, string playerName, string playerID); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMediaSettings settings = ADBMobile.MediaCreateSettings ("name1", 10, "playerName1", "playerID1"); 
@@ -701,7 +701,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static ADBMediaSettings MediaAdCreateSettings ( string name,  double length,  string playerName,  string parentName,  string parentPod,  double parentPodPosition,  string CPM); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMediaSettings adSettings = ADBMobile.MediaAdCreateSettings("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1");
@@ -717,7 +717,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void MediaOpenWithSettings ( ADBMediaSettings settings,  Action<ADBMediaState> callback); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMediaSettings settings = ADBMobile.MediaCreateSettings  ("name1",  10,  "playerName1",  "playerID1"); 
@@ -736,7 +736,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void MediaClose ( string name);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.MediaClose  (settings.Name);
@@ -752,7 +752,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void MediaPlay ( string name, double offset);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.MediaPlay (settings.Name, 0); 
@@ -768,7 +768,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void MediaComplete ( string name, double offset);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.MediaComplete (settings.Name, 5);
@@ -784,7 +784,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void MediaStop ( string name, double offset);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.MediaStop (settings.Name, 3);
@@ -810,7 +810,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void MediaTrack ( string name, NSDictionary data); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
        ADBMobile.MediaTrack (settings.Name, null);
