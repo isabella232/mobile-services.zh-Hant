@@ -1,14 +1,17 @@
 ---
 description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
 seo-title: 點擊批次處理程序
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 點擊批次處理程序
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 89%
 
 ---
 
@@ -30,9 +33,9 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 }
 ```
 
-當此值被設定為大於 0 的數字時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`* 值。超過此臨界值後，佇列中的所有點擊都會傳送。
+當此值被設定為大於 0 的數字時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`* 值。傳遞此臨界值後，會傳送佇列中的所有點擊。
 
-下列方法可搭配點擊批次處理程序使用:
+下列方法會與點擊批次處理程式搭配使用：
 
 * `Analytics.getQueueSize` 會在目前點擊批次處理程序佇列中傳回 `long` 與點擊數。
 
