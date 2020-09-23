@@ -1,20 +1,23 @@
 ---
-description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
-seo-description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
+description: Adobe Mobile和Adobe Mobile SDK可讓您傳送推播訊息給您的使用者。 SDK也可讓您輕鬆報告因點選推播訊息而開啟應用程式的使用者。
+seo-description: Adobe Mobile和Adobe Mobile SDK可讓您傳送推播訊息給您的使用者。 SDK也可讓您輕鬆報告因點選推播訊息而開啟應用程式的使用者。
 seo-title: 推送訊息
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 推送訊息
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 65%
 
 ---
 
 
 # 推送訊息 {#push-messaging}
 
-Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
+Adobe Mobile和Adobe Mobile SDK可讓您傳送推播訊息給您的使用者。 SDK也可讓您輕鬆報告因點選推播訊息而開啟應用程式的使用者。
 
 >[!IMPORTANT]
 >
@@ -24,7 +27,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
 
 >[!IMPORTANT]
 >
->請勿在應用程式內手動設定 Experience Cloud ID。這樣會建立新的唯一使用者，且因其選單加入狀態將不會收到推送訊息。例如，假設使用者已選擇加入在您的應用程式中接收推送訊息記錄。登入後，若您在應用程式內手動設定 ID，便會建立新的唯一使用者，且未選擇加入接收推送訊息。這個新使用者不會收到您的推送訊息。
+>請勿在應用程式內手動設定 Experience Cloud ID。這會導致建立新的唯一使用者，因為其選擇加入狀態而不會收到推播訊息。 例如，假設已選擇加入以接收推送訊息登入您應用程式的使用者。 登入後，如果您在應用程式中手動設定ID，則會建立新的唯一使用者，而未選擇接收推播訊息。 這個新使用者不會收到您的推送訊息。
 
 ## 必要條件 {#section_06655ABE973743DC965897B229A2118D}
 
