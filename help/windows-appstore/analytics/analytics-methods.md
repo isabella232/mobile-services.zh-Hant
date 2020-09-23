@@ -2,12 +2,12 @@
 description: 協助您搭配Adobe Analytics使用Windows 8.1通用應用程式商店SDK的資訊。
 seo-description: 協助您搭配Adobe Analytics使用Windows 8.1通用應用程式商店SDK的資訊。
 seo-title: 'Analytics 方法 '
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 'Analytics 方法 '
 topic: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 52%
@@ -41,7 +41,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackState(Platform::String ^state, Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object> ^contextData); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
@@ -58,7 +58,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackAction(Platform::String ^action, Windows::Foundation::Collections::IMap <Platform::String^, Platform::Object> ^contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -76,7 +76,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static Windows::Foundation::IAsyncOperation<Platform::String^> ^GetTrackingIdentifierAsync(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var trackingIdentifier; 
@@ -95,7 +95,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackLocation(double lat, double lon, double accuracy, Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -112,7 +112,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackLifetimeValueIncrease(float amount, Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^contextData); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -133,7 +133,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackTimedActionStart(Platform::String ^action, Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^contextData);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -154,7 +154,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackTimedActionUpdate(Platform::String ^action, Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^contextData); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -173,7 +173,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static Windows::Foundation::IAsyncOperation<bool> ^TrackTimedActionExistsAsync(Platform::String ^action); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       ADBMobile.Analytics.trackTimedActionExistsAsync("signUp").then(function (exists) { 
@@ -191,7 +191,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void TrackTimedActionEnd(Platform::String ^action);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -224,7 +224,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static Windows::Foundation::IAsyncOperation<int> ^GetQueueSizeAsync();
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       var queueSize; 
