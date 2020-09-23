@@ -2,12 +2,12 @@
 description: 您可以傳送從任何分析資料或事件觸發的應用程式內訊息。 實作後，訊息會動態傳遞至應用程式，而不需要程式碼更新。
 seo-description: 您可以傳送從任何分析資料或事件觸發的應用程式內訊息。 實作後，訊息會動態傳遞至應用程式，而不需要程式碼更新。
 seo-title: 應用程式內傳訊
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 61%
@@ -125,7 +125,7 @@ Android Mobile SDK會追蹤您應用程式內訊息的下列度量：
 
 * 對於全螢幕和警報樣式的應用程式內訊息：
 
-   * **印象**: 使用者觸發應用程式內訊息時。
+   * **印象**:使用者觸發應用程式內訊息時。
    * **點進次數**: 使用者按下&#x200B;**[!UICONTROL 點進]**&#x200B;時。
    * **取消**: 使用者按下&#x200B;**[!UICONTROL 取消]**&#x200B;時。
 
@@ -176,7 +176,7 @@ Android Mobile SDK會追蹤您應用程式內訊息的下列度量：
       public static void setLargeIconResourceId(final int resourceId); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Config.setLargeIconResourceId(R.drawable.appIcon); 
