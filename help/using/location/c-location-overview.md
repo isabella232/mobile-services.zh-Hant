@@ -3,12 +3,12 @@ description: 「位置概述」報表可讓您查看您的應用程式被用於�
 keywords: mobile
 seo-description: 「位置概述」報表可讓您查看您的應用程式被用於哪些不同的國家、地區和地標。
 seo-title: 概述 (位置)
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 概述 (位置)
 topic: Reports,Metrics
 uuid: a701abc3-001b-4015-843f-5fb2c6c80d17
 translation-type: tm+mt
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 75%
