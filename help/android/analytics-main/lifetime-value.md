@@ -2,13 +2,13 @@
 description: 期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
 seo-description: 期限值可讓您測量每個 Android 使用者的期限值並將其設為目標。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數，社交分享，照片上傳數等等。
 seo-title: 訪客期限值
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 訪客期限值
 topic: Developer and implementation
 uuid: ba0308de-282e-46f9-a14c-19fb6d5c363e
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
