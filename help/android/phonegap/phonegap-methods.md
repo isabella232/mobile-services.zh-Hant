@@ -3,13 +3,13 @@ description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作�
 keywords: android;library;mobile;sdk
 seo-description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
 seo-title: PhoneGap 外掛程式方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式方法
 topic: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 100%
 
@@ -144,7 +144,7 @@ ht-degree: 100%
       ADB.setPushIdentifier(pushIdentifier, success, fail);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADB.setPushIdentifier('test_push_identifier',function (value) { alert('success'); },function (value) { alert('fail'); }); 
@@ -291,7 +291,7 @@ ht-degree: 100%
       ADB.trackLocation(x, y[,JSON cData]); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADB.trackLocation('40.431596', '-111.893713'); 
@@ -307,7 +307,7 @@ ht-degree: 100%
       ADB.trackLifetimeValueIncrease(amount[,JSON cData]); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADB.trackLifetimeValueIncrease('10.01'); 
@@ -329,7 +329,7 @@ ht-degree: 100%
       ADB.trackTimedActionStart(action[,JSON cData]);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADB.trackTimedActionStart("cartToCheckout"); 
@@ -787,7 +787,7 @@ ht-degree: 100%
       ADB.visitorGetIDs (success, fail);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADB.visitorGetIDs(function (value) { alert(value); },function (value) { alert('fail') ;}); 
