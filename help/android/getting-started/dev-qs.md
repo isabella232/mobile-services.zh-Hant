@@ -3,12 +3,15 @@ description: 此資訊可協助您實作 Android 資料庫並收集生命週期�
 keywords: android;library;mobile;sdk
 seo-description: 此資訊可協助您實作 Android 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
 seo-title: 核心實作與生命週期
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 核心實作與生命週期
 topic: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
-translation-type: ht
-source-git-commit: dae60a21286edc28c84b7638da214b824abf0cd3
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 100%
 
 ---
 
