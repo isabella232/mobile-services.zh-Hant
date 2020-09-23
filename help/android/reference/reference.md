@@ -1,13 +1,16 @@
 ---
-description: 本參考資料可協助您使用 Experience Cloud 解決方案的 Android SDK。
-seo-description: 本參考資料可協助您使用 Experience Cloud 解決方案的 Android SDK。
+description: 本參考資料可協助您使用Experience Cloud解決方案專用的Android SDK。
+seo-description: 本參考資料可協助您使用Experience Cloud解決方案專用的Android SDK。
 seo-title: Android SDK 參考概述
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Android SDK 參考概述
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: ce8f6dcb-0e2b-47eb-99f2-fbdb97079161
-translation-type: ht
-source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
