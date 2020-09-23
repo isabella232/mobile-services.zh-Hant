@@ -1,20 +1,23 @@
 ---
-description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者按一下產生的連結，從 Apple App Store 下載並執行應用程式後，SDK 就會自動收集並傳送贏取資料至 Adobe Mobile Services。
-seo-description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者按一下產生的連結，從 Apple App Store 下載並執行應用程式後，SDK 就會自動收集並傳送贏取資料至 Adobe Mobile Services。
+description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者在按一下產生的連結後，從Apple App Store下載並執行應用程式時，SDK會自動收集贏取資料並傳送至Adobe Mobile服務。
+seo-description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者在按一下產生的連結後，從Apple App Store下載並執行應用程式時，SDK會自動收集贏取資料並傳送至Adobe Mobile服務。
 seo-title: '行動應用程式贏取 '
-solution: Marketing Cloud,Analytics
-title: 行動應用程式贏取
-topic: 開發人員和實施
+solution: Experience Cloud,Analytics
+title: '行動應用程式贏取 '
+topic: Developer and implementation
 uuid: 5fece619-e4b8-4d06-9250-dcb66fa32ce0
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 76%
 
 ---
 
 
 # 行動應用程式贏取 {#mobile-app-acquisition}
 
-可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者按一下產生的連結，從 Apple App Store 下載並執行應用程式後，SDK 就會自動收集並傳送贏取資料至 Adobe Mobile Services。
+可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者在按一下產生的連結後，從Apple App Store下載並執行應用程式時，SDK會自動收集贏取資料並傳送至Adobe Mobile服務。
 
 若要使用 Acquisition，您&#x200B;**必須**&#x200B;有 SDK 4.1 版或更新版本。
 
@@ -26,7 +29,7 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的專案*。
 1. 匯入資料庫:
 
    ```objective-c
