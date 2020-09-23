@@ -1,20 +1,23 @@
 ---
-description: 此範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
-seo-description: 此範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
+description: 產品變數與銷售eVar和產品特定事件的範例。
+seo-description: 產品變數與銷售eVar和產品特定事件的範例。
 seo-title: 產品變數及其包含的銷售 eVar 與產品專屬事件
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 產品變數及其包含的銷售 eVar 與產品專屬事件
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 94e882e4-b19d-4c48-9dfb-331465490347
 translation-type: tm+mt
-source-git-commit: b630c5cf09be7fbe31018cbf50564001eb6e2a5a
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 27%
 
 ---
 
 
-# Products variable with merchandising eVars and product-specific events{#products-variable-with-merchandising-evars-and-product-specific-events}
+# 產品變數及其包含的銷售 eVar 與產品專屬事件{#products-variable-with-merchandising-evars-and-product-specific-events}
 
-此範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
+產品變數與銷售eVar和產品特定事件的範例。
 
 ```
 //create a context data dictionary 
