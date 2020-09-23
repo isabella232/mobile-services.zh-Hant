@@ -2,11 +2,14 @@
 description: 以下資訊可協助您往返 V3 贏取促銷活動連結 (根據裝置指紋)。
 seo-description: 以下資訊可協助您往返 V3 贏取促銷活動連結 (根據裝置指紋)。
 seo-title: 測試 V3 贏取
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 測試 V3 贏取
 uuid: 89137ccf-4839-4b37-926e-303cf8e511a5
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -17,21 +20,21 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 >[!IMPORTANT]
 >
->V3 贏取會參照您在 Adobe Mobile Services 使用者介面中透過「贏取產生器」所建立的贏取連結。若要使用此功能，您必須將 iOS SDK 升級至 4.6.0 版或更新版本。
+>V3 贏取會參照您在 Adobe Mobile Services 使用者介面中透過「贏取產生器」所建立的贏取連結。若要使用此功能，您必須升級至 iOS SDK 4.6.0 或更新版本。
 
-如果行動應用程式尚未在 App Store 上架，在您建立促銷活動連結後，請選取任一行動應用程式作為目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點選贏取連結後)，而不會影響測試連結的能力。
+如果 App Store 尚未提供行動應用程式，當您建立促銷活動連結時，請選取任何行動應用程式作為目的地。這只會影響您點擊贏取連結後，贏取伺服器將您重新導向所抵達的應用程式，不會影響測試連結的功能。
 
-1. 完成[行動應用程式贏取](/help/ios/acquisition-main/acquisition.md)中的先決條件任務。
-1. 導覽至 Adobe Mobile Services 使用者介面中的&#x200B;**[!UICONTROL 贏取產生器]**，然後產生贏取促銷活動 URL。
+1. 完成[「行動應用程式贏取」](/help/ios/acquisition-main/acquisition.md)中的先決條件任務。
+1. 導覽至 Adobe Mobile Services 使用者介面中的&#x200B;**[!UICONTROL 「贏取產生器」]**，然後產生贏取促銷活動 URL。
 
-   例如:
+   例如：
 
    ```
    https://c00.adobe.com/v3/<appid>/start?a_i_id=iostestapp&a_g_id=com.adobe.android&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=trackingcode
    ```
 
 
-   如果您在贏取連結中同時參照了 iOS 和 Android 應用程式，請使用 Apple Store 作為預設商店。
+   如果您在贏取連結中同時參照 iOS 和 Android 應用程式，請將 Apple Store 設為預設商店。
 1. 在電腦的瀏覽器上開啟剛才產生的連結，並前往 `https://c00.adobe.com/v3/<appid>/end`。
 
    您應會在 JSON 回應中看見 `contextData`:
@@ -45,7 +48,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    | 設定 | 值 |
    |--- |--- |
-   | acquisition | 伺服器應為  `c00.adobe.com`.*`appid`* 應與您贏取連結中的 *`appid`* 相等。 |
+   | acquisition | 伺服器應為 `c00.adobe.com`，且 *`appid`* 應與您贏取連結中的 *`appid`* 相等。 |
    | analytics | `referrerTimeout` 的值應大於 0。 |
 
 
@@ -58,12 +61,12 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    您可以刪除應用程式並重新安裝 (如有必要)。
 1. (選擇性) 您可以啟用 SDK 的偵錯記錄以取得其他資訊。
 
-   如果一切正常運作，您應會看見下列記錄:
+   如果一切正常運作，您應會看見下列記錄：
 
    `"Analytics - Trying to fetch referrer data from <acquisition end url>"`
    `"Analytics - Received Referrer Data(<Json Object>)"`
 
-   如果沒有看見上述記錄，請確定您已完成步驟 4 及步驟 5。
+   如果您未看到上述記錄，請確定您已完成步驟4和5。
 
    以下是一些有關可能錯誤的資訊:
 
@@ -83,7 +86,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
    * `Analytics - Acquisition referrer timed out`
 
-      無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確定在開啟贏取連結後才安裝應用程式，而且使用的網路應與您點選 URL 並開啟應用程式時所用的網路相同。
+      無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。同時，您也需在安裝應用程式前即確保開啟贏取連結，而且當您按下 URL 並開啟應用程式時，使用的是相同的網路。
 
       請記住以下資訊:
 
