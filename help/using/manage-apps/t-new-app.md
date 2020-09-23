@@ -3,13 +3,13 @@ description: 您可以利用此資訊建立新應用程式和設定其關鍵量�
 keywords: mobile
 seo-description: 您可以利用此資訊建立新應用程式和設定其關鍵量度；設定 Adobe Analytics 和 Adobe Audience Manager 的 SDK 選項；設定贏取和 ID 服務選項；以及下載設定檔、SDK 以及開發與測試工具。
 seo-title: 新增應用程式
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 新增應用程式
 topic: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 100%
 
