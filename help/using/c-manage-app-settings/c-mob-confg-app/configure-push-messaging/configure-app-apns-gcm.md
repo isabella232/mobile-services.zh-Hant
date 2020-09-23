@@ -1,14 +1,17 @@
 ---
 description: 您可以將應用程式設定為使用 Apple 推送通知服務 (APNS) 或 Firebase 雲端通訊 (FCM)。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以將應用程式設定為使用 Apple 推送通知服務 (APNS) 或 Firebase 雲端通訊 (FCM)。
 seo-title: 設定應用程式以使用 APNS 或 FCM
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定應用程式以使用 APNS 或 FCM
-topic: 量度
+topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: ht
-source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 90%
 
 ---
 
@@ -83,12 +86,12 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 
 若要設定您的 iOS 應用程式來使用 APNS:
 
-1. 前往 [https://developer.apple.com/account](https://developer.apple.com/account) 並使用您的 [Apple Developer 帳戶](https://developer.apple.com/account)登入。
+1. Go to [https://developer.apple.com/account](https://developer.apple.com/account) and log in to your [Apple Developer account](https://developer.apple.com/account).
 1. 在 **[!UICONTROL iOS 應用程式]**&#x200B;底下選取&#x200B;**[!UICONTROL 識別碼]**。
 1. 如果有設定好的應用程式 ID 可用來進行推送，請前往步驟 11。
-1. 按 **[!UICONTROL +]** 按鈕，建立新的應用程式 ID。
-1. 輸入應用程式 ID 說明。
-1. 輸入應用程式 ID 尾碼。
+1. Press the **[!UICONTROL +]** button to create a new App ID.
+1. 輸入應用程式ID說明。
+1. 輸入應用程式ID字尾。
 
    >[!IMPORTANT]
    >
@@ -97,7 +100,7 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 1. 在&#x200B;**[!UICONTROL 應用程式服務]**&#x200B;中，選取&#x200B;**[!UICONTROL 推送通知]**&#x200B;核取方塊。
 1. 按一下&#x200B;**[!UICONTROL 繼續]**。
 1. 按一下&#x200B;**[!UICONTROL 提交]**。
-1. 按一下&#x200B;**[!UICONTROL 完成]**。
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 1. 從清單中選取設定用來推送訊息的應用程式 ID，然後按一下&#x200B;**[!UICONTROL 「編輯」]**。
 1. 如果已經建立好推送憑證，則請跳至步驟 15。
 1. 向下捲動至&#x200B;**[!UICONTROL 推送通知]**，然後按一下正確的&#x200B;**[!UICONTROL 建立憑證...]**&#x200B;按鈕。
@@ -114,9 +117,9 @@ source-git-commit: 608384f1fee2a05699ff13fbd51c3cc43aeb693c
 1. 開啓&#x200B;**[!UICONTROL 「鑰匙圈存取」]**。
 1. 按一下&#x200B;**[!UICONTROL 我的憑證]**，然後找到適合您應用程式和環境的 **[!UICONTROL iOS 推送服務憑證]**。
 
-   您可比對套件 ID 以及其屬於「開發」或「生產」來識別正確的憑證。
+   您可以比對搭售ID，以及是「開發」或「生產」，以識別正確的憑證。
 
-1. 展開憑證，確認其包含私密金鑰。
+1. 展開憑證並驗證其是否包含私密金鑰。
 1. 以滑鼠右鍵按一下私密金鑰並選取&#x200B;**[!UICONTROL 匯出&#x200B;*`<name of key>`*]**。
 1. 在對話方塊中輸入必填資訊，然後儲存新的 `.p12` 檔案。
 
