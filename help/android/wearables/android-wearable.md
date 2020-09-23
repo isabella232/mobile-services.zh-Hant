@@ -2,12 +2,15 @@
 description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
 seo-description: 從 Android SDK 4.5 版開始，已新增新的 Android 延伸功能，可讓您透過 Android 穿戴式應用程式中收集資料。
 seo-title: Android 穿戴式裝置快速入門
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Android 穿戴式裝置快速入門
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: bfe5d41e-b17c-4634-80ac-7a38671ecb81
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 100%
 
 ---
 
