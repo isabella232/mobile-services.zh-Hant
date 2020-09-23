@@ -3,11 +3,14 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: 實施生命週期
-solution: Marketing Cloud，開發人員
+solution: Experience Cloud
 title: 實施生命週期
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 ## Android
 
-在 Unity 指令碼中，設定 Android SDK 的應用程式內容。Add the following code to the `Awake()` function of your FIRST scene:
+在Unity指令碼中，您會設定Android SDK的應用程式內容。 將下列程式碼新增至FIRST `Awake()` 場景的函式：
 
 ```java
 void Awake()
@@ -33,7 +36,7 @@ void Awake()
  }
 ```
 
-若要收集生命週期度量，請新增下列程式碼至所有場景指令碼:
+若要收集生命週期度量，請將下列程式碼新增至您的所有場景指令碼：
 
 ```java
 void OnEnable()
