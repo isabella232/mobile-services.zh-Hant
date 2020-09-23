@@ -2,12 +2,15 @@
 description: 若您的應用程式會開啟行動網站內容，請確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
 seo-description: 若您的應用程式會開啟行動網站內容，請確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
 seo-title: '應用程式和行動網站間的訪客追蹤  '
-solution: Marketing Cloud,Analytics
-title: 應用程式和行動網站間的訪客追蹤
-topic: 開發人員和實施
+solution: Experience Cloud,Analytics
+title: '應用程式和行動網站間的訪客追蹤  '
+topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 ## 應用程式中的訪客 ID
 
-Android SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲存於行動裝置的永久性記憶體中、隨著每次點擊傳送，且只會在使用者解除安裝該應用程式後移除。
+當安裝應用程式時，Android SDK會產生唯一訪客ID。 此ID會儲存在行動裝置上的永久記憶體中，每次點擊時都會傳送，而且只有在使用者解除安裝應用程式時才會移除。
 
 >[!TIP]
 >
@@ -59,7 +62,7 @@ Android SDK 會在應用程式安裝後產生唯一的訪客 ID。此 ID 會儲�
    });
    ```
 
-目的地網域上的 ID 服務程式碼會從 URL 提取 MID，而非傳送要求給 Adobe 索取新 ID。該程式碼會使用傳入的 MID 來追蹤訪客。
+目標網域上的ID服務程式碼會從URL擷取MID，而非傳送要求給Adobe以取得新ID。 程式碼使用傳入的MID來追蹤訪客。
 
 在行動網站內容的點擊中，確認 `mid` 參數存在於各個點擊中，並確認此值與應用程式程式碼所傳送的 `mid` 參數相符。
 
