@@ -2,13 +2,13 @@
 description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
 seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
 seo-title: 追蹤應用程式當機
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 追蹤應用程式當機
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: ht
-source-git-commit: 161212216565d56e346abc664197fedbea83d6a0
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
