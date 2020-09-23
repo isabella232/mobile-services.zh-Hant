@@ -2,12 +2,15 @@
 description: 協助您使用ADBMobile JSON設定檔案的資訊。
 seo-description: 協助您使用ADBMobile JSON設定檔案的資訊。
 seo-title: ADBMobileConfig.json設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json設定
 topic: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
 translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 40%
 
 ---
 
@@ -20,9 +23,9 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **rsids**
 
-   (Analytics **需要**)一或多個報表套裝，用以接收Analytics資料。 多個報表套裝ID應以逗號分隔，中間不應有空格。
+   (Analytics **需要**)一或多個報表套裝，用以接收Analytics資料。 多個報表套裝 ID 應以逗號分隔，且中間不應有空格。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```js
       "rsids" : "rsid"
@@ -40,7 +43,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **charset**
 
-   定義您用來傳送至Analytics之資料的字元集。 字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/charset.html)。
+   定義您用來傳送至Analytics之資料的字元集。 字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/vars/config-vars/charset.html)。
 
 * **ssl**
 
@@ -52,13 +55,13 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 `false`.
 
-   如果未正確設定，資料將會遺失。 如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   若未正確設定，資料將會遺失。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
 
    預設值為 `false`。
 
 * **lifecycleTimeout**
 
-   指定兩次應用程式啟動之間必須經過的時間長度（以秒為單位），之後啟動才會被視為新作業。 此逾時也會在您的應用程式傳送至背景並重新啟動時套用。 您的應用程式在背景逗留的時間不會包含在工作階段長度中。
+   指定兩次應用程式啟動之間必須經過的時間長度（以秒為單位），之後啟動才會被視為新作業。 您的應用程式傳送至背景並重新啟動時，此逾時也適用。應用程式在背景執行的時間不會計入工作階段中。
 
    預設值為300秒。
 
