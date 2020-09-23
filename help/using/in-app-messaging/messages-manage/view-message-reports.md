@@ -3,13 +3,13 @@ description: 您可以檢視應用程式內和推送訊息的訊息報表。
 keywords: mobile
 seo-description: 您可以檢視應用程式內和推送訊息的訊息報表。
 seo-title: 檢視訊息報表
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 檢視訊息報表
 topic: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
-translation-type: ht
-source-git-commit: 3b6edc10d042658ef1ca17a203877b7ee09d999d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 100%
 
