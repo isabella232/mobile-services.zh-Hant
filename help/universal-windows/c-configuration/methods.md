@@ -2,12 +2,12 @@
 description: 通用Windows平台程式庫提供的類別和方法。
 seo-description: 通用Windows平台程式庫提供的類別和方法。
 seo-title: SDK方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: SDK方法
 topic: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 61%
@@ -27,13 +27,13 @@ ht-degree: 61%
 
    傳回 Adobe Mobile 程式庫的目前版本。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static Platform::String ^GetVersion();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;var libVersion = ADB.Config.getVersion();
@@ -49,14 +49,14 @@ ht-degree: 61%
 
       The default value is set in the `ADBMobileConfig.json` config file. 如需詳細資訊，請 [參閱ADBMobileConfig.json設定檔案](/help/universal-windows/c-configuration/c.json.md)。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```csharp
       static Windows::Foundation::IAsyncOperation<ADBMobilePrivacyStatus>
       ^getPrivacyStatusAsync();
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       **C Sharp**
 
@@ -83,13 +83,13 @@ ht-degree: 61%
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
    * `DBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      * 以下是此方法的語法:
+      * 此方法的語法如下：
 
          ```csharp
          static void SetPrivacyStatus(ADBMobilePrivacyStatus status);
          ```
 
-      * 以下是此方法的範例程式碼:
+      * 此方法的範例程式碼如下：
 
          **C-sharp**
 
@@ -113,13 +113,13 @@ ht-degree: 61%
 
    傳回目前使用者的期限值。預設值為 `0`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static float GetLifetimeValue(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
@@ -135,13 +135,13 @@ ht-degree: 61%
    >
    >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的ID服務（自訂或自動產生）並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static Platform::String ^GetUserIdentifier(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```csharp
       var ADB = ADBMobile;
@@ -152,13 +152,13 @@ ht-degree: 61%
 
    將使用者識別碼設為 `identifier`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static void SetUserIdentifier(Platform::String ^userIdentifier); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```javascript
       var ADB = ADBMobile;
@@ -169,13 +169,13 @@ ht-degree: 61%
 
    傳回目前的偵錯記錄偏好設定。預設值為 `false`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static bool GetDebugLogging();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```javascript
       var ADB = ADBMobile;
@@ -186,13 +186,13 @@ ht-degree: 61%
 
    將偵錯記錄偏好設定設為 `debugLogging`。除錯記錄僅在使用程式庫的除錯版本時運作，發行版本會忽略此設定。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static void SetDebugLogging(bool debugLogging);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
@@ -203,13 +203,13 @@ ht-degree: 61%
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/universal-windows/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static void CollectLifecycleData();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
@@ -220,13 +220,13 @@ ht-degree: 61%
 
    向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/universal-windows/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static void PauseCollectingLifecycleData();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
