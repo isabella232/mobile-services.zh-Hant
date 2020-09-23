@@ -1,14 +1,17 @@
 ---
 description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報表僅限 Digital Publishing Suites (DPS) 客戶使用。
-keywords: 行動
+keywords: mobile
 seo-description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報表僅限 Digital Publishing Suites (DPS) 客戶使用。
 seo-title: 前 50 名文章
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 前 50 名文章
-topic: 量度
+topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: ht
-source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 95%
 
 ---
 
@@ -30,11 +33,11 @@ source-git-commit: b11a03226ff6100554d072b4ef523d703b80a6e5
 
 * **[!UICONTROL 自訂]**
 
-   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.**&#x200B;如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
+   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表. 如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
 
 * **[!UICONTROL 篩選]**
 
-   按一下&#x200B;**[!UICONTROL 「篩選」]可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。**&#x200B;嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
+   按一下&#x200B;**[!UICONTROL 「篩選」]**&#x200B;可以建立跨越不同報表的篩選器，以查看在所有行動報表中的表現情形。嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
 
 * **[!UICONTROL 下載]**
 
