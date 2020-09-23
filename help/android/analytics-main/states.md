@@ -2,12 +2,15 @@
 description: 狀態是您的應用程式中不同的畫面或檢視。
 seo-description: 狀態是您的應用程式中不同的畫面或檢視。
 seo-title: 追蹤應用程式狀態
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 追蹤應用程式狀態
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
 1. 匯入資料庫:
 
@@ -68,12 +71,12 @@ public void onCreate(Bundle savedInstanceState) {
 
 ## 應用程式狀態報表 {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-狀態通常是透過路徑報表來檢視，所以您可以了解使用者如何導覽應用程式以及最常檢視哪些狀態。
+狀態通常是使用路徑報表來檢視，這可讓您查看使用者如何瀏覽您的應用程式以及哪些狀態最常被檢視。
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]報表。**&#x200B;此報表是根據使用者透過您的應用程式所採取的路徑而成。範例路徑為 **[!UICONTROL 首頁]**  &gt;  **[!UICONTROL 設定]**  &gt; **[!UICONTROL 摘要]**。 |
-| Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:**「頁面」**&#x200B;報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**「路徑」[!UICONTROL 報表。]** |
-| Ad hoc analytics | 透過&#x200B;**「頁面」**&#x200B;維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**「路徑」[!UICONTROL 報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
+| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]**&#x200B;報表。此報表是根據使用者透過您的應用程式所採取的路徑而成。A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
+| Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:****「頁面」報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**[!UICONTROL 「路徑」報表。]** |
+| Ad hoc analytics | 透過&#x200B;****「頁面」維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**[!UICONTROL 「路徑」報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
 
 
