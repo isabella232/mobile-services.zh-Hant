@@ -1,13 +1,16 @@
 ---
-description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
-seo-description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
+description: 從WatchOS 2開始，您的WatchKit擴充功能將會在Apple Watch裝置上執行。 在此環境中執行的應用程式需要WatchConnectivity架構才能與其包含的iOS應用程式共用資料。
+seo-description: 從WatchOS 2開始，您的WatchKit擴充功能將會在Apple Watch裝置上執行。 在此環境中執行的應用程式需要WatchConnectivity架構才能與其包含的iOS應用程式共用資料。
 seo-title: 使用 WatchOS 2 進行 Apple Watch 實施
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 使用 WatchOS 2 進行 Apple Watch 實施
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -35,14 +38,15 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 >
 >確保您擁有至少具備以下目標的專案:
 >
->* 容納應用程式
->* WatchKit 應用程式
->* WatchKit 延伸功能
+>* 包含應用程式
+>* WatchKit應用程式
+>* WatchKit擴充功能
+
 >
 
 
 
-如需有關開發 WatchKit 應用程式的詳細資訊，請參閱 [Watch 應用程式架構](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
+如需有關開發WatchKit應用程式的詳細資訊，請參 [閱The Watch App Architecture](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
 
 ## 設定容納應用程式 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
@@ -50,7 +54,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 1. 將 `AdobeMobileLibrary` 資料夾拖曳到專案中。
 1. 確認 `ADBMobileConfig.json` 檔案為容納應用程式目標的成員。
-1. 在容納應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+1. 在容納應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.tbd`
@@ -102,7 +106,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 ## 設定 WatchKit 延伸功能 {#section_5ADE31741E514330A381F2E3CFD4A814}
 
 1. 確認 `ADBMobileConfig.json` 檔案為 WatchKit 延伸功能目標的成員。
-1. 在 WatchKit 延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+1. 在 WatchKit 延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `AdobeMobileLibrary_Watch.a`
    * `libsqlite3.tbd`
