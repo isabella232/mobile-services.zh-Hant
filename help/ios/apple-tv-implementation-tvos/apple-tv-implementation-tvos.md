@@ -2,12 +2,15 @@
 description: 此資訊可協助您使用 tvOS 實施 Apple TV。
 seo-description: 此資訊可協助您使用 tvOS 實施 Apple TV。
 seo-title: 使用 tvOS 實施 Apple TV
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 使用 tvOS 實施 Apple TV
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -27,7 +30,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ## 概述
 
-透過 Apple TV，您現在可建立應用程式在原生 tvOS 環境中執行。您可使用 iOS 提供的數個架構來建立原生應用程式，或可以使用 XML 範本和 JavaScript 來建立您的應用程式。
+有了Apple TV，您現在可以建立應用程式，以在原生tvOS環境中執行。 您可以在iOS中使用數個架構來建立原生應用程式，也可以使用XML範本和JavaScript來建立應用程式。
 
 >[!TIP]
 >
@@ -45,7 +48,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 1. 將 AdobeMobileLibrary 資料夾拖曳到專案中。
 1. 確認 `ADBMobileConfig.json` 檔案為目標的成員。
-1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
@@ -57,7 +60,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 1. 將 `AdobeMobileLibrary` 資料夾拖曳到專案中。
 1. 確認 `ADBMobileConfig.json` 檔案為目標的成員。
-1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
