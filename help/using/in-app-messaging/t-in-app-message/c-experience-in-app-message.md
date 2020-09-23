@@ -1,14 +1,17 @@
 ---
 description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
-keywords: 行動
+keywords: mobile
 seo-description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 seo-title: 體驗  應用程式內訊息
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 體驗  應用程式內訊息
-topic: 量度
+topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 92%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 
-1. 在您的應用程式中，依序按一下&#x200B;**[!UICONTROL 傳訊]** &gt; **[!UICONTROL 管理訊息]** &gt; **[!UICONTROL 建立訊息]** &gt; **[!UICONTROL 建立應用程式內訊息]**。
+1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
 1. 在「體驗」頁面中輸入訊息的名稱。
-1. 填妥&#x200B;**[!UICONTROL 輸入]區段中的欄位:**
+1. 填妥&#x200B;**[!UICONTROL 輸入]**&#x200B;區段中的欄位:
 
    * **[!UICONTROL 類型]**
 為您的應用程式內訊息行銷活動選取訊息類型:
@@ -37,19 +40,21 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 自訂]**
 
-      載入您自訂的 HTML 內容 (僅限全螢幕)。您必須提供點進連結和取消連結。
+      載入您的自訂HTML內容（僅限全螢幕）。 您必須提供點進連結和取消連結。
 
-      1. 按一下&#x200B;**[!UICONTROL 「瀏覽」]並下載 HTML 檔案，或將 HTML 文件拖曳到視窗。**
-      1. 按一下「**[!UICONTROL 下載範例]」可檢視自訂 HTML 內容範例。**
+      1. 按一下&#x200B;**[!UICONTROL 「瀏覽」]**&#x200B;並下載 HTML 檔案，或將 HTML 文件拖曳到視窗。
+      1. 按一下「**[!UICONTROL 下載範例]**」可檢視自訂 HTML 內容範例。
+
       >[!TIP]
       >
       >只有在選取&#x200B;**[!F全螢幕]**&#x200B;訊息類型時，才會顯示此選項。
 
 
 
-1. 填妥&#x200B;**[!UICONTROL 顯示]區段中的欄位:**
+1. 填妥&#x200B;**[!UICONTROL 顯示]**&#x200B;區段中的欄位:
 
    * **[!UICONTROL 主題]**
+
    選取訊息的主題。
 
    * **[!UICONTROL 版面配置]**
@@ -62,12 +67,12 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **[!UICONTROL 套件影像]**
 
-      應用程式程式碼套件中影像的路徑。此選項用於畫面無影像時，或無可用影像時。舉例來說，若裝置為離線狀態，便無可用的影像。如果您在使用全螢幕範本時遇到調整大小的問題，請參閱[應用程式內傳訊疑難排解](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)中的&#x200B;*我的影像無法完全符合範本所提供的空間*。
+      應用程式程式碼套件中影像的路徑。 當沒有影像時，會使用此選項。 或影像無法使用。 舉例來說，若裝置為離線狀態，便無可用的影像。如果您在使用全螢幕範本時遇到調整大小的問題，請參閱[應用程式內傳訊疑難排解](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)中的&#x200B;*我的影像無法完全符合範本所提供的空間*。
 
 
-1. 填妥&#x200B;**[!UICONTROL 文字]區段中的欄位:**
+1. 填妥&#x200B;**[!UICONTROL 文字]**&#x200B;區段中的欄位:
 
-   * **[!UICONTROL 檔頭]**
+   * **[!UICONTROL Header]**
 
       輸入訊息檔頭的文字。
 
@@ -75,11 +80,11 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
       輸入訊息內容的文字。
 
-1. 填妥&#x200B;**[!UICONTROL 按鈕]區段中的欄位:**
+1. 填妥&#x200B;**[!UICONTROL 按鈕]**&#x200B;區段中的欄位:
 
    * **[!UICONTROL 點進按鈕]**
 
-      **[!UICONTROL 點進]按鈕的標籤。**&#x200B;點選此按鈕即計為一次成功的點進。系統會將使用者重新導向至目的地。
+      **[!UICONTROL 點進]**&#x200B;按鈕的標籤。點選此按鈕即計為一次成功的點進。系統會將使用者重新導向至目的地。
 
    * **[!UICONTROL 目標]**
 
@@ -91,13 +96,14 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
       * `{trackingId}`，此資訊會以 aid (與 *s_vi* Cookie 關聯) 取代。
       * `{messageId}`，此資訊會以應用程式內訊息的唯一 ID 取代。
       * `{lifetimeValue}`，此資訊會以期限值取代；若不存在期限值，則使用 0。
+
       以下是追蹤使用者 ID 的範例: `https://www.mysite.com?uid={userId}`.
 
       如果點進 URL 使用 `https://` 或 `https://`，URL 會在應用程式外部的裝置瀏覽器中開啟。否則，每個平台都支援可讓您開啟或參考您的應用程式的配置 (如果應用程式在開發時就已設定為支援自訂配置)。
 
       >[!TIP]
       >
-      >若您使用&#x200B;**[!UICONTROL 網頁連結]**&#x200B;或&#x200B;**[!UICONTROL 自訂連結]**&#x200B;目的地類型，則不會追蹤這種目的地類型，系統只會追蹤&#x200B;**[!UICONTROL 深層連結]。**&#x200B;如需詳細資訊，請參閱[目的地](/help/using/acquisition-main/c-create-destinations.md)。
+      >若您使用&#x200B;**[!UICONTROL 網頁連結]**&#x200B;或&#x200B;**[!UICONTROL 自訂連結]**&#x200B;目的地類型，則不會追蹤這種目的地類型，系統只會追蹤&#x200B;**[!UICONTROL 深層連結]**。如需詳細資訊，請參閱[目的地](/help/using/acquisition-main/c-create-destinations.md)。
 
 
 1. (可選) 按下列圖示以預覽訊息的配置:
