@@ -1,14 +1,17 @@
 ---
 description: 必須先在 SDK 設定中啟用贏取追蹤，才可追蹤及報告行銷連結。
-keywords: 行動
+keywords: mobile
 seo-description: 必須先在 SDK 設定中啟用贏取追蹤，才可追蹤及報告行銷連結。
 seo-title: 配置贏取
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 配置贏取
-topic: 量度
+topic: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 必須先在 SDK 設定中啟用贏取追蹤，才可追蹤及報告行銷連結。
 
 1. 在應用程式的「管理應用程式設定」頁面中，捲動至&#x200B;**[!UICONTROL 「SDK 贏取選項」]**&#x200B;區段。
-1. 完成下列作業:
+1. 完成下列作業：
 
    * 若要啟用贏取，請選取&#x200B;**[!UICONTROL 啟用]**&#x200B;核取方塊。
 
