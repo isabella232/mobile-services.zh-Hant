@@ -1,13 +1,16 @@
 ---
-description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
-seo-description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
+description: 這項資訊可協助您在iOS應用程式中使用贏取追蹤連結。
+seo-description: 這項資訊可協助您在iOS應用程式中使用贏取追蹤連結。
 seo-title: 贏取概述
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 贏取概述
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
