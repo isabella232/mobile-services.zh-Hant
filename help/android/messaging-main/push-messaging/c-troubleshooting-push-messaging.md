@@ -1,14 +1,17 @@
 ---
 description: 此資訊可協助您進行推送訊息疑難排解。
-keywords: 行動
+keywords: mobile
 seo-description: 此資訊可協助您進行推送訊息疑難排解。
 seo-title: 疑難排解推送訊息
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
-topic: 量度
+topic: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
-translation-type: ht
-source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 89%
 
 ---
 
@@ -23,11 +26,11 @@ source-git-commit: 12e01e112debffd877dd62f1fd2505724b2aae7d
 
 * 等候 Analytics 點擊
 
-   每個報表套裝都可設定處理傳入 Analytics 點擊的時機。預設為 1 小時。實際處理 Analytics 點擊最多可能需要 30 分鐘，但通常為 15 至 20 分鐘。例如，某個報表套裝每小時處理一次點擊。如果您將最大處理時間計為 30 分鐘，則某個傳入的點擊可能需要 90 分鐘才可供推送訊息使用。如果使用者在早上 9:01 啟動應用程式，則點擊會在早上 10:15 到 10:30 之間，於 Mobile Services 使用者介面中顯示為新的唯一使用者。
+   每個報表套裝都可設定處理傳入 Analytics 點擊的時機。預設為 1 小時。實際處理 Analytics 點擊最多可能需要 30 分鐘，但通常為 15 至 20 分鐘。例如，報表套裝每小時會處理點擊一次。如果您將處理時間加入30分鐘以內，則傳入的點擊可能需要90分鐘才能用於推播訊息。 如果使用者在早上 9:01 啟動應用程式，則點擊會在早上 10:15 到 10:30 之間，於 Mobile Services 使用者介面中顯示為新的唯一使用者。
 
 * 等候推送服務
 
-   推送服務 (APNS 或 FCM) 可能不會立即送出訊息。雖然此情形不常見，但曾發生過 5 至 10 分鐘延遲的現象。在「訊息」頁面中，您可按一下訊息的&#x200B;**「檢視」**&#x200B;連結，以確認推送訊息已傳送至推送服務。在報表中，成功傳送至推送服務的數量會列在&#x200B;**[!UICONTROL 「已發佈」]欄。**
+   推送服務 (APNS 或 FCM) 可能不會立即送出訊息。雖然此情形不常見，但曾發生過 5 至 10 分鐘延遲的現象。在「訊息」頁面中，您可按一下訊息的&#x200B;****「檢視」連結，以確認推送訊息已傳送至推送服務。在報表中，成功傳送至推送服務的數量會列在&#x200B;**[!UICONTROL 「已發佈」]**&#x200B;欄。
 
    >[!TIP]
    >
