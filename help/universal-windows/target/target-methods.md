@@ -2,12 +2,12 @@
 description: 通用Windows平台程式庫提供的Target方法清單。
 seo-description: 通用Windows平台程式庫提供的Target方法清單。
 seo-title: Target 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Target 方法
 topic: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 36%
@@ -75,13 +75,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static Windows::Foundation::IAsyncOperation<Platform::String ^> ^LoadRequest(TargetLocationRequest ^request);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var fADB = ADBMobile; 
@@ -94,13 +94,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    Creates a `TargetLocationRequest` object with the given parameters.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static TargetLocationRequest ^CreateRequest(Platform::String ^name, Platform::String ^defaultContent,Windows::Foundation::Collections::IMap<Platform::String^,Platform::Object^> ^parameters); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
@@ -111,13 +111,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    Creates a `TargetLocationRequest` object with the given parameters.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static TargetLocationRequest ^CreateOrderConfirmRequest(Platform::String ^name, Platform::String ^orderId,Platform::String ^orderTotal,Platform::String ^productPurchasedId,Windows::Foundation::Collections::IMap<Platform::String^,Platform::Object^> ^parameters); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       varADB = ADBMobile;
@@ -128,13 +128,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    清除目前裝置上應用程式的Target Cookie。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static void ClearCookies();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       ADBMobile.Target.clearCookies();
@@ -144,13 +144,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    傳回目前裝置的PC ID Cookie。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       staticPlatform::String ^GetPcId();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       autopcId = ADBMobile.Target.getPcId();
@@ -160,13 +160,13 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
    傳回目前裝置的作業階段ID Cookie。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       staticPlatform::String ^GetSessionId();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
        autosessionId=ADBMobile.Target.getSessionId(); 
