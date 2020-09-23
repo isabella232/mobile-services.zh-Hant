@@ -2,11 +2,14 @@
 description: 以下資訊可協助您往返舊版贏取促銷活動連結 (根據裝置指紋)。
 seo-description: 以下資訊可協助您往返舊版贏取促銷活動連結 (根據裝置指紋)。
 seo-title: 測試舊版贏取
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 測試舊版贏取
 uuid: e0591f4a-e26b-4fe4-97c1-a6831a926fa5
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 以下資訊可協助您往返舊版贏取促銷活動連結 (根據裝置指紋)。
 
-如果行動應用程式尚未在 Google Play 上架，您可以選擇任一行動應用程式，作為建立促銷活動連結時的目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點擊贏取連結後)，而不會影響測試贏取連結的能力。
+如果行動應用程式尚未在Google Play中，您可以在建立促銷活動連結時選取任何行動應用程式作為目的地。 這只會影響贏取伺服器將您重新導向的應用程式 (在您點擊贏取連結後)，而不會影響測試贏取連結的能力。
 
 1. 導覽至 Adobe Mobile Services 中的&#x200B;**[!UICONTROL 使用舊版贏取連結]**，然後產生贏取促銷活動 URL。
 
@@ -27,11 +30,11 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 1. 在您於步驟 2 中所使用的同一行動裝置上，首次啟動應用程式。
 
-   確保以上過程順利進行最簡單的方式是，刪除應用程式並重新安裝。
+   若要確保一切如期進展，最簡單的方法是再次刪除並安裝應用程式。
 
-請記住以下資訊:
+請記住以下資訊：
 
-* 贏取伺服器會根據連結點擊 (步驟 2) 和應用程式啟動時 (步驟 3) 所記錄的 IP 位址和使用者代理程式資訊，來提供屬性配對。
+* 贏取伺服器會根據連結點擊 (步驟 2) 和應用程式啟動時 (步驟 3) 所記錄的 IP 位址和使用者代理程式資訊，提供屬性配對。
 * 藉由使用 HTTP 監控工具，即可監控從應用程式傳送的點擊，以便提供贏取屬性的驗證。
 
 >[!TIP]
