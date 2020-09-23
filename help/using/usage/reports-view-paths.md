@@ -1,21 +1,24 @@
 ---
 description: 「檢視路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
-keywords: 行動
+keywords: mobile
 seo-description: 「檢視路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
 seo-title: 檢視路徑報表
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 檢視路徑報表
-topic: 報表,量度
+topic: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 70%
 
 ---
 
 
 # 檢視路徑報表 {#view-paths}
 
-**[!UICONTROL 「檢視路徑」]報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。**
+**[!UICONTROL 「檢視路徑」]**&#x200B;報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
 
 >[!TIP]
 >
@@ -23,29 +26,29 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
 ![檢視路徑](assets/view_paths.png)
 
-每個節點 (形狀像方塊) 代表使用者在應用程式中通過路徑的一個狀態。例如，在上圖中，頂端節點代表啟動應用程式後接著瀏覽至主檢視頁面的使用者人數。
+每個節點（形狀如方塊）代表使用者透過應用程式的路徑狀態。 例如，在上圖中，頂端節點代表啟動應用程式並導覽至主檢視的使用者人數。
 
-如要取得其他可用來修改圖表的選項，按一下節點，其他選項 (如:**[!UICONTROL 「焦點」]**&#x200B;或&#x200B;**「展開」]) 就會顯示。[!UICONTROL **&#x200B;例如，如果您按一下頂端節點中的&#x200B;**[!UICONTROL 「MainView」]**&#x200B;狀態，就會顯示&#x200B;**[!UICONTROL 「焦點」]和**「展開」]圖示。**[!UICONTROL **
+如要取得其他可用來修改圖表的選項，按一下節點，其他選項 (如:**[!UICONTROL 「焦點」]**&#x200B;或&#x200B;**[!UICONTROL 「展開」]**) 就會顯示。例如，如果您按一下頂端節點中的&#x200B;**[!UICONTROL 「MainView」]**&#x200B;狀態，就會顯示&#x200B;**[!UICONTROL 「焦點」]**&#x200B;和&#x200B;**[!UICONTROL 「展開」]**&#x200B;圖示。
 
-若要展開檢視，按一下 **[!UICONTROL +]** 圖示即可顯示進入或離開節點的其他路徑。在上圖中，狀態 1 代表正在啟動應用程式，狀態 2 代表正在檢視應用程式的主檢視頁面，而狀態 3 則包含使用者瀏覽的路徑如下:
+To expand the view, click the **[!UICONTROL +]** icon to display the additional paths that come in to or go from the node. 在下圖中，狀態1是啟動應用程式，狀態2是檢視應用程式的首頁面，狀態3包含使用者採用的下列路徑：
 
-* 瀏覽至相機膠卷
-* 瀏覽至項目選取器
-* 瀏覽至相機
-* 瀏覽至項目資訊頁面
+* 導覽至相機膠捲
+* 導覽至項目選擇器
+* 導覽至相機
+* 導覽至項目資訊頁面
 
 ![](assets/view_paths_expand.png)
 
-按一下![焦點圖示](assets/icon_focus.png)可隔離節點，只顯示進入或離開所選節點的路徑。在下圖中，使用者檢視應用程式主檢視頁面之前先瀏覽過下列路徑:
+按一下![焦點圖示](assets/icon_focus.png)可隔離節點，只顯示進入或離開所選節點的路徑。在下圖中，下列路徑會先於檢視應用程式主檢視的使用者：
 
 * 項目資訊
-* 項目選取器
-* 相機膠卷
+* 項目選擇器
+* 相機膠捲
 * 相機
 
 ![檢視路徑 (聚焦)](assets/view_paths_focus.png)
 
-您可以聚焦或展開多個節點，詳細檢視使用者在您應用程式中採行的路徑。例如:
+您可以聚焦或展開多個節點，以詳細檢視使用者在您的應用程式中採取的路徑。 例如:
 
 ![檢視路徑 (多個)](assets/view_paths_mult.png)
 
