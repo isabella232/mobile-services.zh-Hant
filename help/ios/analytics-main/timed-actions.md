@@ -2,12 +2,12 @@
 description: 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK會計算每個作業的時間量，以及完成動作所需的跨作業總時間。 您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 seo-description: 計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK會計算每個作業的時間量，以及完成動作所需的跨作業總時間。 您可以利用計時動作來定義區段，並用來比較購買所需時間、通過層級、結帳流程等動作。
 seo-title: '計時動作 '
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: '計時動作 '
 topic: Developer and implementation
 uuid: dbcbac5a-6345-49f6-b050-0db05292f005
 translation-type: tm+mt
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 64%
