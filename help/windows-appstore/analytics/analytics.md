@@ -2,12 +2,15 @@
 description: 'null'
 seo-description: 'null'
 seo-title: Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Analytics
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 translation-type: tm+mt
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '943'
+ht-degree: 11%
 
 ---
 
@@ -18,37 +21,37 @@ source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
 
 >[!TIP]
 >
->Ensure that you import  to your class.`ADBMobile.h`
+>請確定您匯入 `ADBMobile.h` 至您的類別。
 
-## Enable mobile application reports in Analytics {#section_F2F9234009184F20BA36B5CDE872B424}
+## 在Analytics中啟用行動應用程式報表 {#section_F2F9234009184F20BA36B5CDE872B424}
 
-在新增程式碼之前，請要求您的 Analytics 管理員完成下列步驟，以啟用行動應用程式生命週期追蹤。如此一來可確保報表套裝在您開始開發時已準備好擷取量度。
+在您新增程式碼之前，請您的Analytics管理員完成下列作業，以啟用行動應用程式生命週期追蹤。 這可確保您的報表套裝在您開始開發時，已準備好擷取量度。
 
-1. Open **[!UICONTROL Admin Tools]** &gt; **[!UICONTROL Report Suites]** and select your mobile report suite(s).
-1. Click **[!UICONTROL Edit Settings]** &gt; **[!UICONTROL Mobile Management]** &gt; **[!UICONTROL Mobile Application Reporting]**.
+1. 開啟「 **[!UICONTROL 管理工具]** >報 **[!UICONTROL 表套裝]** 」，然後選取您的行動報表套裝。
+1. 按一 **[!UICONTROL 下「編輯設定]** > **[!UICONTROL 行動管理]** >行動應 **[!UICONTROL 用程式報表]**」。
 
    ![](assets/mobile-settings.png)
 
-1. Click **[!UICONTROL Enable Latest App Reports]**.
+1. 按一 **[!UICONTROL 下「啟用最新應用程式報表]**」。
 
-   Optionally, you can also click **[!UICONTROL Enable Mobile Location Tracking]** and **[!UICONTROL Enable Legacy Reporting and Attribution for background hits]**.
+   或者，您也可以按一下「啟 **[!UICONTROL 用行動位置追蹤]** 」 **[!UICONTROL 和「啟用背景點擊的舊版報告與歸因」]**。
 
    ![](assets/enable-lifecycle.png)
 
-生命週期量度現已準備好供擷取，且「行動應用程式報表」出現在行銷報表介面中的&#x200B;**「報表」**&#x200B;選單中。
+生命週期量度現在已可供擷取，而行銷報告介面的「報告」功能表中 **[!UICONTROL 會顯示]** 「行動應用報表」。
 
 
 ### 新版本
 
-新版本的行動應用程式報告會定期發行。新版本不會自動套用至您的報表套裝，您必須重複這些步驟以進行升級。每次新增新的 Experience Cloud 功能至應用程式時，建議您重複這些步驟以確保擁有最新配置。
+行動應用程式報告會定期發佈新版本。 新版本不會自動套用至您的報表套裝，您必須重複這些步驟以執行升級。 每次您將新的Experience Cloud功能新增至應用程式時，我們建議您重複這些步驟，以確保您擁有最新的設定。
 
 
-## Lifecycle metrics {#section_532702562A7A43809407C9A2CBA80E1E}
+## 生命週期量度 {#section_532702562A7A43809407C9A2CBA80E1E}
 
-若要在應用程式中收集生命週期量度，請依下列範例新增呼叫至應用程式啟用的時間。
+若要在應用程式中收集生命週期度量，請在啟動應用程式時新增呼叫，如下列範例所示。
 
 
-### WinJS in default.js
+### 預設。js中的WinJS
 
 
 ```js
@@ -64,7 +67,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### C# in App.xaml.cs
+### App.xaml.cs中的C#
 
 ```js
 public App() 
@@ -122,34 +125,34 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-If `CollectLifecycleData()` is called twice in the same session, then your application will report a crash on every call after the first. SDK 會在應用程式關閉時設定標記，表示應用程式已成功退出。If this flag is not set, `CollectLifecyleData()` reports a crash.
+如果 `CollectLifecycleData()` 在相同作業中呼叫兩次，則您的應用程式會在第一次呼叫後的每次呼叫上報告當機。 SDK會在應用程式關閉時設定標幟，指出成功退出。 如果未設定此標幟，則 `CollectLifecyleData()` 會報告當機。
 
 
-## Events, props, and eVars {#section_76EA6F5611184C5CAE6E62956D84D7B6}
+## 事件、Prop 以及 eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-如果您已檢視過 [ADBMobile類別和方法參考](/help/windows-appstore/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承和清單。 在第 4 版中，您已無法在應用程式中直接指派那些變數類型。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+如果您已檢視過 [ADBMobile類別和方法參考](/help/windows-appstore/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承和清單。 在第4版中，您無法再直接在應用程式中指派這些類型的變數。 SDK會改用上下文資料和處理規則將應用程式資料對應至Analytics變數以進行報告。
 
-處理規則具備以下優點:
+處理規則提供您幾項優點：
 
-* 您可以直接變更資料對應，而不必提交更新至應用程式商店。
-* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
-* 對傳送額外資料的影響極小。這些值在透過處理規則對應前，都不會出現在報表中。
+* 您可以變更資料對應，毋需送出更新至App Store。
+* 您可以對資料使用有意義的名稱，而不是設定報表套裝專屬的變數。
+* 傳送額外資料的影響很小。 這些值在使用處理規則對應之前，不會出現在報表中。
 
-任何您直接指派給變數的值，應已改為新增至內容資料。
+您直接指派給變數的任何值，應改為新增至上下文資料。
 
 
 ## 處理規則 {#section_66EE762EEA5E4728864166201617DEBF}
 
-處理規則是用來複製您在內容資料變數中傳送至 eVar、prop 及其他變數的資料以進行報告。
+處理規則可用來將您在上下文資料變數中傳送的資料複製到evar、prop和其他變數，以供報告。
 
-2013 年峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
+[2013年峰會的處理規則](https://tv.adobe.com/embed/1181/16506/) 訓練
 
-[Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[處理規則概觀](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-[獲得使用處理規則的授權](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
+[取得授權以使用處理規則](https://helpx.adobe.com/analytics/kb/processing-rules-authorization.html)
 
-我們建議您使用命名空間為內容資料變數分組，可協助您維持邏輯排序。例如，若您想要收集產品資訊，將需要定義以下變數:
+我們建議您使用「名稱空間」將上下文資料變數分組，因為這有助於您維持邏輯順序。 例如，如果您想要收集產品的相關資訊，可以定義下列變數：
 
 ```js
 "product.type":"hat" 
@@ -157,27 +160,27 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 "product.color":"blue"
 ```
 
-內容資料變數在處理規則介面中按字母排序，讓您快速了解哪些變數在同一個命名空間中。
+上下文資料變數在處理規則介面中會依字母順序排序，因此命名空間可讓您快速查看位於相同名稱空間中的變數。
 
-此外，我們聽說有部分人員使用 eVar 或 prop 編號來命名內容資料鍵值:
+此外，我們聽說您中有些人使用evar或prop編號來命名上下文資料索引鍵：
 
 ```js
 "eVar1":"jimbo"
 ```
 
-這樣可協助您在處理規則中執行一次性對應時變得&#x200B;*較為*&#x200B;容易，但在偵錯時會失去易讀性，使日後的程式碼更新變得更困難。因此，我們強烈建議您為鍵值和值使用描述性名稱:
+這可能會讓處 *理規則執行一次對應* ，稍為輕鬆，但在除錯時會失去可讀性，而未來的程式碼更新則會更困難。 我們強烈建議您針對索引鍵和值使用描述性名稱：
 
 ```js
 "username":"jimbo"
 ```
 
-將定義計數器事件的內容變數設為 "1":
+將定義計數器事件的上下文變數設定為&quot;1&quot;:
 
 ```js
 "logon":"1"
 ```
 
-定義增量器事件的內容資料變數可設定遞增的值:
+定義增量器事件的上下文資料變數可具有遞增值：
 
 ```js
 "levels completed":"6"
@@ -185,31 +188,31 @@ If `CollectLifecycleData()` is called twice in the same session, then your appli
 
 >[!NOTE]
 >
->Adobe保留命名空間 `a.`。 除了此微小限制之外，您登入公司中的內容資料變數必須是唯一的以避免衝突。
+>Adobe 會保留命名空間 `a.`。除了這些小限制外，上下文資料變數在登入公司中只需要是唯一的，以避免衝突。
 
-## Products variable {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## 產品變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。 See Products Variable.[](/help/windows-appstore/analytics/products/products.md)
+若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。 請參閱 [產品變數](/help/windows-appstore/analytics/products/products.md)。
 
-## (Optional) Enable offline tracking {#section_955B2A03EB854742BDFC4A0A3C287009}
+## （可選）啟用離線追蹤 {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-To store hits when the device is offline, you can enable offline tracking in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/methods.md). 在啟用離線追蹤之前，請注意設定檔案參考中所述的時間戳記要求。
+若要在裝置離線時儲存點擊，您可以在 [ADBMobileConfig.json設定中啟用離線追蹤](/help/windows-appstore/c-configuration/methods.md)。 在啟用離線追蹤之前，請注意設定檔案參考中所述的時間戳記要求。
 
-## Geo-location and points of interest {#section_BAD34A8DD013454DB355121316BD7FD4}
+## 地理位置與地標 {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-地理位置可讓您測量位置資料 (緯度/經度) 和預先定義的地標。Each `TrackLocation` call sends:
+地理位置可讓您測量位置資料（經緯度）和預先定義的地標。 每個呼 `TrackLocation` 叫都會傳送：
 
-* 緯度/經度和 POI (若位在 `ADBMobileConfig.json` 設定檔案中所定義的 POI 內)。這些資訊會傳遞至行動解決方案變數以進行自動報告。
-* 以內容資料傳遞之與中心的距離和精確度。使用處理規則擷取。
+* 緯度／經度和POI(如果在設定檔案中定義的POI `ADBMobileConfig.json` 內)。 這些變數會傳遞至行動解決方案變數，以進行自動報告。
+* 中心距離與作為上下文資料傳遞的精確度。 使用處理規則擷取。
 
-若要追蹤位置:
+若要追蹤位置：
 
 ```js
 var ADB = ADBMobile; 
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-如果下列 POI 被定義在 `ADBMobileConfig.json` 設定檔案中:
+如果在配置檔案中定義了以 `ADBMobileConfig.json` 下POI:
 
 ```js
 "poi" : [ 
@@ -217,7 +220,7 @@ ADB.Analytics.trackLocation(37.75345, -122.33207, null);
         ]
 ```
 
-當裝置位置被判斷位在定義地標的 7,000 公尺半徑內，含有 "San Francisco" 值的 `a.loc.poi` 內容資料變數會與 `TrackLocation` 點擊一併傳送。`a.loc.dist` 內容變數會以公尺為單位傳送來自定義座標的距離。
+當裝置位置被判斷為在定義點的7000米半徑內時，會隨點擊傳送具有值「 `a.loc.poi` San Francisco」的上下文資料變 `TrackLocation` 數。 An `a.loc.dist` context variable is sent with the distance in meters from the defined coordinates.
 
 ## Lifetime value {#section_D2C6971545BA4D639FBE07F13EF08895}
 
@@ -234,12 +237,12 @@ cdata["PurchasePrice"] = purchasePrice;
 ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 ```
 
-## Timed actions {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
+## 計時動作 {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
-計時動作可讓您測量停留在應用程式內的時間，以及動作從開始到結束的總時間。SDK 會計算每個工作階段的時間量，以及跨工作階段的動作完成總時間。此可用來定義區段以比較購買所需時間、通過層級和結帳流程等動作。
+計時動作可讓您測量動作開始和結束之間的應用程式內時間和總時間。 SDK會計算作業中的時間量以及完成動作所花費的總時間（跨作業）。 這可用來定義區段，以便在購買、通過層級、結帳流程等時進行比較。
 
-* 從開始到結束期間停留在應用程式內的總秒數 (跨工作階段)
-* 從開始到結束的總秒數 (時鐘時間)
+* 開始和結束之間應用程式的秒數總計——跨作業
+* 開始和結束之間的秒數總計（時鐘時間）
 
 ```js
 // Timed Action Start Example 
