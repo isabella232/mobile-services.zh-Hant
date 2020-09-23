@@ -1,14 +1,17 @@
 ---
 description: 您可以在建立新應用程式或編輯現有應用程式時，從「管理應用程式設定」頁面配置 SDK 贏取選項。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以在建立新應用程式或編輯現有應用程式時，從「管理應用程式設定」頁面配置 SDK 贏取選項。
 seo-title: 配置 SDK 贏取選項
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 配置 SDK 贏取選項
-topic: 量度
+topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
-translation-type: ht
-source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '174'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
 您可以在建立新應用程式或編輯現有應用程式時，從「管理應用程式設定」頁面配置 SDK 贏取選項。
 
-1. 在 **[!UICONTROL SDK 贏取選項**]下方的以下欄位中輸入資訊:
+1. 在 **[!UICONTROL SDK 贏取選項]**&#x200B;下方的以下欄位中輸入資訊:
 
    * **[!UICONTROL 啟用]**
 
@@ -31,4 +34,4 @@ source-git-commit: 74b3597ce849aa114e6638e89741da3f6e1bee19
 
    * **[!UICONTROL 更多詳情]**
 
-      按一下&#x200B;**[!UICONTROL 「更多詳情」]連結可檢視應用程式的追蹤 ID。**
+      按一下&#x200B;**[!UICONTROL 「更多詳情」]**&#x200B;連結可檢視應用程式的追蹤 ID。
