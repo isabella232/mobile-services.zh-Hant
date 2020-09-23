@@ -2,13 +2,13 @@
 description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
 seo-description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
 seo-title: TVJS 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: TVJS 方法
 topic: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ ht-degree: 100%
       setPrivacyStatus(privacyStatus)
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       ADBMobile.setPrivacyStatus(ADBMobilePrivacyStatusOptIn);
