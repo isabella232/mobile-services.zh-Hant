@@ -1,14 +1,17 @@
 ---
 description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
 seo-title: Video Analytics
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Video Analytics
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 85%
 
 ---
 
@@ -27,10 +30,10 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 * **a.media.name**
    * 變數類型: eVar
-      * 預設過期時間: 造訪
-      * Custom Insight (s.prop，用於視訊路徑)
-   * (**必要**) 當訪客以某種方式檢視視訊時，這個內容資料變數會按照實施中指定的方式來收集視訊的名稱。您可以新增此變數的分類。
-   * (**選用**) Custom Insight 變數可提供視訊路徑資訊。
+      * 預設過期時間：造訪
+      * 自訂分析 (s.prop，用於視訊路徑)
+   * (必&#x200B;**要**)當訪客以某種方式檢視視訊時，此上下文資料變數會收集視訊名稱，如實作中所指定。 您可以為此變數新增分類。
+   * (**Optional**) The Custom Insight variable provides video pathing information.
 
 * **a.media.name**
    * 變數類型: Custom Insight (s.prop)
@@ -44,16 +47,17 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **a.media.segment**
    * 變數類型: eVar
    * 預設過期時間: 頁面檢視
-   * (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。
+   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
 
       您可在自動追蹤播放器事件時啟用 `segmentByMilestones` 變數，或在手動追蹤播放器事件時設定自訂區段名稱，藉此填入此變數。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst 可能會在區段 eVar 中收集以下資訊: `1:M:0-25`.
 
-      預設的視訊資料收集方法會於下列時間點收集資料:
+      系統會於下列時間點，以預設的視訊資料收集方法收集資料：
 
       * 視訊開始 (播放)
       * 區段開始
       * 視訊結束 (停止)
-      Analytics 會在區段開始時計算第一個區段檢視，也就是訪客開始觀看的時候。後續的區段檢視會作為區段開始。
+
+      當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
 
 
 * **a.contentType**
@@ -66,7 +70,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 * **a.media.timePlayed**
    * 變數類型: 事件
    * 類型: 計數器
-   * 計算自上次資料收集程序 (影像要求) 以來，用於觀看視訊的時間 (以秒為單位)。
+   * 計算自上次資料收集程式（影像要求）起觀看視訊所花費的時間（以秒為單位）。
 
 * **a.media.view**
    * 變數類型: 事件
@@ -87,7 +91,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    * 類型: 計數器
    * 指出使用者已檢視完整的視訊。
 
-      預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定要將視訊結束後多久 (以秒計算) 視為檢視完成。若為沒有明確結束時間的即時視訊和其他串流，您可以指定自訂的時間點來測量完成的檢視 (例如在檢視多少特定時間之後)。
+      預設情況下，完成事件會在視訊結尾之前 1 秒測量。在實作期間，您可以指定在視訊結束後要視為檢視完成的秒數。 對於沒有定義結束的即時視訊和其他串流，您可以指定自訂測量結束點（例如，在檢視特定時間後）。
 
 
 ## 設定媒體設定 {#section_929945D4183C428AAF3B983EFD3E2500}
@@ -202,7 +206,8 @@ public boolean eventFirstTime;
 
       關閉命名為&#x200B;*「名稱」*&#x200B;的媒體項目。
 
-      * 以下是此方法的語法:
+      * 此方法的語法如下：
+
       ```java
       public static void close(String name);
       ```
@@ -258,7 +263,7 @@ public boolean eventFirstTime;
 
    通知媒體模組，媒體項目已被點按。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void click(String name double offset); 
@@ -274,13 +279,13 @@ public boolean eventFirstTime;
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       publicstatic void track(String name, Map<String, Object> data); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.track("name", null); 
