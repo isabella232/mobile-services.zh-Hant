@@ -2,12 +2,15 @@
 description: 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
 seo-description: 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
 seo-title: 地理位置與地標
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 地理位置與地標
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 83%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 * 在 Adobe Mobile Services 使用者介面中定義之地標 (POI) 的經緯度和位置。
 
-   此資訊會傳遞至行動解決方案變數以進行自動報告。
+   這項資訊會傳遞至行動解決方案變數，以進行自動報告。
 
-* 以內容資料傳遞之與中心的距離和精確度。
+* 與中心的距離和作為上下文資料傳遞的精確度。
 
    系統不會自動擷取上述變數。您必須透過以下&#x200B;*傳送其他資料*&#x200B;一節中的指示，對應此類內容資料變數。
 
@@ -40,7 +43,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
 1. 匯入資料庫:
 
@@ -61,7 +64,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
    您可以依照定位策略一文所述，判斷傳遞至 `trackLocation` 呼叫的位置。如需詳細資訊，請參閱 [Android 定位策略](https://developer.android.com/guide/topics/location/strategies.html)。
 
-此外，如果該位置經判斷位於定義的 POI 半徑範圍內，則 `a.loc.poi` 內容資料變數將會與 `trackLocation` 點擊一併傳入，並會在&#x200B;**「位置劃分」**&#x200B;報表中報告為 POI。`a.loc.dist` 內容變數也會以公尺為單位傳送來自定義座標的距離。
+此外，如果該位置經判斷位於定義的 POI 半徑範圍內，則 `a.loc.poi` 內容資料變數將會與 `trackLocation` 點擊一併傳入，並會在&#x200B;****「位置劃分」報表中報告為 POI。`a.loc.dist` 內容變數也會以公尺為單位傳送來自定義座標的距離。
 
 ## 傳送其他資料 {#section_3EBE813E54A24F6FB669B2478B5661F9}
 
@@ -81,9 +84,9 @@ Analytics.trackLocation(currentLocation, locationContextData);
 
 ## 位置內容資料 {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-經緯度會透過三種不同內容資料參數傳送，且各參數代表不同程度的精準度，其中共有六個內容資料參數。
+緯度和經度是使用三個不同的上下文資料參數來傳送的，每個參數代表不同的精確度等級，總共有六個上下文資料參數。
 
-例如，座標 lat = 40.93231, long = -111.93152 代表位置精準度為 1 公尺。此位置會根據下列變數的精準度來分割。
+例如，坐標lat = 40.93231, long = -111.93152表示精度為1 m的位置。 此位置會依下列變數的精確度等級分割：
 
 `a.loc.lat.a`= 040.9
 
@@ -116,5 +119,5 @@ Analytics.trackLocation(currentLocation, locationContextData);
 
 * 當兩個 POI 的直徑範圍重疊時，會使用包含目前位置的第一個 POI。
 
-   當您的 POI 重疊時，您應依最高至最低精細度的順序列出 POI，以確保報告最精細的 POI。
+   如果您的POI重疊，您應依最細至最細的順序列出POI，以確保報告最細的POI。
 
