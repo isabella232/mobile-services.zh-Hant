@@ -3,13 +3,13 @@ description: 您必須先完成這些工作，才可開始在應用程式中設�
 keywords: mobile
 seo-description: 您必須先完成這些工作，才可開始在應用程式中設定推送訊息。
 seo-title: 啟用推送訊息的必要條件
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 啟用推送訊息的必要條件
 topic: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 100%
 
