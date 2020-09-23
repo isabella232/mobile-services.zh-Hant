@@ -1,23 +1,26 @@
 ---
-description: 您可以建立應用程式商店連結，讓您可直接從 Apple App Store 和 Google Play 下載應用程式。所建立的連結可讓您將成功活動歸因於下載。
-keywords: 行動
-seo-description: 您可以建立應用程式商店連結，讓您可直接從 Apple App Store 和 Google Play 下載應用程式。所建立的連結可讓您將成功活動歸因於下載。
+description: 您可以建立應用程式商店連結，讓您直接從Apple App Store和Google Play下載應用程式。 您建立的連結可讓您將成功事件歸因於下載。
+keywords: mobile
+seo-description: 您可以建立應用程式商店連結，讓您直接從Apple App Store和Google Play下載應用程式。 您建立的連結可讓您將成功事件歸因於下載。
 seo-title: 建立贏取連結
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 建立贏取連結
-topic: 量度
+topic: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 74%
 
 ---
 
 
 # 建立贏取連結{#create-an-acquisition-link}
 
-您可以建立應用程式商店連結，讓您可直接從 Apple App Store 和 Google Play 下載應用程式。所建立的連結可讓您將成功活動歸因於下載。
+您可以建立應用程式商店連結，讓您直接從Apple App Store和Google Play下載應用程式。 您建立的連結可讓您將成功事件歸因於下載。
 
-1. 按一下&#x200B;**[!UICONTROL 贏取]** &gt; **[!UICONTROL 管理贏取連結]** &gt; **[!UICONTROL 新建]**。
+1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]** > **[!UICONTROL Create New]**.
 1. 在&#x200B;**[!UICONTROL 連結資訊]**&#x200B;區段中輸入下列資訊:
 
    * (**必填**) 為應用程式連結指定描述性&#x200B;**[!UICONTROL 名稱]**。
@@ -42,7 +45,8 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       選取應用程式商店:
       * Apple App Store
       * Google Play
-      每個應用程式商店的選項不同，如下所述。
+
+      每個應用程式商店的選項會有所不同，如下所述。
 
    * **[!UICONTROL 瀏覽器地區 (僅限 Apple App Store)]**
 
@@ -60,7 +64,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
       * 若使用 Apple App Store，如果您不知道應用程式 ID，可以依名稱搜尋應用程式。
 
-         您可從「**[!UICONTROL 地區]」下拉式清單中選取可選地區，限制搜尋範圍。**
+         您可從「**[!UICONTROL 地區]**」下拉式清單中選取可選地區，限制搜尋範圍。
 
       * 若使用 Google Play，如果您不知道封裝名稱，可以依名稱搜尋應用程式名稱。
    * **[!UICONTROL 應用程式 ID (僅限 Apple App Store)]**
@@ -73,9 +77,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 
 
-1. 若要儲存設定並產生連結，請依序按一下&#x200B;**[!UICONTROL 新增]** &gt; **[!UICONTROL 儲存]**。
+1. To save your configuration and to generate the link, click **[!UICONTROL Add]** > **[!UICONTROL Save]**.
 
-   新建立的連結會顯示在「**[!UICONTROL App Store 連結]」區段中。**
+   新建立的連結會顯示在「**[!UICONTROL App Store 連結]**」區段中。
 
    ![商店連結](assets/apps_store_links.png)
 
