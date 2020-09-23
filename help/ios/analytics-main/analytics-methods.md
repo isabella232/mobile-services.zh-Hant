@@ -2,13 +2,13 @@
 description: 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Analytics 方法清單。
 seo-title: 'Analytics 方法 '
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 'Analytics 方法 '
 topic: Developer and implementation
 uuid: d49fe6de-cb32-4b96-9891-c567310e59a6
-translation-type: ht
-source-git-commit: c64e2fa7cee3cd35c4574e5007406b7604c99499
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
                         data:(NSDictionary  *)data; 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       [ADBMobile  trackAction:@"heroBannerTouched"
@@ -332,7 +332,7 @@ SDK 目前已支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       + (void) trackPushMessageClickThrough:(NSDictionary *)userInfo;
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       -  (void)application:(UIApplication  *)application  
