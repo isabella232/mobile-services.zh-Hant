@@ -3,12 +3,15 @@ description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasuremen
 keywords: phonegap
 seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasurement 呼叫。
 seo-title: PhoneGap 外掛程式
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: ht
-source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -33,13 +36,13 @@ source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ## 使用 npm 安裝外掛程式: {#section_43229E57C16944C0B51531CB92089189}
 
-1. 執行以下命令:
+1. 運行以下命令：
 
    ```
    cordova plugin add adobe-mobile-services
    ```
 
-## 手動安裝外掛程式{#section_D53BA60D488C4DB8AD2BDF90439C180A}
+## 手動安裝外掛程式 {#section_D53BA60D488C4DB8AD2BDF90439C180A}
 
 ### 納入 AppMeasurement 資料庫
 
@@ -62,17 +65,18 @@ source-git-commit: 517ae533864aebe9c6a20d877a9638d5d3e2a071
 
 ### 新增應用程式權限
 
-AppMeasurement 資料庫需要:
+AppMeasurement程式庫需要下列項目：
 
 1. 啟動 Xcode IDE 並開啟您的應用程式。
-1. 將 **[!UICONTROL AdobeMobile]資料夾拖曳至您的專案中並完成下列設定:**
+1. 將 **[!UICONTROL AdobeMobile]** 資料夾拖曳至您的專案中並完成下列設定:
 
    1. 選取&#x200B;**[!UICONTROL 視需要將項目複製到目標群組的資料夾中]**。
    1. 選取&#x200B;**[!UICONTROL 為所有新增的資料夾建立群組]**。
    1. 選取您要使用 AppMeasurement 程式碼的目標，然後按一下&#x200B;**[!UICONTROL 完成]**。
-   ![](assets/xcode-settings.png){width="672"}
 
-1. 在專案目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+   ![](assets/xcode-settings.png){width=&quot;672&quot;}
+
+1. 在專案目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `libsqlite3.dylib`
    * `SystemConfiguration.framework`
