@@ -3,13 +3,13 @@ description: 這是預設行動量度和維度的參考資訊。
 keywords: mobile
 seo-description: 這是預設行動量度和維度的參考資訊。
 seo-title: 行動量度和維度參考
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 行動量度和維度參考
 topic: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 100%
 
