@@ -2,12 +2,15 @@
 description: 您可以使用 iOS 延伸功能，以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
 seo-description: 您可以使用 iOS 延伸功能，以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
 seo-title: iOS 延伸功能實施
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: iOS 延伸功能實施
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: ht
-source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 76%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -31,7 +34,7 @@ source-git-commit: 718e336b9002fe3d5282697d4302d12a89297181
 >
 >我們強烈建議您使用 iOS SDK，而非您自己的包裝函式。
 
-Apple 會將要求傳送至容納應用程式，然後再接收回應，藉此提供一組讓 Watch 應用程式與容納應用程式通訊的 API。雖然您可以將追蹤資料當作字典，從 Watch 應用程式傳送到容納應用程式，然後再呼叫容納應用程式上的任何追蹤方法來傳送資料，不過這個解決方案有其限制。
+Apple提供一組API，可讓Watch應用程式傳送請求至包含的應用程式並接收回應，以與包含的應用程式通訊。 雖然您可以將追蹤資料當做字典從Watch應用程式傳送至包含的應用程式，並呼叫包含應用程式上的任何追蹤方法來傳送資料，但此解決方案有其限制。
 
 在大部分的情況下，當使用者使用 Watch 應用程式時，容納應用程式會在背景執行，此時唯有呼叫 `TrackActionInBackground`、`TrackLocation` 及 `TrackBeacon` 是安全的。呼叫其他追蹤方法會干擾生命週期資料，所以若要從 Watch 應用程式傳送資料，您應該只使用這三個方法。
 
@@ -43,13 +46,14 @@ Apple 會將要求傳送至容納應用程式，然後再接收回應，藉此�
 >
 >確保您擁有至少具備以下目標的專案:
 >
->* 一個要容納應用程式的目標。
->* 一個用於延伸功能的目標。
+>* 一個要包含應用程式的目標。
+>* 擴充功能的一個目標。
+
 >
 
 
 
-如果您正在使用 WatchKit 應用程式，則應具備第三個目標。如需 Apple Watch 開發的詳細資訊，請參閱 [Apple Watch 開發](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)。
+如果您正在使用WatchKit應用程式，則應該有第三個目標。 如需 Apple Watch 開發的詳細資訊，請參閱 [Apple Watch 開發](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)。
 
 ## 設定容納應用程式 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
@@ -57,7 +61,7 @@ Apple 會將要求傳送至容納應用程式，然後再接收回應，藉此�
 
 1. 將 AdobeMobileLibrary 資料夾拖曳到專案中。
 1. 確認 `ADBMobileConfig.json` 檔案為容納應用程式目標的成員。
-1. 在容納應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+1. 在容納應用程式目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `AdobeMobileLibrary.a`
    * `libsqlite3.dylib`
@@ -77,7 +81,7 @@ Apple 會將要求傳送至容納應用程式，然後再接收回應，藉此�
 ## 設定擴充功能 {#section_28C994B7892340AC8D1F07AF26FF3946}
 
 1. 確認 `ADBMobileConfig.json` 檔案為擴充功能目標的成員。
-1. 在延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**「連結二進位檔與資料庫」]區段，然後新增下列資料庫:[!UICONTROL **
+1. 在延伸功能目標的&#x200B;**[!UICONTROL 「建立階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與資料庫」]**&#x200B;區段，然後新增下列資料庫:
 
    * `AdobeMobileLibrary_Extension.a`
    * `libsqlite3.dylib`
@@ -105,10 +109,10 @@ Apple 會將要求傳送至容納應用程式，然後再接收回應，藉此�
       此值表示該點擊來自容納應用程式。
    * `a.RunMode = Extension`
 
-      此值表示該點擊來自延伸功能。
+      此值表示點擊來自延伸功能。
 
-* 如果您從舊版 SDK 升級，在啟動容納應用程式時，Adobe 會自動從容納應用程式的資料夾，移轉所有使用者預設值和快取檔案至應用程式群組的共用資料夾。
-* 如果從未啟動容納應用程式，則來自延伸功能的點擊會被捨棄。
-* 容納應用程式與延伸功能應用程式之間的版本編號和組建編號必須相同。
-* 在 iOS 延伸功能應用程式中不會觸發任何生命週期呼叫。
+* 如果您從舊版SDK升級，在啟動包含應用程式時，Adobe會自動將所有使用者預設值和快取檔案從包含應用程式的資料夾移轉至應用程式群組的共用資料夾。
+* 如果從未啟動包含的應用程式，則會捨棄延伸功能的點擊。
+* 您的內含應用程式和擴充功能應用程式之間的版本號碼和組建版本號碼必須相同。
+* iOS擴充功能應用程式不會觸發生命週期呼叫。
 
