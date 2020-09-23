@@ -2,12 +2,15 @@
 description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 可讓您測量原生 Apple iPhone 和 iPad 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集對象資料。
 seo-description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 可讓您測量原生 Apple iPhone 和 iPad 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集對象資料。
 seo-title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: ht
-source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -37,7 +40,7 @@ source-git-commit: cb4a549d889d169bdf8ab0bb997d5c95f44f073e
 
 * 支援 iOS 8 或更新版本
 
-   若是 iOS 11 或更新版本，則&#x200B;**必須**&#x200B;使用 4.13.8 或更新版本的 SDK。
+   若為iOS 11或更新版本， **您必須** 有SDK 4.13.8版或更新版本。
 
 * 在本 SDK 4.2 版或更新版本中，所有點撃現在會透過 HTTP POST 傳送。
 
