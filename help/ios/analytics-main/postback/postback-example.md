@@ -2,12 +2,15 @@
 description: 「回傳」功能的定義與原始碼範例。
 seo-description: 「回傳」功能的定義與原始碼範例。
 seo-title: 回傳範例
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 回傳範例
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 809c5646-7a80-40df-984b-0af89d854259
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 100%
 
 ---
 
