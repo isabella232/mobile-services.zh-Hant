@@ -2,12 +2,12 @@
 description: 通用Windows平台程式庫提供的Audience Manager方法清單。
 seo-description: 通用Windows平台程式庫提供的Audience Manager方法清單。
 seo-title: Audience Manager 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager 方法
 topic: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 43%
@@ -31,13 +31,13 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    傳回最近取得的訪客描述檔。Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static Windows::Foundation::Collections::IMap<Platform::String^,Platform::Object^> ^GetVisitorProfile();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -48,13 +48,13 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    傳回目前的 DPID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static Platform::String ^GetDpid();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
@@ -65,13 +65,13 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    傳回目前的 DPUUID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static Platform::String ^GetDpuuid();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -82,13 +82,13 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static void SetDpidAndDpuuid(Platform::String ^dpid, Platform::String ^dpuuid);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile; 
@@ -99,14 +99,14 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    傳送具有特徵的訊號給觀眾管理，並取得區塊回呼中傳回的相符區段。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```csharp
       static 
       Windows::Foundation::IAsyncOperation<Windows::Foundation::Collections::IMap<Platform::String^, Platform::Object^> ^> ^SignalWithData(Windows::Foundation::Collections::IMap<Platform::String^,Platform::Object> ^data);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```js
       var ADB = ADBMobile;
