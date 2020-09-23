@@ -1,21 +1,24 @@
 ---
-description: 此資訊可協助您使用適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 延伸模組。
-seo-description: 此資訊可協助您使用適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 延伸模組。
+description: 協助您將擴充功能與Windows 8.1 Universal App Store SDK for Experience Cloud解決方案搭配使用的資訊。
+seo-description: 協助您將擴充功能與Windows 8.1 Universal App Store SDK for Experience Cloud解決方案搭配使用的資訊。
 seo-title: 擴充功能
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 擴充功能
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 2823b22c-d9a1-4724-9020-dfc6614691be
 translation-type: tm+mt
-source-git-commit: 3e122765fba3bd61da98918480e01e463eb34c6e
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 7%
 
 ---
 
 
 # 擴充功能{#extensions}
 
-此資訊可協助您使用適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 延伸模組。
+協助您將擴充功能與Windows 8.1 Universal App Store SDK for Experience Cloud解決方案搭配使用的資訊。
 
 ## 其他資訊
 
-+ [Windows Visual Studio extensions for Experience Cloud Solutions 4.x SDK](/help/windows-appstore/extensions/win-vse-4x.md)
++ [適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能](/help/windows-appstore/extensions/win-vse-4x.md)
