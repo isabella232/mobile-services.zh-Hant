@@ -1,14 +1,17 @@
 ---
 description: 此資訊可協助您了解回傳以及其運作方式。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 此資訊可協助您了解回傳以及其運作方式。
 seo-title: 回傳範例
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 回傳範例
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 8010cd00-d42b-4e16-8403-692fab2550f1
-translation-type: ht
-source-git-commit: e481b046769c3010c41e1e17c235af22fc762b7e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 100%
 
 ---
 
