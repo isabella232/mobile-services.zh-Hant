@@ -3,14 +3,14 @@ description: Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方
 keywords: Xamarin
 seo-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 seo-title: Android方法
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: Android方法
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1767'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -25,13 +25,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回目前的除錯記錄偏好設定，預設值為false。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static Boolean DebugLogging;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       getter: var debuglog = Config.DebugLogging;
@@ -42,13 +42,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回目前使用者的期限值。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static BigDecimal LifetimeValue; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
        var lifetimeValue = Config.LifetimeValue;
@@ -63,13 +63,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static MobilePrivacyStatus PrivacyStatus; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       getter: var privacyStatus = Config.PrivacyStatus; 
@@ -81,13 +81,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    如果已設定自訂識別碼，請傳回此識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static UserIdentifier();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       getter: var userId = Config.UserIdentifier;
@@ -98,13 +98,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    取得資料庫版本。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string Version;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var version = ADBMobile.Version;
@@ -114,13 +114,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void PauseCollectingLifecycleData (); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Config.PauseCollectingLifecycleData();
@@ -130,13 +130,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    （4.2或更新版本）向SDK指出應收集生命週期資料，以便用於SDK中的所有解決方案。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void collectLifecycleData(Activity activity); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Config.CollectLifecycleData (this);
@@ -146,13 +146,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    （4.2或更新版本）向SDK指出應收集生命週期資料，以便用於SDK中的所有解決方案。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void collectLifecycleData(Activity activity, IDictionary<string, Object> context));
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       IDictionary<string, Java.Lang.Object> context = new Dictionary<string, 
@@ -163,15 +163,15 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **OverrideConfigStream**
 
-   （4.2或更新版本）可讓您在應用程式啟動時載 `ADBMobile JSON` 入不同的設定檔案。 應用程式會使用另一個設定，直到關閉為止。
+   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. 應用程式會使用另一個設定，直到關閉為止。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void OverrideConfigStream (Stream stream);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Stream st1 = Assets.Open ("ADBMobileConfig-2.json"); 
@@ -188,7 +188,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
       public static void SetLargeIconResourceId( int resourceId);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Config.SetLargeIconResourceId(R.drawable.appIcon);
@@ -198,13 +198,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    （4.2或更新版本）設定用於SDK所建立通知的小型圖示。 此圖示會顯示在狀態列中，是當使用者在通知中心看到完整通知時顯示的次要影像。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SetSmallIconResourceId( int resourceId); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
        Config.SetSmallIconResourceId(R.drawable.appIcon);
@@ -216,13 +216,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回自動產生的Analytics ID。 這是應用程式專屬的唯一ID，會在初始啟動時產生，並會從此時開始儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string TrackingIdentifier;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Var trackingId = Analytics.TrackingIdentifier
@@ -236,13 +236,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
    >
    >這是唯一會遞增頁面檢視的追蹤呼叫。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackState (string state, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var cdata = new Dictionary<string, Java.Lang.Object>(); 
@@ -260,13 +260,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
    >
    >如果您的程式碼會在應用程式於背景時執行 (例如，背景資料擷取)，請改為使用 `trackActionFromBackground`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackAction(string action, IDictionary<string,Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var cdata = new Dictionary<string, Java.Lang.Object> (); 
@@ -279,13 +279,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳送目前的經緯度座標。Also uses points of interest defined in the `ADBMobileConfig.json` file to determine whether the location that was provided as a parameter is in any of your POIs. 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackLocation(Location location, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
        Location loc = new Location(LocationManager.GpsProvider);;
@@ -299,13 +299,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    追蹤使用者何時進入信標鄰近地區。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackBeacon (string uuid, string major, string minor,  Analytics.BEACON_PROXIMITY prox, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.TrackBeacon ("UUID", "1", "2", 
@@ -316,13 +316,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackingClearCurrentBeacon();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.ClearBeacon(); 
@@ -332,13 +332,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    增加使用者期限值的量。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackLifetimeValueIncrease (double amount, IDictionary<string,Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.TrackLifetimeValueIncrease(5,null);
@@ -352,13 +352,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
    >
    > 此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackTimedActionStart(string action,IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的範例程式碼如下：
 
       ```java
       Analytics.TrackTimedActionStart("level2", null);
@@ -366,19 +366,19 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **TrackTimedActionUpdate**
 
-   傳入資料以更新與指定動作相關聯的上下文資料。 傳入的資料會附加至指定動作的現有資料，並覆寫資料（如果已為動作定義相同的索引鍵）。
+   傳遞資料以更新與指定動作關聯的內容資料。傳入的資料會附加至指定動作的現有資料，並覆寫資料（如果已為動作定義相同的索引鍵）。
 
    >[!TIP]
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackTimedActionUpdate(string action, IDictionary<string, Object> cdata); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var updatedData = new Dictionary<string, Java.Lang.Object> (); 
@@ -390,14 +390,14 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    結束計時動作。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackTimedActionEnd(string action,
         Analytics.ITimedActionBlock block);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.TrackTimedActionEnd ("level2", new TimedActionBlock()); 
@@ -414,13 +414,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回計時動作是否正在進行中。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static bool TrackingTimedActionExists(string action); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var level2InProgress = Analytics.TrackingTimedActionExists("level2"); 
@@ -430,13 +430,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    強製程式庫傳送離線佇列中的所有點擊，不論目前佇列的點擊數為何。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SendQueuedHits();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.SendQueuedHits(); 
@@ -446,13 +446,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    清除離線佇列中的所有點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void ClearQueue(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Analytics.ClearQueue(); 
@@ -462,13 +462,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    擷取離線佇列中目前的點擊數。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static long QueueSize(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var queueSize = Analytics.QueueSize();
@@ -480,13 +480,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    從 ID 服務中擷取 Experience Cloud ID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string MarketingCloudId;
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var mcid = Visitor.MarketingCloudId;
@@ -496,13 +496,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SyncIdentifiers((IDictionary<string> identifiers);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```java
       IDictionary<string,string> ids = new Dictionary<string, string> ();
@@ -516,13 +516,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    Sends a request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void LoadRequest (TargetLocationRequest request, Target.ITargetCallback callback); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       class TargetBlock: Java.Lang.Object, Target.ITargetCallback{ 
@@ -539,13 +539,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static TargetLocationRequest TargetCreateRequest(string name,string defaultContent,IDictionary<string,string> parameters); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       IDictionary<string, Java.Lang.Object> parameters = new Dictionary> string, Java.Lang.Object> (); 
@@ -557,13 +557,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    建立 `ADBTargetLocationRequest`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static TargetLocationRequest TargetCreateRequest (string name, string defaultContent, IDictionary<;string, string> parameters);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var orderConfirm = Target.CreateOrderConfirmRequest ("myOrder", "12345", "29.41", "cool stuff", null); 
@@ -573,13 +573,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    清除應用程式中的Target Cookie。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void ClearCookies(); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.ClearCookies (); 
@@ -591,13 +591,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回nil。 訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static IDictionary<string, Object> VisitorProfile; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       NSDictionary profile = AudienceManager.VisitorProfile; 
@@ -607,13 +607,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    Returns the current `DPID`.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string Dpuuid; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       string currentDpid = AudienceManager.Dpid;
@@ -623,13 +623,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    Returns the current `DPUUID`.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string AudienceDpuuid; 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       string currentDpuuid = AudienceManager.Dpuuid;
@@ -639,13 +639,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    設定 `dpid` 和 `dpuuid`。 如果 `dpid` 已設 `dpuuid` 定，則會隨每個訊號傳送。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void AudienceSetDpidAndDpuuid (string Dpid, String Dpuuid);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       AudienceManager.SetDpidAndDpuuid ("testDpid", "testDpuuid");
@@ -655,13 +655,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>` callback.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SignalWithData (IDictionary<string, Object> audienceData, AudienceManager.IAudienceManagerCallback callback); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       class AudienceManagerCallback: Java.Lang.Object, 
@@ -681,13 +681,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    Resets audience manager `UUID` and purges current visitor profile.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void Reset ();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
        AudienceManager.Reset ();
@@ -701,13 +701,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回 `MediaSettings` 物件以及指定的參數。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static MediaSettings SettingsWith (string name, double length, string playerName, string playerID);  
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       MediaSettings settings = Media.SettingsWith("name1", 10, "playerName1", "playerID1");
@@ -717,7 +717,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳回 `MediaSettings` 物件以便用於追蹤廣告視訊。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static MediaSettings AdSettingsWith ( string name, double length, 
@@ -725,7 +725,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
       double parentPodPosition, string CPM); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       MediaSettings adSettings = Media.AdSettingsWith ("adName1", 2, "playerName1", "name1", "podName1", 4, "CPM1"); 
@@ -735,13 +735,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    開啟 `ADBMediaSettings` 物件用於追蹤。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void Open (MediaSettings settings, Media.IMediaCallback callback);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       MediaSettings settings = Media.SettingsWith ("name1", 10, "playerName1", "playerID1"); 
@@ -757,13 +757,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    關閉命名為「名稱」的媒體項目。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void Close(string name);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.Close (settings.Name); 
@@ -773,13 +773,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    在指定的偏移處 (以秒為單位) 播放命名為「名稱」的媒體項目。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void Play ( string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.Play (settings.Name, 0); 
@@ -789,13 +789,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    在提供的偏移處 (以秒為單位) 手動將媒體項目標示為已完成。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void Complete (string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.Complete (settings.Name, 5); 
@@ -805,13 +805,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    通知媒體模組，視訊已在指定的偏移處停止或暫停。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void Stop ( string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.Stop (settings.Name, 3);
@@ -821,13 +821,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    通知媒體模組，媒體項目已被點按。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void Click ( string name, double offset); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.Click (settings.Name, 3); 
@@ -837,13 +837,13 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void Track ( string name, NSDictionary data); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       Media.Track (settings.Name, null); 
