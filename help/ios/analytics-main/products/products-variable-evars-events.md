@@ -2,12 +2,15 @@
 description: 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 seo-description: 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 seo-title: 產品變數及其包含的銷售 eVar 與產品專屬事件
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 產品變數及其包含的銷售 eVar 與產品專屬事件
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: f913211e-97ad-4237-bfe4-7ded01295caf
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 100%
 
 ---
 
