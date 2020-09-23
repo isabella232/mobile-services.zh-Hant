@@ -1,14 +1,17 @@
 ---
 description: 您可使用網頁瀏覽器登入 Adobe Mobile Services 。
-keywords: 行動,變更密碼,登入,登出
+keywords: mobile;change password;log in;log out;login;logout;sign in;signin
 seo-description: 您可使用網頁瀏覽器登入 Adobe Mobile Services 。
 seo-title: 登入
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 登入
-topic: 量度
+topic: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: ht
-source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 若要使用 Adobe ID 登入 Adobe Mobile Services 使用者介面，請依以下步驟執行:
 
-1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)。
+1. In a browser, type [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com).
 1. 按一下&#x200B;**[!UICONTROL 使用您的 Adobe ID 登入]**。
 1. 輸入您的電子郵件地址。
 1. 在&#x200B;**[!UICONTROL 選擇要使用的帳戶]**&#x200B;中按一下 **[!UICONTROL Adobe ID]**。
@@ -53,7 +56,7 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 若要使用 Analytics ID 登入 Adobe Mobile Services 使用者介面，請依以下步驟執行:
 
-1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)。
+1. In a browser, type [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/).
 1. 按一下&#x200B;**[!UICONTROL 使用您的Analytics 帳戶登入]**。
 1. 輸入您的公司名稱、使用者名稱和密碼。
 1. 按一下&#x200B;**[!UICONTROL 登入]**。
@@ -64,12 +67,12 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 * **Adobe Experience Cloud** 如果您使用 Adobe ID:
 
-   1. 依序按一下&#x200B;**[!UICONTROL 「使用 Adobe ID 登入」]和**「忘記密碼?」****&#x200B;連結。
+   1. 依序按一下&#x200B;**[!UICONTROL 「使用 Adobe ID 登入」]**&#x200B;和&#x200B;**[!UICONTROL 「忘記密碼?」]**&#x200B;連結。
    1. 輸入與您 Adobe ID 相關聯的電子郵件帳戶，然後按一下&#x200B;**[!UICONTROL 傳送]**。
-   1. 按照您收到的電子郵件中的指示重設密碼。
+   1. 請依照指示重設您收到之電子郵件中的密碼。
 
-* **Adobe Analytics**&#x200B;如果您使用公司、使用者名稱和密碼，請依下列步驟執行:
+* **Adobe Analytics** ：如果您使用您的公司、使用者名稱和密碼：
 
-   1. 按一下&#x200B;**「忘記密碼?」**&#x200B;連結。
+   1. 按一下&#x200B;**[!UICONTROL 「忘記密碼?」]**&#x200B;連結。
    1. 輸入您的公司名稱、使用者名稱，然後按一下&#x200B;**[!UICONTROL 繼續]**。
    1. 按照您收到的電子郵件中的指示執行。
