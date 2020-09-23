@@ -1,14 +1,17 @@
 ---
 description: 您可以使用「連結目的地」頁面以編輯、封存、取消封存或刪除現有的目的地。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以使用「連結目的地」頁面以編輯、封存、取消封存或刪除現有的目的地。
 seo-title: 管理連結目的地
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 管理連結目的地
-topic: 量度
+topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: ht
-source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
 
    * **編輯**
 
-      若要編輯現有的連結目的地，請在清單中按一下其名稱，然後編輯相關欄位。如需詳細資訊，請參閱[建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
+      若要編輯現有的連結目的地，請按一下清單中的其名稱，然後編輯相關欄位。 如需詳細資訊，請參閱[建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
 
       >[!IMPORTANT]
       >
@@ -49,11 +52,12 @@ source-git-commit: e9691f9cbeadd171948aa752b27a014c3ab254d6
       1. 按一下&#x200B;**[!UICONTROL 檢視封存]**。
       1. 選取您要取消封存之一或多個連結名稱旁的核取方塊。
       1. 按一下&#x200B;**[!UICONTROL 取消封存選取的項目]**。
-      **[!UICONTROL 「檢視封存」]選項只有在您先前曾封存過連結目的地的情況下才會顯示。**
+
+      **[!UICONTROL 「檢視封存」]**&#x200B;選項只有在您先前曾封存過連結目的地的情況下才會顯示。
 
    * **刪除**
 
-      若要刪除連結目的地，請選取一或多個欲刪除連結旁的核取方塊，按一下&#x200B;**[!UICONTROL 刪除選取的項目]**，再按一下&#x200B;**刪除]確認此動作。[!UICONTROL **
+      若要刪除連結目的地，請選取一或多個欲刪除連結旁的核取方塊，按一下&#x200B;**[!UICONTROL 刪除選取的項目]**，再按一下&#x200B;**[!UICONTROL 刪除]**&#x200B;確認此動作。
 
       >[!IMPORTANT]
       >
