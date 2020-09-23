@@ -2,12 +2,15 @@
 description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 seo-description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 seo-title: 移轉至 4.x iOS 資料庫
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 移轉至 4.x iOS 資料庫
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
-source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '895'
+ht-degree: 61%
 
 ---
 
@@ -24,15 +27,15 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ## 事件、Prop 以及 eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-在第 4 版中，您已無法在應用程式中直接指派 event、eVar、prop、heir 及　list 等變數。SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+在第4版中，您無法再直接在應用程式中指派事件、eVar、prop、繼承和清單等變數。 SDK會改用上下文資料和處理規則將應用程式資料對應至Analytics變數以進行報告。
 
-處理規則具備以下優點:
+處理規則提供下列優點：
 
-* 您可以直接變更資料對應，而不必提交更新至 App Store。
-* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
-* 對傳送額外資料的影響極小。
+* 您可以變更資料對應，毋需送出更新至App Store。
+* 您可以對資料使用有意義的名稱，而不是設定報表套裝專屬的變數。
+* 傳送額外資料的影響很小。
 
-   這些值在透過處理規則對應前，都不會出現在報表中。
+   這些值在使用處理規則對應之前，不會出現在報表中。
 
 >[!TIP]
 >
@@ -71,10 +74,10 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### 移動設定檔案
 
-移動設定檔案:
+移動配置檔案：
 
-1. 將第一欄中為變數設定的值移至第二欄中的變數。
-1. 從您的程式碼移除舊的設定變數。
+1. 將為第一欄中的變數設定的值移至第二欄中的變數。
+1. 從程式碼中移除舊組態變數。
 
 ### 移轉資訊
 
@@ -86,13 +89,13 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 | 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
 |--- |--- |
-| offlineTrackingEnabled | "offlineEnabled" |
-| offlineHitLimit | "batchLimit" |
-| reportSuiteIDs | "rsids" |
-| trackingServer | "server" |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
+| offlineTrackingEnabled | &quot;offlineEnabled&quot; |
+| offlineHitLimit | &quot;batchLimit&quot; |
+| reportSuiteIDs | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot; |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;貨幣&quot; |
+| ssl | &quot;ssl&quot; |
 | linkTrackVars | 移除，不再使用。 |
 | linkTrackEvents | 移除，不再使用。 |
 
@@ -103,23 +106,23 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 | 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
 |--- |--- |
-| trackOffline | "offlineEnabled" |
-| offlineLimit | "batchLimit" |
-| account | "rsids" |
-| trackingServer | "server"，移除 `"https://"` 前置詞。通訊協定前置詞會根據 "ssl" 設定自動新增。 |
-| trackingServerSecure | 移除。為了進行安全連線，請定義 "server" 然後啟用 "ssl"。 |
-| charSet | "charset" |
-| currencyCode | "currency" |
-| ssl | "ssl" |
+| trackOffline | &quot;offlineEnabled&quot; |
+| offlineLimit | &quot;batchLimit&quot; |
+| account | &quot;rsids&quot; |
+| trackingServer | &quot;server&quot;, remove the `"https://"` prefix. 會根據「ssl」設定自動新增通訊協定首碼。 |
+| trackingServerSecure | 移除. 為了安全連接，請定義「伺服器」，然後啟用「ssl」。 |
+| charSet | &quot;charset&quot; |
+| currencyCode | &quot;貨幣&quot; |
+| ssl | &quot;ssl&quot; |
 | linkTrackVars | 移除，不再使用。 |
 | linkTrackEvents | 移除，不再使用。 |
-| timestamp | 移除，無法再設定。 |
+| timestamp | 移除，不再可設定。 |
 | dc | 移除，不再使用。 |
-| userAgent | 移除，無法再設定。 |
+| userAgent | 移除，不再可設定。 |
 | dynamicVariablePrefix | 移除，不再使用。 |
 | visitorNamespace | 移除，不再使用。 |
 | usePlugins | 移除，不再使用。 |
-| useBestPractices  對混合測量的所有呼叫 (getChurnInstance ) | 移除，替換為生命週期量度。如需詳細資訊，請參閱[生命週期量度](//help/ios/metrics.md)。 |
+| useBestPractices all calls to churn measurement(getChurnInstance) | 移除，替換為生命週期量度。如需詳細資訊，請參閱[生命週期量度](//help/ios/metrics.md)。 |
 
 
 ## 更新追蹤呼叫和追蹤變數 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
@@ -136,15 +139,15 @@ source-git-commit: 68bc21f1c6dba2faeed332495592114af90c8f61
 
 ### 事件、Prop、eVar
 
-在第 4 版中，您已無法在應用程式中直接指派 event、eVar、prop、heir 及　list 等變數。SDK 現在會使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+在第4版中，您無法再直接在應用程式中指派事件、eVar、prop、繼承和清單等變數。 SDK現在會使用上下文資料和處理規則，將您的應用程式資料對應至Analytics變數以進行報告。
 
-處理規則具備以下優點:
+處理規則提供下列優點：
 
-* 您可以直接變更資料對應，而不必提交更新至 App Store。
-* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
-* 對傳送額外資料的影響極小。
+* 您可以變更資料對應，毋需送出更新至App Store。
+* 您可以對資料使用有意義的名稱，而不是設定報表套裝專屬的變數。
+* 傳送額外資料的影響很小。
 
-   這些值在透過處理規則對應前，都不會出現在報表中。如需詳細資訊，請參閱[處理規則與內容資料](/help/ios/getting-started/proc-rules.md).
+   這些值在使用處理規則對應之前，不會出現在報表中。 如需詳細資訊，請參 [閱處理規則和內容資料](/help/ios/getting-started/proc-rules.md)。
 
 您直接指派給變數的值，應已改為新增至 `data``NSDictionary` 。這代表對 `setProp`、`setEvar` 的呼叫以及指派給永久內容資料的內容應已全部移除，且值應已新增至 `data` 參數。
 
