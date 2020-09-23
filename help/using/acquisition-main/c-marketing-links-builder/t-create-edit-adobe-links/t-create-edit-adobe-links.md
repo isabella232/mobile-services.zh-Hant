@@ -1,14 +1,17 @@
 ---
 description: 您可以建立或編輯行銷連結，以提供您行動應用程式或網站的深層連結。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以建立或編輯行銷連結，以提供您行動應用程式或網站的深層連結。
 seo-title: 建立或編輯行銷連結
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 建立或編輯行銷連結
-topic: 量度
+topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 94%
 
 ---
 
@@ -18,12 +21,12 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 您可以建立或編輯行銷連結，以提供您行動應用程式或網站的深層連結。如需詳細資訊，請參閱 [Apple 通用連結和 Android 應用程式連結](/help/using/c-manage-app-settings/c-mob-confg-app/c-universal-app-links.md)。
 
 1. 在應用程式的左側導覽面板中，展開&#x200B;**[!UICONTROL 贏取]**，然後按一下&#x200B;**[!UICONTROL 行銷連結建立器]**。
-1. 完成下列其中一項作業:
+1. 請完成以下任一操作：
 
    * 如需建立新的行銷連結，請按一下&#x200B;**[!UICONTROL 新建]**。
-   * 如需編輯現有連結，請在&#x200B;**[!UICONTROL 「標題」]欄中按一下連結的名稱。**
+   * 如需編輯現有連結，請在&#x200B;**[!UICONTROL 「標題」]**&#x200B;欄中按一下連結的名稱。
 
-1. 在下列欄位輸入資訊:
+1. 在下列欄位輸入資訊：
 
    * **[!UICONTROL 行銷連結名稱]**:
 
@@ -35,7 +38,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    * **[!UICONTROL 新增追蹤內容資料]**:
 
-      (**選擇性**) 按一下 **[!UICONTROL +]** 圖示，然後輸入相關資訊，以使用內容資料追蹤促銷活動。在&#x200B;**[!UICONTROL 「自訂內容資料」]下拉式清單中，選取預設標籤或您自己的標籤。**&#x200B;上下文資料用於部署行銷連結時進行報告。
+      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. 在&#x200B;**[!UICONTROL 「自訂內容資料」]**&#x200B;下拉式清單中，選取預設標籤或您自己的標籤。上下文資料用於部署行銷連結時進行報告。
 
       下列預設集標記可供使用:
 
@@ -53,8 +56,8 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
       * **詞語**
 指定廣告的付費詞語或其他搜尋詞。
-1. 按一下&#x200B;**[!UICONTROL 儲存]**。
-1. 在下列欄位輸入資訊:
+1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 在下列欄位輸入資訊：
 
    * **(必填)** 在&#x200B;**[!UICONTROL 後援 URL]** 中，指定當目的地不相符時 (例如，使用者正在使用桌面或其他不符合目的地規則的平台)，要將使用者導向至哪個 URL。
    * 在&#x200B;**[!UICONTROL 行銷連結選項]**&#x200B;中選取&#x200B;**[!UICONTROL 插入式連結]**&#x200B;或&#x200B;**[!UICONTROL 通用連結和應用程式連結]**。
@@ -65,9 +68,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 1. 按一下&#x200B;**[!UICONTROL 編輯插入式深層連結]**&#x200B;並設定連結。
 
-   (**選擇性**) 如果有多個目的地，系統會根據使用者是否已安裝行動應用程式決定路由目的地。如果使用者已安裝應用程式，則會顯示插入式登陸頁面。
+   (**選擇性**) 如果有多個目的地，系統會根據使用者是否已安裝行動應用程式決定路由目的地。如果已安裝應用程式，則會顯示插入式登陸頁面。
 
-   如需詳細資訊，請參閱[插頁廣告](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
+   For more information, see [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
 
 1. 依序按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;和&#x200B;**[!UICONTROL 下一步]**。
 1. 在「目的地」頁面中設定連結。
@@ -85,15 +88,16 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
       * **[!UICONTROL 裝置類型]**
 
          裝置類型包括桌上型電腦、電子閱讀器、遊戲主機、行動電話、數位機上盒等等
-   1. 按一下&#x200B;**[!UICONTROL 目的地]**&#x200B;圖示 (](assets/icon_square.png)方形圖示![) 並選取以下其中一個目的地類型:
+   1. 按一下&#x200B;**[!UICONTROL 目的地]**&#x200B;圖示 (![方形圖示](assets/icon_square.png)) 並選取以下其中一個目的地類型:
 
       * **[!UICONTROL App Store]**
       * **[!UICONTROL 網頁連結]**
       * **[!UICONTROL 應用程式深層連結]**
       * **[!UICONTROL 混合式連結]**
+
       >[!TIP]
       >
-      >如果使用具有應用程式商店連結的&#x200B;**[!UICONTROL 網頁連結]**&#x200B;目的地類型，將無法追蹤贏取。若要追蹤贏取，請使用&#x200B;**[!UICONTROL 「應用程式商店」]目的地類型。**
+      >如果使用具有應用程式商店連結的&#x200B;**[!UICONTROL 網頁連結]**&#x200B;目的地類型，將無法追蹤贏取。若要追蹤贏取，請使用&#x200B;**[!UICONTROL 「應用程式商店」]**&#x200B;目的地類型。
 
       如需詳細資訊，請參閱[建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
 
