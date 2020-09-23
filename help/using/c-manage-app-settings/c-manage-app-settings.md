@@ -1,14 +1,17 @@
 ---
 description: 管理應用程式包含設定應用程式和管理多個變數和量度。
-keywords: 行動
+keywords: mobile
 seo-description: 管理應用程式包含設定應用程式和管理多個變數和量度。
 seo-title: 「管理應用程式設定」
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 「管理應用程式設定」
-topic: 量度
+topic: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 78%
 
 ---
 
@@ -19,4 +22,4 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 >[!IMPORTANT]
 >
->如需編輯此頁面，您必須為行動應用程式管理員群組的成員。若要確定您是否此為群組的成員，請按一下&#x200B;**[!UICONTROL 管理工具]** &gt; **[!UICONTROL 使用者管理]** &gt; **[!UICONTROL 群組]** &gt; **[!UICONTROL 行動應用程式管理員]**。
+>如需編輯此頁面，您必須為行動應用程式管理員群組的成員。To determine whether you are a member of this group, click **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL Mobile App Admin]**.
