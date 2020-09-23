@@ -3,13 +3,13 @@ description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單�
 keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
 seo-title: 適用於 Android 的 Target 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 適用於 Android 的 Target 方法
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 100%
 
