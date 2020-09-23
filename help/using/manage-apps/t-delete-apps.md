@@ -1,14 +1,17 @@
 ---
 description: 您可從 Adobe Mobile 刪除應用程式。
-keywords: 行動
+keywords: mobile
 seo-description: 您可從 Adobe Mobile 刪除應用程式。
 seo-title: 刪除應用程式
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 刪除應用程式
-topic: 量度
+topic: Metrics
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 100%
 
 ---
 
