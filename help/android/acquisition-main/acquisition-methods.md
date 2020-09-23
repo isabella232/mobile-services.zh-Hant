@@ -1,14 +1,17 @@
 ---
 description: '以下為 Android 資料庫所提供的贏取方法 '
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: '以下為 Android 資料庫所提供的贏取方法 '
 seo-title: 贏取方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 贏取方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
       public static void campaignStartForApp(final String appId final Map<String Object> data); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Acquisition.campaignStartForApp("0652024f-adcd-49f9-9bd7-2552a4564d2f" new 
