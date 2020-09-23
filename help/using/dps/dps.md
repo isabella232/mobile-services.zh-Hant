@@ -1,14 +1,17 @@
 ---
 description: 您可以檢閱 Digital Publishing Suite (DPS) 客戶可用的報表。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以檢閱 Digital Publishing Suite (DPS) 客戶可用的報表。
 seo-title: Digital Publishing Suite 概述
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Digital Publishing Suite 概述
-topic: 量度
+topic: Metrics
 uuid: ca335891-5d73-47dc-811f-374a0844109f
-translation-type: ht
-source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 100%
 
 ---
 
