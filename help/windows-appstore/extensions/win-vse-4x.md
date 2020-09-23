@@ -2,12 +2,12 @@
 description: 本擴充功能可讓您更輕鬆地在專案中新增Experience Cloud Solutions 4.x Windows SDK的參考。
 seo-description: 本擴充功能可讓您更輕鬆地在專案中新增Experience Cloud Solutions 4.x Windows SDK的參考。
 seo-title: 適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能
 topic: Developer and implementation
 uuid: 7d0ea312-340b-46ea-a737-b70a6766a536
 translation-type: tm+mt
-source-git-commit: 38e63d6f4f85c2ced6364baa47646241ac783c12
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 2%
