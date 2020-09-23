@@ -3,12 +3,12 @@ description: 本主題說明如何開始使用 Mobile 解決方案 4.x SDK 的 X
 keywords: Xamarin
 seo-description: 本主題說明如何開始使用 Mobile 解決方案 4.x SDK 的 Xamarin 元件。
 seo-title: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 
