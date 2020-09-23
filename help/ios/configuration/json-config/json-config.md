@@ -2,13 +2,13 @@
 description: 此資訊可協助您使用 ADBMobile.json 設定檔。
 seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔。
 seo-title: ADBMobile JSON 設定
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
-translation-type: ht
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 
 * **coopUnsafe**
 
-   若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶申請封鎖名單標幟。沒有啟用可這些標幟的自助式路徑。
+   若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶申請封鎖名單標幟。沒有自助式路徑可供啟用這些標幟。
 
    請記住以下資訊：
 
