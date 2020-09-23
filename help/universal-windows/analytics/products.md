@@ -1,20 +1,23 @@
 ---
-description: 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
-seo-description: 您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
+description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
+seo-description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 seo-title: 產品變數
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 產品變數
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
-source-git-commit: 7aff336586058302046a728a0b1b0ce12660c1ba
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 7%
 
 ---
 
 
-# Products variable {#products-variable}
+# 產品變數 {#products-variable}
 
-您無法透過處理規則設定產品變數。在行動 SDK 中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定產品。
+無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 
 To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products` variable:
 
@@ -22,7 +25,7 @@ To set the *`products`* variable, set a context data key to `"&&products"`, and 
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
 ```
 
-例如:
+例如：
 
 ```js
 //create a context data dictionary 
@@ -42,13 +45,13 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-The *`products`* is set directly on the image request, and the other variables are set as context data. 所有內容資料變數都必須透過處理規則對應:
+The *`products`* is set directly on the image request, and the other variables are set as context data. 所有上下文資料變數必須使用處理規則進行對應：
 
 ![](assets/products-procrules.png)
 
-You do not need to map the  variable using processing rules since it is set directly on the image request by the SDK.*`products`*
+您不需要使用處理規 *`products`* 則來對應變數，因為它是由SDK直接在影像要求上設定。
 
-## Products variable with merchandising eVars and product-specific events {#section_685D53AD3D064F9A8E225F995A9BA545}
+## 產品變數及其包含的銷售 eVar 與產品專屬事件 {#section_685D53AD3D064F9A8E225F995A9BA545}
 
 An example of the *`products`* variable with Merchandising eVars and product-specific events.
 
