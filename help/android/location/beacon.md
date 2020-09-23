@@ -1,14 +1,17 @@
 ---
 description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
 seo-title: 信標追蹤
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 信標追蹤
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 81%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 * `a.beacon.minor` – 次要信標編號 (例如商店內的唯一編號)
 * `a.beacon.prox` – 值 0 至 3 代表使用者與信標之間的距離範圍。
 
-以下是這些值的代表涵義:
+以下是這些價值的含義：
 
-* 0 = 未知
-* 1 = 極近
-* 2 = 近
-* 3 = 遠
+* 0 =未知
+* 1 =立即
+* 2 =近
+* 3 =遠
 
 此信標資料是行動解決方案變數中擷取的。
 
@@ -37,9 +40,9 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
-1. 匯入資料庫:
+1. 匯入資料庫：
 
    ```java
    import com.adobe.mobile.*;
@@ -47,8 +50,8 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 收集信標位置。
 
-   視信標的製造商而定，多個第三方資料庫皆可用來掃描藍牙 LE 信標。
-1. 取得信標資訊之後，使用下列呼叫以追蹤位置:
+   根據信標的製造商，有多個協力廠商庫可用於掃描藍芽LE信標。
+1. 取得信標資訊後，請使用下列呼叫來追蹤位置：
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
