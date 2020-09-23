@@ -2,12 +2,15 @@
 description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
 seo-description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
 seo-title: 處理規則和內容資料
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 處理規則和內容資料
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
-translation-type: ht
-source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 48%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
 
 操作處理規則時，請記住以下資訊:
 
-* 使用命名空間為內容資料變數分組，有助您維持邏輯排序。例如，若要收集產品資訊，您將需要定義以下變數:
+* 使用名稱空間將上下文資料變數分組，因為它有助於維持邏輯順序。 例如，若要收集產品的相關資訊，您可以定義下列變數：
 
    ```js
    "product.type":"hat" 
@@ -26,27 +29,27 @@ source-git-commit: bf076aa8e59d5c3e634fc4ae21f0de0d4541a83f
    "product.color":"blue"
    ```
 
-* 內容資料變數在處理規則介面中按字母排序，讓您快速了解哪些變數在同一個命名空間中。
+* 上下文資料變數在處理規則介面中會依字母順序排序，讓您快速查看哪些變數位於相同的命名空間中。
 
-   避免使用 eVar 或 prop 編號來命名內容資料鍵值:
+   使用evar或prop編號，避免命名上下文資料索引鍵：
 
    ```js
    "eVar1":"jimbo"
    ```
 
-   這樣可協助您在處理規則中完成一次性對應時變得&#x200B;*較為*&#x200B;容易，但在日後的程式碼更新和偵錯時會失去易讀性，使其變得更困難。因此，我們強烈建議您為鍵值和值使用描述性名稱:
+   當您完成處 *理規則中的一次性對應* ，這可能會稍微輕鬆一些，但在除錯和未來的程式碼更新時，會失去可讀性，這可能會比較困難。 我們強烈建議您為索引鍵和值使用描述性名稱：
 
    ```js
    "username":"jimbo"
    ```
 
-* 定義計數器事件的內容變數應設為 1:
+* 定義計數器事件的上下文變數應設為1:
 
    ```js
    "logon":"1"
    ```
 
-* 定義增量器事件的內容變數可以將事件作為鍵值，並將要增量的量作為值:
+* 定義增量器事件的上下文資料變數可以以事件為索引鍵，而要增量的量則為值：
 
    ```js
    "levels completed":"6"
