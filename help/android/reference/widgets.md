@@ -1,21 +1,24 @@
 ---
-description: 可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。介面工具集會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
-keywords: android;資料庫;行動;sdk
-seo-description: 可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。介面工具集會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
+description: 可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。Widget會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
+keywords: android;library;mobile;sdk
+seo-description: 可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。Widget會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
 seo-title: Android Widget
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Android Widget
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 73%
 
 ---
 
 
 # Android Widget {#android-widgets}
 
-可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。介面工具集會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
+可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。Widget會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
 
 下列指引將協助您追蹤 Android Widget:
 
