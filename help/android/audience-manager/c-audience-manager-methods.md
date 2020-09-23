@@ -1,14 +1,17 @@
 ---
 description: 以下為 Android 資料庫所提供的 Audience Manager 方法清單。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的 Audience Manager 方法清單。
 seo-title: Audience Manager 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Audience Manager 方法
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 2f6e4664-1306-41d4-9fa7-e3a99f1df4ab
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回最近取得的訪客設定檔，但若未提交任何訊號則會傳回 `null`。訪客設定檔會儲存在 `SharedPreferences` 中，方便您在多次啟動應用程式時存取。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static HashMap<String, Object> getVisitorProfile(); 
@@ -41,7 +44,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回目前的 DPID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void getDpid(); 
@@ -57,7 +60,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
    傳回目前的 DPUUID。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void getDpuuid(); 
@@ -97,7 +100,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       public static void signalWithData(Map<String, Object> data, AudienceManagerCallback<Map<String, Object>> callback);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       HashMap Traits = new HashMap<String, Object>();
