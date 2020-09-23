@@ -1,14 +1,17 @@
 ---
 description: 您可以使用行銷連結頁面來建立、使用及封存行銷連結。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以使用行銷連結頁面來建立、使用及封存行銷連結。
 seo-title: 管理行銷連結
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 管理行銷連結
-topic: 量度
+topic: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 91%
 
 ---
 
@@ -25,9 +28,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 * **顯示行銷連結**
 
-   若要顯示行銷連結清單，在 Mobile Services 首頁按一下 **[!UICONTROL 贏取]** &gt; **[!UICONTROL 行銷連結建立器]**。
+   To display the list of Marketing Links, in the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Links Builder]**.
 
-   **[!UICONTROL 點擊]**&#x200B;欄顯示點擊行銷連結的使用者人數。**[!UICONTROL 首次啟動]欄顯示首次啟動應用程式的數量。**&#x200B;此值反映了在點擊行銷連結後，選擇安裝並啟動該應用程式的使用者人數。
+   **[!UICONTROL 點擊]**&#x200B;欄顯示點擊行銷連結的使用者人數。**[!UICONTROL 首次啟動]**&#x200B;欄顯示首次啟動應用程式的數量。此值反映了在點擊行銷連結後，選擇安裝並啟動該應用程式的使用者人數。
 
 * **封存或取消封存行銷連結**
 
