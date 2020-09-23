@@ -1,26 +1,29 @@
 ---
-description: 此資訊有助您執行 Android 的生命週期量度。針對 iOS，系統會自動收集生命週期量度。
+description: 協助您實作Android生命週期量度的資訊。 系統會自動收集iOS的生命週期度量。
 keywords: Xamarin
-seo-description: 此資訊有助您執行 Android 的生命週期量度。系統會自動收集 iOS 的生命週期量度。
+seo-description: 協助您實作Android生命週期量度的資訊。 系統會自動收集iOS的生命週期度量。
 seo-title: 實施生命週期
-solution: Marketing Cloud，開發人員
+solution: Experience Cloud
 title: 實施生命週期
 uuid: 6dccc12e-8b57-4231-9c74-d47bc0ac93ba
 translation-type: tm+mt
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 1%
 
 ---
 
 
-# Implement lifecycle {#implement-lifecycle}
+# 實施生命週期 {#implement-lifecycle}
 
 這項資訊可協助您實作Android的生命週期量度。
 
 >[!TIP]
 >
->系統會自動收集 iOS 的生命週期量度。
+>系統會自動收集iOS的生命週期度量。
 
-For the metrics and dimensions that can be measured automatically by the mobile library after lifecycle is implemented, see [Lifecycle Metrics](/help/ios/metrics.md).
+如需實施生命週期後行動程式庫可自動測量的度量和維度，請參閱生命週期 [度量](/help/ios/metrics.md)。
 
 ## iOS
 
