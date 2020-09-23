@@ -2,12 +2,15 @@
 description: 地理位置可協助您透過經緯度和 iOS 應用程式中預先定義的地標，來測量位置資料。
 seo-description: 地理位置可協助您透過經緯度和 iOS 應用程式中預先定義的地標，來測量位置資料。
 seo-title: 地理位置與地標
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 地理位置與地標
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
-translation-type: ht
-source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 82%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 * 在 Adobe Mobile Services 中定義之地標 (POI) 的經緯度和位置。
 
-   此資訊會傳遞至行動解決方案變數以進行自動報告。
+   這項資訊會傳遞至行動解決方案變數，以進行自動報告。
 
-* 以內容資料傳遞之與中心的距離和精確度。
+* 與中心的距離和作為上下文資料傳遞的精確度。
 
    系統不會自動擷取上述變數。您必須透過以下&#x200B;*傳送其他資料*&#x200B;一節中的指示，對應此類內容資料變數。
 
@@ -42,7 +45,7 @@ source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
 
 1. 新增資料庫至您的專案與實施生命週期。
 
-   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
+   如需詳細資訊，請參閱[核心實作與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的專案*。
 1. 匯入資料庫:
 
    ```objective-c
@@ -80,9 +83,9 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ## 位置內容資料 {#section_FFB71E6653F9410A89CC6ACC0C9164A9}
 
-經緯度會分別透過三種不同內容資料參數傳送，且各參數代表不同程度的精準度，其中共有六個內容資料參數。
+緯度和經度都使用三個不同的上下文資料參數來傳送，每個參數代表不同的精確度等級，總共有六個上下文資料參數。
 
-例如，座標 lat = 40.93231, lon = -111.93152 代表位置精準度為 1 公尺。此位置會根據下列變數的精準度來分割。
+例如，坐標lat = 40.93231,lon = -111.93152表示精度為1m的位置。 此位置會依下列變數的精確度等級分割：
 
 * `a.loc.lat.a`= 040.9
 * `a.loc.lat.b` = 32
@@ -112,5 +115,5 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 * 當兩個 POI 的直徑範圍重疊時，會使用包含目前位置的第一個 POI。
 
-   當您的 POI 重疊時，您應依最高精細度至最低精細度的順序列出 POI，以確保報告最精細的 POI。
+   如果您的POI重疊，您應依最精細到最細微的順序列出POI，以確保報告最精細的POI。
 
