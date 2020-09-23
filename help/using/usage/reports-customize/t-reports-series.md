@@ -1,14 +1,17 @@
 ---
 description: 這些資訊可讓您藉由新增其他系列 (量度) 或不同報表套裝中的應用程式來比較資料，進而自訂內建報表。
-keywords: 行動
+keywords: mobile
 seo-description: 這些資訊可讓您藉由新增其他系列 (量度) 或不同報表套裝中的應用程式來比較資料，進而自訂內建報表。
 seo-title: 新增系列 (量度) 至報表
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 新增系列 (量度) 至報表
-topic: 報表,量度
+topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: ht
-source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 90%
 
 ---
 
@@ -23,11 +26,11 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 這些指示適用於任何報表，在此例中，我們以自訂&#x200B;**[!UICONTROL 使用者與工作階段]**&#x200B;報表進行示範。
 
-1. 開啟應用程式，然後依序按一下&#x200B;**[!UICONTROL 使用狀況]** &gt; **[!UICONTROL 使用者和工作階段]**。
+1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
 
    ![步驟結果](assets/customize1.png)
 
-   此報表可提供應用程式使用者隨著時間改變的完整檢視。不過，我們還想新增系列來報告應用程式當機。
+   此報告提供應用程式使用者的完整加班檢視。 不過，我們想新增系列來報告應用程式當機。
 
 1. 按一下&#x200B;**[!UICONTROL 自訂]**。
 
