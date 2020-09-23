@@ -1,13 +1,16 @@
 ---
 description: 本主題提供有關如何在贏取測試期間，針對可能遇到的問題進行疑難排解的資訊。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 本主題提供有關如何在贏取測試期間，針對可能遇到的問題進行疑難排解的資訊。
 seo-title: 疑難排解贏取測試
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 疑難排解贏取測試
-topic: 開發人員和實施
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+topic: Developer and implementation
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
