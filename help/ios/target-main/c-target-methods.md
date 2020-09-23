@@ -2,13 +2,13 @@
 description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
 seo-title: 適用於 Adobe Mobile Services 的 iOS Target 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 適用於 iOS 的 Target 方法
 topic: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
