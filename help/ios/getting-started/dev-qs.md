@@ -1,18 +1,21 @@
 ---
 description: '此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 seo-description: '此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
-seo-title: 核心實施與生命週期
-solution: Marketing Cloud,Analytics
-title: 核心實施與生命週期
+seo-title: 核心實作與生命週期
+solution: Experience Cloud,Analytics
+title: 核心實作與生命週期
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: ht
-source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
 
-# 核心實施與生命週期 {#core-implementation-and-lifecycle}
+# 核心實作與生命週期。{#core-implementation-and-lifecycle}
 
 此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。
 
@@ -58,9 +61,10 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 1. 在「專案導覽器」中，拖曳 `AdobeMobileLibrary` 資料夾，並將其放置在您的專案下。
 1. 請確認下列項目:
 
-   * 已選取&#x200B;**[!UICONTROL 「需要時複製項目」]核取方塊。**
+   * 已選取&#x200B;**[!UICONTROL 「需要時複製項目」]**&#x200B;核取方塊。
    * **[!UICONTROL 已選取「建立群組」]**。
-   * 未選取&#x200B;**[!UICONTROL 「新增至目標」]區段中的任何核取方塊。**
+   * 未選取&#x200B;**[!UICONTROL 「新增至目標」]**&#x200B;區段中的任何核取方塊。
+
    ![](assets/step_3.png)
 
 1. 按一下&#x200B;**[!UICONTROL 完成]**。
@@ -72,7 +76,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，完成下列步驟:
 
    1. 按一下您的應用程式。
-   1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤上，選取您的目標並連結&#x200B;**[!UICONTROL 「連結架構」]和**「資料庫」]區段中必要的架構和資料庫。**[!UICONTROL **
+   1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤上，選取您的目標並連結&#x200B;**[!UICONTROL 「連結架構」]**&#x200B;和&#x200B;**[!UICONTROL 「資料庫」]**&#x200B;區段中必要的架構和資料庫。
    * **iOS 應用程式目標**
       * `SystemConfiguration.framework`
       * `WebKit.framework`
@@ -93,6 +97,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
       * `SystemConfiguration.framework`
       * `libsqlite3.0.tbd`
       * `AdobeMobileLibrary\_TV.a`
+
    >[!CAUTION]
    >
    > 在相同的目標中連結多個 `AdobeMobileLibrary*.a` 檔案，將會導致非預期行為或建置失敗。
@@ -141,7 +146,7 @@ source-git-commit: bd8aa0c7ff58e4cf28a67b8a107db52fb30cd3dc
 
 ## 後續步驟 {#section_A24DC703359D4B5C8F493D6421306FD3}
 
-完成下列作業:
+完成下列作業：
 
 * [追蹤應用程式狀態](/help/ios/analytics-main/states.md)
 * [追蹤應用程式動作](/help/ios/analytics-main/actions.md)
