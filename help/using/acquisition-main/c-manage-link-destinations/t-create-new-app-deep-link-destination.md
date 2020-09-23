@@ -1,14 +1,17 @@
 ---
 description: 您可以建立新的連結目的地，以將使用者引導至您應用程式內的網頁或深層連結。
-keywords: 行動
+keywords: mobile
 seo-description: 您可以建立新的連結目的地，以將使用者引導至您應用程式內的網頁或深層連結。
 seo-title: 建立新的連結目的地
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 建立新的連結目的地
-topic: 量度
+topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 1. 按一下應用程式的名稱以顯示其應用程式資訊頁面。
 1. 按一下&#x200B;**[!UICONTROL 管理連結目的地]**。
 1. 按一下&#x200B;**[!UICONTROL 新建]**。
-1. 在下列欄位輸入資訊:
+1. 在下列欄位輸入資訊：
    * **[!UICONTROL 標題]**
 
       輸入應用程式連結目的地的描述性名稱。標題僅顯示在 Adobe Mobile Services UI 中的管理連結目的地頁面上。描述性名稱可協助您或組織中的其他人員快速找到特定連結目的地，並可提供其目的的洞察。
@@ -32,11 +35,11 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
       * **[!UICONTROL 應用程式深層連結]**
 
-         提供 URI 架構深層連結 (例如 `yourapp://section`)。應用程式深層連結目的地是 URI 架構深層連結，可將使用者引導至您應用程式內的深層連結。例如，您可以將使用者導向線上零售商的行動應用程式中的特定產品線。
+         提供 URI 架構深層連結 (例如 `yourapp://section`)。應用程式深層連結目的地是URI結構描述深層連結，可引導使用者前往應用程式中的深層連結。 例如，您可以將使用者導向線上零售商行動應用程式中的特定產品系列。
 
       * **[!UICONTROL 網頁連結]**
 
-         輸入網頁 HTTP 或 HTTPS URL，例如 `https://adobe.com`。網頁連結目的地可將使用者導向至 URL。舉例來說，您可以將使用者引導至線上零售商網站中的產品線。
+         輸入網頁 HTTP 或 HTTPS URL，例如 `https://adobe.com`。網頁連結目標會將使用者導向至URL。 例如，您可以將使用者引導至線上零售商網站上的產品線。
 
       * **[!UICONTROL 混合式連結]**
 
@@ -46,7 +49,7 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
       >[!TIP]
       >
-      >只有在您選取的&#x200B;**[!UICONTROL 連結類型]**&#x200B;是「應用程式深層連結」或「混合式連結」時，才需要提供此資訊。如果應用程式未出現在選取項目清單中，請按一下&#x200B;**[!UICONTROL 「新增應用程式」]，即可從應用程式商店參照新的應用程式。**
+      >只有在您選取的&#x200B;**[!UICONTROL 連結類型]**&#x200B;是「應用程式深層連結」或「混合式連結」時，才需要提供此資訊。如果應用程式未出現在選取項目清單中，請按一下&#x200B;**[!UICONTROL 「新增應用程式」]**，即可從應用程式商店參照新的應用程式。
 
    * **[!UICONTROL 連結類型]**
 
