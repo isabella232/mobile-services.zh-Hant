@@ -3,13 +3,13 @@ description: 下列說明可協助您在 Android 裝置上利用行銷連結往�
 keywords: android;library;mobile;sdk
 seo-description: 下列說明可協助您在 Android 裝置上利用行銷連結往返贏取促銷活動。
 seo-title: 測試行銷連結贏取
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 測試行銷連結贏取
 topic: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
-translation-type: ht
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
 
