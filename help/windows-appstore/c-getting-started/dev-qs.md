@@ -2,12 +2,12 @@
 description: 'null'
 seo-description: 'null'
 seo-title: 開發人員快速入門
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 開發人員快速入門
 topic: Developer and implementation
 uuid: b368959b-d985-436e-8b3e-97e355a97951
 translation-type: tm+mt
-source-git-commit: 97e6d24b75e770685d440d31aa5ee8924a079501
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 2%
@@ -182,7 +182,7 @@ The following is an example of an `ADBMobileConfig.json` file:
 
 如需詳細資訊，請 [參閱ADBMobileConfig.json設定](/help/windows-appstore/c-configuration/methods.md)。
 
-## 除錯 {#section_3A10376A60394A15BEE483323E0CD4AA}
+## 為 {#section_3A10376A60394A15BEE483323E0CD4AA} 除錯
 
 當您想要啟用SDK的除錯時，必須呼叫 `ADBMobile.Config.setDebugLogging(true);`。
 
