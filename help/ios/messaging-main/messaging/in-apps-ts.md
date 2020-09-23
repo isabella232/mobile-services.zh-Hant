@@ -3,13 +3,13 @@ description: 本文資訊可協助您排除應用程式內傳訊問題。
 keywords: mobile
 seo-description: 本文資訊可協助您排除應用程式內傳訊問題。
 seo-title: 應用程式內傳訊疑難排解
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 應用程式內傳訊疑難排解
 topic: Metrics
 uuid: 58533aa3-2eb2-4597-8525-77e4e5975e56
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
