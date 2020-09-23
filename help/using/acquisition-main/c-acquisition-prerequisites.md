@@ -1,14 +1,17 @@
 ---
 description: 必須先完成下列必要條件，才能使用贏取連結。
-keywords: 行動
+keywords: mobile
 seo-description: 必須先完成下列必要條件，才能使用贏取連結。
 seo-title: 贏取必要條件
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 贏取必要條件
-topic: 量度
+topic: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
-translation-type: ht
-source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 85%
 
 ---
 
@@ -31,9 +34,9 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
    | SDK 版本 | [舊版贏取建立器](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md) | [手動連結建立](/help/using/acquisition-main/c-marketing-links-builder/acquisition-link-manual.md) | [行銷連結建立器](/help/using/acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md) |
    |--- |--- |--- |--- |
-   | 4.1 至 4.5 | 是 | 無 | 無 |
-   | 4.6 至 4.9 | 是 | 是 | 無 |
-   | 4.9 或更新版本 | 是 | 是 | 是 |
+   | 4.1至4.5 | 是 | 無 | 無 |
+   | 4.6至4.9 | 是 | 是 | 無 |
+   | 4.9或更新版本 | 是 | 是 | 是 |
 
 1. 啟用 SDK 贏取選項
 
@@ -41,4 +44,4 @@ source-git-commit: 54150c39325070f37f8e1612204a745d81551ea7
 
 1. 新增 App Store 應用程式
 
-   您必須從 Apple App Store 或從 Google Play 新增應用程式。如需詳細資訊，請參閱[從應用程式商店新增應用程式](/help/using/manage-apps/c-app-store/t-app-store-app.md)。
+   您必須從Apple App Store或Google Play新增應用程式。 如需詳細資訊，請 [參閱「從應用程式商店新增應用程式」](/help/using/manage-apps/c-app-store/t-app-store-app.md)。
