@@ -1,14 +1,17 @@
 ---
 description: 您建立新應用程式或編輯現有應用程式時，可使用這些資訊協助您設定「管理應用程式設定」頁面上的「推送服務」選項。
-keywords: 行動
+keywords: mobile
 seo-description: 您建立新應用程式或編輯現有應用程式時，可使用這些資訊協助您設定「管理應用程式設定」頁面上的「推送服務」選項。
 seo-title: 設定推送訊息
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定推送訊息
-topic: 量度
+topic: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
-translation-type: ht
-source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
 
 * **報表套裝考量事項**
 
-   在每個報表套裝中，您可以針對 Apple 和 Google 各配置一個應用程式商店應用程式。若您需要額外應用程式，例如針對生產和開發環境各配置一個應用程式，請針對這兩個環境各自設定新應用程式商店應用程式以及新報表套裝。
+   您可以在每個報表套裝中，為 Apple 設定一個應用程式商店應用程式，同時也為 Google 設定一個。如果您還需要其他應用程式，例如一個用於生產環境，另一個用於開發環境，那麼，請為每個環境設定新的應用程式商店應用程式和新的報表套裝。
 
 >[!IMPORTANT]
 >
@@ -53,4 +56,4 @@ source-git-commit: 2c85c31d2fa54de26771553a6d349d3101e0048c
       * [Android 中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
       * [iOS 中的推播訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
-1. 按一下&#x200B;**[!UICONTROL 儲存]**。
+1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
