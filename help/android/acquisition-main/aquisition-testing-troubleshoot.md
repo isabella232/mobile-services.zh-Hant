@@ -1,12 +1,15 @@
 ---
 description: 下列資訊可協助您進行贏取測試問題疑難排解。
-keywords: android;贏取;測試
+keywords: android;Acquisition;testing
 seo-description: 下列資訊可協助您進行贏取測試問題疑難排解。
 seo-title: 疑難排解贏取測試
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 疑難排解贏取測試
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 100%
 
 ---
 
