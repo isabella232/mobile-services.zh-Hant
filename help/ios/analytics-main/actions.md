@@ -1,20 +1,23 @@
 ---
-description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
-seo-description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
+description: 動作是您要測量之應用程式中發生的事件。 每個動作都有一或多個對應度量，這些度量會在每次事件發生時遞增。 例如，您可以在每次檢視文章或每次完成層級時追蹤新訂閱。 這些事件的對應量度會設定為訂閱、文章閱讀和完成的層級。
+seo-description: 動作是您要測量之應用程式中發生的事件。 每個動作都有一或多個對應度量，這些度量會在每次事件發生時遞增。 例如，您可以在每次檢視文章或每次完成層級時追蹤新訂閱。 這些事件的對應量度會設定為訂閱、文章閱讀和完成的層級。
 seo-title: 追蹤應用程式動作
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 追蹤應用程式動作
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
-translation-type: ht
-source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 63%
 
 ---
 
 
 # 追蹤應用程式動作 {#track-app-actions}
 
-動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
+動作是您要測量之應用程式中發生的事件。 每個動作都有一或多個對應度量，這些度量會在每次事件發生時遞增。 例如，您可以在每次檢視文章或每次完成層級時追蹤新訂閱。 這些事件的對應量度會設定為訂閱、文章閱讀和完成的層級。
 
 不會自動追蹤動作，因此，若要追蹤事件，您必須呼叫 `trackAction`。
 
@@ -42,7 +45,7 @@ source-git-commit: 3cc97443fabcb9ae9e09b998801bbb57785960e0
 
 1. 在 Adobe Mobile Services 使用者介面中，選取您的應用程式並按一下&#x200B;**[!UICONTROL 管理應用程式設定]**。
 
-1. 按一下&#x200B;**[!UICONTROL 「管理變數和衡量指標」]**，然後按一下&#x200B;**「自訂量度」]標籤。[!UICONTROL **
+1. 按一下&#x200B;**[!UICONTROL 「管理變數和衡量指標」]**，然後按一下&#x200B;**[!UICONTROL 「自訂量度」]**&#x200B;標籤。
 
 1. 將程式碼中定義的內容資料名稱 (例如，`a.action=myapp.ActionName`) 對應至某個自訂事件。
 
@@ -72,8 +75,8 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ## 動作報表 {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-| 介面 | 報告 |
+| 介面 | 報表 |
 |--- |--- |
-| Adobe Mobile Services | ****&#x200B;動作路徑報表.檢視動作於應用程式中發生的順序。您也可以按一下任一報表上的&#x200B;**[!UICONTROL 「自訂」]，以檢視動作的排名、趨勢或在劃分報表中的情況，或套用篩選條件以檢視特定區段的動作。** |
+| Adobe Mobile Services | ****&#x200B;動作路徑報表.檢視動作於應用程式中發生的順序。您也可以按一下任一報表上的&#x200B;**[!UICONTROL 「自訂」]**，以檢視動作的排名、趨勢或在劃分報表中的情況，或套用篩選條件以檢視特定區段的動作。 |
 | Marketing Reports and Analytics | **[!UICONTROL 「自訂事件」]**&#x200B;報表。當動作對應至自訂事件後，您可以檢視與所有其他 Analytics 事件類似的行動事件。 |
 | Ad hoc analytics | **[!UICONTROL 「自訂事件」]**&#x200B;報表。當動作對應至自訂事件後，您可以檢視與所有其他 Analytics 事件類似的行動事件。 |
