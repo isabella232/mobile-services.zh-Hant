@@ -3,13 +3,13 @@ description: 以下為 Android 資料庫所提供的方法清單。
 keywords: android;library;mobile;sdk
 seo-description: 以下為 Android 資料庫所提供的方法清單。
 seo-title: 設定方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定方法
 topic: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 100%
 
@@ -187,7 +187,7 @@ ht-degree: 100%
       public static Boolean getDebugLogging(); 
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Boolean debugging = Config.getDebugLogging(); 
@@ -201,7 +201,7 @@ ht-degree: 100%
       public static void setDebugLogging(Boolea debugLogging);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       Config.setDebugLogging(true);
@@ -312,7 +312,7 @@ ht-degree: 100%
       public static void overrideConfigStream(final InputStream configInput);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
        try {
