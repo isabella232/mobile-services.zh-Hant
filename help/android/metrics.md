@@ -1,14 +1,17 @@
 ---
 description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
-keywords: android;資料庫;行動;sdk
+keywords: android;library;mobile;sdk
 seo-description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
 seo-title: 生命週期量度
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 生命週期量度
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
-translation-type: ht
-source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -28,7 +31,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 ## 生命週期量度和維度 {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-設定後，生命週期量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫傳送在參數中傳送至 Target，並以訊號形式傳送至對象管理。Analytics 和 Target 會使用相同格式，而觀眾管理則對每個量度使用不同的首碼。
+設定後，生命週期度量會在內容資料參數中傳送至Analytics、在參數中傳送至Target（每個mbox呼叫），並作為觀眾管理的訊號。 Analytics和Target使用相同的格式，而觀眾管理則針對每個量度使用不同的首碼。
 
 對於 Analytics，系統會自動擷取隨著每個生命週期追蹤呼叫傳送的內容資料，並使用量度或維度回報，以及列出例外。
 
@@ -72,7 +75,7 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 * **啟動**
 
-   在每次執行時觸發，包括損毀和安裝。當超出生命週期工作階段逾時，也會在從背景繼續時觸發。
+   在每次執行時觸發，包括當機和安裝。 當超過生命週期作業逾時時時，也會在從背景繼續時觸發。
 
    >[!IMPORTANT]
    >
@@ -309,28 +312,28 @@ source-git-commit: 1c387b063eedb41a52e044dc824df6a51f173ad2
 
 * **促銷活動內容**
 
-   顯示連結的內容名稱或 ID。由「行動應用程式贏取」填入。
+   顯示連結之內容的名稱或ID。 由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.content`
    * Audience Manager 特徵: `c_a_referrer_campaign_content`
 
 * **促銷活動媒體**
 
-   行銷媒體，例如橫幅或電子郵件。由「行動應用程式贏取」填入。
+   行銷媒體，例如橫幅或電子郵件。 由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.medium`
    * Audience Manager 特徵: `c_a_referrer_campaign_medium`
 
 * **促銷活動來源**
 
-   原始轉介來源，例如電子報或社交媒體網路。由「行動應用程式贏取」填入。
+   原始反向連結，例如電子報或社交媒體網路。 由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.source`
    * Audience Manager 特徵: `c_a_referrer_campaign_source`
 
 * **促銷活動詞語**
 
-   您想要以此贏取追蹤的付費關鍵字或其他詞語。由「行動應用程式贏取」填入。
+   您要追蹤此贏取的付費關鍵字或其他詞語。 由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.term`
    * Audience Manager 特徵: `c_a_referrer_campaign_term`
