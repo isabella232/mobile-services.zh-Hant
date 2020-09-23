@@ -2,13 +2,13 @@
 description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
 seo-description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
 seo-title: Adobe Experience Platform Identity Service 方法
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
-translation-type: ht
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       + (NSString  *)  visitorMarketingCloudID;
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSString *mcid = [ADBMobile visitorMarketingCloudID]; 
