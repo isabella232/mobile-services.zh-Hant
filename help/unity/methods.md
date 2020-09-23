@@ -3,14 +3,14 @@ description: 'null'
 keywords: Unity
 seo-description: 'null'
 seo-title: ADBMobile.cs方法
-solution: Marketing Cloud,Developer
+solution: Experience Cloud
 title: ADBMobile.cs方法
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
 translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '1324'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 65%
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void CollectLifecycleData();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.CollectLifecycleData();
@@ -39,13 +39,13 @@ ht-degree: 65%
 
    在您的應用程式中啟用本機通知。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void EnableLocalNotifications();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.EnableLocalNotifications();
@@ -55,13 +55,13 @@ ht-degree: 65%
 
    傳回目前的偵錯記錄偏好設定。預設值為 `false`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static bool GetDebugLogging();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var debugEnabled = ADBMobile.GetDebugLogging();
@@ -71,13 +71,13 @@ ht-degree: 65%
 
    傳回目前使用者的期限值。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static double GetLifetimeValue();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var lifetimeValuea = ADBMobile.GetLifetimeValue();
@@ -86,19 +86,19 @@ ht-degree: 65%
 * **GetPrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: 會立即傳送點擊。
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: 會捨棄點擊。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`：立即傳送點擊。
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`：捨棄點擊。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。
 
       如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static ADBPrivacyStatus GetPrivacyStatus();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var privacyStatus = ADBMobile.GetPrivacyStatus();
@@ -108,13 +108,13 @@ ht-degree: 65%
 
    如果已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string GetUserIdentifier();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var userId = ADBMobile.GetUserIdentifier();
@@ -124,13 +124,13 @@ ht-degree: 65%
 
    取得資料庫版本。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string GetVersion();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var version = ADBMobile.GetVersion();
@@ -144,13 +144,13 @@ ht-degree: 65%
    >
    >此方法適用於在背景中註冊通知的應用程式，且僅應從應用程式在背景時執行的程式碼呼叫此方法。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void KeepLifecycleSessionAlive();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.KeepLifecycleSessionAlive();
@@ -160,13 +160,13 @@ ht-degree: 65%
 
    向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void PauseCollectingLifecycleData();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.PauseCollectingLifecycleData();
@@ -176,13 +176,13 @@ ht-degree: 65%
 
    向SDK指出應從UnityPlayer的目前活動設定其應用程式內容。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SetContext();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.SetContext();
@@ -192,13 +192,13 @@ ht-degree: 65%
 
    將調試記錄首選項設定為啟用。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SetDebugLogging (bool enabled);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.SetDebugLogging(true);
@@ -206,13 +206,13 @@ ht-degree: 65%
 
 * **SetPrivacyStatus**
 
-   將當前用戶的隱私狀態設定為狀態。 設定為下列其中一值：
+   將當前用戶的隱私狀態設定為狀態。 設定為下列任一值：
 
-   * `MOBILE_PRIVACY_STATUS_OPT_IN`: 會立即傳送點擊。
-   * `MOBILE_PRIVACY_STATUS_OPT_OUT`: 會捨棄點擊。
+   * `MOBILE_PRIVACY_STATUS_OPT_IN`：立即傳送點擊。
+   * `MOBILE_PRIVACY_STATUS_OPT_OUT`：捨棄點擊。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。 如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SetPrivacyStatus(ADBPrivacyStatusstatus);
@@ -228,13 +228,13 @@ ht-degree: 65%
 
    將使用者識別碼設為userId。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void SetUserIdentifier(string userId);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.SetUserIdentifier("myCustomUserId");
@@ -246,13 +246,13 @@ ht-degree: 65%
 
    擷取分析追蹤識別碼。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string GetTrackingIdentifier();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var trackingId = ADBMobile.GetTrackingIdentifier();
@@ -268,13 +268,13 @@ ht-degree: 65%
    >
    >這是唯一會遞增頁面檢視的追蹤呼叫。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackState(string state, Dictionary<string, object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var contextData = new Dictionary<string, object>);
@@ -290,13 +290,13 @@ ht-degree: 65%
    >
    >如果您的程式碼會在應用程式於背景時執行 (例如，背景資料擷取)，請改為使用 `trackActionFromBackground`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackAction(string action, Dictionary<string, object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackAction("level gained", null);
@@ -304,19 +304,19 @@ ht-degree: 65%
 
 * **TrackActionFromBackground（僅限iOS）**
 
-   追蹤背景中發生的動作。 這會在特定情境中抑制生命週期事件觸發。
+   追蹤在背景發生的動作。在特定情境中抑制生命週期事件地觸發。
 
    >[!TIP]
    >
    >只有當應用程式在背景執行時，才應從此時執行的程式碼中呼叫此方法。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackActionFromBackground(string action, Dictionary<string,object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackActionFromBackground("majorLocationChange", null);
@@ -326,13 +326,13 @@ ht-degree: 65%
 
    傳送目前的經緯度座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供做為參數的地點是否位在您的 POI 中。如果目前座標在已定義的POI中，則會填入內容資料變數，並隨TrackLocation呼叫傳送。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackLocation(float latValue, float lonValue, Dictionary<string, object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackLocation(28.418649, -81.581324, null);
@@ -342,7 +342,7 @@ ht-degree: 65%
 
    追蹤使用者何時進入信標鄰近地區。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackBeacon(int major, int minor, string uuid, ADBBeaconProximity proximity, Dictionary<string, object> cdata);
@@ -352,13 +352,13 @@ ht-degree: 65%
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackingClearCurrentBeacon();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackingClearCurrentBeacon();
@@ -368,13 +368,13 @@ ht-degree: 65%
 
    增加使用者期限值的金額。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackLifetimeValueIncrease(double amount, Dictionary<string, object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackLifetimeValueIncrease(5, null);
@@ -388,13 +388,13 @@ ht-degree: 65%
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackTimedActionStart(string action, Dictionary<string,object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackTimedActionStart("level2", null);
@@ -408,13 +408,13 @@ ht-degree: 65%
    >
    >此呼叫不會傳送點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackTimedActionUpdate(string action, Dictionary<string, object> cdata);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var contextData = new Dictionary<string, object>;
@@ -426,13 +426,13 @@ ht-degree: 65%
 
    結束計時動作。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackTimedActionEnd(string action);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackTimedActionEnd("level2");
@@ -442,13 +442,13 @@ ht-degree: 65%
 
    傳回計時動作是否正在進行中。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static bool TrackingTimedActionExists(string action);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
        var level2InProgress = ADBMobile.TrackingTimedActionExists("level2");
@@ -458,13 +458,13 @@ ht-degree: 65%
 
    強制資料庫傳送離線佇列中的所有點擊，不論目前還有多少處於佇列中。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackingSendQueuedHits();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackingSendQueuedHits();
@@ -474,13 +474,13 @@ ht-degree: 65%
 
    清除離線佇列中的所有點擊。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void TrackingClearQueue();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       ADBMobile.TrackingClearQueue();
@@ -490,13 +490,13 @@ ht-degree: 65%
 
    擷取離線佇列中目前的點擊數。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static int TrackingGetQueueSize();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var queueSize = ADBMobile.TrackingGetQueueSize();
@@ -508,13 +508,13 @@ ht-degree: 65%
 
    從 ID 服務中擷取 Experience Cloud ID。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static string GetMarketingCloudID();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var mcid = ADBMobile.GetMarketingCloudID();
@@ -524,13 +524,13 @@ ht-degree: 65%
 
    透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一訪客的多個客戶ID，以及客戶類型識別碼，以區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void VisitorSyncIdentifiers(Dictionary<string, object> identifiers);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       var ids = new Dictionary<string, object> ();
@@ -544,13 +544,13 @@ ht-degree: 65%
 
    將呼叫Google Play安裝反向連結API所傳回的反向連結URL傳遞至此方法。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```java
       public static void ProcessGooglePlayInstallReferrerUrl(string referrerUrl);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```java
       // in actual implementation, the referrer url should be retrieved
