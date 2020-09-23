@@ -1,31 +1,34 @@
 ---
 description: 「App Store 概述」報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
-keywords: 行動
+keywords: mobile
 seo-description: 「App Store 概述」報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
 seo-title: 應用程式商店概述報表
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 應用程式商店概述報表
-topic: 量度
+topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: ht
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 84%
 
 ---
 
 
 # 應用程式商店概述報表{#app-store-overview-report}
 
-**[!UICONTROL 「App Store 概述」]報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。**
+**[!UICONTROL 「App Store 概述」]**&#x200B;報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
 
 >[!TIP]
 >
 >設定整合後，Mobile Services UI 中的 **[!UICONTROL App Store]** 功能表項目和&#x200B;**[!UICONTROL 概述]**&#x200B;報表會顯示在左側導覽功能表中。
 
-**[!UICONTROL 「概述」]報表包含特定時段圖形，可顯示應用程式商店下載次數、使用您的應用程式進行的應用程式內購買次數，以及您應用程式的平均評分。**
+**[!UICONTROL 「概述」]**&#x200B;報表包含特定時段圖形，可顯示應用程式商店下載次數、使用您的應用程式進行的應用程式內購買次數，以及您應用程式的平均評分。
 
 ![](assets/app_store_metrics.png)
 
-您可以按一下任何量度以隱藏或顯示該量度的對應行。若要檢視某一天的資料，請將滑鼠移到該日期上。
+您可以按一下任何度量來隱藏或顯示其對應的行。 若要檢視某一天的資料，請將滑鼠移到該日期上。
 
 >[!IMPORTANT]
 >
@@ -41,38 +44,38 @@ source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
 
 ![](assets/app_store_rating.png)
 
-按一下 [!UICONTROL **App Store 平均評分]** Widget 的任一位置，即可顯示圖形與圖表，當中會依日期顯示平均評分。若要檢視某一天的資料，請將滑鼠移到該日期上。
+按一下 **[!UICONTROL App Store 平均評分]** Widget 的任一位置，即可顯示圖形與圖表，當中會依日期顯示平均評分。若要檢視某一天的資料，請將滑鼠移到該日期上。
 
 ![](assets/app_store_downloads_detail.png)
 
 ## 下載收入 {#section_34F05998E8444544A1B507C1B852C4EE}
 
-此報表顯示透過下載您的應用程式而產生的收入。
+此報告會顯示下載您的應用程式所產生的收入金額。
 
-## 應用程式內收入{#section_58792ED9C4B54B7D836E30CF09E8E204}
+## 應用程式內收入 {#section_58792ED9C4B54B7D836E30CF09E8E204}
 
-此報表顯示使用您的應用程式進行應用程式內購買而產生的收入。
+此報表會顯示使用您的應用程式在應用程式中購買所產生的收入金額。
 
-## 依國家/地區的下載次數{#section_10373CD28CA94BA5859DFDEED7D548C6}
+## 依國家／地區的下載 {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 此報表顯示依國家/地區分組的應用程式下載次數。
 
 ![](assets/country.png)
 
-若要顯示依日期每個國家/地區之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依國家/地區的下載次數]**。將滑鼠移到日期上，即可檢視當天的資料。
+若要顯示依日期每個國家/地區之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依國家/地區的下載次數]**。您可以將滑鼠指標暫留在日期上，以檢視一天的資料。
 
 ![](assets/downloads_by_country.png)
 
-## 依應用程式商店的下載次數{#section_F1CD1A3F0105469D879E4F280CE32484}
+## 依App Store的下載 {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 此報表顯示依應用程式商店分組的應用程式下載次數。
 
 ![](assets/app_store.png)
 
-若要顯示依日期每個應用程式商店分組之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依應用程式商店的下載次數]**。您可以將滑鼠移到日期上，即可檢視當天的資料。
+若要顯示依日期每個應用程式商店分組之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依應用程式商店的下載次數]**。您可以將滑鼠指標暫留在日期上，以檢視該日的資料。
 
 ![](assets/app_store_downloads_detail.png)
 
-## 依名稱的應用程式內購買{#section_D747A64F9F6449E0A02EF31D56C92F83}
+## 依名稱的應用程式內購買項目 {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 此報表依名稱顯示所有應用程式內的購買。
