@@ -2,12 +2,15 @@
 description: 本資訊可協助您處理 GDPR 資料刪除請求。
 seo-description: 本資訊可協助您處理 GDPR 資料刪除請求。
 seo-title: 設定使用者的選擇狀態
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: 設定使用者的選擇狀態
-topic: 開發人員和實施
+topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: ht
-source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 84%
 
 ---
 
@@ -28,9 +31,9 @@ source-git-commit: 06144a1695ac40ce984656491456968888f9e96e
 
 * `setPrivacyStatus`方法。
 
-   透過此方法變更隱私權設定後，此變更會永久生效，直到您使用此方法再次變更，或解除安裝並再次安裝應用程式為止。
+   使用此方法變更隱私權設定後，變更會是永久性的，直到使用此方法再次變更，或當您解除安裝並再次安裝應用程式時。
 
-   如需這些方法的詳細資訊，請參閱[設定方法](/help/ios/configuration/json-config/json-config.md).
+   有關這些方法的詳細資訊，請參 [閱配置方法](/help/ios/configuration/json-config/json-config.md)。
 
 以下是有關各個隱私權狀態的資訊:
 
