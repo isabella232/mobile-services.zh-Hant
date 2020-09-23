@@ -1,14 +1,17 @@
 ---
 description: 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連線至 iOS 或 Android 應用程式中的深層連結。
-keywords: 行動
+keywords: mobile
 seo-description: 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連線至 iOS 或 Android 應用程式中的深層連結。
 seo-title: Apple 通用連結和 Android 應用程式連結
-solution: Marketing Cloud,Analytics
+solution: Experience Cloud,Analytics
 title: Apple 通用連結和 Android 應用程式連結
-topic: 量度
+topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: ht
-source-git-commit: e65add089499f728827321e96e439f04ebb19a73
+translation-type: tm+mt
+source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+workflow-type: tm+mt
+source-wordcount: '1142'
+ht-degree: 92%
 
 ---
 
@@ -63,7 +66,7 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
 1. 在 Adobe Mobile Services 中，建立使用通用連結的行銷連結:
 
-   從 Mobile Services 首頁中選取應用程式，按一下&#x200B;**[!UICONTROL 贏取]** &gt; **[!UICONTROL 行銷連結建立器]**。
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. 按一下&#x200B;**[!UICONTROL 新建]**。
 
@@ -75,7 +78,7 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
    e. 若選取了&#x200B;**[!UICONTROL 使用通用連結或應用程式連結]**&#x200B;選項，便會顯示&#x200B;**[!UICONTROL 自訂路徑]**&#x200B;欄位。
 
-   這容許使用者根據網域和任何查詢參數定義 URL 路徑。例如，若您輸入`my/universal/link?os=9.2`，完整行銷連結 URL 會變成 `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`。
+   這可讓使用者使用任何查詢參數，在網域之後定義URL路徑。 例如，如果您輸入， `my/universal/link?os=9.2`您的完整行銷連結URL就會變 `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`成。
 
    f. 按一下&#x200B;**[!UICONTROL 決策]**&#x200B;分頁標籤並設定決策樹。
 
@@ -102,7 +105,7 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
    >[!TIP]
    >
-   >若此區段並未顯示，請按一下&#x200B;**新增 App Store 應用程式**&#x200B;連結。
+   >若此區段並未顯示，請按一下&#x200B;****&#x200B;新增 App Store 應用程式連結。
 
    d. 捲動至&#x200B;**[!UICONTROL 通用連結和應用程式連結選項]**&#x200B;區段。
 
@@ -116,13 +119,13 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
    >[!IMPORTANT]
    >
-   >您可以按一下&#x200B;****&#x200B;通用連結和應用程式連結選項]區段裡的「**[!UICONTROL 更新]」以更新文件。[!UICONTROL **&#x200B;不過按一下&#x200B;**[!UICONTROL 更新]**&#x200B;時，警告會通知您，過去您建立的通用連結或應用程式連結將會受到影響。
+   >您可以按一下&#x200B;**[!UICONTROL 通用連結和應用程式連結選項]**&#x200B;區段裡的「**[!UICONTROL 更新]**」以更新文件。不過按一下&#x200B;**[!UICONTROL 更新]**&#x200B;時，警告會通知您，過去您建立的通用連結或應用程式連結將會受到影響。
 
 ### 使用應用程式連結
 
 1. 在 Adobe Mobile Services 中，建立使用應用程式連結的行銷連結:
 
-   從 Mobile Services 首頁中選取應用程式，按一下&#x200B;**[!UICONTROL 贏取]** &gt; **[!UICONTROL 行銷連結建立器]**。
+   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
 
    b. 按一下&#x200B;**[!UICONTROL 新建]**。
 
@@ -134,7 +137,7 @@ source-git-commit: e65add089499f728827321e96e439f04ebb19a73
 
    e. 若選取了&#x200B;**[!UICONTROL 使用通用連結或應用程式連結]**，便會顯示&#x200B;**[!UICONTROL 自訂路徑]**&#x200B;欄位。
 
-   這容許使用者根據網域和任何查詢參數定義 URL 路徑。例如，若您輸入`my/app/link?os=6.0`，完整行銷連結 URL 會變成 `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`。
+   這可讓使用者使用任何查詢參數，在網域之後定義URL路徑。 例如，如果您輸入， `my/app/link?os=6.0`您的完整行銷連結URL就會變 `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`成。
 
    f. 按一下&#x200B;**[!UICONTROL 決策]**&#x200B;分頁標籤並設定決策樹。
 
