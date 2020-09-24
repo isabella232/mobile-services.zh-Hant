@@ -1,18 +1,18 @@
 ---
 product: mobile-services
 audience: end-user
-user-guide-title: Mobile Services Android指南
+user-guide-title: Mobile Services Android 指南
 breadcrumb-title: Android Guide
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18ef20df0a32741685e35cee98a1adf4a1b823a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '271'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Mobile Services Android Guide{#android}
+# Mobile Services Android 指南{#android}
 
 + [適用於 Experience Cloud 解決方案的 Android SDK 4.x](overview.md)
 + [發行說明](rel-notes.md)
@@ -36,9 +36,9 @@ ht-degree: 97%
    + [追蹤應用程式當機](analytics-main/crashes.md)
    + [計時動作](analytics-main/timed-actions.md)
    + [訪客期限值](analytics-main/lifetime-value.md)
-   + 產品變數{#products-variable}
-      + [產品變數](analytics-main/products/products.md)
-      + [產品變數及其包含的銷售 eVar 與產品專屬事件](analytics-main/products/products-variable-evars-events.md)
+   + Products 變數{#products-variable}
+      + [Products 變數](analytics-main/products/products.md)
+      + [Products 變數及其包含的銷售 eVar 與產品專屬事件](analytics-main/products/products-variable-evars-events.md)
    + [事件序列化](analytics-main/event-serialization.md)
    + [Video Analytics](analytics-main/video-qs.md)
    + 回傳{#postbacks}
