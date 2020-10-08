@@ -8,7 +8,7 @@ title: Analytics 概述
 topic: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 73%
@@ -34,8 +34,8 @@ ht-degree: 73%
 在SDK中，識別碼用於追蹤使用者，以下是識別碼的階層：
 
 1. 自訂訪客識別碼(VID)
-2. Analytics追蹤識別碼(AID)
-3. Experience Cloud識別碼(MID)
+1. Analytics追蹤識別碼(AID)
+1. Experience Cloud識別碼(MID)
 
 >[!TIP]
 >
