@@ -8,7 +8,7 @@ title: 追蹤深層連結
 topic: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# 追蹤深層連結 {#tracking-deep-links}
+# 追蹤深層連結
 
 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
 
