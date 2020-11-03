@@ -1,23 +1,23 @@
 ---
-description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時，例如，當使用者從首頁導覽至動態消息時，應傳送追蹤狀態呼叫。 在iOS中，每個檢視的viewDidLoad方法通常會追蹤狀態。
-seo-description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時，例如，當使用者從首頁導覽至動態消息時，應傳送追蹤狀態呼叫。 在iOS中，每個檢視的viewDidLoad方法通常會追蹤狀態。
+description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送追蹤狀態呼叫。在 iOS 中，通常會以每個檢視的 viewDidLoad 方法追蹤狀態。
+seo-description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送追蹤狀態呼叫。在 iOS 中，通常會以每個檢視的 viewDidLoad 方法追蹤狀態。
 seo-title: 追蹤應用程式狀態
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式狀態
 topic: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # 追蹤應用程式狀態 {#track-app-states}
 
-狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時，例如，當使用者從首頁導覽至動態消息時，應傳送追蹤狀態呼叫。 在iOS中，每個檢視的viewDidLoad方法通常會追蹤狀態。
+狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送追蹤狀態呼叫。在 iOS 中，通常會以每個檢視的 viewDidLoad 方法追蹤狀態。
 
 >[!TIP]
 >
@@ -59,10 +59,10 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 
 ## 應用程式狀態報表 {#section_0F6A54AB7A3F42C9BB042D86A0FC4630}
 
-狀態通常是使用路徑報表來檢視，因此您可以查看使用者如何瀏覽您的應用程式以及哪些狀態的檢視次數最多。
+狀態通常是透過路徑報表來檢視，所以您可以瞭解使用者如何導覽應用程式以及最常檢視哪些狀態。
 
 |  |  |
 |--- |--- |
-| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]**&#x200B;報表。此報表是根據使用者透過您的應用程式所採取的路徑而成。A sample path is  **[!UICONTROL Home]**  >  **[!UICONTROL Settings]**  > **[!UICONTROL Feed]**. |
-| Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:****「頁面」報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**[!UICONTROL 「路徑」報表。]** |
-| Ad hoc analytics | 透過&#x200B;****「頁面」維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**[!UICONTROL 「路徑」報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
+| Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]**&#x200B;報表。此報表是根據使用者透過您的應用程式所採取的路徑而成。範例路徑為&#x200B;**[!UICONTROL 「首頁]** > **[!UICONTROL 設定]** > **[!UICONTROL 摘要」]**。 |
+| Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:**[!UICONTROL 「頁面」]**&#x200B;報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**[!UICONTROL 「路徑」報表。]** |
+| Ad hoc analytics | 透過&#x200B;**[!UICONTROL 「頁面」]**&#x200B;維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**[!UICONTROL 「路徑」報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
