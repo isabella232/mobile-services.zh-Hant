@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 信標追蹤
 topic: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '240'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 81%
 * `a.beacon.minor` – 次要信標編號 (例如商店內的唯一編號)
 * `a.beacon.prox` – 值 0 至 3 代表使用者與信標之間的距離範圍。
 
-以下是這些價值的含義：
+以下是這些值的意思：
 
-* 0 =未知
-* 1 =立即
-* 2 =近
-* 3 =遠
+* 0 = 未知
+* 1 = 旁邊
+* 2 = 近
+* 3 = 遠
 
 此信標資料是行動解決方案變數中擷取的。
 
@@ -50,8 +50,8 @@ ht-degree: 81%
 
 1. 收集信標位置。
 
-   根據信標的製造商，有多個協力廠商庫可用於掃描藍芽LE信標。
-1. 取得信標資訊後，請使用下列呼叫來追蹤位置：
+   根據信標的製造商，可使用多個第三方資料庫掃描藍牙 LE 信標。
+1. 取得信標資訊後，請使用以下呼叫追蹤位置：
 
    ```java
    // assumed that the following variables will have been retrieved by the 3rd party beacon library 
