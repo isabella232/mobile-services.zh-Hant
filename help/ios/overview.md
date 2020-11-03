@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 * 支援 iOS 8 或更新版本
 
-   若為iOS 11或更新版本， **您必須** 有SDK 4.13.8版或更新版本。
+   若是 iOS 11 或更新版本，則&#x200B;**必須**&#x200B;使用 4.13.8 或更新版本的 SDK。
 
 * 在本 SDK 4.2 版或更新版本中，所有點撃現在會透過 HTTP POST 傳送。
 
