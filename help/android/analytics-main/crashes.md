@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: 追蹤應用程式當機
 topic: Developer and implementation
 uuid: 3ab98c14-ccdf-4060-ad88-ec07c1c6bf07
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 如需有關 Android 活動生命週期的詳細資訊，請參閱[活動](https://developer.android.com/guide/components/activities.html)。
 
-*此 Android 生命週期圖說是由[Android Open Source Project 建立和共用](https://source.android.com/)，並根據[Creative Commons 2.5 屬性授權](https://creativecommons.org/licenses/by/2.5/)中的條款來使用。*
+*此 Android 生命週期圖說是由 [Android Open Source Project 建立和共用](https://source.android.com/)，並根據 [Creative Commons 2.5 屬性授權](https://creativecommons.org/licenses/by/2.5/)中的條款來使用。*
 
 ## 導致回報錯誤當機的原因為何？
 
