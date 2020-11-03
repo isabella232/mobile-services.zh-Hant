@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
 topic: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 89%
 
 * 等候 Analytics 點擊
 
-   每個報表套裝都可設定處理傳入 Analytics 點擊的時機。預設為 1 小時。實際處理 Analytics 點擊最多可能需要 30 分鐘，但通常為 15 至 20 分鐘。例如，報表套裝每小時會處理點擊一次。如果您將處理時間加入30分鐘以內，則傳入的點擊可能需要90分鐘才能用於推播訊息。 如果使用者在早上 9:01 啟動應用程式，則點擊會在早上 10:15 到 10:30 之間，於 Mobile Services 使用者介面中顯示為新的唯一使用者。
+   每個報表套裝都可設定處理傳入 Analytics 點擊的時機。預設為 1 小時。實際處理 Analytics 點擊最多可能需要 30 分鐘，但通常為 15 至 20 分鐘。例如，報表套裝每小時會處理點擊一次。當您將處理時間最長 30 分鐘納入考量，傳入的點擊最久可能需要 90 分鐘才能供推播訊息使用。如果使用者在早上 9:01 啟動應用程式，則點擊會在早上 10:15 到 10:30 之間，於 Mobile Services 使用者介面中顯示為新的唯一使用者。
 
 * 等候推送服務
 
@@ -38,7 +38,7 @@ ht-degree: 89%
 
    如需服務的可靠性詳細資訊，請參閱適當文件。
 
-   * **APNS**: [服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   * **APNS**：[服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
    * **FCM**: [訊息的生命週期](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## 為何我的推送訊息截斷或無法展開?
