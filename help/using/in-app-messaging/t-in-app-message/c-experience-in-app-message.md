@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 體驗  應用程式內訊息
 topic: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. 在您的應用程式中，依序按一下&#x200B;**[!UICONTROL 「傳訊]** > **[!UICONTROL 管理訊息]** > **[!UICONTROL 建立訊息]** > **[!UICONTROL 建立應用程式內訊息」]**。
 1. 在「體驗」頁面中輸入訊息的名稱。
 1. 填妥&#x200B;**[!UICONTROL 輸入]**&#x200B;區段中的欄位:
 
@@ -40,7 +40,7 @@ ht-degree: 92%
 
    * **[!UICONTROL 自訂]**
 
-      載入您的自訂HTML內容（僅限全螢幕）。 您必須提供點進連結和取消連結。
+      載入您的自訂 HTML 內容 (僅限全螢幕)。您必須提供點進連結和取消連結。
 
       1. 按一下&#x200B;**[!UICONTROL 「瀏覽」]**&#x200B;並下載 HTML 檔案，或將 HTML 文件拖曳到視窗。
       1. 按一下「**[!UICONTROL 下載範例]**」可檢視自訂 HTML 內容範例。
@@ -67,7 +67,7 @@ ht-degree: 92%
 
    * **[!UICONTROL 套件影像]**
 
-      應用程式程式碼套件中影像的路徑。 當沒有影像時，會使用此選項。 或影像無法使用。 舉例來說，若裝置為離線狀態，便無可用的影像。如果您在使用全螢幕範本時遇到調整大小的問題，請參閱[應用程式內傳訊疑難排解](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)中的&#x200B;*我的影像無法完全符合範本所提供的空間*。
+      應用程式程式碼套件中所含影像的路徑。沒有影像時，就會使用此選項。影像無法使用時也是如此。舉例來說，若裝置為離線狀態，便無可用的影像。如果您在使用全螢幕範本時遇到調整大小的問題，請參閱[應用程式內傳訊疑難排解](/help/using/in-app-messaging/t-in-app-message/in-apps-ts.md)中的&#x200B;*我的影像無法完全符合範本所提供的空間*。
 
 
 1. 填妥&#x200B;**[!UICONTROL 文字]**&#x200B;區段中的欄位:
