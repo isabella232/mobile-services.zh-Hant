@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 設定應用程式以使用 APNS 或 FCM
 topic: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -86,12 +86,12 @@ ht-degree: 90%
 
 若要設定您的 iOS 應用程式來使用 APNS:
 
-1. Go to [https://developer.apple.com/account](https://developer.apple.com/account) and log in to your [Apple Developer account](https://developer.apple.com/account).
+1. 前往 [https://developer.apple.com/account](https://developer.apple.com/account) 並登入您的 [Apple 開發者帳號](https://developer.apple.com/account)。
 1. 在 **[!UICONTROL iOS 應用程式]**&#x200B;底下選取&#x200B;**[!UICONTROL 識別碼]**。
 1. 如果有設定好的應用程式 ID 可用來進行推送，請前往步驟 11。
-1. Press the **[!UICONTROL +]** button to create a new App ID.
-1. 輸入應用程式ID說明。
-1. 輸入應用程式ID字尾。
+1. 按&#x200B;**[!UICONTROL 「+」]**&#x200B;按鈕，建立新的應用程式 ID。
+1. 輸入應用程式 ID 說明。
+1. 輸入應用程式 ID 尾碼。
 
    >[!IMPORTANT]
    >
@@ -117,9 +117,9 @@ ht-degree: 90%
 1. 開啓&#x200B;**[!UICONTROL 「鑰匙圈存取」]**。
 1. 按一下&#x200B;**[!UICONTROL 我的憑證]**，然後找到適合您應用程式和環境的 **[!UICONTROL iOS 推送服務憑證]**。
 
-   您可以比對搭售ID，以及是「開發」或「生產」，以識別正確的憑證。
+   您可以比對套件 ID，以及為「開發」或「生產」，以識別正確的憑證。
 
-1. 展開憑證並驗證其是否包含私密金鑰。
+1. 展開憑證並確認包含私密金鑰。
 1. 以滑鼠右鍵按一下私密金鑰並選取&#x200B;**[!UICONTROL 匯出&#x200B;*`<name of key>`*]**。
 1. 在對話方塊中輸入必填資訊，然後儲存新的 `.p12` 檔案。
 
