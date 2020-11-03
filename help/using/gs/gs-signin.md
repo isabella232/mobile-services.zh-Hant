@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 登入
 topic: Metrics
 uuid: d6ea0ca1-3511-4133-9d41-21ea2d2f7b3a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 90%
 
 若要使用 Adobe ID 登入 Adobe Mobile Services 使用者介面，請依以下步驟執行:
 
-1. In a browser, type [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com).
+1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com)。
 1. 按一下&#x200B;**[!UICONTROL 使用您的 Adobe ID 登入]**。
 1. 輸入您的電子郵件地址。
 1. 在&#x200B;**[!UICONTROL 選擇要使用的帳戶]**&#x200B;中按一下 **[!UICONTROL Adobe ID]**。
@@ -41,7 +41,7 @@ ht-degree: 90%
 
 若要使用 Enterprise ID 登入 Adobe Mobile Services 使用者介面，請依以下步驟執行:
 
-1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/tw/](https://mobilemarketing.adobe.com)
+1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com)
 1. 按一下&#x200B;**[!UICONTROL 使用您的 Adobe ID 登入]**。
 1. 輸入您的電子郵件地址。
 1. 在&#x200B;**[!UICONTROL 選擇要使用的帳戶]**&#x200B;中按一下 **[!UICONTROL Enterprise ID]**。
@@ -56,7 +56,7 @@ ht-degree: 90%
 
 若要使用 Analytics ID 登入 Adobe Mobile Services 使用者介面，請依以下步驟執行:
 
-1. In a browser, type [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/).
+1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)。
 1. 按一下&#x200B;**[!UICONTROL 使用您的Analytics 帳戶登入]**。
 1. 輸入您的公司名稱、使用者名稱和密碼。
 1. 按一下&#x200B;**[!UICONTROL 登入]**。
@@ -69,9 +69,9 @@ ht-degree: 90%
 
    1. 依序按一下&#x200B;**[!UICONTROL 「使用 Adobe ID 登入」]**&#x200B;和&#x200B;**[!UICONTROL 「忘記密碼?」]**&#x200B;連結。
    1. 輸入與您 Adobe ID 相關聯的電子郵件帳戶，然後按一下&#x200B;**[!UICONTROL 傳送]**。
-   1. 請依照指示重設您收到之電子郵件中的密碼。
+   1. 依照指示重設您收到的電子郵件中包含的密碼。
 
-* **Adobe Analytics** ：如果您使用您的公司、使用者名稱和密碼：
+* **Adobe Analytics** 如果您使用公司、使用者名稱和密碼：
 
    1. 按一下&#x200B;**[!UICONTROL 「忘記密碼?」]**&#x200B;連結。
    1. 輸入您的公司名稱、使用者名稱，然後按一下&#x200B;**[!UICONTROL 繼續]**。
