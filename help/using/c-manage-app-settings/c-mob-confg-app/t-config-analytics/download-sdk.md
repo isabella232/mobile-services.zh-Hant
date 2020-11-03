@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 下載行動 SDK 和工具
 topic: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '176'
 ht-degree: 100%
 
@@ -35,5 +35,5 @@ ht-degree: 100%
 * [iOS 指示](/help/ios/getting-started/requirements.md)
 * [Android 指示](/help/android/getting-started/requirements.md)
 
-若要查看原生程式庫 (包括 Windows Phone 8、Blackberry、Xamarin 和其他程式庫) 的文件，請參閱 *Adobe Mobile Services](/help/using/home.md)中的* SDK 文件[一節。
+若要查看原生程式庫 (包括 Windows Phone 8、Blackberry、Xamarin 和其他程式庫) 的文件，請參閱 [Adobe Mobile Services](/help/using/home.md) 中的 *SDK 文件*&#x200B;一節。
 
