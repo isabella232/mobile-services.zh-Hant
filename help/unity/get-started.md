@@ -6,11 +6,11 @@ seo-title: iOS 和 Android 4.x SDK 適用的 Unity 外掛程式
 solution: Experience Cloud
 title: iOS 和 Android 4.x SDK 適用的 Unity 外掛程式
 uuid: 83289a73-982d-4472-a8c8-00b562dc80f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 90%
 
 該 `ADBMobile.unitypackage` 檔案的內容如下：
 
-* 資產（根）
+* Assets (root)
 
    * ADBMobile
 
@@ -39,7 +39,7 @@ ht-degree: 90%
 
          * adobeMobileLibrary-{version}.jar
          * AndroidManifest.xml
-         * 資產
+         * assets
 
             * ADBMobileConfig.json
       * iOS
