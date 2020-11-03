@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 點擊批次處理程序
 topic: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 89%
 }
 ```
 
-當設定的數字高於 0 時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`*.傳遞此臨界值後，會傳送佇列中的所有點擊。
+當設定的數字高於 0 時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`*。超過此臨界值後，系統會傳送佇列中的所有點擊。
 
-下列方法會與點擊批次處理程式搭配使用：
+下列方法可搭配點擊批次處理程序使用：
 
 * `trackingGetQueueSize()` 會在目前點擊批次處理程序佇列中傳回 `NSUInteger` 與點擊數。
 * `trackingSendQueuedHits()` 會強制資料庫傳送佇列中的所有點擊，不論目前還有多少處於佇列中皆然。
