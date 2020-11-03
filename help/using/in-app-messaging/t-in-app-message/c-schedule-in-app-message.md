@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 排程  應用程式內訊息
 topic: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 >
 >日期範圍是根據您的時區定義。「特定日」和「時間範圍」則是依使用者裝置而定。
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. 在您的應用程式中，依序按一下&#x200B;**[!UICONTROL 「傳訊]** > **[!UICONTROL 管理訊息]** > **[!UICONTROL 建立訊息]** > **[!UICONTROL 建立應用程式內訊息」]**。
 1. 按一下&#x200B;**[!UICONTROL 排程]**。
 1. 完成&#x200B;**[!UICONTROL 「持續時間」]**&#x200B;區段中的下列欄位:
 
