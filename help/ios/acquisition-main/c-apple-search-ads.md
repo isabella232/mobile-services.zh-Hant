@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Apple Search Ads
 topic: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人�
 
 啟用應用程式以存取 Search Ads 屬性:
 
-1. 實作Adobe SDK 4.13.2版或更新版本。
+1. 實施 Adobe SDK 4.13.2 版或更高版本。
 
-   For more information, see [Core implementation and lifecycle](/help/ios/getting-started/dev-qs.md).
+   如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)。
 
 1. 將 iAd 架構新增至應用程式的 Xcode 專案檔中。
 
