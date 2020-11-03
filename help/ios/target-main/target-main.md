@@ -1,16 +1,16 @@
 ---
-description: 這項資訊可協助您在iOS應用程式中提供目標內容。
-seo-description: 這項資訊可協助您在iOS應用程式中提供目標內容。
+description: 此資訊可協助您在 iOS 應用程式中提供目標式內容。
+seo-description: 此資訊可協助您在 iOS 應用程式中提供目標式內容。
 seo-title: Target
 solution: Experience Cloud,Analytics
 title: Target
 topic: Developer and implementation
 uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
