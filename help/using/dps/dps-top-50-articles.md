@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 前 50 名文章
 topic: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 95%
 
 ![](assets/dps_top_50.png)
 
-依預設，此報表會顯示文章標題和讀者人數。
+此報表預設會顯示文章標題和讀者人數。
 
 您可以為此報表配置下列選項:
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 * **[!UICONTROL 自訂]**
 
-   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表. 如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
+   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
 
 * **[!UICONTROL 篩選]**
 
