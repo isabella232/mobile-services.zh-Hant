@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 對象  應用程式內訊息
 topic: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 
 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
 
-1. In your app, click **[!UICONTROL Messaging]** > **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]** > **[!UICONTROL Create In-App]**.
+1. 在您的應用程式中，依序按一下&#x200B;**[!UICONTROL 「傳訊]** > **[!UICONTROL 管理訊息]** > **[!UICONTROL 建立訊息]** > **[!UICONTROL 建立應用程式內訊息」]**。
 1. 在對象頁面的下列欄位輸入資訊:
 
    * **[!UICONTROL 檢視]**
@@ -47,7 +47,7 @@ ht-degree: 79%
       >如果您選取多個觸發器，則點撃時必須觸發所有觸發器才會顯示訊息。
 
    * **[!UICONTROL 特徵]**
-您可以決定觸發應用程式內訊息時可以看到該訊息的對象，並篩選 (區隔) 具有特定資料點擊的對象。例如，您可以定義一個規則，其中地標包含丹佛。 此篩選器可讓您在觸發時向名稱中Denver的客戶顯示訊息。
+您可以決定觸發應用程式內訊息時可以看到該訊息的對象，並篩選 (區隔) 具有特定資料點擊的對象。例如，您可以定義一個規則，其中的地標包含丹佛。此篩選器能讓您對在觸發時間位於地標名稱包含丹佛的客戶顯示訊息。
 
 
 
@@ -55,9 +55,9 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->觸發器和特徵使用從應用程式傳遞給 Analytics 的資料。這些值會以內容資料、映射變數和度量的形式傳遞。 變數是文字型值，量度是數值。
+>觸發器和特徵使用從應用程式傳遞給 Analytics 的資料。這些值會以內容資料、已對應之變數和量度等形式傳遞。變數是以文字為主的值，量度則是數值。
 
-To see the mapping of these key value pairs in the Mobile Services UI and validate the value for your trigger, click **[!UICONTROL Manage App Settings]** >  **[!UICONTROL Manage Variables &amp; Metrics]** >, which displays the following tabs:
+若要在 Mobile Services 使用者介面中查看這些索引鍵/值組的對應，以及驗證觸發器的值，請按一下&#x200B;**[!UICONTROL 「管理應用程式設定]** > **[!UICONTROL 管理變數和量度」]**，以下索引標籤隨即出現：
 
 * **[!UICONTROL 「標準變數與量度」]**
 * **[!UICONTROL 自訂變數]**
@@ -75,7 +75,7 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 
 量度是數值，購買次數即是一例。
 
-1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
+1. 按一下&#x200B;**[!UICONTROL 「管理訊息]** > **[!UICONTROL 建立訊息」]**。
 1. 在&#x200B;**[!UICONTROL 「對象」]**&#x200B;標籤的&#x200B;**[!UICONTROL 「觸發器」]**&#x200B;區段完成以下步驟:
 
    1. 選取標準事件 (如&#x200B;**[!UICONTROL 已啟動]**)，然後選取&#x200B;**[!UICONTROL 存在]**。
@@ -86,7 +86,7 @@ To see the mapping of these key value pairs in the Mobile Services UI and valida
 
 變數是作為唯一識別碼的文字字串，範例包括國家、機場等。
 
-1. Click **[!UICONTROL Manage Messages]** > **[!UICONTROL Create Message]**.
+1. 按一下&#x200B;**[!UICONTROL 「管理訊息]** > **[!UICONTROL 建立訊息」]**。
 1. 在&#x200B;**[!UICONTROL 「對象」]**&#x200B;標籤的&#x200B;**[!UICONTROL 「觸發器」]**&#x200B;區段完成以下步驟:
 
    1. 選取標準事件 (如&#x200B;**[!UICONTROL 已啟動]**)，然後選取&#x200B;**[!UICONTROL 存在]**。
