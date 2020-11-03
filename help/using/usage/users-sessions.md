@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 使用者與工作階段報表
 topic: Reports,Metrics
 uuid: 6d70d7f6-de81-4307-a4f3-14f18fc3c9b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 * **[!UICONTROL 自訂]**
 
-   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表. 如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/t-reports-customize.md)。
+   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/t-reports-customize.md)。
 
 * **[!UICONTROL 篩選]**
 
