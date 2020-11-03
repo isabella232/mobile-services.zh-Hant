@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式
 topic: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 95%
 
 ## 使用 npm 安裝外掛程式: {#section_43229E57C16944C0B51531CB92089189}
 
-1. 運行以下命令：
+1. 執行以下命令：
 
    ```
    cordova plugin add adobe-mobile-services
@@ -65,7 +65,7 @@ ht-degree: 95%
 
 ### 新增應用程式權限
 
-AppMeasurement程式庫需要下列項目：
+AppMeasurement 資料庫需要下列項目：
 
 1. 啟動 Xcode IDE 並開啟您的應用程式。
 1. 將 **[!UICONTROL AdobeMobile]** 資料夾拖曳至您的專案中並完成下列設定:
