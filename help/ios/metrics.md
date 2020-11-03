@@ -1,16 +1,16 @@
 ---
-description: 下表列出在實施生命週期後，行動程式庫可自動測量的度量和維度。
-seo-description: 下表列出在實施生命週期後，行動程式庫可自動測量的度量和維度。
+description: 下表列出可在生命週期實施後由行動資料庫自動進行測量的量度與維度。
+seo-description: 下表列出可在生命週期實施後由行動資料庫自動進行測量的量度與維度。
 seo-title: 生命週期量度
 solution: Experience Cloud,Analytics
 title: 生命週期量度
 topic: Developer and implementation
 uuid: b795e383-d59b-4a3c-9e14-ffe8fb58412c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1108'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 88%
 
 * **啟動**
 
-   在每次執行時觸發，包括損毀和安裝。在超過生命週期作業逾時後，從背景繼續應用程式時也會觸發。
+   在每次執行時觸發，包括損毀和安裝。在超過生命週期工作階段逾時後，也會在應用程式從背景恢復時觸發。
 
    * Analytics 內容資料/目標參數: `a.LaunchEvent`
    * Audience Manager 訊號: `c_a_LaunchEvent`
@@ -133,7 +133,7 @@ ht-degree: 88%
 
 * **小時**
 
-   測量應用程式啟動的時間，並使用24小時數值格式。 用於時間分界，以判斷尖峰使用時間。
+   計算應用程式啟動的時間 (小時)，採用 24 小時制。用於時間分界，以判斷尖峰使用時間。
 
    * Analytics 上下文資料/目標: `a.HourOfDay`
    * 讀者管理: `c_a_HourOfDay`
@@ -168,7 +168,7 @@ ht-degree: 88%
 
 * **裝置名稱**
 
-   儲存裝置名稱。以逗號分隔的兩位數字串，用以識別iOS裝置。 第一個數字通常代表裝置代別，第二個數字通常提供裝置系列的不同成員版本。如需常見裝置名稱清單，請參閱    iOS 裝置版本.
+   儲存裝置名稱。以逗號分隔的雙位數字串，用以識別 iOS 裝置。第一個數字通常代表裝置代別，第二個數字通常提供裝置系列的不同成員版本。如需常見裝置名稱清單，請參閱      iOS 裝置版本.
 
    * Analytics 上下文資料/目標: `a.DeviceName`
    * 讀者管理: `c_a_DeviceName`
@@ -286,7 +286,7 @@ ht-degree: 88%
 
 * **追蹤代碼**
 
-   由「行動應用程式贏取」填入。由Adobe行動服務自動產生。
+   由「行動應用程式贏取」填入。由 Adobe Mobile Services 自動產生。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.trackingcode`
    * Audience Management 特徵: `c_a_referrer_campaign_trackingcode`
@@ -300,28 +300,28 @@ ht-degree: 88%
 
 * **促銷活動內容**
 
-   顯示連結之內容的名稱或ID。 由「行動應用程式贏取」填入。
+   顯示連結之內容的名稱或 ID。由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.content`
    * Audience Management 特徵: `c_a_referrer_campaign_content`
 
 * **促銷活動媒體**
 
-   行銷媒體，例如橫幅或電子郵件。 由「行動應用程式贏取」填入。
+   行銷媒體，例如橫幅或電子郵件。由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.medium`
    * Audience Management 特徵: `c_a_referrer_campaign_medium`
 
 * **促銷活動來源**
 
-   原始反向連結，例如電子報或社交媒體網路。 由「行動應用程式贏取」填入。
+   原始反向連結，例如電子報或社交媒體網路。由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.source`
    * Audience Management 特徵: `c_a_referrer_campaign_source`
 
 * **促銷活動詞語**
 
-   付費關鍵字或您要追蹤此贏取的其他詞語。 由「行動應用程式贏取」填入。
+   您要對此贏取追蹤的付費關鍵字或其他詞語。由「行動應用程式贏取」填入。
 
    * Analytics 內容資料/目標參數: `a.referrer.campaign.term`
    * Audience Management 特徵: `c_a_referrer_campaign_term`
