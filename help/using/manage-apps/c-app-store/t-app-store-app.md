@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 從應用程式商店新增應用程式。
 topic: Metrics
 uuid: 94c8a924-5156-4742-8b5b-88d9ea13bfed
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '158'
 ht-degree: 100%
 
