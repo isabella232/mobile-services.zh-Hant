@@ -1,23 +1,23 @@
 ---
-description: 從iOS 10開始，Apple可讓您建立名為可獨立散發的擴充功能，而不需要包含的應用程式。 使用此擴充功能時，您不需要應用程式群組，因為沒有包含可與其共用資料的應用程式。
-seo-description: 從iOS 10開始，Apple可讓您建立名為可獨立散發的擴充功能，而不需要包含的應用程式。 使用此擴充功能時，您不需要應用程式群組，因為沒有包含可與其共用資料的應用程式。
+description: 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
+seo-description: 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
 seo-title: 獨立延伸功能實施
 solution: Experience Cloud,Analytics
 title: 獨立延伸功能實施
 topic: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '268'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 
 # 獨立擴充功能實施 {#stand-alone-extension-implementation}
 
-從iOS 10開始，Apple可讓您建立名為可獨立散發的擴充功能，而不需要包含的應用程式。 使用此擴充功能時，您不需要應用程式群組，因為沒有包含可與其共用資料的應用程式。
+自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
 
 >[!IMPORTANT]
 >
@@ -53,7 +53,7 @@ ht-degree: 44%
       此值表示該點擊來自容納應用程式。
    * `a.RunMode = Extension`
 
-      此值表示點擊來自延伸功能。
+      此值表示該點擊來自延伸功能。
 
-* iOS擴充功能應用程式不會觸發生命週期呼叫。
+* 在 iOS 延伸功能應用程式中不會觸發任何生命週期呼叫。
 
