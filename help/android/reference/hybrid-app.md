@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: '應用程式和行動網站間的訪客追蹤  '
 topic: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 85%
 
 ## 應用程式中的訪客 ID
 
-當安裝應用程式時，Android SDK會產生唯一訪客ID。 此ID會儲存在行動裝置上的永久記憶體中，每次點擊時都會傳送，而且只有在使用者解除安裝應用程式時才會移除。
+Android SDK 會在應用程式安裝後產生不重複訪客 ID。此 ID 會儲存於行動裝置的永久性記憶體中、隨著每次點擊傳送，且只會在使用者解除安裝該應用程式後移除。
 
 >[!TIP]
 >
@@ -62,7 +62,7 @@ ht-degree: 85%
    });
    ```
 
-目標網域上的ID服務程式碼會從URL擷取MID，而非傳送要求給Adobe以取得新ID。 程式碼使用傳入的MID來追蹤訪客。
+目的地網域上的 ID 服務程式碼會從 URL 提取 MID，而非傳送要求給 Adobe 索取新 ID。該程式碼會使用傳入的 MID 來追蹤訪客。
 
 在行動網站內容的點擊中，確認 `mid` 參數存在於各個點擊中，並確認此值與應用程式程式碼所傳送的 `mid` 參數相符。
 
