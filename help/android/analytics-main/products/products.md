@@ -1,24 +1,24 @@
 ---
-description: 無法使用處理規則來設定產品變數。 在Mobile SDK中，您必須在上下文資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
+description: 無法使用處理規則設定產品變數。在 Mobile SDK 中，您必須在內容資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
 keywords: android;library;mobile;sdk
-seo-description: 無法使用處理規則來設定產品變數。 在Mobile SDK中，您必須在上下文資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
+seo-description: 無法使用處理規則設定產品變數。在 Mobile SDK 中，您必須在內容資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
 seo-title: 產品變數
 solution: Experience Cloud,Analytics
 title: 產品變數
 topic: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
 # 產品變數 {#products-variable}
 
-無法使用處理規則來設定產品變數。 在Mobile SDK中，您必須在上下文資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
+無法使用處理規則設定產品變數。在 Mobile SDK 中，您必須在內容資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
 
 若要設定&#x200B;*產品*&#x200B;變數，請將內容資料索引鍵設為 `"&&products"`，並使用針對&#x200B;*產品*&#x200B;變數定義的語法來設定值:
 
@@ -45,8 +45,8 @@ Analytics.trackAction("purchase", cdata);
 Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*產品*&#x200B;變數是直接在影像要求上設定的，而其他變數則設為內容資料。必須使用處理規則來映射所有上下文資料變數：
+*產品*&#x200B;變數是直接在影像要求上設定的，而其他變數則設為內容資料。必須使用處理規則對應所有內容資料變數：
 
 ![](assets/map-products.png)
 
-您不需要使用處理規 *則來映射產品變數* ，因為此變數是由SDK直接在影像要求上設定。
+您不需要使用處理規則來對應&#x200B;*產品變數*，因為此變數會由 SDK 直接設定影像要求上。
