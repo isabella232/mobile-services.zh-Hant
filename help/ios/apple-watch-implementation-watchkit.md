@@ -1,16 +1,16 @@
 ---
-description: 從WatchOS 2開始，您的WatchKit擴充功能將會在Apple Watch裝置上執行。 在此環境中執行的應用程式需要WatchConnectivity架構才能與其包含的iOS應用程式共用資料。
-seo-description: 從WatchOS 2開始，您的WatchKit擴充功能將會在Apple Watch裝置上執行。 在此環境中執行的應用程式需要WatchConnectivity架構才能與其包含的iOS應用程式共用資料。
+description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
+seo-description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
 seo-title: 使用 WatchOS 2 進行 Apple Watch 實施
 solution: Experience Cloud,Analytics
 title: 使用 WatchOS 2 進行 Apple Watch 實施
 topic: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -38,15 +38,15 @@ ht-degree: 84%
 >
 >確保您擁有至少具備以下目標的專案:
 >
->* 包含應用程式
->* WatchKit應用程式
->* WatchKit擴充功能
+>* 容納應用程式
+>* WatchKit 應用程式
+>* WatchKit 延伸功能
 
 >
 
 
 
-如需有關開發WatchKit應用程式的詳細資訊，請參 [閱The Watch App Architecture](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
+如需有關開發 WatchKit 應用程式的詳細資訊，請參閱 [Watch 應用程式架構](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
 
 ## 設定容納應用程式 {#section_0A2A3995575B4E2ABD12E426BA06AEFF}
 
