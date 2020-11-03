@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 建立新的連結目的地
 topic: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ ht-degree: 85%
 
       * **[!UICONTROL 應用程式深層連結]**
 
-         提供 URI 架構深層連結 (例如 `yourapp://section`)。應用程式深層連結目的地是URI結構描述深層連結，可引導使用者前往應用程式中的深層連結。 例如，您可以將使用者導向線上零售商行動應用程式中的特定產品系列。
+         提供 URI 架構深層連結 (例如 `yourapp://section`)。應用程式深層連結目的地是 URI 架構深層連結，可將使用者導向至您應用程式內的深層連結。例如，您可以將使用者導向至線上零售商的行動應用程式中的特定產品線。
 
       * **[!UICONTROL 網頁連結]**
 
-         輸入網頁 HTTP 或 HTTPS URL，例如 `https://adobe.com`。網頁連結目標會將使用者導向至URL。 例如，您可以將使用者引導至線上零售商網站上的產品線。
+         輸入網頁 HTTP 或 HTTPS URL，例如 `https://adobe.com`。網頁連結目標會將使用者導向至 URL。例如，您可以將使用者導向至線上零售商網站上的產品線。
 
       * **[!UICONTROL 混合式連結]**
 
