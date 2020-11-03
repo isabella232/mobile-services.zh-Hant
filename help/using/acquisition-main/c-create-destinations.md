@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 目的地
 topic: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 79%
 
 * **[!UICONTROL 網頁連結]**
 
-   網頁連結目標會將使用者導向至特定URL。 例如，您可以將使用者引導至線上零售商網站上的產品線。
+   網頁連結目標會將使用者導向至特定 URL。例如，您可以將使用者導向至線上零售商網站上的產品線。
 
    >[!IMPORTANT]
    >
@@ -40,4 +40,4 @@ ht-degree: 79%
 
    混合式連結支援 iOS 通用連結或 Android 應用程式連結。
 
-如需如何建立每種連結類型的詳細資訊，請參閱「建立 [新的連結目的地」](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
+如需如何建立各種連結類型的詳細資訊，請參閱[建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
