@@ -1,6 +1,6 @@
 ---
-description: Experience Cloud解決方案專用的Windows 8.1 Universal App Store SDK 4.x可讓您測量原生Windows 8.1和Windows Phone 8.1應用程式、在應用程式中提供目標內容，並透過Audience Manager運用和收集觀眾資料。
-seo-description: Experience Cloud解決方案專用的Windows 8.1 Universal App Store SDK 4.x可讓您測量原生Windows 8.1和Windows Phone 8.1應用程式、在應用程式中提供目標內容，並透過Audience Manager運用和收集觀眾資料。
+description: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x 可讓您測量原生 Windows 8.1 和 Windows Phone 8.1 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集受眾資料。
+seo-description: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x 可讓您測量原生 Windows 8.1 和 Windows Phone 8.1 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集受眾資料。
 seo-title: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x
 solution: Experience Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x
@@ -10,34 +10,34 @@ translation-type: tm+mt
 source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 
 # 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x{#windows-universal-app-store-sdk-x-for-experience-cloud-solutions}
 
-Experience Cloud解決方案專用的Windows 8.1 Universal App Store SDK 4.x可讓您測量原生Windows 8.1和Windows Phone 8.1應用程式、在應用程式中提供目標內容，並透過Audience Manager運用和收集觀眾資料。
+適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x 可讓您測量原生 Windows 8.1 和 Windows Phone 8.1 應用程式、在應用程式中提供目標式內容，以及透過 Audience Manager 運用與收集受眾資料。
 
-**上次更新日期：2015年8月21日**
+**上次更新日期：2015 年 8 月 21 日**
 
-## Supported Platforms {#section_45978BF5C62E4986AAB7FFD96402BF2D}
+## 支援平台 {#section_45978BF5C62E4986AAB7FFD96402BF2D}
 
-支援下列平台：
+支援的平台如下：
 
-* Windows 8.1或更新版本。
+* Windows 8.1 或更新版本。
 
-* Windows Phone 8.1或更新版本。
+* Windows Phone 8.1 或更新版本。
 
-## 支援的IDE {#section_03905798D74940C9A9F77285DA3F27D0}
+## 支援的 IDE {#section_03905798D74940C9A9F77285DA3F27D0}
 
-Visual Studio 2013或更新版本。
+Visual Studio 2013 或更新版本。
 
 ## Adobe Mobile Services {#section_7583FD5FDED143619048E9744A3F2D21}
 
-Adobe Mobile Services 提供的新使用者介面，將 Adobe Experience Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。一開始，Mobile服務可順暢整合Adobe Analytics和Adobe Target的應用程式分析和定位功能。
+Adobe Mobile Services 提供的新使用者介面，將 Adobe Experience Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初提供整合功能，可將 Adobe Analytics 和 Adobe Target 中的應用程式分析和目標定位功能緊密整合。
 
-Learn more at [Adobe Mobile services documentation](/help/using/home.md).
+如需詳細資訊，請參閱 [Adobe Mobile Services 文件](/help/using/home.md)。
 
 ## 使用 Bloodhound
 
