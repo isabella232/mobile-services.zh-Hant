@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 建立或編輯行銷連結
 topic: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 94%
 
    * **[!UICONTROL 新增追蹤內容資料]**:
 
-      (**Optional**) Click the **[!UICONTROL +]** icon and type the relevant information to track your campaign using context data. 在&#x200B;**[!UICONTROL 「自訂內容資料」]**&#x200B;下拉式清單中，選取預設標籤或您自己的標籤。上下文資料用於部署行銷連結時進行報告。
+      (**選擇性**) 按一下&#x200B;**[!UICONTROL 「+」]**&#x200B;圖示，然後輸入相關資訊，以使用內容資料追蹤行銷活動。在&#x200B;**[!UICONTROL 「自訂內容資料」]**&#x200B;下拉式清單中，選取預設標籤或您自己的標籤。上下文資料用於部署行銷連結時進行報告。
 
       下列預設集標記可供使用:
 
@@ -70,7 +70,7 @@ ht-degree: 94%
 
    (**選擇性**) 如果有多個目的地，系統會根據使用者是否已安裝行動應用程式決定路由目的地。如果已安裝應用程式，則會顯示插入式登陸頁面。
 
-   For more information, see [Interstitials](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md).
+   如需詳細資訊，請參閱[插入式頁面](/help/using/acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)。
 
 1. 依序按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;和&#x200B;**[!UICONTROL 下一步]**。
 1. 在「目的地」頁面中設定連結。
