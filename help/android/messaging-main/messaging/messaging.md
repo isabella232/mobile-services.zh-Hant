@@ -1,23 +1,23 @@
 ---
-description: 您可以傳送從任何分析資料或事件觸發的應用程式內訊息。 實作後，訊息會動態傳遞至應用程式，而不需要程式碼更新。
-seo-description: 您可以傳送從任何分析資料或事件觸發的應用程式內訊息。 實作後，訊息會動態傳遞至應用程式，而不需要程式碼更新。
+description: 您可以傳遞因任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，不須更新程式碼。
+seo-description: 您可以傳遞因任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，不須更新程式碼。
 seo-title: 應用程式內傳訊
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
 topic: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 
 # 應用程式內傳訊 {#in-app-messaging}
 
-您可以傳送從任何分析資料或事件觸發的應用程式內訊息。 實作後，訊息會動態傳遞至應用程式，而不需要程式碼更新。
+您可以傳遞因任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，不須更新程式碼。
 
 ## 新版 Adobe Experience Cloud SDK
 
@@ -27,7 +27,7 @@ ht-degree: 61%
 >
 >我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 >[!IMPORTANT]
@@ -36,9 +36,9 @@ ht-degree: 61%
 
 >[!IMPORTANT]
 >
->To use in-app messaging, you **must** have SDK version 4.2 or later.
+>若要使用應用程式內傳訊，您&#x200B;**必須**&#x200B;有 SDK 4.2 版或更新版本。
 
-您可以在Adobe Mobile Services中建立訊息和規則，以定義訊息的顯示時間。 For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md). 若要顯示應用程式內訊息，必須對SDK進行更新。 即使您尚未定義任何訊息，您也可以完成這些步驟。 在您定義訊息後，訊息會動態傳遞至您的應用程式，而且不需要應用程式商店更新即可顯示。
+您可以建立訊息，以及定義訊息顯示時間的 Adobe Mobile Services 規則。如需詳細資訊，請參閱[建立應用程式內訊息](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)。若要顯示應用程式內訊息，必須更新 SDK。即使您尚未定義任何訊息，也可以完成這些步驟。在您定義訊息後，訊息會動態傳遞至您的應用程式，且顯示時不含應用程式商店更新。
 
 ## 啟用應用程式內傳訊 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
@@ -121,11 +121,11 @@ ht-degree: 61%
 
 ## 追蹤應用程式內訊息 {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-Android Mobile SDK會追蹤您應用程式內訊息的下列度量：
+Android Mobile SDK 會追蹤您應用程式內訊息的下列量度：
 
-* 對於全螢幕和警報樣式的應用程式內訊息：
+* 全螢幕和警報式應用程式內訊息：
 
-   * **印象**:使用者觸發應用程式內訊息時。
+   * **曝光次數**：使用者觸發應用程式內訊息時。
    * **點進次數**: 使用者按下&#x200B;**[!UICONTROL 點進]**&#x200B;時。
    * **取消**: 使用者按下&#x200B;**[!UICONTROL 取消]**&#x200B;時。
 
@@ -140,7 +140,7 @@ Android Mobile SDK會追蹤您應用程式內訊息的下列度量：
 
 ## 本機後援影像 {#section_DEACC1CE549B4573B556A44A52409941}
 
-建立全螢幕訊息時，您可以選擇指定備援影像。 如果您的訊息無法從網路擷取其預期影像，SDK會嘗試從應用程式的資產檔案夾載入同名影像。 這可讓您以原始格式顯示訊息，即使使用者離線或無法存取預定影像亦然。
+建立全螢幕訊息時，您可以選擇指定後援影像。如果您的訊息無法從網路擷取預定影像，SDK 會嘗試從應用程式的資產檔案夾載入同名影像。這可讓您以原始格式顯示訊息，即使使用者離線或無法連線至預定影像亦然。
 
 >[!IMPORTANT]
 >
@@ -152,7 +152,7 @@ Android Mobile SDK會追蹤您應用程式內訊息的下列度量：
 
 * **Config.setSmallIconResourceId(int resourceId)**
 
-   設定SDK所建立之通知將使用的小圖示。 此圖示會出現在狀態列中，是當使用者在通知中心看到完整通知時所顯示的次要影像。
+   設定用於 SDK 所建立之通知的小型圖示。此圖示會顯示在狀態列中，亦即當使用者在通知中心看到完整通知時，畫面所顯示的次要影像。
 
    * 以下是此方法的語法:
 
