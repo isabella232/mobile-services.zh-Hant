@@ -1,26 +1,26 @@
 ---
-description: 使用狀況報表會顯示平均作業長度、每日和每月參與的使用者、升級和其他見解，協助您瞭解應用程式的使用方式和頻率。 保留報表可快速顯示初次啟動後1天、7天和28天的使用者保留層級。
+description: 使用狀況報表顯示平均工作階段長度、每日和每月的參與使用者、升級及其他分析，協助您了解您的應用程式的使用狀況和使用頻率。「保留」報表可快速顯示在初次啟動、1 天、7 天和 28 天後的使用者保留層級。
 keywords: mobile
-seo-description: 使用狀況報表會顯示平均作業長度、每日和每月參與的使用者、升級和其他見解，協助您瞭解應用程式的使用方式和頻率。 保留報表可快速顯示初次啟動後1天、7天和28天的使用者保留層級。
+seo-description: 使用狀況報表顯示平均工作階段長度、每日和每月的參與使用者、升級及其他分析，協助您了解您的應用程式的使用狀況和使用頻率。「保留」報表可快速顯示在初次啟動、1 天、7 天和 28 天後的使用者保留層級。
 seo-title: 報表
 solution: Experience Cloud,Analytics
 title: 報表
 topic: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
 # 報表{#reports}
 
-使用狀況報表會顯示平均作業長度、每日和每月參與的使用者、升級和其他見解，協助您瞭解應用程式的使用方式和頻率。 保留報表可快速顯示初次啟動後1天、7天和28天的使用者保留層級。
+使用狀況報表顯示平均工作階段長度、每日和每月的參與使用者、升級及其他分析，協助您了解您的應用程式的使用狀況和使用頻率。「保留」報表可快速顯示在初次啟動、1 天、7 天和 28 天後的使用者保留層級。
 
-您可以在Mobile UI中產生下列報表：
+您可在 Mobile 使用者介面中產生下列報表：
 
 * [概述](/help/using/usage/usage-overview.md)
 * [使用者與工作階段](/help/using/usage/users-sessions.md)
