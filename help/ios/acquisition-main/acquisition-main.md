@@ -1,16 +1,16 @@
 ---
-description: 這項資訊可協助您在iOS應用程式中使用贏取追蹤連結。
-seo-description: 這項資訊可協助您在iOS應用程式中使用贏取追蹤連結。
+description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
+seo-description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤連結。
 seo-title: 贏取
 solution: Experience Cloud,Analytics
 title: 贏取
 topic: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
