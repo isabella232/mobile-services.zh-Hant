@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 點擊批次處理程序
 topic: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 89%
 }
 ```
 
-當此值被設定為大於 0 的數字時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`* 值。傳遞此臨界值後，會傳送佇列中的所有點擊。
+當此值被設定為大於 0 的數字時，SDK 會讓排入佇列的點擊數等於 *`batchLimit`* 值。超過此臨界值後，系統會傳送佇列中的所有點擊。
 
-下列方法會與點擊批次處理程式搭配使用：
+下列方法可搭配點擊批次處理程序使用：
 
 * `Analytics.getQueueSize` 會在目前點擊批次處理程序佇列中傳回 `long` 與點擊數。
 
