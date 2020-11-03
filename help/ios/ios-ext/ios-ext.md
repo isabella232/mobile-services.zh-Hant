@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: iOS 延伸功能實施
 topic: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 76%
 >
 >我們強烈建議您使用 iOS SDK，而非您自己的包裝函式。
 
-Apple提供一組API，可讓Watch應用程式傳送請求至包含的應用程式並接收回應，以與包含的應用程式通訊。 雖然您可以將追蹤資料當做字典從Watch應用程式傳送至包含的應用程式，並呼叫包含應用程式上的任何追蹤方法來傳送資料，但此解決方案有其限制。
+Apple 提供了一組 API，可讓 Watch 應用程式將要求傳送至容納應用程式並接收其回應，藉以與容納應用程式通訊。雖然您可以將追蹤資料以字典的形式從 Watch 應用程式傳送至容納應用程式，並且容納應用程式呼叫任何追蹤方法以傳送資料，但此解決方案有其限制。
 
 在大部分的情況下，當使用者使用 Watch 應用程式時，容納應用程式會在背景執行，此時唯有呼叫 `TrackActionInBackground`、`TrackLocation` 及 `TrackBeacon` 是安全的。呼叫其他追蹤方法會干擾生命週期資料，所以若要從 Watch 應用程式傳送資料，您應該只使用這三個方法。
 
@@ -47,13 +47,13 @@ Apple提供一組API，可讓Watch應用程式傳送請求至包含的應用程�
 >確保您擁有至少具備以下目標的專案:
 >
 >* 一個要包含應用程式的目標。
->* 擴充功能的一個目標。
+>* 一個擴充功能目標。
 
 >
 
 
 
-如果您正在使用WatchKit應用程式，則應該有第三個目標。 如需 Apple Watch 開發的詳細資訊，請參閱 [Apple Watch 開發](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)。
+如果您使用 WatchKit 應用程式，則應該有第三個目標。如需 Apple Watch 開發的詳細資訊，請參閱 [Apple Watch 開發](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)。
 
 ## 設定容納應用程式 {#section_0BAB0842E4C04A62B5E03DFC4BA77851}
 
@@ -109,10 +109,10 @@ Apple提供一組API，可讓Watch應用程式傳送請求至包含的應用程�
       此值表示該點擊來自容納應用程式。
    * `a.RunMode = Extension`
 
-      此值表示點擊來自延伸功能。
+      此值表示該點擊來自延伸功能。
 
-* 如果您從舊版SDK升級，在啟動包含應用程式時，Adobe會自動將所有使用者預設值和快取檔案從包含應用程式的資料夾移轉至應用程式群組的共用資料夾。
-* 如果從未啟動包含的應用程式，則會捨棄延伸功能的點擊。
-* 您的內含應用程式和擴充功能應用程式之間的版本號碼和組建版本號碼必須相同。
-* iOS擴充功能應用程式不會觸發生命週期呼叫。
+* 如果您從舊版的 SDK 升級，在啟動容納應用程式時，Adobe 會自動將所有使用者預設值和快取檔案從容納應用程式的資料夾移轉至應用程式群組的共用資料夾。
+* 如果未曾啟動容納應用程式，則會捨棄擴充功能的點擊。
+* 您的容納應用程式和擴充功能應用程式之間的版本號碼和組建號碼必須相同。
+* 在 iOS 延伸功能應用程式中不會觸發任何生命週期呼叫。
 
