@@ -1,30 +1,30 @@
 ---
-description: 這項資訊可協助您在iOS應用程式中使用應用程式內訊息。
-seo-description: 這項資訊可協助您在iOS應用程式中使用應用程式內訊息。
+description: 此資訊可協助您使用 iOS 應用程式中的應用程式內傳訊。
+seo-description: 此資訊可協助您使用 iOS 應用程式中的應用程式內傳訊。
 seo-title: 應用程式內傳訊
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
 topic: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
 # 應用程式內傳訊 {#in-app-messaging}
 
-這項資訊可協助您在iOS應用程式中使用應用程式內訊息。
+此資訊可協助您使用 iOS 應用程式中的應用程式內傳訊。
 
-To use in-app messaging, you **must** have SDK version 4.2 or later.
+若要使用應用程式內傳訊，您&#x200B;**必須**&#x200B;有 SDK 4.2 版或更新版本。
 
 請記住以下資訊：
 
-* 訊息和定義訊息顯示時間的規則會在Adobe Mobile Services中建立。 For more information, see [Create an in-app message](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md).
-* 必須對SDK進行本節所述的更新，才能顯示應用程式內訊息。
+* 訊息以及定義要在何時顯示訊息的規則，會在 Adobe Mobile Services 中建立。如需詳細資訊，請參閱[建立應用程式內訊息](/help/using/in-app-messaging/t-in-app-message/t-in-app-message.md)。
+* 必須對 SDK 進行本節中說明的更新，才能顯示應用程式內訊息。
 
    >[!TIP]
    >
@@ -76,9 +76,9 @@ To use in-app messaging, you **must** have SDK version 4.2 or later.
 
 ## 追蹤應用程式內訊息 {#section_B85CDF6929564AAEA79338B55E5CB1E8}
 
-iOS Mobile Services SDK會追蹤您應用程式內訊息的下列度量：
+iOS Mobile Services SDK 會對您的應用程式內訊息追蹤下列量度：
 
-* 對於全螢幕和警報樣式的應用程式內訊息：
+* 全螢幕和警報式應用程式內訊息：
 
    * **[!UICONTROL 曝光次數]**: 使用者觸發應用程式內訊息時。
    * **[!UICONTROL 點進次數]**: 使用者按下&#x200B;**[!UICONTROL 點進]**&#x200B;按鈕時。
@@ -111,9 +111,9 @@ iOS Mobile Services SDK會追蹤您應用程式內訊息的下列度量：
 
 ## 本機後援影像 {#section_DEACC1CE549B4573B556A44A52409941}
 
-在Adobe Mobile Services中建立全螢幕訊息時，您可選擇指定備援影像。 如果您的訊息無法從網路擷取其預期的影像，SDK會嘗試從您的應用程式套件載入同名的影像。 這可讓您以原始格式顯示訊息，即使使用者離線或無法存取預定影像亦然。
+在 Adobe Mobile Services 中建立全螢幕訊息時，您可以選擇指定後援影像。如果您的訊息無法從網頁擷取其預期的影像，則 SDK 會嘗試從您的應用程式套件載入同名的影像。這可讓您以原始格式顯示訊息，即便使用者離線，或無法連線至預先決定的影像，仍是如此。
 
-在Adobe Mobile Services中設定訊息時，會指定備援影像資產名稱。
+在 Adobe Mobile Services 中設定訊息時，會指定後援影像資產名稱。
 
 >[!IMPORTANT]
 >
