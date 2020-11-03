@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 追蹤應用程式當機
 topic: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 79%
 
 iOS 會使用系統通知，讓開發人員能夠在應用程式生命週期中，追蹤和回應不同的狀態和事件。
 
-Adobe Mobile iOS SDK 內含通知處理常式，可回應 `UIApplicationDidEnterBackgroundNotification` 通知。在此程式碼中，會設定一個值，指出使用者已將應用程式背景設為背景。 在後續的啟動中，如果找不到該值，則會報告當機。
+Adobe Mobile iOS SDK 內含通知處理常式，可回應 `UIApplicationDidEnterBackgroundNotification` 通知。此程式碼會設定一個值，指出使用者已讓應用程式進入背景執行。在後續的啟動中，如果找不到該值，則會回報當機。
 
 ## 為何 Adobe 要以此方式測量當機?
 
@@ -41,9 +41,9 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 
 ## 導致回報錯誤當機的原因為何?
 
-以下情況已知會不實造成SDK報告當機：
+以下情況已知會不實導致 SDK 回報當機：
 
-* 如果您使用Xcode進行除錯，在應用程式在前景時再次啟動應用程式會造成當機。
+* 如果您使用 Xcode 進行偵錯，在應用程式於前景執行時再次啟動應用程式，就會造成當機。
 
    >[!TIP]
    >
@@ -62,11 +62,11 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 
 下列實務可協助您避免收到錯誤當機報告:
 
-* 在iOS SDK 4.8.6中，已新增程式碼，以更好地判斷是否需要新的生命週期工作階段。
+* 在 iOS SDK 4.8.6 中已新增程式碼，以更有效地判斷是否需要新的生命週期工作階段。
 
-   此程式碼可修正前一節中#2和#3錯誤當機。
+   此程式碼可修正前一節中的錯誤當機 #2 和 #3。
 
-* 請確定您針對非生產報表套裝執行開發，以免發生錯誤當機#1。
+* 請確定您根據非生產報表套裝執行開發，以免發生錯誤當機 #1。
 * 請勿刪除或修改 Adobe Mobile SDK 放入 `NSUserDefaults` 的任何值。
 
    如果您在 SDK 外部修改這類值，則回報的資料將會無效。
