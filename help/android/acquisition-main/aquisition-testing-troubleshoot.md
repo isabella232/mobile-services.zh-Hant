@@ -5,9 +5,9 @@ seo-description: 下列資訊可協助您進行贏取測試問題疑難排解。
 seo-title: 疑難排解贏取測試
 solution: Experience Cloud,Analytics
 title: 疑難排解贏取測試
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
 ht-degree: 100%
 
