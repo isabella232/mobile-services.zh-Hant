@@ -1,23 +1,23 @@
 ---
-description: Experience Cloud解決方案專用Windows 8.1通用應用程式商店SDK 4.x的發行說明和已知問題。
-seo-description: Experience Cloud解決方案專用Windows 8.1通用應用程式商店SDK 4.x的發行說明和已知問題。
+description: Experience Cloud 解決方案專用 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
+seo-description: Experience Cloud 解決方案專用 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
 seo-title: 發行說明
 solution: Experience Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 
 # 發行說明{#release-notes}
 
-Experience Cloud解決方案專用Windows 8.1通用應用程式商店SDK 4.x的發行說明和已知問題。
+Experience Cloud 解決方案專用 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
 
 ## 最新發行說明 {#section_DC697A291F0A4CB7B669B24488E07DC1}
 
@@ -25,9 +25,9 @@ Experience Cloud解決方案專用Windows 8.1通用應用程式商店SDK 4.x的�
 
 | 功能 | 說明 |
 |--- |--- |
-| 地理位置——地標 | 興趣點可讓您設定緯度／長度中心點，並決定半徑。 然後程式庫會判斷該呼叫所提供的位置是否落在您的任何興趣點內。 如需詳細資訊，請 *參閱Analytics中的地理位置與地標*[資訊](/help/windows-appstore/analytics/analytics.md)。 |
-| 期限值 | 期限值是衡量使用者在應用程式中的貢獻與使用量的方法。 每次您傳送值時，都會將其新增至該使用者的現有值。  如需詳細資訊，請參 *閱Analytics中的期限*[值](/help/windows-appstore/analytics/analytics.md)。 |
-| 計時動作 | 「計時動作」是您輕鬆的方式，讓您瞭解使用者在應用程式中完成端對端程式需要多久的時間。 計時動作可讓您計算作業中的時間量，以及完成動作所需的總時間（跨作業）。 如需詳細資訊，請參 *閱Analytics中的計時*[動作](/help/windows-appstore/analytics/analytics.md)。 |
+| 地理位置 - 地標 | 地標可讓您設定緯度/經度中心點，並決定半徑。然後，資料庫會判斷為該呼叫提供的位置是否落在您的任何地標內。如需詳細資訊，請參閱 [Analytics](/help/windows-appstore/analytics/analytics.md) 中的&#x200B;*地理位置和地標*。 |
+| 期限值 | 期限值是衡量使用者在應用程式中的貢獻與使用情形的方法。每當您傳入值時，都會將其新增至該使用者的現有值。如需詳細資訊，請參閱 [Analytics](/help/windows-appstore/analytics/analytics.md) 中的&#x200B;*期限值*。 |
+| 計時動作 | 「計時動作」可讓您輕鬆瞭解使用者在應用程式中完成端對端程序所需的時間。計時動作可讓您計算工作階段中的時間量，以及完成動作所需的總時間 (跨工作階段)。如需詳細資訊，請參閱 [Analytics](/help/windows-appstore/analytics/analytics.md) 中的&#x200B;*計時動作*。 |
 | 選擇加入/選擇退出 | 快速啟用和停用分析。 |
 
 
