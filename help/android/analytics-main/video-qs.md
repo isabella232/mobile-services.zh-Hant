@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Video Analytics
 topic: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 85%
    * 變數類型: eVar
       * 預設過期時間：造訪
       * 自訂分析 (s.prop，用於視訊路徑)
-   * (必&#x200B;**要**)當訪客以某種方式檢視視訊時，此上下文資料變數會收集視訊名稱，如實作中所指定。 您可以為此變數新增分類。
-   * (**Optional**) The Custom Insight variable provides video pathing information.
+   * (**必要**) 訪客以某種方式檢視視訊時，此內容資料變數會收集視訊名稱，如實施中所指定。您可以為此變數新增分類。
+   * (**選用**) 自訂深入分析變數能提供視訊路徑資訊。
 
 * **a.media.name**
    * 變數類型: Custom Insight (s.prop)
@@ -47,7 +47,7 @@ ht-degree: 85%
 * **a.media.segment**
    * 變數類型: eVar
    * 預設過期時間: 頁面檢視
-   * (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
+   * (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。
 
       您可在自動追蹤播放器事件時啟用 `segmentByMilestones` 變數，或在手動追蹤播放器事件時設定自訂區段名稱，藉此填入此變數。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst 可能會在區段 eVar 中收集以下資訊: `1:M:0-25`.
 
@@ -70,7 +70,7 @@ ht-degree: 85%
 * **a.media.timePlayed**
    * 變數類型: 事件
    * 類型: 計數器
-   * 計算自上次資料收集程式（影像要求）起觀看視訊所花費的時間（以秒為單位）。
+   * 計算自上次資料收集程序 (影像要求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
 * **a.media.view**
    * 變數類型: 事件
@@ -91,7 +91,7 @@ ht-degree: 85%
    * 類型: 計數器
    * 指出使用者已檢視完整的視訊。
 
-      預設情況下，完成事件會在視訊結尾之前 1 秒測量。在實作期間，您可以指定在視訊結束後要視為檢視完成的秒數。 對於沒有定義結束的即時視訊和其他串流，您可以指定自訂測量結束點（例如，在檢視特定時間後）。
+      預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。對於沒有定義結束點的直播視訊和其他串流，您可以指定自訂時間點來測量完成次數 (例如在訪客檢視一定的時間長度之後測量)。
 
 
 ## 設定媒體設定 {#section_929945D4183C428AAF3B983EFD3E2500}
