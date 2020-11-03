@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: Audience Manager 方法
 topic: Developer and implementation
 uuid: 97658bd6-4c4f-4875-abe9-36dad4ec8bae
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -73,14 +73,14 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **audienceSetDpid:&#x200B;dpuuid:**
 
-   設定 DPID 和 DPUUID。設定後，兩者都會附加至每個訊號。
+   設定 DPID 和 DPUUID。設定後，兩者皆會附加到每個訊號。
 
-   * 資 **料提供者ID(DPID)** ，是Audience Manager指派的資料合作夥伴ID。
-   * 資 **料提供者唯一使用者ID(DPUUID)** ，是該使用者的資料提供者唯一ID。
+   * **資料提供者 ID (DPID)** 是 Audience Manager 指派的資料合作夥伴 ID。
+   * **資料提供者唯一使用者 ID (DPUUID)** 是使用者的資料提供者唯一 ID。
 
       >[!IMPORTANT]
       >
-      >在 4.13.x 版之前，DPUUID 不會自動編碼。從4.13.x版開始，SDK會先解除編碼傳入的值，然後重新編碼此值。 此程式可確保SDK不會中斷回溯相容性。
+      >在 4.13.x 版之前，DPUUID 不會自動編碼。從 4.13.x 版開始，SDK 會先解除編碼傳入的值，然後重新編碼該值。此程序可確保 SDK 不會破壞回溯相容性。
 
    * 以下是此方法的語法:
 
