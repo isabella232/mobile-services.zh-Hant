@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: Apple 通用連結和 Android 應用程式連結
 topic: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1142'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 92%
 
 1. 在 Adobe Mobile Services 中，建立使用通用連結的行銷連結:
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. 從 Mobile Services 首頁中選取應用程式，按一下&#x200B;**[!UICONTROL 「贏取]** > **[!UICONTROL 行銷連結建立器」]**。
 
    b. 按一下&#x200B;**[!UICONTROL 新建]**。
 
@@ -78,7 +78,7 @@ ht-degree: 92%
 
    e. 若選取了&#x200B;**[!UICONTROL 使用通用連結或應用程式連結]**&#x200B;選項，便會顯示&#x200B;**[!UICONTROL 自訂路徑]**&#x200B;欄位。
 
-   這可讓使用者使用任何查詢參數，在網域之後定義URL路徑。 例如，如果您輸入， `my/universal/link?os=9.2`您的完整行銷連結URL就會變 `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`成。
+   這可讓使用者使用任意查詢參數在網域後面定義 URL 路徑。舉例來說，如果您輸入 `my/universal/link?os=9.2`，您的完整行銷連結 URL 就會變成 `https://[marketing link domain]/my/universal/link?[AMS default query parameters]&os=9.2`。
 
    f. 按一下&#x200B;**[!UICONTROL 決策]**&#x200B;分頁標籤並設定決策樹。
 
@@ -125,7 +125,7 @@ ht-degree: 92%
 
 1. 在 Adobe Mobile Services 中，建立使用應用程式連結的行銷連結:
 
-   a. Select the app from the Mobile Services home page, click **[!UICONTROL Acquisition]** > **[!UICONTROL Marketing Link Builder]**.
+   a. 從 Mobile Services 首頁中選取應用程式，按一下&#x200B;**[!UICONTROL 「贏取]** > **[!UICONTROL 行銷連結建立器」]**。
 
    b. 按一下&#x200B;**[!UICONTROL 新建]**。
 
@@ -137,7 +137,7 @@ ht-degree: 92%
 
    e. 若選取了&#x200B;**[!UICONTROL 使用通用連結或應用程式連結]**，便會顯示&#x200B;**[!UICONTROL 自訂路徑]**&#x200B;欄位。
 
-   這可讓使用者使用任何查詢參數，在網域之後定義URL路徑。 例如，如果您輸入， `my/app/link?os=6.0`您的完整行銷連結URL就會變 `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`成。
+   這可讓使用者使用任意查詢參數在網域後面定義 URL 路徑。舉例來說，如果您輸入 `my/app/link?os=6.0`，您的完整行銷連結 URL 就會變成 `https://[marketing link domain]/my/app/link?[AMS default query parameters]&os=6.0`。
 
    f. 按一下&#x200B;**[!UICONTROL 決策]**&#x200B;分頁標籤並設定決策樹。
 
