@@ -1,23 +1,23 @@
 ---
-description: 無法使用處理規則來設定產品變數。 在iOS 4.x SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
-seo-description: 無法使用處理規則來設定產品變數。 在iOS 4.x SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
+description: 無法使用處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
+seo-description: 無法使用處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 seo-title: 產品變數
 solution: Experience Cloud,Analytics
 title: 產品變數
 topic: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 
 # 產品變數 {#products-variable}
 
-無法使用處理規則來設定產品變數。 在iOS 4.x SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
+無法使用處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 
 若要設定 *`products`* 變數，請將內容資料索引鍵設為 `"&&products"`，並使用針對 *`products`* 變數定義的語法來設定值:
 
@@ -44,8 +44,8 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 [ADBMobile trackState:@"Order Confirmation" data:contextData]; 
 ```
 
-*`products`* 是直接在影像要求上設定的，而其他變數則設為內容資料.必須使用處理規則來映射所有上下文資料變數：
+*`products`* 是直接在影像要求上設定的，而其他變數則設為內容資料。必須使用處理規則對應所有內容資料變數：
 
 ![](assets/map-products.png)
 
-您不需要使用處理規則來 *`products`* 對應變數，因為變數是由SDK直接在影像要求上設定。
+您不必使用處理規則對應 *`products`* 變數，因為變數是由 SDK 直接在影像要求上設定。
