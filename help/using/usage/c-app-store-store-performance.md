@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 應用程式商店概述報表
 topic: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 84%
 
 ![](assets/app_store_metrics.png)
 
-您可以按一下任何度量來隱藏或顯示其對應的行。 若要檢視某一天的資料，請將滑鼠移到該日期上。
+您可以按一下任何量度來隱藏或顯示其對應的行。若要檢視某一天的資料，請將滑鼠移到該日期上。
 
 >[!IMPORTANT]
 >
@@ -50,32 +50,32 @@ ht-degree: 84%
 
 ## 下載收入 {#section_34F05998E8444544A1B507C1B852C4EE}
 
-此報告會顯示下載您的應用程式所產生的收入金額。
+此報表會顯示下載您的應用程式後所產生的收入金額。
 
 ## 應用程式內收入 {#section_58792ED9C4B54B7D836E30CF09E8E204}
 
-此報表會顯示使用您的應用程式在應用程式中購買所產生的收入金額。
+此報表會顯示使用您的應用程式進行應用程式內購買所產生的收入金額。
 
-## 依國家／地區的下載 {#section_10373CD28CA94BA5859DFDEED7D548C6}
+## 依國家/地區的下載次數 {#section_10373CD28CA94BA5859DFDEED7D548C6}
 
 此報表顯示依國家/地區分組的應用程式下載次數。
 
 ![](assets/country.png)
 
-若要顯示依日期每個國家/地區之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依國家/地區的下載次數]**。您可以將滑鼠指標暫留在日期上，以檢視一天的資料。
+若要顯示依日期每個國家/地區之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依國家/地區的下載次數]**。您可以將滑鼠移至日期上方，檢視當天的資料。
 
 ![](assets/downloads_by_country.png)
 
-## 依App Store的下載 {#section_F1CD1A3F0105469D879E4F280CE32484}
+## 依應用程式商店的下載次數 {#section_F1CD1A3F0105469D879E4F280CE32484}
 
 此報表顯示依應用程式商店分組的應用程式下載次數。
 
 ![](assets/app_store.png)
 
-若要顯示依日期每個應用程式商店分組之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依應用程式商店的下載次數]**。您可以將滑鼠指標暫留在日期上，以檢視該日的資料。
+若要顯示依日期每個應用程式商店分組之下載次數的圖形與圖表，請按一下&#x200B;**[!UICONTROL 依應用程式商店的下載次數]**。您可以將滑鼠移至日期上方，檢視當天的資料。
 
 ![](assets/app_store_downloads_detail.png)
 
-## 依名稱的應用程式內購買項目 {#section_D747A64F9F6449E0A02EF31D56C92F83}
+## 依名稱的應用程式內購買次數 {#section_D747A64F9F6449E0A02EF31D56C92F83}
 
 此報表依名稱顯示所有應用程式內的購買。
