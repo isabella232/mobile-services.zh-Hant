@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 概述報表
 topic: Reports,Metrics
 uuid: 5f7088af-4b25-4fe5-afda-4844597c78f9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 83%
 
 ![](assets/report_usage_overview.png)
 
-您可以按一下右上方的日曆圖示，變更報表的日期範圍。 您也可以建立跨越不同報表的嚴格篩選，以查看某區段在所有行動報表中的表現。如需建立嚴格篩選的詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
+按一下右上角的行事曆圖示，即可變更報表的日期範圍。您也可以建立跨越不同報表的嚴格篩選，以查看某區段在所有行動報表中的表現。如需建立嚴格篩選的詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。
 
 >[!TIP]
 >
