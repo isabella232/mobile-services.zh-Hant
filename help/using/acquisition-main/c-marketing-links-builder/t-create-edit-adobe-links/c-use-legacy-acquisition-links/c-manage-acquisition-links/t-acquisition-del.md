@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 刪除贏取連結
 topic: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 71%
 
 當您不再需要贏取連結，可以將其刪除。
 
-1. Click **[!UICONTROL Acquisition]** > **[!UICONTROL Manage Acquisition Links]**.
+1. 按一下&#x200B;**[!UICONTROL 「贏取]** > **[!UICONTROL 管理贏取連結」]**。
 1. 完成下列其中一項作業:
 
    * 選取一或多個贏取連結旁的核取方塊。
