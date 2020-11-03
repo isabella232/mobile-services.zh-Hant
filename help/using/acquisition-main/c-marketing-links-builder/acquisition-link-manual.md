@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 手動建立贏取連結
 topic: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 91%
 
 ![](assets/acquisition_url.png)
 
-此連結已設定為針對行動應用程式執行平台特定重新導向至Google Play商店或Apple App Store。 如果無法判斷目標，預設商店已設為Apple App Store。 安裝應用程式後，自訂內容索引鍵 `my.custom.key:test` 會附加至 Analytics 安裝點擊。
+系統會設定此連結來為行動應用程式執行 Google Play 商店或 Apple App Store 平台專屬重新導向。如果無法判別目的地，預設商店設定為 Apple App Store。安裝應用程式後，自訂內容索引鍵 `my.custom.key:test` 會附加至 Analytics 安裝點擊。
 
 若要手動建立連結，請使用下列 URL 格式:
 
