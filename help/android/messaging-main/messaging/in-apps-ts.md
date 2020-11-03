@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 應用程式內傳訊疑難排解
 topic: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 此資訊可協助您進行應用程式內傳訊疑難排解。
 
-如果您已完成應用程式內訊息的所有需求，但訊息未顯示，請檢查下列項目：
+如果您已符合應用程式內傳訊的所有需求，但訊息仍未顯示，請檢查下列項目：
 
 ## 應用程式中是使用最新設定和最新 SDK 嗎?
 
@@ -30,13 +30,13 @@ ht-degree: 94%
 
 您是否已更新資訊清單檔案，以定義全螢幕活動？
 
-## 我在Android中的本機通知訊息無法運作。
+## Android 中的本機通知訊息無法運作。
 
 請務必在資訊清單中宣告本機通知廣播接收器。如需詳細資訊，請參閱[應用程式內傳訊](/help/android/messaging-main/messaging/messaging.md)的&#x200B;*啟用應用程式內傳訊*&#x200B;中的步驟 2。
 
 ## 這是現時訊息嗎?
 
-若要確認您的訊息是否為現時，請在「管理應用程式內訊息」頁面的&#x200B;****「狀態」欄中，檢查訊息清單。
+若要確認您的訊息是否為現時，請在「管理應用程式內訊息」頁面的&#x200B;**[!UICONTROL 「狀態」]**&#x200B;欄中，檢查訊息清單。
 
 ## 查看對象標籤中的&#x200B;*顯示一次*、*一律顯示*、*離線顯示*&#x200B;設定。
 
@@ -44,7 +44,7 @@ ht-degree: 94%
 
 ## 如果使用啟動事件做為觸發器...
 
-啟動只會發生在新的工作階段。如需工作階段開始時間的詳細資訊，請參閱 `lifecycleTimeout`JSON 設定[中的 ](/help/android/configuration/json-config/json-config.md) 列。
+啟動只會發生在新的工作階段。如需工作階段開始時間的詳細資訊，請參閱 `lifecycleTimeout` 中的列 [JSON 設定](/help/android/configuration/json-config/json-config.md)。
 
 ## 我已從遠端更新訊息，但應用程式仍顯示舊訊息。
 
