@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 設定使用者的選擇狀態
 topic: Developer and implementation
 uuid: 44a09a25-93c6-4e1a-b69e-710018e8b6c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 84%
 
 * `setPrivacyStatus`方法。
 
-   使用此方法變更隱私權設定後，變更會是永久性的，直到使用此方法再次變更，或當您解除安裝並再次安裝應用程式時。
+   使用此方法變更隱私權設定後，變更會是永久性的，除非您使用此方法再次變更，或是您解除安裝應用程式並再次安裝。
 
-   有關這些方法的詳細資訊，請參 [閱配置方法](/help/ios/configuration/json-config/json-config.md)。
+   如需這些方法的詳細資訊，請參閱[設定方法](/help/ios/configuration/json-config/json-config.md)。
 
 以下是有關各個隱私權狀態的資訊:
 
