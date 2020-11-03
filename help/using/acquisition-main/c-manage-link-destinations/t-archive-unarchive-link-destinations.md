@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 管理連結目的地
 topic: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 94%
 
    * **編輯**
 
-      若要編輯現有的連結目的地，請按一下清單中的其名稱，然後編輯相關欄位。 如需詳細資訊，請參閱[建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
+      若要編輯現有的連結目的地，請在清單中按一下其名稱，然後編輯相關欄位。如需詳細資訊，請參閱[建立新的連結目的地](/help/using/acquisition-main/c-manage-link-destinations/t-create-new-app-deep-link-destination.md)。
 
       >[!IMPORTANT]
       >
