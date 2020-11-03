@@ -57,9 +57,8 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 >[!IMPORTANT]
 >
 >* 如果您是使用 4.14.0 版&#x200B;**之前**&#x200B;的 SDK，請參閱 [](https://developers.adobetarget.com/api/#input-parameters)https://developers.adobetarget.com/api/#input-parameters 以瞭解參數限制。
-   >
-   >
-* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱 [](https://developers.adobetarget.com/api/#batch-input-parameters)https://developers.adobetarget.com/api/#batch-input-parameters 以瞭解參數限制。
+>
+>* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱 [](https://developers.adobetarget.com/api/#batch-input-parameters)https://developers.adobetarget.com/api/#batch-input-parameters 以瞭解參數限制。
 
 
 * **loadRequest**
