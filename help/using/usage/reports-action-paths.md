@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 動作路徑報表
 topic: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -28,40 +28,40 @@ ht-degree: 67%
 
 ![](assets/action_paths.png)
 
-每個節點（形狀如方塊）代表使用者透過應用程式的路徑狀態。 例如，在上圖中，頂端節點代表啟動應用程式並從圖庫中挑選像片的使用者人數。
+每個節點 (形狀像方塊) 代表使用者在應用程式中通過路徑的一個狀態。例如，在上圖中，頂端節點代表啟動應用程式並從圖庫中挑選相片的使用者人數。
 
 若要顯示可用來修改圖表的選項，請按一下節點，然後選取&#x200B;**[!UICONTROL 焦點]**&#x200B;或&#x200B;**[!UICONTROL 展開]**。例如，按一下頂端節點中的 **[!UICONTROL PhotoPicked]** 狀態後會顯示&#x200B;**[!UICONTROL 「焦點」]**&#x200B;和&#x200B;**[!UICONTROL 「展開」]**&#x200B;圖示。
 
 ![](assets/action_paths_icons.png)
 
-To expand, click the **[!UICONTROL +]** icon. 此選項顯示進入或退出節點的其他路徑。 在下圖中，狀態1是啟動應用程式，狀態2是挑選像片（您先前展開的項目），狀態3包含使用者採取的不同路徑：
+若要展開，請按一下&#x200B;**[!UICONTROL 「+」]**&#x200B;圖示。此選項顯示進入或離開節點的其他路徑。在下圖中，狀態 1 代表正在啟動應用程式，狀態 2 代表正在挑選相片 (您先前展開的項目)，而狀態 3 則包含使用者選擇的不同路徑：
 
-* 選擇項目
+* 選取項目
 * 新增項目
 * 拖曳項目
 * 縮放項目
 
-展開狀態類似於漏斗。
+展開的狀態就像漏斗。
 
 ![動作路徑擴展](assets/action_paths_expand.png)
 
-若要隔離節點，並顯示進入和離開所選節點的路徑，請按一下 ![焦點圖示](assets/icon_focus.png) 圖示。在下圖中，使用者在選取像片之前 **已完成** 下列路徑：
+若要隔離節點，並顯示進入和離開所選節點的路徑，請按一下 ![焦點圖示](assets/icon_focus.png) 圖示。在下圖中，使用者在選取相片&#x200B;**之前**&#x200B;已完成下列路徑：
 
 * 旋轉項目
 * 縮放項目
 * 拖曳項目
 * 移除項目
 
-在選取像片的使用者中，選取像片後 **完成** :
+在選取相片的使用者中，使用者在選取相片&#x200B;**之後**&#x200B;完成下列路徑：
 
-* 選擇項目
+* 選取項目
 * 新增項目
 * 拖曳項目
 * 縮放項目
 
 ![動作路徑焦點](assets/action_paths_focus.png)
 
-您可以集中或展開多個節點，以取得使用者在應用程式中所採取路徑的詳細檢視。 例如:
+您可以聚焦或展開多個節點，詳細檢視使用者在應用程式中選擇的路徑。例如:
 
 ![動作多路徑](assets/action_paths_mult.png)
 
@@ -73,7 +73,7 @@ To expand, click the **[!UICONTROL +]** icon. 此選項顯示進入或退出節�
 
 * **[!UICONTROL 自訂]**
 
-   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表. 如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
+   您可以透過變更&#x200B;**[!UICONTROL 「顯示方式」]**&#x200B;選項、新增量度和篩選器以及新增其他系列 (量度) 等方式來自訂報表.如需詳細資訊，請參閱[自訂報表](/help/using/usage/reports-customize/reports-customize.md)。
 
 * **[!UICONTROL 篩選]**
 
