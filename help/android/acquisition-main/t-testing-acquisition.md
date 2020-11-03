@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 測試舊版贏取
 topic: Developer and implementation
 uuid: bb7ace96-68eb-4f43-b3cf-af80730b9cee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 74%
 
 以下資訊可協助您在 Android 裝置上往返舊版贏取促銷活動連結。
 
-如果行動應用程式尚未在Google Play中，您可以在建立促銷活動連結時選取任何行動應用程式作為目的地。 這只會影響贏取伺服器將您重新導向的應用程式 (在您點擊贏取連結後)，而不會影響測試贏取連結的能力。查詢字串參數會傳遞至 Google Play 商店，然後在安裝時傳遞至應用程式，作為促銷活動廣播的一部分。往返行動應用程式贏取測試需要模擬此廣播類型。
+如果行動應用程式尚未在 Google Play 上架，您可以選擇任一行動應用程式，作為建立促銷活動連結時的目的地。這只會影響贏取伺服器將您重新導向的應用程式 (在您點擊贏取連結後)，而不會影響測試贏取連結的能力。查詢字串參數會傳遞至 Google Play 商店，然後在安裝時傳遞至應用程式，作為促銷活動廣播的一部分。往返行動應用程式贏取測試需要模擬此廣播類型。
 
 應用程式必須是全新安裝，或資料已全部清除 (在&#x200B;**[!UICONTROL 設定]**&#x200B;中進行)，且每次執行測試時皆須如此。這樣即可確保應用程式首次啟動時，與促銷活動查詢字串參數關聯的初始生命週期量度可以順利傳送。
 
@@ -39,10 +39,10 @@ ht-degree: 74%
    1. 將接收器參考更新為應用程式中促銷活動追蹤接收器位置的參考。
    1. 將與 `utm_source`、`utm_medium`、`utm_term`、`utm_content` 及 `utm_campaign` 等關聯的值替換為適當的值。
 
-如果廣播成功，則會顯示類似下列的回應：
+如果廣播成功，系統會顯示類似以下回應：
 
 ```
 Broadcasting: Intent { act=com.android.vending.INSTALL_REFERRER cmp=com.example.analyticsecommtest/com.google.analytics.tracking.android.AnalyticsReceiver has extras) } Broadcast completed: result=0
 ```
 
-您也會看到傳送至Adobe資料收集伺服器的影像要求。 如果SDK等待在您在步驟1中設定的反向連結逾時的完整期間，而影像要求不包含促銷活動參數，則廣播失敗。
+您也會看到傳送至 Adobe 資料收集伺服器的影像要求。如果 SDK 等了您在步驟 1 中設定的反向連結逾時完整期間，且影像要求不包含行銷活動參數，廣播就失敗。
