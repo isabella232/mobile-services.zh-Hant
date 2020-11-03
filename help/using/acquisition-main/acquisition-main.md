@@ -1,24 +1,24 @@
 ---
-description: 行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可以建立一個連結，視需要將使用者路由至iOS、Android或其他平台。
+description: 行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可視需要建立一個連結，將使用者路由至 iOS、Android 或其他平台。
 keywords: mobile
-seo-description: 行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可以建立一個連結，視需要將使用者路由至iOS、Android或其他平台。
+seo-description: 行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可視需要建立一個連結，將使用者路由至 iOS、Android 或其他平台。
 seo-title: 贏取
 solution: Experience Cloud,Analytics
 title: 贏取
 topic: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
 # 贏取 {#acquisition}
 
-行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可以建立一個連結，視需要將使用者路由至iOS、Android或其他平台。
+行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可視需要建立一個連結，將使用者路由至 iOS、Android 或其他平台。
 
 ## 新版 Adobe Experience Cloud SDK
 
@@ -26,7 +26,7 @@ ht-degree: 84%
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
-* To get started, go to [Launch](https://launch.adobe.com/).
+* 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 >[!IMPORTANT]
