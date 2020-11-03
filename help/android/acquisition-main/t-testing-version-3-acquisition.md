@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 測試第 3 版贏取
 topic: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 85%
 
 >[!IMPORTANT]
 >
->第 3 版贏取會參照您在 Adobe Mobile Services 使用者介面中透過「贏取建立器」所建立的贏取連結。若要使用此功能，您必須升級至Experience Cloud Solutions 4.6.0或更新版本的Android SDK 4.x。
+>第 3 版贏取會參照您在 Adobe Mobile Services 使用者介面中透過「贏取建立器」所建立的贏取連結。若要使用此功能，您必須升級至 Experience Cloud 解決方案 4.6.0 或更新版本的 Android SDK 4.x。
 
-如果行動應用程式尚未在Google Play中，在建立促銷活動連結時，您可以選取任何行動應用程式作為目的地。 這只會影響您點擊贏取連結後，贏取伺服器將您重新導向所抵達的應用程式，不會影響測試連結的功能。查詢字串參數會傳遞至 Google Play 商店，然後在安裝時傳遞至應用程式，作為促銷活動廣播的一部分。往返行動應用程式贏取測試需要模擬此廣播類型。
+如果 Google Play 尚未提供行動應用程式，當您建立行銷活動連結時，您可以選取任何行動應用程式作為目的地。這只會影響您點擊贏取連結後，贏取伺服器將您重新導向所抵達的應用程式，不會影響測試連結的功能。查詢字串參數會傳遞至 Google Play 商店，然後在安裝時傳遞至應用程式，作為促銷活動廣播的一部分。往返行動應用程式贏取測試需要模擬此廣播類型。
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Broadcast completed: result=0`
 
 `"Analytics - Received referrer information(<referrer content>)"   "Analytics - Trying to fetch referrer data from (acquisition end url)"; "Analytics - Received Referrer Data(<A JSON Response>)"`
 
-如果您未看到上述記錄，請確認您已完成步驟6至12。
+若未看見前述記錄，請確認您已完成步驟 6 到 12。
 
 下表羅列可能錯誤的額外資訊：
 
@@ -107,20 +107,20 @@ Broadcast completed: result=0`
 | Analytics - Unable to parse response (*a JSON Response*). | JSON 字串的格式不正確。 |
 | Analytics - Unable to parse acquisition service response (no contextData parameter in response). | 回應中沒有 contextData 參數。 |
 | Analytics - Acquisition referrer data was not complete (no `a.referrer.campaign.name` in context data), ignoring. | contextData 中未含有 `a.referrer.campaign.name`。 |
-| Analytics - Acquisition referrer timed out. | 無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確保在安裝應用程式之前已開啟贏取連結。 |
+| Analytics - Acquisition referrer timed out. | 無法於 `referrerTimeout` 所定義的時間內取得回應。請增加值，然後再試一次。您也應確定在開啟贏取連結後才安裝應用程式的。 |
 
 請記住以下資訊:
 
-* 從應用程式傳送的點擊可以使用HTTP監控工具來驗證贏取歸因，以監控。
+* 使用 HTTP 監控工具可監控從應用程式傳送的點擊，以便確認贏取屬性。
 * 如需有關如何廣播 `INSTALL_REFERRER` 的詳細資訊，請參閱 Google Developers Guide (Google 開發人員指南) 中的 [Testing Google Play Campaign Measurement](https://developers.google.com/analytics/solutions/testing-play-campaigns) (測試 Google Play 促銷活動測量)。
 
-* 已針對Android 4.8.2的贏取發佈錯誤修正。
+* 已針對 Android 4.8.2 的贏取發行錯誤修正。
 
-   測試前，請將SDK升級至最新版本。
+   測試之前，請先將 SDK 升級至最新版本。
 
 * 您可以使用隨附的 `acquisitionTest.jar` Java 工具來協助您取得唯一 ID 和廣播安裝反向連結，如此將可協助您取得步驟 3 至步驟 12 中的資訊。
 
-   **安裝Java工具**
+   **安裝 Java 工具**
 
 安裝 Java 工具：
 
@@ -128,7 +128,7 @@ Broadcast completed: result=0`
 
 1. 解壓縮 .jar 檔案。
 
-   可以在命令行上運行檔案。
+   您可以在命令列上執行該檔案。
 
    例如:
 
