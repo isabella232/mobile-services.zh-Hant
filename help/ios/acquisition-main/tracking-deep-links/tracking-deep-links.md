@@ -5,11 +5,11 @@ seo-title: 追蹤深層連結
 solution: Experience Cloud,Analytics
 title: 追蹤深層連結
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
    如需詳細資訊，請參閱[應用程式間通訊](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10)或[支援通用連結](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)
 
-1. 在openURL中追蹤深層連結。
+1. 在 openURL 中追蹤深層連結。
 
    以下為追蹤深層連結的範例:
 
