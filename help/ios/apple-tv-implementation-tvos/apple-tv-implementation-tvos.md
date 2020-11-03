@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 使用 tvOS 實施 Apple TV
 topic: Developer and implementation
 uuid: d1571ea2-a5de-4b96-a527-72abbf51fab8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 90%
 
 ## 概述
 
-有了Apple TV，您現在可以建立應用程式，以在原生tvOS環境中執行。 您可以在iOS中使用數個架構來建立原生應用程式，也可以使用XML範本和JavaScript來建立應用程式。
+透過 Apple TV，您現在可以建立應用程式以在原生 tvOS 環境中執行。在 iOS 提供的數個架構中，您可以使用任一架構來建立原生應用程式，或使用 XML 範本和 JavaScript 建立您的應用程式。
 
 >[!TIP]
 >
