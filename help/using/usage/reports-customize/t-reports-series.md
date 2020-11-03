@@ -7,11 +7,11 @@ solution: Experience Cloud,Analytics
 title: 新增系列 (量度) 至報表
 topic: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 90%
 
 這些指示適用於任何報表，在此例中，我們以自訂&#x200B;**[!UICONTROL 使用者與工作階段]**&#x200B;報表進行示範。
 
-1. Open your app and click **[!UICONTROL Usage]** > **[!UICONTROL Users &amp; Sessions]**.
+1. 開啟應用程式，然後依序按一下&#x200B;**[!UICONTROL 「使用狀況]** > **[!UICONTROL 使用者和工作階段」]**。
 
    ![步驟結果](assets/customize1.png)
 
-   此報告提供應用程式使用者的完整加班檢視。 不過，我們想新增系列來報告應用程式當機。
+   此報表可提供應用程式使用者隨著時間改變的完整檢視。不過，我們想新增系列來報告應用程式當機。
 
 1. 按一下&#x200B;**[!UICONTROL 自訂]**。
 
