@@ -1,17 +1,17 @@
 ---
-description: 您可以建立和管理興趣點，這可讓您定義可用於關聯目的的地理位置、使用應用程式內訊息進行定位等。 當點擊以興趣點傳送時，興趣點會附加至點擊。
+description: 您可以建立和管理地標，藉以定義地理位置，以便用於關聯、使用應用程式內訊息的目標定位等作業。在地標傳送點擊時，地標就會附加至該點擊。
 keywords: mobile
-seo-description: 您可以建立和管理興趣點，這可讓您定義可用於關聯目的的地理位置、使用應用程式內訊息進行定位等。 當點擊以興趣點傳送時，興趣點會附加至點擊。
+seo-description: 您可以建立和管理地標，藉以定義地理位置，以便用於關聯、使用應用程式內訊息的目標定位等作業。在地標傳送點擊時，地標就會附加至該點擊。
 seo-title: 管理地標
 solution: Experience Cloud,Analytics
 title: 管理地標
 topic: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 82%
 若要使用「位置」，請完成下列作業:
 
 1. 按一下應用程式的名稱，前往其「管理應用程式設定」頁面。
-1. Click **[!UICONTROL Location]** > **[!UICONTROL Manage Points of Interest]**.
+1. 按一下&#x200B;**[!UICONTROL 「位置]** > **[!UICONTROL 管理地標」]**。
 
    ![步驟結果](assets/poi.png)
 
