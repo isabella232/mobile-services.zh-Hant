@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: ht
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
-source-wordcount: '422'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 89%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
 # 發行說明 {#release-notes}
 
 以下是適用於 Experience Cloud 解決方案之 iOS SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
+
+**2020年11月4日：4.20.0版**
+
+* 訪客ID服務——在啟用／停用廣告追蹤後呼叫setAdvertisingIdentifier時，新增device_conconnence狀態參數。
+* Analytics —— 已修正當iAd.framework連結且裝置已啟用「有限廣告追蹤」時，會延遲Analytics點擊在安裝上傳送的錯誤。
 
 **2020 年 7 月 16 日：4.19.3 版**
 
