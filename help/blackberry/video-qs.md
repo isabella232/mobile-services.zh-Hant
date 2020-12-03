@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 60%
+ht-degree: 66%
 
 ---
 
@@ -28,8 +28,8 @@ For more information about Video measurement, see the [Measuring audio and video
    **（可選）** 「自訂分析」變數提供視訊路徑資訊。
 
    * 變數名稱：eVar
-      * 預設過期時間: 造訪
-      * 自訂分析（s.prop，用於視訊路徑）
+      * 預設過期時間：造訪
+      * 自訂分析 (s.prop，用於視訊路徑)
 
 * **a.media.name**
 
@@ -40,49 +40,49 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.media.segment**
 
-   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video. 此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。
+   (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。
 
    For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. 預設的視訊資料收集方法會收集視訊開始（播放）、區段開始和視訊結束（停止）點的資料。
 
-   Analytics會在訪客開始檢視區段時計算第一個區段檢視。 當區段開始時，後續區段會檢視。
+   當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
 
    * 變數類型: eVar
-   * 預設過期時間: 頁面檢視
+   * 預設過期時間：頁面檢視
 
 * **a.contentType**
 
    收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會指派內容類型為「視訊」。 此變數不需專門保留供視訊追蹤使用。 使用相同變數擁有其他內容報告內容類型可讓您分析不同內容類型的訪客分佈。 舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點，「內容類型」可讓您識別視訊訪客，並因此計算視訊轉換率。
 
    * 變數類型: eVar
-   * 預設過期時間: 頁面檢視
+   * 預設過期時間：頁面檢視
 
 * **a.media.timePlayed**
 
    計算自上次資料收集程序 (影像請求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
    * 變數類型: 事件
-   * 類型: 計數器
+   * 類型：計數器
 
 * **a.media.view**
 
-   指出有訪客檢視了視訊的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
+   指出有訪客檢視了視訊的某部分。然而，此量度不會針對訪客所檢視的視訊，提供訪客檢視多少內容、檢視視訊哪一部分的相關資訊。
 
    * 變數類型: 事件
-   * 類型: 計數器
+   * 類型：計數器
 
 * **a.media.segmentView**
 
-   指出有訪客檢視了視訊區段的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。
+   指出有訪客檢視了視訊區段的某部分。然而，此量度不會針對訪客所檢視的視訊，提供訪客檢視多少內容、檢視視訊哪一部分的相關資訊。
 
    * 變數類型: 事件
-   * 類型: 計數器
+   * 類型：計數器
 
 * **a .media.complete**
 
    指出使用者已檢視完整的視訊。預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。針對即時視訊和沒有已定義結尾的其他資料流，您可以指定測量完成的自訂點。例如，在特定檢視次數之後。
 
    * 變數類型: 事件
-   * 類型: 計數器
+   * 類型：計數器
 
 ## 追蹤播放器事件 {#section_C7F43AECBC0D425390F7FCDF3035B65D}
 
@@ -94,13 +94,13 @@ For more information about Video measurement, see the [Measuring audio and video
 
    開啟視訊以進行追蹤。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       void open(QString name, double length, QString playerName, QString playerID = QString()); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
         ADBMediaAnalytics::sharedInstance()->open("name", 10.0, "playerName", "playerID"); 
@@ -126,7 +126,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
    Closes the media item named *`name`*.
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       void close(QString name);
@@ -142,13 +142,13 @@ For more information about Video measurement, see the [Measuring audio and video
 
    Plays the media item named *`name`* at the given *`offset`* (in seconds).
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       void play(QString name, double offset);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       ADBMediaAnalytics::sharedInstance()->play("name", 0); 
@@ -158,7 +158,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
    Manually mark the media item as complete at the *`offset`* provided (in seconds).
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       void complete(QString name, double offset);
@@ -174,13 +174,13 @@ For more information about Video measurement, see the [Measuring audio and video
 
    通知媒體模組，視訊已在指定的&#x200B;*偏移處*&#x200B;停止或暫停。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       stop(QString name, double offset);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       ADBMediaAnalytics::sharedInstance()->stop("name", 0);
@@ -190,7 +190,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
    通知媒體模組，媒體項目已被點按。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```cpp
       void click(QString name, double offset);
@@ -206,13 +206,13 @@ For more information about Video measurement, see the [Measuring audio and video
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       track(QString name, QHash<QString, QString> additionalData = QHash<QString, QString>()); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       ADBMediaAnalytics::sharedInstance()->track("name", null);
