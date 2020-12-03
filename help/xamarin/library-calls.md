@@ -2,20 +2,20 @@
 description: 協助您從指令碼呼叫外掛程式的資訊。
 keywords: Xamarin
 seo-description: 協助您從指令碼呼叫外掛程式的資訊。
-seo-title: 呼叫資料庫
+seo-title: 對程式庫進行呼叫
 solution: Experience Cloud
-title: 呼叫資料庫
+title: 對程式庫進行呼叫
 uuid: a480201a-4090-4662-8dd8-56f62144cd93
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# 呼叫資料庫{#making-calls-to-the-library}
+# 對程式庫進行呼叫{#making-calls-to-the-library}
 
 這項資訊可協助您從指令碼呼叫外掛程式。
 
