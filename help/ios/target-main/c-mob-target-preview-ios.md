@@ -4,9 +4,9 @@ seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對
 seo-title: 在 iOS 裝置上預覽目標
 title: 在 iOS 裝置上預覽目標
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ ht-degree: 100%
        + (void) targetPreviewRestartDeepLink:(nullable NSString *)callbackURL;
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
