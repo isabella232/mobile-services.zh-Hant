@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 匯入或匯出贏取連結
 topic: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 100%
 
