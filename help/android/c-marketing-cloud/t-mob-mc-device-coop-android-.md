@@ -4,9 +4,9 @@ seo-description: 若要開始使用 Experience Cloud Device Co-op，請洽詢您
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 7bb8a19c-4b80-4911-879d-f9941baa3b62
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 * 預設值為 `false`。
 * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
 
-若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶申請封鎖名單標幟。沒有啟用可這些標幟的自助式路徑。
+若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶申請封鎖名單標幟。沒有自助式路徑可供啟用這些標幟。
 
 請記住以下資訊：
 
