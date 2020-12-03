@@ -1,18 +1,21 @@
 ---
-description: 在 Xamarin 應用程式中使用的類別和列舉清單。
-seo-description: 在 Xamarin 應用程式中使用的類別和列舉清單。
-seo-title: 類別與範圍
-title: 類別與範圍
+description: Xamarin應用程式中使用的類別和列舉清單。
+seo-description: Xamarin應用程式中使用的類別和列舉清單。
+seo-title: 類別和列舉
+title: 類別和列舉
 uuid: 410d27ee-ce2b-4183-971e-39a7031d1bd5
 translation-type: tm+mt
 source-git-commit: df4ea2c4002611c72009cf69598cbbb74b5c15c4
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 24%
 
 ---
 
 
-# Classes and enums{#classes-and-enums}
+# 類別和列舉{#classes-and-enums}
 
-在 Xamarin 應用程式中使用的類別和列舉清單。
+Xamarin應用程式中使用的類別和列舉清單。
 
 ## 類別 {#section_E28D6156EB0F4A84AAA7749DF7D3E193}
 
