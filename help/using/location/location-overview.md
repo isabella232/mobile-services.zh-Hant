@@ -1,11 +1,14 @@
 ---
 description: 「位置」區段的概述。
-keywords: 行動
+keywords: mobile
 seo-description: 「位置」區段的概述。
 seo-title: 位置概述
 title: 位置概述
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 41aa0a994bd0ad1e6f5421cf368d78b616ff9170
 
 ## 新版 Adobe Experience Cloud SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 >[!IMPORTANT]
 >
