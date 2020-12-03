@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '66'
-ht-degree: 7%
+ht-degree: 22%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 7%
 
 ## 其他資訊
 
-+ [適用於Experience Cloud解決方案4.x SDK的Windows Visual Studio擴充功能](/help/windows-appstore/extensions/win-vse-4x.md)
++ [適用於 Experience Cloud 解決方案 4.x SDK 的 Windows Visual Studio 延伸模組](/help/windows-appstore/extensions/win-vse-4x.md)
