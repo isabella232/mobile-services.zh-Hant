@@ -2,9 +2,9 @@
 description: Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 keywords: Xamarin
 seo-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
-seo-title: iOS方法
+seo-title: iOS 方法
 solution: Experience Cloud
-title: iOS方法
+title: iOS 方法
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
@@ -15,7 +15,7 @@ ht-degree: 70%
 ---
 
 
-# iOS方法{#ios-methods}
+# iOS 方法{#ios-methods}
 
 Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
@@ -622,7 +622,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **AudienceSetDpidAndDpuuid**
 
-   設定dpid和dpuuid。 如果已設定dpid和dpuuid，則會隨每個訊號傳送。
+   設定dpid和dpuuid。 
 
    * 此方法的語法如下：
 
