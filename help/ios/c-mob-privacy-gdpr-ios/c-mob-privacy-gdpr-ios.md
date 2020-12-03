@@ -4,8 +4,11 @@ seo-description: Experience Cloud Mobile SDK 為控制器提供可配合一般�
 seo-title: 隱私權與一般資料保護規範
 title: 隱私權與一般資料保護規範
 uuid: 69bb82de-1993-440c-a1b0-8d37919b48b6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b690ec677cf5aedfb2673b707f82716af1851124
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +23,7 @@ Experience Cloud Mobile SDK 為控制器提供可配合一般資料保護規範 
 
 ## 新版 Adobe Experience Platform Mobile SDK
 
-在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎? 按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
+在尋找 Adobe Experience Platform Mobile SDK 的相關資訊和文件嗎？按一下[這裡](https://aep-sdks.gitbook.io/docs/)以取得最新文件。
 
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
@@ -29,9 +32,9 @@ Experience Cloud Mobile SDK 為控制器提供可配合一般資料保護規範 
 
 ## 概述
 
-當 Adobe 提供軟體和服務給企業時，Adobe 為了提供這些服務，會以資料處理者的角色處理和儲存任何個人資料。身為資料處理者，Adobe 處理個人資料時，須遵循貴公司的允許和指示 (例如，依照您與 Adobe 合約中的規定)。
+當Adobe為企業提供軟體和服務時，Adobe會當成資料處理者，處理和儲存任何個人資料，做為提供這些服務的一部分。 身為資料處理者，Adobe會根據您公司的許可和指示（例如，如您與Adobe的合約所載）處理個人資料。
 
-身為資料控管者，您可以使用 Adobe Mobile Services SDK 支援來自行動應用程式的 GDPR 擷取和刪除請求。
+身為資料掌控者，您可以使用Adobe Mobile Services SDK來支援GDPR擷取和刪除行動應用程式的要求。
 
 對於行動應用程式的 Adobe Mobile SDK 部分，您可以使用下列設定和方法:
 
@@ -43,10 +46,11 @@ Experience Cloud Mobile SDK 為控制器提供可配合一般資料保護規範 
 
    * `privacyDefault`
    * `setPrivacyStatus`
+
    如需詳細資訊，請參閱[設定使用者的選擇狀態](/help/ios/c-mob-privacy-gdpr-ios/privacy.md)。
 
 ## 其他資訊 {#section_7C7124C50D85469C8C8714533FB1A37D}
 
-* 如需 GDPR 的詳細資訊，請參閱 [GDPR 和您的業務](https://www.adobe.com/tw/privacy/general-data-protection-regulation.html)。
-* 若要查看 GDPR API 文件，請前往[一般資料保護規範 API](https://adobe.io/apis/cloudplatform/gdpr.html)。
+* 如需有關GDPR的詳細資訊，請參 [閱GDPR和您的業務](https://www.adobe.com/tw/privacy/general-data-protection-regulation.html)。
+* To see the GDPR API documentation, go to [General Data Protection Regulation API](https://adobe.io/apis/cloudplatform/gdpr.html).
 
