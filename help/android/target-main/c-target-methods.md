@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 適用於 Android 的 Target 方法
 topic: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 100%
 
@@ -57,8 +57,9 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
 >[!IMPORTANT]
 >
 >* 如果您是使用 4.14.0 版&#x200B;**之前**&#x200B;的 SDK，請參閱 [](https://developers.adobetarget.com/api/#input-parameters)https://developers.adobetarget.com/api/#input-parameters 以瞭解參數限制。
->
->* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱 [](https://developers.adobetarget.com/api/#batch-input-parameters)https://developers.adobetarget.com/api/#batch-input-parameters 以瞭解參數限制。
+   >
+   >
+* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱 [](https://developers.adobetarget.com/api/#batch-input-parameters)https://developers.adobetarget.com/api/#batch-input-parameters 以瞭解參數限制。
 
 
 * **loadRequest**
