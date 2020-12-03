@@ -4,8 +4,11 @@ seo-description: 虛擬報表套裝 (VRS) 是透過將一個或多個區段定�
 seo-title: 虛擬報表套裝
 title: 虛擬報表套裝
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 77%
 
 ---
 
@@ -17,12 +20,12 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 使用 VRS 的應用程式與使用一般報表套裝的應用程式功能相同，只有管理下列功能的方式有所差異:
 
 * 處理規則
-* evars/props/listvars/事件
+* evars/props/listvars/events
 * 啟用時間戳記的選項
-* 維度旗標 (生命週期、位置等等)
-* 分類
+* 維度標幟（生命週期、位置等）
+* Classifications
 
-這些值在上層報表套裝中受到管理，並會與屬於同一個上層報表套裝的 VRS 共用。
+這些值會在父報表套裝中管理，並與屬於相同父報表套裝的VRS共用。
 
 下列是可以在 Adobe Mobile Services 使用者介面存取的區域，不受上層報表套裝所影響:
 
@@ -35,9 +38,9 @@ source-git-commit: 814c99695f538160ae28484ca8e2a92f5b24bb1a
 
 VRS 可協助您完成下列作業:
 
-* 限制資料存取權
+* 限制資料存取
 
-   一家跨國公司的應用程式會將資料傳送至所有地理位置的報表套裝，但是，這家公司想要限制某一地區的商務使用者，讓他們無法檢視另一地區的資料。該公司的管理員可以建立 VRS，依地區將使用者區隔開來，並只向管理該地區的商務使用者授與 VRS 的權限。
+   跨國公司有應用程式，可將資料傳送至所有地理位置的報表套裝。 但是，這家公司想要限制某一地區的商務使用者，讓他們無法檢視另一地區的資料。該公司的管理員可以建立 VRS，依地區將使用者區隔開來，並只向管理該地區的商務使用者授與 VRS 的權限。
 
    這種限制方式能避免商務使用者檢視與其在所地區無關的資料。舉例來說，位於 EMEA 的商務使用者不需要看到 APAC 地區的資料。
 
@@ -55,13 +58,13 @@ VRS 可協助您完成下列作業:
 
 每個 VRS 都有唯一的 ID。若要在 Adobe Mobile Services 使用者介面中檢視上層報表套裝 ID，請在「管理應用程式設定」頁面的&#x200B;**[!UICONTROL 應用程式資訊]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 更多詳情]**。
 
-在 Adobe Mobile Services UI 中，您可以使用 VRS 針對組織中的特定群組建立應用程式和區段資料。舉例來說，位於西班牙的商務使用者無法看到與日本商務使用者相關的資料。
+在Adobe Mobile Services UI中，您可以使用VRS來建立應用程式，並將資料分段至組織中的特定群組。 例如，這樣，西班牙的商業使用者就看不到與日本商業使用者相關的資料。
 
 >[!TIP]
 >
 >您無法修改從上層報表套裝繼承的值。
 
-VRS 是附於上層報表套裝的伺服器端區段定義，因此您無法對 VRS 執行資料收集，因為 SDK 只會傳送點擊至上層報表套裝，VRS 則反過來記錄點擊。
+VRS是附加至父報表套裝的伺服器端區段定義。 因此，您無法對VRS執行資料收集，因為SDK只會傳送點擊至父報表套裝，而父報表套裝會記錄點擊。
 
 ## Adobe Mobile Services 的虛擬報表套裝與資料收集 {#section_8ED8FBA5B44044D9ABC2151A39C577D4}
 
@@ -71,7 +74,7 @@ VRS 是附於上層報表套裝的伺服器端區段定義，因此您無法對 
 >
 >在 Mobile Services 使用者介面中，推送認證會附加於應用程式層級。
 
-若要確定您是否正確傳送推送訊息，請務必正確定義對象區段。如需詳細資訊，請參閱[對象: 定義和設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
+若要確保正確傳送推播訊息，必須正確定義對象區段。 For more information, see [Audience: Define and Configure Audience Segments for Push Messages](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## 瞭解時區 {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -79,11 +82,11 @@ VRS 是附於上層報表套裝的伺服器端區段定義，因此您無法對 
 
 ## 在 Mobile Services 使用者介面中選取虛擬報表套裝 {#section_3212D0FC01FD43DCAF30FBAA354CD6E4}
 
-若要在建立應用程式時使用 VRS，請在&#x200B;**「應用程式資訊」頁面的「報表套裝」**&#x200B;下拉式清單中選取 VRS。該清單含有上層和虛擬報表套裝。
+若要在建立應用程式時使用 VRS，請在&#x200B;**[!UICONTROL 「應用程式資訊」頁面的]**「報表套裝」下拉式清單中選取 VRS。該清單含有上層和虛擬報表套裝。
 
 >[!IMPORTANT]
 >
->若要從清單中選取 VRS，請找到帶有藍點的選項和 `vrs_` *`<company_name>`* `_` *`<unique name>`* 命名慣例。
+>若要從清單中選取 VRS，請找到帶有藍點的選項和 `vrs_` *`<company_name>`*`_`*`<unique name>`*   命名慣例。
 
 ## 虛擬報表套裝屬性 {#section_20ECE6243F664C4FB4347ADB4FF0458A}
 
@@ -93,7 +96,7 @@ VRS 是附於上層報表套裝的伺服器端區段定義，因此您無法對 
 >
 >唯讀屬性繼承自上層報表套裝。
 
-| 屬性 | 繼承自上層報表套裝 | 可編輯? | 附註 |
+| 屬性 | 繼承自父報表套裝 | 可編輯？ | 附註 |
 |--- |--- |--- |--- |
 | `target.clientCode` | 無 | 是 |  |
 | `target.timeout` | 無 | 是 |  |
@@ -107,10 +110,10 @@ VRS 是附於上層報表套裝的伺服器端區段定義，因此您無法對 
 | `analytics.ssl` | 無 | 是 |  |
 | `analytics.offlineEnabled` | 是 |  |  |
 | `analytics.charset` | 是 | 無 |  |
-| `analytics.lifecycleTimeout` | 無 | 是 | 如果使用者不希望資料不一致，則應為上層報表套裝。 |
+| `analytics.lifecycleTimeout` | 無 | 是 | 如果使用者不希望其資料不一致，則應為父報表套裝。 |
 | `analytics.privacyDefault` | 無 | 是 |  |
 | `analytics.batchLimit` | 無 | 是 |  |
-| `analytics.timezone` | 是 | 是，在您首次建立應用程式時。 | 此時區屬性用於傳送資料至 Adobe Analytics，而且與 VRS 建立時設定的時區屬性不同。 |
+| `analytics.timezone` | 是 | 是的，當您第一次建立應用程式時。 | 此時區屬性用來傳送資料至Adobe Analytics，與建立VRS時所設定的時區屬性不同。 |
 | `analytics.timezoneOffset` | 是 | 無 |  |
 | `analytics.referrerTimeout` | 無 | 是 |  |
 | `analytics.backdateSessionInfo` | 是 | 是 |  |
