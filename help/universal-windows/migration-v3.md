@@ -1,16 +1,16 @@
 ---
 description: 本節說明如何從舊版Windows行動SDK的3.x版移轉至Experience Cloud解決方案適用的Universal Windows Platform 4.x SDK。
 seo-description: 本節說明如何從舊版Windows行動SDK的3.x版移轉至Experience Cloud解決方案適用的Universal Windows Platform 4.x SDK。
-seo-title: 移轉至4.x
+seo-title: 移轉至 4.x
 solution: Experience Cloud,Analytics
-title: 移轉至4.x
+title: 移轉至 4.x
 topic: Developer and implementation
 uuid: bdd6c5cd-3892-4e99-b69e-77105ad66e25
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 14%
+ht-degree: 26%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 14%
 | reportSuiteIDs | &quot;rsids&quot; |
 | trackingServer | &quot;server&quot; |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;貨幣&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
 | setOfflineHitLimit | 移除，不再使用。 |
 | linkTrackVars | 移除，不再使用。 |
@@ -85,13 +85,13 @@ The `contextData` parameter for both of these methods contains name-value pairs 
 
 ### 事件、Prop、eVar
 
-如果您已檢視過 [SDK方法](/help/universal-windows/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承者和清單。 在第4版中，您無法再直接在應用程式中指派這些類型的變數。 SDK會改用上下文資料和處理規則將應用程式資料對應至Analytics變數以進行報告。
+如果您已檢視過 [SDK方法](/help/universal-windows/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承者和清單。 在第4版中，您無法再直接在應用程式中指派這些類型的變數。 SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
-處理規則提供下列優點：
+處理規則具備以下優點：
 
-* 您可以變更資料對應，毋需送出更新至App Store。
-* 您可以對資料使用有意義的名稱，而不是設定報表套裝專屬的變數。
-* 傳送額外資料的影響很小。 這些值在使用處理規則對應之前，不會出現在報表中。
+* 您可以直接變更資料對應，而無須將更新提交至 App Store。
+* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
+* 對傳送額外資料的影響極小。這些值在使用處理規則對應之前，不會出現在報表中。
 
 如需詳細資訊，請參閱 *Analytics總覽中的* 「處理 [規則」區段](/help/universal-windows/analytics/analytics.md)。
 
