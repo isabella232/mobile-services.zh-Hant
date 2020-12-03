@@ -1,9 +1,9 @@
 ---
 description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 seo-description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
-seo-title: 產品變數
+seo-title: Products 變數
 solution: Experience Cloud,Analytics
-title: 產品變數
+title: Products 變數
 topic: Developer and implementation
 uuid: 607983d6-48ac-4274-bfc8-b1ca4e5dad1b
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 7%
 ---
 
 
-# 產品變數 {#products-variable}
+# Products 變數 {#products-variable}
 
 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 
@@ -49,7 +49,7 @@ The *`products`* is set directly on the image request, and the other variables a
 
 ![](assets/products-procrules.png)
 
-您不需要使用處理規 *`products`* 則來對應變數，因為它是由SDK直接在影像要求上設定。
+You do not need to map the *`products`* variable using processing rules since it is set directly on the image request by the SDK.
 
 ## 產品變數及其包含的銷售 eVar 與產品專屬事件 {#section_685D53AD3D064F9A8E225F995A9BA545}
 
