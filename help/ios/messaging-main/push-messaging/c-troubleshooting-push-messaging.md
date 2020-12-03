@@ -7,9 +7,9 @@ solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
 topic: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 100%
 
@@ -39,8 +39,9 @@ ht-degree: 100%
    >推送服務無法保證訊息一定會傳送出去。如需服務的可靠性詳細資訊，請參閱適當文件。
    >
    >* **APNS**：[服務品質](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**：[訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options)
+      >
+      >
+   * **GCM**：[訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## 我要如何更新 Apple 推播服務憑證？
