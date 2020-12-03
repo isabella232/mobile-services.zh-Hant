@@ -1,18 +1,21 @@
 ---
-description: 您只須替換 .xml 檔案，即可在 TVML/TVJS 應用程式中充分利用 Adobe Target。實際做法是使用自訂的 ADBTarget XML 元素，便可指定您的頁面中要由 Target 內容替換的區域。
-seo-description: 您只須替換 .xml 檔案，即可在 TVML/TVJS 應用程式中充分利用 Adobe Target。實際做法是使用自訂的 ADBTarget XML 元素，便可指定您的頁面中要由 Target 內容替換的區域。
+description: 您可以直接取代。xml檔案，在TVML/TVJS應用程式中運用Adobe Target。 使用自訂ADBTarget XML元素，指定要由Target內容取代的頁面區域。
+seo-description: 您可以直接取代。xml檔案，在TVML/TVJS應用程式中運用Adobe Target。 使用自訂ADBTarget XML元素，指定要由Target內容取代的頁面區域。
 seo-title: 適用於 TVML/TVJS 的 Adobe Target
 title: 適用於 TVML/TVJS 的 Adobe Target
 uuid: afd5a583-5266-43f2-8cb0-0ace89c53a57
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 70%
 
 ---
 
 
 # 適用於 TVML/TVJS 的 Adobe Target{#adobe-target-for-tvml-tvjs}
 
-您只須替換 .xml 檔案，即可在 TVML/TVJS 應用程式中充分利用 Adobe Target。實際做法是使用自訂的 ADBTarget XML 元素，便可指定您的頁面中要由 Target 內容替換的區域。
+您可以直接取代。xml檔案，在TVML/TVJS應用程式中運用Adobe Target。 使用自訂ADBTarget XML元素，指定要由Target內容取代的頁面區域。
 
 >[!IMPORTANT]
 >
@@ -111,7 +114,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
 
 #### 設定 landingPage.xml.js
 
-* 以下為 landingPage.xml.js 的設定:
+* 以下是landingPage.xml.js的設定：
 
    ```js
    <alertTemplate> 
@@ -122,7 +125,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    </alertTemplate> 
    ```
 
-* 如果向 Target 發出的要求成功，且傳回您的選件內容，則您的頁面結果如下:
+* 如果向Target的請求成功，並傳回您的選件內容，則您的頁面會產生：
 
    ```objective-c
    <alertTemplate> 
@@ -131,7 +134,7 @@ source-git-commit: 46a0b8e0087c65880f46545a78f74d5985e36cdc
    </alertTemplate>
    ```
 
-* 如果無法連線至 Target 伺服器，或要求逾時，則您的頁面結果如下:
+* 如果無法到達Target伺服器或請求逾時，您的頁面會產生：
 
    ```objective-c
    <alertTemplate> 
