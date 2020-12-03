@@ -4,8 +4,11 @@ seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對
 seo-title: 在 Android 裝置上預覽目標
 title: 在 Android 裝置上預覽目標
 uuid: f3c82d64-009c-4929-a5e6-3677b2977889
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 87%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
 
-如需設定與使用目標預覽功能的詳細資訊，請前往[目標行動預覽](https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/mobile-apps/target-mobile-preview.html)。
+For more information on how to set up and use Target Preview, go to [Target Mobile Preview](https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/mobile-apps/target-mobile-preview.html).
 
 >[!IMPORTANT]
 >
@@ -22,15 +25,15 @@ source-git-commit: 83e6968efb0ed1b4ef504286c6cb2e8e4d2eaf94
 
 * **setPreviewRestartDeeplink**
 
-   設定應用程式深層連結，只要在預覽模式中套用預覽選項，該深層連結就會觸發。
+   設定在「預覽」模式中套用預覽選取範圍時，會因此觸發的應用程式深層連結。
 
-   * 以下是此方法的語法:
+   * 此方法的語法如下：
 
       ```java
       public static void setPreviewRestartDeeplink(String deeplink);
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```java
       Target.setPreviewRestartDeeplink(“myapp://myhost”); 
