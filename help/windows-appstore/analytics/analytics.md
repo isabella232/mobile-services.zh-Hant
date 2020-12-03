@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 11%
+ht-degree: 20%
 
 ---
 
@@ -67,7 +67,7 @@ app.oncheckpoint = function (args) {
 }
 ```
 
-### App.xaml.cs中的C&#35;
+### App.xaml.cs中的C#
 
 ```js
 public App() 
@@ -131,13 +131,13 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 ## 事件、Prop 以及 eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
 
-如果您已檢視過 [ADBMobile類別和方法參考](/help/windows-appstore/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承和清單。 在第4版中，您無法再直接在應用程式中指派這些類型的變數。 SDK會改用上下文資料和處理規則將應用程式資料對應至Analytics變數以進行報告。
+如果您已檢視過 [ADBMobile類別和方法參考](/help/windows-appstore/c-configuration/methods.md)，您可能會想知道在何處設定事件、eVar、prop、繼承和清單。 在第4版中，您無法再直接在應用程式中指派這些類型的變數。 SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
 處理規則提供您幾項優點：
 
-* 您可以變更資料對應，毋需送出更新至App Store。
-* 您可以對資料使用有意義的名稱，而不是設定報表套裝專屬的變數。
-* 傳送額外資料的影響很小。 這些值在使用處理規則對應之前，不會出現在報表中。
+* 您可以直接變更資料對應，而無須將更新提交至 App Store。
+* 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
+* 對傳送額外資料的影響極小。這些值在使用處理規則對應之前，不會出現在報表中。
 
 您直接指派給變數的任何值，應改為新增至上下文資料。
 
@@ -146,7 +146,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 處理規則可用來將您在上下文資料變數中傳送的資料複製到evar、prop和其他變數，以供報告。
 
-[2013年峰會的處理規則](https://tv.adobe.com/embed/1181/16506/) 訓練
+2013 年高峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
 
 [處理規則概觀](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
@@ -168,7 +168,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 "eVar1":"jimbo"
 ```
 
-這可能會讓處 *理規則執行一次對應* ，稍為輕鬆，但在除錯時會失去可讀性，而未來的程式碼更新則會更困難。 我們強烈建議您針對索引鍵和值使用描述性名稱：
+This might make it *slightly* easier when you perform the one time mapping in processing rules, but you lose readability during debugging and future code updates can be more difficult. 我們強烈建議您針對索引鍵和值使用描述性名稱：
 
 ```js
 "username":"jimbo"
@@ -190,7 +190,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 >
 >Adobe 會保留命名空間 `a.`。除了這些小限制外，上下文資料變數在登入公司中只需要是唯一的，以避免衝突。
 
-## 產品變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Products 變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 若要在 *`products`* 行動SDK中設定，您必須使用特殊語法。 請參閱 [產品變數](/help/windows-appstore/analytics/products/products.md)。
 
@@ -241,8 +241,8 @@ ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 
 計時動作可讓您測量動作開始和結束之間的應用程式內時間和總時間。 SDK會計算作業中的時間量以及完成動作所花費的總時間（跨作業）。 這可用來定義區段，以便在購買、通過層級、結帳流程等時進行比較。
 
-* 開始和結束之間應用程式的秒數總計——跨作業
-* 開始和結束之間的秒數總計（時鐘時間）
+* 從開始到結束期間停留在應用程式內的總秒數 (跨工作階段)
+* 從開始到結束的總秒數 (時鐘時間)
 
 ```js
 // Timed Action Start Example 
