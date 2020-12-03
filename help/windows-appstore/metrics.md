@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 61%
 
 * **啟動**
 
-   在每次執行時觸發，包括當機和安裝。 當超過生命週期作業逾時時時，也會在從背景繼續時觸發。
+   在每次執行時觸發，包括當機和安裝。在超過生命週期工作階段逾時的情況下，也會在從背景恢復時觸發。
 
    * Analytics context data/Target parameter: `a.LaunchEvent`
    * Audience Manager 訊號: `c_a_LaunchEvent`
