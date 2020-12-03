@@ -4,9 +4,9 @@ seo-description: 回傳可讓您將 Adobe Mobile 所收集的資料傳送至個�
 seo-title: 設定回傳
 title: 設定回傳
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
