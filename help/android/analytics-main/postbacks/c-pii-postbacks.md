@@ -4,9 +4,9 @@ seo-description: 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，�
 seo-title: PII 回傳
 title: PII 回傳
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 100%
 
