@@ -2,20 +2,20 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: 呼叫資料庫
+seo-title: 對程式庫進行呼叫
 solution: Experience Cloud
-title: 呼叫資料庫
+title: 對程式庫進行呼叫
 uuid: 74c30379-6cdf-4318-9db8-e14fb63aa18a
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '55'
-ht-degree: 3%
+ht-degree: 30%
 
 ---
 
 
-# 呼叫資料庫{#making-calls-to-the-library}
+# 對程式庫進行呼叫{#making-calls-to-the-library}
 
 當您想從指令碼呼叫外掛程式時，請匯入命名空間：
 
