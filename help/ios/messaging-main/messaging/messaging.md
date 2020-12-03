@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
 topic: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ iOS Mobile Services SDK 會對您的應用程式內訊息追蹤下列量度：
 
 * 如果是自訂的全螢幕應用程式內訊息，訊息中的 HTML 內容必須包含正確的程式碼，才能通知 SDK 追蹤以下的按鈕:
 
-   * **[!UICONTROL 點進]** (重新導向) 追蹤範例: `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL 點進]** (重新導向) 追蹤範例:  `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL 取消]** (關閉) 追蹤範例: `adbinapp://cancel`
 
 * 如果是本機 (遠端) 通知:
