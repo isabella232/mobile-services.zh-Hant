@@ -1,19 +1,19 @@
 ---
 description: BlackBerry程式庫提供的類別和方法。
 seo-description: BlackBerry程式庫提供的類別和方法。
-seo-title: Adobe Mobile類別與方法參考
-title: Adobe Mobile類別與方法參考
+seo-title: Adobe Mobile 類別與方法參考
+title: Adobe Mobile 類別與方法參考
 uuid: 1e42d759-be43-4bb3-ac1a-c7d64133d61c
 translation-type: tm+mt
 source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 55%
+ht-degree: 59%
 
 ---
 
 
-# Adobe Mobile類別與方法參考 {#adobe-mobile-class-and-method-reference}
+# Adobe Mobile 類別與方法參考 {#adobe-mobile-class-and-method-reference}
 
 BlackBerry程式庫提供的類別和方法。
 
@@ -31,13 +31,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
       預設值設定在 `ADBMobileConfig.json` 檔案中。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static ADBMobilePrivacyStatus getPrivacyStatus();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       ADBMobilePrivacyStatus privacyStatus = ADBMobile::getPrivacyStatus();
@@ -51,13 +51,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void setPrivacyStatus(ADBMobilePrivacyStatus status);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       ADBMobile::setPrivacyStatus(ADBMobilePrivacyStatusOptIn);
@@ -67,13 +67,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    如果已設定自訂識別碼，則傳回使用者識別碼。Returns `null` if a custom identifier is not set. 預設值為 `null`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static QString getUserIdentifier();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       QString userId = ADBMobile::getUserIdentifier(); 
@@ -83,13 +83,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    將使用者識別碼設為 `identifier`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void setUserIdentifier(QString identifier);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的範例程式碼如下：
 
       ```cpp
       ADBMobile::setUserIdentifier("billybob");
@@ -99,13 +99,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    傳回目前的偵錯記錄偏好設定。預設值為 `false`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static bool getDebugLogging();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
        bool debugging = ADBMobile::getDebugLogging(); 
@@ -115,13 +115,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    將偵錯記錄偏好設定設為 `debugLogging`。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void setDebugLogging(bool debugLogging);
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
         ADBMobile::setDebugLogging(true); 
@@ -131,13 +131,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/blackberry/metrics.md)。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void collectLifecycleData();
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
       ApplicationUI::ApplicationUI(bb::cascades::Application *app):  QObject(app)  { 
@@ -158,13 +158,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
    >
    >這是唯一會遞增頁面檢視的追蹤呼叫。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void trackState(QString state, QHash<QString, QString> contextData = QHash<QString, QString>()); 
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
          ADBMobile::trackState("loginScreen", null);
@@ -174,13 +174,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    追蹤應用程式中的動作。動作是您要測量的應用程式中發生的事，例如「登入」、「橫幅點選」、「動態消息訂閱」和其他量度。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void trackAction(QString action, QHash<QString, QString> contextData = QHash<QString, QString>()); 
       ```
 
-   * 以下是此方法的範例程式碼:
+   * 此方法的程式碼範例如下：
 
       ```cpp
         ADBMobile::trackAction("heroBannerTouched", null); 
@@ -190,13 +190,13 @@ SDK目前支援Adobe Analytics，而方法則會根據解決方案分開使用�
 
    傳送目前的 x 和 y 座標。將事件取代為從訂閱者接收到的BPS事件。
 
-   * 以下是此方法的語法：
+   * 此方法的語法如下：
 
       ```cpp
       static void trackLocation(bps_event_t *geoEvent, QHash<QString, QString> contextData = QHash<QString, QString> ());
       ```
 
-   * 以下是此方法的範例程式碼：
+   * 此方法的程式碼範例如下：
 
       ```cpp
         ADBMobile::trackLocation(event, null);
@@ -246,7 +246,7 @@ The `ADBMobileConfig.json` file must be placed in the *assets* folder.
 
 * **lifecycleTimeout**
 
-   指定兩次應用程式啟動之間必須經過的時間長度（以秒為單位），之後啟動才會被視為新作業。 您的應用程式傳送至背景並重新啟動時，此逾時也適用。應用程式在背景執行的時間不會計入工作階段中。
+   指定應用程式啟動後，直至系統將該次啟動視為新工作階段之間須經過的時間長度 (以秒為單位)。您的應用程式傳送至背景並重新啟動時，此逾時也適用。應用程式在背景執行的時間不會計入工作階段中。
 
    預設值為300秒。
 
