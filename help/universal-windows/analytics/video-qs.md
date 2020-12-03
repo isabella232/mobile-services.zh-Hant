@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 68%
+ht-degree: 72%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 68%
 
    (必&#x200B;**要**)當訪客以某種方式檢視視訊時，收集視訊名稱（如實作中所指定）。您可為此變數新增分類。
 
-   (**Optional**) The Custom Insight variable provides video pathing information.
+   (**選用**) 自訂深入分析變數能提供視訊路徑資訊。
 
-   * 變數類型：eVar
+   * 變數類型: eVar
    * 預設過期時間：造訪
    * 自訂分析 (s.prop，用於視訊路徑)
 
@@ -37,18 +37,18 @@ ht-degree: 68%
 
    (**選用**) 提供視訊路徑資訊。ClientCare必須為此變數啟用路徑分析。
 
-   * 事件類型：自訂分析 (s.prop).
-   * 變數類型：Custom Insight (s.prop)
+   * 事件類型: 自訂分析 (s.prop).
+   * 變數類型: Custom Insight (s.prop)
 
 * **a.media.segment**
 
-   (**Required**) Collects video segment data, including the segment name and the order in which the segment occurs in the video.
+   (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。
 
    此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segments eVar.
 
    預設的視訊資料收集方法會收集下列點的資料：視訊開始（播放）、區段開始和視訊結束（停止）。 當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
 
-   * 變數類型：eVar
+   * 變數類型: eVar
    * 預設過期時間：頁面檢視
 
 * **a.contentType**
@@ -57,35 +57,35 @@ ht-degree: 68%
 
    從視訊測量觀點，「內容類型」可讓您識別視訊訪客，並因此計算視訊轉換率。
 
-   * 變數類型：eVar
+   * 變數類型: eVar
    * 預設過期時間：頁面檢視
 
 * **a.media.timePlayed**
 
    計算自上次資料收集程序 (影像請求) 以來，用於觀看視訊的時間 (以秒為單位)。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型：計數器
 
 * **a.media.view**
 
    指出有訪客檢視了視訊的某部分。然而，此量度不會針對訪客所檢視的視訊，提供訪客檢視多少內容、檢視視訊哪一部分的相關資訊。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型：計數器
 
 * **a.media.segmentView**
 
    指出有訪客檢視了視訊區段的某部分。然而，此量度不會針對訪客所檢視的視訊，提供訪客檢視多少內容、檢視視訊哪一部分的相關資訊。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型：計數器
 
 * **a .media.complete**
 
    指出使用者已檢視完整的視訊。預設情況下，完成事件會在視訊結尾之前 1 秒測量。實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。針對即時視訊和沒有已定義結尾的其他資料流，您可以指定測量完成的自訂點。例如，在特定檢視次數之後。
 
-   * 變數類型：事件
+   * 變數類型: 事件
    * 類型：計數器
 
 ## 設定媒體設定 {#section_929945D4183C428AAF3B983EFD3E2500}
