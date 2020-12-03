@@ -4,9 +4,9 @@ seo-description: 若要開始使用 Experience Cloud Device Co-op，請洽詢您
 seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 100%
 
