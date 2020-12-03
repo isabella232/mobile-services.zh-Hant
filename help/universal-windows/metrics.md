@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 75%
+ht-degree: 83%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 75%
 
 ## 生命週期量度和維度 {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
-設定後，生命週期度量會在內容資料參數中傳送至Analytics、在參數中傳送至Target（每個mbox呼叫），並作為觀眾管理的訊號。 Analytics和Target使用相同的格式，而觀眾管理則針對每個量度使用不同的首碼。
+設定生命週期量度後，量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫在參數中傳送至 Target，並以訊號形式傳送至受眾管理。Analytics 和 Target 會使用相同格式，而受眾管理則對每個量度使用不同的首碼。
 
 對於Analytics，每次生命週期追蹤呼叫所傳送的上下文資料都會自動擷取，並透過使用量度或維度來報告。 內容中會注明例外情況。
 
@@ -69,7 +69,7 @@ ht-degree: 75%
 
 * **啟動**
 
-   在每次執行時觸發，包括當機和安裝。 當超過生命週期作業逾時時時，也會在從背景繼續時觸發。
+   在每次執行時觸發，包括當機和安裝。在超過生命週期工作階段逾時的情況下，也會在從背景恢復時觸發。
 
    * Analytics 內容資料/目標參數: `a.LaunchEvent`
    * Audience Manager 訊號: `c_a_LaunchEvent`
