@@ -2,20 +2,20 @@
 description: 'null'
 keywords: Unity
 seo-description: 'null'
-seo-title: 建立專案
+seo-title: 建置專案
 solution: Experience Cloud
-title: 建立專案
+title: 建置專案
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 translation-type: tm+mt
 source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
 workflow-type: tm+mt
 source-wordcount: '162'
-ht-degree: 15%
+ht-degree: 20%
 
 ---
 
 
-# 建立專案{#building-your-project}
+# 建置專案{#building-your-project}
 
 ## iOS
 
