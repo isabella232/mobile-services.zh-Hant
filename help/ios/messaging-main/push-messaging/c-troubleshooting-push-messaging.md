@@ -39,9 +39,8 @@ ht-degree: 100%
    >推送服務無法保證訊息一定會傳送出去。如需服務的可靠性詳細資訊，請參閱適當文件。
    >
    >* **APNS**：[服務品質](https://developer.apple.com/documentation/usernotifications)
-      >
-      >
-   * **GCM**：[訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options)
+   >
+   >* **GCM**：[訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## 我要如何更新 Apple 推播服務憑證？
