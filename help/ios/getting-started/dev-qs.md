@@ -7,10 +7,10 @@ title: 核心實作與生命週期
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b2fce063a2c97eecb2abc1a21ad8e8ab56fc151b
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 72%
 
 ---
 
@@ -23,13 +23,42 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->若要下載 SDK，您&#x200B;**必須**&#x200B;使用 iOS 6 或更新版本。
+>SDK需要iOS 8或更新版本。
 
 **先決條件**
 
 下載 SDK 之前，請完成[核心實施與生命週期](/help/ios/getting-started/requirements.md)的&#x200B;*建立報表套裝*&#x200B;中的步驟，以設定開發報表套裝和下載預先填入版本的設定檔案。
 
 若要下載 SDK:
+
+>[!IMPORTANT]
+>
+>從4.21.0版開始，SDK會透過XCFrameworks散發。 如果使用4.21.0或更新版本，請遵循下列步驟。
+>
+>SDK 4.21.0版需要Xcode 12.0或更新版本，若適用，則需要Cocoapods 1.10.0或更新版本。
+
+1. 下載，解壓縮`[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`檔案，並確認您在`AdobeMobileLibrary`目錄中有下列軟體元件：
+
+   * `ADBMobileConfig.json` -為您的應用程式自訂的SDK設定檔。
+   * `AdobeMobile.xcframework` -包含兩個胖二進位檔，每個檔案適用於iOS裝置(armv7、armv7s、arm64)和模擬器(i386、x86_64、arm64)。也包含SDK的`ADBMobile.h`標題檔案。
+
+      定位iOS應用程式時，應連結此XCFramework。
+
+   * `AdobeMobileExtension.xcframework` -包含兩個胖二進位檔，每個檔案適用於iOS裝置(armv7、armv7s、arm64)和模擬器(i386、x86_64、arm64)。也包含SDK的`ADBMobile.h`標題檔案。
+
+      定位iOS擴充功能時，應連結此XCFramework。
+
+   * `AdobeMobileWatch.xcframework` -包含兩個胖二進位檔，每個二進位檔分別用於watchOS裝置(arm64_32、armv7k)和模擬器(i386、x86_64、arm64)。也包含SDK的`ADBMobile.h`標題檔案。
+
+      定位Apple Watch(watchOS)應用程式時，應連結此XCFramework。
+
+   * `AdobeMobileTV.xcframework` -包含兩個大型二進位檔，每個二進位檔適用於tvOS裝置(arm64)和模擬器(x86_64、arm64)。也包含SDK的`ADBMobile.h`標題檔案。
+
+      定位Apple TV(tvOS)應用程式時，應連結此XCFramework。
+
+>[!IMPORTANT]
+>
+>在4.21.0以前的版本中，SDK是透過二進位檔散發。 如果使用4.21.0以前的版本，請遵循下列步驟。
 
 1. 下載並解壓縮 `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` 檔案，然後確認您有下列軟體元件:
 
@@ -102,6 +131,12 @@ ht-degree: 100%
    >
    > 在相同的目標中連結多個 `AdobeMobileLibrary*.a` 檔案，將會導致非預期行為或建置失敗。
 
+   >[!IMPORTANT]
+   >
+   > 如果使用4.21.0版或更新版本，請確定Adobe XCFrameworks未內嵌。
+
+   ![](assets/no-embed.png)
+
 1. 確認可建置應用程式且未發生錯誤。
 
 ## 實施生命週期量度 {#section_532702562A7A43809407C9A2CBA80E1E}
@@ -115,9 +150,9 @@ ht-degree: 100%
 在 `application:didFinishLaunchingWithOptions` 中新增 `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` 呼叫:
 
 ```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
- [ADBMobile collectLifecycleData]; 
-    return YES; 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+ [ADBMobile collectLifecycleData];
+    return YES;
 }
 ```
 
@@ -130,11 +165,11 @@ ht-degree: 100%
 >任何透過 `collectLifecycleDataWithAdditionalData:` 傳遞至 SDK 的資料都會由 SDK 保存在 `NSUserDefaults` 中。SDK 會拆解不屬於 `NSDictionary` 或 `NSString` 類型之 `NSNumber` 參數的值。
 
 ```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-    NSMutableDictionary *contextData = [NSMutableDictionary dictionary]; 
-    [contextData setObject:@"Game" forKey:@"myapp.category"]; 
-    [ADBMobile collectLifecycleDataWithAdditionalData:contextData]; 
-    return YES; 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
+    [contextData setObject:@"Game" forKey:@"myapp.category"];
+    [ADBMobile collectLifecycleDataWithAdditionalData:contextData];
+    return YES;
 }
 ```
 
