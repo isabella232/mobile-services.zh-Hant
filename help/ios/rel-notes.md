@@ -7,10 +7,10 @@ title: 發行說明
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 translation-type: tm+mt
-source-git-commit: 6c8020b88d22489f86853274d29dbceee504aa06
+source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 90%
 
 ---
 
@@ -18,6 +18,12 @@ ht-degree: 100%
 # 發行說明 {#release-notes}
 
 以下是適用於 Experience Cloud 解決方案之 iOS SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
+
+**2020年12月15日：4.21.0版**
+
+* 一般- SDK現在使用XCFrameworks進行散發，以支援採用新Apple M1架構的硬體，同時仍支援現有的Intel架構。
+   * 重要：升級至AdobeMobile XCFrameworks需要Xcode 12.0或更新版本
+   * 重要：如果使用Cocoapods，升級至AdobeMobile XCFrameworks需要Cocoapods 1.10.0或更新版本
 
 **2020 年 11 月 4 日：4.20.0 版**
 
