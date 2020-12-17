@@ -7,10 +7,10 @@ title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 1b888d0184e20d2134edbc488d36c09d0492a334
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 84%
 
 ---
 
@@ -18,6 +18,20 @@ ht-degree: 100%
 # 適用於 Experience Cloud 解決方案的 iOS SDK 4.x{#ios-sdk-x-for-experience-cloud-solutions}
 
 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 可讓您測量原生 Apple iPhone 和 iPad 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集對象資料。
+
+>[!IMPORTANT]
+>
+>從4.21.0版開始，iOS SDK的Xcode 12最低版本為必要。 如果您使用Cocoapods來管理應用程式中的相依性，Adobe SDK需要1.10.0版或更新版本的Cocoapods。
+
+如果使用4.21.0或更新版本，請閱讀檔案並考量下列變更：
+
+* 只要提到二進位程式庫檔案，就應改用其XCFramework取代：
+   * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
+   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+* `ADBMobile.h`標題檔案嵌入到每個XCFramework中。
+* 如果手動將Adobe XCFrameworks新增至您的專案，請確定未內嵌這些專案。
 
 >[!IMPORTANT]
 >
