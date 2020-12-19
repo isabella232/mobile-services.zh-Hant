@@ -7,10 +7,10 @@ title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
-source-git-commit: 1b888d0184e20d2134edbc488d36c09d0492a334
+source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,6 @@ ht-degree: 84%
    * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
    * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
    * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
-* `ADBMobile.h`標題檔案嵌入到每個XCFramework中。
 * 如果手動將Adobe XCFrameworks新增至您的專案，請確定未內嵌這些專案。
 
 >[!IMPORTANT]
