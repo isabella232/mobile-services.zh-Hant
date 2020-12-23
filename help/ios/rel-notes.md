@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 發行說明
 topic: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b6c9154e925ce0a0530d4c8f0871a97198ecd840
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 以下是適用於 Experience Cloud 解決方案之 iOS SDK 4.x 的發行說明、已知問題和 Hotfix 資訊：
 
-**2020年12月15日：4.21.0版**
+**2020 年 12 月 15 日：4.21.0 版**
 
-* 一般- SDK現在使用XCFrameworks進行散發，以支援採用新Apple M1架構的硬體，同時仍支援現有的Intel架構。
-   * 重要：升級至AdobeMobile XCFrameworks需要Xcode 12.0或更新版本
-   * 重要：如果使用Cocoapods，升級至AdobeMobile XCFrameworks需要Cocoapods 1.10.0或更新版本
+* 一般 - 現已使用 XCFramework 發佈 SDK，以便支援採用最新 Apple M1 架構的硬體，同時繼續支援現有的 Intel 架構。
+   * 重要：升級至 AdobeMobile XCFramework 需有 Xcode 12.0 以上版本
+   * 重要：如果使用 Cocoapod，升級至 AdobeMobile XCFramework 需有 Cocoapod 1.10.0 以上版本
 
 **2020 年 11 月 4 日：4.20.0 版**
 
@@ -45,11 +45,11 @@ ht-degree: 90%
 
 **2020 年 2 月 4 日：4.19.0 版**
 
-* 生命週期 -  新增 API pauseCollectingLifecycleData，以緩解某些舊 iOS 裝置回報的作業長度異常資料。
+* 生命週期 - 新增 API pauseCollectingLifecycleData，以緩解某些舊 iOS 裝置回報的作業長度異常資料。
 
 **2019 年 11 月 8 日：4.18.9 版**
 
-* 應用程式內傳訊功能 -  修正全螢幕訊息無法載入快取或隨附影像的錯誤。
+* 應用程式內傳訊功能 - 修正全螢幕訊息無法載入快取或隨附影像的錯誤。
 
 **2019 年 9 月 20 日：4.18.8 版**
 
