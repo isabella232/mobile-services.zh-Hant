@@ -9,8 +9,8 @@ uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 translation-type: tm+mt
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '530'
+ht-degree: 100%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->從4.21.0版開始，iOS SDK的Xcode 12最低版本為必要。 如果您使用Cocoapods來管理應用程式中的相依性，Adobe SDK需要1.10.0版或更新版本的Cocoapods。
+>自 4.21.0 版起，iOS SDK 的最低版本需求為 Xcode 12。如果您使用 Cocoapod 管理應用程式的相依性，Adobe SDK 便需搭配 Cocoapod 1.10.0 以上版本使用。
 
-如果使用4.21.0或更新版本，請閱讀檔案並考量下列變更：
+如果使用 4.21.0 或更新版本，請參閱文件並留意下列變更：
 
-* 只要提到二進位程式庫檔案，就應改用其XCFramework取代：
+* 只要提到二進位程式庫檔案，就應改用其 XCFramework 加以取代：
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
    * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
    * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
    * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
-* 如果手動將Adobe XCFrameworks新增至您的專案，請確定未內嵌這些專案。
+* 如果在專案中手動新增 Adobe XCFramework，請確定其非內嵌型態。
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ ht-degree: 0%
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
-一些要記住的資訊:
+必要須知：
 
 * 支援 iOS 8 或更新版本
 
