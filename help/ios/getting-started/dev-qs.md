@@ -1,6 +1,6 @@
 ---
-description: '此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
-seo-description: '此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
+description: 此資訊可協助您實作 iOS 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
+seo-description: 此資訊可協助您實作 iOS 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
 seo-title: 核心實作與生命週期
 solution: Experience Cloud,Analytics
 title: 核心實作與生命週期
@@ -10,58 +10,58 @@ translation-type: tm+mt
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 75%
+ht-degree: 99%
 
 ---
 
 
 # 核心實作與生命週期。{#core-implementation-and-lifecycle}
 
-此資訊可協助您實施 iOS 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。
+此資訊可協助您實作 iOS 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
 
 ## 下載 SDK {#section_99FE1A17A36D4A2C943939023CF6265C}
 
 >[!IMPORTANT]
 >
->SDK需要iOS 8或更新版本。
+>SDK 需要 iOS 8 或更新版本。
 
 **先決條件**
 
-下載 SDK 之前，請完成[核心實施與生命週期](/help/ios/getting-started/requirements.md)的&#x200B;*建立報表套裝*&#x200B;中的步驟，以設定開發報表套裝和下載預先填入版本的設定檔案。
+下載 SDK 之前，請完成[核心實作與生命週期](/help/ios/getting-started/requirements.md)的&#x200B;*建立報表套裝*&#x200B;中的步驟，以設定開發報表套裝和下載預先填入版本的設定檔案。
 
-若要下載 SDK:
+若要下載 SDK：
 
 >[!IMPORTANT]
 >
->從4.21.0版開始，SDK會透過XCFrameworks散發。 如果使用4.21.0或更新版本，請遵循下列步驟。
+>自 4.21.0 版起，SDK 會透過 XCFramework 發佈。如果使用 4.21.0 或更新版本，請遵循下列步驟。
 >
->SDK 4.21.0版需要Xcode 12.0或更新版本，若適用，則需要Cocoapods 1.10.0或更新版本。
+>SDK 4.21.0 版需搭配 Xcode 12.0 以上版本，以及 Cocoapod 1.10.0 以上版本 (如果適用)。
 
-1. 下載，解壓縮`[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip`檔案，並確認您在`AdobeMobileLibrary`目錄中有下列軟體元件：
+1. 下載並將 `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` 檔案解壓縮，然後確認 `AdobeMobileLibrary` 目錄中有下列軟體元件：
 
    * `ADBMobile.h` -用於iOS SDK的Objective-C標題檔案。
-   * `ADBMobileConfig.json` -為您的應用程式自訂的SDK設定檔。
-   * `AdobeMobile.xcframework` -包含兩個胖二進位檔，每個檔案適用於iOS裝置(armv7、armv7s、arm64)和模擬器(i386、x86_64、arm64)。
+   * `ADBMobileConfig.json` - 根據您應用程式自訂的 SDK 設定檔案。
+   * `AdobeMobile.xcframework` - 包含兩個大型二進位檔，分別適用於 iOS 裝置 (armv7、armv7s、arm64) 和模擬器 (i386、x86_64、arm64)。
 
-      定位iOS應用程式時，應連結此XCFramework。
+      目標為 iOS 應用程式時，應連結此 XCFramework。
 
-   * `AdobeMobileExtension.xcframework` -包含兩個胖二進位檔，每個檔案適用於iOS裝置(armv7、armv7s、arm64)和模擬器(i386、x86_64、arm64)。
+   * `AdobeMobileExtension.xcframework` - 包含兩個大型二進位檔，分別適用於 iOS 裝置 (armv7、armv7s、arm64) 和模擬器 (i386、x86_64、arm64)。
 
-      定位iOS擴充功能時，應連結此XCFramework。
+      目標為 iOS 擴充功能時，應連結此 XCFramework。
 
-   * `AdobeMobileWatch.xcframework` -包含兩個胖二進位檔，每個二進位檔分別用於watchOS裝置(arm64_32、armv7k)和模擬器(i386、x86_64、arm64)。
+   * `AdobeMobileWatch.xcframework` - 包含兩個大型二進位檔，分別適用於 watchOS 裝置 (arm64_32、armv7k) 和模擬器 (i386、x86_64、arm64)。
 
-      定位Apple Watch(watchOS)應用程式時，應連結此XCFramework。
+      目標為 Apple Watch (watchOS) 應用程式時，應連結此 XCFramework。
 
-   * `AdobeMobileTV.xcframework` -包含兩個大型二進位檔，每個二進位檔適用於tvOS裝置(arm64)和模擬器(x86_64、arm64)。
+   * `AdobeMobileTV.xcframework` - 包含兩個大型二進位檔，分別適用於 tvOS 裝置 (arm64) 和模擬器 (x86_64、arm64)。
 
-      定位Apple TV(tvOS)應用程式時，應連結此XCFramework。
+      目標為 Apple TV (tvOS) 應用程式時，應連結此 XCFramework。
 
 >[!IMPORTANT]
 >
->在4.21.0以前的版本中，SDK是透過二進位檔散發。 如果使用4.21.0以前的版本，請遵循下列步驟。
+>在 4.21.0 之前的版本中，SDK 會透過二進位檔發佈。如果使用 4.21.0 之前的版本，請遵循下列步驟。
 
-1. 下載並解壓縮 `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` 檔案，然後確認您有下列軟體元件:
+1. 下載並將 `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` 檔案解壓縮，然後確認您有下列軟體元件：
 
    * `ADBMobile.h`，此元件為用於 iOS AppMeasurement 的 Objective-C 標頭檔案。
    * `ADBMobileConfig.json`，此元件為根據您應用程式自訂的 SDK 設定檔案。
@@ -89,7 +89,7 @@ ht-degree: 75%
 
 1. 啟動 Xcode IDE 並開啟您的應用程式。
 1. 在「專案導覽器」中，拖曳 `AdobeMobileLibrary` 資料夾，並將其放置在您的專案下。
-1. 請確認下列項目:
+1. 請確認下列項目：
 
    * 已選取&#x200B;**[!UICONTROL 「需要時複製項目」]**&#x200B;核取方塊。
    * **[!UICONTROL 已選取「建立群組」]**。
@@ -103,7 +103,7 @@ ht-degree: 75%
 
    ![](assets/step_4.png)
 
-1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，完成下列步驟:
+1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，完成下列步驟：
 
    1. 按一下您的應用程式。
    1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤上，選取您的目標並連結&#x200B;**[!UICONTROL 「連結架構」]**&#x200B;和&#x200B;**[!UICONTROL 「資料庫」]**&#x200B;區段中必要的架構和資料庫。
@@ -134,13 +134,13 @@ ht-degree: 75%
 
    >[!IMPORTANT]
    >
-   > 如果使用4.21.0版或更新版本，請確定Adobe XCFrameworks未內嵌。
+   > 如果使用 4.21.0 以上版本，請確認 Adobe XCFramework 非內嵌型態。
 
    ![](assets/no-embed.png)
 
 1. 確認可建置應用程式且未發生錯誤。
 
-## 實施生命週期量度 {#section_532702562A7A43809407C9A2CBA80E1E}
+## 實作生命週期量度 {#section_532702562A7A43809407C9A2CBA80E1E}
 
 >[!IMPORTANT]
 >
@@ -148,7 +148,7 @@ ht-degree: 75%
 
 啟用生命週期後，每當您的應用程式啟動時，就會傳送一次點擊以測量啟動數、升級數、工作階段數、參與使用者數，以及其他[生命週期量度](/help/ios/metrics.md)。
 
-在 `application:didFinishLaunchingWithOptions` 中新增 `collectLifecycleData`/ `collectLifecycleDataWithAdditionalData` 呼叫:
+在 `application:didFinishLaunchingWithOptions` 中新增 `collectLifecycleData`/`collectLifecycleDataWithAdditionalData` 呼叫：
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -159,7 +159,7 @@ ht-degree: 75%
 
 ### 納入其他資料與生命週期呼叫
 
-若要納入其他資料與生命週期量度呼叫，請使用 `collectLifecycleDataWithAdditionalData`:
+若要納入其他資料與生命週期量度呼叫，請使用 `collectLifecycleDataWithAdditionalData`：
 
 >[!IMPORTANT]
 >
@@ -174,7 +174,7 @@ ht-degree: 75%
 }
 ```
 
-與 `collectLifecycleDataWithAdditionalData` 一併傳送的其他內容資料值，必須對應至 Adobe Mobile Services 中的自訂變數:
+與 `collectLifecycleDataWithAdditionalData` 一併傳送的其他內容資料值，必須對應至 Adobe Mobile Services 中的自訂變數：
 
 ![](assets/map-variable-lifecycle.png)
 
