@@ -6,11 +6,11 @@ solution: Experience Cloud,Analytics
 title: 核心實作與生命週期
 topic: Developer and implementation
 uuid: 96d06325-e424-4770-8659-4b5431318ee3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 99%
 
 1. 下載並將 `[Your_App_Name_]AdobeMobileLibrary-4.*-iOS.zip` 檔案解壓縮，然後確認 `AdobeMobileLibrary` 目錄中有下列軟體元件：
 
-   * `ADBMobile.h` -用於iOS SDK的Objective-C標題檔案。
+   * `ADBMobile.h` - 用於 iOS SDK 的 Objective-C 標題檔案。
    * `ADBMobileConfig.json` - 根據您應用程式自訂的 SDK 設定檔案。
    * `AdobeMobile.xcframework` - 包含兩個大型二進位檔，分別適用於 iOS 裝置 (armv7、armv7s、arm64) 和模擬器 (i386、x86_64、arm64)。
 
