@@ -6,9 +6,9 @@ solution: Experience Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 topic: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c7400359bc19150926a67b991ba219a7fa187442
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ ht-degree: 100%
 
 * 只要提到二進位程式庫檔案，就應改用其 XCFramework 加以取代：
    * `AdobeMobileLibrary.a` > `AdobeMobile.xcframework`
-   * `AdobeMobileLibrary_Extension.a` >  `AdobeMobileExtension.xcframework`
-   * `AdobeMobileLibrary_Watch.a` >  `AdobeMobileWatch.xcframework`
-   * `AdobeMobileLibrary_TV.a` >  `AdobeMobileTV.xcframework`
+   * `AdobeMobileLibrary_Extension.a` > `AdobeMobileExtension.xcframework`
+   * `AdobeMobileLibrary_Watch.a` > `AdobeMobileWatch.xcframework`
+   * `AdobeMobileLibrary_TV.a` > `AdobeMobileTV.xcframework`
 * 如果在專案中手動新增 Adobe XCFramework，請確定其非內嵌型態。
 
 >[!IMPORTANT]
