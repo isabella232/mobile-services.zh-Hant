@@ -8,7 +8,7 @@ title: 配置 SDK 贏取選項
 topic: Metrics
 uuid: 50ce51ad-39bf-4ac7-bd94-757443d11ca7
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 
    * **[!UICONTROL 啟用]**
 
-      建立應用程式商店連結後，即可直接從 Apple App Store 和 Google Play 下載應用程式。您所建立的連結可讓您將成功事件歸因於下載。如需詳細資訊，請參閱[贏取](//help/using/acquisition-main/acquisition-main.md)。
+      建立應用程式商店連結後，即可直接從 Apple App Store 和 Google Play 下載應用程式。您所建立的連結可讓您將成功事件歸因於下載。如需詳細資訊，請參閱[贏取](/help/using/acquisition-main/acquisition-main.md)。
 
    * **[!UICONTROL 反向連結逾時 (秒)]**
 
