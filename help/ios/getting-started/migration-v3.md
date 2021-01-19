@@ -7,7 +7,7 @@ title: 移轉至 4.x iOS 資料庫
 topic: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
@@ -112,7 +112,7 @@ ht-degree: 100%
 | trackingServer | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 &quot;server&quot; 然後啟用 &quot;ssl&quot;。 |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | &quot;貨幣&quot; |
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | 移除，不再使用。 |
 | linkTrackEvents | 移除，不再使用。 |
@@ -122,7 +122,7 @@ ht-degree: 100%
 | dynamicVariablePrefix | 移除，不再使用。 |
 | visitorNamespace | 移除，不再使用。 |
 | usePlugins | 移除，不再使用。 |
-| useBestPractices 對混合測量的所有呼叫 (getChurnInstance) | 移除，替換為生命週期量度。如需詳細資訊，請參閱[生命週期量度](//help/ios/metrics.md)。 |
+| useBestPractices 對混合測量的所有呼叫 (getChurnInstance) | 移除，替換為生命週期量度。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。 |
 
 
 ## 更新追蹤呼叫和追蹤變數 {#section_96E7D9B3CDAC444789503B7E7F139AB9}
