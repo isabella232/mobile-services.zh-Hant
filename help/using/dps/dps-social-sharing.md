@@ -8,7 +8,7 @@ title: 社交分享
 topic: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 根據預設，此報表會顯示在不同管道 (例如電子郵件、訊息等) 分享文章的讀者人數。
 
-此報表類似於「**[!UICONTROL 技術]**」報表。如需如何導覽與使用散射環報表、加入劃分和量度、建立 Target 活動、建立嚴格篩選以及共用報表的相關資訊，請參閱[技術](//help/using/usage/reports-technology.md)。「技術」主題中的資訊可以用來自訂「**[!UICONTROL 社交分享]**」報表。
+此報表類似於「**[!UICONTROL 技術]**」報表。如需如何導覽與使用散射環報表、加入劃分和量度、建立 Target 活動、建立嚴格篩選以及共用報表的相關資訊，請參閱[技術](/help/using/usage/reports-technology.md)。「技術」主題中的資訊可以用來自訂「**[!UICONTROL 社交分享]**」報表。
