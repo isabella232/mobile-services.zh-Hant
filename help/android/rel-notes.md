@@ -7,10 +7,10 @@ title: 發行說明
 topic: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 8b5842068c602f3f9b1c020c1c9a686eb0e56b74
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '303'
+ht-degree: 98%
 
 ---
 
@@ -58,4 +58,4 @@ ht-degree: 100%
 * 訪客 ID 服務 - 將連線和讀取逾時從 2 秒增加到 5 秒。
 
 
-如需詳細了解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](hhttps://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)。
+如需詳細了解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)。
