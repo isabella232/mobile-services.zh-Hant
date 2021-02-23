@@ -1,22 +1,21 @@
 ---
-description: 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連線至 iOS 或 Android 應用程式中的深層連結。
-keywords: mobile
+description: 在應用程式和網站內連結對於維持使用者體驗非常重要。 瞭解通用連結和應用程式連結的運作方式以及它們之間的差異。
 seo-description: 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連線至 iOS 或 Android 應用程式中的深層連結。
 seo-title: Apple 通用連結和 Android 應用程式連結
 solution: Experience Cloud,Analytics
-title: Apple 通用連結和 Android 應用程式連結
-topic: Metrics
+title: 通用連結和應用程式連結指南
+topic: 量度
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 100%
+source-wordcount: '1146'
+ht-degree: 96%
 
 ---
 
 
-# Apple 通用連結和 Android 應用程式連結{#universal-links-and-app-links}
+# 通用連結與應用程式連結：它們如何運作？{#universal-links-and-app-links}
 
 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連線至 iOS 或 Android 應用程式中的深層連結。
 
