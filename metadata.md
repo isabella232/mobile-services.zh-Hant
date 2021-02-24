@@ -1,28 +1,24 @@
 ---
 cloud: experience-cloud
 product: mobile-services
-solution-title: 學習與支援
-solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud/core-services.html
-solution-icon: help/assets/experience-cloud-logo-24.png
-getting-started-title: 快速入門
-getting-started-url: https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/get-started-ug/gs.html
-tutorials-title: 教學課程
-tutorials-url: https://helpx.adobe.com/tw/experience-cloud/tutorials.html
-git-repo: https://github.com/AdobeDocs/mobile-services.en
+solution: Experience Cloud Services
+type: 文件
+git-repo: https://git.corp.adobe.com/AdobeDocs/mobile-services.zh-Hant
 index: true
-translation-type: ht
-source-git-commit: aad8cec624ea2dd4741d1cc3d1d76af5dba44227
+translation-type: tm+mt
+source-git-commit: c6929017a865464a98242bfa7559d174712bbb7e
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 100%
 
 ---
 
-
-<!-- We need a better link for Tutorials. We can do this after we hit stage -->
 
 # 供內部使用的中繼資料
 
 metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中的使用手冊 TOC.md 檔案。如果您想變更任何使用手冊的 metadata.md 內容，可以在任何 TOC.md 檔案中進行更改。
 
-| 中繼資料 | 作用 |
+| 中繼資料您應留意但不影響分數的問題。 | 作用 |
 |--- |--- |
 | solution-title | 在文章標題中作為連結使用 |
 | solution-hub-url | 開啟 helpx 中樞頁面 |
