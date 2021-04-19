@@ -3,17 +3,17 @@ description: Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，�
 seo-description: Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。
 seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
-title: Apple Search Ads
-topic: Developer and implementation
+title: Apple Search廣告
+topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
+exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
 ---
-
 
 # Apple Search Ads {#apple-search-ads}
 
@@ -49,7 +49,7 @@ Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人�
    此外，下列值將會從 `"iad"`字典對應至一般贏取內容資料欄位:
 
    * `"iad-campaign-id"` --> `"a.referrer.campaign.trackingcode"`
-   * `"iad-campaign-name"` --> `"a.referrer.campaign.name"`
-   * `"iad-adgroup-id"` --> `"a.referrer.campaign.content"`
-   * `"iad-keyword"` --> `"a.referrer.campaign.term"`
+   * `"iad-campaign-name"` —>  `"a.referrer.campaign.name"`
+   * `"iad-adgroup-id"` —>  `"a.referrer.campaign.content"`
+   * `"iad-keyword"` —>  `"a.referrer.campaign.term"`
    此對應程序能確保可讓這些值用於標準報表中。
