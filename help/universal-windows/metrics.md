@@ -1,26 +1,26 @@
 ---
 description: 列出行動程式庫可自動測量的量度和維度。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 列出行動程式庫可自動測量的量度和維度。
 seo-title: 生命週期量度
 solution: Experience Cloud,Analytics
 title: 生命週期量度
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
+exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '921'
 ht-degree: 83%
 
 ---
-
 
 # 生命週期量度 {#lifecycle-metrics}
 
 列出行動程式庫可自動測量的量度和維度。
 
-如需詳細資訊，請參閱「疑難排 [解生命週期資料」](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)。
+如需詳細資訊，請參閱[疑難排解生命週期資料](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)。
 
 
 ## 生命週期量度和維度 {#section_78F036C4296F4BA3A47C2044F79C86C1}
@@ -267,21 +267,21 @@ ht-degree: 83%
 
 * **興趣點名稱**
 
-   Populated by `trackLocation` methods when device is in a defined POI.
+   當裝置位於已定義的POI中時，由`trackLocation`方法填入。
 
    * Analytics 內容資料/目標參數: `a.loc.poi`
-   * Audience Manager trait: `c_a_loc_poi`
+   * Audience Manager特徵：`c_a_loc_poi`
 
 * **至興趣點中心的距離**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   當裝置在已定義的POI中時，由`trackLocation`方法填入。
 
    * Analytics 內容資料/目標參數: `a.loc.dist`
-   * Audience Manager trait: `c_a_loc_dist`
+   * Audience Manager特徵：`c_a_loc_dist`
 
 * **期限值 (轉換變數)**
 
    由 `trackLifetimeValue` 方法填入。
 
-   * Analytics 內容資料/目標參數: `a.ltv.amount`
-   * Audience Manager trait: `c_a_ltv_amount`
+   * Analytics 內容資料/目標參數:  `a.ltv.amount`
+   * Audience Manager特徵：`c_a_ltv_amount`
