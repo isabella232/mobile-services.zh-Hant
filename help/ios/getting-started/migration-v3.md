@@ -4,16 +4,16 @@ seo-description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至
 seo-title: 移轉至 4.x iOS 資料庫
 solution: Experience Cloud,Analytics
 title: 移轉至 4.x iOS 資料庫
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
-translation-type: ht
-source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
-workflow-type: ht
+exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
+translation-type: tm+mt
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
 
 ---
-
 
 # 移轉至 4.x iOS 資料庫{#migrating-to-the-x-ios-library}
 
@@ -112,7 +112,7 @@ ht-degree: 100%
 | trackingServer | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 &quot;server&quot; 然後啟用 &quot;ssl&quot;。 |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;currency&quot; |
+| currencyCode | &quot;貨幣&quot; |
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | 移除，不再使用。 |
 | linkTrackEvents | 移除，不再使用。 |
