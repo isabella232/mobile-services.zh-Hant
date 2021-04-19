@@ -4,16 +4,16 @@ seo-description: 狀態是您的應用程式中不同的畫面或檢視。
 seo-title: 追蹤應用程式狀態
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式狀態
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
+exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # 追蹤應用程式狀態 {#track-app-states}
 
@@ -78,5 +78,3 @@ public void onCreate(Bundle savedInstanceState) {
 | Adobe Mobile Services | **[!UICONTROL 「檢視狀態」]**&#x200B;報表。此報表是根據使用者透過您的應用程式所採取的路徑而成。範例路徑為&#x200B;**[!UICONTROL 「首頁]** > **[!UICONTROL 設定]** > **[!UICONTROL 摘要」]**。 |
 | Adobe Analytics | 能夠檢視「頁面」之處皆可檢視狀態，例如:**[!UICONTROL 「頁面」]**&#x200B;報表、**[!UICONTROL 「頁面檢視」]**&#x200B;報表以及&#x200B;**[!UICONTROL 「路徑」報表。]** |
 | Ad hoc analytics | 透過&#x200B;**[!UICONTROL 「頁面」]**&#x200B;維度、**[!UICONTROL 「頁面檢視」]**&#x200B;量度及&#x200B;**[!UICONTROL 「路徑」報表，就能在可以檢視「頁面」的任何地方來檢視狀態。]** |
-
-
