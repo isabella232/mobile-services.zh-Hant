@@ -1,20 +1,20 @@
 ---
 description: 回傳可讓您將 SDK 收集的資料傳送至第三方伺服器。運用您用來顯示應用程式內訊息的相同觸發器和特性，便可以設定 SDK 將自訂資料傳送至第三方目的地。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 回傳可讓您將 SDK 收集的資料傳送至第三方伺服器。運用您用來顯示應用程式內訊息的相同觸發器和特性，便可以設定 SDK 將自訂資料傳送至第三方目的地。
 seo-title: 回傳
 solution: Experience Cloud,Analytics
 title: 回傳概述
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8bfd4374-2767-421d-891d-e1e9a99b6977
+exl-id: 318f6eab-ff71-4bfe-8eb7-51a35380b992
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '353'
 ht-degree: 100%
 
 ---
-
 
 # 回傳 {#postbacks}
 
