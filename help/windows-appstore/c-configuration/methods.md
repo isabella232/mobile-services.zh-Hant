@@ -4,16 +4,16 @@ seo-description: Windows 8.1通用應用程式商店程式庫提供的類別和�
 seo-title: SDK 方法
 solution: Experience Cloud,Analytics
 title: SDK 方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
+exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 50%
 
 ---
-
 
 # SDK 方法 {#sdk-methods}
 
@@ -21,7 +21,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
 >[!TIP]
 >
->當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
+>當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
 * **GetVersion(winJS:getVersion)**
 
@@ -45,9 +45,9 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      The default value is set in the [ADBMobileConfig.json config](/help/windows-appstore/c-configuration/c.json.md) file.
+      預設值設定在[ADBMobileConfig.json設定](/help/windows-appstore/c-configuration/c.json.md)檔案中。
 
    * 此方法的語法如下：
 
@@ -79,7 +79,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 此方法的語法如下：
 
@@ -125,7 +125,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    >[!TIP]
    >
-   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的ID（自訂或自動產生）並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。For new installations on the 4.x SDK, user identifier is `null` until set.
+   >如果您的應用程式從Experience Cloud3.x升級至4.x SDK，則會擷取先前的ID（自訂或自動產生）並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。對於4.x SDK上的新安裝，使用者識別碼為`null`，直到設定為止。
 
    * 此方法的語法如下：
 
@@ -197,7 +197,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    >[!TIP]
    >
-   >在應用程式內 `onResume()` 每個活動中的方法中叫用此方法，如下列範例所示。 我們也建議將「活動」或「服務」傳遞為上下文物件，而非全域「應用程式」內容。
+   >在應用程式內每個「活動」的`onResume()`方法中叫用此方法，如下列範例所示。 我們也建議將「活動」或「服務」傳遞為上下文物件，而非全域「應用程式」內容。
 
    * 此方法的語法如下：
 
@@ -218,7 +218,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    >[!TIP]
    >
-   >在應用程式內每 `onPause()` 個活動中的方法中叫用此方法，如範例所示。 我們也建議將「活動」或「服務」傳遞為上下文物件，而非全域「應用程式」內容。
+   >在應用程式內每個「活動」的`onPause()`方法中叫用此方法，如範例所示。 我們也建議將「活動」或「服務」傳遞為上下文物件，而非全域「應用程式」內容。
 
    * 此方法的語法如下：
 
