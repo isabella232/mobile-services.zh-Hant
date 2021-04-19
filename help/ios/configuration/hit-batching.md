@@ -4,16 +4,16 @@ seo-description: 點擊批次處理程序可讓應用程式 (已啟用離線追�
 seo-title: 點擊批次處理程序
 solution: Experience Cloud,Analytics
 title: 點擊批次處理程序
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3dda7372-0695-4cb7-b779-6abca2d6e0d9
+exl-id: af21f435-13cb-4353-9fbb-c99274bce411
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 100%
 
 ---
-
 
 # 點擊批次處理程序 {#hit-batching}
 
@@ -43,4 +43,3 @@ ht-degree: 100%
 >[!CAUTION]
 >
 >必須啟用離線追蹤功能才可使用點擊批次處理程序。
-
