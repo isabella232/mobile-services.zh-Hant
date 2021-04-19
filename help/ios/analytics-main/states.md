@@ -4,16 +4,16 @@ seo-description: 狀態是您的應用程式中不同的畫面或檢視。每次
 seo-title: 追蹤應用程式狀態
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式狀態
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
+exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
 
 ---
-
 
 # 追蹤應用程式狀態 {#track-app-states}
 
