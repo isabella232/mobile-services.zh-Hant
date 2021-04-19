@@ -5,16 +5,16 @@ seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasur
 seo-title: PhoneGap 外掛程式
 solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
+exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 100%
 
 ---
-
 
 # PhoneGap 外掛程式{#phonegap-plug-in}
 
@@ -90,4 +90,3 @@ AppMeasurement 資料庫需要下列項目：
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>
 ```
-
