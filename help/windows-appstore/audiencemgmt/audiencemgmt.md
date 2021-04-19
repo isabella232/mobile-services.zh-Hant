@@ -1,13 +1,13 @@
 ---
-description: 這些資訊可協助您從Audience Manager傳送訊號並擷取訪客區段。
-seo-description: 這些資訊可協助您從Audience Manager傳送訊號並擷取訪客區段。
+description: 協助您傳送訊號並從Audience Manager擷取訪客區段的資訊。
+seo-description: 協助您傳送訊號並從Audience Manager擷取訪客區段的資訊。
 seo-title: Audience Manager
 solution: Experience Cloud,Analytics
 title: Audience Manager
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fadc3296-c17c-4732-9b75-a6fb4d33a282
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 22%
@@ -17,7 +17,7 @@ ht-degree: 22%
 
 # Audience Manager{#audience-manager}
 
-這些資訊可協助您從Audience Manager傳送訊號並擷取訪客區段。
+協助您傳送訊號並從Audience Manager擷取訪客區段的資訊。
 
 ## 其他資訊
 
