@@ -4,16 +4,16 @@ seo-description: 此資訊可協助您使用 iOS 應用程式中的「定位」�
 seo-title: 位置
 solution: Experience Cloud,Analytics
 title: 位置
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: a4e5650a-f5d3-4fb1-bd11-a27a3918d763
+exl-id: 0c524fb8-6b0d-4e59-87a8-a9e2beda633a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
-
 
 # 位置 {#location}
 
