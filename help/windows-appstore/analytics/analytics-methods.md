@@ -4,16 +4,16 @@ seo-description: 協助您搭配Adobe Analytics使用Windows 8.1通用應用程�
 seo-title: 'Analytics 方法 '
 solution: Experience Cloud,Analytics
 title: 'Analytics 方法 '
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
+exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 52%
 
 ---
-
 
 # Analytics 方法 {#analytics-methods}
 
@@ -25,11 +25,11 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 >[!TIP]
 >
->當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
+>當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
 * **TrackState(winJS:trackState)**
 
-   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果`state`為空白，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 如果您在報表中看到此值，請務必在每個`TrackState`呼叫中設定`state`。
 
    >[!TIP]
    >
@@ -142,7 +142,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **TrackTimed &#x200B; ActionUpdate(winJS:trackTimed &#x200B; ActionUpdate)**
 
-   傳遞 `contextData` 以更新與指定 `action` 關聯的內容資料。The `data` passed is appended to the existing data for the given action, and overwrites the data if the same key is already defined for `action`.
+   傳遞 `contextData` 以更新與指定 `action` 關聯的內容資料。傳遞的`data`會附加至指定動作的現有資料，並在`action`已定義相同金鑰時覆寫資料。
 
    >[!TIP]
    >
