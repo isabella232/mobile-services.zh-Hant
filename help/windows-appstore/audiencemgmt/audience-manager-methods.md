@@ -4,16 +4,16 @@ seo-description: Windows 8.1通用應用程式商店程式庫提供的Audience M
 seo-title: Audience Manager 方法
 solution: Experience Cloud,Analytics
 title: Audience Manager 方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
+exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 45%
 
 ---
-
 
 # Audience Manager 方法 {#audience-manager-methods}
 
@@ -29,7 +29,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **GetVisitorProfile(winJS:getVisitorProfile)**
 
-   傳回最近取得的訪客描述檔。Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
+   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回`null`。 訪客描述檔會儲存在`SharedPreferences`中，以便在多次啟動應用程式時輕鬆存取。
 
    * 此方法的語法如下：
 
@@ -115,4 +115,3 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
         // segments come back here in "visitorProfile", normally found in the "segs" object of your json 
       }); 
       ```
-
