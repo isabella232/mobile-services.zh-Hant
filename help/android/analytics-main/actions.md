@@ -4,16 +4,16 @@ seo-description: 動作為發生在您要測量之 Android 應用程式中的事
 seo-title: 追蹤應用程式動作
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式動作
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
+exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
 ---
-
 
 # 追蹤應用程式動作 {#track-app-actions}
 
@@ -71,4 +71,3 @@ Analytics.trackAction("myapp.SocialShare", exampleContextData);
 | Adobe Mobile Services | **[!UICONTROL 動作路徑]**&#x200B;報表。檢視動作於應用程式中發生的順序。您也可以按一下任一報表上的&#x200B;**[!UICONTROL 「自訂」]**，以檢視動作的排名、趨勢或在劃分報表中的情況，或套用篩選條件以檢視特定區段的動作。 |
 | Marketing Reports &amp; Analytics | **[!UICONTROL 「自訂事件」]**&#x200B;報表。當動作對應至自訂事件後，您可以檢視與所有其他 Analytics 事件類似的行動事件。 |
 | Ad hoc analytics | **[!UICONTROL 「自訂事件」]**&#x200B;報表。當動作對應至自訂事件後，您可以檢視與所有其他 Analytics 事件類似的行動事件。 |
-
