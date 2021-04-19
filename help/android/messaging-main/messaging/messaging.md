@@ -4,16 +4,16 @@ seo-description: 您可以傳遞因任何分析資料或事件觸發的應用程
 seo-title: 應用程式內傳訊
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
+exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 100%
 
 ---
-
 
 # 應用程式內傳訊 {#in-app-messaging}
 
