@@ -1,20 +1,20 @@
 ---
-description: 此資訊可協助您實作 Android 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
-keywords: android;library;mobile;sdk
-seo-description: 此資訊可協助您實作 Android 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
+description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
+keywords: android;資料庫;行動;sdk
+seo-description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 seo-title: 核心實作與生命週期
 solution: Experience Cloud,Analytics
 title: 核心實作與生命週期
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
+exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '564'
 ht-degree: 100%
 
 ---
-
 
 # 核心實作與生命週期。{#core-implementation-and-lifecycle}
 
@@ -155,4 +155,3 @@ public void onResume() {
 
 * [追蹤應用程式狀態](/help/android/analytics-main/states.md)
 * [追蹤應用程式動作](/help/android/analytics-main/actions.md)
-
