@@ -1,20 +1,20 @@
 ---
 description: 下列說明可協助您在 Android 裝置上利用行銷連結往返贏取促銷活動。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 下列說明可協助您在 Android 裝置上利用行銷連結往返贏取促銷活動。
 seo-title: 測試行銷連結贏取
 solution: Experience Cloud,Analytics
 title: 測試行銷連結贏取
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
+exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 100%
 
 ---
-
 
 # 測試行銷連結贏取 {#testing-marketing-link-acquisition}
 
