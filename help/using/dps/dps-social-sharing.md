@@ -1,20 +1,20 @@
 ---
 description: 「社交分享」報表可以用散射環視覺效果呈現現有資料。此報表僅限 Digital Publishing Suites (DPS) 客戶使用。
-keywords: mobile
+keywords: 行動
 seo-description: 「社交分享」報表可以用散射環視覺效果呈現現有資料。此報表僅限 Digital Publishing Suites (DPS) 客戶使用。
 seo-title: 社交分享
 solution: Experience Cloud,Analytics
 title: 社交分享
-topic: Metrics
+topic-fix: Metrics
 uuid: 900e58aa-c1d3-4590-af44-df67575214a4
-translation-type: ht
-source-git-commit: aab04abeb5edb6be886002e27ef1c5340b0a8f0d
-workflow-type: ht
-source-wordcount: '142'
+exl-id: 3f396c6d-dae4-4419-84fd-884a9e87dab1
+translation-type: tm+mt
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+workflow-type: tm+mt
+source-wordcount: '143'
 ht-degree: 100%
 
 ---
-
 
 # 社交分享{#social-sharing}
 
