@@ -4,16 +4,16 @@ seo-description: 此資訊可協助您在 iOS 應用程式中使用贏取追蹤�
 seo-title: 贏取
 solution: Experience Cloud,Analytics
 title: 贏取
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e22d2785-58f1-4841-9163-912c5e0f5d61
+exl-id: 35c83dc9-2a66-46b3-9dce-81006855319d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
 
 ---
-
 
 # 贏取 {#acquisition}
 
