@@ -4,16 +4,16 @@ seo-description: 地理位置可協助您透過經緯度和 iOS 應用程式中�
 seo-title: 地理位置與地標
 solution: Experience Cloud,Analytics
 title: 地理位置與地標
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
+exl-id: 732c3863-2010-4d04-a17b-a656e857f567
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
 ---
-
 
 # 地理位置與地標 {#geo-location-and-points-of-interest}
 
@@ -116,4 +116,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 * 當兩個 POI 的直徑範圍重疊時，會使用包含目前位置的第一個 POI。
 
    當您的 POI 重疊時，您應依最高精細度至最低精細度的順序列出 POI，以確保報告最精細的 POI。
-
