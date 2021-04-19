@@ -3,23 +3,23 @@ description: 協助您使用視訊分析的資訊。
 seo-description: 協助您使用視訊分析的資訊。
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: Video Analytics
-topic: Developer and implementation
+title: 視訊分析
+topic-fix: Developer and implementation
 uuid: 7d4e6668-a1d9-41da-96c8-8baac860c5b0
+exl-id: 86d70a6f-db12-4f94-a37f-4b1d4b99e0f1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 72%
 
 ---
 
-
 # Video Analytics {#video-analytics}
 
 協助您使用視訊分析的資訊。
 
-在Adobe Analytics中測量音訊和視訊指南 [中，對視訊測量有詳細說明](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html/) 。 測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 此快速入門區段提供開發人員工作的基本概觀以及程式碼範例。
+在「在Adobe Analytics測量音訊和視訊」指南中，對視訊測量有詳細說明。 [](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html/)測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 此快速入門區段提供開發人員工作的基本概觀以及程式碼範例。
 
 下表列出會傳送至 Analytics 的媒體資料。使用處理規則，將內容資料對應至 Analytics 變數。
 
@@ -43,7 +43,7 @@ ht-degree: 72%
 
 * **a.media.segment**
 
-   (必要) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segment eVar.
+   (必要) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst可能會在`1:M:0-25`區段eVar中收集下列項目。
 
    系統會於下列時間點，以預設的視訊資料收集方法收集資料：
 
@@ -166,7 +166,7 @@ property bool isMediaAd;
 
 * **開啟(winJS:開啟)**
 
-   使用中定義的設定跟蹤開啟的介質 `settings`。
+   使用`settings`中定義的設定跟蹤開啟的介質。
 
    * 此方法的語法如下：
 
@@ -182,7 +182,7 @@ property bool isMediaAd;
 
 * **關閉(winJS:關閉)**
 
-   追蹤名稱為「名稱」的媒體項目的媒 *體關閉*。
+   跟蹤名為&#x200B;*name*&#x200B;的介質項的介質關閉。
 
    * 此方法的語法如下：
 
@@ -198,7 +198,7 @@ property bool isMediaAd;
 
 * **播放(winJS:播放)**
 
-   追蹤在指定偏移量（以秒為單位） *`name`* 命名之媒 *體項* 目的媒體播放。
+   在給定的&#x200B;*offset*（以秒為單位）追蹤名為&#x200B;*`name`*&#x200B;的媒體項目的媒體播放。
 
    * 此方法的語法如下：
 
@@ -275,4 +275,3 @@ property bool isMediaAd;
       ```js
       ADB.Media.track("mediaName", null);
       ```
-
