@@ -1,20 +1,20 @@
 ---
 description: 您可以定義和設定推送訊息的對象選項，包含日期範圍選項、Analytics 區段和自訂區段。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以定義和設定推送訊息的對象選項，包含日期範圍選項、Analytics 區段和自訂區段。
 seo-title: 對象  定義和設定推送訊息的對象區段
 solution: Experience Cloud,Analytics
 title: 對象  定義和設定推送訊息的對象區段
-topic: Metrics
+topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
+exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1022'
 ht-degree: 100%
 
 ---
-
 
 # 對象：推送訊息{#audience-define-and-configure-audience-segments-for-push-messages}
 
