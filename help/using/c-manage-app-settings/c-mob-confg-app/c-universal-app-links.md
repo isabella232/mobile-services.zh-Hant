@@ -4,16 +4,16 @@ seo-description: 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連
 seo-title: Apple 通用連結和 Android 應用程式連結
 solution: Experience Cloud,Analytics
 title: 通用連結和應用程式連結指南
-topic: 量度
+topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
+exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
 translation-type: tm+mt
-source-git-commit: bb41caaecaefe8168d9b19e151d43ec792e24db8
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 96%
 
 ---
-
 
 # 通用連結與應用程式連結：它們如何運作？{#universal-links-and-app-links}
 
@@ -157,4 +157,3 @@ ht-degree: 96%
 >[!IMPORTANT]
 >
 >您不會看到通用連結或應用程式連結的點擊追蹤計數，也無法使用插入式連結。
-
