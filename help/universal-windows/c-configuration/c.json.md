@@ -4,18 +4,18 @@ seo-description: 協助您使用ADBMobile JSON設定檔案的資訊。
 seo-title: ADBMobileConfig.json 設定
 solution: Experience Cloud,Analytics
 title: ADBMobileConfig.json 設定
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cbcb54a3-4b8f-4651-8ce9-2731ac988545
+exl-id: 57d50d30-651c-4943-835e-1cbce7467baf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 44%
 
 ---
 
-
-# ADBMobileConfig.json config file {#adbmobileconfig-json-config}
+# ADBMobileConfig.json設定檔案{#adbmobileconfig-json-config}
 
 協助您使用ADBMobile JSON設定檔案的資訊。
 
@@ -23,7 +23,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **rsids**
 
-   (Analytics **需要**)一或多個報表套裝，用以接收Analytics資料。 多個報表套裝 ID 應以逗號分隔，且中間不應有空格。
+   （**Analytics**&#x200B;所需）一或多個報表套裝，用以接收Analytics資料。 多個報表套裝 ID 應以逗號分隔，且中間不應有空格。
 
    * 此方法的語法如下：
 
@@ -37,7 +37,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **server**
 
-   (**Analytics和觀眾管理需要**)。 Analytics或Audience Management伺服器（根據父節點）。 應該以伺服器網域填入此變數，不含 `"https://"` 或 `"https://"` 通訊協定前置詞。程式庫會根據變數自動處理通訊協定首 `ssl` 碼。
+   （**Analytics和觀眾管理需要**）。 Analytics或Audience Management伺服器（根據父節點）。 應該以伺服器網域填入此變數，不含 `"https://"` 或 `"https://"` 通訊協定前置詞。通訊協定首碼由程式庫根據`ssl`變數自動處理。
 
    如果 `ssl` 為 `true`，會對此伺服器進行安全連線。如果 `ssl` 為 `false`，會對此伺服器進行非安全連線。
 
@@ -47,15 +47,15 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **ssl**
 
-   啟用(`true`)或停用(`false`)透過SSL(`HTTPS`)傳送測量資料。 預設值為 `false`。
+   啟用(`true`)或停用(`false`)透過SSL傳送測量資料(`HTTPS`)。 預設值為 `false`。
 
 * **offlineEnabled**
 
-   When enabled (`true`), hits are queued while the device is offline and sent later when the device is online. 您的報表套裝必須啟用時間戳記才能使用離線追蹤功能。
+   啟用(`true`)時，會在裝置離線時將點擊排入佇列，並在裝置上線時稍後傳送。 您的報表套裝必須啟用時間戳記才能使用離線追蹤功能。
 
-   If time stamps are enabled on your report suite, your `offlineEnabled` configuration property *must* be `true`. 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 `false`.
+   如果報表套裝已啟用時間戳記，則您的`offlineEnabled`設定屬性&#x200B;*必須*&#x200B;為`true`。 如果報表套裝未啟用時間戳記，您的 `offlineEnabled` 設定屬性&#x200B;*必須*&#x200B;為 `false`.
 
-   若未正確設定，資料將會遺失。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務。 If you are currently reporting AppMeasurement data to a report suite that also collects data from JavaScript, you might need to set up a separate report suite for mobile data or include a custom timestamp on all JavaScript hits using the `s.timestamp` variable.
+   若未正確設定，資料將會遺失。如果您不確定報表套裝是否啟用時間戳記，請連絡客戶服務。 如果您目前要將AppMeasurement資料報告至也會從JavaScript收集資料的報表套裝，則可能需要為行動資料設定個別的報表套裝，或使用`s.timestamp`變數在所有JavaScript點擊上加入自訂時間戳記。
 
    預設值為 `false`。
 
@@ -69,7 +69,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    以批次傳送點擊。
 
-   例如，若設為，則 `50`會將點擊排入佇列直到儲存50次，然後傳送所有佇列的點擊。 需 `offlineEnabled=true`要，且預設值為( `0` 無批次處理)。
+   例如，若設為`50`，則會將點擊排入佇列，直到儲存50次為止，然後會傳送所有佇列的點擊。 需要`offlineEnabled=true`，且預設值為`0`（無批次處理）。
 
 * **privacyDefault**
 
@@ -77,7 +77,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
    * `optedin` – 會立即傳送點擊。
    * `optedout` – 會捨棄點擊。
-   * `optunknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `optunknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       這僅設定預設值。 如果此值在程式碼中設定或變更，則程式碼所設定的值會儲存在本機儲存中，並持續使用，直到變更為止，或是解除安裝並重新安裝應用程式。
 
@@ -98,13 +98,13 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **clientCode**
 
-   (Target **需要**)您指派的用戶端代碼。
+   （**Target**&#x200B;需要）您指派的用戶端代碼。
 
 * **timeout**
 
    判斷目標等待回應的時間長度。
 
-The following is an example of an `ADBMobileConfig.json` file:
+以下是`ADBMobileConfig.json`檔案的範例：
 
 ```js
 { 
