@@ -4,16 +4,16 @@ seo-description: 處理規則是用來將您在內容資料變數中傳送的資
 seo-title: 處理規則和內容資料
 solution: Experience Cloud,Analytics
 title: 處理規則和內容資料
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
+exl-id: a3968160-42c4-4671-b541-c14639b8a451
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
 ---
-
 
 # 處理規則與內容資料{#processing-rules-and-context-data}
 
@@ -67,4 +67,3 @@ ht-degree: 100%
 >[!TIP]
 >
 >Adobe 會保留命名空間「`a.`」。除了此限制外，若要避免衝突，唯一的要求是，您的登入公司中的內容資料變數必須是唯一的。
-
