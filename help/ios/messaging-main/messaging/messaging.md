@@ -4,16 +4,16 @@ seo-description: 此資訊可協助您使用 iOS 應用程式中的應用程式�
 seo-title: 應用程式內傳訊
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 21fa6a94-bb7f-4c78-843b-a50f1974db22
+exl-id: 70b0ade4-dcd1-4e00-9800-352f11c4001d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 100%
 
 ---
-
 
 # 應用程式內傳訊 {#in-app-messaging}
 
@@ -86,7 +86,7 @@ iOS Mobile Services SDK 會對您的應用程式內訊息追蹤下列量度：
 
 * 如果是自訂的全螢幕應用程式內訊息，訊息中的 HTML 內容必須包含正確的程式碼，才能通知 SDK 追蹤以下的按鈕:
 
-   * **[!UICONTROL 點進]** (重新導向) 追蹤範例:  `adbinapp://confirm/?url=https://www.yoursite.com`
+   * **[!UICONTROL 點進]** (重新導向) 追蹤範例:   `adbinapp://confirm/?url=https://www.yoursite.com`
    * **[!UICONTROL 取消]** (關閉) 追蹤範例: `adbinapp://cancel`
 
 * 如果是本機 (遠端) 通知:
@@ -118,4 +118,3 @@ iOS Mobile Services SDK 會對您的應用程式內訊息追蹤下列量度：
 >[!IMPORTANT]
 >
 >您必須確保指定的資源可用。
-
