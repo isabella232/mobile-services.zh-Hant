@@ -3,17 +3,17 @@ description: 此資訊可協助您使用 iOS 9 適用之全新安全性需求組
 seo-description: 此資訊可協助您使用 iOS 9 適用之全新安全性需求組合 App Transport Security (ATS)。
 seo-title: App Transport Security
 solution: Experience Cloud,Analytics
-title: App Transport Security
-topic: Developer and implementation
+title: 應用程式傳輸安全性
+topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
+exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
 ---
-
 
 # App Transport Security {#app-transport-security}
 
@@ -39,4 +39,3 @@ Apple 自 iOS 9 開始導入 App Transport Security，這是一組符合安全�
 >[!TIP]
 >
 >上述之考量作法均會影響由 Adobe Mobile SDK 進行的連線，但不會影響由應用程式進行的 Web 檢視或其他連線。
-
