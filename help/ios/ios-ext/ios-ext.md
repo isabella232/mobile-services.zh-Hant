@@ -4,16 +4,16 @@ seo-description: 您可以使用 iOS 延伸功能，以便從 Apple Watch 應用
 seo-title: iOS 延伸功能實施
 solution: Experience Cloud,Analytics
 title: iOS 延伸功能實施
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
+exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 100%
 
 ---
-
 
 # iOS 延伸功能實施 {#ios-extension-implementation}
 
@@ -48,6 +48,7 @@ Apple 提供了一組 API，可讓 Watch 應用程式將要求傳送至容納應
 >
 >* 一個要包含應用程式的目標。
 >* 一個擴充功能目標。
+
 >
 
 
@@ -114,4 +115,3 @@ Apple 提供了一組 API，可讓 Watch 應用程式將要求傳送至容納應
 * 如果未曾啟動容納應用程式，則會捨棄擴充功能的點擊。
 * 您的容納應用程式和擴充功能應用程式之間的版本號碼和組建號碼必須相同。
 * 在 iOS 延伸功能應用程式中不會觸發任何生命週期呼叫。
-
