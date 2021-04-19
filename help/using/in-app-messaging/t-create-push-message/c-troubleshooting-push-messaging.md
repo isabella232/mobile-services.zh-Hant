@@ -1,20 +1,20 @@
 ---
 description: 此資訊可協助您進行推送訊息疑難排解。
-keywords: mobile
+keywords: 行動
 seo-description: 此資訊可協助您進行推送訊息疑難排解。
 seo-title: 疑難排解推送訊息
 solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
-topic: Metrics
+topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
+exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '736'
 ht-degree: 100%
 
 ---
-
 
 # 疑難排解推送訊息{#troubleshooting-push-messaging}
 
