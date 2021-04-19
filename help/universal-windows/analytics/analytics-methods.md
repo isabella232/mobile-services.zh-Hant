@@ -1,23 +1,23 @@
 ---
-description: 協助您搭配Adobe Analytics使用通用Windows平台SDK的資訊。
-seo-description: 協助您搭配Adobe Analytics使用通用Windows平台SDK的資訊。
+description: 協助您搭配Adobe Analytics使用Universal Windows Platform SDK的資訊。
+seo-description: 協助您搭配Adobe Analytics使用Universal Windows Platform SDK的資訊。
 seo-title: 'Analytics 方法 '
 solution: Experience Cloud,Analytics
 title: 'Analytics 方法 '
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cc299bb5-ec61-49bf-869a-f3c3bc83359f
+exl-id: 3ceaedfa-274f-4dc7-9e4c-15233d09f935
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 57%
 
 ---
 
-
 # Analytics 方法 {#analytics-methods}
 
-協助您搭配Adobe Analytics使用通用Windows平台SDK的資訊。
+協助您搭配Adobe Analytics使用Universal Windows Platform SDK的資訊。
 
 SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Analytics方法的前置詞為「Analytics」。
 
@@ -25,11 +25,11 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 >[!TIP]
 >
->當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
+>當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
 * **TrackState(winJS:trackState)**
 
-   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。If `state` is empty, it displays as &quot;app name app version (build)&quot; in reports. If you see this value in reports, make sure you are setting `state` in each `TrackState` call.
+   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果`state`為空白，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 如果您在報表中看到此值，請務必在每個`TrackState`呼叫中設定`state`。
 
    >[!TIP]
    >
