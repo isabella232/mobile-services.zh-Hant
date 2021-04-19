@@ -1,20 +1,20 @@
 ---
 description: 您可以建立或編輯行銷連結，以提供您行動應用程式或網站的深層連結。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以建立或編輯行銷連結，以提供您行動應用程式或網站的深層連結。
 seo-title: 建立或編輯行銷連結
 solution: Experience Cloud,Analytics
 title: 建立或編輯行銷連結
-topic: Metrics
+topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
+exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '634'
 ht-degree: 100%
 
 ---
-
 
 # 建立或編輯行銷連結{#create-or-edit-marketing-links}
 
