@@ -4,16 +4,16 @@ seo-description: 完成下列步驟來設定報表套裝以收集 iOS 應用程�
 seo-title: 開始之前
 solution: Experience Cloud,Analytics
 title: 開始之前
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
+exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 100%
 
 ---
-
 
 # 開始之前 {#before-you-start}
 
@@ -101,4 +101,3 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 >[!TIP]
 >
 >應用程式的設定檔案會自動包含在 SDK 下載中，因此您無須另外下載此檔案。然而，如果您之前已下載 SDK，並且想要取得更新的設定，則須再次下載此設定檔案。
-
