@@ -4,16 +4,16 @@ seo-description: 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，�
 seo-title: 獨立延伸功能實施
 solution: Experience Cloud,Analytics
 title: 獨立延伸功能實施
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
+exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 100%
 
 ---
-
 
 # 獨立擴充功能實施 {#stand-alone-extension-implementation}
 
@@ -56,4 +56,3 @@ ht-degree: 100%
       此值表示該點擊來自延伸功能。
 
 * 在 iOS 延伸功能應用程式中不會觸發任何生命週期呼叫。
-
