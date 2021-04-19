@@ -1,19 +1,19 @@
 ---
 description: 本主題提供有關如何在贏取測試期間，針對可能遇到的問題進行疑難排解的資訊。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 本主題提供有關如何在贏取測試期間，針對可能遇到的問題進行疑難排解的資訊。
 seo-title: 疑難排解贏取測試
 solution: Experience Cloud,Analytics
 title: 疑難排解贏取測試
-topic: Developer and implementation
+topic-fix: Developer and implementation
+exl-id: 1ed2ad89-4e89-43da-aa21-f688b4d1c0d1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '252'
 ht-degree: 100%
 
 ---
-
 
 # 疑難排解贏取測試 {#troubleshoot-acquisition-testing}
 
@@ -50,4 +50,3 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >若要正確處理反向連結目的，您必須個別執行這兩個指令。否則，`adb` 會雙重逸出反向連結資訊，且廣播接收器收到的資料將會不完整。
-
