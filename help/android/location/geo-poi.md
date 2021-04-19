@@ -4,16 +4,16 @@ seo-description: 地理位置可協助您透過經緯度和 Android 應用程式
 seo-title: 地理位置與地標
 solution: Experience Cloud,Analytics
 title: 地理位置與地標
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
+exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 100%
 
 ---
-
 
 # 地理位置與地標 {#geo-location-and-points-of-interest}
 
@@ -120,4 +120,3 @@ Analytics.trackLocation(currentLocation, locationContextData);
 * 當兩個 POI 的直徑範圍重疊時，會使用包含目前位置的第一個 POI。
 
    當您的 POI 重疊時，您應依最高至最低精細度的順序列出 POI，以確保報告最精細的 POI。
-
