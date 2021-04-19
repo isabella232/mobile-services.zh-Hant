@@ -1,20 +1,20 @@
 ---
 description: 必須先在 SDK 設定中啟用贏取追蹤，才可追蹤及報告行銷連結。
-keywords: mobile
+keywords: 行動
 seo-description: 必須先在 SDK 設定中啟用贏取追蹤，才可追蹤及報告行銷連結。
 seo-title: 配置贏取
 solution: Experience Cloud,Analytics
 title: 配置贏取
-topic: Metrics
+topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
+exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '215'
 ht-degree: 100%
 
 ---
-
 
 # 配置贏取 {#configure-acquisition}
 
