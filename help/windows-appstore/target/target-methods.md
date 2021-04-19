@@ -4,16 +4,16 @@ seo-description: Windows 8.1通用應用程式商店程式庫提供的Target方�
 seo-title: Target 方法
 solution: Experience Cloud,Analytics
 title: Target 方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
+exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 42%
 
 ---
-
 
 # Target 方法 {#target-methods}
 
@@ -25,7 +25,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 >[!TIP]
 >
->當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
+>當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
 ## 類別參考：TargetLocationRequest
 
@@ -73,7 +73,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest(winJS:loadRequest)**
 
-   Sends `request` to your configured Target server and returns the string value of the offer generated in a block `callback`.
+   傳送`request`至您設定的Target伺服器，並傳回區塊`callback`中產生之選件的字串值。
 
    * 此方法的語法如下：
 
@@ -92,7 +92,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest(winJS:createRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   使用給定參數建立`TargetLocationRequest`對象。
 
    * 此方法的語法如下：
 
@@ -109,7 +109,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest(winJS:createOrder &#x200B; ConfirmRequest)**
 
-   Creates a `TargetLocationRequest` object with the given parameters.
+   使用給定參數建立`TargetLocationRequest`對象。
 
    * 此方法的語法如下：
 
@@ -171,4 +171,3 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       ```js
       auto sessionId = ADBMobile.Target.getSessionId(); 
       ```
-
