@@ -4,16 +4,16 @@ seo-description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Ap
 seo-title: 使用 WatchOS 2 進行 Apple Watch 實施
 solution: Experience Cloud,Analytics
 title: 使用 WatchOS 2 進行 Apple Watch 實施
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
+exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 
 ---
-
 
 # 使用 WatchOS 2 進行 Apple Watch 實施{#apple-watch-implementation-with-watchos}
 
@@ -41,6 +41,7 @@ ht-degree: 100%
 >* 容納應用程式
 >* WatchKit 應用程式
 >* WatchKit 延伸功能
+
 >
 
 
@@ -166,4 +167,3 @@ ht-degree: 100%
 * 若為 WatchKit 應用程式，`a.RunMode` 則會設為 `Extension`。
 * 由於 WatchKit 應用程式會在 Watch 上執行，因此應用程式會在 `a.AppID` 中正確回報其名稱。
 * 在 WatchOS2 應用程式中不會觸發任何生命週期呼叫。
-
