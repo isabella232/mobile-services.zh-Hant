@@ -1,20 +1,20 @@
 ---
 description: 適用於 Experience Cloud 解決方案的 Android SDK 4.x 可讓您測量原生 Android 應用程式、在應用程式中提供目標式內容，以及透過對象管理運用與收集對象資料。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 適用於 Experience Cloud 解決方案的 Android SDK 4.x 可讓您測量原生 Android 應用程式、在應用程式中提供目標式內容，以及透過對象管理運用與收集對象資料。
 seo-title: 適用於 Experience Cloud 解決方案的 Android SDK 4.x
 solution: Experience Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 Android SDK 4.x
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
+exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
 translation-type: tm+mt
-source-git-commit: bc11c1e7a4a11657ee89c40ddcbd37377ce50bb5
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '451'
 ht-degree: 100%
 
 ---
-
 
 # 適用於 Experience Cloud 解決方案的 Android SDK 4.x{#android-sdk-x-for-experience-cloud-solutions}
 
