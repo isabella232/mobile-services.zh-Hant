@@ -1,20 +1,20 @@
 ---
 description: 在 Adobe Mobile Services UI 中，您可以排程要立即傳送、要稍後傳送，以及作為週期性事件的推播訊息。這些事件可以排程為每日、每週或每月執行。
-keywords: mobile
+keywords: 行動
 seo-description: 在 Adobe Mobile Services UI 中，您可以排程要立即傳送、要稍後傳送，以及作為週期性事件的推播訊息。這些事件可以排程為每日、每週或每月執行。
 seo-title: 排程  推送訊息
 solution: Experience Cloud,Analytics
 title: 排程  推送訊息
-topic: Metrics
+topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
+exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '724'
 ht-degree: 100%
 
 ---
-
 
 # 排程: 推送訊息{#schedule-push-message}
 
