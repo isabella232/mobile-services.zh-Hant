@@ -1,20 +1,20 @@
 ---
 description: 您可以使用行銷連結頁面來建立、使用及封存行銷連結。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以使用行銷連結頁面來建立、使用及封存行銷連結。
 seo-title: 管理行銷連結
 solution: Experience Cloud,Analytics
 title: 管理行銷連結
-topic: Metrics
+topic-fix: Metrics
 uuid: 98ac3520-89ed-4513-83f6-120dda9d0157
+exl-id: 678c18fe-b282-4eab-a248-e00dfd53cecd
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '202'
 ht-degree: 100%
 
 ---
-
 
 # 管理行銷連結{#manage-marketing-links}
 
@@ -38,4 +38,3 @@ ht-degree: 100%
    * 若要取消封存行銷連結，按一下&#x200B;**[!UICONTROL 封存]**，選取一個連結，並按一下&#x200B;**[!UICONTROL 取消封存選取的項目]**。
 
       檢視封存頁面中只會顯示先前已封存的行銷連結。
-
