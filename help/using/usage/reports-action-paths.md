@@ -1,20 +1,20 @@
 ---
 description: 「動作路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
-keywords: mobile
+keywords: 行動
 seo-description: 「動作路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
 seo-title: 動作路徑報表
 solution: Experience Cloud,Analytics
 title: 動作路徑報表
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: a21e5d9e-fd57-4178-9d64-87181b7f988b
+exl-id: 4c97b07f-17df-49cb-b2f7-dcb682d9d3c6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 100%
 
 ---
-
 
 # 動作路徑報表{#action-paths}
 
