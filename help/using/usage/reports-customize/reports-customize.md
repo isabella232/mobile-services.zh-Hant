@@ -1,20 +1,20 @@
 ---
 description: 此資訊能協助您瞭解及自訂內建的報表。
-keywords: mobile
+keywords: 行動
 seo-description: 此資訊能協助您瞭解及自訂內建的報表。
 seo-title: 自訂報表
 solution: Experience Cloud,Analytics
 title: 自訂報表
-topic: Reports,Metrics
+topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
+exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 100%
 
 ---
-
 
 # 自訂報表{#customize-reports}
 
@@ -45,4 +45,3 @@ ht-degree: 100%
 | 6 | **[!UICONTROL 嚴格篩選]**&#x200B;可讓您建立跨越不同報表的篩選器。您想要查看特定區段在所有行動報表中的表現情形時即可使用。嚴格篩選可讓您定義套用到所有非路徑報表的篩選器。如需詳細資訊，請參閱[新增嚴格篩選](/help/using/usage/reports-customize/t-sticky-filter.md)。 |
 | 7 | **[!UICONTROL 「資料圖表」]**&#x200B;會根據所選量度在適當的圖表中顯示資料。圖表類型包括折線圖、橫條圖、環圈圖等。 |
 | 8 | **[!UICONTROL 「日期表格」]**&#x200B;會以表格形式顯示資料。您可以按一下任何欄標題，依遞增或遞減順序排序資料。 |
-
