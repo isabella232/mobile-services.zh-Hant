@@ -4,16 +4,16 @@ seo-description: 此資訊可協助您在 iOS 應用程式中提供目標式內�
 seo-title: Target
 solution: Experience Cloud,Analytics
 title: Target
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: c2b134bb-1c29-4617-bd9e-fa3940483361
+exl-id: 1494bf8e-a9e5-4594-a09d-903c141fdd68
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
 ---
-
 
 # Target{#target}
 
