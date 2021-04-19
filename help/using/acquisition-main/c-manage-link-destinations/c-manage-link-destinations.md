@@ -1,20 +1,20 @@
 ---
 description: 您可以在管理連結目的地頁面建立、編輯、封存/取消封存及刪除連結目的地。可在建立行銷連結、推送通知或應用程式內訊息時內嵌呼叫這些目的地。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以在管理連結目的地頁面建立、編輯、封存/取消封存及刪除連結目的地。可在建立行銷連結、推送通知或應用程式內訊息時內嵌呼叫這些目的地。
 seo-title: 建立及管理連結目的地
 solution: Experience Cloud,Analytics
 title: 建立及管理連結目的地
-topic: Metrics
+topic-fix: Metrics
 uuid: 43930e3a-6a11-40c6-8a61-6732a673dac7
+exl-id: 53e9f970-e53c-4c0d-9214-abb01a9b144b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---
-
 
 # 建立及管理連結目的地{#create-and-manage-link-destinations}
 
@@ -31,4 +31,3 @@ ht-degree: 100%
 例如:
 
 ![](assets/link_destinations_list.png)
-
