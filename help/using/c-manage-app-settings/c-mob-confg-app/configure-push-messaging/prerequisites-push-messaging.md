@@ -1,20 +1,20 @@
 ---
 description: 您必須先完成這些工作，才可開始在應用程式中設定推送訊息。
-keywords: mobile
-seo-description: 您必須先完成這些工作，才可開始在應用程式中設定推送訊息。
+keywords: 行動
+seo-description: 您必須先完成這些工作才可開始在應用程式中配置推送訊息。
 seo-title: 啟用推送訊息的必要條件
 solution: Experience Cloud,Analytics
 title: 啟用推送訊息的必要條件
-topic: Metrics
+topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
+exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 100%
 
 ---
-
 
 # 啟用推送訊息的必要條件 {#prerequisites-to-enable-push-messaging}
 
