@@ -4,16 +4,16 @@ seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯
 seo-title: 追蹤應用程式當機
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式當機
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
+exl-id: d6b4c763-7e02-42d0-aaf2-cda8640e5b9f
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # 追蹤應用程式當機 {#track-app-crashes}
 
@@ -70,4 +70,3 @@ Apteligent (原為 Crittercism) 等公司所提供的當機報告資料庫皆會
 * 請勿刪除或修改 Adobe Mobile SDK 放入 `NSUserDefaults` 的任何值。
 
    如果您在 SDK 外部修改這類值，則回報的資料將會無效。
-
