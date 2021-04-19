@@ -1,20 +1,20 @@
 ---
 description: 此資訊可協助您進行推送訊息疑難排解。
-keywords: mobile
+keywords: 行動
 seo-description: 此資訊可協助您進行推送訊息疑難排解。
 seo-title: 疑難排解推送訊息
 solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
-topic: Metrics
+topic-fix: Metrics
 uuid: 87d7dcb6-82a8-46e3-a6ed-7f895a22f2af
+exl-id: dda84d30-2a7b-496c-b8f3-3bd6b97076aa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
-
 
 # 疑難排解推送訊息 {#troubleshooting-push-messaging}
 
@@ -39,8 +39,9 @@ ht-degree: 100%
    >推送服務無法保證訊息一定會傳送出去。如需服務的可靠性詳細資訊，請參閱適當文件。
    >
    >* **APNS**：[服務品質](https://developer.apple.com/documentation/usernotifications)
-   >
-   >* **GCM**：[訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options)
+      >
+      >
+   * **GCM**：[訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options)
 
 
 ## 我要如何更新 Apple 推播服務憑證？
