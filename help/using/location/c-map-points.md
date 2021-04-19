@@ -1,20 +1,20 @@
 ---
 description: 您可以檢視可顯示您的地標與其他資料標記的互動地圖。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以檢視可顯示您的地標與其他資料標記的互動地圖。
 seo-title: 地圖
 solution: Experience Cloud,Analytics
 title: 地圖
-topic: Metrics
+topic-fix: Metrics
 uuid: 3c271738-eb8d-4c26-baaf-54b247bfc4da
+exl-id: a7e75333-2919-44bf-9963-f40cdee2d6b6
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 100%
 
 ---
-
 
 # 地圖 {#map}
 
