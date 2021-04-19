@@ -1,20 +1,20 @@
 ---
 description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: Video Analytics
-topic: Developer and implementation
+title: 視訊分析
+topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
+exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '885'
 ht-degree: 100%
 
 ---
-
 
 # Video Analytics {#video-analytics}
 
