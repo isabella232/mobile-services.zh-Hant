@@ -4,32 +4,32 @@ seo-description: 通用Windows平台程式庫提供的Audience Manager方法清�
 seo-title: Audience Manager 方法
 solution: Experience Cloud,Analytics
 title: Audience Manager 方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
+exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 43%
 
 ---
 
-
 # Audience Manager 方法{#audience-manager-methods}
 
 通用Windows平台程式庫提供的Audience Manager方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 Methods are prefixed according to the solution. Audience Manager methods are prefixed with `AudienceManager`.
+SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 根據解對方法進行前置詞。Audience Manager方法的前置詞為`AudienceManager`。
 
 >[!TIP]
 >
->當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
+>當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
 如果在您的JSON檔案中設定了觀眾管理員，則包含生命週期度量的訊號會隨生命週期點擊傳送。
 
 * **GetVisitorProfile(winJS:getVisitorProfile)**
 
-   傳回最近取得的訪客描述檔。Returns `null` if no signal has been submitted yet. Visitor profile is saved in `SharedPreferences` for easy access across multiple launches of your app.
+   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回`null`。 訪客描述檔會儲存在`SharedPreferences`中，以便在多次啟動應用程式時輕鬆存取。
 
    * 此方法的語法如下：
 
