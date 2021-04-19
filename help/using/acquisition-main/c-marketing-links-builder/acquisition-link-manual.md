@@ -1,20 +1,20 @@
 ---
 description: 您可以透過手動設定 URL 參數來建立行銷連結，即時贏取新的行動應用程式使用者。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以透過手動設定 URL 參數來建立行銷連結，即時贏取新的行動應用程式使用者。
 seo-title: 手動建立贏取連結
 solution: Experience Cloud,Analytics
 title: 手動建立贏取連結
-topic: Metrics
+topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
+exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 100%
 
 ---
-
 
 # 手動建立贏取連結 {#create-acquisition-link-manually}
 
@@ -146,4 +146,3 @@ ht-degree: 100%
    `a_i_id`/ `a_g_id` 是商店 ID 的範例。
 
 * 如果無法自動判別目的地商店，且沒有提供預設商店，系統便會傳回 404 錯誤。
-
