@@ -4,22 +4,22 @@ seo-description: 無法使用處理規則來設定產品變數。 在行動SDK�
 seo-title: Products 變數
 solution: Experience Cloud,Analytics
 title: Products 變數
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
+exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 13%
 
 ---
 
-
 # Products 變數{#products-variable}
 
 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
 
-To set the *`products`* variable, set a context data key to `"&&products"`, and set the value using the syntax defined for the *`products`*:
+若要設定&#x200B;*`products`*&#x200B;變數，請將上下文資料索引鍵設定為`"&&products"`，並使用為&#x200B;*`products`*&#x200B;定義的語法來設定值：
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -49,4 +49,4 @@ ADB.Analytics.trackState("Order Confirmation", cdata);
 
 ![](assets/products-procrules.png)
 
-You do not need to map the *`products`* variable using processing rules since it is set directly on the image request by the SDK.
+您不需要使用處理規則來映射&#x200B;*`products`*&#x200B;變數，因為它是SDK直接在影像要求上設定。
