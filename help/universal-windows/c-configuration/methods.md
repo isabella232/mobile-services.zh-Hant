@@ -4,16 +4,16 @@ seo-description: 通用Windows平台程式庫提供的類別和方法。
 seo-title: SDK 方法
 solution: Experience Cloud,Analytics
 title: SDK 方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
+exl-id: 0aac477c-074d-457c-b117-bb205119c475
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 62%
 
 ---
-
 
 # SDK 方法 {#sdk-methods}
 
@@ -21,7 +21,7 @@ ht-degree: 62%
 
 >[!TIP]
 >
->當您從winJS( `winmd` JavaScript)使用方法時，所有方法都會自動將其第一個字母小寫。
+>當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
 * **GetVersion(winJS:getVersion)**
 
@@ -47,7 +47,7 @@ ht-degree: 62%
    * `ADBMobilePrivacyStatusOptOut` -會捨棄點擊。
    * `ADBMobilePrivacyStatusUnknown` – 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      The default value is set in the `ADBMobileConfig.json` config file. 如需詳細資訊，請 [參閱ADBMobileConfig.json設定檔案](/help/universal-windows/c-configuration/c.json.md)。
+      預設值設定在`ADBMobileConfig.json`設定檔案中。 如需詳細資訊，請參閱[ADBMobileConfig.json設定檔案](/help/universal-windows/c-configuration/c.json.md)。
 
    * 此方法的語法如下：
 
@@ -81,7 +81,7 @@ ht-degree: 62%
    將目前使用者的隱私權狀態設為 `status`。設定為下列其中一值：
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `DBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `DBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（傳送點擊）或選擇退出（捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       * 此方法的語法如下：
 
@@ -128,12 +128,12 @@ ht-degree: 62%
 
 * **GetUserIdentifier(winJS:getUserIdentifier)**
 
-   如果已設定自訂識別碼，則傳回自訂使用者識別碼。 Returns `null` if a custom identifier is not set.
+   如果已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回`null`。
 預設值為 `null`。
 
    >[!IMPORTANT]
    >
-   >如果您的應用程式從Experience Cloud 3.x升級至4.x SDK，則會擷取先前的ID服務（自訂或自動產生）並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
+   >如果您的應用程式從Experience Cloud3.x升級至4.x SDK，則會擷取先前的ID服務（自訂或自動產生）並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
 
    * 此方法的語法如下：
 
