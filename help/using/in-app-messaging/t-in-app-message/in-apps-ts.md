@@ -1,20 +1,20 @@
 ---
 description: 此訊息可協助您疑難排解應用程式內訊息的問題。
-keywords: mobile
+keywords: 行動
 seo-description: 此訊息可協助您疑難排解應用程式內訊息的問題。
 seo-title: 應用程式內傳訊疑難排解
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊疑難排解
-topic: Metrics
+topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
+exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
-
 
 # 應用程式內訊息疑難排解{#troubleshooting-in-app-messaging}
 
