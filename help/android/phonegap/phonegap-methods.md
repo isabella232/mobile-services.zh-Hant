@@ -1,20 +1,20 @@
 ---
 description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
 seo-title: PhoneGap 外掛程式方法
 solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
+exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1573'
 ht-degree: 100%
 
 ---
-
 
 # PhoneGap 外掛程式方法{#phonegap-plug-in-methods}
 
