@@ -1,26 +1,26 @@
 ---
 description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
 seo-title: 生命週期量度
 solution: Experience Cloud,Analytics
 title: 生命週期量度
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5a371f11-6521-410f-a01f-fc3b285b050f
+exl-id: d7436411-65bd-4cf7-ae3e-cec829a7690a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '892'
 ht-degree: 78%
 
 ---
-
 
 # 生命週期量度 {#lifecycle-metrics}
 
 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
 
-如需詳細資訊，請至「疑難排解生命週期」資 [料的知識庫](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)。
+有關詳細資訊，請轉至[診斷生命週期資料](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)的知識庫。
 
 ## 生命週期量度和維度 {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
@@ -34,14 +34,14 @@ ht-degree: 78%
 
    在安裝或重新安裝後首次執行時觸發。
 
-   * Analytics context data/Target parameter: `a.InstallEvent`
+   * Analytics上下文資料/Target參數：`a.InstallEvent`
    * Audience Manager 訊號: `c_a_InstallEvent`
 
 * **升級**
 
    在升級或版本編號變更後首次執行時觸發。
 
-   * Analytics context data/Target parameter: `a.UpgradeEvent`
+   * Analytics上下文資料/Target參數：`a.UpgradeEvent`
    * Audience Manager 訊號: `c_a_UpgradeEvent`
 
 * **每日參與使用者**
@@ -52,7 +52,7 @@ ht-degree: 78%
    >
    >此量度不會自動儲存至 Analytics 量度。您必須建立處理規則，設定自訂事件來擷取此量度。
 
-   * Analytics context data/Target parameter: `a.DailyEngUserEvent`
+   * Analytics上下文資料/Target參數：`a.DailyEngUserEvent`
    * Audience Manager 訊號: `c_a_DailyEngUserEvent`
 
 * **每月參與使用者**
@@ -63,28 +63,28 @@ ht-degree: 78%
    >
    >此量度不會自動儲存至 Analytics 量度。您必須建立處理規則，設定自訂事件來擷取此量度。
 
-   * Analytics context data/Target parameter: `a.MonthlyEngUserEvent`
+   * Analytics上下文資料/Target參數：`a.MonthlyEngUserEvent`
    * Audience Manager 訊號: `c_a_MonthlyEngUserEvent`
 
 * **啟動**
 
    在每次執行時觸發，包括當機和安裝。在超過生命週期工作階段逾時的情況下，也會在從背景恢復時觸發。
 
-   * Analytics context data/Target parameter: `a.LaunchEvent`
+   * Analytics上下文資料/Target參數：`a.LaunchEvent`
    * Audience Manager 訊號: `c_a_LaunchEvent`
 
 * **當機**
 
    於關閉前，應用程式不在背景執行時觸發。事件會在當機後啟動應用程式時傳送。Adobe Mobile 當機報告不會實施未攔截之例外狀況的全域處理常式。
 
-   * Analytics context data/Target parameter: `a.CrashEvent`
+   * Analytics上下文資料/Target參數：`a.CrashEvent`
    * Audience Manager 訊號: `c_a_CrashEvent`
 
 * **前一個作業長度**
 
    根據在背景中開啟應用程式的時間，報告先前的應用程式工作階段持續的秒數。
 
-   * Analytics context data/Target parameter: `a.PrevSessionLength`
+   * Analytics上下文資料/Target參數：`a.PrevSessionLength`
    * Audience Manager 訊號: `c_a_PrevSessionLength`
 
 ### 維度
@@ -93,7 +93,7 @@ ht-degree: 78%
 
    安裝後首次啟動的日期。日期格式為 `MM/DD/YYYY`。
 
-   * Analytics context data/Target parameter: `a.InstallDate`
+   * Analytics上下文資料/Target參數：`a.InstallDate`
    * Audience Manager 訊號: `c_a_InstallDate`
 
 * **應用程式 ID**
@@ -103,49 +103,49 @@ ht-degree: 78%
 
    以下是此格式的範例: `myapp 1.1`。
 
-   * Analytics context data/Target parameter: `a.AppID`
+   * Analytics上下文資料/Target參數：`a.AppID`
    * Audience Manager 訊號: `c_a_AppID`
 
 * **啟動次數**
 
    應用程式啟動或在背景執行的次數。
 
-   * Analytics context data/Target parameter: `a.Launches`
+   * Analytics上下文資料/Target參數：`a.Launches`
    * Audience Manager 訊號: `c_a_Launches`
 
 * **距首次使用的天數**
 
    自首次執行後的天數。
 
-   * Analytics context data/Target parameter: `a.DaysSinceFirstUse`
+   * Analytics上下文資料/Target參數：`a.DaysSinceFirstUse`
    * Audience Manager 訊號: `c_a_DaysSinceFirstUse`
 
 * **上次使用間隔天數**
 
    距離上次使用的天數。
 
-   * Analytics context data/Target parameter: `a.DaysSinceLastUse`
+   * Analytics上下文資料/Target參數：`a.DaysSinceLastUse`
    * Audience Manager 訊號: `c_a_DaysSinceLastUse`
 
 * **小時**
 
    測量應用程式的啟動時數。此量度使用 24 小時數字格式，且用於時間分界，以判斷尖峰使用時間。
 
-   * Analytics context data/Target parameter: `a.HourOfDay`
+   * Analytics上下文資料/Target參數：`a.HourOfDay`
    * Audience Manager 訊號: `c_a_HourOfDay`
 
 * **星期**
 
    應用程式啟動的工作日數。
 
-   * Analytics context data/Target parameter: `a.DayOfWeek`
+   * Analytics上下文資料/Target參數：`a.DayOfWeek`
    * Audience Manager 訊號: `c_a_DayOfWeek`
 
 * **作業系統版本**
 
    作業系統版本。
 
-   * Analytics context data/Target parameter: `a.OSVersion`
+   * Analytics上下文資料/Target參數：`a.OSVersion`
    * Audience Manager 訊號: `c_a_OSVersion`
 
 * **上次升級的間隔天數**
@@ -156,7 +156,7 @@ ht-degree: 78%
    >
    >此量度不會自動儲存至 Analytics 變數。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
-   * Analytics context data/Target parameter: `a.DaysSinceLastUpgrade`
+   * Analytics上下文資料/Target參數：`a.DaysSinceLastUpgrade`
    * Audience Manager 訊號: `c_a_DaysSinceLastUpgrade`
 
 * **上次升級後啟動次數**
@@ -167,14 +167,14 @@ ht-degree: 78%
    >
    >此量度不會自動儲存至 Analytics 變數。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
-   * Analytics context data/Target parameter: `a.LaunchesSinceUpgrade`
+   * Analytics上下文資料/Target參數：`a.LaunchesSinceUpgrade`
    * Audience Manager 訊號: `c_a_LaunchesSinceUpgrade`
 
 * **裝置名稱**
 
    儲存裝置名稱。
 
-   * Analytics context data/Target parameter: `a.DeviceName`
+   * Analytics上下文資料/Target參數：`a.DeviceName`
    * Audience Manager 訊號: `c_a_DeviceName`
 
 * **電信業者名稱**
@@ -185,14 +185,14 @@ ht-degree: 78%
    >
    >此量度不會自動儲存至 Analytics 變數。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
-   * Analytics context data/Target parameter: `a.CarrierName`
+   * Analytics上下文資料/Target參數：`a.CarrierName`
    * Audience Manager 訊號: `c_a_CarrierName`
 
 * **解析度**
 
    寬 x 高 (以實際像素表示)。
 
-   * Analytics context data/Target parameter: `a.Resolution`
+   * Analytics上下文資料/Target參數：`a.Resolution`
    * Audience Manager 訊號: `c_a_Resolution`
 
 ## 其他行動量度和維度 {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
@@ -243,7 +243,7 @@ ht-degree: 78%
 
 * **興趣點名稱**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   當裝置在已定義的POI中時，由`trackLocation`方法填入。
 
    * Analytics上下文資料/Target參數：
 
@@ -255,7 +255,7 @@ ht-degree: 78%
 
 * **至興趣點中心的距離**
 
-   Populated by `trackLocation` methods when device is within a defined POI.
+   當裝置在已定義的POI中時，由`trackLocation`方法填入。
 
    * Analytics上下文資料/Target參數：
 
