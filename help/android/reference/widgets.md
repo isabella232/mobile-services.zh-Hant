@@ -1,20 +1,20 @@
 ---
 description: 可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。Widget 會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 可以使用與應用程式追蹤的同一方法來追蹤 Android Widget。Widget 會與您的應用程式共用應用程式內容，因此會保留點擊順序和訪客識別。
 seo-title: Android Widget
 solution: Experience Cloud,Analytics
 title: Android Widget
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 1a3718ff-967b-4c8e-ae0b-ba15bddbda0a
+exl-id: 229ea987-256a-45f4-a5ca-afe17dd596b8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
-
 
 # Android Widget {#android-widgets}
 
@@ -29,4 +29,3 @@ ht-degree: 100%
 * 若要追蹤從介面工具集新增應用程式的時間，請在建立啟動應用程式的目的之前，新增 `trackState` 或 `trackEvent` 呼叫。
 
 * 若要追蹤動作內容，您可以定義 `ContextData` 變數，提供選項來個別區分每個動作 (例如，`AppExperienceType="widget"` 與 `app`)。
-
