@@ -1,20 +1,20 @@
 ---
 description: 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 seo-title: 產品變數及其包含的銷售 eVar 與產品專屬事件
 solution: Experience Cloud,Analytics
 title: 產品變數及其包含的銷售 eVar 與產品專屬事件
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
+exl-id: 2ede6341-3068-4423-a509-c0ec3a2db5e8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '102'
 ht-degree: 100%
 
 ---
-
 
 # 產品變數及其包含的銷售 eVar 與產品專屬事件 {#products-variable-with-merchandising-evars-and-product-specific-events}
 
@@ -41,4 +41,3 @@ Analytics.trackState("Order Confirmation", cdata);
 >[!TIP]
 >
 >如果您使用 *`&&products`* 變數觸發產品專屬事件，您也必須在 *`&&events`* 變數中設定該事件。如果您沒有設定事件，系統會在處理期間將其篩選掉。
-
