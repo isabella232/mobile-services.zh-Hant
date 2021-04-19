@@ -1,20 +1,20 @@
 ---
 description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
-keywords: mobile
+keywords: 行動
 seo-description: 配置應用程式內訊息的體驗選項，包含類型 (全螢幕、警示或通知) 及顯示、文字及按鈕選項。
 seo-title: 體驗  應用程式內訊息
 solution: Experience Cloud,Analytics
 title: 體驗  應用程式內訊息
-topic: Metrics
+topic-fix: Metrics
 uuid: 4c6d6756-47fb-4f1b-8338-0b0c9b0fceb0
+exl-id: eeb1527d-c546-4951-9947-db810fdb8eee
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '687'
 ht-degree: 100%
 
 ---
-
 
 # 體驗: 應用程式內訊息 {#experience-in-app-message}
 
