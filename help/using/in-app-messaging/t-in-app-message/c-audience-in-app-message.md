@@ -1,20 +1,20 @@
 ---
 description: 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
 seo-title: 對象  應用程式內訊息
 solution: Experience Cloud,Analytics
 title: 對象  應用程式內訊息
-topic: Metrics
+topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
+exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '584'
 ht-degree: 100%
 
 ---
-
 
 # 對象: 應用程式內訊息 {#audience-in-app-message}
 
