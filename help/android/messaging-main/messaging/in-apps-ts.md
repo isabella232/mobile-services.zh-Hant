@@ -1,20 +1,20 @@
 ---
-description: 本文資訊可協助您排除應用程式內傳訊問題。
-keywords: mobile
-seo-description: 本文資訊可協助您排除應用程式內傳訊問題。
+description: 此資訊可協助您進行應用程式內傳訊疑難排解。
+keywords: 行動
+seo-description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 seo-title: 應用程式內傳訊疑難排解
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊疑難排解
-topic: Metrics
+topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
+exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # 應用程式內傳訊疑難排解{#troubleshooting-in-app-messaging}
 
@@ -70,6 +70,4 @@ ht-degree: 100%
 * **橫向**
    * 影像會縮放至裝置高度的 100%。
    * 寬度是裝置的 75%，右側會採淡出處理。
-
    如果使用全螢幕範本時發生問題，可下載並使用自訂 HTML 範本。此範本能賦予影像更大的使用彈性，供您完全控制範本。
-
