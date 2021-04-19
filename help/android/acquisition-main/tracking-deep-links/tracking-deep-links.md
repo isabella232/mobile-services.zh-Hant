@@ -1,20 +1,20 @@
 ---
 description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
 seo-title: 在 Adobe Mobile Services 中追蹤深層連結
 solution: Experience Cloud,Analytics
 title: 追蹤深層連結
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
+exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
 translation-type: tm+mt
-source-git-commit: e28340249c22d9f121d5c21205227ee758fb9e1b
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 100%
 
 ---
-
 
 # 追蹤深層連結
 
@@ -72,4 +72,3 @@ ht-degree: 100%
  */
 public static final String ADB_MESSAGE_DEEPLINK_KEY = "adb_deeplink";
 ```
-
