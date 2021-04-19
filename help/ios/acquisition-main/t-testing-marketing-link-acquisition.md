@@ -1,20 +1,20 @@
 ---
-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (以裝置指紋為基礎)。
-keywords: android;library;mobile;sdk
-seo-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (以裝置指紋為基礎)。
+description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
+keywords: android;資料庫;行動;sdk
+seo-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
 seo-title: 測試行銷連結贏取
 solution: Experience Cloud,Analytics
 title: 測試行銷連結贏取
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
+exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
-
 
 # 測試行銷連結贏取 {#testing-marketing-link-acquisition}
 
