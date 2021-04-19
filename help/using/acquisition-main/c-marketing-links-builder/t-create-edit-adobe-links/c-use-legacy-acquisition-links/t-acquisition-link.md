@@ -1,20 +1,20 @@
 ---
 description: 您可以建立應用程式商店連結後，以便直接從 Apple App Store 和 Google Play 下載應用程式。您所建立的連結可讓您將成功事件歸因於下載。
-keywords: mobile
+keywords: 行動
 seo-description: 您可以建立應用程式商店連結後，以便直接從 Apple App Store 和 Google Play 下載應用程式。您所建立的連結可讓您將成功事件歸因於下載。
 seo-title: 建立贏取連結
 solution: Experience Cloud,Analytics
 title: 建立贏取連結
-topic: Metrics
+topic-fix: Metrics
 uuid: bb603013-fca9-44a2-820a-59e1c85d9444
+exl-id: bc351d1e-c7da-4418-ac5a-9e5f989dd566
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '507'
 ht-degree: 100%
 
 ---
-
 
 # 建立贏取連結{#create-an-acquisition-link}
 
