@@ -1,20 +1,20 @@
 ---
 description: 此資訊可協助您下載 Mobile Services SDK 和工具以完成 Mobile Services 實施。
-keywords: mobile;android;ios;sdk
+keywords: 行動,android,ios,sdk
 seo-description: 此資訊可協助您下載 Mobile Services SDK 和工具以完成 Mobile Services 實施。
 seo-title: 下載行動 SDK 和工具
 solution: Experience Cloud,Analytics
 title: 下載行動 SDK 和工具
-topic: Developer and implementation,Metrics
+topic-fix: Developer and implementation,Metrics
 uuid: 4af757f7-4e4d-4939-9b6a-49a29c220192
+exl-id: 34ec76fa-3bcb-4b77-9d1e-7160941deb44
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # 下載行動 SDK 和工具{#download-mobile-sdks-and-tools}
 
@@ -36,4 +36,3 @@ ht-degree: 100%
 * [Android 指示](/help/android/getting-started/requirements.md)
 
 若要查看原生程式庫 (包括 Windows Phone 8、Blackberry、Xamarin 和其他程式庫) 的文件，請參閱 [Adobe Mobile Services](/help/using/home.md) 中的 *SDK 文件*&#x200B;一節。
-
