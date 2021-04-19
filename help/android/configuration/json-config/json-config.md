@@ -4,16 +4,16 @@ seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔。
 seo-title: ADBMobile JSON 設定
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
+exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 100%
 
 ---
-
 
 # ADBMobile JSON 設定檔案 {#adbmobile-json-config}
 
@@ -396,5 +396,5 @@ ht-degree: 100%
 * &quot;triggers&quot;
    * 與適用對象相同，但此處是指動作，而非對象本身
    * &quot;key&quot;
-   * &quot;matches&quot;
-   * &quot;values&quot;
+   * &quot;符合&quot;
+   * &quot;值&quot;
