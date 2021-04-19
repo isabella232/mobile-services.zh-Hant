@@ -1,20 +1,20 @@
 ---
 description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
 seo-title: 信標追蹤
 solution: Experience Cloud,Analytics
 title: 信標追蹤
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
+exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '244'
 ht-degree: 100%
 
 ---
-
 
 # 信標追蹤 {#beacon-tracking}
 
@@ -83,4 +83,3 @@ Analytics.trackBeacon(beaconUUID, major, minor, proximity, cdata);
 內容資料值必須對應至 Adobe Mobile Services 中的自訂變數:
 
 ![](assets/map-variable-context-ltv.png)
-
