@@ -3,29 +3,29 @@ description: 協助您使用視訊分析的資訊。
 seo-description: 協助您使用視訊分析的資訊。
 seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: Video Analytics
-topic: Developer and implementation
+title: 視訊分析
+topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
+exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 72%
 
 ---
 
-
 # Video Analytics {#video-analytics}
 
 協助您使用視訊分析的資訊。
 
-在Adobe Analytics中測量視訊和音訊指南 [中，對視訊測量有詳細說明](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html) 。 測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 此快速入門區段提供開發人員工作的基本概觀以及程式碼範例。
+在「在Adobe Analytics測量視訊和音訊」指南中詳細說明視訊測量。 [](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html)測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 此快速入門區段提供開發人員工作的基本概觀以及程式碼範例。
 
 下表列出會傳送至 Analytics 的媒體資料。使用處理規則，將內容資料對應至 Analytics 變數。
 
 * **a.media.name**
 
-   (必&#x200B;**要**)當訪客以某種方式檢視視訊時，收集視訊名稱（如實作中所指定）。您可為此變數新增分類。
+   (**Required**)當訪客以某種方式檢視視訊時，收集視訊名稱，如實作中所指定。您可為此變數新增分類。
 
    (**選用**) 自訂深入分析變數能提供視訊路徑資訊。
 
@@ -44,7 +44,7 @@ ht-degree: 72%
 
    (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。
 
-   此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。For example, when a visitor views the first segment in a video, SiteCatalyst might collect the following in the `1:M:0-25` segments eVar.
+   此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst可能會在`1:M:0-25`區段eVar中收集下列項目。
 
    預設的視訊資料收集方法會收集下列點的資料：視訊開始（播放）、區段開始和視訊結束（停止）。 當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
 
@@ -161,7 +161,7 @@ property bool isMediaAd;
 
 * **開啟(winJS:開啟)**
 
-   使用中定義的設定跟蹤開啟的介質 `settings`。
+   使用`settings`中定義的設定跟蹤開啟的介質。
 
    * 此方法的語法如下：
 
@@ -177,7 +177,7 @@ property bool isMediaAd;
 
 * **關閉(winJS:關閉)**
 
-   追蹤名為的媒體項目的媒體關閉情況 *`name`*。
+   跟蹤名為&#x200B;*`name`*&#x200B;的介質項的介質關閉。
 
    * 此方法的語法如下：
 
@@ -193,7 +193,7 @@ property bool isMediaAd;
 
 * **播放(winJS:播放)**
 
-   追蹤在指定偏移量（以秒為單位） *`name`* 命名之媒 *體項* 目的媒體播放。
+   在給定的&#x200B;*offset*（以秒為單位）追蹤名為&#x200B;*`name`*&#x200B;的媒體項目的媒體播放。
 
    * 此方法的語法如下：
 
