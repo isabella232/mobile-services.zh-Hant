@@ -1,20 +1,20 @@
 ---
 description: 建立器可協助您建立行銷連結，將使用者路由至應用程式商店及應用程式或網頁連結目的地。行銷人員可以根據規則選擇目的地，例如使用者裝置的裝置類型或作業系統。
-keywords: mobile
+keywords: 行動
 seo-description: 建立器可協助您建立行銷連結，將使用者路由至應用程式商店及應用程式或網頁連結目的地。行銷人員可以根據規則選擇目的地，例如使用者裝置的裝置類型或作業系統。
 seo-title: 行銷連結建立器
 solution: Experience Cloud,Analytics
 title: 行銷連結建立器
-topic: Metrics
+topic-fix: Metrics
 uuid: 94906393-ffa5-47a6-89f6-1c812bad34af
+exl-id: f7cdaec3-e8a3-4782-bbb6-d5e011e4493b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '150'
 ht-degree: 100%
 
 ---
-
 
 # 行銷連結建立器{#marketing-links-builder}
 
