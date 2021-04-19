@@ -4,16 +4,16 @@ seo-description: 以下提供的一些資訊可協助您設定 Android 延伸功
 seo-title: Android 穿戴式裝置其他附註
 solution: Experience Cloud,Analytics
 title: Android 穿戴式裝置其他附註
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
+exl-id: ae8cf2d1-d2b0-456b-bbd3-3980e00bbc84
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
 
 ---
-
 
 # Android 穿戴式裝置: 其他附註{#android-wearables-additional-notes}
 
@@ -26,10 +26,9 @@ ht-degree: 100%
 
       點擊來自於手持式應用程式。
 
-   * `RunMode` = `Extension`
+   * `RunMode` =  `Extension`
 
       點擊來自於穿戴式裝置應用程式。
 
 * SDK 會將手持式應用程式的 `aid`/`vid`/`visitor` `service id`/`privacy` 狀態自動同步至穿戴式應用程式，因此請勿從穿戴式應用程式呼叫 `setPrivacyStatus`/`setUserIdentifier`/`idSync`。
 * [應用程式內訊息](/help/android/messaging-main/messaging/messaging.md)、[Target](/help/android/target-main/target.md) 和 [Audience Manager](/help/android/audience-manager/audiencemgmt.md) 皆已在穿戴式應用程式中停用。
-
