@@ -1,16 +1,16 @@
 ---
 description: 以下為 Android 資料庫所提供的方法清單。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 以下為 Android 資料庫所提供的方法清單。
 seo-title: 設定方法
 solution: Experience Cloud,Analytics
 title: 設定方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 663aeb6c-1b97-4a3a-8c0e-dd4c2ec28c01
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '989'
 ht-degree: 100%
 
 ---
