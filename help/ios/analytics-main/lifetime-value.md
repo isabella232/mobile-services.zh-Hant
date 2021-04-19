@@ -4,16 +4,16 @@ seo-description: 期限值可讓您測量每個使用者的期限值並將其設
 seo-title: 訪客期限值
 solution: Experience Cloud,Analytics
 title: 訪客期限值
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d830d18b-4313-43bb-8d75-3789869d0f1d
+exl-id: f1b684b1-9919-400d-a88a-6d4a0809d9e1
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
-
 
 # 訪客期限值 {#visitor-lifetime-value}
 
@@ -51,4 +51,3 @@ NSMutableDictionary *contextData = [NSMutableDictionary dictionary];
 內容資料值必須對應至自訂變數:
 
 ![](assets/map-variable-context-ltv.png)
-
