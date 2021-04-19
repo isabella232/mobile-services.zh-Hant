@@ -4,16 +4,16 @@ seo-description: 下表包含許多 iOS 裝置傳送的 iOS 版本字串。
 seo-title: iOS 裝置版本
 solution: Experience Cloud,Analytics
 title: iOS 裝置版本
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 8b8a9bc3-0737-4de2-9792-0b112aa4cf65
+exl-id: 9aaf2f35-4de9-47a0-8e9d-8d098dfaadef
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
 
 ---
-
 
 # iOS 裝置版本 {#ios-device-versions}
 
@@ -97,4 +97,3 @@ ht-degree: 100%
 | iPad Pro 2,12.9英吋(LTE) | iPad7,2 |
 | iPad Pro,10.5英吋(Wi-Fi) | iPad7,3 |
 | iPad Pro,10.5英吋(LTE) | iPad7,4 |
-
