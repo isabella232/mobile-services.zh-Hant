@@ -1,20 +1,20 @@
 ---
 description: 此資訊可協助您使用 Android 應用程式中的「定位」功能。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 此資訊可協助您使用 Android 應用程式中的「定位」功能。
 seo-title: 位置概述
 solution: Experience Cloud,Analytics
 title: 位置概述
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 15180bd6-616b-477d-a106-96a52c974d7d
+exl-id: 687a3b2c-ee74-46d8-a732-b3a0bec6e798
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '137'
 ht-degree: 100%
 
 ---
-
 
 # 位置概述 {#location}
 
@@ -28,4 +28,3 @@ ht-degree: 100%
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
 * 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
-
