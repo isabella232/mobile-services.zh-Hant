@@ -4,16 +4,16 @@ seo-description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單�
 seo-title: 適用於 Adobe Mobile Services 的 iOS Target 方法
 solution: Experience Cloud,Analytics
 title: 適用於 iOS 的 Target 方法
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
+exl-id: ba03f865-970c-4b48-af35-749f05b273d8
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 100%
 
 ---
-
 
 # 適用於 iOS 的 Target 方法 {#target-methods}
 
@@ -56,8 +56,9 @@ NSString *const ADBTargetParameterMboxHost;
 >[!IMPORTANT]
 >
 >* 如果您是使用 4.14.0 版&#x200B;**之前**&#x200B;的 SDK，請參閱 [輸入參數](https://developers.adobetarget.com/api/#input-parameters) 以了解參數限制。
->
->* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱[批次輸入參數](https://developers.adobetarget.com/api/#batch-input-parameters)以了解參數限制。
+   >
+   >
+* 如果您是使用 SDK 4.14.0 版&#x200B;**或更新版本**，請參閱[批次輸入參數](https://developers.adobetarget.com/api/#batch-input-parameters)以了解參數限制。
 
 
 ### 方法
