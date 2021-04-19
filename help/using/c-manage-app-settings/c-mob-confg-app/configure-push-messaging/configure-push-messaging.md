@@ -1,20 +1,20 @@
 ---
 description: 您建立新應用程式或編輯現有應用程式時，可使用這些資訊協助您設定「管理應用程式設定」頁面上的「推送服務」選項。
-keywords: mobile
+keywords: 行動
 seo-description: 您建立新應用程式或編輯現有應用程式時，可使用這些資訊協助您設定「管理應用程式設定」頁面上的「推送服務」選項。
 seo-title: 設定推送訊息
 solution: Experience Cloud,Analytics
 title: 設定推送訊息
-topic: Metrics
+topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
+exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '319'
 ht-degree: 100%
 
 ---
-
 
 # 設定推送訊息{#configure-push-messaging}
 
