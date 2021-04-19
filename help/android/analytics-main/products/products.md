@@ -1,20 +1,20 @@
 ---
 description: 無法使用處理規則設定產品變數。在 Mobile SDK 中，您必須在內容資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
-keywords: android;library;mobile;sdk
+keywords: android;資料庫;行動;sdk
 seo-description: 無法使用處理規則設定產品變數。在 Mobile SDK 中，您必須在內容資料參數中使用特殊語法，才能在伺服器呼叫上設定產品。
 seo-title: 產品變數
 solution: Experience Cloud,Analytics
 title: 產品變數
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f4484022-cb8b-4dea-9209-5a110ba607df
+exl-id: 1d850ce1-6fd4-463e-8949-8b8cf40d8467
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '189'
 ht-degree: 100%
 
 ---
-
 
 # 產品變數 {#products-variable}
 
