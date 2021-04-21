@@ -1,23 +1,21 @@
 ---
-description: 'null'
+description: 測量行動程式庫可自動測量的度量和維度
 keywords: Unity
-seo-description: 'null'
-seo-title: 實施生命週期
 solution: Experience Cloud
 title: 實施生命週期
 uuid: 7ff2c194-569c-42a6-922d-dccd2aa9eb8d
+exl-id: eca0cebb-6c69-4b0f-b003-c7fc422d0383
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 11%
+source-wordcount: '95'
+ht-degree: 7%
 
 ---
 
-
 # 實施生命週期{#implement-lifecycle}
 
-如需實作生命週期後行動程式庫可自動測量的度量和維度的詳細資訊，請參閱Android中的生命週期度量 [，或iOS中](/help/android/metrics.md) 的生命週期 [](/help/ios/metrics.md)。
+如需實作生命週期後行動程式庫可自動測量的度量和維度的詳細資訊，請參閱「Android中的生命週期度量」或「iOS中的生命週期」。[](/help/android/metrics.md)[](/help/ios/metrics.md)
 
 ## iOS
 
@@ -25,7 +23,7 @@ ht-degree: 11%
 
 ## Android
 
-在Unity指令碼中，您會設定Android SDK的應用程式內容。 將下列程式碼新增至FIRST `Awake()` 場景的函式：
+在Unity指令碼中，您會設定Android SDK的應用程式內容。 將以下代碼添加到FIRST場景的`Awake()`函式中：
 
 ```java
 void Awake()
@@ -65,4 +63,3 @@ void OnEnable()
   ...
  }
 ```
-
