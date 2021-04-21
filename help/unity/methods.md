@@ -1,19 +1,17 @@
 ---
-description: 'null'
+description: ADBMobile.cs組態方法
 keywords: Unity
-seo-description: 'null'
-seo-title: ADBMobile.cs 方法
 solution: Experience Cloud
 title: ADBMobile.cs 方法
 uuid: af504934-febd-45d9-81e2-2a310f4c65dc
+exl-id: d12c16f1-c25c-4698-8943-a660d9c08faf
 translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 66%
 
 ---
-
 
 # ADBMobile.cs 方法 {#adbmobile-cs-methods}
 
@@ -90,7 +88,7 @@ ht-degree: 66%
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：捨棄點擊。
    * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。
 
-      如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md) file.
+      如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。預設值設定在[ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md)檔案中。
 
    * 此方法的語法如下：
 
@@ -210,7 +208,7 @@ ht-degree: 66%
 
    * `MOBILE_PRIVACY_STATUS_OPT_IN`：立即傳送點擊。
    * `MOBILE_PRIVACY_STATUS_OPT_OUT`：捨棄點擊。
-   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。 如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `MOBILE_PRIVACY_STATUS_UNKNOWN`:如果啟用離線追蹤，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著捨棄點擊）為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 此方法的語法如下：
 
@@ -262,7 +260,7 @@ ht-degree: 66%
 
    使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。
 
-   如果狀態為空白，則會顯示為報 *`app name app version (build)`* 表中。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   如果狀態為空白，則會在報表中顯示為&#x200B;*`app name app version (build)`*。 如果您在報表中看到此值，請確定您正在每個`TrackState`呼叫中設定狀態。
 
    >[!TIP]
    >
@@ -502,7 +500,7 @@ ht-degree: 66%
       var queueSize = ADBMobile.TrackingGetQueueSize();
       ```
 
-## Experience Cloud ID方法
+## Experience CloudID方法
 
 * **GetMarketingCloudID**
 
@@ -522,7 +520,7 @@ ht-degree: 66%
 
 * **VisitorSyncIdentifiers**
 
-   透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一訪客的多個客戶ID，以及客戶類型識別碼，以區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
+   使用Experience CloudID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一訪客的多個客戶ID，以及客戶類型識別碼，以區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
 
    * 此方法的語法如下：
 
@@ -540,7 +538,7 @@ ht-degree: 66%
 
 ## 贏取方法
 
-* **ProcessGooglePlayInstallReferrerUrl** (僅 *限Android)*
+* **ProcessGooglePlayInstallReferrerUrl** *（僅限Android）*
 
    將呼叫Google Play安裝反向連結API所傳回的反向連結URL傳遞至此方法。
 
