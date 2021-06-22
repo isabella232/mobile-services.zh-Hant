@@ -8,11 +8,10 @@ title: PhoneGap 外掛程式概述
 topic-fix: Developer and implementation
 uuid: c5c32357-d8df-458a-b0e8-e0c56040241d
 exl-id: ecd756ca-e333-4d28-bd1e-a75ffc6ebe22
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 100%
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github：Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 
 ## 使用 npm 安裝外掛程式 {#section_43229E57C16944C0B51531CB92089189}
@@ -71,7 +70,7 @@ cordova plugin add adobe-mobile-services
 
    若要移動此檔案，請按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. 以滑鼠右鍵按一下 `adobeMobileLibrary.jar 檔案，然後選取&#x200B;**[!UICONTROL 新增為資料庫]**。
+1. 按一下右鍵`adobeMobileLibrary.jar`檔案，然後選擇&#x200B;**[!UICONTROL 添加為庫]**。
 1. 視專案需求而定，輸入資料庫的名稱、層級及位置。
 1. 將 `ADBMobileConfig.json` 檔案拖曳至應用程式根目錄中的 `assets` 資料夾。
 1. 確認您已選取根應用程式，而&#x200B;**不是**&#x200B;某個應用程式中的應用程式。
