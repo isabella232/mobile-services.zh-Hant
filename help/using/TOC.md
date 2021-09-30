@@ -3,11 +3,10 @@ audience: end-user
 user-guide-title: Mobile Services 指南
 breadcrumb-title: Mobile Services 指南
 user-guide-description: Mobile Services 是端對端解決方案，可協助您取得並吸引行動應用程式使用者，並將其體驗最佳化。
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,9 +14,9 @@ ht-degree: 100%
 # Mobile Services 指南 {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [發行說明](whatsnew.md)
-+ 入門 {#get-started-ug}
-   + [入門](gs/gs.md)
++ [終止公告](eol.md)
++ 快速入門 {#get-started-ug}
+   + [快速入門](gs/gs.md)
    + [角色與權限](gs/c-mob-roles-and-permissions.md)
    + [正在登入](gs/gs-signin.md)
    + [報表類型](gs/reports-types.md)
@@ -74,7 +73,7 @@ ht-degree: 100%
 + 贏取 {#acquisition-main-ug}
    + [贏取概述](acquisition-main/acquisition-main.md)
    + [贏取必要條件](acquisition-main/c-acquisition-prerequisites.md)
-   + [設定贏取](acquisition-main/t-enable-acquisition.md)
+   + [配置贏取](acquisition-main/t-enable-acquisition.md)
    + [目的地](acquisition-main/c-create-destinations.md)
    + 建立及管理連結目的地 {#create-manage-link-destination}
       + [建立及管理連結目的地](acquisition-main/c-manage-link-destinations/c-manage-link-destinations.md)
@@ -83,7 +82,7 @@ ht-degree: 100%
       + 行銷連結建立器 {#marketing-links-builder}
          + [行銷連結建立器](acquisition-main/c-marketing-links-builder/c-marketing-links-builder.md)
          + [建立或編輯行銷連結](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-create-edit-adobe-links.md)
-         + [插入式連結](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
+         + [插頁廣告](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/t-interstitials.md)
       + 舊版贏取連結 {#legacy-acquisition-links}
          + [使用舊版贏取連結](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/c-use-legacy-acquisition-links.md)
          + [建立贏取連結](acquisition-main/c-marketing-links-builder/t-create-edit-adobe-links/c-use-legacy-acquisition-links/t-acquisition-link.md)
@@ -97,14 +96,14 @@ ht-degree: 100%
    + [概述 (位置)](location/c-location-overview.md)
    + [地圖](location/c-map-points.md)
    + [管理地標](location/t-manage-points.md)
-+ 訊息 {#messaging-ug}
-   + [訊息概述](in-app-messaging/in-app-messaging.md)
++ 傳訊 {#messaging-ug}
+   + [傳訊概述](in-app-messaging/in-app-messaging.md)
    + [管理訊息](in-app-messaging/messages-manage/messages-manage.md)
    + [檢視訊息報表](in-app-messaging/messages-manage/view-message-reports.md)
    + 推送訊息 {#push-messages}
       + [建立推送訊息](in-app-messaging/t-create-push-message/t-create-push-message.md)
       + [對象: 推送訊息](in-app-messaging/t-create-push-message/c-audience-push-message.md)
-      + [體驗: 推送訊息](in-app-messaging/t-create-push-message/c-experience-push-message.md)
+      + [體驗：推送訊息](in-app-messaging/t-create-push-message/c-experience-push-message.md)
       + [排程: 推送訊息](in-app-messaging/t-create-push-message/c-schedule-push-message.md)
       + [疑難排解推送訊息](in-app-messaging/t-create-push-message/c-troubleshooting-push-messaging.md)
    + 應用程式內訊息 {#inapp-messages}
@@ -114,4 +113,4 @@ ht-degree: 100%
       + [排程: 應用程式內訊息](in-app-messaging/t-in-app-message/c-schedule-in-app-message.md)
       + [應用程式內傳訊疑難排解](in-app-messaging/t-in-app-message/in-apps-ts.md)
       + [從推送訊息開啟應用程式時觸發應用程式內訊息](in-app-messaging/t-mob-trig-in-app-open-app-from-push.md)
-+ [常見問題集](faq-mobile.md)
++ [常見問答](faq-mobile.md)
