@@ -1,23 +1,20 @@
 ---
 description: 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
-seo-description: 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
-seo-title: 在 iOS 裝置上預覽目標
 title: 在 iOS 裝置上預覽目標
 uuid: d92867a4-0569-4732-a928-28f9e2f8b21e
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: d5695156-59cd-42c5-b9a3-d8e0ebbb89d0
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '121'
+ht-degree: 76%
 
 ---
-
 
 # 在 iOS 裝置上預覽目標{#target-preview-on-ios}
 
 目標預覽功能可協助您輕鬆執行目標活動的端對端 QA，並在裝置上預覽這些活動。
 
-如需設定與使用 Target 預覽功能的詳細資訊，請參閱 [Target 行動裝置預覽](https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/mobile-apps/target-mobile-preview.html)。
+如需設定與使用目標預覽功能的詳細資訊，請參閱Adobe Target檔案中的[Target行動裝置預覽](https://experienceleague.adobe.com/docs/target/using/implement-target/mobile-apps/target-mobile-preview.html)。
 
 >[!IMPORTANT]
 >
@@ -38,5 +35,5 @@ ht-degree: 100%
    * 此方法的程式碼範例如下：
 
       ```objective-c
-      [ADBMobile targetPreviewRestartDeepLink:@" myapp://myhost"]; 
+      [ADBMobile targetPreviewRestartDeepLink:@"myapp://myhost"]; 
       ```

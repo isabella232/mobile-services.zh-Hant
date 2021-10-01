@@ -1,16 +1,13 @@
 ---
 description: 此資訊可協助您使用 iOS 9 適用之全新安全性需求組合 App Transport Security (ATS)。
-seo-description: 此資訊可協助您使用 iOS 9 適用之全新安全性需求組合 App Transport Security (ATS)。
-seo-title: App Transport Security
 solution: Experience Cloud,Analytics
-title: 應用程式傳輸安全性
+title: App Transport Security
 topic-fix: Developer and implementation
 uuid: e9ee13cf-9802-492e-8b11-95f028e34e61
 exl-id: 2fe94e76-06d6-4ad1-95ba-193ae3df4d58
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '463'
 ht-degree: 100%
 
 ---
@@ -31,7 +28,7 @@ Apple 自 iOS 9 開始導入 App Transport Security，這是一組符合安全�
 |--- |--- |
 | Analytics | 若要允許 Analytics 伺服器，請將追蹤伺服器網域新增至您的 info.plist 檔案，設為 ATS 的例外網域。您可以在 `ADBMobileConfig.json` 檔案的 Analytics 區段或「管理應用程式設定」頁面的 Analytics 區段中，找到追蹤伺服器網域。 |
 | Audience Manager | 在 `ADBMobileConfig.json` 檔案之 audienceManager 物件的伺服器屬性中找到 Audience Manager 網域。如果您在應用程式中使用 Audience Manager，但未啟用 SSL，請在 `Info.plist` 檔案中新增此伺服器作為 ATS 的例外網域 |
-| Target | 您可以將 Target 端點新增至 info.plist 檔案，作為 ATS 的例外網域。若要尋找 Target 端點，請在 `clientCodeproperty` 檔案的目標物件中找到 `ADBMobileConfig.json`。您的端點會是 `https://{clientCode}.tt.omtrdc.net`。例如，如果 `clientCodeproperty` 為 `“myCompany”`，則您的端點會是 `https://myCompany.tt.omtrdc.net`。 |
+| Target | 您可以將 Target 端點新增至 info.plist 檔案，作為 ATS 的例外網域。若要尋找 Target 端點，請在 `clientCodeproperty` 檔案的目標物件中找到 `ADBMobileConfig.json`。您的端點會是 `https://{clientCode}.tt.omtrdc.net`。例如，如果 `clientCodeproperty` 為 `"myCompany"`，則您的端點會是 `https://myCompany.tt.omtrdc.net`。 |
 | Adobe Experience Platform Identity Service | 您可以在 `Info.plist` 檔案中新增 Experience Cloud 伺服器，作為 ATS 的例外網域。此網域為 `dpm.demdex.net`。 |
 | Mobile Services：贏取 | 允許贏取伺服器，將其設為 `Info.plist` 檔案中 ATS 的例外網域。此網域為 `c00.adobe.com`。 |
 | Mobile Services：應用程式內訊息 | 如果您使用應用程式內訊息，您可能需要針對每個所使用的非 HTTPS URL，個別新增 ATS 的例外網域。此清單包含託管影像和任何內嵌至自訂全螢幕訊息 HTML 的 URL。如需有關在 `info.plist` 檔案中設定例外網域的詳細資訊，請參閱&#x200B;*表 2：App Transport Security 字典主要索引鍵*&#x200B;中的 *NSExceptionDomains* 列。另請參閱[資訊屬性清單索引鍵參考](https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/)中的&#x200B;*表 3：例外網域字典索引鍵*。 |

@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您進行推送訊息疑難排解。
 keywords: 行動
-seo-description: 此資訊可協助您進行推送訊息疑難排解。
-seo-title: 疑難排解推送訊息
 solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---

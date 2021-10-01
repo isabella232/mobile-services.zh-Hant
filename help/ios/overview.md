@@ -1,16 +1,13 @@
 ---
 description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 可讓您測量原生 Apple iPhone 和 iPad 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集對象資料。
-seo-description: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x 可讓您測量原生 Apple iPhone 和 iPad 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集對象資料。
-seo-title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 solution: Experience Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 iOS SDK 4.x
 topic-fix: Developer and implementation
 uuid: 8b374cee-1432-460b-aac2-70623dd80a04
 exl-id: d4dbddf7-c8be-4936-adfb-2f7aa07a0dd4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '492'
 ht-degree: 100%
 
 ---

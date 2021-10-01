@@ -1,16 +1,13 @@
 ---
 description: iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以其為目標。
-seo-description: iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以其為目標。
-seo-title: iBeacon 追蹤
 solution: Experience Cloud,Analytics
 title: iBeacon 追蹤
 topic-fix: Developer and implementation
 uuid: 390883db-027e-4d12-8a16-86d514579db1
 exl-id: 7232e51d-5695-43ad-8d67-fb3cad70e8f2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '182'
 ht-degree: 100%
 
 ---
@@ -33,7 +30,7 @@ iBeacon 追蹤可讓您透過 iBeacon 和低功耗藍牙來測量微位置並以
 
 ## 追蹤 iBeacon {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的專案*。
 1. 匯入資料庫:

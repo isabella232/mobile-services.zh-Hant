@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您使用 ADBMobile.json 設定檔。
-seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔。
-seo-title: ADBMobile JSON 設定
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 100%
+source-wordcount: '1708'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +70,7 @@ ht-degree: 100%
 
 * **charset**
 
-   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱 [s.charSet](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/vars/config-vars/charset.html)。
+   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱Adobe Analytics檔案中的[charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html)變數。
 
    * 最低 SDK 版本：4.0
 
@@ -162,7 +159,7 @@ ht-degree: 100%
    >自 4.2 版開始，POI 皆會在 Adobe Mobile 介面中定義，並會動態同步至應用程式設定檔。此同步需使用 `analytics.poi` 設定：
 
    ```js
-   “analytics.poi”: “`https://assets.adobedtm.com/…/yourfile.json`”,
+   "analytics.poi": "`https://assets.adobedtm.com/…/yourfile.json`",
    ```
 
    若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔，請參閱[開始之前](/help/ios/getting-started/requirements.md)。
@@ -274,7 +271,6 @@ ht-degree: 100%
    決定 Target 等待回應的時間長度。
 
    * 最低 SDK 版本：4.0
-
 
 ## 範例 `ADBMobileConfig.json` 檔案 {#section_52FA7C71A99147AFA9BE08D2177D8DA7}
 
@@ -464,5 +460,5 @@ ht-degree: 100%
    與適用對象相同，但此處是指動作，而非對象本身：
 
    * &quot;key&quot;
-   * &quot;符合&quot;
-   * &quot;值&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;

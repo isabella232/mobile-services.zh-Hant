@@ -1,16 +1,13 @@
 ---
 description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送追蹤狀態呼叫。在 iOS 中，通常會以每個檢視的 viewDidLoad 方法追蹤狀態。
-seo-description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送追蹤狀態呼叫。在 iOS 中，通常會以每個檢視的 viewDidLoad 方法追蹤狀態。
-seo-title: 追蹤應用程式狀態
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式狀態
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -25,7 +22,7 @@ ht-degree: 100%
 
 ## 追蹤狀態 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
 1. 匯入資料庫。

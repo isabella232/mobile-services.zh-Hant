@@ -1,18 +1,15 @@
 ---
 description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
 keywords: android;資料庫;行動;sdk
-seo-description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
-seo-title: Adobe Experience Platform Identity Service 方法
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '435'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +23,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **公用靜態字串 appendToURL (最後字串URL)**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。您必須安裝 Mobile SDK 4.12 以上版本，才能使用此方法。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/methods/appendvisitorid.html)。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。您必須安裝 Mobile SDK 4.12 以上版本，才能使用此方法。如需詳細資訊，請參閱Adobe Experience Cloud Identity Service檔案中的[appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) 。
 
    >[!IMPORTANT]
    >

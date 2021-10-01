@@ -1,18 +1,15 @@
 ---
 description: appFigures Data Connector 整合結合了 appFigures 已整合的行動應用程式商店分析功能和 Adobe Analytics 的直接應用程式追蹤功能，能為貴組織創造強大的分析和最佳化機會。
 keywords: 行動
-seo-description: appFigures Data Connector 整合結合了 appFigures 已整合的行動應用程式商店分析功能和 Adobe Analytics 的直接應用程式追蹤功能，能為貴組織創造強大的分析和最佳化機會。
-seo-title: App Store
 solution: Experience Cloud,Analytics
 title: App Store
 topic-fix: Metrics
 uuid: a194364d-faaf-4995-befd-cf48f9c1f11b
 exl-id: 27c65823-49ca-4bd4-b929-ba3df86e0a13
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '162'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +21,7 @@ ht-degree: 100%
 >
 >在 Mobile Services 使用者介面中設定整合後，**[!UICONTROL App Store]** 選單項目和相關報表會顯示在左側導覽窗格中。
 
-[appFigures Data Connector for Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/analytics/import/dataconnectors/appfigures/appfigures-overview.html) 包含下列資訊：
+[appFigures Data Connector for Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/appfigures/appfigures-overview.html) 包含下列資訊：
 
 * 整合的主要優點和功能
 * 實作整合作業，包括：

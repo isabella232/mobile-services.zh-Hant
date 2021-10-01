@@ -1,13 +1,10 @@
 ---
-description: 本節包含有關使用iOS專用Adobe Mobile SDK Xamarin元件的資訊。
-seo-description: 本節包含有關使用iOS專用Adobe Mobile SDK Xamarin元件的資訊。
-seo-title: iOS
+description: 本節包含與使用適用於iOS的AdobeMobile SDK Xamarin元件相關的資訊。
 title: iOS
 uuid: 5439509d-cc18-46ef-97d6-c18059e0d190
-translation-type: tm+mt
-source-git-commit: d88dd2252afb3900d45e3bab48d601e7a85d190b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '32'
 ht-degree: 6%
 
 ---
@@ -15,5 +12,5 @@ ht-degree: 6%
 
 # iOS {#ios}
 
-本節包含有關使用iOS專用Adobe Mobile SDK Xamarin元件的資訊。
+本節包含與使用適用於iOS的AdobeMobile SDK Xamarin元件相關的資訊。
 

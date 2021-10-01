@@ -1,17 +1,14 @@
 ---
 description: 您可以建立新的連結目的地，以將使用者引導至您應用程式內的網頁或深層連結。
 keywords: 行動
-seo-description: 您可以建立新的連結目的地，以將使用者引導至您應用程式內的網頁或深層連結。
-seo-title: 建立新的連結目的地
 solution: Experience Cloud,Analytics
 title: 建立新的連結目的地
 topic-fix: Metrics
 uuid: 390e3dea-0221-4f97-980d-a90ca9f162fa
 exl-id: 2d2f5938-1461-43e2-a375-45c18afc9d5a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '394'
 ht-degree: 100%
 
 ---

@@ -1,17 +1,14 @@
 ---
 description: 您可傳送訊號並從對象管理中擷取訪客區段。
 keywords: android;資料庫;行動;sdk
-seo-description: 您可傳送訊號並從對象管理中擷取訪客區段。
-seo-title: Audience Manager 設定
 solution: Experience Cloud,Analytics
 title: Audience Manager 設定
 topic-fix: Developer and implementation
 uuid: f68d5b2e-fa2c-4db6-98ad-d1855a2c45ac
 exl-id: 05033748-5461-482f-a01d-1ba73f64616a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '78'
 ht-degree: 100%
 
 ---

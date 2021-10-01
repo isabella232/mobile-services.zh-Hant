@@ -1,17 +1,15 @@
 ---
 description: 您可以定義和設定推送訊息的對象選項，包含日期範圍選項、Analytics 區段和自訂區段。
 keywords: 行動
-seo-description: 您可以定義和設定推送訊息的對象選項，包含日期範圍選項、Analytics 區段和自訂區段。
-seo-title: 對象  定義和設定推送訊息的對象區段
 solution: Experience Cloud,Analytics
 title: 對象  定義和設定推送訊息的對象區段
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: af46d2ef6e8efaae32128384112fa5265d56de74
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 99%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -89,11 +87,10 @@ ht-degree: 99%
 
    * 如需疑難排解推送訊息的詳細資料，請參閱下列內容：
 
-      * [iOS 中的推播訊息](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/messaging-ios/push-messaging/push-messaging.html)
+      * [iOS 中的推播訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
+      * [Android 中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
 
-      * [Android 中的推播訊息](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/messaging-android/push-messaging/push-messaging.html)
-
-1. 在下列欄位輸入資訊：
+2. 在下列欄位輸入資訊：
 
    * **[!UICONTROL 期間為]**
 
@@ -109,7 +106,7 @@ ht-degree: 99%
 
    * **[!UICONTROL Analytics 區段]**
 
-      從下拉式清單中選取現有的 Adobe Analytics 區段。如需詳細資訊，請參閱[建立區段](https://docs.adobe.com/content/help/zh-Hant/analytics/components/segmentation/segmentation-workflow/seg-build.html)。
+      從下拉式清單中選取現有的 Adobe Analytics 區段。如需詳細資訊，請參閱Adobe Analytics檔案中的[區段產生器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html)。
 
    * **[!UICONTROL 自訂區段]**
 

@@ -1,16 +1,13 @@
 ---
 description: 您可以傳遞因任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，不須更新程式碼。
-seo-description: 您可以傳遞因任何分析資料或事件觸發的應用程式內訊息。實施後，訊息會動態傳遞至應用程式，不須更新程式碼。
-seo-title: 應用程式內傳訊
 solution: Experience Cloud,Analytics
 title: 應用程式內傳訊
 topic-fix: Developer and implementation
 uuid: 351ee3d2-80b9-4f2d-9696-21f274d89f5a
 exl-id: ca9414d1-86e6-4bb2-a2d6-57df37df2403
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '770'
 ht-degree: 100%
 
 ---
@@ -42,7 +39,7 @@ ht-degree: 100%
 
 ## 啟用應用程式內傳訊 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實施與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的 IntelliJ IDEA 或 Eclipse 專案*。
 
@@ -95,25 +92,25 @@ ht-degree: 100%
    若要在啟動時動態更新應用程式內訊息，必須有 `remotes` 物件且已正確設定:
 
    ```js
-   “messages”: [ 
+   "messages": [ 
        { 
-           “messageId”: “de45c43c-37bf-441f-8cbd-cc3ba3469ebe”, 
-           “template”: “fullscreen”, 
-           “showOffline”: false, 
-           “showRule”: “always”, 
-           “endDate”: 2524730400, 
-           “startDate”: 0, 
-           “audiences”: [], 
-           “triggers”: [], 
-           “payload”: { // contents change depending on template 
-               “html”: “<html>html code goes here</html>” 
+           "messageId": "de45c43c-37bf-441f-8cbd-cc3ba3469ebe", 
+           "template": "fullscreen", 
+           "showOffline": false, 
+           "showRule": "always", 
+           "endDate": 2524730400, 
+           "startDate": 0, 
+           "audiences": [], 
+           "triggers": [], 
+           "payload": { // contents change depending on template 
+               "html": "<html>html code goes here</html>" 
            }, 
        }, 
        … 
    ] 
-   “remotes” : { 
-       “analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”, 
-       “messages”: “https://assets.adobedtm.com/…/yourfile.json” 
+   "remotes" : { 
+       "analytics.poi": "https://assets.adobedtm.com/…/yourfile.json", 
+       "messages": "https://assets.adobedtm.com/…/yourfile.json" 
    }
    ```
 

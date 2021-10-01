@@ -1,16 +1,13 @@
 ---
 description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
-seo-description: 從 WatchOS 2 開始，您的 WatchKit 延伸功能將會在 Apple Watch 裝置上執行。在此環境中執行的應用程式皆須使用 WatchConnectivity 架構，以與其容納 iOS 應用程式共用資料。
-seo-title: 使用 WatchOS 2 進行 Apple Watch 實施
 solution: Experience Cloud,Analytics
 title: 使用 WatchOS 2 進行 Apple Watch 實施
 topic-fix: Developer and implementation
 uuid: 9498467e-db5e-411e-a00e-d19841f485de
 exl-id: 9fc9b799-1081-42e4-acf3-569fdeb07aff
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '506'
 ht-degree: 100%
 
 ---
@@ -30,9 +27,9 @@ ht-degree: 100%
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github：Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
-## 入門 {#section_70BC28BB69414F169196953D3D264BC1}
+## 快速入門 {#section_70BC28BB69414F169196953D3D264BC1}
 
 >[!IMPORTANT]
 >
@@ -41,8 +38,8 @@ ht-degree: 100%
 >* 容納應用程式
 >* WatchKit 應用程式
 >* WatchKit 延伸功能
->
 
+>
 
 
 如需有關開發 WatchKit 應用程式的詳細資訊，請參閱 [Watch 應用程式架構](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/DesigningaWatchKitApp.html#//apple_ref/doc/uid/TP40014969-CH3-SW1)。
@@ -69,7 +66,7 @@ ht-degree: 100%
 1. 在應用程式委派類別的實施檔案中，匯入 `AdobeMobileLibrary`。
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. 呼叫 `ADBMobile` 資料庫之前，請在應用程式委派的 `application:didFinishLaunchingWithOptions:` 中，設定您的 `WCSession`。
@@ -120,7 +117,7 @@ ht-degree: 100%
 1. 在延伸功能委派類別的實施檔案中，匯入 `AdobeMobileLibrary`。
 
    ```objective-c
-   #import “ADBMobile.h”
+   #import "ADBMobile.h"
    ```
 
 1. 在延伸功能委派的 `applicationDidFinishLaunching` 中，設定您的 `WCSession`，然後再對 `ADBMobile` 資料庫進行任何呼叫。

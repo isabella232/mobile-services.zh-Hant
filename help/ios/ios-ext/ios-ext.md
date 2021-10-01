@@ -1,16 +1,13 @@
 ---
 description: 您可以使用 iOS 延伸功能，以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
-seo-description: 您可以使用 iOS 延伸功能，以便從 Apple Watch 應用程式 (WatchOS 1)、Today 介面工具集、照片編輯介面工具集及其他 iOS 延伸功能應用程式收集使用資料。
-seo-title: iOS 延伸功能實施
 solution: Experience Cloud,Analytics
 title: iOS 延伸功能實施
 topic-fix: Developer and implementation
 uuid: 8afc03fe-403e-4643-ada1-30e403ede238
 exl-id: 741b0cd5-6245-480a-b5bf-a33a1f82a425
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
@@ -26,7 +23,7 @@ ht-degree: 100%
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github：Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 ## 對於使用 iOS SDK 而非自有包裝函式的建議 {#section_97577331FD9E4FFBBE05D402C67AEE69}
 
@@ -40,7 +37,7 @@ Apple 提供了一組 API，可讓 Watch 應用程式將要求傳送至容納應
 
 即使這三個追蹤方法已能滿足您的需求，仍應使用 iOS SDK，因為適用於 Watch 應用程式的 SDK 包含應用程式內傳訊之外的所有 Mobile 功能。
 
-## 入門 {#section_D0BE4F780C9C4CD8ADD2AD4EE0BD5FD4}
+## 快速入門 {#section_D0BE4F780C9C4CD8ADD2AD4EE0BD5FD4}
 
 >[!IMPORTANT]
 >
@@ -48,8 +45,8 @@ Apple 提供了一組 API，可讓 Watch 應用程式將要求傳送至容納應
 >
 >* 一個要包含應用程式的目標。
 >* 一個擴充功能目標。
->
 
+>
 
 
 如果您使用 WatchKit 應用程式，則應該有第三個目標。如需 Apple Watch 開發的詳細資訊，請參閱 [Apple Watch 開發](https://developer.apple.com/library/ios/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969-CH8-SW1)。

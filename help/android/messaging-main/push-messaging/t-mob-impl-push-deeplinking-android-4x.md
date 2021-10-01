@@ -1,17 +1,14 @@
 ---
 description: 在您於 Adobe Mobile Services 使用者介面中設定深層連結 URL 後，此 URL 會位於含有 adb_deeplink 鍵值的推送裝載中。
-seo-description: 在您於 Adobe Mobile Services 使用者介面中設定深層連結 URL 後，此 URL 會位於含有 adb_deeplink 鍵值的推送裝載中。
-seo-title: 使用深層連結實作推送訊息
 title: 使用深層連結實作推送訊息
 uuid: e24f9248-8d48-4e57-84af-3a05b72e2a09
-translation-type: tm+mt
-source-git-commit: 13ff2cb549c4b82a4e0285e1c7c6b3f9c1a5bd4b
+exl-id: ab97db32-d9d2-41ec-aae8-a951c7745df8
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 75%
+source-wordcount: '154'
+ht-degree: 74%
 
 ---
-
 
 # 利用深層連結實施推送訊息 {#implement-push-messaging-with-deep-linking}
 
@@ -27,9 +24,9 @@ ht-degree: 75%
 
    * 如果推送裝載中&#x200B;**有**&#x200B;深層連結 URL，請利用此 URL 建立 `ACTION_VIEW` 目的。
 
-      當使用者按一下推播訊息時，會觸發深層連結。
+      當使用者點按推送訊息時，會觸發深層連結。
 
-   * 如果深層連結URL **不在推播** ，請建立會開啟您其中一個活動的方式。
+   * 如果推送裝載中的深層連結URL **不是**，請建立將開啟您其中一個活動的目的。
 
 ## 範例
 

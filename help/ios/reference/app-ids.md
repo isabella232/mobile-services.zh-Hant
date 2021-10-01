@@ -1,16 +1,13 @@
 ---
 description: 下表說明 iOS SDK 和 Adobe Mobile Services 所使用的不同應用程式識別碼。
-seo-description: 下表說明 iOS SDK 和 Adobe Mobile Services 所使用的不同應用程式識別碼。
-seo-title: 應用程式 ID
 solution: Experience Cloud,Analytics
 title: 應用程式 ID
 topic-fix: Developer and implementation
 uuid: 24ebc716-23c7-4ee8-8256-b534210367e0
 exl-id: 82f0a097-b2eb-4313-8624-dd442e3da039
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '198'
 ht-degree: 100%
 
 ---

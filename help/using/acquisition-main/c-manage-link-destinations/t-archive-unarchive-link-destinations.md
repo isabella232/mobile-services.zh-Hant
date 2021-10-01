@@ -1,17 +1,14 @@
 ---
 description: 您可以使用「連結目的地」頁面以編輯、封存、取消封存或刪除現有的目的地。
 keywords: 行動
-seo-description: 您可以使用「連結目的地」頁面以編輯、封存、取消封存或刪除現有的目的地。
-seo-title: 管理連結目的地
 solution: Experience Cloud,Analytics
 title: 管理連結目的地
 topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '279'
 ht-degree: 100%
 
 ---

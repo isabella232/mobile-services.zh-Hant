@@ -1,17 +1,14 @@
 ---
 description: 您可以建立和管理地標，藉以定義地理位置，以便用於關聯、使用應用程式內訊息的目標定位等作業。在地標傳送點擊時，地標就會附加至該點擊。
 keywords: 行動
-seo-description: 您可以建立和管理地標，藉以定義地理位置，以便用於關聯、使用應用程式內訊息的目標定位等作業。在地標傳送點擊時，地標就會附加至該點擊。
-seo-title: 管理地標
 solution: Experience Cloud,Analytics
 title: 管理地標
 topic-fix: Metrics
 uuid: 7b362534-54fb-43a3-b6b2-dfc8f45ff7c6
 exl-id: 9598b06b-fb6a-436c-811c-f74015cc2ab0
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '529'
 ht-degree: 100%
 
 ---

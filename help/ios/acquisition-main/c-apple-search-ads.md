@@ -1,16 +1,13 @@
 ---
 description: Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。
-seo-description: Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。
-seo-title: Apple Search Ads
 solution: Experience Cloud,Analytics
-title: Apple Search廣告
+title: Apple Search Ads
 topic-fix: Developer and implementation
 uuid: 790080e8-067e-4bfd-a169-0027db4fdff3
 exl-id: efcdd430-f08d-4ee2-85f3-2697c3bd72db
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '245'
 ht-degree: 100%
 
 ---
@@ -19,14 +16,14 @@ ht-degree: 100%
 
 Adobe SDK 可運用 Apple 的 Search Ads 應用程式屬性 API，讓開發人員和行銷人員追蹤和了解應用程式下載次數，而這些下載次數源自於 Apple App Store 中的 Search Ads 促銷活動。如需 Search Ads 促銷活動的詳細資訊，請參閱 [Apple Search Ads](https://searchads.apple.com)。
 
-## 福利 {#section_CEA30C652AC8470784B8054E299B80FA}
+## 優點 {#section_CEA30C652AC8470784B8054E299B80FA}
 
-以下為使用 Apple 廣告的優點:
+使用 Apple 廣告的優點如下：
 
 * 新增數行程式碼至應用程式中，即可輕鬆測量 Search Ads 應用程式下載促銷活動的效益。
 * 開發人員可存取下載日期/時間和帶動轉換的標得關鍵字。
 
-## 實施 Apple Ad {#section_F1094676793540CFA1DBB540174EEB6A}
+## 實作 Apple Ad {#section_F1094676793540CFA1DBB540174EEB6A}
 
 >[!TIP]
 >

@@ -1,17 +1,14 @@
 ---
 description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
 keywords: android;資料庫;行動;sdk
-seo-description: 下列說明可協助您利用行銷連結往返贏取促銷活動 (根據裝置指紋)。
-seo-title: 測試行銷連結贏取
 solution: Experience Cloud,Analytics
 title: 測試行銷連結贏取
 topic-fix: Developer and implementation
 uuid: 69503e01-182d-44c6-b0fb-e1c012ffa3bd
 exl-id: 2fb02b36-172e-4c16-9ef9-13f8288ab8a4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '542'
 ht-degree: 100%
 
 ---

@@ -1,16 +1,13 @@
 ---
 description: 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
-seo-description: 地理位置可協助您透過經緯度和 Android 應用程式中預先定義的地標來測量位置資料。
-seo-title: 地理位置與地標
 solution: Experience Cloud,Analytics
 title: 地理位置與地標
 topic-fix: Developer and implementation
 uuid: b8209370-cbc4-40f9-97d8-017e2d74a377
 exl-id: e1fed35b-5ce9-48ee-ade0-b1701cf2a3a9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '571'
 ht-degree: 100%
 
 ---
@@ -34,14 +31,14 @@ ht-degree: 100%
 自 4.2 版開始，POI 皆會在 Adobe Mobile 使用者介面中定義，並會動態同步至應用程式設定檔案。此同步作業須使用 [ADBMobile JSON 設定](/help/android/configuration/json-config/json-config.md)中的 `analytics.poi` 設定:
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 如果尚未設定此項目，您必須下載更新版本的 `ADBMobile.json` 檔案，並將其新增至您的應用程式。如需詳細資訊，請參閱[下載 SDK 和測試工具](/help/android/getting-started/requirements.md)。
 
 ## 追蹤地理位置和 POI {#section_B1616E400A7548F9A672F97FEC75AE27}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 

@@ -1,17 +1,14 @@
 ---
 description: 透過適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x，您可使用 Adobe Analytics 測量原生 BlackBerry 10 應用程式。
-seo-description: 透過適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x，您可使用 Adobe Analytics 測量原生 BlackBerry 10 應用程式
-seo-title: 適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x
 title: 適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x
 uuid: c336db33-2cb5-48fe-a3f5-2d3ced6c3966
-translation-type: tm+mt
-source-git-commit: 82b3dc38a0325b3aa733b491ddad9b59dbe84eaa
+exl-id: 4ecd9cdd-bca5-4a30-bc22-0e38918eefd3
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
-
 
 # 適用於 Experience Cloud 解決方案的 BlackBerry 10 SDK 4.x {#blackberry-sdk-x-for-experience-cloud-solutions}
 
@@ -37,10 +34,10 @@ BlackBerry 10 或更新版本。
 |--- |--- |
 | 選擇加入/選擇退出 | 快速啟用和停用分析。 |
 
-如需詳細了解所有解決方案的發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)。
+如需詳細了解所有解決方案的發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)。
 
 ## 使用 Bloodhound
 
 >[!IMPORTANT]
 >
->Adobe Bloodhound 已於 **2017 年 4 月 30 日**&#x200B;起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
+>自&#x200B;**2017年4月30日起**,BloodhoundAdobe即為日落。 自2017年5月1日起，不再提供額外的增強功能、額外的工程支援或Adobe專家服務支援。

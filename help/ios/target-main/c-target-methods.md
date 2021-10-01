@@ -1,17 +1,14 @@
 ---
 description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
-seo-description: 以下為 iOS 資料庫所提供的 Adobe Target 方法清單。
-seo-title: 適用於 Adobe Mobile Services 的 iOS Target 方法
 solution: Experience Cloud,Analytics
 title: 適用於 iOS 的 Target 方法
 topic-fix: Developer and implementation
 uuid: 692bcda1-02ba-4902-bd65-15888adf1952
 exl-id: ba03f865-970c-4b48-af35-749f05b273d8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '629'
+ht-degree: 95%
 
 ---
 
@@ -73,7 +70,7 @@ NSString *const ADBTargetParameterMboxHost;
                         callback:(void (^)(NSString *content))callback;
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       [ADBMobile targetLoadRequest:myRequest
@@ -82,7 +79,7 @@ NSString *const ADBTargetParameterMboxHost;
                           }];
       ```
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:requestLocationParameters:callback：**
+* **:defaultContent::orderParameters::requestLocationParameters:targetLoadRequestWithNameprofileParametersmboxParameterscallback:**
 
    傳送要求至您設定的 Target 伺服器並傳回區塊回撥中產生之選件的字串值。
 
@@ -154,7 +151,7 @@ NSString *const ADBTargetParameterMboxHost;
                                  }];
       ```
 
-      如需底層 Target API 的詳細資訊，請參閱 [Adobe Target 開發人員](https://docs.adobe.com/dev/products/target/reference/delivery.html)。
+      如需底層Target API的詳細資訊，請參閱[Target API參考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated)。
 
 
 
@@ -162,7 +159,7 @@ NSString *const ADBTargetParameterMboxHost;
 
 
 
-* **targetLoadRequestWithName:defaultContent:profileParameters:orderParameters:mboxParameters:callback**
+* **:defaultContent::orderParameters:targetLoadRequestWithNameprofileParametersmboxParameters:callback**
 
    傳送要求至您設定的 Target 伺服器，並傳回區塊回撥中產生之選件的字串值。
 

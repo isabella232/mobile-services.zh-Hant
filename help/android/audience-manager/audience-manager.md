@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您傳送訊號，並從 Audience Manager 中擷取訪客區段。
 keywords: android;資料庫;行動;sdk
-seo-description: 此資訊可協助您傳送訊號，並從 Audience Manager 中擷取訪客區段。
-seo-title: Audience Manager 概述
 solution: Experience Cloud,Analytics
 title: Audience Manager 概述
 topic-fix: Developer and implementation
 uuid: cfa4106d-13c1-45ba-bee6-6f992aaf9919
 exl-id: b6cbe410-3ee4-44d4-a4e6-74291f45be81
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '127'
 ht-degree: 100%
 
 ---

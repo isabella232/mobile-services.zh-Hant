@@ -1,17 +1,14 @@
 ---
 description: 「檢視路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
 keywords: 行動
-seo-description: 「檢視路徑」報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
-seo-title: 檢視路徑報表
 solution: Experience Cloud,Analytics
 title: 檢視路徑報表
 topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---

@@ -1,17 +1,14 @@
 ---
 description: 您可以利用此資訊建立新應用程式和設定其關鍵量度；設定 Adobe Analytics 和 Adobe Audience Manager 的 SDK 選項；設定贏取和 ID 服務選項；以及下載設定檔案、SDK 以及開發與測試工具。
 keywords: 行動
-seo-description: 您可以利用此資訊建立新應用程式和設定其關鍵量度；設定 Adobe Analytics 和 Adobe Audience Manager 的 SDK 選項；設定贏取和 ID 服務選項；以及下載設定檔案、SDK 以及開發與測試工具。
-seo-title: 新增應用程式
 solution: Experience Cloud,Analytics
 title: 新增應用程式
 topic-fix: Metrics
 uuid: 706b5e4d-1318-4a9e-8c69-ffabf51fa02c
 exl-id: 30dca517-61ac-495b-aa91-3febd1cb8639
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '663'
 ht-degree: 100%
 
 ---

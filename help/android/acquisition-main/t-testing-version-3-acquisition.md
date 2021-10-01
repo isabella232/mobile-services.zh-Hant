@@ -1,16 +1,14 @@
 ---
 description: 以下資訊可協助您在 Android 裝置上往返版本 3 贏取促銷活動連結。
 keywords: android;資料庫;行動;sdk
-seo-description: 以下資訊可協助您在 Android 裝置上往返版本 3 贏取促銷活動連結。
-seo-title: 測試第 3 版贏取
 solution: Experience Cloud,Analytics
 title: 測試第 3 版贏取
 topic-fix: Developer and implementation
 uuid: 5e38b43d-389e-4412-99e5-3e6223b6ad28
 exl-id: 2ce78e2e-da51-4af8-a461-ec6c642a7854
-source-git-commit: bb2459e57274183e55c1facd1a510cf55a83ddb4
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---

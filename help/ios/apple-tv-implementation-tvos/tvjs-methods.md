@@ -1,16 +1,13 @@
 ---
 description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
-seo-description: 以下為 tvOS 資料庫所提供的 TVJS 方法清單。
-seo-title: TVJS 方法
 solution: Experience Cloud,Analytics
 title: TVJS 方法
 topic-fix: Developer and implementation
 uuid: a7bfa85a-0d6e-4f51-9a9e-70429c2a9806
 exl-id: 4e0c6a29-953d-49fc-b44f-533dd393ffb1
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '1997'
 ht-degree: 100%
 
 ---
@@ -198,7 +195,7 @@ ht-degree: 100%
       * 表示 Adobe SDK 是否應記錄至偵錯主控台的值。
 
 
-## Analytics 方法 {#section_F3DB9BE225F84F86BE5F8D15164C0379}
+## Analytics 方法  {#section_F3DB9BE225F84F86BE5F8D15164C0379}
 
 * **trackStateData**
 

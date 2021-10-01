@@ -1,23 +1,20 @@
 ---
-description: 協助您將擴充功能與Windows 8.1通用應用程式商店SDK搭配使用的資訊，以用於Experience Cloud解決方案。
-seo-description: 協助您將擴充功能與Windows 8.1通用應用程式商店SDK搭配使用的資訊，以用於Experience Cloud解決方案。
-seo-title: 擴充功能
+description: 可協助您將擴充功能與適用於Experience Cloud解決方案的Windows 8.1通用應用程式商店SDK搭配使用的資訊。
 solution: Experience Cloud,Analytics
 title: 擴充功能
 topic-fix: Developer and implementation
 uuid: 2823b22c-d9a1-4724-9020-dfc6614691be
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 22%
+source-wordcount: '48'
+ht-degree: 29%
 
 ---
 
 
 # 擴充功能{#extensions}
 
-協助您將擴充功能與Windows 8.1通用應用程式商店SDK搭配使用的資訊，以用於Experience Cloud解決方案。
+可協助您將擴充功能與適用於Experience Cloud解決方案的Windows 8.1通用應用程式商店SDK搭配使用的資訊。
 
 ## 其他資訊
 

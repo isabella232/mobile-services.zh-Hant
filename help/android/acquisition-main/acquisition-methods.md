@@ -1,17 +1,14 @@
 ---
 description: '以下為 Android 資料庫所提供的贏取方法 '
 keywords: android;資料庫;行動;sdk
-seo-description: '以下為 Android 資料庫所提供的贏取方法 '
-seo-title: 贏取方法
 solution: Experience Cloud,Analytics
 title: 贏取方法
 topic-fix: Developer and implementation
 uuid: 22ec432f-e7ae-4e89-be07-26206bbeacf8
 exl-id: 0ce1b8fb-fd45-45de-8f97-e297e4c6529f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '74'
 ht-degree: 100%
 
 ---

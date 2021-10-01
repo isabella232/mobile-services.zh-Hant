@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您進行推送訊息疑難排解。
 keywords: 行動
-seo-description: 此資訊可協助您進行推送訊息疑難排解。
-seo-title: 疑難排解推送訊息
 solution: Experience Cloud,Analytics
 title: 疑難排解推送訊息
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -94,13 +91,13 @@ APNS 認證失效的可能原因如下：
 * 應用程式名稱：PhotoShop_app_iOS
    * 父 RSID：AllAdobe PhotoShop_apps
    * VRSID：PhotoShop_iOS_app_SF
-   * VRSID 定義區段：`a.appid contains “PhotoShop_iOS_app_SF”`
+   * VRSID 定義區段：`a.appid contains "PhotoShop_iOS_app_SF"`
 * 應用程式名稱：PhotoShop_app_iOS
    * 父 RSID：AllAdobe PhotoShop_apps
    * RSID：PhotoShop_iOS_app_LA
-   * VRSID 定義區段：`a.os contains “iOS”`
+   * VRSID 定義區段：`a.os contains "iOS"`
 
-此範例中，若 Photoshop 員工傳送推送至 *PhotoShop_iOS_app_SF* 應用程式，則所有 *PhotoShop_iOS_app_SF* 應用程式使用者都會如期收到推送訊息。但是，若員工傳送訊息至 *PhotoShop_app_LA* 應用程式，由於其 VRSID 定義區段不正確 (`iOS` 而非 `a.os contains "PhotoShop_iOS_app_LA"`)，因此訊息會傳送給 *AllAdobe PhotoShop_apps* 中的&#x200B;**所有** iOS 使用者。儘管訊息仍會傳送給 *PhotoShop_iOS_app_LA* 使用者，但訊息也會將 *PhotoShop_iOS_app_SF* 使用者的推送 ID 加入封鎖名單，因為 *PhotoShop_iOS_app_SF* 應用程式具有不同憑證。若區段定義為 `a.os contains “PhotoShop_iOS_app_LA”`，則推送訊息原本只會傳送給 *PhotoShop_iOS_app_LA* 使用者。
+此範例中，若 Photoshop 員工傳送推送至 *PhotoShop_iOS_app_SF* 應用程式，則所有 *PhotoShop_iOS_app_SF* 應用程式使用者都會如期收到推送訊息。但是，若員工傳送訊息至 *PhotoShop_app_LA* 應用程式，由於其 VRSID 定義區段不正確 (`iOS` 而非 `a.os contains "PhotoShop_iOS_app_LA"`)，因此訊息會傳送給 *AllAdobe PhotoShop_apps* 中的&#x200B;**所有** iOS 使用者。儘管訊息仍會傳送給 *PhotoShop_iOS_app_LA* 使用者，但訊息也會將 *PhotoShop_iOS_app_SF* 使用者的推送 ID 加入封鎖名單，因為 *PhotoShop_iOS_app_SF* 應用程式具有不同憑證。若區段定義為 `a.os contains "PhotoShop_iOS_app_LA"`，則推送訊息原本只會傳送給 *PhotoShop_iOS_app_LA* 使用者。
 
 若透過 *PhotoShop_IOS_app_LA* 推送憑證傳送，*PhotoShop_iOS_app_SF* 的推送識別碼將傳回為 `invalid`。
 

@@ -1,26 +1,23 @@
 ---
-description: 協助您開始使用適用於Experience Cloud的通用Windows平台SDK解決方案的資訊
-seo-description: 協助您開始使用適用於Experience Cloud的通用Windows平台SDK解決方案的資訊
-seo-title: 快速入門
-title: 快速入門
+description: 可協助您開始使用適用於Experience Cloud解決方案的通用Windows平台SDK的資訊
+title: 開始使用
 uuid: 5fbfde5e-eb08-496c-8d3b-d2350e374404
-translation-type: tm+mt
-source-git-commit: e5ed5005c3f98d27b514a634e485f0f941138b2d
+exl-id: 56813c16-94bd-469e-83ff-06748d885222
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 6%
+source-wordcount: '78'
+ht-degree: 5%
 
 ---
 
+# 開始使用 {#get-started}
 
-# 快速入門 {#get-started}
+可協助您開始使用適用於Experience Cloud解決方案的通用Windows平台SDK的資訊。
 
-這些資訊可協助您從Experience Cloud解決方案適用的通用Windows平台SDK開始。
+1. 完成[開發人員快速入門](/help/universal-windows/c-getting-started/dev-qs.md)中的任務，將通用Windows平台SDK添加到您的項目。
 
-1. 完成開發人員快 [速入門中的工作](/help/universal-windows/c-getting-started/dev-qs.md) ，將Universal Windows Platform SDK新增至您的專案。
+1. 查看[ADBMobile類和方法引用](/help/universal-windows/c-configuration/methods.md)。
 
-1. Review the [ADBMobile class and method reference](/help/universal-windows/c-configuration/methods.md).
+1. 實作[Analytics](/help/universal-windows/analytics/analytics-methods.md)、[Target](/help/universal-windows/target/target-methods.md)和[Audience Manager](/help/universal-windows/audiencemgmt/audience-manager-methods.md)。
 
-1. 實作 [Analytics](/help/universal-windows/analytics/analytics-methods.md)、 [Target](/help/universal-windows/target/target-methods.md)和 [Audience Manager](/help/universal-windows/audiencemgmt/audience-manager-methods.md)。
-
-1. If you are upgrading from a previous version, review the [Migration guide](/help/universal-windows/migration-v3.md).
+1. 如果您從舊版升級，請查看[遷移指南](/help/universal-windows/migration-v3.md)。

@@ -1,21 +1,18 @@
 ---
 description: 此資訊可協助您使用 Android 應用程式中的傳訊。
-seo-description: 此資訊可協助您使用 Android 應用程式中的傳訊。
-seo-title: 傳訊概述
 solution: Experience Cloud,Analytics
 title: 傳訊概述
 topic-fix: Developer and implementation
 uuid: c6475ab4-015d-46b0-af28-5d0df3f4459e
 exl-id: 26142589-c14a-4818-a913-e03fe9c59c73
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '115'
 ht-degree: 100%
 
 ---
 
-# 訊息概述 {#messaging}
+# 傳訊概述 {#messaging}
 
 本節中的資訊可協助您使用 Android 應用程式中的傳訊。
 

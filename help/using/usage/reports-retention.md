@@ -1,17 +1,14 @@
 ---
 description: 「保留」報表 (舊稱為「首次啟動的群眾」) 是群眾報表，可顯示有多少不重複使用者初次啟動您的應用程式，並且在隨後的幾個月內至少再啟動一次您的應用程式。
 keywords: 行動
-seo-description: 「保留」報表 (舊稱為「首次啟動的群眾」) 是群眾報表，可顯示有多少不重複使用者初次啟動您的應用程式，並且在隨後的幾個月內至少再啟動一次您的應用程式。
-seo-title: 保留報表
 solution: Experience Cloud,Analytics
 title: 保留報表
 topic-fix: Reports,Metrics
 uuid: e7639e7f-c9ed-4b19-9ac5-b36774ea9dd6
 exl-id: de68f00a-5de0-4e9a-9255-207a1a44df6e
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '269'
 ht-degree: 100%
 
 ---

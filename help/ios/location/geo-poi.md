@@ -1,16 +1,13 @@
 ---
 description: 地理位置可協助您透過經緯度和 iOS 應用程式中預先定義的地標，來測量位置資料。
-seo-description: 地理位置可協助您透過經緯度和 iOS 應用程式中預先定義的地標，來測量位置資料。
-seo-title: 地理位置與地標
 solution: Experience Cloud,Analytics
 title: 地理位置與地標
 topic-fix: Developer and implementation
 uuid: c800ec85-a33f-425d-b28f-bfe8bf229ae8
 exl-id: 732c3863-2010-4d04-a17b-a656e857f567
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '566'
 ht-degree: 100%
 
 ---
@@ -34,7 +31,7 @@ ht-degree: 100%
 自 4.2 版開始，POI 皆會在 Adobe Mobile 介面中定義，並會動態同步至應用程式設定檔案。此同步作業須使用 `ADBMobile.json` 檔案中的 `analytics.poi` 設定，該設定位於:
 
 ```js
-“analytics.poi”: “https://assets.adobedtm.com/…/yourfile.json”,
+"analytics.poi": "https://assets.adobedtm.com/…/yourfile.json",
 ```
 
 如需詳細資訊，請參閱 [ADBMobile JSON 設定](/help/ios/configuration/json-config/json-config.md)。
@@ -43,7 +40,7 @@ ht-degree: 100%
 
 ## 追蹤地理位置和 POI {#section_B1616E400A7548F9A672F97FEC75AE27}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的專案*。
 1. 匯入資料庫:

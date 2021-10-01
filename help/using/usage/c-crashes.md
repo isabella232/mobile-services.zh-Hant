@@ -1,17 +1,14 @@
 ---
 description: 「當機」報表可提供應用程式當機的快照。您可以查看當機次數和當機率，以及登入 Apteligent 使用者介面。
-seo-description: 「當機」報表可提供應用程式當機的快照。您可以查看當機次數和當機率，以及登入 Apteligent 使用者介面。
-seo-title: 當機報表
 title: 當機報表
 uuid: 0c96190f-e16b-49d5-aaa5-b651780a7266
-translation-type: tm+mt
-source-git-commit: 3b744229b3fc288363be74c3c4adcd71ecc4fad4
+exl-id: 38db5207-b3fd-49c8-98bd-d287d27738b7
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '225'
 ht-degree: 100%
 
 ---
-
 
 # 當機報表 {#crashes}
 

@@ -1,16 +1,13 @@
 ---
 description: Experience Cloud 解決方案專用 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
-seo-description: Experience Cloud 解決方案專用 Windows 8.1 通用應用程式商店 SDK 4.x 的發行說明和已知問題。
-seo-title: 發行說明
 solution: Experience Cloud,Analytics
 title: 發行說明
 topic-fix: Developer and implementation
 uuid: 45634319-7949-4e24-b193-4f876af97a69
 exl-id: 21bd2e72-cc9e-4fc0-940f-dfc560d7a536
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
@@ -30,5 +27,4 @@ Experience Cloud 解決方案專用 Windows 8.1 通用應用程式商店 SDK 4.x
 | 計時動作 | 「計時動作」可讓您輕鬆瞭解使用者在應用程式中完成端對端程序所需的時間。計時動作可讓您計算工作階段中的時間量，以及完成動作所需的總時間 (跨工作階段)。如需詳細資訊，請參閱 [Analytics](/help/windows-appstore/analytics/analytics.md) 中的&#x200B;*計時動作*。 |
 | 選擇加入/選擇退出 | 快速啟用和停用分析。 |
 
-
-如需詳細了解所有解決方案的發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)。
+如需詳細了解所有解決方案的發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)。

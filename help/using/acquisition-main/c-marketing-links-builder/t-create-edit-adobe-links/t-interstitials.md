@@ -1,17 +1,14 @@
 ---
 description: 依使用者是否已安裝應用程式 (應用程式深層連結) 或未安裝 (前往網站或應用程式商店) 將使用者路由至目的地。
 keywords: 行動
-seo-description: 依使用者是否已安裝應用程式 (應用程式深層連結) 或未安裝 (前往網站或應用程式商店) 將使用者路由至目的地。
-seo-title: 插頁廣告
 solution: Experience Cloud,Analytics
 title: 插頁廣告
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '356'
 ht-degree: 100%
 
 ---

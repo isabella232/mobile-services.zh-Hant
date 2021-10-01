@@ -1,16 +1,13 @@
 ---
 description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
-seo-description: 此資訊可協助您了解當機追蹤方式，以及處理錯誤當機的最佳實務。
-seo-title: 追蹤應用程式當機
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式當機
 topic-fix: Developer and implementation
 uuid: 4f81988b-198a-4ba9-ad53-78af90e43856
 exl-id: d6b4c763-7e02-42d0-aaf2-cda8640e5b9f
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '509'
 ht-degree: 100%
 
 ---

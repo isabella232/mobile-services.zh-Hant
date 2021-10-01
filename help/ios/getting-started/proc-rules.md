@@ -1,30 +1,27 @@
 ---
-description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
-seo-description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
-seo-title: 處理規則和內容資料
+description: 處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
 solution: Experience Cloud,Analytics
 title: 處理規則和內容資料
 topic-fix: Developer and implementation
 uuid: 51338ccd-fa52-4d9c-97c4-947a4100465d
 exl-id: a3968160-42c4-4671-b541-c14639b8a451
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 70%
 
 ---
 
 # 處理規則與內容資料{#processing-rules-and-context-data}
 
-處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
+處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
 
 如需詳細資訊，請參閱下列內容:
 
 * 2013 年高峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
 * 取得授權以使用處理規則
 
-   如需處理規則的詳細資訊，請參閱[處理規則概述](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+   如需處理規則的詳細資訊，請參閱Adobe Analytics檔案中的[處理規則概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
 操作處理規則時，請記住以下資訊:
 
@@ -40,7 +37,7 @@ ht-degree: 100%
 
 * 內容資料變數在處理規則介面中按字母排序，讓您快速了解哪些變數在同一個命名空間中。
 
-   避免使用 eVar 或 prop 編號來命名內容資料索引鍵：
+   避免使用eVar或prop編號來命名內容資料索引鍵：
 
    ```js
    "eVar1":"jimbo"

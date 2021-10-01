@@ -1,17 +1,14 @@
 ---
 description: 您可以將應用程式設定為使用 Apple 推送通知服務 (APNS) 或 Firebase 雲端通訊 (FCM)。
 keywords: 行動
-seo-description: 您可以將應用程式設定為使用 Apple 推送通知服務 (APNS) 或 Firebase 雲端通訊 (FCM)。
-seo-title: 設定應用程式以使用 APNS 或 FCM
 solution: Experience Cloud,Analytics
 title: 設定應用程式以使用 APNS 或 FCM
 topic-fix: Metrics
 uuid: fa411f2a-ba47-4499-bbe5-1aedef6b49ad
 exl-id: 9064e1f3-f176-4699-b1e6-90f29e1af0d3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '629'
 ht-degree: 100%
 
 ---
@@ -70,7 +67,7 @@ ht-degree: 100%
 
 1. 複製&#x200B;**[!UICONTROL 舊版伺服器密鑰]**&#x200B;和&#x200B;**[!UICONTROL 傳送者 ID]** 以供稍後使用。
 
-   例如:
+   例如：
 
    ```
    - Legacy server key = AIzaSyC6FNgsCOpBL5eXhDvwf8979mWba6x7Roo

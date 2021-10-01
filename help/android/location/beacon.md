@@ -1,17 +1,14 @@
 ---
 description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
 keywords: android;資料庫;行動;sdk
-seo-description: 信標追蹤可讓您透過 iBeacon 和藍牙低功耗來測量微位置並以其為目標。
-seo-title: 信標追蹤
 solution: Experience Cloud,Analytics
 title: 信標追蹤
 topic-fix: Developer and implementation
 uuid: 16c1d267-85f4-4a6a-a6d3-d6ffb0f80b29
 exl-id: b8493e9d-ed1c-4404-a218-47a18a9c8faa
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '225'
 ht-degree: 100%
 
 ---
@@ -38,7 +35,7 @@ ht-degree: 100%
 
 ## 追蹤信標 {#section_FC3F213545944A468B1E6D5D5C8E2F1F}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 

@@ -1,18 +1,15 @@
 ---
 description: 回傳可讓您將 SDK 收集的資料傳送至第三方伺服器。運用您用來顯示應用程式內訊息的相同觸發器和特性，便可以設定 SDK 將自訂資料傳送至第三方目的地。
-seo-description: 回傳可讓您將 SDK 收集的資料傳送至第三方伺服器。運用您用來顯示應用程式內訊息的相同觸發器和特性，便可以設定 SDK 將自訂資料傳送至第三方目的地。
-seo-title: 回傳
 solution: Experience Cloud,Analytics
 title: 回傳概述
 uuid: 25e2a5fb-1203-40dd-96cd-b23e0f23376d
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: c5aa0b99-2cb3-4dd7-9da8-e573241e864b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '291'
 ht-degree: 100%
 
 ---
-
 
 # 回傳概述 {#postbacks}
 

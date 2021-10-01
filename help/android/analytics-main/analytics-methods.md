@@ -1,22 +1,19 @@
 ---
 description: 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
 keywords: android;資料庫;行動;sdk
-seo-description: 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
-seo-title: Analytics 方法
 solution: Experience Cloud,Analytics
 title: Analytics 方法
 topic-fix: Developer and implementation
 uuid: ac7c640e-9dcc-4724-b561-019cc025d5a7
 exl-id: 7914d13e-40a2-4ae2-b759-2660817c2058
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '727'
 ht-degree: 100%
 
 ---
 
-# Analytics 方法 {#analytics-methods}
+# Analytics 方法  {#analytics-methods}
 
 以下為 Android 資料庫所提供的 Adobe Analytics 方法清單。
 

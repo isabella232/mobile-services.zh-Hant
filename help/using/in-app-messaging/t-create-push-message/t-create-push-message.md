@@ -1,17 +1,14 @@
 ---
 description: 您可以從 Mobile Services UI 傳送推送訊息至 Analytics 區段，以便在與使用者互動時，運用健全的 Analytics 資料。
 keywords: 行動
-seo-description: 您可以從 Mobile Services UI 傳送推送訊息至 Analytics 區段，以便在與使用者互動時，運用健全的 Analytics 資料。
-seo-title: 建立推送訊息
 solution: Experience Cloud,Analytics
 title: 建立推送訊息
 topic-fix: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
 exl-id: e7ad3797-17c7-41ad-8b65-d9f8e5b01960
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '161'
 ht-degree: 100%
 
 ---

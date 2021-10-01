@@ -1,16 +1,13 @@
 ---
 description: '以下資訊可協助您開始使用 Experience Cloud 解決方案的 iOS SDK '
-seo-description: '以下資訊可協助您開始使用 Experience Cloud 解決方案的 iOS SDK '
-seo-title: 快速入門概述
 solution: Experience Cloud,Analytics
 title: 快速入門概述
 topic-fix: Developer and implementation
 uuid: a2b9baad-b959-4b9a-893d-99c0f4072e8d
 exl-id: bf1c059d-3ca7-4d77-8acb-597350c03433
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '165'
 ht-degree: 100%
 
 ---

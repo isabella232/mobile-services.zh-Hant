@@ -1,17 +1,14 @@
 ---
 description: 這是預設行動量度和維度的參考資訊。
 keywords: 行動
-seo-description: 這是預設行動量度和維度的參考資訊。
-seo-title: 行動量度和維度參考
 solution: Experience Cloud,Analytics
 title: 行動量度和維度參考
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '621'
 ht-degree: 100%
 
 ---

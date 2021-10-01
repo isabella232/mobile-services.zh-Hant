@@ -1,19 +1,16 @@
 ---
 description: 本主題說明如何開始使用 Mobile 解決方案 4.x SDK 的 Xamarin 元件。
-keywords: Xamarin
-seo-description: 本主題說明如何開始使用 Mobile 解決方案 4.x SDK 的 Xamarin 元件。
-seo-title: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件
+keywords: 沙馬林
 solution: Experience Cloud
 title: 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件
 uuid: e7a48107-bd0e-47d6-b49c-dfdae189ac37
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 39628548-5787-4022-8792-86b78214a1c0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 99%
 
 ---
-
 
 # 適用於 Experience Cloud 解決方案 4.x SDK 的 Xamarin 元件 {#xamarin-components-for-experience-cloud-solutions-x-sdk}
 

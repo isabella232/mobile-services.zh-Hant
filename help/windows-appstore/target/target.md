@@ -1,23 +1,20 @@
 ---
-description: 這些資訊可協助您在Windows 8.1 Universal App Store應用程式中提供目標內容。
-seo-description: 這些資訊可協助您在Windows 8.1 Universal App Store應用程式中提供目標內容。
-seo-title: Target
+description: 可協助您在Windows 8.1通用應用程式商店應用程式內提供目標式內容的資訊。
 solution: Experience Cloud,Analytics
 title: Target
 topic-fix: Developer and implementation
 uuid: c57bdf85-c1a9-446d-9ec9-4a483b189522
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 15%
+source-wordcount: '32'
+ht-degree: 18%
 
 ---
 
 
-# Target{#target}
+# 目標{#target}
 
-這些資訊可協助您在Windows 8.1 Universal App Store應用程式中提供目標內容。
+可協助您在Windows 8.1通用應用程式商店應用程式內提供目標式內容的資訊。
 
 ## 其他資訊
 

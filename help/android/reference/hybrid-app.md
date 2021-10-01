@@ -1,16 +1,13 @@
 ---
 description: 若您的應用程式會開啟行動網站內容，請確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
-seo-description: 若您的應用程式會開啟行動網站內容，請確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
-seo-title: '應用程式和行動網站間的訪客追蹤  '
 solution: Experience Cloud,Analytics
 title: '應用程式和行動網站間的訪客追蹤  '
 topic-fix: Developer and implementation
 uuid: 073572e4-4c55-4b27-b4a7-e4349ccde7bf
 exl-id: 7ca98572-138d-48f8-aa2a-d376eebb0b2c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '477'
 ht-degree: 100%
 
 ---

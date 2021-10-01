@@ -1,31 +1,28 @@
 ---
-description: 測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 本節提供開發人員工作的基本概觀以及程式碼範例。
-seo-description: 測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 本節提供開發人員工作的基本概觀以及程式碼範例。
-seo-title: Video Analytics
+description: 所有AppMeasurement平台上測量視訊的一般程式都很類似。 本節提供開發人員工作的基本概覽和程式碼範例。
 title: Video Analytics
 uuid: 0d2731f3-77a9-4db1-9a8c-1e56c212ecb4
-translation-type: tm+mt
-source-git-commit: c198ae57b05f8965a8e27191443ee2cd552d6c50
+exl-id: 90da1a9e-2faa-429c-969e-869ebedf08cc
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 66%
+source-wordcount: '835'
+ht-degree: 67%
 
 ---
 
-
 # Video Analytics {#video-analytics}
 
-測量視訊的一般程式在所有AppMeasurement平台上都非常類似。 本節提供開發人員工作的基本概觀以及程式碼範例。
+所有AppMeasurement平台上測量視訊的一般程式都很類似。 本節提供開發人員工作的基本概覽和程式碼範例。
 
-For more information about Video measurement, see the [Measuring audio and video in Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html) guide.  下表列出會傳送至 Analytics 的媒體資料。使用處理規則將「上下文資料變數」欄中的上下文資料對應至Analytics變數，如「變數類型」欄所述。
+如需視訊測量的詳細資訊，請參閱在Adobe Analytics中測量串流媒體指南[ 。  ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant)下表列出會傳送至 Analytics 的媒體資料。使用處理規則將「內容資料變數」欄中的內容資料對應至Analytics變數，如「變數類型」欄所述。
 
 ## 將播放器事件對應至 Analytics 變數
 
 * **a.media.name**
 
-   （必要）當訪客以某種方式檢視視訊時，收集視訊名稱（如實作中所指定）。您可以新增此變數的分類。
+   （必要）當訪客以某種方式檢視視訊時，依實作指定收集視訊名稱。您可以為此變數新增分類。
 
-   **（可選）** 「自訂分析」變數提供視訊路徑資訊。
+   **（選用）** Custom Insight變數提供視訊路徑資訊。
 
    * 變數名稱：eVar
       * 預設過期時間：造訪
@@ -33,16 +30,16 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.media.name**
 
-   (**選用**) 提供視訊路徑資訊。ClientCare必須為此變數啟用路徑分析。
+   (**選用**) 提供視訊路徑資訊。必須由客戶服務為此變數啟用路徑。
 
    * 事件類型: 自訂分析 (s.prop)
-   * 自訂分析(s.prop)
+   * Custom Insight(s.prop)
 
 * **a.media.segment**
 
    (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。
 
-   For example, when a visitor views the first segment in a video, SiteCatalyst might collect `1:M:0-25` in the Segments eVar. 預設的視訊資料收集方法會收集視訊開始（播放）、區段開始和視訊結束（停止）點的資料。
+   例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst可能會在區段eVar中收集`1:M:0-25`。 預設的視訊資料收集方法會在視訊開始（播放）、區段開始和視訊結束（停止）點收集資料。
 
    當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
 
@@ -51,7 +48,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **a.contentType**
 
-   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會指派內容類型為「視訊」。 此變數不需專門保留供視訊追蹤使用。 使用相同變數擁有其他內容報告內容類型可讓您分析不同內容類型的訪客分佈。 舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點，「內容類型」可讓您識別視訊訪客，並因此計算視訊轉換率。
+   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為「視訊」的內容類型。 不需專為視訊追蹤保留此變數。 使用此相同變數而擁有其他內容報表內容類型，可讓您分析不同內容類型中訪客的分佈情況。 例如，您可以使用此變數，使用「article」或「product page」等值來標籤其他內容類型。 從視訊測量觀點，「內容類型」可讓您識別視訊訪客，並因此計算視訊轉換率。
 
    * 變數類型: eVar
    * 預設過期時間：頁面檢視
@@ -92,7 +89,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **open**
 
-   開啟視訊以進行追蹤。
+   開啟視訊以供追蹤。
 
    * 此方法的語法如下：
 
@@ -124,7 +121,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **close**
 
-   Closes the media item named *`name`*.
+   關閉名為&#x200B;*`name`*&#x200B;的媒體項。
 
    * 此方法的語法如下：
 
@@ -140,7 +137,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **play**
 
-   Plays the media item named *`name`* at the given *`offset`* (in seconds).
+   在指定的&#x200B;*`offset`*（以秒為單位）播放命名為&#x200B;*`name`*&#x200B;的媒體項目。
 
    * 此方法的語法如下：
 
@@ -156,7 +153,7 @@ For more information about Video measurement, see the [Measuring audio and video
 
 * **complete**
 
-   Manually mark the media item as complete at the *`offset`* provided (in seconds).
+   在提供的&#x200B;*`offset`*&#x200B;處（以秒為單位）手動將媒體項目標示為已完成。
 
    * 此方法的語法如下：
 

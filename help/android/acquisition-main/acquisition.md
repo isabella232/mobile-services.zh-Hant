@@ -1,22 +1,19 @@
 ---
 description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者按一下產生的連結，從 App Store 下載並執行應用程式後，SDK 就會自動收集贏取資料，並傳送至 Adobe Mobile Services。
 keywords: android;資料庫;行動;sdk
-seo-description: 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者按一下產生的連結，從 App Store 下載並執行應用程式後，SDK 就會自動收集贏取資料，並傳送至 Adobe Mobile Services。
-seo-title: 行動應用程式贏取
 solution: Experience Cloud,Analytics
 title: 行動應用程式贏取
 topic-fix: Developer and implementation
 uuid: 4d32eae9-e856-4e40-8a29-2b5bccd106e0
 exl-id: 266f0266-38f5-410b-ae14-92874fb0e7ce
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '833'
 ht-degree: 100%
 
 ---
 
-# 行動應用程式贏取 {#mobile-app-acquisition}
+# 行動應用程式贏取  {#mobile-app-acquisition}
 
 可以在 Adobe Mobile Services 中產生具備獨特追蹤代碼的贏取連結。當使用者按一下產生的連結，從 App Store 下載並執行應用程式後，SDK 就會自動收集贏取資料，並傳送至 Adobe Mobile Services。
 

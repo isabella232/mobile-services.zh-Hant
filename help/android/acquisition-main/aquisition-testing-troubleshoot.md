@@ -1,14 +1,11 @@
 ---
 description: 下列資訊可協助您進行贏取測試問題疑難排解。
-keywords: android;Acquisition;testing
-seo-description: 下列資訊可協助您進行贏取測試問題疑難排解。
-seo-title: 疑難排解贏取測試
+keywords: android;贏取;測試
 solution: Experience Cloud,Analytics
 title: 疑難排解贏取測試
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '224'
 ht-degree: 100%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 100%
 
 * 名稱有大小寫之分，因此請勿提供小寫字母的名稱。
 
-   您必須確保從主要活動中呼叫 `Config.setContext(this.getApplicationContext())`。如需詳細資訊，請參閱[設定方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/configuration-android/methods.html)。
+   您必須確保從主要活動中呼叫 `Config.setContext(this.getApplicationContext())`。如需詳細資訊，請參閱[設定方法](../configuration/methods.md)。
 
 * 提供的 AndroidManifest.xml 檔案中有一些使用者權限遺失，這些是傳送資料和記錄離線追蹤呼叫所需的權限:
 
@@ -38,7 +35,7 @@ ht-degree: 100%
 
    若是手動測試，請將 `referrerTimeout` 增加到 10 至 15 秒，這樣就有足夠的時間在系統處理安裝點擊前傳送反向連結資訊。
 
-* 請務必依序執行[測試行銷連結贏取](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/acquisition-android/t-testing-marketing-link-acquisition.html)中的所有步驟，並確認您執行 `adb` 殼層，然後執行下列指令:
+* 請務必依序執行[測試行銷連結贏取](t-t-testing-marketing-link-acquisition.md)中的所有步驟，並確認您執行 `adb` 殼層，然後執行下列指令:
 
    ```java
    am broadcast -a com.android.vending.INSTALL_REFERRER -n 

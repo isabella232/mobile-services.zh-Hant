@@ -1,16 +1,13 @@
 ---
 description: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x 可讓您測量原生 Windows 8.1 和 Windows Phone 8.1 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集受眾資料。
-seo-description: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x 可讓您測量原生 Windows 8.1 和 Windows Phone 8.1 應用程式、在應用程式內提供目標式內容，以及透過 Audience Manager 運用與收集受眾資料。
-seo-title: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x
 solution: Experience Cloud,Analytics
 title: 適用於 Experience Cloud 解決方案的 Windows 8.1 通用應用程式商店 SDK 4.x
 topic-fix: Developer and implementation
 uuid: a06d8cf2-5d2d-49a8-86ac-102e2934ea59
 exl-id: 5c511dea-99d8-40e9-a98f-8bc3cad937b8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '190'
 ht-degree: 100%
 
 ---

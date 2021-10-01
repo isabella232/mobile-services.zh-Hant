@@ -1,16 +1,13 @@
 ---
 description: 此資訊可協助您使用 ADBMobile.json 設定檔。
-seo-description: 此資訊可協助您使用 ADBMobile.json 設定檔。
-seo-title: ADBMobile JSON 設定
 solution: Experience Cloud,Analytics
 title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1666'
 ht-degree: 100%
 
 ---
@@ -155,8 +152,8 @@ ht-degree: 100%
       自 4.2 版開始，POI 皆會在 Adobe Mobile 介面中定義，並會動態同步至應用程式設定檔。此同步需使用 `analytics.poi` 設定：
 
       ```javascript
-        “analytics.poi“: `https://assets.adobedtm.com/`
-      …/yourfile.json”`,
+        "analytics.poi": `https://assets.adobedtm.com/`
+      …/yourfile.json"`,
       ```
 
       若尚未設定此設定，則必須更新 `ADBMobile.json` 檔案以包含此行。若要下載更新的設定檔，請參閱[開始之前](/help/android/getting-started/requirements.md)。
@@ -396,5 +393,5 @@ ht-degree: 100%
 * &quot;triggers&quot;
    * 與適用對象相同，但此處是指動作，而非對象本身
    * &quot;key&quot;
-   * &quot;符合&quot;
-   * &quot;值&quot;
+   * &quot;matches&quot;
+   * &quot;values&quot;

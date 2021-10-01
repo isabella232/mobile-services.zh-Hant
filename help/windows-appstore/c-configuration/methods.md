@@ -1,23 +1,20 @@
 ---
-description: Windows 8.1通用應用程式商店程式庫提供的類別和方法。
-seo-description: Windows 8.1通用應用程式商店程式庫提供的類別和方法。
-seo-title: SDK 方法
+description: Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
 solution: Experience Cloud,Analytics
 title: SDK 方法
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 50%
+source-wordcount: '642'
+ht-degree: 51%
 
 ---
 
 # SDK 方法 {#sdk-methods}
 
-Windows 8.1通用應用程式商店程式庫提供的類別和方法。
+Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
 
 >[!TIP]
 >
@@ -45,7 +42,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatusUnknown`  — 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       預設值設定在[ADBMobileConfig.json設定](/help/windows-appstore/c-configuration/c.json.md)檔案中。
 
@@ -79,7 +76,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `ADBMobilePrivacyStatusUnknown` -如果您的報表套裝已啟用時間戳記，則會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatusUnknown`  — 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 此方法的語法如下：
 
@@ -121,11 +118,11 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
 * **GetUserIdentifier(winJS:getUserIdentifier)**
 
-   如果已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
    >[!TIP]
    >
-   >如果您的應用程式從Experience Cloud3.x升級至4.x SDK，則會擷取先前的ID（自訂或自動產生）並儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。對於4.x SDK上的新安裝，使用者識別碼為`null`，直到設定為止。
+   >如果您的應用程式從Experience Cloud3.x升級至4.x SDK，應用程式會擷取先前的ID（自訂或自動產生）並將其儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的4.x SDK，則使用者識別碼為`null`，直到設定完成為止。
 
    * 此方法的語法如下：
 
@@ -197,7 +194,7 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
    >[!TIP]
    >
-   >在應用程式內每個「活動」的`onResume()`方法中叫用此方法，如下列範例所示。 我們也建議將「活動」或「服務」傳遞為上下文物件，而非全域「應用程式」內容。
+   >在應用程式內每個活動的`onResume()`方法中叫用此方法，如下列範例所示。 我們也建議將活動或服務傳遞為內容物件，而非全域應用程式內容。
 
    * 此方法的語法如下：
 
@@ -214,11 +211,11 @@ Windows 8.1通用應用程式商店程式庫提供的類別和方法。
 
 * **PauseCollecting &#x200B; LifecycleData(winJS:pauseCollecting &#x200B; LifecycleData)**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/windows-appstore/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷前一個工作階段長度。 這也會設定標幟，讓生命週期正確得知應用程式並未當機。 如需詳細資訊，請參閱[生命週期量度](/help/windows-appstore/metrics.md)。
 
    >[!TIP]
    >
-   >在應用程式內每個「活動」的`onPause()`方法中叫用此方法，如範例所示。 我們也建議將「活動」或「服務」傳遞為上下文物件，而非全域「應用程式」內容。
+   >在應用程式內每個活動的`onPause()`方法中叫用此方法，如範例所示。 我們也建議將活動或服務傳遞為內容物件，而非全域應用程式內容。
 
    * 此方法的語法如下：
 

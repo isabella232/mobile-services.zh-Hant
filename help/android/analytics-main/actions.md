@@ -1,16 +1,13 @@
 ---
 description: 動作為發生在您要測量之 Android 應用程式中的事件。
-seo-description: 動作為發生在您要測量之 Android 應用程式中的事件。
-seo-title: 追蹤應用程式動作
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式動作
 topic-fix: Developer and implementation
 uuid: fe01c1df-f6bb-4b32-b3ef-959d2c724af6
 exl-id: 495a6aa8-781d-4499-ad46-e19d57cccf40
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '361'
 ht-degree: 100%
 
 ---
@@ -23,7 +20,7 @@ ht-degree: 100%
 
 ## 追蹤動作 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 

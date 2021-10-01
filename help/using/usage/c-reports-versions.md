@@ -1,17 +1,14 @@
 ---
 description: 「版本」報表是特定時段報表，可顯示使用者裝置上執行之不同版本應用程式的相關資訊。
 keywords: 行動
-seo-description: 「版本」報表是特定時段報表，可顯示使用者裝置上執行之不同版本應用程式的相關資訊。
-seo-title: 版本報表
 solution: Experience Cloud,Analytics
 title: 版本報表
 topic-fix: Reports,Metrics
 uuid: 67e759d3-7e4f-4985-9e74-61c782f0fbb5
 exl-id: c29bc404-892e-413f-a9e2-0c16bdef032d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '60'
 ht-degree: 100%
 
 ---

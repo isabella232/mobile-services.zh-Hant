@@ -1,22 +1,19 @@
 ---
 description: 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 keywords: android;資料庫;行動;sdk
-seo-description: 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
-seo-title: 產品變數及其包含的銷售 eVar 與產品專屬事件
 solution: Experience Cloud,Analytics
 title: 產品變數及其包含的銷售 eVar 與產品專屬事件
 topic-fix: Developer and implementation
 uuid: 64f822a0-6ccf-48e7-8886-31b93d8198a3
 exl-id: 2ede6341-3068-4423-a509-c0ec3a2db5e8
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '80'
 ht-degree: 100%
 
 ---
 
-# 產品變數及其包含的銷售 eVar 與產品專屬事件 {#products-variable-with-merchandising-evars-and-product-specific-events}
+# Products 變數及其包含的銷售 eVar 與產品專屬事件 {#products-variable-with-merchandising-evars-and-product-specific-events}
 
 以下範例為產品變數及其包含的銷售 eVar 與產品專屬事件。
 

@@ -1,22 +1,19 @@
 ---
 description: 此資訊可協助您瞭解及使用 Adobe Mobile Services。
 keywords: 行動
-seo-description: 此資訊可協助您瞭解及使用 Adobe Mobile Services。
-seo-title: 快速入門
 solution: Experience Cloud,Analytics
 title: 快速入門
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 100%
+source-wordcount: '1344'
+ht-degree: 97%
 
 ---
 
-# 入門{#getting-started}
+# 快速入門{#getting-started}
 
 此資訊可協助您瞭解及使用 Adobe Mobile Services。
 
@@ -114,7 +111,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，包括贏取追蹤和�
 
 在&#x200B;*最佳化*&#x200B;中，您可以盡可能改善轉換情形 (訂閱、交易、廣告收入等)，並提升客戶保留率。盡可能改善使用者在應用程式中的體驗，可協助您將內容個人化，以實現最大的投資報酬率和轉換率。
 
-如需有關測試和 Adobe Target 的詳細資訊，請前往 [Adobe Target](https://docs.adobe.com/content/help/zh-Hant/target/using/target-home.html)。
+如需有關測試和Adobe Target的詳細資訊，請參閱[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html)檔案。
 
 ### 地理定位
 
@@ -125,10 +122,10 @@ Adobe Mobile Services 提供使用者贏取工作流程，包括贏取追蹤和�
 如需有關位置的詳細資訊，請參閱下列內容:
 
 * [Mobile Services 使用者指南中的位置](/help/using/location/c-location-overview.md)
-* Android SDK 指南中的[位置一節](/help/android/location/location.md)
-* iOS SDK 指南中的[位置一節](/help/ios/location/location.md)
+* [Android SDK 指南中的位置一節](/help/android/location/location.md)
+* [iOS SDK 指南中的位置一節](/help/ios/location/location.md)
 
-## Adobe Mobile SDK {#mobile-services-sdk}
+## Adobe行動SDK {#mobile-services-sdk}
 
 Adobe 提供端對端行動行銷解決方案，可提升客戶在所有行動領域的參與率。只需單一 SDK，您即可存取 Adobe Analytics、Adobe Campaign 和 Adobe Audience Manager 的功能，管理多個不同 SDK 的技術成本因此得以降低。
 
@@ -153,7 +150,7 @@ Adobe Mobile SDK 提供下列功能：
 * 整合
 
    * 單一 SDK 適用於多種解決方案 (Analytics、Campaign 和 Audience Manager)，可縮短開發人員的實施時間並減輕其工作量。
-   * 只需一行程式碼即可收集「基準」應用程式生命週期量度。
+   * 收集「基準」應用程式生命週期量度只需要一行程式碼。
    * 隨著您的行動策略漸趨成熟，您將可輕鬆啟用 Adobe Experience Cloud 功能，以取得、分析使用者和與其互動。
 
 * 快速精巧
@@ -161,4 +158,4 @@ Adobe Mobile SDK 提供下列功能：
    * 資料傳送至 Adobe 伺服器和第三方系統的裝置處理負載得以降到最低。
    * 資源耗用量低，提交至應用程式商店的應用程式套件得以盡可能縮小。
 
-如需 Adobe Mobile SDK 的詳細資訊，請參閱[適用於 Experience 解決方案的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html) 和[適用於 Experience Cloud 解決方案的 iOS SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/rel-notes.html)。
+如需 Adobe Mobile SDK 的詳細資訊，請參閱[適用於 Experience 解決方案的 Android SDK 4.x](/help/android/overview.md) 和[適用於 Experience Cloud 解決方案的 iOS SDK 4.x](/help/ios/overview.md)。

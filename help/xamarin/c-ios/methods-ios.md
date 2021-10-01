@@ -1,23 +1,20 @@
 ---
-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
-keywords: Xamarin
-seo-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
-seo-title: iOS 方法
+description: 適用於Experience Cloud解決方案4.x SDK的Xamarin元件的iOS方法。
+keywords: 沙馬林
 solution: Experience Cloud
 title: iOS 方法
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1737'
 ht-degree: 70%
 
 ---
 
-
 # iOS 方法{#ios-methods}
 
-Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
+適用於Experience Cloud解決方案4.x SDK的Xamarin元件的iOS方法。
 
 ## 設定方法 {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
@@ -55,7 +52,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **SetDebugLogging**
 
-   將調試記錄首選項設定為啟用。
+   將偵錯記錄偏好設定設為啟用。
 
    * 此方法的語法如下：
 
@@ -85,14 +82,14 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       var lifetimeValue = ADBMobile.LifetimeValue();
       ```
 
-* **隱私權狀態**
+* **PrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
    * `ADBMobilePrivacyStatus.OptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
-   * ADBMobilePrivacyStatus.Unknown —— 如果啟用離線追蹤，會儲存點擊，直到隱私權狀態變更為選擇加入（接著傳送點擊）或選擇退出（接著會捨棄點擊）為止。 如果離線追蹤已停用，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * ADBMobilePrivacyStatus.Unknown — 如果啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。 如果停用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   The default value is set in the [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md).
+   預設值設定在[ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md)中。
 
    * 此方法的語法如下：
 
@@ -109,7 +106,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **SetPrivacyStatus**
 
-   將當前用戶的隱私狀態設定為狀態。 設定為下列其中一值：
+   將目前使用者的隱私權狀態設為狀態。 設定為下列其中一值：
    * `ADBMobilePrivacyStatus.OptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
@@ -126,9 +123,9 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       ADBMobile.SetPrivacyStatus(ADBMobilePrivacyStatus.OptIn); 
       ```
 
-* **使用者識別碼**
+* **UserIdentifier**
 
-   如果已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
    * 此方法的語法如下：
 
@@ -144,7 +141,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **SetUserIdentifier**
 
-   如果已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
    * 此方法的語法如下：
 
@@ -155,7 +152,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
    * 此方法的程式碼範例如下：
 
       ```objective-c
-      ADBMobile.SetUserIdentifier ("customUserIdentifier”); 
+      ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
 * **GetVersion**
@@ -180,7 +177,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
    >[!TIP]
    >
-   >此方法適用於在背景中註冊通知的應用程式，且僅應從應用程式在背景時執行的程式碼呼叫此方法。
+   >此方法旨在用於在背景中註冊接收通知的應用程式，且只有當應用程式於背景時，才應從此時執行的程式碼中呼叫此方法。
 
    * 此方法的語法如下：
 
@@ -194,7 +191,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       ADBMobile.KeepLifecycleSessionAlive();
       ```
 
-## Analytics 方法 {#section_63CF636104EF41F790C3E4190D755BBA}
+## Analytics 方法  {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
@@ -214,7 +211,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **TrackState**
 
-   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，而呼叫 `TrackState` 會增加頁面檢視次數。如果狀態為空，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，且`TrackState`呼叫會遞增頁面檢視。如果狀態為空，在報表中會顯示為「app name app version(build)」。 如果在報表中看到此值，請務必在每個`TrackState`呼叫中設定狀態。
 
    >[!TIP]
    >
@@ -236,7 +233,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **TrackAction**
 
-   追蹤應用程式中的動作。動作是您要測量的應用程式中發生的事，例如「死亡」、「獲得的層級」、「動態消息訂閱」和其他度量。
+   追蹤應用程式中的動作。動作是發生在應用程式中且您想測量的項目，例如「死亡」、「獲得的層級」、「摘要訂閱」及其他量度。
 
    >[!TIP]
    >
@@ -326,11 +323,11 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **TrackLifetimeValueIncrease**
 
-   增加使用者期限值的金額。
+   增加使用者期限值的量。
 
    * 此方法的語法如下：
 
-      public nbsp; static voidTrackLifetimeValueIncrease(double amount, NSDictionary cdata);
+      public nbsp；靜態void TrackLifetimeValueIncrease(double amount, NSDictionary cdata);
 
    * 此方法的程式碼範例如下：
 
@@ -360,7 +357,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **TrackTimedActionUpdate**
 
-   傳遞資料以更新與指定動作相關的上下文資料。 傳入的資料會附加至指定動作的現有資料，並覆寫資料（如果已為動作定義相同的索引鍵）。
+   傳遞資料以更新與指定動作相關聯的內容資料。 傳遞的資料會附加至指定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
 
    >[!TIP]
    >
@@ -464,7 +461,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       var queueSize = ADBMobile.TrackingGetQueueSize(); 
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience CloudID方法 {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **GetMarketingCloudID**
 
@@ -484,7 +481,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **VisitorSyncIdentifiers**
 
-   透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一訪客的多個客戶ID，以及客戶類型識別碼，以區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
+   透過Experience CloudID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一位訪客具有多個客戶ID，並搭配客戶類型識別碼來區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
 
    * 此方法的語法如下：
 
@@ -492,7 +489,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
       public static void VisitorSyncIdentifiers(NSDictionary identifiers);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objective-c
       NSDictionary  ids  =  NSDictionary.FromObjectAndKey  (NSObject.FromObject  ("value2"),  NSObject.FromObject  ("pushID")); 
@@ -503,7 +500,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **TargetLoadRequest**
 
-   Sends request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   傳送要求至您設定的Target伺服器並傳回`Action<NSDictionary>`回呼中產生之選件的字串值。
 
    * 此方法的語法如下：
 
@@ -523,7 +520,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **TargetCreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   方便讓建構函式使用指定的參數建立`ADBTargetLocationRequest`物件。
 
    * 此方法的語法如下：
 
@@ -574,7 +571,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **AudienceVisitorProfile**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回nil。 Visitor profile is saved in `NSUserDefaults` for easy access across multiple launches of your app.
+   傳回最近取得的訪客描述檔。如果尚未提交任何訊號，則傳回nil。 訪客設定檔會儲存在`NSUserDefaults`中，方便您在多次啟動應用程式時存取。
 
    * 此方法的語法如下：
 
@@ -622,7 +619,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **AudienceSetDpidAndDpuuid**
 
-   設定dpid和dpuuid。 
+   設定dpid和dpuuid。 若已設定dpid和dpuuid，則會隨各訊號傳送。
 
    * 此方法的語法如下：
 
@@ -638,7 +635,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 * **AudienceSignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>`  callback.
+   傳送具有特徵的訊號給對象管理，並取得`Action<NSDictionary>`回呼中傳回的相符區段。
 
    * 此方法的語法如下：
 
@@ -673,7 +670,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的iOS方法。
 
 ## 影片 {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-如需詳細資訊，請參閱 [視訊分析](/help/ios/getting-started/dev-qs.md)。
+如需詳細資訊，請參閱[Video Analytics](/help/ios/getting-started/dev-qs.md)。
 
 * **MediaCreateSettings**
 

@@ -1,17 +1,14 @@
 ---
 description: '設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業 '
-seo-description: '設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業 '
-seo-title: 開始之前
 solution: Experience Cloud,Analytics
 title: 開始之前
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -52,7 +49,7 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 
 ### Experience Cloud
 
-以您的 Adobe ID 登入 [Experience Cloud](https://experiencecloud.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。如需詳細資訊，請參閱[管理 Experience Cloud 使用者和產品](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+以您的 Adobe ID 登入 [Experience Cloud](https://experiencecloud.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。如需詳細資訊，請參閱「Experience Cloud中心介面元件指南」中的[管理Experience Cloud用戶和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)。
 
 >[!TIP]
 >
@@ -66,7 +63,7 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 
 若要建立報表套裝，以收集應用程式資料並定義應用程式：
 
-1. 在瀏覽器中輸入 [https://mobilemarketing.adobe.com/](https://mobilemarketing.adobe.com/)，登入 Mobile Services 使用者介面。
+1. 登入[AdobeMobile Services](https://mobilemarketing.adobe.com)。
 1. 按一下&#x200B;**[!UICONTROL 建立應用程式]**。
 
    如果沒有看見此按鈕，請按一下&#x200B;**[!UICONTROL 「管理應用程式]** > **[!UICONTROL 新增」]**。
@@ -92,7 +89,7 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 
    >[!IMPORTANT]
    >
-   >若要在右窗格中查找應用程式，請先建立應用程式。如需建立應用程式的相關資訊，請參閱[新增應用程式](https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/manage-apps-ug/t-new-app.html)。
+   >若要在右窗格中查找應用程式，請先建立應用程式。如需建立應用程式的詳細資訊，請參閱[新增應用程式](/help/using/manage-apps/t-new-app.md)。
 
 1. 進入您的應用程式後，在左窗格中按一下&#x200B;**[!UICONTROL 「管理應用程式設定」]**。
 

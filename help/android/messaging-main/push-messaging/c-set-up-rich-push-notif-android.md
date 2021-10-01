@@ -1,17 +1,14 @@
 ---
 description: 您可以將影像檔案附加至Android通知。 新增視覺元件可大幅提升使用者與推播通知的互動。
-seo-description: 您可以將影像檔案附加至Android通知。 新增視覺元件可大幅提升使用者與推播通知的互動。
-seo-title: 接收豐富式推播通知
-title: 接收豐富式推播通知
+title: 接收豐富推送通知
 uuid: 4a0340a6-666b-49b6-907a-9afc966dfdba
-translation-type: tm+mt
-source-git-commit: dca3663986b3ecc6e9fb736cc99513279715225c
+exl-id: 5776411c-aa0e-4e67-83aa-e78f5d1ed4f7
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 60%
+source-wordcount: '191'
+ht-degree: 68%
 
 ---
-
 
 # 接收豐富推送通知 {#receive-rich-push-notifications}
 
@@ -101,4 +98,4 @@ private void sendNotification(RemoteMessage message) {
 
 ![](assets/rich-push-notification_example.png)
 
-For more information about rich push notifications with Android, see [Engage with Rich Notifications](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html).
+如需Android豐富推送通知的詳細資訊，請參閱[與豐富通知互動](https://developer.android.com/distribute/best-practices/engage/rich-notifications.html)。

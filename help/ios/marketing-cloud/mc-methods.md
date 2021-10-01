@@ -1,17 +1,14 @@
 ---
 description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
-seo-description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
-seo-title: Adobe Experience Platform Identity Service 方法
 solution: Experience Cloud,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '439'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +22,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。如需詳細資訊，請參閱[附加訪客 ID 協助程式功能](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/methods/appendvisitorid.html)。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。如需詳細資訊，請參閱Adobe Experience Cloud Identity Service檔案中的[appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) 。
 
    >[!IMPORTANT]
    >
@@ -79,7 +76,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       [ADBMobile visitorSyncIdentifiers:@{@"idType":@"idValue"}];
       ```
 
-* **visitorSyncIdentifiers:authenticationState：**
+* **visitorSyncIdentifiers:authenticationState:**
 
    將提供的識別碼同步至 ID 服務。在 `authState` 中以下列任一值傳遞：
 
@@ -99,7 +96,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       [ADBMobile visitorSyncIdentifiers:@{@"myIdType":@"valueForUser"}  authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated]; 
       ```
 
-* **visitorSyncIdentifierWithType:identifier:authenticationState：**
+* **visitorSyncIdentifierWithType:identifier:authenticationState:**
 
    將提供的識別碼類型和值同步至 ID 服務。在 `authState` 中以下列任一值傳遞：
 
@@ -148,7 +145,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       + (void) visitorGetUrlVariablesAsync:(nullable void (^)(NSString* __nullable urlVariables))callback;
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```objectivec
       NSString *urlString = @"https://www.mydomain.com/index.php"; 

@@ -1,25 +1,22 @@
 ---
-description: 協助您搭配Adobe Analytics使用Windows 8.1通用應用程式商店SDK的資訊。
-seo-description: 協助您搭配Adobe Analytics使用Windows 8.1通用應用程式商店SDK的資訊。
-seo-title: 'Analytics 方法 '
+description: 可協助您將Windows 8.1通用應用程式商店SDK與Adobe Analytics搭配使用的資訊。
 solution: Experience Cloud,Analytics
 title: 'Analytics 方法 '
 topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 52%
+source-wordcount: '614'
+ht-degree: 53%
 
 ---
 
-# Analytics 方法 {#analytics-methods}
+# Analytics 方法  {#analytics-methods}
 
-協助您搭配Adobe Analytics使用Windows 8.1通用應用程式商店SDK的資訊。
+可協助您將Windows 8.1通用應用程式商店SDK與Adobe Analytics搭配使用的資訊。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Analytics方法的前置詞為「Analytics」。
+SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Analytics方法會加上前置詞「Analytics」。
 
 上述各方法將用來傳送資料至您的 Adobe Analytics 報表套裝。
 
@@ -29,7 +26,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **TrackState(winJS:trackState)**
 
-   使用可選內容資料來追蹤應用程式。狀態是應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果`state`為空白，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 如果您在報表中看到此值，請務必在每個`TrackState`呼叫中設定`state`。
+   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果`state`空白，在報表中會顯示為「app name app version(build)」。 如果在報表中看到此值，請務必在每個`TrackState`呼叫中設定`state`。
 
    >[!TIP]
    >
@@ -50,7 +47,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **TrackAction(winJS:trackAction)**
 
-   追蹤應用程式中的動作。動作是您要測量的應用程式中發生的事，例如「登入」、「橫幅點選」、「動態消息訂閱」和其他量度。
+   追蹤應用程式中的動作。動作是發生在應用程式中且您想測量的項目，例如「登入」、「橫幅點選」、「摘要訂閱」和其他量度。
 
    * 此方法的語法如下：
 
@@ -68,7 +65,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 * **GetTrackingIdentifierAsync(winJS:getTrackingIdentifierAsync)**
 
    
-傳回自動產生的 Analytics 訪客識別碼。這是應用程式專屬的獨特訪客ID，會在初次啟動時產生，然後儲存並從此開始使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
+傳回自動產生的 Analytics 訪客識別碼。這是應用程式專屬的不重複訪客id，會在初次啟動時產生，並會從此時間點儲存及使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
 
    * 此方法的語法如下：
 
@@ -142,7 +139,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **TrackTimed &#x200B; ActionUpdate(winJS:trackTimed &#x200B; ActionUpdate)**
 
-   傳遞 `contextData` 以更新與指定 `action` 關聯的內容資料。傳遞的`data`會附加至指定動作的現有資料，並在`action`已定義相同金鑰時覆寫資料。
+   傳遞 `contextData` 以更新與指定 `action` 關聯的內容資料。傳遞的`data`會附加至指定動作的現有資料，如果已為`action`定義了相同鍵值，則會覆寫資料。
 
    >[!TIP]
    >
@@ -208,7 +205,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       static void ClearTrackingQueue();
       ```
 
-   * 以下是程式碼範例：
+   * 以下是范常式式碼：
 
       ```js
       ADBMobile.Analytics.clearTrackingQueue();

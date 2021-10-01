@@ -1,23 +1,20 @@
 ---
-description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
-seo-description: 處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。
-seo-title: 處理規則和內容資料
+description: 處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
 solution: Experience Cloud,Analytics
 title: 處理規則和內容資料
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '242'
+ht-degree: 72%
 
 ---
 
 # 處理規則與內容資料 {#processing-rules-and-context-data}
 
-處理規則是用來將您在內容資料變數中傳送的資料，複製到 eVar、prop 及其他變數以供報告。如需詳細資訊，請參閱[處理規則](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
 操作處理規則時，請記住以下資訊:
 
@@ -31,7 +28,7 @@ ht-degree: 100%
 
 * 內容資料變數在處理規則介面中按字母排序，讓您快速了解哪些變數在同一個命名空間中。
 
-   避免使用 eVar 或 prop 編號來命名內容資料索引鍵：
+   避免使用eVar或prop編號來命名內容資料索引鍵：
 
    ```js
    "eVar1":"jimbo"

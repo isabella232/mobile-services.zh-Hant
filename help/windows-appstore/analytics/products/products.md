@@ -1,25 +1,22 @@
 ---
-description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
-seo-description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
-seo-title: Products 變數
+description: 無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數內使用特殊語法，以直接在伺服器呼叫上設定產品。
 solution: Experience Cloud,Analytics
 title: Products 變數
 topic-fix: Developer and implementation
 uuid: 2057a564-06ae-4171-bbe7-0baffa71608b
 exl-id: b731e794-7134-4c6d-a41b-09ac9b84763d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 13%
+source-wordcount: '139'
+ht-degree: 15%
 
 ---
 
 # Products 變數{#products-variable}
 
-無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
+無法使用處理規則來設定產品變數。 在行動SDK中，您必須在內容資料參數內使用特殊語法，以直接在伺服器呼叫上設定產品。
 
-若要設定&#x200B;*`products`*&#x200B;變數，請將上下文資料索引鍵設定為`"&&products"`，並使用為&#x200B;*`products`*&#x200B;定義的語法來設定值：
+若要設定&#x200B;*`products`*&#x200B;變數，請將內容資料索引鍵設為`"&&products"`，並使用為&#x200B;*`products`*&#x200B;定義的語法來設定值：
 
 ```js
 cdata["&&products"] = "Category;Product;Quantity;Price[,Category;Product;Quantity;Price]";
@@ -45,8 +42,8 @@ ADB.Analytics.trackAction("purchase", cdata);
 ADB.Analytics.trackState("Order Confirmation", cdata);
 ```
 
-*`products`* 是直接在影像要求上設定的，而其他變數則設為內容資料。所有上下文資料變數必須使用處理規則進行對應：
+*`products`* 是直接在影像要求上設定的，而其他變數則設為內容資料。必須使用處理規則對應所有內容資料變數：
 
 ![](assets/products-procrules.png)
 
-您不需要使用處理規則來映射&#x200B;*`products`*&#x200B;變數，因為它是SDK直接在影像要求上設定。
+您不需要使用處理規則對應&#x200B;*`products`*&#x200B;變數，因為變數是由SDK直接在影像要求上設定。

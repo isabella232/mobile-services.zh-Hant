@@ -1,17 +1,14 @@
 ---
 description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
 keywords: android;資料庫;行動;sdk
-seo-description: 您可以使用 iOS PhoneGap 外掛程式方法來完成各種作業。
-seo-title: PhoneGap 外掛程式方法
 solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式方法
 topic-fix: Developer and implementation
 uuid: bc3db9ce-81b7-45ec-88aa-6020c1db5d9c
 exl-id: 4e6cf200-c826-4b23-87cf-4b8e1e691981
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1557'
 ht-degree: 100%
 
 ---
@@ -210,7 +207,7 @@ ht-degree: 100%
    ADB.collectPII(piiData,success, fail);
    ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```javascript
       ADB.collectPII({'k1':'v1','k2':'v2','k3':'v3'}, function (value) { alert('success') },function (value) { alert('fail') ;});
@@ -402,7 +399,7 @@ ht-degree: 100%
       ADB.clearCurrentBeacon(success, fail)
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```js
       ADB.clearCurrentBeacon(); 
@@ -579,11 +576,11 @@ ht-degree: 100%
    * 此方法的範例程式碼如下：
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’}, function() {…}, function() {…}));
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’}, function() {…}, function() {…}));
       ```
 
       ```java
-      ADB.acquisitionCampaignStartForApp(“appId”, {‘key’:‘value’});  
+      ADB.acquisitionCampaignStartForApp("appId", {‘key’:‘value’});  
       ```
 
 ## 廣告識別碼 {#section_194607D101B047A19C51B19E176E1500}

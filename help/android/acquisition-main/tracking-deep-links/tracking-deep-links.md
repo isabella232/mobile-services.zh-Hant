@@ -1,18 +1,15 @@
 ---
 description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
 keywords: android;資料庫;行動;sdk
-seo-description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile Android SDK 追蹤深層連結和延期的深層連結。
-seo-title: 在 Adobe Mobile Services 中追蹤深層連結
 solution: Experience Cloud,Analytics
 title: 追蹤深層連結
 topic-fix: Developer and implementation
 uuid: ebb1c08c-a246-40b3-9ac6-4606a14b4c5a
 exl-id: 4f59b77d-3cac-4853-bb6b-50a403036771
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +52,7 @@ ht-degree: 100%
 * `a.launch.campaign.term`
 * `a.launch.campaign.content`
 
-這些鍵值皆為預先對應的變數，用於在 Adobe Analytics 中報告。如需對應與處理規則的詳細資訊，請參閱[處理規則和內容資料](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+這些鍵值皆為預先對應的變數，用於在 Adobe Analytics 中報告。如需對應與處理規則的詳細資訊，請參閱[處理規則和內容資料](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
 ## 追蹤延期的深層連結 (與行銷連結搭配使用)
 

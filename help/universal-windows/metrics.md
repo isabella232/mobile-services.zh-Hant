@@ -1,24 +1,21 @@
 ---
-description: 列出行動程式庫可自動測量的量度和維度。
+description: 列出行動資料庫可自動測量的量度和維度。
 keywords: android;資料庫;行動;sdk
-seo-description: 列出行動程式庫可自動測量的量度和維度。
-seo-title: 生命週期量度
 solution: Experience Cloud,Analytics
 title: 生命週期量度
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 83%
+source-wordcount: '905'
+ht-degree: 84%
 
 ---
 
 # 生命週期量度 {#lifecycle-metrics}
 
-列出行動程式庫可自動測量的量度和維度。
+列出行動資料庫可自動測量的量度和維度。
 
 如需詳細資訊，請參閱[疑難排解生命週期資料](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)。
 
@@ -27,7 +24,7 @@ ht-degree: 83%
 
 設定生命週期量度後，量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫在參數中傳送至 Target，並以訊號形式傳送至受眾管理。Analytics 和 Target 會使用相同格式，而受眾管理則對每個量度使用不同的首碼。
 
-對於Analytics，每次生命週期追蹤呼叫所傳送的上下文資料都會自動擷取，並透過使用量度或維度來報告。 內容中會注明例外情況。
+對於Analytics，系統會自動擷取隨著每個生命週期追蹤呼叫傳送的內容資料，並使用量度或維度回報。 內容中會注明例外。
 
 ## 量度
 
@@ -197,7 +194,7 @@ ht-degree: 83%
 
 ## 其他行動量度和維度 {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-下列度量和維度會透過下列方法擷取到行動解決方案變數中：
+系統會透過下列方法，在行動解決方案變數中擷取下列量度和維度：
 
 ### 量度
 
@@ -227,7 +224,7 @@ ht-degree: 83%
 
    由 `trackLocation` 方法填入。
 
-   * Analytics內容資料／目標參數：
+   * Analytics內容資料/目標參數：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
@@ -241,7 +238,7 @@ ht-degree: 83%
 
    由 `trackLocation` 方法填入。
 
-   * Analytics內容資料／目標參數：
+   * Analytics內容資料/目標參數：
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
@@ -255,7 +252,7 @@ ht-degree: 83%
 
    由 `trackLocation` 方法填入。
 
-   * Analytics內容資料／目標參數：
+   * Analytics內容資料/目標參數：
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
@@ -267,14 +264,14 @@ ht-degree: 83%
 
 * **興趣點名稱**
 
-   當裝置位於已定義的POI中時，由`trackLocation`方法填入。
+   當裝置處於定義的POI中時由`trackLocation`方法填入。
 
    * Analytics 內容資料/目標參數: `a.loc.poi`
    * Audience Manager特徵：`c_a_loc_poi`
 
 * **至興趣點中心的距離**
 
-   當裝置在已定義的POI中時，由`trackLocation`方法填入。
+   當裝置位於定義的POI內時由`trackLocation`方法填入。
 
    * Analytics 內容資料/目標參數: `a.loc.dist`
    * Audience Manager特徵：`c_a_loc_dist`

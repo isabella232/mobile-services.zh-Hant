@@ -1,19 +1,16 @@
 ---
 description: 若要開始使用 Experience Cloud Device Co-op，請洽詢您的 Adobe 代表。
-seo-description: 若要開始使用 Experience Cloud Device Co-op，請洽詢您的 Adobe 代表。
-seo-title: Experience Cloud Device Co-op
 title: Experience Cloud Device Co-op
 uuid: 434a6f8f-ec24-439d-95f0-a246b384b3b5
-translation-type: tm+mt
-source-git-commit: 86ba045b44bf6553e80727c0d61ccdd9a552d16c
+exl-id: bf4f7a81-152c-4033-bcdf-22a939a3109e
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '282'
+ht-degree: 90%
 
 ---
 
-
-# Experience Cloud Device Co-op {#experience-cloud-device-co-op}
+# Experience CloudDevice Co-op {#experience-cloud-device-co-op}
 
 若要開始使用 Experience Cloud Device Co-op，請洽詢您的 Adobe 代表。
 
@@ -23,7 +20,7 @@ ht-degree: 100%
 >
 >此功能需使用 iOS SDK 4.8.5 版或更新版本。
 
-從 SDK 4.16.1 版開始，Device Co-op 成員可以選擇將行動裝置資料退出 Experience Cloud Device Co-op。如需詳細資訊，請參閱 [ADBMobile JSON 設定](/help/ios/configuration/json-config/json-config.md)以及 [isCoopSafe](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/configurations/coopsafe.html) 的 `visitorAPI.js` 方法。
+從 SDK 4.16.1 版開始，Device Co-op 成員可以選擇將行動裝置資料退出 Experience Cloud Device Co-op。如需詳細資訊，請參閱Adobe Experience Cloud Identity Service檔案中的[ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)以及[isCoopSafe](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/coopsafe.html)方法。`visitorAPI.js`
 
 1. 實作 Adobe Mobile SDK。
 
@@ -50,5 +47,3 @@ ht-degree: 100%
 
 * `coopUnsafe` 設為 `true` 時，`coop_unsafe=1` 一律會附加至 Audience Manager 和訪客 ID 點擊。
 * 如果啟用 Analytics 伺服器端轉送至 Audience Manager，您也會在 Analytics 點擊看到 `coop_unsafe=1`。
-
-

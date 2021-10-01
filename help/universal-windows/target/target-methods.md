@@ -1,17 +1,14 @@
 ---
 description: 通用Windows平台程式庫提供的Target方法清單。
-seo-description: 通用Windows平台程式庫提供的Target方法清單。
-seo-title: Target 方法
 solution: Experience Cloud,Analytics
 title: Target 方法
 topic-fix: Developer and implementation
 uuid: 2ad5953b-7850-446a-8053-b3715b86329b
 exl-id: d7aeee41-1c34-4f98-8455-e9f429287cfc
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 36%
+source-wordcount: '252'
+ht-degree: 37%
 
 ---
 
@@ -21,13 +18,13 @@ ht-degree: 36%
 
 SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。
 
-[生命](/help/universal-windows/metrics.md) 週期度量會以參數的形式傳送至每個mbox載入。
+[生命](/help/universal-windows/metrics.md) 週期量度會以參數形式傳送至每個mbox負載。
 
 >[!TIP]
 >
 >當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
 
-## 類別參考：TargetLocationRequest
+## 類引用：TargetLocationRequest
 
 ## 屬性
 
@@ -39,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## 字串常數
 
-這項資訊可協助您設定自訂參數的索引鍵。
+此資訊可協助您設定自訂參數的索引鍵。
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -73,7 +70,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest(winJS:loadRequest)**
 
-   傳送`request`至您設定的Target伺服器，並傳回區塊`callback`中產生之選件的字串值。
+   傳送`request`至您設定的Target伺服器並傳回區塊`callback`中產生之選件的字串值。
 
    * 此方法的語法如下：
 
@@ -124,7 +121,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var orderConfirm = ADB.Target.createOrderConfirmRequest("orderConfirm","order","47.88","3722",null);
       ```
 
-* **ClearCookies(winJS:clearCookie)**
+* **ClearCookies(winJS:clearCookies)**
 
    清除目前裝置上應用程式的Target Cookie。
 
@@ -158,7 +155,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId(winJS:getSessionId)**
 
-   傳回目前裝置的作業階段ID Cookie。
+   傳回目前裝置的工作階段ID Cookie。
 
    * 此方法的語法如下：
 

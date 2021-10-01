@@ -1,17 +1,14 @@
 ---
 description: 您建立新應用程式或編輯現有應用程式時，可使用這些資訊協助您設定「管理應用程式設定」頁面上的「推送服務」選項。
 keywords: 行動
-seo-description: 您建立新應用程式或編輯現有應用程式時，可使用這些資訊協助您設定「管理應用程式設定」頁面上的「推送服務」選項。
-seo-title: 設定推送訊息
 solution: Experience Cloud,Analytics
 title: 設定推送訊息
 topic-fix: Metrics
 uuid: 6763858d-6046-4d36-87c0-cf3600a44fb1
 exl-id: d4989c31-2692-4062-8fae-d41c3e3c179b
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -56,4 +53,4 @@ ht-degree: 100%
       * [Android 中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
       * [iOS 中的推播訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。

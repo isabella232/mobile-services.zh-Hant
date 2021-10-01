@@ -1,17 +1,14 @@
 ---
 description: 以下提供一些關於如何透過里程碑視訊測量在 iOS 上測量視訊的資訊。
-seo-description: 以下提供一些關於如何透過里程碑視訊測量在 iOS 上測量視訊的資訊。
-seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: 視訊分析
+title: Video Analytics
 topic-fix: Developer and implementation
 uuid: d75fa415-78f6-4f50-a563-76949f040138
 exl-id: d4d11ca0-1280-49db-8983-5b6d83856482
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需詳細資訊，請參閱[在 Adobe Analytics 中測量音訊和視訊](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html)。
+>在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需詳細資訊，請參閱在Adobe Analytics中測量串流媒體](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) 。[
 
 所有平台上測量視訊的一般程序都十分相似。本內容提供開發人員作業的基本概覽和程式碼範例。
 
@@ -48,7 +45,7 @@ ht-degree: 100%
 
 * **a.media.segment**
 
-   (必要) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst 可能會在 `1:M:0-25` 區段 eVar 中收集以下資訊。
+   (必要) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst可能會在`1:M:0-25`區段eVar中收集以下資訊。
 
    系統會於下列時間點，以預設的視訊資料收集方法收集資料：
 
@@ -64,7 +61,7 @@ ht-degree: 100%
 
 * **a.contentType**
 
-   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為 `video` 的內容類型。不需專為視訊追蹤作業保留此變數。使用此相同變數而擁有其他內容報表內容類型，可方便您分析不同內容類型中訪客的分佈情況。舉例來說，使用了這個變數，您就可以利用像是「article」或「product page」的值來標記其他內容類型。從視訊測量觀點來看，內容類型可讓您識別視訊訪客，並據此計算視訊轉換率。
+   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為 `video` 的內容類型。不需專為視訊追蹤作業保留此變數。使用此相同變數而擁有其他內容報表內容類型，可方便您分析不同內容類型中訪客的分佈情況。例如，您可以使用此變數，使用「article」或「product page」等值來標籤其他內容類型。 從視訊測量觀點來看，內容類型可讓您識別視訊訪客，並據此計算視訊轉換率。
 
    * 變數類型: eVar
    * 預設過期時間：頁面檢視

@@ -1,17 +1,14 @@
 ---
 description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasurement 呼叫。
 keywords: phonegap
-seo-description: 此外掛程式可讓您從 PhoneGap 專案傳送 iOS AppMeasurement 呼叫。
-seo-title: PhoneGap 外掛程式
 solution: Experience Cloud,Analytics
 title: PhoneGap 外掛程式
 topic-fix: Developer and implementation
 uuid: f88bcf10-1f9e-4c97-b348-40db797c9923
 exl-id: c20b2f85-b8d4-47c7-8177-106c7ddfe083
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '314'
 ht-degree: 100%
 
 ---
@@ -85,7 +82,7 @@ AppMeasurement 資料庫需要下列項目：
 
 ## 實施自訂追蹤 {#section_FD102B3CDAA4492FB04E56BF17E28663}
 
-在您想要使用追蹤的 `html` 檔案中，新增下列內容至 `<head>` 標記:
+在您想要使用追蹤的 `html` 檔案中，對 `<head>` 標記新增下列內容：
 
 ```html
 <script type="text/javascript" charset="utf-8" src="ADB_Helper.js"></script>

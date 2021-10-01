@@ -1,16 +1,13 @@
 ---
 description: 狀態是您的應用程式中不同的畫面或檢視。
-seo-description: 狀態是您的應用程式中不同的畫面或檢視。
-seo-title: 追蹤應用程式狀態
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式狀態
 topic-fix: Developer and implementation
 uuid: 69c99d05-5816-4c86-97c5-d218dc26c129
 exl-id: ee1ea716-ee72-4c28-92cb-26df1327f5c6
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -23,7 +20,7 @@ ht-degree: 100%
 
 ## 追蹤狀態 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實作與生命週期](/help/android/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔至您的 IntelliJ IDEA 或 Eclipse 專案*。
 

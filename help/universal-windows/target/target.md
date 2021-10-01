@@ -1,23 +1,20 @@
 ---
-description: 這些資訊可協助您在通用Windows平台應用程式中提供目標內容。
-seo-description: 這些資訊可協助您在通用Windows平台應用程式中提供目標內容。
-seo-title: Target
+description: 可幫助您在通用Windows平台應用程式中提供目標式內容的資訊。
 solution: Experience Cloud,Analytics
 title: Target
 topic-fix: Developer and implementation
 uuid: c764e65c-476d-47a4-a463-ac232d011824
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 16%
+source-wordcount: '30'
+ht-degree: 20%
 
 ---
 
 
-# Target{#target}
+# 目標{#target}
 
-這些資訊可協助您在通用Windows平台應用程式中提供目標內容。
+可幫助您在通用Windows平台應用程式中提供目標式內容的資訊。
 
 ## 其他資訊
 

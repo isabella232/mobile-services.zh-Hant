@@ -1,17 +1,14 @@
 ---
 description: Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回應，盡量以最少次數擷取提供項目內容。
-seo-description: Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回應，盡量以最少次數擷取提供項目內容。
-seo-title: iOS 中的預先擷取選件內容
 title: iOS 中的預先擷取選件內容
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
-translation-type: tm+mt
-source-git-commit: fa7375ac8a1345d81748bcf635791c46d3943fed
+exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 86%
+source-wordcount: '731'
+ht-degree: 85%
 
 ---
-
 
 # iOS 中的預先擷取選件內容 {#prefetch-offer-content-in-ios}
 
@@ -21,7 +18,7 @@ Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回�
 >
 >iOS 版 Mobile SDK 中的預先擷取功能不支援 Adobe Target 中的自動指定目標、自動分配以及自動個人化活動類型。
 
-此程式可縮短載入時間、防止多個網路呼叫，並讓Adobe Target得到行動應用程式使用者瀏覽哪個mbox的通知。 在預回遷呼叫期間，將會擷取和快取所有內容，而且會從快取中擷取此內容，以供日後所有呼叫使用，這些呼叫包含指定mbox名稱的快取內容。
+此程式可縮短載入時間，避免多個網路呼叫，並允許通知Adobe Target行動應用程式使用者造訪哪個mbox。 預先擷取呼叫期間，會擷取並快取所有內容，且此內容將從快取中擷取，以供包含指定mbox名稱之快取內容的所有未來呼叫使用。
 
 預先擷取內容不會在跨啟動之間持續有效。只要應用程式仍然存在，或直到呼叫 `clearPrefetchCache()` 方法為止，則會快取預先擷取內容。
 
@@ -157,13 +154,13 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 * **`orderParameters`**
 
-   包含順序參數鍵值對的字典。
+   包含order參數鍵值值組的字典。
 
    * **類型**: NSDictionary*
 
 * **`productParameters`**
 
-   包含產品參數鍵值對的字典。
+   包含產品參數索引鍵值組的字典。
 
    * **類型**: NSDictionary*
 
@@ -179,13 +176,13 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 * **`mboxParameters`**
 
-   代表您要擷取之位置/mbox名稱的NSString值。
+   代表您要擷取之位置/mbox之名稱的NSString值。
 
    * **類型**: NSString*
 
 * **`defaultContent`**
 
-   如果Target伺服器無法連線，則會傳回預設內容。
+   如果Target伺服器無法連線，則會傳回的預設內容。
 
    * **類型**: NSString*
 

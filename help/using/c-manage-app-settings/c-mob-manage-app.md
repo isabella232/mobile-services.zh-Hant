@@ -1,18 +1,15 @@
 ---
 description: 您可以透過設定各種變數和量度以追蹤及管理從應用程式接收的資料。
 keywords: 行動
-seo-description: 您可以透過設定各種變數和量度以追蹤及管理從應用程式接收的資料。
-seo-title: 管理您的應用程式
 solution: Experience Cloud,Analytics
 title: 管理您的應用程式
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 91%
 
 ---
 
@@ -39,7 +36,7 @@ ht-degree: 100%
 
 按一下&#x200B;**[!UICONTROL 「管理應用程式設定]** > **[!UICONTROL 管理變數和量度]** > **[!UICONTROL 自訂變數」]**。
 
-這些對應會呼叫[處理規則](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)中使用的相同 API。
+這些對應會呼叫與[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)在Adobe Analytics中使用的相同API。
 
 ![上下文資料對應](assets/custom_data_content.png)
 
@@ -49,8 +46,8 @@ ht-degree: 100%
 
    為追蹤呼叫 (或點擊) 中的屬性設定值時，該值僅適用於該呼叫。
 
-* **[!UICONTROL 自訂變數]** (或 evar) 也可回答「哪一個?」問題。但是，evar 值不僅可適用於傳送自身的點擊，還適用於後續點擊中所傳送的變數與量度，直到值過期或設定了新值為止。
-* **[!UICONTROL 自訂清單變數 (或是多重值變數)]** 除了可允許您在單一點擊上擷取多個值外，其他行為與變數相同。如需詳細資訊，請參閱[清單變數](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/javascript-implementation/variables-analytics-reporting/page-variables.html)。
+* **[!UICONTROL 自訂變數]**（或eVar）也可回答「哪一個？」問題 不過，eVar值不僅可套用至傳入的點擊，也可套用至後續點擊中傳送的變數和量度，直到值過期或設定新值為止。
+* **[!UICONTROL 自訂清單變數 (或是多重值變數)]** 除了可允許您在單一點擊上擷取多個值外，其他行為與變數相同。如需詳細資訊，請參閱Adobe Analytics檔案中的[list](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en)變數。
 
 當下列對應在 Mobile Services 中建立，就會顯示在 Analytics 中。
 

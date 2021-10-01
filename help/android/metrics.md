@@ -1,17 +1,14 @@
 ---
 description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
 keywords: android;資料庫;行動;sdk
-seo-description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
-seo-title: 生命週期量度
 solution: Experience Cloud,Analytics
 title: 生命週期量度
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1216'
 ht-degree: 100%
 
 ---
@@ -27,7 +24,7 @@ ht-degree: 100%
 我們於 2018 年 9 月發行了全新的 SDK 主要版本。這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 Adobe Experience Platform Launch。
-* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github: Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
+* 若要查看 Experience Platform SDK 的儲存庫內容，請前往 [Github：Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
 
 ## 生命週期量度和維度 {#section_78F036C4296F4BA3A47C2044F79C86C1}
 

@@ -1,16 +1,13 @@
 ---
 description: 若您的應用程式會開啟行動網站內容，您必須確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
-seo-description: 若您的應用程式會開啟行動網站內容，您必須確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
-seo-title: 應用程式和行動網站間的訪客追蹤
 solution: Experience Cloud,Analytics
 title: 應用程式和行動網站間的訪客追蹤
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '494'
 ht-degree: 100%
 
 ---
@@ -35,13 +32,13 @@ iOS SDK 會在安裝應用程式時產生不重複訪客 ID。此 ID 會儲存�
 
 ## 實施應用程式和行動網站間的訪客追蹤 {#section_EDC91D6C67AD43999227707C2769C65D}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
 1. 若要在用來開啟 Web 檢視的 URL 中附加訪客資訊，請呼叫 `visitorAppendToURL`:
 
    ```objective-c
-   NSURL *url = [NSURL URLWithString:@”https://www.mydomain.com/index.php"]; 
+   NSURL *url = [NSURL URLWithString:@"https://www.mydomain.com/index.php"]; 
    NSURL *urlWithVisitorData = [ADBMobile visitorAppendToURL:url]; 
    [[UIApplication sharedApplication] openURL:urlWithVisitorData];
    ```

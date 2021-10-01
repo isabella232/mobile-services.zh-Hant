@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您使用 Android 應用程式中的「定位」功能。
 keywords: android;資料庫;行動;sdk
-seo-description: 此資訊可協助您使用 Android 應用程式中的「定位」功能。
-seo-title: 位置概述
 solution: Experience Cloud,Analytics
 title: 位置概述
 topic-fix: Developer and implementation
 uuid: 15180bd6-616b-477d-a106-96a52c974d7d
 exl-id: 687a3b2c-ee74-46d8-a732-b3a0bec6e798
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '123'
 ht-degree: 100%
 
 ---

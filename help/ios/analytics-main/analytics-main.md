@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您將 iOS SDK 與 Adobe Analytics 搭配使用。
-seo-description: 此資訊可協助您將 iOS SDK 與 Adobe Analytics 搭配使用。
-seo-title: Analytics 概述
 solution: Experience Cloud,Analytics
 title: Analytics 概述
 topic-fix: Developer and implementation
 uuid: 8c7fb76a-be0b-4465-8151-ece7bad11b55
 exl-id: 7c383b1d-2e59-4473-9de5-80c84d896f6d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 100%
+source-wordcount: '311'
+ht-degree: 95%
 
 ---
 
@@ -42,4 +39,4 @@ ht-degree: 100%
 
 AID 有時也稱為追蹤識別碼，是在應用程式沒有設定要使用 MID 時，由 SDK 產生的追蹤碼。此值會在啟動和應用程式更新之間保存在 `NSUserDefaults`。如果使用者從裝置上刪除應用程式，然後重新安裝應用程式，或者應用程式開發人員清除了 `NSUserDefaults`，SDK 便會產生新的識別碼。此程序會在 Analytics 報表中產生新使用者。
 
-對於導入 Identity Service 支援 (MID) 的應用程式中的使用者，現有的 AID 值會隨 Analytics 點擊傳送，而 Analytics 點擊會包含 AID 和 MID。對於具有 Identity Service 支援的應用程式中的新使用者，Analytics 要求只會包含 MID。如需識別訪客的詳細資訊，請參閱[識別訪客](https://docs.adobe.com/content/help/zh-Hant/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html)。
+對於導入 Identity Service 支援 (MID) 的應用程式中的使用者，現有的 AID 值會隨 Analytics 點擊傳送，而 Analytics 點擊會包含 AID 和 MID。對於具有 Identity Service 支援的應用程式中的新使用者，Analytics 要求只會包含 MID。如需識別訪客的詳細資訊，請參閱Adobe Analytics檔案中的[不重複訪客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)。

@@ -1,22 +1,19 @@
 ---
 description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
 keywords: android;資料庫;行動;sdk
-seo-description: '此資訊可協助您實施 Android 資料庫並收集生命週期量度 (例如: 啟動、升級、工作階段、參與的使用者等等)。'
-seo-title: 核心實作與生命週期
 solution: Experience Cloud,Analytics
 title: 核心實作與生命週期
 topic-fix: Developer and implementation
 uuid: af4d11ac-8245-46a0-9b3a-4a0a29cfbbb2
 exl-id: 67aba85a-42a0-473a-bb05-e5fcb35263d9
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '538'
 ht-degree: 100%
 
 ---
 
-# 核心實作與生命週期。{#core-implementation-and-lifecycle}
+# 核心實作與生命週期。 {#core-implementation-and-lifecycle}
 
 此資訊可協助您實作 Android 資料庫並收集生命週期量度 (例如：啟動、升級、工作階段、參與的使用者等等)。
 
@@ -68,7 +65,7 @@ ht-degree: 100%
 1. 再次以滑鼠右鍵按一下專案，然後選取&#x200B;**[!UICONTROL 「組建路徑****> 設定組建路徑」]**。
 1. 在&#x200B;**[!UICONTROL 「排序和匯出」]**&#x200B;標籤上，確認已選取 **`adobeMobileLibrary.jar`**。
 
-## 新增應用程式權限 {#section_2EAF73ABF6424647B219A63B33B02CD5}
+## 新增應用程式權限  {#section_2EAF73ABF6424647B219A63B33B02CD5}
 
 AppMeasurement 資料庫需要下列權限，才能傳送資料及記錄離線追蹤呼叫：
 

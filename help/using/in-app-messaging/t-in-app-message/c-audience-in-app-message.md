@@ -1,17 +1,14 @@
 ---
 description: 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
 keywords: 行動
-seo-description: 您可以設定應用程式內訊息的對象選項，包含檢視、觸發器和特徵選項。
-seo-title: 對象  應用程式內訊息
 solution: Experience Cloud,Analytics
 title: 對象  應用程式內訊息
 topic-fix: Metrics
 uuid: 6c815d4c-7626-4cf4-9158-3f059c79317a
 exl-id: c85f2c0d-9c88-4d5a-8247-d8a101195d3a
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '567'
 ht-degree: 100%
 
 ---
@@ -48,7 +45,6 @@ ht-degree: 100%
 
    * **[!UICONTROL 特徵]**
 您可以決定觸發應用程式內訊息時可以看到該訊息的對象，並篩選 (區隔) 具有特定資料點擊的對象。例如，您可以定義一個規則，其中的地標包含丹佛。此篩選器能讓您對在觸發時間位於地標名稱包含丹佛的客戶顯示訊息。
-
 
 
 ## 有關特徵和觸發器的其他資訊 {#section_48C39EFB8CAA4F62B994FCC91DF588E6}

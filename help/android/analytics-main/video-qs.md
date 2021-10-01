@@ -1,18 +1,15 @@
 ---
 description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
 keywords: android;資料庫;行動;sdk
-seo-description: 以下提供一些關於透過視訊測量解決方案在 Android 上測量視訊的資訊。
-seo-title: Video Analytics
 solution: Experience Cloud,Analytics
-title: 視訊分析
+title: Video Analytics
 topic-fix: Developer and implementation
 uuid: a137cc27-dc28-48c0-b08e-2ca17d2c7e1d
 exl-id: 1b7f5523-767a-45e8-b2e7-ecf9984849e4
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需 Adobe 視訊測量解決方案的詳細資訊，請參閱[在 Adobe Analytics 中測量音訊和視訊](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html)。
+>在視訊播放期間，會傳送頻繁的「心率」呼叫給此服務，測量播放時間。這些心率呼叫每 10 秒傳送一次，因此可產生精細的視訊參與量度，以及更精確的視訊流失報表。如需Adobe視訊測量解決方案的詳細資訊，請參閱在Adobe Analytics中測量串流媒體](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) 。[
 
 所有平台上測量視訊的一般程序都很相似。本內容提供開發人員作業的基本概覽和程式碼範例。下表列出會傳送至 Analytics 的媒體資料。使用處理規則，將內容資料對應至 Analytics 變數。
 

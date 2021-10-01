@@ -1,29 +1,26 @@
 ---
-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
-keywords: Xamarin
-seo-description: Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
-seo-title: Android 方法
+description: 適用於Experience Cloud解決方案4.x SDK之Xamarin元件的Android方法。
+keywords: 沙馬林
 solution: Experience Cloud
 title: Android 方法
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
-translation-type: tm+mt
-source-git-commit: ae16f224eeaeefa29b2e1479270a72694c79aaa0
+exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 67%
+source-wordcount: '1755'
+ht-degree: 68%
 
 ---
 
-
 # Android 方法{#android-methods}
 
-Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
+適用於Experience Cloud解決方案4.x SDK之Xamarin元件的Android方法。
 
 ## 設定方法 {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
-   傳回目前的除錯記錄偏好設定，預設值為false。
+   傳回目前的偵錯記錄偏好設定，且預設值為false。
 
    * 此方法的語法如下：
 
@@ -54,14 +51,14 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
        var lifetimeValue = Config.LifetimeValue;
       ```
 
-* **隱私權狀態**
+* **PrivacyStatus**
 
    傳回目前使用者之隱私權狀態的列舉表示法。
    * `ADBMobilePrivacyStatus.OptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   The default value is set in the [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) file.
+   預設值設定在[ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md)檔案中。
 
    * 此方法的語法如下：
 
@@ -77,9 +74,9 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
       ```
 
 
-* **使用者識別碼**
+* **UserIdentifier**
 
-   如果已設定自訂識別碼，請傳回此識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   如果已設定自訂識別碼，則會傳回此識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
 
    * 此方法的語法如下：
 
@@ -112,7 +109,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **PauseCollectingLifecycleData**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷先前的作業長度。 這也會設定旗標，讓生命週期正確知道應用程式未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷前一個工作階段長度。 這也會設定標幟，讓生命週期正確得知應用程式並未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
    * 此方法的語法如下：
 
@@ -128,7 +125,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **CollectLifecycleData(Activity activity)**
 
-   （4.2或更新版本）向SDK指出應收集生命週期資料，以便用於SDK中的所有解決方案。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   （4.2或更新版本）向SDK指出應在SDK的所有解決方案中收集、使用其生命週期資料。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
    * 此方法的語法如下：
 
@@ -144,7 +141,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **CollectLifecycleData(Activity activity)**
 
-   （4.2或更新版本）向SDK指出應收集生命週期資料，以便用於SDK中的所有解決方案。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   （4.2或更新版本）向SDK指出應在SDK的所有解決方案中收集、使用其生命週期資料。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
    * 此方法的語法如下：
 
@@ -163,7 +160,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **OverrideConfigStream**
 
-   (4.2 or later) Lets you load a different `ADBMobile JSON` config file when the application starts. 應用程式會使用另一個設定，直到關閉為止。
+   （4.2或更新版本）可讓您在應用程式啟動時載入不同的`ADBMobile JSON`設定檔案。 應用程式會使用另一個設定，直到關閉為止。
 
    * 此方法的語法如下：
 
@@ -180,7 +177,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   （4.2或更新版本）設定用於SDK所建立通知的大型圖示。 此圖示是使用者在通知中心查看完整通知時所顯示的主要影像。
+   （4.2或更新版本）設定SDK建立之通知所使用的大型圖示。 此圖示是使用者在通知中心查看完整通知時所顯示的主要影像。
 
    * 以下是此方法的語法:
 
@@ -196,7 +193,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   （4.2或更新版本）設定用於SDK所建立通知的小型圖示。 此圖示會顯示在狀態列中，是當使用者在通知中心看到完整通知時顯示的次要影像。
+   （4.2或更新版本）設定用於SDK所建立通知的小型圖示。 此圖示會顯示在狀態列中，而且是當使用者在通知中心看到完整通知時所顯示的次要影像。
 
    * 此方法的語法如下：
 
@@ -210,11 +207,11 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
        Config.SetSmallIconResourceId(R.drawable.appIcon);
       ```
 
-## Analytics 方法 {#section_63CF636104EF41F790C3E4190D755BBA}
+## Analytics 方法  {#section_63CF636104EF41F790C3E4190D755BBA}
 
 * **TrackingIdentifier**
 
-   傳回自動產生的Analytics ID。 這是應用程式專屬的唯一ID，會在初始啟動時產生，並會從此時開始儲存和使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
+   傳回自動產生的Analytics ID。 這是應用程式專屬的唯一ID，會在初次啟動時產生，並會從此時間點儲存及使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
 
    * 此方法的語法如下：
 
@@ -230,7 +227,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **TrackState**
 
-   使用可選內容資料來追蹤應用程式。`States` 是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果狀態為空白，則會在報表中顯示為「應用程式名稱應用程式版本（組建版本）」。 If you see this value in reports, make sure you are setting state in each `TrackState` call.
+   使用可選內容資料來追蹤應用程式。`States` 是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果狀態空白，在報表中會顯示為「app name app version(build)」。 如果在報表中看到此值，請務必在每個`TrackState`呼叫中設定狀態。
 
    >[!TIP]
    >
@@ -253,7 +250,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **TrackAction**
 
-   追蹤應用程式中的動作。動作是您要測量的應用程式中發生的事，例如「死亡」、「獲得的層級」、「動態消息訂閱」和其他度量。
+   追蹤應用程式中的動作。動作是發生在應用程式中且您想測量的項目，例如「死亡」、「獲得的層級」、「摘要訂閱」及其他量度。
 
    >[!TIP]
    >
@@ -277,7 +274,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **TrackLocation**
 
-   傳送目前的經緯度座標。Also uses points of interest defined in the `ADBMobileConfig.json` file to determine whether the location that was provided as a parameter is in any of your POIs. 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
+   傳送目前的經緯度座標。也會使用`ADBMobileConfig.json`檔案中定義的地標，來判斷提供為參數的位置是否在您的任何POI中。 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
 
    * 此方法的語法如下：
 
@@ -366,7 +363,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **TrackTimedActionUpdate**
 
-   傳遞資料以更新與指定動作關聯的內容資料。傳入的資料會附加至指定動作的現有資料，並覆寫資料（如果已為動作定義相同的索引鍵）。
+   傳遞資料以更新與指定動作關聯的內容資料。傳遞的資料會附加至指定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
 
    >[!TIP]
    >
@@ -428,7 +425,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **SendQueuedHits**
 
-   強製程式庫傳送離線佇列中的所有點擊，不論目前佇列的點擊數為何。
+   會強制資料庫傳送離線佇列中的所有點擊，不論目前排入佇列的點擊數為何。
 
    * 此方法的語法如下：
 
@@ -458,7 +455,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
       Analytics.ClearQueue(); 
       ```
 
-* **QueueSize**
+* **隊列大小**
 
    擷取離線佇列中目前的點擊數。
 
@@ -474,7 +471,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
       var queueSize = Analytics.QueueSize();
       ```
 
-## Experience Cloud ID methods {#section_157919E46030443DBB5CED60D656AD9F}
+## Experience CloudID方法 {#section_157919E46030443DBB5CED60D656AD9F}
 
 * **MarketingCloudId**
 
@@ -494,7 +491,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **SyncIdentifiers**
 
-   透過Experience Cloud ID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
+   透過Experience CloudID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
    * 此方法的語法如下：
 
@@ -502,7 +499,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
       public static void SyncIdentifiers((IDictionary<string> identifiers);
       ```
 
-   * 此方法的範例程式碼如下：
+   * 此方法的程式碼範例如下：
 
       ```java
       IDictionary<string,string> ids = new Dictionary<string, string> ();
@@ -514,7 +511,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **LoadRequest**
 
-   Sends a request to your configured Target server and returns the string value of the offer generated in a `Action<NSDictionary>` callback.
+   傳送要求至您設定的Target伺服器並傳回`Action<NSDictionary>`回呼中產生之選件的字串值。
 
    * 此方法的語法如下：
 
@@ -537,7 +534,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **CreateRequest**
 
-   Convenience constructor to create an `ADBTargetLocationRequest` object with the given parameters.
+   方便讓建構函式使用指定的參數建立`ADBTargetLocationRequest`物件。
 
    * 此方法的語法如下：
 
@@ -589,7 +586,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **訪客資料**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回nil。 訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
+   傳回最近取得的訪客描述檔。如果尚未提交任何訊號，則傳回nil。 訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
 
    * 此方法的語法如下：
 
@@ -605,7 +602,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **Dpid**
 
-   Returns the current `DPID`.
+   傳回目前的`DPID`。
 
    * 此方法的語法如下：
 
@@ -621,7 +618,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **Dpuuid**
 
-   Returns the current `DPUUID`.
+   傳回目前的`DPUUID`。
 
    * 此方法的語法如下：
 
@@ -637,7 +634,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **AudienceSetDpidAndDpuuid**
 
-   設定 `dpid` 和 `dpuuid`。 如果 `dpid` 已設 `dpuuid` 定，則會隨每個訊號傳送。
+   設定`dpid`和`dpuuid`。 若已設定`dpid`和`dpuuid`，則會隨各訊號傳送。
 
    * 此方法的語法如下：
 
@@ -653,7 +650,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **SignalWithData**
 
-   Sends audience management a signal with traits and get the matching segments returned in a `Action<NSDictionary>` callback.
+   傳送具有特徵的訊號給對象管理，並取得`Action<NSDictionary>`回呼中傳回的相符區段。
 
    * 此方法的語法如下：
 
@@ -679,7 +676,7 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 * **重設**
 
-   Resets audience manager `UUID` and purges current visitor profile.
+   重設audience manager `UUID`並清除目前的訪客設定檔。
 
    * 此方法的語法如下：
 
@@ -695,9 +692,9 @@ Experience Cloud解決方案4.x SDK專用Xamarin元件的Android方法。
 
 ## 影片 {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-如需視訊分析的詳細資訊，請參閱視 [訊分析](/help/android/analytics-main/video-qs.md)。
+如需Video Analytics的詳細資訊，請參閱[Video Analytics](/help/android/analytics-main/video-qs.md)。
 
-* **MediaSettings**
+* **媒體設定**
 
    傳回 `MediaSettings` 物件以及指定的參數。
 

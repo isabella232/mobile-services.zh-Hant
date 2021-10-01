@@ -1,16 +1,13 @@
 ---
 description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您藉由點進推播訊息，輕鬆報告已開啟您的應用程式的使用者。
-seo-description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您藉由點進推播訊息，輕鬆報告已開啟您的應用程式的使用者。
-seo-title: 推送訊息
 solution: Experience Cloud,Analytics
 title: 推送訊息
 topic-fix: Developer and implementation
 uuid: 2e2d8175-d7d0-4b6b-a14e-d419da1f9615
 exl-id: 89796668-e0e7-45d2-8391-3c26a7ac8496
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '485'
 ht-degree: 100%
 
 ---
@@ -29,7 +26,7 @@ Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 
 >
 >請勿在應用程式內手動設定 Experience Cloud ID。這樣會建立新的不重複使用者，且因其選擇加入狀態將不會收到推播訊息。例如，假設有某個選擇接收推播訊息的使用者登入您的應用程式。登入後，如果您在應用程式中手動設定 ID，則會建立新的不重複使用者，而未選擇接收推播訊息。這個新使用者不會收到您的推送訊息。
 
-## 必要條件 {#section_06655ABE973743DC965897B229A2118D}
+## 先決條件 {#section_06655ABE973743DC965897B229A2118D}
 
 * 新增資料庫至您的專案與實施生命週期量度。
 

@@ -1,18 +1,15 @@
 ---
 description: 本資訊可協助您從 Android 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 keywords: android;資料庫;行動;sdk
-seo-description: 本資訊可協助您從 Android 資料庫 3.x 或 2.x 版移轉至 4.x 版。
-seo-title: 移轉至 Android 4.x 資料庫
 solution: Experience Cloud,Analytics
 title: 移轉至 Android 4.x 資料庫
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 100%
+source-wordcount: '860'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +69,7 @@ ht-degree: 100%
 }
 ```
 
-## 移動設定檔案並移轉至第 4 版 {#section_0B844235E0B04DD4B36976A73DB28FB5}
+## 移動設定檔案 並移轉至第4版 {#section_0B844235E0B04DD4B36976A73DB28FB5}
 
 以下表格列出您需要移至設定檔案的設定變數。
 
@@ -109,7 +106,7 @@ ht-degree: 100%
 | trackingServer | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 &quot;server&quot; 然後啟用 &quot;ssl&quot;。 |
 | charSet | &quot;charset&quot; |
-| currencyCode | &quot;貨幣&quot; |
+| currencyCode | &quot;currency&quot; |
 | ssl | &quot;ssl&quot; |
 | linkTrackVars | 移除，不再使用。 |
 | linkTrackEvents | 移除，不再使用。 |
@@ -187,6 +184,6 @@ ht-degree: 100%
 * `forceOffline`
 * `forceOnline`
 
-## 產品變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
+## Products 變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
 如需產品變數的詳細資訊，請參閱[產品變數](/help/android/analytics-main/products/products.md)。

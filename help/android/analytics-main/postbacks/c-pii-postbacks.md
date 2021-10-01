@@ -1,17 +1,14 @@
 ---
 description: 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，並傳送至第三方端點。
-seo-description: 您可以使用 Adobe SDK 來收集個人識別資訊 (PII)，並傳送至第三方端點。
-seo-title: PII 回傳
 title: PII 回傳
 uuid: 8d1f1fb8-6842-478b-a164-e7f727755bd9
-translation-type: tm+mt
-source-git-commit: 7ae626be4d71641c6efb127cf5b1d3e18fccb907
+exl-id: 9f0b9d7b-e51d-477b-ae04-72ab09fbc6fd
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '161'
 ht-degree: 100%
 
 ---
-
 
 # PII 回傳 {#pii-postbacks}
 
@@ -42,4 +39,3 @@ ht-degree: 100%
      put("key","value");
    }});
    ```
-

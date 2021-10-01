@@ -1,17 +1,14 @@
 ---
 description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
 keywords: android;資料庫;行動;sdk
-seo-description: 點擊批次處理程序可讓應用程式保留點擊不傳送，直到佇列中的點擊數超過設定上限為止。
-seo-title: 點擊批次處理程序
 solution: Experience Cloud,Analytics
 title: 點擊批次處理程序
 topic-fix: Developer and implementation
 uuid: ada35be3-242b-4b2b-a828-9bf998dd58b5
 exl-id: 74147f09-52fc-46dc-b4dd-2bf60b039f6e
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '162'
 ht-degree: 100%
 
 ---

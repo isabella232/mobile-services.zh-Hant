@@ -1,16 +1,13 @@
 ---
 description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
-seo-description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
-seo-title: 追蹤應用程式動作
 solution: Experience Cloud,Analytics
 title: 追蹤應用程式動作
 topic-fix: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 exl-id: ff317eff-1b8e-46e1-a305-a404979447cb
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '468'
 ht-degree: 100%
 
 ---
@@ -23,7 +20,7 @@ ht-degree: 100%
 
 ## 追蹤動作 {#section_380DF56C4EE4432A823940E4AE4C9E91}
 
-1. 新增資料庫至您的專案與實施生命週期。
+1. 新增資料庫至您的專案與實作生命週期。
 
    如需詳細資訊，請參閱[核心實施與生命週期](/help/ios/getting-started/dev-qs.md)中的&#x200B;*新增 SDK 和設定檔案至您的專案*。
 1. 匯入資料庫。

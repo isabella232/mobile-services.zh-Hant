@@ -1,17 +1,14 @@
 ---
 description: 此資訊可協助您將 Android SDK 與 Adobe Experience Cloud 搭配使用。
 keywords: android;資料庫;行動;sdk
-seo-description: 此資訊可協助您將 Android SDK 與 Adobe Experience Cloud 搭配使用。
-seo-title: Experience Cloud 概述
 solution: Experience Cloud,Analytics
 title: Experience Cloud 概述
 topic-fix: Developer and implementation
 uuid: dbf6e019-8707-42e7-97b8-e18a8a7d5e2c
 exl-id: 660187ab-c744-4aef-aea1-ede61d08897c
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '126'
 ht-degree: 100%
 
 ---

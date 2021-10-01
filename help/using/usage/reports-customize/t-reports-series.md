@@ -1,17 +1,14 @@
 ---
 description: 這些資訊可讓您藉由新增其他系列 (量度) 或不同報表套裝中的應用程式來比較資料，進而自訂內建報表。
 keywords: 行動
-seo-description: 這些資訊可讓您藉由新增其他系列 (量度) 或不同報表套裝中的應用程式來比較資料，進而自訂內建報表。
-seo-title: 新增系列 (量度) 至報表
 solution: Experience Cloud,Analytics
 title: 新增系列 (量度) 至報表
 topic-fix: Reports,Metrics
 uuid: 84fdfb1f-70e6-4c02-9b3b-526e9c924f74
 exl-id: 1b1356c6-7f62-4b88-996a-09ed33b19c9d
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '285'
 ht-degree: 100%
 
 ---
