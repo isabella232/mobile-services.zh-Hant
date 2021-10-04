@@ -5,10 +5,10 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: fa0ef6c4-c04d-4695-9eb4-ada4e9920e6c
 exl-id: 1a7b32b8-731d-4ae3-9feb-dafbb7495590
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 18%
+source-wordcount: '945'
+ht-degree: 17%
 
 ---
 
@@ -62,7 +62,7 @@ app.oncheckpoint = function (args) {
 
 ### App.xaml.cs中的C#
 
-```js
+```csharp
 public App() 
 { 
     this.InitializeComponent(); 
@@ -91,7 +91,7 @@ private void OnSuspending(object sender, SuspendingEventArgs e)
 
 ### App.xaml.cpp中的C/CX
 
-```js
+```c
 App::App() 
 { 
  InitializeComponent(); 
@@ -136,16 +136,14 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 
 處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
 
-2013 年高峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
-
 [處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-建議您使用「命名空間」將內容資料變數分組，因為這可協助您維持邏輯順序。 例如，如果您想要收集產品的資訊，可以定義下列變數：
+Adobe建議使用「命名空間」對內容資料變數進行分組，因為這有助於您維持邏輯順序。 例如，如果您想要收集產品的資訊，可以定義下列變數：
 
 ```js
-"product.type":"hat" 
-"product.team":"mariners" 
-"product.color":"blue"
+"product.type":"hat";
+"product.team":"mariners";
+"product.color":"blue";
 ```
 
 內容資料變數在處理規則介面中按字母排序，因此命名空間可讓您快速查看相同命名空間中的變數。
@@ -153,25 +151,25 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 此外，我們聽說有些人使用eVar或prop編號來命名內容資料索引鍵：
 
 ```js
-"eVar1":"jimbo"
+"eVar1":"jimbo";
 ```
 
 這樣可讓您在處理規則中執行一次性對應時變得&#x200B;*稍微*&#x200B;更簡單，但在偵錯時會失去可讀性，而日後的程式碼更新則更困難。 強烈建議您改為為索引鍵和值使用描述性名稱：
 
 ```js
-"username":"jimbo"
+"username":"jimbo";
 ```
 
 將定義計數器事件的上下文變數設為「1」值：
 
 ```js
-"logon":"1"
+"logon":"1";
 ```
 
 定義增量器事件的上下文資料變數可以有要增量的值：
 
 ```js
-"levels completed":"6"
+"levels completed":"6";
 ```
 
 >[!NOTE]

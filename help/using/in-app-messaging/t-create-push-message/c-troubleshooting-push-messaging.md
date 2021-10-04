@@ -6,9 +6,9 @@ title: 疑難排解推送訊息
 topic-fix: Metrics
 uuid: c7be4ab7-0cfe-4296-84a8-01412f4fd93f
 exl-id: 56feb8e1-e196-4b70-8240-6e41581ca602
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -33,12 +33,11 @@ ht-degree: 100%
 
    >[!TIP]
    >
-   >此計數為成功傳送至「推送服務」的數量。推送服務無法保證訊息一定會傳送出去。
+   >推送服務無法保證訊息一定會傳送出去。如需服務的可靠性詳細資訊，請參閱適當文件。
+   >
+   >* **APNS**：[服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [訊息的生命週期](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   有關服務可靠性的詳細資訊，請參閱：
-
-   * [服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5l)
-   * [訊息的生命週期](https://developers.google.com/cloud-messaging/concept-options#lifetime)
 
 ## 我的 Android GCM API 金鑰為何失效？
 
@@ -52,8 +51,6 @@ ht-degree: 100%
 * **確定 API 金鑰是否有效**
 
    若要確定 API 金鑰是否有效，請執行以下命令：
-
-   **Android**
 
    ```java
    # api_key=YOUR_API_KEY
@@ -81,8 +78,6 @@ APNS 認證失效的可能原因如下：
 * 您使用 `.p8` 檔案而非 `.p12` 檔案。
 
 ## 解決推送訊息問題
-
-**範例**
 
 下列範例說明如何在使用 VRS 時解決推送失敗的問題。
 

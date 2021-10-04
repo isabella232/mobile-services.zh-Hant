@@ -5,9 +5,9 @@ title: Analytics
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '941'
 ht-degree: 19%
 
 ---
@@ -135,8 +135,6 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 ## 處理規則 {#section_66EE762EEA5E4728864166201617DEBF}
 
 處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
-
-2013 年高峰會的[處理規則訓練](https://tv.adobe.com/embed/1181/16506/)
 
 [處理規則說明](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 

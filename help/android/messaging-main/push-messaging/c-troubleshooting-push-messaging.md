@@ -6,7 +6,7 @@ title: 疑難排解推送訊息
 topic-fix: Metrics
 uuid: 9c4a9371-6691-4a2c-a6c1-b9f901a41599
 exl-id: 82b89f56-f43e-4b0d-80c5-5bff4013e5f7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
@@ -31,12 +31,11 @@ ht-degree: 100%
 
    >[!TIP]
    >
-   >推送服務無法保證訊息一定會傳送出去。
+   >推送服務無法保證訊息一定會傳送出去。如需服務的可靠性詳細資訊，請參閱適當文件。
+   >
+   >* **APNS**：[服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
+   >* **FCM**: [訊息的生命週期](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
-   如需服務的可靠性詳細資訊，請參閱適當文件。
-
-   * **APNS**：[服務品質](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW5)
-   * **FCM**: [訊息的生命週期](https://firebase.google.com/docs/cloud-messaging/concept-options#lifetime)
 
 ## 為何我的推送訊息截斷或無法展開?
 
