@@ -3,10 +3,10 @@ description: 在 Adobe Analytics，您可以在管理工具首頁管理角色。
 title: 角色與權限
 uuid: ad350f8d-ef51-4519-98aa-3025bc0f5588
 exl-id: 70f0b427-60d5-4a79-a8d3-e03274edd917
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: f6a62a46a90c30edaf999085873bf21f2a03a68e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 42%
+source-wordcount: '592'
+ht-degree: 45%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 42%
 
 ### Analytics 管理員
 
-Analytics管理員負責管理使用者群組並指派權限，其中一個是行動應用程式管理員。 Experience Cloud管理員會將您的Adobe ID連結至您的Adobe Analytics帳戶，讓您透過Adobe ID登入Mobile Services使用者介面。 有關Experience Cloud管理員的詳細資訊，請參閱Experience Cloud中心介面元件指南中的[管理Experience Cloud用戶和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)。
+Analytics管理員負責管理使用者群組並指派權限，其中一個是行動應用程式管理員。 Experience Cloud管理員會將您的Adobe ID連結至您的Adobe Analytics帳戶，讓您透過Adobe ID登入Mobile Services使用者介面。 如需Experience Cloud管理員的詳細資訊，請參閱 [管理Experience Cloud使用者和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) 中的「Experience Cloud中心介面元件」指南。
 
 >[!TIP]
 >
@@ -28,8 +28,8 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
 
 如需此角色的詳細資訊，請參閱Adobe Analytics檔案中的下列內容：
 
-* [使用者管理概述](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/users.html)
-* [使用者和群組權限變更](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/permissions-changes.html)
+* [使用者管理概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=zh-Hant)
+* [使用者和群組權限變更](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### 行動應用程式管理員
 
@@ -93,8 +93,8 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
 
 如需群組和使用者的詳細資訊，請參閱Adobe Analytics檔案中的下列內容：
 
-* [使用者群組設定（舊版）](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)
-* [新增使用者至群組](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/t-add-user-to-group.html)
+* [使用者群組設定（舊版）](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [新增使用者至群組](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ### Mobile Services 使用者
 
