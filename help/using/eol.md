@@ -1,39 +1,45 @@
 ---
-title: AdobeMobile Services終止常見問題集
-description: 取得AdobeMobile Services終止發佈時常見問題的解答。
-source-git-commit: 08102faa8470645b4088bd8178ccb630d2368752
+title: Adobe Mobile Services end-of-life FAQ
+description: Get answers to commonly asked questions around the end-of-life announcement for Adobe Mobile Services.
+source-git-commit: 7c3886cbc33c155e527a1d77eccbd3d99609c3d1
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-# AdobeMobile Services終止常見問題集
+# Adobe Mobile Services end-of-life FAQ
 
-AdobeMobile Service的終止日期為&#x200B;**2022年12月31日**。
+****
 
-## 怎麼回事？
+## What is happening?
 
-Mobile Services將於2022年12月31日終止服務。 自當天起，支援以行動裝置為中心的使用者介面、贏取、深層連結、應用程式內訊息、推播通知和地理位置的Mobile Services已不再受支援。
+Mobile Services reaches end-of-life on December 31, 2022. Mobile Services, which supports a mobile-centric UI, acquisition, deep linking, in-app messaging, push notification, and geo-location is no longer supported after this date.
 
-## 包含哪些項目，以及未包含哪些項目？
+## What is included, and what is not included?
 
-此服務終止時僅包含AdobeMobile Services，此獨立平台位於[mobilemarketing.adobe.com](https://mobilemarketing.adobe.com)。 依賴此介面的行動版第4版SDK已於2021年8月31日終止服務。
+[](https://mobilemarketing.adobe.com)The Mobile version 4 SDKs that rely on this interface were sunset on August 31, 2021.
 
-此服務終止時不包含行動應用程式專用的Adobe Analytics，此為Adobe Experience Platform Mobile SDK的一部分。 這些功能（包括應用程式內行為、生命週期分析、傳訊互動追蹤和對象設定檔）會繼續從Adobe獲得支援。
+This end-of-life does NOT include Adobe Analytics for mobile apps, part of the Adobe Experience Platform Mobile SDKs. These features, which include in-app behavior, lifecycle analysis, messaging interaction tracking, and audience profiles, continue to receive support from Adobe.
 
-## 為什麼要淘汰此功能？
+## Why is the capability being retired?
 
-隨著Adobe不斷擴展其行動行銷功能，先前Mobile Services提供的功能將會在Adobe Experience Cloud解決方案中發行，或透過AdobeExchange Premier合作夥伴提供。 此轉變為您提供更強大、更靈活的行動行銷功能。
+As Adobe continues to expand its mobile marketing capabilities, features previously available in Mobile Services will be released in Adobe Experience Cloud solutions or offered through Adobe Exchange Premier Partners. This transition provides you with more powerful and flexible mobile marketing capabilities.
 
-## 有哪些轉變選項可用？
+## What happens to existing processing rules created in Mobile Services?
 
-Adobe根據您組織的使用案例提供三個轉變路徑。
+[](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)Migrated processing rules behave similarly to other processing rules in Adobe Analytics, where you can freely view or edit them. No user action is required for this migration.
 
-1. **應用程式內訊息和推播通知**:Adobe可將您的訊息工作流程轉換至Adobe Journey Optimizer。此產品可協助組織在整個客戶歷程中最佳化並個人化體驗，包括行動訊息。
-1. **贏取和深層連結**:通過AdobeExchange首要合作夥伴計畫提供贏取和深層連結。這些合作夥伴包括提供廣泛贏取功能的Adjust、AppsFlyer和Branch。 Adobe的合作夥伴團隊可以進行適當的介紹，以確保您找到最符合您需求的解決方案。
-1. **Places服務**:Places Service提供免費的地理位置功能。請參閱[Places服務文檔](https://experienceleague.adobe.com/docs/places/using/home.html)。
+[](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=en)
 
-## 如果有問題，我可以去哪裡？
+## What transition options are available?
 
-如需詳細資訊，請參閱[AdobeMobile Services服務終止Spark頁面](https://spark.adobe.com/page/C6D30y09zaRpD/)。 如有任何其他問題，請聯絡您的Adobe代表。
+Adobe offers three transition paths depending on your organization&#39;s use case.
+
+1. **** This product helps organizations optimize and personalize experiences across the entire customer journey, including mobile messaging.
+1. **** These partners include Adjust, AppsFlyer, and Branch, who offer extensive acquisition capabilities. Adobe&#39;s partnership team can make appropriate introductions to ensure that you find the solution that best fits your needs.
+1. ****[](https://experienceleague.adobe.com/docs/places/using/home.html)
+
+## Where can I go if I have questions?
+
+[](https://spark.adobe.com/page/C6D30y09zaRpD/)Contact your Adobe representative with any additional questions.
