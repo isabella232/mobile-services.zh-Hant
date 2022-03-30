@@ -1,11 +1,11 @@
 ---
 description: 無法使用處理規則設定產品變數。在 iOS 4.x SDK 中，您必須在內容資料參數中使用特殊語法，才能直接在伺服器呼叫上設定產品。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 產品變數
 topic-fix: Developer and implementation
 uuid: 6ece4d27-ef86-435c-a6f7-bd76be1c95ca
 exl-id: c945add4-5358-44f6-b445-554b0df056c1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 100%

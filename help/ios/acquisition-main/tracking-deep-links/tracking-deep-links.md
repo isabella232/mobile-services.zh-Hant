@@ -1,10 +1,10 @@
 ---
 description: 您可以使用此資訊，在行動應用程式中利用 Adobe Mobile iOS SDK 追蹤深層連結和延期的深層連結。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 追蹤深層連結
 uuid: 08dc2820-7fd3-419f-ac2d-dcf12532578a
 exl-id: a8b20233-d800-4318-ad4f-39229d8b3a5e
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 100%

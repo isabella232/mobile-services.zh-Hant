@@ -1,12 +1,12 @@
 ---
 description: 此資訊可協助您進行應用程式內傳訊疑難排解。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 應用程式內傳訊疑難排解
 topic-fix: Metrics
 uuid: 39c3a21d-92c2-4004-b00f-99b6f91d3696
 exl-id: 6c7d97ed-3b0a-48ff-b761-1485aea5e96d
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 100%

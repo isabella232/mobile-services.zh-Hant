@@ -1,12 +1,12 @@
 ---
 description: 您可以設定應用程式內訊息的排程選項，包含持續時間、一週天數及當天的時間選項。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 排程  應用程式內訊息
 topic-fix: Metrics
 uuid: d10e691b-105a-4165-a49d-d046ce250acd
 exl-id: bd7103ff-f14f-436b-a6c4-c477535cffe2
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 100%

@@ -1,12 +1,12 @@
 ---
 description: 行銷人員可建立追蹤連結來進行促銷，並促進對其應用程式的流量。這些追蹤連結可以將使用者引導至應用程式商店、應用程式深層連結和插入式深層連結，以便將其關聯至應用程式內行為。行銷人員可視需要建立一個連結，將使用者路由至 iOS、Android 或其他平台。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 贏取
 topic-fix: Metrics
 uuid: 987146e4-2cca-46e7-88aa-74b62d9f1dc5
 exl-id: ed0842a8-e3cb-4c5a-b001-c0ea3ca69583
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 100%

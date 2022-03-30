@@ -1,12 +1,12 @@
 ---
 description: 您可以設定推送訊息和豐富推送訊息的體驗選項，包括名稱、訊息文字和目的地選項。您也可以配置進階選項，包含 iOS 裝置的裝載選項和自訂選項。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 體驗  推送訊息
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%

@@ -1,28 +1,28 @@
 ---
-description: 可協助您處理Video Analytics的資訊。
-solution: Experience Cloud,Analytics
+description: 幫助您處理視頻分析的資訊。
+solution: Experience Cloud Services,Analytics
 title: Video Analytics
 topic-fix: Developer and implementation
 uuid: f45dac3b-cd2e-4fba-a3b2-c243640ecfa4
 exl-id: bf7a2936-4a90-4630-8a0c-df41baa1d6a8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 71%
 
 ---
 
-# Video Analytics {#video-analytics}
+# 視頻分析 {#video-analytics}
 
-可協助您處理Video Analytics的資訊。
+幫助您處理視頻分析的資訊。
 
-在[在Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant)測量串流媒體指南中詳細說明視訊測量。 所有AppMeasurement平台上測量視訊的一般程式都很類似。 此快速入門區段提供開發人員工作的基本概覽和程式碼範例。
+視頻測量在 [測量Adobe Analytics流媒體](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) 的子菜單。 所有AppMeasurement平台中測量視頻的一般過程非常相似。 此快速入門部分提供了開發人員任務的基本概述以及代碼示例。
 
 下表列出會傳送至 Analytics 的媒體資料。使用處理規則，將內容資料對應至 Analytics 變數。
 
 * **a.media.name**
 
-   （**必要**）當訪客以某種方式檢視視訊時，收集實作中指定的視訊名稱。您可以為此變數新增分類。
+   (**必需**)在訪問者以某種方式查看視頻時，按實現中指定的方式收集視頻名稱。您可以為此變數添加分類。
 
    (**選用**) 自訂深入分析變數能提供視訊路徑資訊。
 
@@ -41,16 +41,16 @@ ht-degree: 71%
 
    (**必要**) 收集視訊區段資料，包括區段名稱和視訊中區段發生的順序。
 
-   此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪客檢視視訊中的第一個區段時，SiteCatalyst可能會在`1:M:0-25`區段eVar中收集下列內容。
+   此變數可透過啟用 `segmentByMilestones` 變數，在自動追蹤播放器事件時填入，或透過在手動追蹤播放器事件時設定自訂區段名稱。例如，當訪問者查看視頻中的第一個段時，SiteCatalyst可能會在 `1:M:0-25` 段eVar。
 
-   預設的視訊資料收集方法會在下列時間點收集資料：視訊開始（播放）、區段開始和視訊結束（停止）。 當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
+   預設的視頻資料收集方法在以下幾點收集資料：視頻開始（播放）、段開始和視頻結束（停止）。 當訪客開始觀看時，Analytics 會在區段的開頭計算第一個區段檢視次數。後續區段會在區段開始時計為檢視次數。
 
    * 變數類型: eVar
    * 預設過期時間：頁面檢視
 
 * **a.contentType**
 
-   收集訪客所檢視內容類型的相關資料。視訊測量傳送的點擊會被指派為「視訊」的內容類型。 不需專為視訊追蹤保留此變數。 使用此相同變數而擁有其他內容報表內容類型，可讓您分析不同內容類型中訪客的分佈情況。 例如，您可以使用此變數，使用「article」或「product page」等值來標籤其他內容類型。
+   收集訪客所檢視內容類型的相關資料。通過視頻測量發送的點擊被分配「視頻」的內容類型。 此變數不需要專門保留用於視頻跟蹤。 使用同一變數使用其他內容報告內容類型，可以分析訪問者在不同類型內容之間的分佈。 例如，可以使用此變數使用值（如「article」或「product page」）標籤其他內容類型。
 
    從視訊測量觀點，「內容類型」可讓您識別視訊訪客，並因此計算視訊轉換率。
 
@@ -124,7 +124,7 @@ property bool isMediaAd;
 
 ### 媒體測量類別與方法參考 {#section_50DF9359A7B14DF092634C8E913C77FE}
 
-* **SettingsWith(winJS:settingsWith)**
+* **SettingsWith(winJS:設定為)**
 
    傳回 `MediaSettings` 物件以及指定的參數。
 
@@ -156,9 +156,9 @@ property bool isMediaAd;
       var  myAdSettings = ADB.Media.adSettingsWith("name", 10,  "playerName", "parentName", "parentPod", 5, "myCPM");
       ```
 
-* **開啟(winJS:open)**
+* **開啟(WinJS:開啟)**
 
-   使用`settings`中定義的設定來追蹤媒體開啟。
+   使用中定義的設定跟蹤開啟的介質 `settings`。
 
    * 此方法的語法如下：
 
@@ -172,9 +172,9 @@ property bool isMediaAd;
       ADB.Media.open(mySettings);
       ```
 
-* **關閉(winJS:close)**
+* **關閉(winJS:關閉)**
 
-   跟蹤名為&#x200B;*`name`*&#x200B;的媒體項的媒體關閉。
+   跟蹤介質關閉的介質項 *`name`*。
 
    * 此方法的語法如下：
 
@@ -188,9 +188,9 @@ property bool isMediaAd;
       ADB.Media.close("mediaName"); 
       ```
 
-* **播放(winJS:play)**
+* **播放(winJS:播放)**
 
-   在指定的&#x200B;*offset*（以秒為單位）追蹤名為&#x200B;*`name`*&#x200B;的媒體項目的媒體播放。
+   跟蹤名為的媒體項的媒體播放 *`name`* 在給定 *偏移* （秒）。
 
    * 此方法的語法如下：
 
@@ -204,7 +204,7 @@ property bool isMediaAd;
       ADB.Media.play("mediaName",  0);
       ```
 
-* **完成(winJS:complete)**
+* **完成(winJS:完成)**
 
    在提供的&#x200B;*偏移處* (以秒為單位) 手動將媒體項目標示為已完成。
 
@@ -220,7 +220,7 @@ property bool isMediaAd;
       ADB.Media.complete("mediaName", 8);
       ```
 
-* **停止(winJS:停止)**
+* **停止(winJS:停)**
 
    通知媒體模組，視訊已在指定的&#x200B;*偏移處*&#x200B;停止或暫停。
 
@@ -252,7 +252,7 @@ property bool isMediaAd;
       ADB.Media.click("mediaName",  3); 
       ```
 
-* **追蹤(winJS:track)**
+* **跟蹤(WinJS:跟蹤)**
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 

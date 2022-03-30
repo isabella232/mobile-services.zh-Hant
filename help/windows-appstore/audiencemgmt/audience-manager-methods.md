@@ -1,11 +1,11 @@
 ---
-description: Windows 8.1通用應用程式商店程式庫所提供的Audience Manager方法清單。
-solution: Experience Cloud,Analytics
+description: Windows 8.1通用App Store庫提供的Audience Manager方法清單。
+solution: Experience Cloud Services,Analytics
 title: Audience Manager 方法
 topic-fix: Developer and implementation
 uuid: e39c9c3e-fd53-4b46-8fff-88101a064a9c
 exl-id: b10d7274-0fc6-4822-a40b-1192b71592b9
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 46%
@@ -14,19 +14,19 @@ ht-degree: 46%
 
 # Audience Manager 方法 {#audience-manager-methods}
 
-Windows 8.1通用應用程式商店程式庫所提供的Audience Manager方法清單。
+Windows 8.1通用App Store庫提供的Audience Manager方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Audience Manager方法會加上前置詞「AudienceManager」。
+SDK當前支援多個Adobe Experience Cloud解決方案，包括分析、目標和Audience Manager。 各方法會根據解決方案加上前置詞。Audience Manager方法以「AudienceManager」為前置詞。
 
 >[!NOTE]
 >
->當您從winJS(JavaScript)使用winmd方法時，所有方法都會自動將其第一個字母小寫。
+>使用winJS(JavaScript)中的winmd方法時，所有方法的首個字母都會自動小寫。
 
-如果已在您的JSON檔案中設定audience manager，則包含生命週期量度的訊號會與生命週期點擊一併傳入。
+如果在JSON檔案中配置了受眾管理器，則會在您的生命週期命中時發送包含生命週期度量的信號。
 
 * **GetVisitorProfile(winJS:getVisitorProfile)**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何訊號，則傳回`null`。 訪客設定檔會儲存在`SharedPreferences`中，方便您在多次啟動應用程式時存取。
+   傳回最近取得的訪客描述檔。返回 `null` 的下界。 訪問者配置檔案保存在 `SharedPreferences` 可輕鬆訪問多個應用程式。
 
    * 此方法的語法如下：
 
@@ -92,9 +92,9 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData(winJS:signalWithData)**
+* **SignalWithData(winJS:信號與資料)**
 
-   傳送具有特徵的訊號給Audience Manager，並取得區塊回撥中傳回的相符區段。
+   發送具有特徵的信號Audience Manager，並獲取塊回調中返回的匹配段。
 
    * 此方法的語法如下：
 

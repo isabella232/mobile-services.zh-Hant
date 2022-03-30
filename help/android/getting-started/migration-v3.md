@@ -1,12 +1,12 @@
 ---
 description: 本資訊可協助您從 Android 資料庫 3.x 或 2.x 版移轉至 4.x 版。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 移轉至 Android 4.x 資料庫
 topic-fix: Developer and implementation
 uuid: 906e83bb-2faf-4aa2-ac9b-3fba6b833c7e
 exl-id: 8061c1ab-aaaf-4d4c-9bd5-b2f80b6b06a3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 99%
@@ -69,7 +69,7 @@ ht-degree: 99%
 }
 ```
 
-## 移動設定檔案 並移轉至第4版 {#section_0B844235E0B04DD4B36976A73DB28FB5}
+## 移動設定檔案 並遷移到版本4 {#section_0B844235E0B04DD4B36976A73DB28FB5}
 
 以下表格列出您需要移至設定檔案的設定變數。
 
@@ -100,16 +100,16 @@ ht-degree: 99%
 
 | 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
 | --- |--- |
-| trackOffline | &quot;offlineEnabled&quot; |
+| trackOffline | &quot;離線已啟用&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
-| trackingServer | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
+| 跟蹤伺服器 | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 &quot;server&quot; 然後啟用 &quot;ssl&quot;。 |
-| charSet | &quot;charset&quot; |
-| currencyCode | &quot;currency&quot; |
-| ssl | &quot;ssl&quot; |
-| linkTrackVars | 移除，不再使用。 |
-| linkTrackEvents | 移除，不再使用。 |
+| 字元集 | &quot;字元集&quot; |
+| currencyCode | &quot;貨幣&quot; |
+| sys | &quot;ssl&quot; |
+| 連結TrackVars | 移除，不再使用。 |
+| 連結跟蹤事件 | 移除，不再使用。 |
 | timestamp | 移除，無法再設定。 |
 | dc | 移除，不再使用。 |
 | userAgent | 移除，無法再設定。 |

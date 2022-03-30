@@ -1,12 +1,12 @@
 ---
 description: 行銷人員可以建立、儲存及編輯於建立可追蹤行銷連結時所使用的連結目的地 (例如網頁、深層連結或其他連結)。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 目的地
 topic-fix: Metrics
 uuid: 0e0e7d22-067c-4a59-abcb-a4826800944d
 exl-id: e30128de-5b2d-4617-a871-44fe489ea6e7
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%

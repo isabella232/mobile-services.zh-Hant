@@ -1,11 +1,11 @@
 ---
-description: 可協助您將Windows 8.1通用應用程式商店SDK與Adobe Analytics搭配使用的資訊。
-solution: Experience Cloud,Analytics
+description: 幫助您將Windows 8.1 UniversalApp StoreSDK與Adobe Analytics配合使用的資訊。
+solution: Experience Cloud Services,Analytics
 title: 'Analytics 方法 '
 topic-fix: Developer and implementation
 uuid: 79db105c-216c-4061-97f3-a55954995e67
 exl-id: 007bb801-55ef-4c5b-87fa-d0db42cde163
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 53%
@@ -14,19 +14,19 @@ ht-degree: 53%
 
 # Analytics 方法  {#analytics-methods}
 
-可協助您將Windows 8.1通用應用程式商店SDK與Adobe Analytics搭配使用的資訊。
+幫助您將Windows 8.1 UniversalApp StoreSDK與Adobe Analytics配合使用的資訊。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Analytics方法會加上前置詞「Analytics」。
+SDK當前支援多個Adobe Experience Cloud解決方案，包括分析、目標和Audience Manager。 各方法會根據解決方案加上前置詞。分析方法的前置詞為「分析」。
 
 上述各方法將用來傳送資料至您的 Adobe Analytics 報表套裝。
 
 >[!TIP]
 >
->當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
+>消費時 `winmd` 來自winJS(JavaScript)的方法，所有方法的首字母都自動小寫。
 
-* **TrackState(winJS:trackState)**
+* **跟蹤狀態(winJS:跟蹤狀態)**
 
-   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如「首頁儀表板」、「應用程式設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果`state`空白，在報表中會顯示為「app name app version(build)」。 如果在報表中看到此值，請務必在每個`TrackState`呼叫中設定`state`。
+   使用可選內容資料來追蹤應用程式。狀態是您的應用中可用的視圖，如「首頁儀表板」、「應用設定」、「購物車」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果 `state` 為空，它在報告中顯示為「app name app version(build)」。 如果在報告中看到此值，請確保正在設定 `state` 每 `TrackState` 呼叫。
 
    >[!TIP]
    >
@@ -45,9 +45,9 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       ADB.Analytics.trackState("loginScreen", null);
       ```
 
-* **TrackAction(winJS:trackAction)**
+* **跟蹤操作(winJS:跟蹤操作)**
 
-   追蹤應用程式中的動作。動作是發生在應用程式中且您想測量的項目，例如「登入」、「橫幅點選」、「摘要訂閱」和其他量度。
+   追蹤應用程式中的動作。操作是您想要衡量的應用中發生的情況，如「登錄」、「橫幅點擊」、「訂閱源」和其他度量。
 
    * 此方法的語法如下：
 
@@ -65,7 +65,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 * **GetTrackingIdentifierAsync(winJS:getTrackingIdentifierAsync)**
 
    
-傳回自動產生的 Analytics 訪客識別碼。這是應用程式專屬的不重複訪客id，會在初次啟動時產生，並會從此時間點儲存及使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
+傳回自動產生的 Analytics 訪客識別碼。這是特定於應用的唯一訪問者ID，在初始啟動時生成，然後從該點向前儲存和使用。 此ID在應用程式升級之間保留，並在卸載時刪除。
 
    * 此方法的語法如下：
 
@@ -82,7 +82,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       });
       ```
 
-* **TrackLocation(winJS:trackLocation)**
+* **跟蹤位置(winJS:跟蹤位置)**
 
    傳送目前的 x 和 y 座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供做為參數的地點是否位在您的 POI 中。如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `trackLocation` 呼叫一併傳送。
 
@@ -99,7 +99,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       ADB.Analytics.trackLocation(47.60621, -122.33207, null);
       ```
 
-* **TrackLifetime &#x200B; ValueIncrease(winJS:trackLifetime &#x200B; ValueIncrease)**
+* **TrackLifetime值&#x200B;增加(winJS:trackLifetime &#x200B; ValueIncrease)**
 
    增加使用者期限值的 `amount`。
 
@@ -139,7 +139,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **TrackTimed &#x200B; ActionUpdate(winJS:trackTimed &#x200B; ActionUpdate)**
 
-   傳遞 `contextData` 以更新與指定 `action` 關聯的內容資料。傳遞的`data`會附加至指定動作的現有資料，如果已為`action`定義了相同鍵值，則會覆寫資料。
+   傳遞 `contextData` 以更新與指定 `action` 關聯的內容資料。的 `data` 傳遞的內容將附加到給定操作的現有資料中，如果為定義了相同的鍵，則覆蓋資料 `action`。
 
    >[!TIP]
    >
@@ -162,7 +162,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **TrackTimedActionExistsAsync(winJS:trackTimedActionExistsAsync)**
 
-   如果指定的計時動作存在，則傳回true；如果不存在，則傳回false。
+   如果給定的定時操作存在，則返回true；如果不存在，則返回false。
 
    * 此方法的語法如下：
 
@@ -197,15 +197,15 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **ClearTrackingQueue(winJS:clearTrackingQueue)**
 
-   清除Analytics追蹤佇列中所有儲存的點擊。
+   清除分析跟蹤隊列中儲存的所有命中。
 
-   * 以下是此訊息的語法：
+   * 以下是此消息的語法：
 
       ```csharp
       static void ClearTrackingQueue();
       ```
 
-   * 以下是范常式式碼：
+   * 下面是代碼示例：
 
       ```js
       ADBMobile.Analytics.clearTrackingQueue();
@@ -213,7 +213,7 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
 
 * **GetQueueSizeAsync(winJS:getQueueSizeAsync)**
 
-   傳回目前儲存在Analytics佇列中的點擊數。
+   返回當前儲存在分析隊列中的命中數。
 
    * 此方法的語法如下：
 

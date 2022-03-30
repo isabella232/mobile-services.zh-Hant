@@ -1,11 +1,11 @@
 ---
 description: 動作為發生在您要測量之應用程式中的事件。每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可以在每次檢視文章或每次完成某個層級時，追蹤新訂閱。這些事件的對應量度會設定為訂閱、已閱讀文章及已完成層級。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 追蹤應用程式動作
 topic-fix: Developer and implementation
 uuid: 62017be1-5395-4d16-bde3-4c40a2c012d4
 exl-id: ff317eff-1b8e-46e1-a305-a404979447cb
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 100%

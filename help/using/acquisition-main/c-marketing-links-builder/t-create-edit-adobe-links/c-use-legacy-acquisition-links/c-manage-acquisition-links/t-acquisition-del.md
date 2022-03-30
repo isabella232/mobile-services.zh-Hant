@@ -1,12 +1,12 @@
 ---
 description: 如果您不再需要一或多個贏取連結，可將其刪除。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 刪除贏取連結
 topic-fix: Metrics
 uuid: e7362348-ca24-4f1c-b37f-eca6d2b0da6d
 exl-id: 4c007ec6-40ba-468f-8bfc-0930a04c59c1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 100%

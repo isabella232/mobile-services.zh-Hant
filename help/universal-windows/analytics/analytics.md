@@ -1,52 +1,52 @@
 ---
-description: 將程式庫新增至專案後，您就可以在應用程式中的任何地方進行任何Analytics方法呼叫。
-solution: Experience Cloud,Analytics
+description: 將庫添加到項目後，您可以在應用的任何位置調用任何Analytics方法。
+solution: Experience Cloud Services,Analytics
 title: Analytics
 topic-fix: Developer and implementation
 uuid: c2cef3d3-77a7-4a8e-bbe4-3db10a77996a
 exl-id: cc96a7dd-ccc4-4914-8243-f3f160b75c21
-source-git-commit: 1fa6111d6bf1c2d36f15d2f037718646a035435a
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 19%
 
 ---
 
-# Analytics {#analytics}
+# 分析 {#analytics}
 
-將程式庫新增至專案後，您就可以在應用程式中的任何地方進行任何Analytics方法呼叫。
+將庫添加到項目後，您可以在應用的任何位置調用任何Analytics方法。
 
 >[!TIP]
 >
->確保將`ADBMobile.h`導入到類。
+>確保導入 `ADBMobile.h` 你的課。
 
-## 在Analytics中啟用行動應用報表 {#section_F2F9234009184F20BA36B5CDE872B424}
+## 在分析中啟用移動應用程式報告 {#section_F2F9234009184F20BA36B5CDE872B424}
 
-新增程式碼之前，請由您的Analytics管理員完成下列操作以啟用行動應用程式生命週期追蹤。 這可確保您的報表套裝在您開始開發時已準備好擷取量度。
+在添加代碼之前，請讓分析管理員完成以下操作以啟用Mobile應用程式生命週期跟蹤。 這可確保您的報告套件在您開始開發時能夠捕獲度量。
 
-1. 開啟&#x200B;**[!UICONTROL 管理工具]** > **[!UICONTROL 報表套裝]**&#x200B;並選取您的行動報表套裝。
+1. 開啟 **[!UICONTROL 管理工具]** > **[!UICONTROL 報表套件]** 並選擇移動報告套件。
 
-1. 按一下「**[!UICONTROL 編輯設定]** > **[!UICONTROL 行動管理]** > **[!UICONTROL 行動應用報表]**」。
+1. 按一下 **[!UICONTROL 編輯設定]** > **[!UICONTROL Mobile管理]** > **[!UICONTROL Mobile應用程式報告]**。
 
-   ![行動設定](assets/mobile-settings.png)
+   ![Mobile設定](assets/mobile-settings.png)
 
-1. 按一下「**[!UICONTROL 啟用最新應用程式報表]**」。
+1. 按一下 **[!UICONTROL 啟用最新應用報告]**。
 
-   或者，您也可以按一下&#x200B;**[!UICONTROL 啟用行動位置追蹤]**&#x200B;或&#x200B;**[!UICONTROL 啟用背景點擊的舊版報表和歸因]**。
+   （可選）您也可以按一下 **[!UICONTROL 啟用Mobile位置跟蹤]** 或 **[!UICONTROL 為背景點擊啟用舊式報告和屬性]**。
 
    ![啟用生命週期](assets/enable-lifecycle.png)
 
-生命週期量度現在已可供擷取，而行動應用報表會顯示在行銷報表介面的&#x200B;**[!UICONTROL 報表]**&#x200B;功能表中。
+生命週期指標現在已準備好捕獲，而Mobile應用程式報告將顯示在 **[!UICONTROL 報告]** 的子菜單。
 
 ### 新版本
 
-行動應用程式報告會定期發行新版本。 新版本不會自動套用至您的報表套裝，您必須重複這些步驟才能執行升級。 每次您將新Experience Cloud功能新增至應用程式時，建議您重複這些步驟，以確保您擁有最新的設定。
+定期發佈新版本的移動應用程式報告。 新版本不會自動應用於報表套件，您必須重複這些步驟才能執行升級。 每次向應用添加新的Experience Cloud功能時，我們建議重複這些步驟以確保您擁有最新的配置。
 
 ## 生命週期量度 {#section_532702562A7A43809407C9A2CBA80E1E}
 
-若要在您的應用程式中收集生命週期量度，請在應用程式啟動時新增對的呼叫，如下列範例所示。
+要收集應用程式中的生命週期度量，請在激活應用程式時添加調用，如以下示例所示。
 
-### 預設.js中的WinJS
+### 預設為.js的WinJS
 
 ```js
 app.onactivated = function (args) { 
@@ -118,27 +118,27 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-如果在相同工作階段中呼叫了兩次`CollectLifecycleData()`，您的應用程式會在第一次呼叫後的每次呼叫回報當機。 SDK會在應用程式關閉時設定標幟，指出是否成功退出。 如果未設定此標幟，`CollectLifecyleData()`會回報當機。
+如果 `CollectLifecycleData()` 在同一會話中調用兩次，您的應用程式在第一次調用後報告每次調用發生崩潰。 當應用程式關閉時，SDK會設定一個標誌，指示成功退出。 如果未設定此標誌， `CollectLifecyleData()` 報告了車禍。
 
 ## 事件、Prop 以及 eVar {#section_76EA6F5611184C5CAE6E62956D84D7B6}
 
-若您已查看[SDK方法](/help/universal-windows/c-configuration/methods.md)，您可能會想知道應在何處設定事件、eVar、prop、heir和清單。 在第4版中，您無法再在應用程式中直接指派這些變數類型。 SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
+如果你看過 [SDK方法](/help/universal-windows/c-configuration/methods.md)你可能在想，該在哪裡設定活動、電視、道具、繼承人和清單。 在版本4中，您無法再直接在應用程式中分配這些類型的變數。 SDK 會改為使用內容資料和處理規則，將應用程式資料對應至 Analytics 變數以便報告。
 
-處理規則提供幾項優點：
+處理規則提供了以下幾個優點：
 
 * 您可以直接變更資料對應，而無須將更新提交至 App Store。
 * 您可以用有意義的資料名稱，取代設定報表套裝專用的變數。
-* 對傳送額外資料的影響極小。這些值在透過處理規則對應前，不會出現在報表中。
+* 對傳送額外資料的影響極小。在使用處理規則映射這些值之前，這些值不會出現在報表中。
 
-您直接指派給變數的任何值，都應改為新增至內容資料。
+應將您直接分配給變數的任何值添加到上下文資料。
 
 ## 處理規則 {#section_66EE762EEA5E4728864166201617DEBF}
 
-處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
+處理規則用於將上下文資料變數中發送的資料複製到報表的變數、屬性和其他變數。
 
-[處理規則說明](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
+[處理規則幫助](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)
 
-Adobe建議使用「命名空間」對內容資料變數進行分組，因為這有助於維持邏輯順序。 例如，如果您想要收集產品的資訊，可以定義下列變數：
+Adobe建議使用「命名空間」對上下文資料變數進行分組，因為它有助於保持邏輯順序。 例如，如果要收集有關產品的資訊，可以定義以下變數：
 
 ```javascript
 "product.type":"hat";
@@ -146,27 +146,27 @@ Adobe建議使用「命名空間」對內容資料變數進行分組，因為這
 "product.color":"blue";
 ```
 
-內容資料變數在處理規則介面中按字母排序，因此命名空間可讓您快速查看相同命名空間中的變數。
+上下文資料變數在處理規則介面中按字母順序排序，因此命名空間使您能夠快速查看同一命名空間中的變數。
 
-此外，我們聽說有些人使用eVar或prop編號來命名內容資料索引鍵：
+另外，我們聽說您中的一些人正在使用eVar或prop編號命名上下文資料鍵：
 
 ```js
 "eVar1":"jimbo";
 ```
 
-這樣可讓您在處理規則中執行一次性對應時變得&#x200B;*稍微*&#x200B;更簡單，但在偵錯時會失去可讀性，而日後的程式碼更新則更困難。 強烈建議您改為為索引鍵和值使用描述性名稱：
+這可能會使 *略微* 在處理規則中執行一次性映射時更容易，但在調試過程中會丟失可讀性，而將來的代碼更新則會更加困難。 相反，我們強烈建議對鍵和值使用描述性名稱：
 
 ```js
 "username":"jimbo";
 ```
 
-將定義計數器事件的上下文變數設為「1」值：
+將定義計數器事件的上下文變數設定為值「1」：
 
 ```js
 "logon":"1";
 ```
 
-定義增量器事件的上下文資料變數可以有要增量的值：
+定義增量事件的上下文資料變數可以具有增量值：
 
 ```js
 "levels completed":"6";
@@ -174,36 +174,36 @@ Adobe建議使用「命名空間」對內容資料變數進行分組，因為這
 
 >[!TIP]
 >
->Adobe 會保留命名空間 `a.`。除了此限制外，登入公司中的內容資料變數必須是唯一的，以避免衝突。
+>Adobe 會保留命名空間 `a.`。除此限制外，上下文資料變數只需在登錄公司中唯一即可避免衝突。
 
 ## Products 變數 {#section_AFBA36F3718C44D29AF81B9E1056A1B4}
 
-若要在行動SDK中設定&#x200B;*`products`*，您必須使用特殊語法。 如需詳細資訊，請參閱[產品變數](/help/universal-windows/analytics/products.md)。
+設定 *`products`* 在移動SDK中，必須使用特殊語法。 有關詳細資訊，請參見 [產品變數](/help/universal-windows/analytics/products.md)。
 
-## （選用）啟用離線追蹤 {#section_955B2A03EB854742BDFC4A0A3C287009}
+## （可選）啟用離線跟蹤 {#section_955B2A03EB854742BDFC4A0A3C287009}
 
-若要在裝置離線時儲存點擊，您可以在[ SDK方法](/help/universal-windows/c-configuration/methods.md)檔案中啟用離線追蹤。 啟用離線追蹤前，請務必留意設定檔案參考中所述的時間戳記要求。
+要在設備離線時儲存命中，可以在 [SDK方法](/help/universal-windows/c-configuration/methods.md) 的子菜單。 在啟用離線跟蹤之前，請密切注意配置檔案引用中描述的時間戳要求。
 
 ## 地理位置與地標 {#section_BAD34A8DD013454DB355121316BD7FD4}
 
-地理位置可讓您測量位置資料（經緯度）和預先定義的地標。 每個`TrackLocation`呼叫均會傳送：
+地理位置允許您測量位置資料（經緯度）和預定義的感興趣點。 每個 `TrackLocation` 呼叫發送：
 
-* 緯度/經度和POI（若位於`ADBMobileConfig.json`設定檔案中定義的POI內）。
+* 緯度/經度和POI(如果在 `ADBMobileConfig.json` 配置檔案)。
 
-   這些會傳遞至行動解決方案變數以進行自動報告。
+   這些變數將傳遞給移動解決方案變數以便自動報告。
 
 * 以內容資料傳遞之與中心的距離和精確度。
 
-   使用處理規則擷取。
+   使用處理規則捕獲。
 
-若要追蹤位置：
+要跟蹤位置，請執行以下操作：
 
 ```js
 var ADB = ADBMobile; 
 ADB.Analytics.trackLocation(37.75345, -122.33207, null);
 ```
 
-如果在`ADBMobileConfig.json`配置檔案中定義了以下POI:
+如果以下POI是在 `ADBMobileConfig.json` 配置檔案：
 
 ```js
 "poi" : [ 
@@ -211,9 +211,9 @@ ADB.Analytics.trackLocation(37.75345, -122.33207, null);
         ]
 ```
 
-當設備位置被確定在定義點的7000米半徑內時，`TrackLocation`點擊中將發送值為`San Francisco`的`a.loc.poi`上下文資料變數。 `a.loc.dist`內容變數會以公尺為單位傳送來自定義座標的距離。
+當設備位置被確定為在限定點的7000米半徑內時， `a.loc.poi` 帶值的上下文資料變數 `San Francisco` 與 `TrackLocation` 擊中。 安 `a.loc.dist` 上下文變數以距離定義的坐標的米為單位發送。
 
-## 期限值 {#section_D2C6971545BA4D639FBE07F13EF08895}
+## 生存期值 {#section_D2C6971545BA4D639FBE07F13EF08895}
 
 期限值可讓您測量每個使用者的期限值並將其設為目標。每次您以 `TrackLifetimeValueIncrease` 傳送一個值時，就會將該值新增至現有值。期限值儲存在裝置上，且可透過呼叫 `GetLifetimeValue` 隨時擷取。此值可用來儲存期限購買數、廣告檢視次數、視訊完成次數、社交分享和照片上傳數等等。
 
@@ -230,7 +230,7 @@ ADB.Analytics.trackLifetimeValueIncrease(purchasePrice, cdata);
 
 ## 計時動作  {#section_7FF8B6A913A0460EAA4CAE835E32D8C1}
 
-計時動作可讓您測量動作開始與結束之間的應用程式內時間和總時間。 SDK會計算工作階段中的時間量，以及完成動作所需的總時間（跨工作階段）。 這可用來定義區段，以便根據購買時間、通過層級、結帳流程等進行比較。
+定時操作允許您測量操作開始和結束之間的應用內時間和總時間。 SDK計算會話中的時間量和完成操作所花費的總時間（跨會話）。 這可用於定義要按購買時間、通過級別、結帳流程等進行比較的段。
 
 * 從開始到結束期間停留在應用程式內的總秒數 (跨工作階段)
 * 從開始到結束的總秒數 (時鐘時間)

@@ -1,12 +1,12 @@
 ---
 description: 適用於 Experience Cloud 解決方案的 Android SDK 4.x 可讓您測量原生 Android 應用程式、在應用程式中提供目標式內容，以及透過對象管理運用與收集對象資料。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 適用於 Experience Cloud 解決方案的 Android SDK 4.x
 topic-fix: Developer and implementation
 uuid: 56f1ff41-0365-41dd-bdde-245c823dff07
 exl-id: c2454e94-a9af-42f3-ab45-14f68531faab
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%
@@ -59,4 +59,4 @@ Adobe Mobile Services 提供的使用者介面，將 Adobe Experience Cloud 適�
 
 >[!IMPORTANT]
 >
->自&#x200B;**2017年4月30日起**,BloodhoundAdobe即為日落。 自2017年5月1日起，不再提供額外的增強功能、額外的工程支援或Adobe專家服務支援。
+>截至 **2017年4月30日** Adobe獵犬是日落。 自2017年5月1日起，未提供其他增強功能，也未提供其他工程或Adobe專家服務支援。

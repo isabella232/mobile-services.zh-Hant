@@ -1,11 +1,11 @@
 ---
 description: Experience Cloud 解決方案專用通用 Windows 平台 SDK 4.x 的發行說明和已知問題。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 發行說明
 topic-fix: Developer and implementation
 uuid: 9c164e5c-ce2c-4eda-bba6-71324e4954fa
 exl-id: c7478baf-9f16-441f-9899-3a16a9dc291b
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%

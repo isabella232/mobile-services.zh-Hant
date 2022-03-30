@@ -1,12 +1,11 @@
 ---
-description: 建立iOS專案
+description: 建設iOS項目
 keywords: Unity
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: 建置專案
 uuid: 5550a394-6f3f-4b87-b840-89621d8a0c1e
 exl-id: 9da99392-b34e-4e36-b255-f3787e26015c
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 18%
@@ -17,28 +16,28 @@ ht-degree: 18%
 
 ## iOS
 
-當您為iOS建立時，會建立Xcode專案。 預設情況下，`ADBMobileWrapper.mm`和`AdobeMobileLibrary.a`檔案將位於新項目的「庫」組中。 執行下列建立應用程式所需的手動步驟：
+為iOS構建時，將建立Xcode項目。 預設情況下， `ADBMobileWrapper.mm` 和  `AdobeMobileLibrary.a` 檔案將位於新項目的「庫」組中。 執行生成應用所需的以下手動步驟：
 
 1. 將您的 `ADBMobileConfig.json` 檔案新增至專案。
 
    確保它是構建任何必要目標的成員。
 
-1. 在專案的&#x200B;**[!UICONTROL 建置階段]**&#x200B;標籤中，新增下列程式庫的連結：
+1. 在 **[!UICONTROL 生成階段]** 頁籤，添加到以下庫的連結：
 
    * `SystemConfiguration.framework`
-（此程式庫可能已連結。）
+（此庫可能已連結。）
 
    * `libsqlite3.0.dylib`
 
 >[!TIP]
 >
->若要使用SDK的「本機通知應用程式內訊息」，您必須從第一個Unity場景的「開始」方法呼叫`ADBMobile.EnableLocalNotifications();`。
+>要使用SDK中的本地通知In-App消息，必須調用 `ADBMobile.EnableLocalNotifications();` 從第一個Unity Scene中的「開始」方法。
 
 ## Android
 
-當您建立Android版本時，`apk`檔案已將`ADBMobileConfig.json`檔案包含在正確位置。 預設情況下，也會使用`/Plugins/Android`資料夾中的`AndroidManifest.xml`檔案。
+當你為Android構建時， `apk` 檔案已包括 `ADBMobileConfig.json` 檔案。 預設情況下， `AndroidManifest.xml` 檔案 `/Plugins/Android` 資料夾。
 
-如果您需要使用您自己的自訂資訊清單檔案，應新增下列變更。
+如果需要使用自己的自定義清單檔案，應添加以下更改。
 
 為下列項目新增權限：
 

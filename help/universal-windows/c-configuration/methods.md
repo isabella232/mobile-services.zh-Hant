@@ -1,11 +1,11 @@
 ---
 description: 通用Windows平台庫提供的類和方法。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: SDK 方法
 topic-fix: Developer and implementation
 uuid: e3aa41d6-7bc0-4208-a662-12907c209a77
 exl-id: 0aac477c-074d-457c-b117-bb205119c475
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 63%
@@ -18,7 +18,7 @@ ht-degree: 63%
 
 >[!TIP]
 >
->當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
+>消費時 `winmd` 來自winJS(JavaScript)的方法，所有方法的首字母都自動小寫。
 
 * **GetVersion(winJS:getVersion)**
 
@@ -40,11 +40,11 @@ ht-degree: 63%
 
    傳回目前使用者之隱私權狀態的列舉表示法。
 
-   * `ADBMobilePrivacyStatusOptIn`  — 立即傳送點擊。
-   * `ADBMobilePrivacyStatusOptOut`  — 捨棄點擊。
+   * `ADBMobilePrivacyStatusOptIn`  — 立即發送命中。
+   * `ADBMobilePrivacyStatusOptOut`  — 丟棄命中。
    * `ADBMobilePrivacyStatusUnknown` – 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      預設值設定在`ADBMobileConfig.json`配置檔案中。 如需詳細資訊，請參閱[ADBMobileConfig.json設定檔案](/help/universal-windows/c-configuration/c.json.md)。
+      預設值在 `ADBMobileConfig.json` 配置檔案。 有關詳細資訊，請參見 [ADBMobileConfig.json配置檔案](/help/universal-windows/c-configuration/c.json.md)。
 
    * 此方法的語法如下：
 
@@ -78,7 +78,7 @@ ht-degree: 63%
    將目前使用者的隱私權狀態設為 `status`。設定為下列其中一值：
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `DBMobilePrivacyStatusUnknown`  — 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `DBMobilePrivacyStatusUnknown`  — 如果報告套件啟用了時間戳，則會保存命中，直到隱私狀態更改為opt-in（發送命中）或opt-out（丟棄命中）。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
       * 此方法的語法如下：
 
@@ -88,7 +88,7 @@ ht-degree: 63%
 
       * 此方法的範例程式碼如下：
 
-         **C形**
+         **C銳**
 
          ```csharp
          public enum class ADBMobilePrivacyStatus : int { 
@@ -125,12 +125,12 @@ ht-degree: 63%
 
 * **GetUserIdentifier(winJS:getUserIdentifier)**
 
-   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回`null`。
+   如果已設定自定義標識符，則返回自定義用戶標識符。 返回 `null` 的子菜單。
 預設值為 `null`。
 
    >[!IMPORTANT]
    >
-   >如果您的應用程式從Experience Cloud3.x升級至4.x SDK，應用程式會擷取先前的ID服務（自訂或自動產生）並將其儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
+   >如果您的應用程式從Experience Cloud3.x升級到4.x SDK，則會檢索先前的ID服務（自定義或自動生成）並將其儲存為自定義用戶標識符。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的 4.x SDK，則使用者識別碼為 `null`，直到設定完成為止。
 
    * 此方法的語法如下：
 
@@ -181,7 +181,7 @@ ht-degree: 63%
 
 * **SetDebugLogging(winJS:setDebugLogging)**
 
-   將偵錯記錄偏好設定設為 `debugLogging`。除錯記錄僅在使用程式庫的除錯版本時運作，發行版本會忽略此設定。
+   將偵錯記錄偏好設定設為 `debugLogging`。調試日誌記錄僅在使用庫的調試版本時才起作用，發行版本將忽略此設定。
 
    * 此方法的語法如下：
 
@@ -196,7 +196,7 @@ ht-degree: 63%
       ADB.Config.setDebugLogging(true);
       ```
 
-* **CollectLifecycleData(winJS:collectLifecycleData)**
+* **CollectLifecycleData(winJS:收集生命週期資料)**
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/universal-windows/metrics.md)。
 
@@ -213,9 +213,9 @@ ht-degree: 63%
       ADB.Config.collectLifecycleData();
       ```
 
-* **PauseCollecting &#x200B; LifecycleData(winJS:pauseCollecting &#x200B; LifecycleData)**
+* **暫停收&#x200B;集生命週期資料(winJS:暫停收&#x200B;集生命週期資料)**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷前一個工作階段長度。 這也會設定標幟，讓生命週期正確得知應用程式並未當機。 如需詳細資訊，請參閱[生命週期量度](/help/universal-windows/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時收集時間戳以確定上一個會話長度。 這還設定了一個標誌，這樣生命週期就能正確知道應用程式沒有崩潰。 如需詳細資訊，請參閱[生命週期量度](/help/universal-windows/metrics.md)。
 
    * 此方法的語法如下：
 

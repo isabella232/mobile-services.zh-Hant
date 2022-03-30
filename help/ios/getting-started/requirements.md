@@ -1,14 +1,14 @@
 ---
 description: 完成下列步驟來設定報表套裝以收集 iOS 應用程式資料。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 開始之前
 topic-fix: Developer and implementation
 uuid: 04133f68-3618-41fd-8a13-aec5b6f04df6
 exl-id: 83da7cf5-3211-484d-bfe8-7b3b4999eea2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 
    以您的 Adobe ID 登入 [Experience Cloud](https://experience.adobe.com)。
 
-   這個方法假定已佈建您的公司，且您已連結您的 Analytics 帳戶。有關布建的詳細資訊，請參閱《Experience Cloud中心介面元件指南》中的[管理Experience Cloud用戶和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)。 如需連結帳戶的詳細資訊，請參閱Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html)中的[組織。
+   這個方法假定已佈建您的公司，且您已連結您的 Analytics 帳戶。有關設定的詳細資訊，請參見 [管理Experience Cloud用戶和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hant) 中的「Experience Cloud中心介面元件」。 有關連結帳戶的詳細資訊，請參閱 [Experience Cloud中的組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant)。
 
    >[!TIP]
    >

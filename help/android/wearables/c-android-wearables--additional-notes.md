@@ -1,11 +1,11 @@
 ---
 description: 以下提供的一些資訊可協助您設定 Android 延伸功能，讓您從 Android 穿戴式裝置應用程式收集資料。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Android 穿戴式裝置其他附註
 topic-fix: Developer and implementation
 uuid: 3bcf352b-4d46-4ab3-81ec-c27e86fe9be3
 exl-id: ae8cf2d1-d2b0-456b-bbd3-3980e00bbc84
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 100%
@@ -23,7 +23,7 @@ ht-degree: 100%
 
       點擊來自於手持式應用程式。
 
-   * `RunMode` =  `Extension`
+   * `RunMode` = `Extension`
 
       點擊來自於穿戴式裝置應用程式。
 

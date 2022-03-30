@@ -1,11 +1,11 @@
 ---
 description: Experience Cloud 解決方案專用 Android SDK 4.x 的發行說明和已知問題。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 發行說明
 topic-fix: Developer and implementation
 uuid: 16bb4de8-a216-47a8-928c-0b1e1421adcf
 exl-id: 5cc3d031-5952-4e9b-b551-9402d3c05ccb
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 72%
@@ -18,11 +18,11 @@ ht-degree: 72%
 
 ## 2020年4月3日：4.18.2
 
-* 應用程式內傳訊 — 基於安全考量，SDK建立的WebViews現在會將屬性`setAllowFileAccess`設為`false`。
+* 在應用消息中 — 出於安全原因，SDK建立的WebViews現在設定屬性 `setAllowFileAccess` 至 `false`。
 
 ## 2020年3月12日：4.18.1
 
-* Target - Target工作階段ID現在會在傳送至Adobe Analytics的內部Analytics-for-Target點擊中，以內容資料參數`a.target.sessionId`的形式新增。
+* 目標 — 目標會話ID現在添加為上下文資料參數 `a.target.sessionId` 在內部分析目標中擊出Adobe Analytics。
 
 ## 2020年1月16日：4.18.0
 
@@ -37,7 +37,7 @@ ht-degree: 72%
 ## 2019 年 7 月 18 日：4.17.8 版
 
 * Adobe Target：所有要求現在都會在 URL 查詢參數中納入用戶端和 sessionId。
-* 應用程式內傳訊：修正透過空白點選連結URL觸發訊息時，Android應用程式當機的問題。
+* 應用內消息：已修復問題，當通過空點擊URL觸發消息時，Android應用崩潰。
 * 訪客 ID 服務：`Visitor.appendToURL` 和 `Visitor.getUrlVariablesAsync` API 不再將傳回的值雙重編碼。
 
    雙重編碼已導致這些 API 傳回的值遭某些安全性審核機制特別標記。
@@ -49,7 +49,7 @@ ht-degree: 72%
 
 ## 2019 年 5 月 24 日：4.17.6 版
 
-* 訪客ID服務 — `setPushIdentifier` API呼叫現在會在每次呼叫時將同步呼叫傳送至訪客ID服務。
+* 訪問者ID服務 —  `setPushIdentifier` 現在，每次調用訪問者ID服務時，API調用都會向其發送同步調用。
 * 訪客 ID 服務 - 將連線和讀取逾時從 2 秒增加到 5 秒。
 
 如需詳細了解所有解決方案的最新及歷來發行說明，請參閱 [Adobe Experience Cloud 發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)。

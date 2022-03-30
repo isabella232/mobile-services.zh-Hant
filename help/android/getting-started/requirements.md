@@ -1,14 +1,14 @@
 ---
 description: '設定報表套裝並收集 Android 應用程式資料之前，請完成以下必備作業 '
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 開始之前
 topic-fix: Developer and implementation
 uuid: 0ca9e937-8d40-4570-9dbf-9aecc6ecedf6
 exl-id: e9c0fd94-b61d-4f56-97b8-f71aac096c93
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 
 ### Experience Cloud
 
-以您的 Adobe ID 登入 [Experience Cloud](https://experiencecloud.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。如需詳細資訊，請參閱「Experience Cloud中心介面元件指南」中的[管理Experience Cloud用戶和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html)。
+以您的 Adobe ID 登入 [Experience Cloud](https://experiencecloud.adobe.com)。這個方法假定 Experience Cloud 中已供應您的公司，且您已連結您的 Analytics 帳戶。有關詳細資訊，請參見 [管理Experience Cloud用戶和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hant) 中的「Experience Cloud中心介面元件」。
 
 >[!TIP]
 >
@@ -63,7 +63,7 @@ Adobe Mobile Services 是行動應用程式分析和鎖定的主要報表介面�
 
 若要建立報表套裝，以收集應用程式資料並定義應用程式：
 
-1. 登入[AdobeMobile Services](https://mobilemarketing.adobe.com)。
+1. 登錄到 [AdobeMobile](https://mobilemarketing.adobe.com)。
 1. 按一下&#x200B;**[!UICONTROL 建立應用程式]**。
 
    如果沒有看見此按鈕，請按一下&#x200B;**[!UICONTROL 「管理應用程式]** > **[!UICONTROL 新增」]**。

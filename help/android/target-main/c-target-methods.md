@@ -1,12 +1,12 @@
 ---
 description: 以下為 Android 資料庫所提供的 Adobe Target 方法清單。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 適用於 Android 的 Target 方法
 topic-fix: Developer and implementation
 uuid: 8e9808b2-ba80-4646-ba05-8e62d4fde065
 exl-id: 0c7a6718-d078-4a2b-a2c9-d5cd50263939
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 95%
@@ -168,7 +168,7 @@ public static final String TARGET_PARAMETER_MBOX_HOST           = "mboxHost";
       });
       ```
 
-      如需底層Target API的詳細資訊，請參閱Target API參考中的[載入Target請求](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated#load-target-requests)。
+      有關基礎目標API的詳細資訊，請參見 [載入目標請求](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-target/target-api-reference-deprecated#load-target-requests) 的子目錄。
 
 
 

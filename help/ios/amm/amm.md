@@ -1,10 +1,10 @@
 ---
 description: 此資訊可協助您傳送訊號，並從 Audience Manager 中擷取訪客區段。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Audience Manager
 topic-fix: Developer and implementation
 uuid: a1f86814-6b1e-4fe1-9400-f443b92405f1
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%

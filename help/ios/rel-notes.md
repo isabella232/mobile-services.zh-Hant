@@ -1,14 +1,14 @@
 ---
 description: Experience Cloud 解決方案專用 iOS SDK 4.x 的發行說明和已知問題。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 發行說明
 topic-fix: Developer and implementation
 uuid: e1613dc5-02a4-43a7-997a-29b4de98b4d1
 exl-id: dd1e6bab-65e7-4a68-b3ec-21fb1a08aca2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

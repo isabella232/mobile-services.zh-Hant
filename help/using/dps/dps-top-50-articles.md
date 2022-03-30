@@ -1,12 +1,12 @@
 ---
 description: 「前 50 名文章」報表可顯示橫條圖和排名報表，用以展示使用應用程式顯示的最常閱讀文章。此報表僅限 Digital Publishing Suites (DPS) 客戶使用。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 前 50 名文章
 topic-fix: Metrics
 uuid: 341370d1-fa87-43ca-8135-425b3bba272f
 exl-id: 8d5d6ab4-fcbb-42b2-b9bc-5ccb4f73522f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 100%

@@ -1,12 +1,12 @@
 ---
 description: 您可以顯示最近檢視之應用程式的關鍵績效量度。依預設，您最多可以檢視 12 個應用程式。您可以變更日期範圍並建立篩選器以劃分資料，以及在「概述」頁面上編輯任何應用程式。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 顯示行動量度
 topic-fix: Metrics
 uuid: 57db0b77-6b0a-4a0c-9aad-0731275233fd
 exl-id: aab6448d-4362-4c75-949a-7a519da76606
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%

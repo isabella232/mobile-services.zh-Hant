@@ -1,11 +1,11 @@
 ---
-description: Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
-solution: Experience Cloud,Analytics
+description: Windows 8.1通用App Store庫提供的類和方法。
+solution: Experience Cloud Services,Analytics
 title: SDK 方法
 topic-fix: Developer and implementation
 uuid: 0f558ff4-73d3-4439-9d51-62fbd74d2cea
 exl-id: c328fd79-6e10-43b7-9d08-8da395098b60
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 51%
@@ -14,11 +14,11 @@ ht-degree: 51%
 
 # SDK 方法 {#sdk-methods}
 
-Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
+Windows 8.1通用App Store庫提供的類和方法。
 
 >[!TIP]
 >
->當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
+>消費時 `winmd` 來自winJS(JavaScript)的方法，所有方法的首字母都自動小寫。
 
 * **GetVersion(winJS:getVersion)**
 
@@ -42,9 +42,9 @@ Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
 
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `ADBMobilePrivacyStatusUnknown`  — 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatusUnknown`  — 如果報告套件啟用了時間戳，則會保存命中，直到隱私狀態更改為選擇加入（然後發送命中）或選擇退出（然後丟棄命中）。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-      預設值設定在[ADBMobileConfig.json設定](/help/windows-appstore/c-configuration/c.json.md)檔案中。
+      預設值在 [ADBMobileConfig.json配置](/help/windows-appstore/c-configuration/c.json.md) 的子菜單。
 
    * 此方法的語法如下：
 
@@ -76,7 +76,7 @@ Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
 
    * `ADBMobilePrivacyStatusOptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatusOptOut` – 會捨棄點擊。
-   * `ADBMobilePrivacyStatusUnknown`  — 如果您的報表套裝已啟用時間戳記，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * `ADBMobilePrivacyStatusUnknown`  — 如果報告套件啟用了時間戳，則會保存命中，直到隱私狀態更改為選擇加入（然後發送命中）或選擇退出（然後丟棄命中）。 如果您的報表套裝沒有啟用時間戳記，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
    * 此方法的語法如下：
 
@@ -118,11 +118,11 @@ Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
 
 * **GetUserIdentifier(winJS:getUserIdentifier)**
 
-   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   如果已設定自定義標識符，則返回自定義用戶標識符。 如果未設定自定義標識符，則返回Null。 預設值為 `null`。
 
    >[!TIP]
    >
-   >如果您的應用程式從Experience Cloud3.x升級至4.x SDK，應用程式會擷取先前的ID（自訂或自動產生）並將其儲存為自訂使用者識別碼。 這樣在 SDK 升級之後即可保留訪客資料。若為全新安裝的4.x SDK，則使用者識別碼為`null`，直到設定完成為止。
+   >如果您的應用程式從Experience Cloud3.x升級到4.x SDK，則會檢索先前的ID（自定義或自動生成）並將其儲存為自定義用戶標識符。 這樣在 SDK 升級之後即可保留訪客資料。對於4.x SDK上的新安裝，用戶標識符為 `null` 直到設定。
 
    * 此方法的語法如下：
 
@@ -173,7 +173,7 @@ Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
 
 * **SetDebugLogging(winJS:setDebugLogging)**
 
-   將偵錯記錄偏好設定設為 `debugLogging`。除錯記錄僅在使用程式庫的除錯版本時運作，發行版本會忽略此設定。
+   將偵錯記錄偏好設定設為 `debugLogging`。調試日誌記錄僅在使用庫的調試版本時才起作用，發行版本將忽略此設定。
 
    * 此方法的語法如下：
 
@@ -188,13 +188,13 @@ Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
       ADB.Config.setDebugLogging(true); 
       ```
 
-* **CollectLifecycleData(winJS:collectLifecycleData)**
+* **CollectLifecycleData(winJS:收集生命週期資料)**
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/windows-appstore/metrics.md)。
 
    >[!TIP]
    >
-   >在應用程式內每個活動的`onResume()`方法中叫用此方法，如下列範例所示。 我們也建議將活動或服務傳遞為內容物件，而非全域應用程式內容。
+   >在 `onResume()` 方法，如下例所示。 我們還建議將活動或服務作為上下文對象而不是全局應用程式上下文傳遞。
 
    * 此方法的語法如下：
 
@@ -209,13 +209,13 @@ Windows 8.1通用應用程式商店程式庫所提供的類別和方法。
       ADB.Config.collectLifecycleData(); 
       ```
 
-* **PauseCollecting &#x200B; LifecycleData(winJS:pauseCollecting &#x200B; LifecycleData)**
+* **暫停收&#x200B;集生命週期資料(winJS:暫停收&#x200B;集生命週期資料)**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷前一個工作階段長度。 這也會設定標幟，讓生命週期正確得知應用程式並未當機。 如需詳細資訊，請參閱[生命週期量度](/help/windows-appstore/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時收集時間戳以確定上一個會話長度。 這還設定了一個標誌，這樣生命週期就能正確知道應用程式沒有崩潰。 如需詳細資訊，請參閱[生命週期量度](/help/windows-appstore/metrics.md)。
 
    >[!TIP]
    >
-   >在應用程式內每個活動的`onPause()`方法中叫用此方法，如範例所示。 我們也建議將活動或服務傳遞為內容物件，而非全域應用程式內容。
+   >在 `onPause()` 方法，如示例所示。 我們還建議將活動或服務作為上下文對象而不是全局應用程式上下文傳遞。
 
    * 此方法的語法如下：
 

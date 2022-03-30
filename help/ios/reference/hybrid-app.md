@@ -1,11 +1,11 @@
 ---
 description: 若您的應用程式會開啟行動網站內容，您必須確保系統不會將在原生和行動網站之間移動的訪客視為新訪客。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 應用程式和行動網站間的訪客追蹤
 topic-fix: Developer and implementation
 uuid: 2d951de6-3954-4379-a4ff-99b9695b9869
 exl-id: d8459d59-0edd-42c4-81b5-529b250accb4
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%

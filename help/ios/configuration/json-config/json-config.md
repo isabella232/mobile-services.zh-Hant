@@ -1,11 +1,11 @@
 ---
 description: 此資訊可協助您使用 ADBMobile.json 設定檔。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: d9708d59-e30a-4f6c-ab1b-d9499855d0c2
 exl-id: e3515de3-3aec-4dd0-996d-9c561ad1b1de
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 98%
@@ -70,7 +70,7 @@ ht-degree: 98%
 
 * **charset**
 
-   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。如需詳細資訊，請參閱Adobe Analytics檔案中的[charSet](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html)變數。
+   定義您用於傳送至 Analytics 之資料的字元集。字元集可用來將傳入的資料轉換成 UTF-8 以供儲存和報告。有關詳細資訊，請參見 [字元集](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/charset.html) 變數。
 
    * 最低 SDK 版本：4.0
 
@@ -459,6 +459,6 @@ ht-degree: 98%
 
    與適用對象相同，但此處是指動作，而非對象本身：
 
-   * &quot;key&quot;
-   * &quot;matches&quot;
-   * &quot;values&quot;
+   * &quot;鍵&quot;
+   * &quot;匹配&quot;
+   * &quot;值&quot;

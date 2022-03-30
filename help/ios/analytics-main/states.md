@@ -1,11 +1,11 @@
 ---
 description: 狀態是您的應用程式中不同的畫面或檢視。每次在您的應用程式中顯示新狀態時 (例如，當使用者從首頁導覽至新聞摘要時)，都會傳送追蹤狀態呼叫。在 iOS 中，通常會以每個檢視的 viewDidLoad 方法追蹤狀態。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 追蹤應用程式狀態
 topic-fix: Developer and implementation
 uuid: 12cca4eb-1f15-4cec-a58f-76b69eaff99d
 exl-id: 1b7d2fbb-d2df-4063-b923-e59fa3582830
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%

@@ -1,11 +1,11 @@
 ---
-description: 適用於Experience Cloud解決方案4.x SDK的Xamarin元件的iOS方法。
+description: iOS方法，用於Experience Cloud解決方案4.x SDK的Xamarin元件。
 keywords: 沙馬林
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: iOS 方法
 uuid: d6a056db-80c1-44d0-970f-c961ad01b0bc
 exl-id: 92897d08-2b66-4688-9870-c877bea53cfc
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 70%
@@ -14,11 +14,11 @@ ht-degree: 70%
 
 # iOS 方法{#ios-methods}
 
-適用於Experience Cloud解決方案4.x SDK的Xamarin元件的iOS方法。
+iOS方法，用於Experience Cloud解決方案4.x SDK的Xamarin元件。
 
 ## 設定方法 {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
-* **CollectLifecycleData**
+* **收集生命週期資料**
 
    向 SDK 指出應在 SDK 的所有解決方案中收集、使用其生命週期資料。如需詳細資訊，請參閱[生命週期量度](/help/ios/metrics.md)。
 
@@ -52,7 +52,7 @@ ht-degree: 70%
 
 * **SetDebugLogging**
 
-   將偵錯記錄偏好設定設為啟用。
+   將調試日誌記錄首選項設定為已啟用。
 
    * 此方法的語法如下：
 
@@ -66,7 +66,7 @@ ht-degree: 70%
       ADBMobile.SetDebugLogging(true);
       ```
 
-* **LifetimeValue**
+* **生存期值**
 
    傳回目前使用者的期限值。
 
@@ -87,9 +87,9 @@ ht-degree: 70%
    傳回目前使用者之隱私權狀態的列舉表示法。
    * `ADBMobilePrivacyStatus.OptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
-   * ADBMobilePrivacyStatus.Unknown — 如果啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入（屆時會傳送點擊）或選擇退出（屆時會捨棄點擊）為止。 如果停用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
+   * ADBMobilePrivacyStatus.Unknown — 如果啟用離線跟蹤，則會保存命中，直到隱私狀態更改為opt-in（然後發送命中）或opt-out（然後丟棄命中）。 如果禁用離線跟蹤，則在隱私狀態更改為選擇加入之前，將丟棄命中。
 
-   預設值設定在[ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md)中。
+   預設值在 [ADBMobileConfig.json](/help/ios/configuration/json-config/json-config.md)。
 
    * 此方法的語法如下：
 
@@ -104,9 +104,9 @@ ht-degree: 70%
       ```
 
 
-* **SetPrivacyStatus**
+* **設定隱私狀態**
 
-   將目前使用者的隱私權狀態設為狀態。 設定為下列其中一值：
+   將當前用戶的隱私狀態設定為狀態。 設定為下列其中一值：
    * `ADBMobilePrivacyStatus.OptIn` – 會立即傳送點擊。
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
@@ -123,9 +123,9 @@ ht-degree: 70%
       ADBMobile.SetPrivacyStatus(ADBMobilePrivacyStatus.OptIn); 
       ```
 
-* **UserIdentifier**
+* **用戶標識符**
 
-   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   如果已設定自定義標識符，則返回自定義用戶標識符。 如果未設定自定義標識符，則返回Null。 預設值為 `null`。
 
    * 此方法的語法如下：
 
@@ -139,9 +139,9 @@ ht-degree: 70%
       var userId = ADBMobile.UserIdentifier(); 
       ```
 
-* **SetUserIdentifier**
+* **設定用戶標識符**
 
-   若已設定自訂識別碼，則傳回自訂使用者識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   如果已設定自定義標識符，則返回自定義用戶標識符。 如果未設定自定義標識符，則返回Null。 預設值為 `null`。
 
    * 此方法的語法如下：
 
@@ -155,7 +155,7 @@ ht-degree: 70%
       ADBMobile.SetUserIdentifier ("customUserIdentifier"); 
       ```
 
-* **GetVersion**
+* **獲取版本**
 
    取得資料庫版本。
 
@@ -171,13 +171,13 @@ ht-degree: 70%
       var version = ADBMobile.Version();
       ```
 
-* **KeepLifecycleSessionAlive（僅限iOS）**
+* **KeepLifecycleSessionAlive(僅限iOS)**
 
    向 SDK 指出不論設定檔案中的生命週期工作階段逾時值為何，您下次從背景恢復時都不應啟動新的工作階段。
 
    >[!TIP]
    >
-   >此方法旨在用於在背景中註冊接收通知的應用程式，且只有當應用程式於背景時，才應從此時執行的程式碼中呼叫此方法。
+   >此方法用於在後台註冊通知的應用，並且只應從在後台運行的代碼調用。
 
    * 此方法的語法如下：
 
@@ -193,7 +193,7 @@ ht-degree: 70%
 
 ## Analytics 方法  {#section_63CF636104EF41F790C3E4190D755BBA}
 
-* **TrackingIdentifier**
+* **跟蹤標識符**
 
    擷取分析追蹤識別碼。
 
@@ -209,9 +209,9 @@ ht-degree: 70%
       var trackingId = ADBMobile.TrackingIdentifier();
       ```
 
-* **TrackState**
+* **跟蹤狀態**
 
-   使用可選內容資料來追蹤應用程式。狀態為應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。 這些狀態類似於網站上的頁面，且`TrackState`呼叫會遞增頁面檢視。如果狀態為空，在報表中會顯示為「app name app version(build)」。 如果在報表中看到此值，請務必在每個`TrackState`呼叫中設定狀態。
+   使用可選內容資料來追蹤應用程式。狀態是您應用中可用的視圖，如「標題螢幕」、「級別1」、「暫停」等。 這些狀態類似於網站上的頁面， `TrackState` 調用增量頁面視圖。如果狀態為空，則在報表中顯示為「應用程式名稱應用版本（內部版本）」。 如果在報表中看到此值，請確保在每個報表中都設定狀態 `TrackState` 呼叫。
 
    >[!TIP]
    >
@@ -231,9 +231,9 @@ ht-degree: 70%
         ADBMobile.TrackState("title screen", contextData); 
       ```
 
-* **TrackAction**
+* **跟蹤操作**
 
-   追蹤應用程式中的動作。動作是發生在應用程式中且您想測量的項目，例如「死亡」、「獲得的層級」、「摘要訂閱」及其他量度。
+   追蹤應用程式中的動作。操作是您想要衡量的應用程式中發生的情況，如「死亡」、「獲得的水準」、「訂閱源」和其他指標。
 
    >[!TIP]
    >
@@ -251,7 +251,7 @@ ht-degree: 70%
       ADBMobile.TrackAction("level gained", null); 
       ```
 
-* **TrackActionFromBackground（僅限iOS）**
+* **TrackActionFromBackground(僅iOS)**
 
    追蹤在背景發生的動作。在特定情境中抑制生命週期事件地觸發。
 
@@ -271,7 +271,7 @@ ht-degree: 70%
       ADBMobile.TrackActionFromBackground("majorLocationChange", null);
       ```
 
-* **TrackLocation**
+* **跟蹤位置**
 
    傳送目前的經緯度座標。也會使用 `ADBMobileConfig.json` 檔案中定義的地標，來判斷提供做為參數的地點是否位在您的 POI 中。如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
 
@@ -288,7 +288,7 @@ ht-degree: 70%
       ADBMobile.TrackLocation (l, null);
       ```
 
-* **TrackBeacon**
+* **跟蹤信標**
 
    追蹤使用者何時進入信標鄰近地區。
 
@@ -305,7 +305,7 @@ ht-degree: 70%
       ADBMobile.TrackBeacon (beacon, null);
       ```
 
-* **TrackingClearCurrentBeacon**
+* **跟蹤清除當前信標**
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
@@ -323,11 +323,11 @@ ht-degree: 70%
 
 * **TrackLifetimeValueIncrease**
 
-   增加使用者期限值的量。
+   將金額添加到用戶的生存期值。
 
    * 此方法的語法如下：
 
-      public nbsp；靜態void TrackLifetimeValueIncrease(double amount, NSDictionary cdata);
+      公共nbsp；靜態voidTrackLifetimeValueIncrease（雙量，NSDictionary）;
 
    * 此方法的程式碼範例如下：
 
@@ -357,7 +357,7 @@ ht-degree: 70%
 
 * **TrackTimedActionUpdate**
 
-   傳遞資料以更新與指定動作相關聯的內容資料。 傳遞的資料會附加至指定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
+   傳入資料以更新與給定操作關聯的上下文資料。 傳入的資料將附加到給定操作的現有資料中，並在已為操作定義了相同的鍵時覆蓋資料。
 
    >[!TIP]
    >
@@ -396,7 +396,7 @@ ht-degree: 70%
 
 * **TrackingTimedActionExists**
 
-   傳回計時動作是否正在進行中。
+   返回是否正在執行（或未執行）定時操作。
 
    * 此方法的語法如下：
 
@@ -413,7 +413,7 @@ ht-degree: 70%
       });
       ```
 
-* **TrackingSendQueuedHits**
+* **跟蹤SendQueuedHits**
 
    強制資料庫傳送離線佇列中的所有點擊，不論目前還有多少處於佇列中。
 
@@ -429,7 +429,7 @@ ht-degree: 70%
       ADBMobile.TrackingSendQueuedHits(); 
       ```
 
-* **TrackingClearQueue**
+* **跟蹤ClearQueue**
 
    清除離線佇列中的所有點擊。
 
@@ -445,7 +445,7 @@ ht-degree: 70%
        ADBMobile.TrackingClearQueue();
       ```
 
-* **TrackingGetQueueSize**
+* **跟蹤GetQueueSize**
 
    擷取離線佇列中目前的點擊數。
 
@@ -479,9 +479,9 @@ ht-degree: 70%
       var mcid = ADBMobile.GetMarketingCloudID();
       ```
 
-* **VisitorSyncIdentifiers**
+* **訪問者同步標識符**
 
-   透過Experience CloudID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客API可接受同一位訪客具有多個客戶ID，並搭配客戶類型識別碼來區隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
+   使用Experience CloudID，您可以設定附加的客戶ID以與每個訪問者關聯。 訪問者API為同一訪問者接受多個客戶ID，並使用客戶類型標識符來分隔不同客戶ID的範圍。 此方法對應至 JavaScript 程式庫中的 setCustomerIDs。
 
    * 此方法的語法如下：
 
@@ -498,9 +498,9 @@ ht-degree: 70%
 
 ## Target 方法 {#section_C1E4121CAF9D43538511D857A1F549A7}
 
-* **TargetLoadRequest**
+* **目標載入請求**
 
-   傳送要求至您設定的Target伺服器並傳回`Action<NSDictionary>`回呼中產生之選件的字串值。
+   將請求發送到已配置的目標伺服器並返回在 `Action<NSDictionary>` 回叫。
 
    * 此方法的語法如下：
 
@@ -518,9 +518,9 @@ ht-degree: 70%
       });
       ```
 
-* **TargetCreateRequest**
+* **目標建立請求**
 
-   方便讓建構函式使用指定的參數建立`ADBTargetLocationRequest`物件。
+   建立方便的建構子 `ADBTargetLocationRequest` 對象。
 
    * 此方法的語法如下：
 
@@ -535,7 +535,7 @@ ht-degree: 70%
       ADBTargetLocationRequest  req  =  ADBMobile.TargetCreateRequest  ("iOSTest",  "defGal",  dict); 
       ```
 
-* **TargetCreateOrderConfirmRequest**
+* **目標建立訂單確認請求**
 
    建立 `ADBTargetLocationRequest`。
 
@@ -551,7 +551,7 @@ ht-degree: 70%
       ADBMobile.TargetCreateOrderConfirmRequest ("myOrder", "12345", "29.41", "cool stuff", null); 
       ```
 
-* **TargetClearCookies**
+* **目標清除Cookie**
 
    清除應用程式中的目標 Cookie。
 
@@ -569,9 +569,9 @@ ht-degree: 70%
 
 ## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
-* **AudienceVisitorProfile**
+* **受眾訪問者個人資料**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何訊號，則傳回nil。 訪客設定檔會儲存在`NSUserDefaults`中，方便您在多次啟動應用程式時存取。
+   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回零。 訪問者配置檔案保存在 `NSUserDefaults` 可輕鬆訪問多個應用程式。
 
    * 此方法的語法如下：
 
@@ -585,7 +585,7 @@ ht-degree: 70%
       NSDictionary profile = ADBMobile.AudienceVisitorProfile();
       ```
 
-* **AudienceDpid**
+* **觀眾**
 
    傳回目前的 DPID。
 
@@ -601,7 +601,7 @@ ht-degree: 70%
       string currentDpid = ADBMobile.AudienceDpid();
       ```
 
-* **AudienceDpuuid**
+* **觀眾數**
 
    傳回目前的 DPUUID。
 
@@ -617,9 +617,9 @@ ht-degree: 70%
       string currentDpuuid = ADBMobile.AudienceDpuuid(); 
       ```
 
-* **AudienceSetDpidAndDpuuid**
+* **受眾集DpidAndDpuuid**
 
-   設定dpid和dpuuid。 若已設定dpid和dpuuid，則會隨各訊號傳送。
+   設定dpid和dpuuid。 如果設定了dpid和dpuuid ，則將隨每個信號一起發送。
 
    * 此方法的語法如下：
 
@@ -633,9 +633,9 @@ ht-degree: 70%
       ADBMobile.AudienceSetDpidAndDpuuid ("testDppid", "testDpuuid")
       ```
 
-* **AudienceSignalWithData**
+* **受眾信號與資料**
 
-   傳送具有特徵的訊號給對象管理，並取得`Action<NSDictionary>`回呼中傳回的相符區段。
+   向受眾管理發送具有特徵的信號，並獲取在 `Action<NSDictionary>`  回叫。
 
    * 此方法的語法如下：
 
@@ -652,7 +652,7 @@ ht-degree: 70%
       }); 
       ```
 
-* **AudienceReset**
+* **受眾重置**
 
    重設觀眾管理員 UUID 並清除目前的訪客描述檔。
 
@@ -670,9 +670,9 @@ ht-degree: 70%
 
 ## 影片 {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-如需詳細資訊，請參閱[Video Analytics](/help/ios/getting-started/dev-qs.md)。
+有關詳細資訊，請參見 [視頻分析](/help/ios/getting-started/dev-qs.md)。
 
-* **MediaCreateSettings**
+* **媒體建立設定**
 
    傳回 `ADBMediaSettings` 物件以及指定的參數。
 
@@ -688,7 +688,7 @@ ht-degree: 70%
       ADBMediaSettings settings = ADBMobile.MediaCreateSettings ("name1", 10, "playerName1", "playerID1"); 
       ```
 
-* **MediaAdCreateSettings**
+* **媒體廣告建立設定**
 
    傳回 `ADBMediaSettings` 物件以便用於追蹤廣告視訊。
 
@@ -723,7 +723,7 @@ ht-degree: 70%
       }); 
       ```
 
-* **MediaClose**
+* **媒體關閉**
 
    關閉命名為「名稱」的媒體項目。
 
@@ -739,7 +739,7 @@ ht-degree: 70%
       ADBMobile.MediaClose  (settings.Name);
       ```
 
-* **MediaPlay**
+* **媒體播放**
 
    在指定的偏移處 (以秒為單位) 播放命名為「名稱」的媒體項目。
 
@@ -755,7 +755,7 @@ ht-degree: 70%
       ADBMobile.MediaPlay (settings.Name, 0); 
       ```
 
-* **MediaComplete**
+* **媒體完成**
 
    在提供的偏移處 (以秒為單位) 手動將媒體項目標示為已完成。
 
@@ -771,7 +771,7 @@ ht-degree: 70%
       ADBMobile.MediaComplete (settings.Name, 5);
       ```
 
-* **MediaStop**
+* **媒體停止**
 
    通知媒體模組，視訊已在指定的偏移處停止或暫停。
 
@@ -787,7 +787,7 @@ ht-degree: 70%
       ADBMobile.MediaStop (settings.Name, 3);
       ```
 
-* **MediaClick**
+* **媒體按一下**
 
    通知媒體模組，媒體項目已被點按。
 
@@ -797,7 +797,7 @@ ht-degree: 70%
       public static void MediaClick ( string name, double offset); 
       ```
 
-* **MediaTrack**
+* **媒體跟蹤**
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 

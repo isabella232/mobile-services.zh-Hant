@@ -1,11 +1,11 @@
 ---
-description: 處理規則不支援事件序列化。在行動SDK中，您必須在內容資料參數內使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
-solution: Experience Cloud,Analytics
+description: 處理規則不支援事件序列化。在移動SDK中，必須在上下文資料參數中使用特殊語法來直接在伺服器調用上設定序列化事件。
+solution: Experience Cloud Services,Analytics
 title: 事件序列化
 topic-fix: Developer and implementation
 uuid: a5966d05-e218-446f-9f19-8664a84b74cd
 exl-id: 42ea5e0f-a69e-44ab-aa4e-bbec27815cc8
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 31%
@@ -14,7 +14,7 @@ ht-degree: 31%
 
 # 事件序列化{#event-serialization}
 
-處理規則不支援事件序列化。在行動SDK中，您必須在內容資料參數中使用特殊語法，以直接在伺服器呼叫上設定序列化事件。
+處理規則不支援事件序列化。在移動SDK中，必須在上下文資料參數中使用特殊語法來直接在伺服器調用上設定序列化事件。
 
 ```js
 cdata["&&events"] = "event1:12341234";

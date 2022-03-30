@@ -1,11 +1,11 @@
 ---
-description: 適用於Experience Cloud解決方案4.x SDK之Xamarin元件的Android方法。
+description: Android方法，用於Experience Cloud解決方案4.x SDK的Xamarin元件。
 keywords: 沙馬林
-solution: Experience Cloud
+solution: Experience Cloud Services
 title: Android 方法
 uuid: 860af1c4-f57e-4bcb-8308-4e316da9a27b
 exl-id: 0de1fa11-37e9-49be-8d42-a13cb4a3f0e3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 68%
@@ -14,13 +14,13 @@ ht-degree: 68%
 
 # Android 方法{#android-methods}
 
-適用於Experience Cloud解決方案4.x SDK之Xamarin元件的Android方法。
+Android方法，用於Experience Cloud解決方案4.x SDK的Xamarin元件。
 
 ## 設定方法 {#section_405AA09390E346E5BB7B1F4E0F65F51E}
 
 * **DebugLogging**
 
-   傳回目前的偵錯記錄偏好設定，且預設值為false。
+   返回當前調試日誌記錄首選項，預設值為false。
 
    * 此方法的語法如下：
 
@@ -35,7 +35,7 @@ ht-degree: 68%
       setter: Config.DebugLogging = (Java.Lang.Boolean)true;
       ```
 
-* **LifetimeValue**
+* **生存期值**
 
    傳回目前使用者的期限值。
 
@@ -58,7 +58,7 @@ ht-degree: 68%
    * `ADBMobilePrivacyStatus.OptOut` – 會捨棄點擊。
    * `ADBMobilePrivacyStatus.Unknown` – 如果已啟用離線追蹤，會儲存點擊直到隱私權狀態變更為選擇加入 (屆時會傳送點擊) 或選擇退出 (屆時會捨棄點擊) 為止。如果沒有啟用離線追蹤，則會捨棄點擊，直到隱私權狀態變更為選擇加入為止。
 
-   預設值設定在[ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md)檔案中。
+   預設值在 [ADBMobileConfig.json](/help/android/configuration/json-config/json-config.md) 的子菜單。
 
    * 此方法的語法如下：
 
@@ -74,9 +74,9 @@ ht-degree: 68%
       ```
 
 
-* **UserIdentifier**
+* **用戶標識符**
 
-   如果已設定自訂識別碼，則會傳回此識別碼。 如果未設定自訂識別碼，則傳回null。 預設值為 `null`。
+   如果已設定自定義標識符，則返回此標識符。 如果未設定自定義標識符，則返回null。 預設值為 `null`。
 
    * 此方法的語法如下：
 
@@ -107,9 +107,9 @@ ht-degree: 68%
       var version = ADBMobile.Version;
       ```
 
-* **PauseCollectingLifecycleData**
+* **暫停收集生命週期資料**
 
-   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時會收集時間戳記，以判斷前一個工作階段長度。 這也會設定標幟，讓生命週期正確得知應用程式並未當機。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   向 SDK 指出您的應用程式已暫停，以便正確計算生命週期量度。例如，暫停時收集時間戳以確定上一個會話長度。 這還設定了一個標誌，這樣生命週期就能正確知道應用程式沒有崩潰。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
    * 此方法的語法如下：
 
@@ -123,9 +123,9 @@ ht-degree: 68%
       Config.PauseCollectingLifecycleData();
       ```
 
-* **CollectLifecycleData(Activity activity)**
+* **CollectLifecycleData（活動活動）**
 
-   （4.2或更新版本）向SDK指出應在SDK的所有解決方案中收集、使用其生命週期資料。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   （4.2或更高版本）向SDK表示應收集生命週期資料，以便在SDK中的所有解決方案中使用。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
    * 此方法的語法如下：
 
@@ -139,9 +139,9 @@ ht-degree: 68%
       Config.CollectLifecycleData (this);
       ```
 
-* **CollectLifecycleData(Activity activity)**
+* **CollectLifecycleData（活動活動）**
 
-   （4.2或更新版本）向SDK指出應在SDK的所有解決方案中收集、使用其生命週期資料。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
+   （4.2或更高版本）向SDK表示應收集生命週期資料，以便在SDK中的所有解決方案中使用。 如需詳細資訊，請參閱[生命週期量度](/help/android/metrics.md)。
 
    * 此方法的語法如下：
 
@@ -158,9 +158,9 @@ ht-degree: 68%
       Config.CollectLifecycleData (this, context);
       ```
 
-* **OverrideConfigStream**
+* **覆蓋配置流**
 
-   （4.2或更新版本）可讓您在應用程式啟動時載入不同的`ADBMobile JSON`設定檔案。 應用程式會使用另一個設定，直到關閉為止。
+   （4.2或更高版本）用於載入其他 `ADBMobile JSON` 應用程式啟動時配置檔案。 應用程式會使用另一個設定，直到關閉為止。
 
    * 此方法的語法如下：
 
@@ -177,7 +177,7 @@ ht-degree: 68%
 
 * **SetLargeIconResourceId(int resourceId)**
 
-   （4.2或更新版本）設定SDK建立之通知所使用的大型圖示。 此圖示是使用者在通知中心查看完整通知時所顯示的主要影像。
+   （4.2或更高版本）設定用於SDK建立的通知的大表徵圖。 此圖示是使用者在通知中心查看完整通知時所顯示的主要影像。
 
    * 以下是此方法的語法:
 
@@ -193,7 +193,7 @@ ht-degree: 68%
 
 * **SetSmallIconResourceId(int resourceId)**
 
-   （4.2或更新版本）設定用於SDK所建立通知的小型圖示。 此圖示會顯示在狀態列中，而且是當使用者在通知中心看到完整通知時所顯示的次要影像。
+   （4.2或更高版本）設定用於SDK建立的通知的小表徵圖。 此表徵圖顯示在狀態欄中，是當用戶在通知中心看到完整通知時顯示的次映像。
 
    * 此方法的語法如下：
 
@@ -209,9 +209,9 @@ ht-degree: 68%
 
 ## Analytics 方法  {#section_63CF636104EF41F790C3E4190D755BBA}
 
-* **TrackingIdentifier**
+* **跟蹤標識符**
 
-   傳回自動產生的Analytics ID。 這是應用程式專屬的唯一ID，會在初次啟動時產生，並會從此時間點儲存及使用。 此ID會在應用程式升級時保留，並在解除安裝時移除。
+   返回自動生成的分析ID。 這是應用程式特定的唯一ID，在初始啟動時生成，並從該點向前儲存和使用。 此ID將在應用程式升級之間保留，並在卸載時刪除。
 
    * 此方法的語法如下：
 
@@ -225,9 +225,9 @@ ht-degree: 68%
       Var trackingId = Analytics.TrackingIdentifier
       ```
 
-* **TrackState**
+* **跟蹤狀態**
 
-   使用可選內容資料來追蹤應用程式。`States` 是應用程式中可用的檢視，例如「標題畫面」、「層級1」、「暫停」等。這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果狀態空白，在報表中會顯示為「app name app version(build)」。 如果在報表中看到此值，請務必在每個`TrackState`呼叫中設定狀態。
+   使用可選內容資料來追蹤應用程式。`States` 是應用程式中可用的視圖，如「標題螢幕」、「級別1」、「暫停」等。 這些狀態類似於網站上的頁面，且 `TrackState` 呼叫會遞增頁面檢視。如果狀態為空，則它在報告中顯示為「應用名稱應用版本（內部版本）」。 如果在報表中看到此值，請確保在每個報表中都設定狀態 `TrackState` 呼叫。
 
    >[!TIP]
    >
@@ -248,9 +248,9 @@ ht-degree: 68%
       Java.Lang.Object>)cdata);
       ```
 
-* **TrackAction**
+* **跟蹤操作**
 
-   追蹤應用程式中的動作。動作是發生在應用程式中且您想測量的項目，例如「死亡」、「獲得的層級」、「摘要訂閱」及其他量度。
+   追蹤應用程式中的動作。操作是您想要衡量的應用程式中發生的情況，如「死亡」、「獲得的水準」、「訂閱源」和其他指標。
 
    >[!TIP]
    >
@@ -272,9 +272,9 @@ ht-degree: 68%
       Java.Lang.Object>)cdata);
       ```
 
-* **TrackLocation**
+* **跟蹤位置**
 
-   傳送目前的經緯度座標。也會使用`ADBMobileConfig.json`檔案中定義的地標，來判斷提供為參數的位置是否在您的任何POI中。 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
+   傳送目前的經緯度座標。還使用在 `ADBMobileConfig.json` 檔案，以確定作為參數提供的位置是否位於任何POI中。 如果目前座標位在定義的 POI 中，則會填入內容資料變數並與 `TrackLocation` 呼叫一併傳送。
 
    * 此方法的語法如下：
 
@@ -292,7 +292,7 @@ ht-degree: 68%
        Analytics.TrackLocation (loc, null);
       ```
 
-* **TrackBeacon**
+* **跟蹤信標**
 
    追蹤使用者何時進入信標鄰近地區。
 
@@ -309,7 +309,7 @@ ht-degree: 68%
       Analytics.BEACON_PROXIMITY.ProximityImmediate, null); 
       ```
 
-* **ClearBeacon**
+* **清除信標**
 
    在使用者離開信標鄰近地區後，清除信標資料。
 
@@ -363,7 +363,7 @@ ht-degree: 68%
 
 * **TrackTimedActionUpdate**
 
-   傳遞資料以更新與指定動作關聯的內容資料。傳遞的資料會附加至指定動作的現有資料，如果已為動作定義了相同鍵值，則會覆寫資料。
+   傳遞資料以更新與指定動作關聯的內容資料。傳入的資料將附加到給定操作的現有資料中，並在已為操作定義了相同的鍵時覆蓋資料。
 
    >[!TIP]
    >
@@ -423,9 +423,9 @@ ht-degree: 68%
       var level2InProgress = Analytics.TrackingTimedActionExists("level2"); 
       ```
 
-* **SendQueuedHits**
+* **發送排隊命中數**
 
-   會強制資料庫傳送離線佇列中的所有點擊，不論目前排入佇列的點擊數為何。
+   強制庫發送離線隊列中的所有命中，而不管當前排隊的命中數是多少。
 
    * 此方法的語法如下：
 
@@ -439,7 +439,7 @@ ht-degree: 68%
       Analytics.SendQueuedHits(); 
       ```
 
-* **ClearQueue**
+* **清除隊列**
 
    清除離線佇列中的所有點擊。
 
@@ -457,7 +457,7 @@ ht-degree: 68%
 
 * **隊列大小**
 
-   擷取離線佇列中目前的點擊數。
+   檢索當前在離線隊列中的命中數。
 
    * 此方法的語法如下：
 
@@ -473,7 +473,7 @@ ht-degree: 68%
 
 ## Experience CloudID方法 {#section_157919E46030443DBB5CED60D656AD9F}
 
-* **MarketingCloudId**
+* **營銷雲ID**
 
    從 ID 服務中擷取 Experience Cloud ID。
 
@@ -489,9 +489,9 @@ ht-degree: 68%
       var mcid = Visitor.MarketingCloudId;
       ```
 
-* **SyncIdentifiers**
+* **同步標識符**
 
-   透過Experience CloudID，您可以設定其他客戶ID以與每個訪客建立關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
+   使用Experience CloudID，您可以設定附加的客戶ID以與每個訪問者關聯。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 JavaScript 資料庫中的 `setCustomerIDs`。
 
    * 此方法的語法如下：
 
@@ -509,9 +509,9 @@ ht-degree: 68%
 
 ## Target 方法 {#section_C1E4121CAF9D43538511D857A1F549A7}
 
-* **LoadRequest**
+* **載入請求**
 
-   傳送要求至您設定的Target伺服器並傳回`Action<NSDictionary>`回呼中產生之選件的字串值。
+   將請求發送到已配置的目標伺服器並返回在 `Action<NSDictionary>` 回叫。
 
    * 此方法的語法如下：
 
@@ -532,9 +532,9 @@ ht-degree: 68%
            Target.LoadRequest (req, new TargetBlock()); 
       ```
 
-* **CreateRequest**
+* **建立請求**
 
-   方便讓建構函式使用指定的參數建立`ADBTargetLocationRequest`物件。
+   建立方便的建構子 `ADBTargetLocationRequest` 對象。
 
    * 此方法的語法如下：
 
@@ -550,7 +550,7 @@ ht-degree: 68%
       var req = Target.CreateRequest ("AndroidTest", "defGal", parameters); 
       ```
 
-* **CreateOrderConfirmRequest**
+* **建立訂單確認請求**
 
    建立 `ADBTargetLocationRequest`。
 
@@ -566,9 +566,9 @@ ht-degree: 68%
       var orderConfirm = Target.CreateOrderConfirmRequest ("myOrder", "12345", "29.41", "cool stuff", null); 
       ```
 
-* **ClearCookies**
+* **清除Cookie**
 
-   清除應用程式中的Target Cookie。
+   清除應用中的目標Cookie。
 
    * 此方法的語法如下：
 
@@ -584,9 +584,9 @@ ht-degree: 68%
 
 ## Audience Manager {#section_862C4202B6294B978DEEBB15C5CD5C01}
 
-* **訪客資料**
+* **訪問者配置檔案**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何訊號，則傳回nil。 訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
+   傳回最近取得的訪客描述檔。如果尚未提交任何信號，則返回零。 訪客設定檔會儲存在 `NSUserDefaults` 中，方便您在多次啟動應用程式時存取。
 
    * 此方法的語法如下：
 
@@ -602,7 +602,7 @@ ht-degree: 68%
 
 * **Dpid**
 
-   傳回目前的`DPID`。
+   返回當前 `DPID`。
 
    * 此方法的語法如下：
 
@@ -616,9 +616,9 @@ ht-degree: 68%
       string currentDpid = AudienceManager.Dpid;
       ```
 
-* **Dpuuid**
+* **德普伊德**
 
-   傳回目前的`DPUUID`。
+   返回當前 `DPUUID`。
 
    * 此方法的語法如下：
 
@@ -632,9 +632,9 @@ ht-degree: 68%
       string currentDpuuid = AudienceManager.Dpuuid;
       ```
 
-* **AudienceSetDpidAndDpuuid**
+* **受眾集DpidAndDpuuid**
 
-   設定`dpid`和`dpuuid`。 若已設定`dpid`和`dpuuid`，則會隨各訊號傳送。
+   設定 `dpid` 和 `dpuuid`。 如果 `dpid` 和 `dpuuid` 設定，並隨信號一起發送。
 
    * 此方法的語法如下：
 
@@ -648,9 +648,9 @@ ht-degree: 68%
       AudienceManager.SetDpidAndDpuuid ("testDpid", "testDpuuid");
       ```
 
-* **SignalWithData**
+* **信號與資料**
 
-   傳送具有特徵的訊號給對象管理，並取得`Action<NSDictionary>`回呼中傳回的相符區段。
+   向受眾管理發送具有特徵的信號，並獲取在 `Action<NSDictionary>` 回叫。
 
    * 此方法的語法如下：
 
@@ -676,7 +676,7 @@ ht-degree: 68%
 
 * **重設**
 
-   重設audience manager `UUID`並清除目前的訪客設定檔。
+   重置受眾管理器 `UUID` 並清除當前訪客的檔案。
 
    * 此方法的語法如下：
 
@@ -692,7 +692,7 @@ ht-degree: 68%
 
 ## 影片 {#section_CBCE1951CE204A108AD4CA7BB07C7F98}
 
-如需Video Analytics的詳細資訊，請參閱[Video Analytics](/help/android/analytics-main/video-qs.md)。
+有關視頻分析的詳細資訊，請參見 [視頻分析](/help/android/analytics-main/video-qs.md)。
 
 * **媒體設定**
 
@@ -710,7 +710,7 @@ ht-degree: 68%
       MediaSettings settings = Media.SettingsWith("name1", 10, "playerName1", "playerID1");
       ```
 
-* **AdSettingsWith**
+* **廣告設定**
 
    傳回 `MediaSettings` 物件以便用於追蹤廣告視訊。
 
@@ -830,7 +830,7 @@ ht-degree: 68%
       Media.Click (settings.Name, 3); 
       ```
 
-* **追蹤**
+* **跟蹤**
 
    傳送目前媒體狀態的追蹤動作呼叫 (無頁面檢視)。
 

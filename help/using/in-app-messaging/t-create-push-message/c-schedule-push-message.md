@@ -1,12 +1,12 @@
 ---
 description: 在 Adobe Mobile Services UI 中，您可以排程要立即傳送、要稍後傳送，以及作為週期性事件的推播訊息。這些事件可以排程為每日、每週或每月執行。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 排程  推送訊息
 topic-fix: Metrics
 uuid: 6810e27a-016f-4286-8fe2-9972d85fa326
 exl-id: 36f263a0-4aad-423e-bb78-9c532c98df19
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 100%

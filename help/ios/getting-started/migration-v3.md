@@ -1,11 +1,11 @@
 ---
 description: 本資訊可協助您從 iOS 資料庫 3.x 或 2.x 版移轉至 4.x 版。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 移轉至 4.x iOS 資料庫
 topic-fix: Developer and implementation
 uuid: 5668972b-f355-4e03-9df0-8c82ddf6809b
 exl-id: a58067e0-b6f4-4900-ba3f-7256d9259420
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 100%
@@ -103,16 +103,16 @@ ht-degree: 100%
 
 | 設定變數 | `ADBMobileConfig.json` 檔案中的變數 |
 |--- |--- |
-| trackOffline | &quot;offlineEnabled&quot; |
+| trackOffline | &quot;離線已啟用&quot; |
 | offlineLimit | &quot;batchLimit&quot; |
 | account | &quot;rsids&quot; |
-| trackingServer | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
+| 跟蹤伺服器 | &quot;server&quot;，移除 `"https://"` 前置詞。通訊協定前置詞會根據 &quot;ssl&quot; 設定自動新增。 |
 | trackingServerSecure | 移除。為了進行安全連線，請定義 &quot;server&quot; 然後啟用 &quot;ssl&quot;。 |
-| charSet | &quot;charset&quot; |
-| currencyCode | &quot;currency&quot; |
-| ssl | &quot;ssl&quot; |
-| linkTrackVars | 移除，不再使用。 |
-| linkTrackEvents | 移除，不再使用。 |
+| 字元集 | &quot;字元集&quot; |
+| currencyCode | &quot;貨幣&quot; |
+| sys | &quot;ssl&quot; |
+| 連結TrackVars | 移除，不再使用。 |
+| 連結跟蹤事件 | 移除，不再使用。 |
 | timestamp | 移除，無法再設定。 |
 | dc | 移除，不再使用。 |
 | userAgent | 移除，無法再設定。 |

@@ -1,11 +1,11 @@
 ---
-description: Windows 8.1通用應用程式商店程式庫所提供的Target方法清單。
-solution: Experience Cloud,Analytics
+description: Windows 8.1通用App Store庫提供的目標方法清單。
+solution: Experience Cloud Services,Analytics
 title: Target 方法
 topic-fix: Developer and implementation
 uuid: 8c35b31c-c70b-4dba-8759-173342a301e9
 exl-id: 2db9f594-01e7-4ca8-a90e-9d12278350d0
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 43%
@@ -14,15 +14,15 @@ ht-degree: 43%
 
 # Target 方法 {#target-methods}
 
-Windows 8.1通用應用程式商店程式庫所提供的Target方法清單。
+Windows 8.1通用App Store庫提供的目標方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Analytics方法會加上前置詞「Target」。
+SDK當前支援多個Adobe Experience Cloud解決方案，包括分析、目標和Audience Manager。 各方法會根據解決方案加上前置詞。分析方法的前置詞為「目標」。
 
 [生命週期量度](/help/windows-appstore/metrics.md)會以參數形式傳送至各 mbox 負載。
 
 >[!TIP]
 >
->當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
+>消費時 `winmd` 來自winJS(JavaScript)的方法，所有方法的首字母都自動小寫。
 
 ## 類別參考：TargetLocationRequest
 
@@ -36,7 +36,7 @@ property Windows::Foundation::Collections::IMap<Platform::String^, Platform::Obj
 
 ## 字串常數
 
-此資訊可協助您設定自訂參數的索引鍵。
+此資訊有助於您設定自定義參數的鍵。
 
 ```
 static property Platform::String ^TARGET_PARAMETER_ORDER_ID { 
@@ -70,7 +70,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **LoadRequest(winJS:loadRequest)**
 
-   傳送`request`至您設定的Target伺服器並傳回區塊`callback`中產生之選件的字串值。
+   發送 `request` 返回在塊中生成的要約的字串值 `callback`。
 
    * 此方法的語法如下：
 
@@ -89,7 +89,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateRequest(winJS:createRequest)**
 
-   使用給定參數建立`TargetLocationRequest`對象。
+   建立 `TargetLocationRequest` 對象。
 
    * 此方法的語法如下：
 
@@ -106,7 +106,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **CreateOrder &#x200B; ConfirmRequest(winJS:createOrder &#x200B; ConfirmRequest)**
 
-   使用給定參數建立`TargetLocationRequest`對象。
+   建立 `TargetLocationRequest` 對象。
 
    * 此方法的語法如下：
 
@@ -121,9 +121,9 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
       var orderConfirm = ADB.Target.createOrderConfirmRequest("orderConfirm", "order", "47.88", "3722", null); 
       ```
 
-* **ClearCookies(winJS:clearCookies)**
+* **ClearCookie(winJS:clearCookie)**
 
-   清除目前裝置上應用程式的Target Cookie。
+   清除當前設備上應用程式的目標Cookie。
 
    * 此方法的語法如下：
 
@@ -139,7 +139,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetPcId(winJS:getPcId)**
 
-   傳回目前裝置的PC ID Cookie。
+   返回當前設備的PC ID Cookie。
 
    * 此方法的語法如下：
 
@@ -155,7 +155,7 @@ static property Platform::String ^TARGET_PARAMETER_MBOX_HOST {
 
 * **GetSessionId(winJS:getSessionId)**
 
-   傳回目前裝置的工作階段ID Cookie。
+   返回當前設備的會話ID Cookie。
 
    * 此方法的語法如下：
 

@@ -1,11 +1,11 @@
 ---
 description: Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方案的通用訪客 ID。Analytics 需要 ID 服務才能使用 Target、視訊心率以及日後的Experience Cloud 整合。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Experience Cloud ID
 topic-fix: Developer and implementation
 uuid: 13628ea8-3cd4-4cfc-8ff6-722c33f7813a
 exl-id: aa7db365-ad21-431f-bff6-2a6da212dd0c
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 91%
@@ -18,11 +18,11 @@ Adobe Experience Platform Identity Service 提供跨 Experience Cloud 解決方�
 
 >[!TIP]
 >
->除非您使用 Adobe Experience Platform Identity Service，否則無須填入 Experience Cloud ID。如需詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)檔案。
+>除非您使用 Adobe Experience Platform Identity Service，否則無須填入 Experience Cloud ID。有關詳細資訊，請參見 [Adobe Experience Platform身份服務](https://experienceleague.adobe.com/docs/id-service/using/home.html) 文檔。
 
 ## 啟用 Experience Cloud ID {#section_79F984271C3B4366B7B04F864F4FF8C2}
 
-這些步驟需使用SDK 4.3版或更新版本。
+這些步驟需要SDK 4.3版或更高版本。
 
 1. 新增資料庫至您的專案與實作生命週期。
 

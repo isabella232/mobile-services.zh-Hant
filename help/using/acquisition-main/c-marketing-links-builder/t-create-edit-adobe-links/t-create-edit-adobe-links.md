@@ -1,12 +1,12 @@
 ---
 description: 您可以建立或編輯行銷連結，以提供您行動應用程式或網站的深層連結。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 建立或編輯行銷連結
 topic-fix: Metrics
 uuid: 305a8265-38de-4d19-8c79-b3912f5aae7c
 exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 96%
@@ -40,7 +40,7 @@ ht-degree: 96%
       下列預設集標記可供使用:
 
       * **自訂上下文資料**
-指定索引鍵和值。如果您新增自訂內容資料，必須建立處理規則。如需詳細資訊，請參閱Adobe Analytics檔案中的[處理規則概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+指定索引鍵和值。如果您新增自訂內容資料，必須建立處理規則。有關詳細資訊，請參見 [處理規則概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) 在Adobe Analytics檔案里。
 
       * **來源**
 指定原始反向連結，例如「電子報」或「首頁」。

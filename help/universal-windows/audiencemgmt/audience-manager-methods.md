@@ -1,11 +1,11 @@
 ---
 description: 通用Windows平台庫提供的Audience Manager方法清單。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Audience Manager 方法
 topic-fix: Developer and implementation
 uuid: efbe8f33-7f53-40a6-b7aa-a36ac718c047
 exl-id: a7b4001d-d90f-4a8a-a801-d66e56ea43b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 44%
@@ -16,17 +16,17 @@ ht-degree: 44%
 
 通用Windows平台庫提供的Audience Manager方法清單。
 
-SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Target和Audience Manager。 各方法會根據解決方案加上前置詞。Audience Manager方法的前置詞為`AudienceManager`。
+SDK當前支援多個Adobe Experience Cloud解決方案，包括分析、目標和Audience Manager。 根據解預先確定方法。Audience Manager方法的前置詞為 `AudienceManager`。
 
 >[!TIP]
 >
->當您從winJS(JavaScript)使用`winmd`方法時，所有方法都會自動將其第一個字母小寫。
+>消費時 `winmd` 來自winJS(JavaScript)的方法，所有方法的首字母都自動小寫。
 
-如果已在您的JSON檔案中設定audience manager，則包含生命週期量度的訊號會與生命週期點擊一併傳入。
+如果在JSON檔案中配置了受眾管理器，則包含生命週期度量的信號會隨您的生命週期命中而發送。
 
 * **GetVisitorProfile(winJS:getVisitorProfile)**
 
-   傳回最近取得的訪客描述檔。如果尚未提交任何訊號，則傳回`null`。 訪客設定檔會儲存在`SharedPreferences`中，方便您在多次啟動應用程式時存取。
+   傳回最近取得的訪客描述檔。返回 `null` 的下界。 訪問者配置檔案保存在 `SharedPreferences` 可輕鬆訪問多個應用程式。
 
    * 此方法的語法如下：
 
@@ -92,9 +92,9 @@ SDK目前支援多個Adobe Experience Cloud解決方案，包括Analytics、Targ
       ADB.AudienceManager.setDpidAndDpuuid("newDpid", "newDpuuid");
       ```
 
-* **SignalWithData(winJS:signalWithData)**
+* **SignalWithData(winJS:信號與資料)**
 
-   傳送具有特徵的訊號給對象管理，並取得區塊回撥中傳回的相符區段。
+   向受眾管理發送具有特徵的信號，並在塊回調中獲取返回的匹配段。
 
    * 此方法的語法如下：
 

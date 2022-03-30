@@ -1,12 +1,12 @@
 ---
 description: 必須先完成下列必要條件，才能使用贏取連結。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 贏取必要條件
 topic-fix: Metrics
 uuid: a224499a-5a51-4ca5-a37b-06792b774671
 exl-id: 31201bec-e823-47b1-8912-2f8d69cea5be
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%

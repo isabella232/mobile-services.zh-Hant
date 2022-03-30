@@ -1,11 +1,11 @@
 ---
 description: Adobe Mobile 和 Adobe Mobile SDK 可讓您傳送推送訊息給使用者。SDK 也可讓您輕鬆回報因點進推送訊息而開啟您應用程式的使用者。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 推送訊息
 topic-fix: Developer and implementation
 uuid: 729d4010-3733-4dff-b188-ad45bd3e7cc4
 exl-id: 4472e0b9-1d00-4e1a-8653-f3976b74c078
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 100%

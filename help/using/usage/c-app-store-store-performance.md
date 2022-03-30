@@ -1,12 +1,12 @@
 ---
 description: 「App Store 概述」報表可提供應用程式商店量度的快照，包括下載次數、應用程式內購買、App Store 平均評分、下載收入、應用程式內收入、依國家/地區的下載次數、依應用程式商店的下載次數，以及依名稱的應用程式內購買。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 應用程式商店概述報表
 topic-fix: Metrics
 uuid: ac066f31-ec4b-4b67-b839-780c2cd1574e
 exl-id: da8663d6-9da8-440b-b7b8-06ff11e74b9f
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%

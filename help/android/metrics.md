@@ -1,15 +1,15 @@
 ---
 description: 在實施生命週期並連結至疑難排解生命週期資料後，行動資料庫即可自動測量量度和維度。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 生命週期量度
 topic-fix: Developer and implementation
 uuid: a8f3ebac-be3b-4948-82bb-105d46cfff6d
 exl-id: 1e50318d-894c-4039-ba45-71cb9edbc5b5
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -110,49 +110,49 @@ ht-degree: 100%
    以 `[AppName] [BundleVersion]` 格式儲存應用程式名稱和版本。以下是此格式的範例: `myapp 1.1`。
 
    * Analytics 內容資料/目標參數: `a.AppID`
-   * Audience Manager:`c_a_AppID`
+   * Audience Manager: `c_a_AppID`
 
 * **啟動次數**
 
    應用程式啟動或在背景執行的次數。
 
    * Analytics 內容資料/目標參數: `a.Launches`
-   * Audience Manager:`c_a_Launches`
+   * Audience Manager: `c_a_Launches`
 
 * **距首次使用的天數**
 
    自首次執行後的天數。
 
    * Analytics 內容資料/目標參數: `a.DaysSinceFirstUse`
-   * Audience Manager:`c_a_DaysSinceFirstUse`
+   * Audience Manager: `c_a_DaysSinceFirstUse`
 
 * **上次使用間隔天數**
 
    距離上次使用的天數。
 
    * Analytics 內容資料/目標參數: `a.DaysSinceLastUse`
-   * Audience Manager:`c_a_DaysSinceLastUse`
+   * Audience Manager: `c_a_DaysSinceLastUse`
 
 * **小時**
 
    測量應用程式的啟動時數。此量度使用 24 小時數字格式，且用於時間分界，以判斷尖峰使用時間。
 
    * Analytics 內容資料/目標參數: `a.HourOfDay`
-   * Audience Manager:`c_a_HourOfDay`
+   * Audience Manager: `c_a_HourOfDay`
 
 * **星期**
 
    應用程式啟動的工作日數。
 
    * Analytics 內容資料/目標參數: `a.DayOfWeek`
-   * Audience Manager:`c_a_DayOfWeek`
+   * Audience Manager: `c_a_DayOfWeek`
 
 * **作業系統版本**
 
    作業系統版本。
 
    * Analytics 內容資料/目標參數: `a.OSVersion`
-   * Audience Manager:`c_a_OSVersion`
+   * Audience Manager: `c_a_OSVersion`
 
 * **上次升級的間隔天數**
 
@@ -163,7 +163,7 @@ ht-degree: 100%
    >此量度不會自動儲存至 Analytics 變數。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics 內容資料/目標參數: `a.DaysSinceLastUpgrade`
-   * Audience Manager:`c_a_DaysSinceLastUpgrade`
+   * Audience Manager: `c_a_DaysSinceLastUpgrade`
 
 * **上次升級後啟動次數**
 
@@ -174,14 +174,14 @@ ht-degree: 100%
    >此量度不會自動儲存至 Analytics 變數。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics 內容資料/目標參數: `a.LaunchesSinceUpgrade`
-   * Audience Manager:`c_a_LaunchesSinceUpgrade`
+   * Audience Manager: `c_a_LaunchesSinceUpgrade`
 
 * **裝置名稱**
 
    儲存裝置名稱。
 
    * Analytics 內容資料/目標參數: `a.DeviceName`
-   * Audience Manager:`c_a_DeviceName`
+   * Audience Manager: `c_a_DeviceName`
 
 * **電信業者名稱**
 
@@ -192,14 +192,14 @@ ht-degree: 100%
    >此量度不會自動儲存至 Analytics 變數。您必須建立處理規則，將此值複製到 Analytics 變數以進行報告。
 
    * Analytics 內容資料/目標參數: `a.CarrierName`
-   * Audience Manager:`c_a_CarrierName`
+   * Audience Manager: `c_a_CarrierName`
 
 * **解析度**
 
    寬 x 高 (以實際像素表示)。
 
    * Analytics 內容資料/目標參數: `a.Resolution`
-   * Audience Manager:`c_a_Resolution`
+   * Audience Manager: `c_a_Resolution`
 
 ## 其他行動量度和維度 {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 

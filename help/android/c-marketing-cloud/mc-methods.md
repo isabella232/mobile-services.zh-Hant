@@ -1,12 +1,12 @@
 ---
 description: 以下為 Android 資料庫所提供的 Experience Cloud ID 方法。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic-fix: Developer and implementation
 uuid: c5107a7e-273b-4f71-8738-4c603479b24c
 exl-id: 8eb98c3f-c6ef-4593-ad3a-f566f4d4b6a2
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 97%
@@ -23,7 +23,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **公用靜態字串 appendToURL (最後字串URL)**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。您必須安裝 Mobile SDK 4.12 以上版本，才能使用此方法。如需詳細資訊，請參閱Adobe Experience Cloud Identity Service檔案中的[appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) 。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。您必須安裝 Mobile SDK 4.12 以上版本，才能使用此方法。有關詳細資訊，請參見 [將訪問者ID附加到](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) 在Adobe Experience Cloud身份服務文檔中。
 
    >[!IMPORTANT]
    >
@@ -108,7 +108,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       Visitor.syncIdentifier("myIdType", "valueForUser", VisitorID.VisitorIDAuthenticationState.VISITOR_ID_AUTHENTICATION_STATE_LOGGED_OUT);
       ```
 
-* **syncIdentifiers**
+* **sync標識符**
 
    將提供的識別碼同步至 ID 服務。
 

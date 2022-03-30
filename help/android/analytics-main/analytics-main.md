@@ -1,12 +1,12 @@
 ---
 description: 此資訊可協助您將 Android SDK 與 Adobe Analytics 搭配使用。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Analytics 概述
 topic-fix: Developer and implementation
 uuid: cc9fa1d9-bc48-4d03-854a-f7b263580a91
 exl-id: ed9f55e6-f3ab-4c1e-9a2f-1ee67a7b4c03
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 95%
@@ -40,4 +40,4 @@ ht-degree: 95%
 
 AID 有時也稱為追蹤識別碼，是在應用程式沒有設定要使用 MID 時，由 SDK 產生的追蹤碼。此值會在啟動和應用程式更新之間保存在 `SharedPreferences`。如果使用者從裝置上刪除應用程式，然後重新安裝應用程式，或者應用程式開發人員清除了 SharedPreferences，SDK 便會產生新的識別碼。此程序會在 Analytics 報表中產生新使用者。
 
-對於導入 Identity Service 支援 (MID) 的應用程式中的使用者，現有的 AID 值會隨 Analytics 點擊傳送，而 Analytics 點擊會包含 AID 和 MID。對於具有 Identity Service 支援的應用程式中的新使用者，Analytics 要求只會包含 MID。如需識別訪客的詳細資訊，請參閱Adobe Analytics檔案中的[不重複訪客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)。
+對於導入 Identity Service 支援 (MID) 的應用程式中的使用者，現有的 AID 值會隨 Analytics 點擊傳送，而 Analytics 點擊會包含 AID 和 MID。對於具有 Identity Service 支援的應用程式中的新使用者，Analytics 要求只會包含 MID。有關識別訪問者的詳細資訊，請參閱 [獨特訪問者](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) 在Adobe Analytics檔案里。

@@ -1,12 +1,12 @@
 ---
-description: 列出行動資料庫可自動測量的量度和維度。
+description: 列出移動庫可以自動測量的度量和維度。
 keywords: android;資料庫;行動;sdk
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 生命週期量度
 topic-fix: Developer and implementation
 uuid: f958c3ef-1d79-4b30-8966-ef74bd48a5d6
 exl-id: 19572f15-c5df-40fe-9979-3a5bdd581f2b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 84%
@@ -15,16 +15,16 @@ ht-degree: 84%
 
 # 生命週期量度 {#lifecycle-metrics}
 
-列出行動資料庫可自動測量的量度和維度。
+列出移動庫可以自動測量的度量和維度。
 
-如需詳細資訊，請參閱[疑難排解生命週期資料](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)。
+有關詳細資訊，請參見 [排除生命週期資料故障](https://helpx.adobe.com/tw/analytics/kb/troubleshoot-lifecycle-data.html)。
 
 
 ## 生命週期量度和維度 {#section_78F036C4296F4BA3A47C2044F79C86C1}
 
 設定生命週期量度後，量度會在內容資料參數中傳送至 Analytics、隨著每次 mbox 呼叫在參數中傳送至 Target，並以訊號形式傳送至受眾管理。Analytics 和 Target 會使用相同格式，而受眾管理則對每個量度使用不同的首碼。
 
-對於Analytics，系統會自動擷取隨著每個生命週期追蹤呼叫傳送的內容資料，並使用量度或維度回報。 內容中會注明例外。
+對於分析，每次生命週期跟蹤調用時發送的上下文資料將自動捕獲並使用度量或維進行報告。 在內容中記錄了例外。
 
 ## 量度
 
@@ -194,7 +194,7 @@ ht-degree: 84%
 
 ## 其他行動量度和維度 {#section_0B32BBF9CA734103BEDB5E755FFE5B31}
 
-系統會透過下列方法，在行動解決方案變數中擷取下列量度和維度：
+以下度量和維通過以下方法在移動解決方案變數中捕獲：
 
 ### 量度
 
@@ -224,11 +224,11 @@ ht-degree: 84%
 
    由 `trackLocation` 方法填入。
 
-   * Analytics內容資料/目標參數：
+   * 分析上下文資料/目標參數：
 
       * `a.loc.lat.a`
       * `a.loc.lon.a`
-   * Audience Manager特徵：
+   * Audience Manager特性：
 
       * `c_a_loc_lat_a`
       * `c_a_loc_lon_a`
@@ -238,11 +238,11 @@ ht-degree: 84%
 
    由 `trackLocation` 方法填入。
 
-   * Analytics內容資料/目標參數：
+   * 分析上下文資料/目標參數：
 
       * `a.loc.lat.b`
       * `a.loc.lon.b`
-   * Audience Manager特徵：
+   * Audience Manager特性：
 
       * `c_a_loc_lat_b`
       * `c_a_loc_lon_b`
@@ -252,11 +252,11 @@ ht-degree: 84%
 
    由 `trackLocation` 方法填入。
 
-   * Analytics內容資料/目標參數：
+   * 分析上下文資料/目標參數：
 
       * `a.loc.lat.c`
       * `a.loc.lon.c`
-   * Audience Manager特徵：
+   * Audience Manager特性：
 
       * `c_a_loc_lat_c`
       * `c_a_loc_lon_c`
@@ -264,21 +264,21 @@ ht-degree: 84%
 
 * **興趣點名稱**
 
-   當裝置處於定義的POI中時由`trackLocation`方法填入。
+   填充者 `trackLocation` 方法當設備在已定義的POI中時。
 
    * Analytics 內容資料/目標參數: `a.loc.poi`
-   * Audience Manager特徵：`c_a_loc_poi`
+   * Audience Manager特徵： `c_a_loc_poi`
 
 * **至興趣點中心的距離**
 
-   當裝置位於定義的POI內時由`trackLocation`方法填入。
+   填充者 `trackLocation` 方法當設備在已定義的POI內時。
 
    * Analytics 內容資料/目標參數: `a.loc.dist`
-   * Audience Manager特徵：`c_a_loc_dist`
+   * Audience Manager特徵： `c_a_loc_dist`
 
 * **期限值 (轉換變數)**
 
    由 `trackLifetimeValue` 方法填入。
 
-   * Analytics 內容資料/目標參數:  `a.ltv.amount`
-   * Audience Manager特徵：`c_a_ltv_amount`
+   * Analytics 內容資料/目標參數: `a.ltv.amount`
+   * Audience Manager特徵： `c_a_ltv_amount`

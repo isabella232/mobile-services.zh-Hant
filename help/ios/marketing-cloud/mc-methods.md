@@ -1,11 +1,11 @@
 ---
 description: 以下為 iOS 資料庫所提供的 Adobe Experience Platform Identity Service 方法。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: Adobe Experience Platform Identity Service 方法
 topic-fix: Developer and implementation
 uuid: cdd307bc-8b7d-47a8-b77e-00902b9e2968
 exl-id: 82a246fc-f679-4fa5-b9c0-dc909a7e7d93
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 96%
@@ -22,7 +22,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
 
 * **`+`(nullable NSURL `*`)visitorAppendToURL:(nullable NSURL `*`)url;**
 
-   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。如需詳細資訊，請參閱Adobe Experience Cloud Identity Service檔案中的[appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) 。
+   將 Adobe 訪客資料附加至 URL 字串以與 Adobe JavaScript 資料庫搭配使用。若要使用此方法，您必須有 Mobile SDK 4.12 版或更新版本。有關詳細資訊，請參見 [將訪問者ID附加到](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html) 在Adobe Experience Cloud身份服務文檔中。
 
    >[!IMPORTANT]
    >
@@ -96,7 +96,7 @@ SDK 目前可支援多個 Adobe Experience Cloud 解決方案，包括 Analytics
       [ADBMobile visitorSyncIdentifiers:@{@"myIdType":@"valueForUser"}  authenticationState:ADBMobileVisitorAuthenticationStateAuthenticated]; 
       ```
 
-* **visitorSyncIdentifierWithType:identifier:authenticationState:**
+* **visitorSyncIdentifierWithType:identifier:驗證狀態：**
 
    將提供的識別碼類型和值同步至 ID 服務。在 `authState` 中以下列任一值傳遞：
 

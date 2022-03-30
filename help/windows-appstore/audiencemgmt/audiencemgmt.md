@@ -1,10 +1,10 @@
 ---
-description: 可協助您傳送訊號並從Audience Manager中擷取訪客區段的資訊。
-solution: Experience Cloud,Analytics
+description: 幫助您發送信號並從Audience Manager中檢索訪問者段的資訊。
+solution: Experience Cloud Services,Analytics
 title: Audience Manager
 topic-fix: Developer and implementation
 uuid: fadc3296-c17c-4732-9b75-a6fb4d33a282
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 25%
@@ -14,7 +14,7 @@ ht-degree: 25%
 
 # Audience Manager{#audience-manager}
 
-可協助您傳送訊號並從Audience Manager中擷取訪客區段的資訊。
+幫助您發送信號並從Audience Manager中檢索訪問者段的資訊。
 
 ## 其他資訊
 

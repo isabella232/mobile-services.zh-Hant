@@ -1,11 +1,11 @@
 ---
-description: 處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。
-solution: Experience Cloud,Analytics
+description: 處理規則用於將您在上下文資料變數中發送的資料複製到報表的變數、道具和其他變數。
+solution: Experience Cloud Services,Analytics
 title: 處理規則和內容資料
 topic-fix: Developer and implementation
 uuid: ea892228-86f5-4980-acb8-45ae43c6996d
 exl-id: 543201fd-8118-485f-8235-26ec8f9bbb11
-source-git-commit: d1ebb2bbc4742f5288f90a90e977d252f3f30aa3
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 72%
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 # 處理規則與內容資料 {#processing-rules-and-context-data}
 
-處理規則可用來將您在內容資料變數中傳送的資料複製到eVar、prop和其他變數以供報告。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+處理規則用於將您在上下文資料變數中發送的資料複製到報表的變數、道具和其他變數。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
 操作處理規則時，請記住以下資訊:
 
@@ -28,7 +28,7 @@ ht-degree: 72%
 
 * 內容資料變數在處理規則介面中按字母排序，讓您快速了解哪些變數在同一個命名空間中。
 
-   避免使用eVar或prop編號來命名內容資料索引鍵：
+   避免使用eVar或屬性號命名上下文資料鍵：
 
    ```js
    "eVar1":"jimbo"

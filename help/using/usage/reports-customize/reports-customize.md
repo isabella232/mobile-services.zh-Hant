@@ -1,12 +1,12 @@
 ---
 description: 此資訊能協助您瞭解及自訂內建的報表。
 keywords: 行動
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 自訂報表
 topic-fix: Reports,Metrics
 uuid: 39ba9af3-eaee-44b9-bea4-c8f43a0d2a6c
 exl-id: 287b12fb-96f8-4fa9-a4f4-7325e30e1797
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%

@@ -1,11 +1,11 @@
 ---
 description: 自 iOS 10 開始，Apple 可讓您建立獨立延伸功能，該功能無須容納應用程式即可發佈。有了此延伸功能，您便不需要應用程式群組，因為沒有要共用資料的容納應用程式。
-solution: Experience Cloud,Analytics
+solution: Experience Cloud Services,Analytics
 title: 獨立延伸功能實施
 topic-fix: Developer and implementation
 uuid: 9b47f082-b78f-4611-968d-014c32ede6bc
 exl-id: b51247b6-c4ba-4a00-9ba0-1824450ac067
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%

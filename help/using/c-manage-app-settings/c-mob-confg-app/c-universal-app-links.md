@@ -1,18 +1,18 @@
 ---
-description: 在應用程式和網站內連結對於維持使用者體驗非常重要。 了解通用連結和應用程式連結的運作方式，以及兩者之間的差異。
-solution: Experience Cloud,Analytics
+description: 在應用和網站內連結對保持用戶體驗非常重要。 瞭解通用連結和應用程式連結的工作原理以及它們之間的差異。
+solution: Experience Cloud Services,Analytics
 title: 通用連結和應用程式連結指南
 topic-fix: Metrics
 uuid: 8d6441dc-4307-4454-95ea-d77ec796f918
 exl-id: 6613189f-7a14-4066-89e9-996d4fe7f128
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 96%
 
 ---
 
-# 通用連結與應用程式連結的比較：它們如何運作？ {#universal-links-and-app-links}
+# 通用連結與應用連結：它們如何工作？ {#universal-links-and-app-links}
 
 通用連結 (iOS) 和應用程式連結 (Android) 可讓您連線至 iOS 或 Android 應用程式中的深層連結。
 
