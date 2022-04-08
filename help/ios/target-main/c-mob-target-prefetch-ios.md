@@ -3,9 +3,9 @@ description: Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取
 title: iOS 中的預先擷取選件內容
 uuid: fef58042-65e2-4579-b8f1-d21554d2af57
 exl-id: 64d43be7-6bd1-4657-8154-5b2c1cbbf42b
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 5d44c09a18a557e934628533c4eefaa9e26aba42
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '707'
 ht-degree: 85%
 
 ---
@@ -14,11 +14,7 @@ ht-degree: 85%
 
 Adobe Target 預先擷取功能使用 iOS Mobile SDK，透過快取伺服器回應，盡量以最少次數擷取提供項目內容。
 
->[!IMPORTANT]
->
->iOS 版 Mobile SDK 中的預先擷取功能不支援 Adobe Target 中的自動指定目標、自動分配以及自動個人化活動類型。
-
-此程式可縮短載入時間，避免多個網路呼叫，並允許通知Adobe Target行動應用程式使用者造訪哪個mbox。 預先擷取呼叫期間，會擷取並快取所有內容，且此內容將從快取中擷取，以供包含指定mbox名稱之快取內容的所有未來呼叫使用。
+此過程減少了負載時間，防止了多個網路呼叫，並允許通知Adobe Target移動應用用戶訪問了哪個框。 在預回遷調用期間，將檢索並快取所有內容，並且將從快取中檢索此內容，以便將來所有包含指定框名稱的快取內容的調用。
 
 預先擷取內容不會在跨啟動之間持續有效。只要應用程式仍然存在，或直到呼叫 `clearPrefetchCache()` 方法為止，則會快取預先擷取內容。
 
@@ -154,13 +150,13 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 * **`orderParameters`**
 
-   包含order參數鍵值值組的字典。
+   包含順序參數的鍵值對的字典。
 
    * **類型**: NSDictionary*
 
 * **`productParameters`**
 
-   包含產品參數索引鍵值組的字典。
+   包含產品參數的鍵值對的字典。
 
    * **類型**: NSDictionary*
 
@@ -176,13 +172,13 @@ if (MobileConfig.getInstance().mobileUsingTarget()){
 
 * **`mboxParameters`**
 
-   代表您要擷取之位置/mbox之名稱的NSString值。
+   表示要檢索的位置/框名稱的NSString值。
 
    * **類型**: NSString*
 
 * **`defaultContent`**
 
-   如果Target伺服器無法連線，則會傳回的預設內容。
+   如果目標伺服器無法訪問，將返回預設內容。
 
    * **類型**: NSString*
 
