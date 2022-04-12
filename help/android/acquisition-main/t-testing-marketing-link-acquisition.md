@@ -6,7 +6,7 @@ title: 測試行銷連結贏取
 topic-fix: Developer and implementation
 uuid: d0933dcc-8fc3-4f60-987f-7a54559aacf5
 exl-id: 86fdaef7-5b6c-4e9d-a470-df66c96f2e9d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 5562c974eb921538209516c0e295612de1865af6
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
@@ -127,14 +127,14 @@ ht-degree: 100%
 
 安裝 Java 工具：
 
-1. 下載 [`acquistionTester.zip`](../assets/acquisitionTester.zip) 檔案。
+1. 下載 [`acquisitionTester.zip`](../assets/acquisitionTester.zip) 檔案。
 1. 解壓縮 .jar 檔案。
 
    您可以在命令列上執行 .jar 檔案。
 
 例如：
 
-```
+```sh
 java -jar acquisitionTester.jar -a com.adobe.test -r com.adobe.test.ReferrerReceiver -l "https://c00.adobe.com/v3/appid/start?a_i_id=123456&a_g_id=com.adobe.test&a_dd=i&ctxa.referrer.campaign.name=name&ctxa.referrer.campaign.trackingcode=1234
 ```
 
