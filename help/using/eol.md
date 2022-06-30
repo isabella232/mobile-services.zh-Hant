@@ -1,15 +1,15 @@
 ---
-title: AdobeMobile服務停產常見問題
+title: Adobe移動服務生命週期結束常見問題
 description: 獲取有關Adobe移動服務產品壽命終止公告的常見問題的答案。
 exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: a6dd74b8df771249e3c50de93f44639cfbfe7e13
+source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '421'
 ht-degree: 2%
 
 ---
 
-# AdobeMobile服務停產常見問題
+# Adobe移動服務生命週期結束常見問題
 
 Adobe移動服務的終止日期是 **2022年12月31日**。
 
@@ -38,7 +38,7 @@ Adobe移動服務的終止日期是 **2022年12月31日**。
 Adobe根據組織的使用案例提供三條過渡路徑。
 
 1. **應用內消息傳遞和推送通知**:Adobe可以將消息傳遞工作流轉換到Adobe Journey Optimizer。 此產品可幫助組織優化和個性化整個客戶旅程中的體驗，包括移動消息傳遞。
-1. **獲取和深度連結**:通過AdobeExchange Premier Partners計畫提供收購和深度連結。 這些合作夥伴包括Adjust、AppsFlyer和Branch，它們提供廣泛的收購能力。 Adobe的合作夥伴團隊可以進行適當的介紹，以確保您找到最適合您需要的解決方案。
+1. **獲取和深度連結**:通過AdobeExchange Premier Partners計畫提供收購和深度連結。 Adobe的合作夥伴團隊可以進行適當的介紹，以確保您找到最適合您需要的解決方案。
 1. **位置服務**:Places Service提供免費的地理位置功能。 查看 [Places服務文檔](https://experienceleague.adobe.com/docs/places/using/home.html)。
 
 ## 如果有問題，我可以去哪？
