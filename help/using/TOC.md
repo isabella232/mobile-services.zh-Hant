@@ -5,8 +5,8 @@ breadcrumb-title: Mobile Services 指南
 user-guide-description: Mobile Services 是端對端解決方案，可協助您取得並吸引行動應用程式使用者，並將其體驗最佳化。
 source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 # Mobile Services 指南 {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [終止公告](eol.md)
++ [報廢公告](eol.md)
 + 快速入門 {#get-started-ug}
    + [快速入門](gs/gs.md)
    + [角色與權限](gs/c-mob-roles-and-permissions.md)
@@ -47,7 +47,7 @@ ht-degree: 99%
       + [啟用推送訊息的必要條件](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/prerequisites-push-messaging.md)
       + [設定應用程式以使用 APNS 或 FCM](c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)
    + [管理您的應用程式](c-manage-app-settings/c-mob-manage-app.md)
-+ 報表 {#reports-ug}
++ 報告 {#reports-ug}
    + [報表概述](usage/usage.md)
    + [概述報表](usage/usage-overview.md)
    + [使用者與工作階段報表](usage/users-sessions.md)
