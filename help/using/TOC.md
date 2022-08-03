@@ -5,8 +5,8 @@ breadcrumb-title: Mobile Services 指南
 user-guide-description: Mobile Services 是端對端解決方案，可協助您取得並吸引行動應用程式使用者，並將其體驗最佳化。
 source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '343'
+ht-degree: 99%
 
 ---
 
