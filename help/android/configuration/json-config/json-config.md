@@ -5,9 +5,9 @@ title: ADBMobile JSON 設定
 topic-fix: Developer and implementation
 uuid: 1decf605-7bc3-4e73-ad52-1ecd5821599e
 exl-id: 652aeb05-b052-448d-98c8-d513d050a6f5
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1556'
 ht-degree: 100%
 
 ---
@@ -80,20 +80,6 @@ ht-degree: 100%
       >[!IMPORTANT]
       >
       >Target 必須有此變數。
-
-* **coopUnsafe**
-   * 最低 SDK 版本：4.16.1
-   * `marketingCloud` 物件的布林值屬性一旦設為 `true`，就會導致裝置退出 Experience Cloud 的 Device Co-Op。
-   * 預設值為 `false`。
-   * **唯有**&#x200B;以 Device Co-op 佈建的客戶，才會使用此設定。
-
-   若 Device Co-op 成員要求將此值設為 `true`，您需要與 Co-op 團隊合作，為您的 Device Co-op 帳戶申請封鎖名單標幟。沒有自助式路徑可供啟用這些標幟。
-
-   請記住以下資訊：
-
-   * `coopUnsafe` 設為 `true` 時，`coop_unsafe=1` 一律會附加至 Audience Manager 和訪客 ID 點擊。
-   * 如果啟用 Analytics 伺服器端轉送至 Audience Manager，您也會看到 `coop_unsafe=1` Analytics 點擊。
-
 
 * **environmentId**
    * 最低 SDK 版本：4.14

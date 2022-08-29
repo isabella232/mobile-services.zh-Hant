@@ -2,10 +2,9 @@
 audience: end-user
 user-guide-title: Mobile Services iOS 指南
 breadcrumb-title: iOS指南
-translation-type: tm+mt
-source-git-commit: b9ee49ba26d4726b1f97ef36f5c2e9923361b1ee
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 99%
 
 ---
@@ -15,10 +14,10 @@ ht-degree: 99%
 
 + [適用於 Experience Cloud 解決方案的 iOS SDK 4.x](overview.md)
 + [發行說明](rel-notes.md)
-+ 入門 {#getting-started-ios}
++ 快速入門 {#getting-started-ios}
    + [快速入門概述](getting-started/getting-started.md)
    + [開始之前](getting-started/requirements.md)
-   + [核心實施與生命週期](getting-started/dev-qs.md)
+   + [核心實作與生命週期。](getting-started/dev-qs.md)
    + [處理規則與內容資料](getting-started/proc-rules.md)
    + [Swift 整合](getting-started/swift-integration.md)
    + [移轉至 4.x iOS 資料庫](getting-started/migration-v3.md)
@@ -35,7 +34,7 @@ ht-degree: 99%
    + [追蹤應用程式狀態](analytics-main/states.md)
    + [追蹤應用程式動作](analytics-main/actions.md)
    + [追蹤應用程式當機](analytics-main/crashes.md)
-   + [計時動作](analytics-main/timed-actions.md)
+   + [計時動作 ](analytics-main/timed-actions.md)
    + [訪客期限值](analytics-main/lifetime-value.md)
    + Products 變數 {#products-variable}
       + [Products 變數](analytics-main/products/products.md)
@@ -46,10 +45,10 @@ ht-degree: 99%
       + [回傳概述](analytics-main/postback/postback.md)
       + [回傳範例](analytics-main/postback/postback-example.md)
       + [PII 回傳](analytics-main/postback/c-pii-postbacks.md)
-   + [Analytics 方法](analytics-main/analytics-methods.md)
+   + [Analytics 方法 ](analytics-main/analytics-methods.md)
 + 贏取 {#acquisition-ios}
    + [贏取概述](acquisition-main/acquisition-main.md)
-   + [行動應用程式贏取](acquisition-main/acquisition.md)
+   + [行動應用程式贏取 ](acquisition-main/acquisition.md)
    + [贏取方法](acquisition-main/c-acquisition-methods.md)
    + 追蹤深層連結 {#tracking-deep-links}
       + [追蹤深層連結](acquisition-main/tracking-deep-links/tracking-deep-links.md)
@@ -81,7 +80,6 @@ ht-degree: 99%
    + [Experience Cloud 概述](marketing-cloud/marketing-cloud.md)
    + [Experience Cloud ID](marketing-cloud/mcvid.md)
    + [Adobe Experience Platform Identity Service 方法](marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](marketing-cloud/t-mob-mc-device-coop-ios-.md)
 + [Audience Manager 方法](amm/aam-methods.md)
 + 使用 tvOS 實施 Apple TV {#apple-tv-implementation-tvos-ios}
    + [使用 tvOS 實施 Apple TV](apple-tv-implementation-tvos/apple-tv-implementation-tvos.md)

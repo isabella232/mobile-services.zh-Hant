@@ -2,10 +2,9 @@
 audience: end-user
 user-guide-title: Mobile Services Android 指南
 breadcrumb-title: Android指南
-translation-type: tm+mt
-source-git-commit: 4c2a255b343128d2904530279751767e7f99a10a
+source-git-commit: 78b7a623a7811cf0ede789c74b3ca7a80372c9f4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 99%
 
 ---
@@ -15,10 +14,10 @@ ht-degree: 99%
 
 + [適用於 Experience Cloud 解決方案的 Android SDK 4.x](overview.md)
 + [發行說明](rel-notes.md)
-+ 入門{#getting-started-android}
-   + [入門](getting-started/getting-started.md)
++ 快速入門{#getting-started-android}
+   + [快速入門](getting-started/getting-started.md)
    + [開始之前](getting-started/requirements.md)
-   + [核心實施與生命週期](getting-started/dev-qs.md)
+   + [核心實作與生命週期。](getting-started/dev-qs.md)
    + [處理規則與內容資料](getting-started/proc-rules.md)
    + [移轉至 Android 4.x 資料庫](getting-started/migration-v3.md)
 + 設定{#configuration-android}
@@ -33,7 +32,7 @@ ht-degree: 99%
    + [追蹤應用程式狀態](analytics-main/states.md)
    + [追蹤應用程式動作](analytics-main/actions.md)
    + [追蹤應用程式當機](analytics-main/crashes.md)
-   + [計時動作](analytics-main/timed-actions.md)
+   + [計時動作 ](analytics-main/timed-actions.md)
    + [訪客期限值](analytics-main/lifetime-value.md)
    + Products 變數{#products-variable}
       + [Products 變數](analytics-main/products/products.md)
@@ -44,10 +43,10 @@ ht-degree: 99%
       + [回傳概述](analytics-main/postbacks/postbacks.md)
       + [回傳範例](analytics-main/postbacks/postback-example.md)
       + [PII 回傳](analytics-main/postbacks/c-pii-postbacks.md)
-   + [Analytics 方法](analytics-main/analytics-methods.md)
+   + [Analytics 方法 ](analytics-main/analytics-methods.md)
 + 贏取{#acquisition-android}
    + [贏取概述](acquisition-main/acquisition-main-android.md)
-   + [行動應用程式贏取](acquisition-main/acquisition.md)
+   + [行動應用程式贏取 ](acquisition-main/acquisition.md)
    + [贏取方法](acquisition-main/acquisition-methods.md)
    + 追蹤深層連結{#tracking-deep-links}
       + [追蹤深層連結](acquisition-main/tracking-deep-links/tracking-deep-links.md)
@@ -80,7 +79,6 @@ ht-degree: 99%
    + [Experience Cloud 概述](c-marketing-cloud/c-marketing-cloud.md)
    + [Experience Cloud ID 設定](c-marketing-cloud/mcvid.md)
    + [Adobe Experience Platform Identity Service 方法](c-marketing-cloud/mc-methods.md)
-   + [Experience Cloud Device Co-op](c-marketing-cloud/t-mob-mc-device-coop-android-.md)
 + Audience Manager{#audience-manager-android}
    + [Audience Manager 概述](audience-manager/audience-manager.md)
    + [Audience Manager 設定](audience-manager/audiencemgmt.md)
