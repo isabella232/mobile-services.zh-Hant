@@ -6,9 +6,9 @@ title: 快速入門
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1300'
 ht-degree: 97%
 
 ---
@@ -111,7 +111,7 @@ Adobe Mobile Services 提供使用者贏取工作流程，包括贏取追蹤和�
 
 在&#x200B;*最佳化*&#x200B;中，您可以盡可能改善轉換情形 (訂閱、交易、廣告收入等)，並提升客戶保留率。盡可能改善使用者在應用程式中的體驗，可協助您將內容個人化，以實現最大的投資報酬率和轉換率。
 
-有關測試和Adobe Target的詳細資訊，請參見 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 文檔。
+如需有關測試和Adobe Target的詳細資訊，請參閱 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 檔案。
 
 ### 地理定位
 
@@ -119,13 +119,9 @@ Adobe Mobile Services 提供使用者贏取工作流程，包括贏取追蹤和�
 
 現在，適用於行動應用程式的 Adobe Target 已可充份運用 Adobe Analytics 提供的增強型細分與報告功能。這表示 Adobe Target 可充分運用 Analytics 中所有的關鍵應用程式量度，即利用這些量度進行目標定位和個人化；此外，還能更深入地報告成功的測試，讓行銷人員更瞭解這些「假設性」的問題—這些問題的答案，或許可讓應用程式行銷人員免於承受出示應用程式投資回報的壓力。應用程式整合後的 Analytics/Target 造就了統合的優惠方案，這可說是目前市場上最穩健的應用程式參與解決方案。
 
-如需有關位置的詳細資訊，請參閱下列內容:
+如需有關位置的詳細資訊，請參閱 [位置](/help/using/location/c-location-overview.md).
 
-* [Mobile Services 使用者指南中的位置](/help/using/location/c-location-overview.md)
-* [Android SDK 指南中的位置一節](/help/android/location/location.md)
-* [iOS SDK 指南中的位置一節](/help/ios/location/location.md)
-
-## AdobeMobileSDK {#mobile-services-sdk}
+## Adobe行動SDK {#mobile-services-sdk}
 
 Adobe 提供端對端行動行銷解決方案，可提升客戶在所有行動領域的參與率。只需單一 SDK，您即可存取 Adobe Analytics、Adobe Campaign 和 Adobe Audience Manager 的功能，管理多個不同 SDK 的技術成本因此得以降低。
 
@@ -150,12 +146,10 @@ Adobe Mobile SDK 提供下列功能：
 * 整合
 
    * 單一 SDK 適用於多種解決方案 (Analytics、Campaign 和 Audience Manager)，可縮短開發人員的實施時間並減輕其工作量。
-   * 收集「基線」應用程式生命週期度量只需一行代碼。
+   * 收集「基準」應用程式生命週期量度只需要一行程式碼。
    * 隨著您的行動策略漸趨成熟，您將可輕鬆啟用 Adobe Experience Cloud 功能，以取得、分析使用者和與其互動。
 
 * 快速精巧
 
    * 資料傳送至 Adobe 伺服器和第三方系統的裝置處理負載得以降到最低。
    * 資源耗用量低，提交至應用程式商店的應用程式套件得以盡可能縮小。
-
-如需 Adobe Mobile SDK 的詳細資訊，請參閱[適用於 Experience 解決方案的 Android SDK 4.x](/help/android/overview.md) 和[適用於 Experience Cloud 解決方案的 iOS SDK 4.x](/help/ios/overview.md)。

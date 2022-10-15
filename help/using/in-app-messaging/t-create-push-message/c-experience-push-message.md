@@ -6,10 +6,10 @@ title: 體驗  推送訊息
 topic-fix: Metrics
 uuid: 1a8baf3e-9fea-452c-b0fc-4ba8ac270861
 exl-id: 9158487e-6ac5-4f17-a8ff-15de0360ab60
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 95%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 100%
       >[!IMPORTANT]
       >
       >請記住以下資訊：
+      >
       >* 傳送至較舊版本的豐富推送訊息仍會如期傳送，但只會顯示文字。
       >* 目前不支援監看功能。
 
@@ -75,12 +76,7 @@ ht-degree: 100%
    * 僅限 HTTPS
 
 * **大小調整**
-   * 影像須為 2:1 格式，否則將會被裁切。
-
-如需設定豐富推送通知的詳細資訊，請參閱下列內容：
-
-* [在 Android 中接收推送通知](/help/android/messaging-main/push-messaging/c-set-up-rich-push-notif-android.md)
-* [在 iOS 中接收豐富推送通知](/help/ios/messaging-main/push-messaging/c-set-up-rich-push-notif-ios.md)
+   * 影像必須為2:1格式，否則會被裁切。
 
 若要在「體驗」頁面上設定推送訊息：
 
@@ -88,7 +84,7 @@ ht-degree: 100%
 
    * **[!UICONTROL 裝載：資料]**
 
-      在 JSON 提供自訂的推送裝載，並會透過推送或本機通知傳送至應用程式。Android 和 iOS 的上限為 4KB。
+      在JSON中提供自訂推送裝載，並透過推送或本機通知傳送至應用程式。 Android 和 iOS 的上限為 4KB。
 
    * **[!UICONTROL Apple 選項：類別]**
 
@@ -102,7 +98,7 @@ ht-degree: 100%
 
       選取此選項，以便在訊息到達時，iOS 會在背景喚醒應用程式，並允許應用程式根據訊息裝載執行代碼。如需相關資訊，請參閱 *iOS Developer Library* 中的 [Apple 推播通知服務 (Apple Push Notification Service)](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html#//apple_ref/doc/uid/TP40008194-CH8-SW1)。
 
-1. (選用) 按下列圖示即可預覽訊息版面：
+2. (選用) 按下列圖示即可預覽訊息版面：
 
    * **[!UICONTROL x 摘要]**
 
@@ -125,11 +121,11 @@ ht-degree: 100%
       若要預覽訊息在使用者平板電腦上的顯示效果，請按一下 ![平板電腦圖示](assets/icon_tablet.png)。
    在預覽窗格底部，您可以檢視上一步驟所選對象的說明。
 
-1. (**選用**) 按一下&#x200B;**[!UICONTROL 測試]**&#x200B;推送您的訊息至指定裝置，以用於進行測試。
-1. 選取服務並輸入至少一個想要推送訊息的裝置之推送代號。
+3. (**選用**) 按一下&#x200B;**[!UICONTROL 測試]**&#x200B;推送您的訊息至指定裝置，以用於進行測試。
+4. 選取服務並輸入至少一個想要推送訊息的裝置之推送代號。
 
    以逗號分隔的清單指定代號，即可推送訊息至一個以上裝置。
 
-1. 設定訊息的排程選項。
+5. 設定訊息的排程選項。
 
    如需詳細資訊，請參閱[排程：推送訊息](/help/using/in-app-messaging/t-create-push-message/c-schedule-push-message.md)。

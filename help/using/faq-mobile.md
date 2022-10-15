@@ -6,9 +6,9 @@ title: 常見問答
 topic-fix: Metrics
 uuid: 62a9241c-2ada-483a-a594-b023916cb0b6
 exl-id: d7dfc36e-56f0-498a-ad50-93fee90cb6ff
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1013'
 ht-degree: 96%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 ### 我應該使用什麼 SDK 版本?
 
-我們當前的SDK位於4.11版。有關詳細資訊，請參見 [發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)。
+我們目前的SDK為4.11版。如需詳細資訊，請參閱 [發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant).
 
 ### 可以在哪裡下載 SDK?
 
@@ -41,15 +41,15 @@ Adobe Mobile SDK 使用標準 iOS 和 Android 網路堆疊。針對 iOS，SDK �
 
 ### 生命週期量度是什麼？
 
-生命週期量度是「即時可用」量度，當 SDK 首次實作於您的應用程式中時會自動收集這些量度。如需詳細資訊，請參閱[生命週期量度 (Android)](/help/android/metrics.md) 和[生命週期量度 (iOS)](/help/ios/metrics.md)。
+生命週期量度是「即時可用」量度，當 SDK 首次實作於您的應用程式中時會自動收集這些量度。
 
 ### 如何疑難排解處理規則?
 
-請參閱 [處理規則提示和技巧](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) 在Adobe Analytics檔案里。
+請參閱 [處理規則提示與秘訣](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) 在Adobe Analytics檔案中。
 
 ### 可以將我的分析資料傳送至多個報表套裝嗎？
 
-是。SDK 能傳送資料至多個 Adobe Analytics 報表套裝。若要使用影像要求來在多個報表套裝中擷取資料，請在 檔案內&#x200B;**[!UICONTROL 分析]**&#x200B;區段下的 **[!UICONTROL rsids 欄位中設定多個報表套裝 ID，並以逗號分隔且請勿包含空格。]**`ADBMobileConfig.json`如需詳細資訊，請參閱 [ADBMobile JSON Config](/help/ios/configuration/json-config/json-config.md)。
+是。SDK 能傳送資料至多個 Adobe Analytics 報表套裝。若要使用影像要求來在多個報表套裝中擷取資料，請在 檔案內&#x200B;**[!UICONTROL 分析]**&#x200B;區段下的 **[!UICONTROL rsids 欄位中設定多個報表套裝 ID，並以逗號分隔且請勿包含空格。]**`ADBMobileConfig.json`
 
 ### Mobile 造訪次數與啟動次數有何不同？
 

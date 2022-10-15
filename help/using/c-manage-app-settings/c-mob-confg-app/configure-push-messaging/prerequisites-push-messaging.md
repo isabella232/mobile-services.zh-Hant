@@ -6,9 +6,9 @@ title: 啟用推送訊息的必要條件
 topic-fix: Metrics
 uuid: 194e6e07-b794-4152-a838-a4125c3292d4
 exl-id: 543155a4-f687-48a6-8690-5c8da8490c62
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '618'
 ht-degree: 95%
 
 ---
@@ -29,10 +29,7 @@ ht-degree: 95%
 
 * **設定推送服務**
 
-   您必須在行動 SDK 中設定推送服務。如需詳細資訊，請參閱下列內容：
-
-   * [Android 中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
-   * [iOS 中的推播訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
+   您必須在行動 SDK 中設定推送服務。
 
 ## 使用 Adobe ID 登入 Mobile 核心服務
 
@@ -54,7 +51,7 @@ ht-degree: 95%
 
 每位使用者必須從 Experience Cloud 組織連結 Analytics 解決方案帳戶。
 
-1. 登錄到 [Adobe Experience Cloud](https://experience.adobe.com) 和Adobe ID。
+1. 登入 [Adobe Experience Cloud](https://experience.adobe.com) 和Adobe ID。
 
 1. 在右上角選取 Analytics 公司名稱。
 
@@ -64,7 +61,7 @@ ht-degree: 95%
 
    Adobe ID 現在已連結至您的 Analytics 帳戶、公司以及登入憑證。
 
-有關詳細資訊，請參見 [Experience Cloud中的組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant) 中的「Experience Cloud中心介面元件」。
+如需詳細資訊，請參閱 [Experience Cloud中的組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant) 中的「Experience Cloud中心介面元件」指南。
 
 ## 在 Mobile 使用者介面中設定推送服務和 SDK ID 服務
 

@@ -6,9 +6,9 @@ title: 配置贏取
 topic-fix: Metrics
 uuid: e996e43e-8a77-47a3-a6fb-53f676f92bef
 exl-id: 3a12dfab-70d0-41e6-8d4e-5aba21bb8606
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 100%
 
 1. 下載並在應用程式中使用新的 SDK 設定檔案。
 
-   您已成功配置 **iOS** 贏取選項。若要在 **Android** 上啟用贏取，請完成[追蹤行動贏取](/help/android/acquisition-main/acquisition.md)中的步驟。
+   您已成功配置 **iOS** 贏取選項。

@@ -3,9 +3,9 @@ description: 回傳可讓您將 Adobe Mobile 所收集的資料傳送至個別�
 title: 設定回傳
 uuid: a026575c-057b-4868-b6c8-9514cbc32b4d
 exl-id: 99b27f16-303a-4853-bfdb-2066a53867bf
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '421'
 ht-degree: 100%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->若要使用回傳功能，您必須安裝 4.6 版或更新版本的 SDK。如需詳細資訊，請參閱 [Android - 回傳](/help/android/analytics-main/postbacks/postbacks.md)或 [iOS - 回傳](/help/ios/analytics-main/postback/postback.md)。
+>若要使用回傳功能，您必須安裝 4.6 版或更新版本的 SDK。
 
 1. 按一下所需應用程式的名稱，前往「管理應用程式設定」頁面，然後按一下右上方的&#x200B;****「管理回傳」。
-1. 按一下&#x200B;**[!UICONTROL 建立回傳]**。
-1. 在欄位中輸入下列資訊：
+2. 按一下&#x200B;**[!UICONTROL 建立回傳]**。
+3. 在欄位中輸入下列資訊：
 
    * **[!UICONTROL 回傳類型]**
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
    * **[!UICONTROL URL]**
 
-      指定有效的端點 URL (包含 GET 要求需要的合適查詢參數)。您可從傳送資料的目地方 (廣告伺服器或您自己的端點) 取得此 URL。例如 `https://my.server.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
+      指定有效的端點 URL (包含 GET 要求需要的合適查詢參數)。您可從傳送資料的目地方 (廣告伺服器或您自己的端點) 取得此 URL。例如 `https://example.com/?user=bob&amp;zip=90210&amp;c16=4.6.0-iOS&amp;c27=cln,132`.
 
    * **[!UICONTROL 內容變數]**
 
@@ -53,7 +53,7 @@ ht-degree: 100%
    * **[!UICONTROL 特徵]**
    指定可以在觸發時查看訊息的使用者，選項包括&#x200B;**[!UICONTROL 工作階段長度]**、**[!UICONTROL 首次啟動日期]**&#x200B;和&#x200B;**[!UICONTROL 應用程式 ID]**。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**&#x200B;建立回傳，並將其新增至&#x200B;**[!UICONTROL 「管理回傳」]**&#x200B;清單。
+4. 按一下&#x200B;**[!UICONTROL 「儲存」]**&#x200B;建立回傳，並將其新增至&#x200B;**[!UICONTROL 「管理回傳」]**&#x200B;清單。
 
    若要日後再啟用回傳，請執行下列任一項動作：
 

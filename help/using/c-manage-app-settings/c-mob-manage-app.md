@@ -6,10 +6,10 @@ title: 管理您的應用程式
 topic-fix: Metrics
 uuid: 0cc356c3-8457-40a7-8c97-7cbc68a5dc0c
 exl-id: 599fef94-c188-47f5-b9d6-25a7c8cb07bc
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 91%
+source-wordcount: '1001'
+ht-degree: 92%
 
 ---
 
@@ -23,11 +23,6 @@ ht-degree: 91%
 
    每個應用程式都包含用於追蹤購物車和購物活動的變數和量度。部分購物資訊無法由處理規則來處理，因此 SDK 會公開特殊的 `"&&products"` 上下文資料。例如，您可以有購物車新增次數、購物車移除次數、結帳次數、訂單數量等變數。內容資料必須對應至 Adobe Analytics 中的資料。如果以簡單的內容資料映射填入此變數，則這是映射至它的關鍵值。如果要依 Analytics 管理工具中更複雜的規則來填入變數，請保留空白。
 
-   如需這些變數和量度的詳細資訊，請參閱下列內容:
-
-   * [Android 中的產品變數](/help/android/analytics-main/products/products.md)
-   * [iOS 中的產品變數](/help/ios/analytics-main/products/products.md)
-
 * **自訂變數**
 
    「自訂變數」頁面會顯示為報表套裝 (此套裝包含您的應用程式資料) 設定的所有自訂 Analytics 變數。您可以在此頁面上啟用其他變數，並將內容資料映射至 Analytics 變數。
@@ -36,7 +31,7 @@ ht-degree: 91%
 
 按一下&#x200B;**[!UICONTROL 「管理應用程式設定]** > **[!UICONTROL 管理變數和量度]** > **[!UICONTROL 自訂變數」]**。
 
-這些映射調用的API與 [處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) 在Adobe Analytics。
+這些對應會呼叫與 [處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) 在Adobe Analytics中使用。
 
 ![上下文資料對應](assets/custom_data_content.png)
 
@@ -46,8 +41,8 @@ ht-degree: 91%
 
    為追蹤呼叫 (或點擊) 中的屬性設定值時，該值僅適用於該呼叫。
 
-* 的 **[!UICONTROL 自定義變數]** （或eVars）也回答了「哪一個？」 但是，eVar值不僅可應用於發送到的命中，也可應用於隨後命中發送的變數和度量，直到值過期或設定新值為止。
-* **[!UICONTROL 自訂清單變數 (或是多重值變數)]** 除了可允許您在單一點擊上擷取多個值外，其他行為與變數相同。有關詳細資訊，請參見 [清單](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en) Adobe Analytics檔案中的變數。
+* 此 **[!UICONTROL 自訂變數]** （或eVar）也可回答「哪一個？」問題。 不過，eVar值不僅可套用至傳入的點擊，也可套用至後續點擊中傳送的變數和量度，直到值過期或設定新值為止。
+* **[!UICONTROL 自訂清單變數 (或是多重值變數)]** 除了可允許您在單一點擊上擷取多個值外，其他行為與變數相同。如需詳細資訊，請參閱 [清單](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=zh-Hant) 變數。
 
 當下列對應在 Mobile Services 中建立，就會顯示在 Analytics 中。
 

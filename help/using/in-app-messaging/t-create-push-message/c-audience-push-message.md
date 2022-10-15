@@ -6,9 +6,9 @@ title: 對象  定義和設定推送訊息的對象區段
 topic-fix: Metrics
 uuid: efd410e7-3b6c-4cf4-a26f-b11688adc491
 exl-id: d1062a76-2e72-4649-8497-58617a7a47cb
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '958'
 ht-degree: 98%
 
 ---
@@ -85,11 +85,6 @@ ht-degree: 98%
 
    * 即使裝置具備有效的裝置代號，除非 Adobe Analytics 已設定選擇加入的旗標，否則訊息不會推送至裝置。
 
-   * 如需疑難排解推送訊息的詳細資料，請參閱下列內容：
-
-      * [iOS 中的推播訊息](/help/ios/messaging-main/push-messaging/push-messaging.md)
-      * [Android 中的推播訊息](/help/android/messaging-main/push-messaging/push-messaging.md)
-
 2. 在下列欄位輸入資訊：
 
    * **[!UICONTROL 期間為]**
@@ -106,7 +101,7 @@ ht-degree: 98%
 
    * **[!UICONTROL Analytics 區段]**
 
-      從下拉式清單中選取現有的 Adobe Analytics 區段。有關詳細資訊，請參見 [段生成器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) 在Adobe Analytics檔案里。
+      從下拉式清單中選取現有的 Adobe Analytics 區段。如需詳細資訊，請參閱 [區段產生器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) 在Adobe Analytics檔案中。
 
    * **[!UICONTROL 自訂區段]**
 

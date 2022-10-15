@@ -1,12 +1,12 @@
 ---
-description: '在「管理應用程式設定」頁面，您可以進行下列類型的變更 '
+description: 在「管理應用程式設定」頁面，您可以進行下列類型的變更
 title: 設定您的應用程式
 uuid: c088e12d-73b6-40c4-b8cc-ec3bb3d3aa4a
 exl-id: 52fd58ad-87b8-499b-9c46-c3176bcda37c
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 31%
+source-wordcount: '331'
+ht-degree: 33%
 
 ---
 
@@ -32,12 +32,8 @@ ht-degree: 31%
 
       * **生命週期**
 
-         在實施生命週期後，追蹤行動資料庫可自動測量的量度和維度。 如需詳細資訊，請參閱下列章節：
+         在實施生命週期後，追蹤行動資料庫可自動測量的量度和維度。
 
-         * [iOS SDK生命週期量度](/help/ios/metrics.md)
-         * [Android生命週期量度](/help/android/metrics.md)
-         * [Windows生命週期度量](/help/universal-windows/metrics.md)
-         * [BlackBerry生命週期量度](/help/blackberry/metrics.md)
       * **應用程式動作**
 
          根據應用程式內動作啟用報表和路徑。
@@ -49,7 +45,6 @@ ht-degree: 31%
       * **計時事件**
 
          測量關鍵應用程式動作（例如首次購買前的時間）之間經過的時間（應用程式內和總時間）。
-
 
 * **位置報表**
 

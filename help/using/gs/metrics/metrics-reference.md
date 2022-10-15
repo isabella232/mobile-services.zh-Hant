@@ -6,9 +6,9 @@ title: 行動量度和維度參考
 topic-fix: Metrics
 uuid: 96170ae7-8553-4f3e-ae01-65e5b664adf4
 exl-id: ddfbf11e-a4c3-4d59-92b3-1d192dc3e7cd
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '609'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 100%
 
 * **裝置名稱**
 
-   儲存裝置名稱。在 iOS 中，以逗號分隔的兩位數字串可識別 iOS 裝置。第一個數字代表裝置代別，第二個數字則代表裝置系列的不同成員版本。如需常用裝置名稱的完整清單，請參閱 [iOS 裝置版本](/help/ios/reference/device-versions.md)。
+   儲存裝置名稱。在 iOS 中，以逗號分隔的兩位數字串可識別 iOS 裝置。第一個數字代表裝置代別，第二個數字則代表裝置系列的不同成員版本。
 
 * **電信業者名稱**
 

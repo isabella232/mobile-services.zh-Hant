@@ -6,9 +6,9 @@ title: 應用程式內傳訊疑難排解
 topic-fix: Metrics
 uuid: 8813e8d8-bb1e-46ad-83cd-98ae68f73ce6
 exl-id: 6be5beef-3bde-49f8-9ec0-c5d32bd43045
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '603'
 ht-degree: 100%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 100%
 
 ## Android 中的本機通知訊息無法運作。
 
-確認已在資訊清單中宣告本機通知廣播接收器。如需詳細資訊，請參閱[應用程式內訊息](/help/android/messaging-main/messaging/messaging.md)中的步驟 1。
+確認已在資訊清單中宣告本機通知廣播接收器。
 
-## 這是現時訊息嗎?
+## 這是即時訊息嗎？
 
 在&#x200B;**[!UICONTROL 「管理應用程式內訊息」頁面的查]**「狀態」欄，檢查清單檢視中的訊息是否使用中。
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ## 如果是將啟動事件設為觸發器...
 
-啟動只會發生在新的工作階段。如需工作階段開始時間的詳細資訊，請參閱 [ADBMobile JSON 設定](/help/ios/configuration/json-config/json-config.md)檔案的 `lifecycleTimeout`。
+啟動只會發生在新的工作階段。
 
 ## 我已從遠端更新訊息，但應用程式仍顯示舊訊息。
 
