@@ -14,7 +14,7 @@ ht-degree: 99%
 # Mobile Services 指南 {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [報廢公告](eol.md)
++ [終止公告](eol.md)
 + 快速入門 {#get-started-ug}
    + [快速入門](gs/gs.md)
    + [角色與權限](gs/c-mob-roles-and-permissions.md)
