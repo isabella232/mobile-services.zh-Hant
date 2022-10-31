@@ -6,7 +6,7 @@ title: 配置 SDK 分析選項
 topic-fix: Metrics
 uuid: fd3a21d2-6560-4e96-92fe-b99caac5e834
 exl-id: f2c35b65-1052-4bfc-af9d-8778e4ff0522
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 設定 SDK 分析選項 {#configure-sdk-analytics-options}
+
+{#eol}
 
 建立新應用程式或編輯現有應用程式時，您可以在「管理應用程式設定」頁面上配置「SDK 分析」選項。
 

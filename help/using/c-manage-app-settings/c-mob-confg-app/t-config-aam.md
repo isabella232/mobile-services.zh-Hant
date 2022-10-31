@@ -6,14 +6,16 @@ title: 設定 Audience Manager 選項
 topic-fix: Metrics
 uuid: 471270ca-cee5-401e-aac1-e48146ee8399
 exl-id: a81e5ea9-faa1-45c2-a312-e80f49c87b59
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '102'
+ht-degree: 100%
 
 ---
 
 # 設定 Audience Manager 選項{#configure-audience-manager-options}
+
+{#eol}
 
 您可以在建立新應用程式或編輯現有應用程式時，從「管理應用程式設定」頁面配置 SDK Audience Manager 選項。
 

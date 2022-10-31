@@ -6,7 +6,7 @@ title: 「管理應用程式設定」
 topic-fix: Metrics
 uuid: 2ca93f92-f812-434c-add0-5bdf1442eb20
 exl-id: ed7b955e-f1db-42e5-95b4-a4fb8f169097
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 「管理應用程式設定」{#manage-app-settings}
+
+{#eol}
 
 管理應用程式包含設定應用程式和管理多個變數和量度。
 

@@ -6,7 +6,7 @@ title: 手動建立贏取連結
 topic-fix: Metrics
 uuid: d7709203-f793-4982-adaa-9c3c914aca2b
 exl-id: aef9fe3e-32dc-4ec0-9eda-f64cc5e486a3
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 手動建立贏取連結 {#create-acquisition-link-manually}
+
+{#eol}
 
 您可以透過手動設定 URL 參數來建立行銷連結，即時贏取新的行動應用程式使用者。
 

@@ -6,7 +6,7 @@ title: 插頁廣告
 topic-fix: Metrics
 uuid: 7dce8ab2-2a5d-4384-ac1e-e31dfaa33654
 exl-id: b6d4588f-4f28-4c1b-9291-f4b9154d84f7
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 插頁廣告{#interstitials}
+
+{#eol}
 
 依使用者是否已安裝應用程式 (應用程式深層連結) 或未安裝 (前往網站或應用程式商店) 將使用者路由至目的地。最好由使用者自行選擇路由。行銷人員可以設定插入式連結頁面，對使用者顯示可用的登陸目的地，以為其提供選擇。
 

@@ -6,14 +6,16 @@ title: 檢視路徑報表
 topic-fix: Reports,Metrics
 uuid: bc73edce-0cc0-4349-9a48-e0a40cbe1b67
 exl-id: 475dbe01-fa4d-433c-ac77-68f2a6972c0c
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
 # 檢視路徑報表 {#view-paths}
+
+{#eol}
 
 **[!UICONTROL 「檢視路徑」]**&#x200B;報表可依據路徑分析顯示路徑圖表，用來代表使用者在應用程式中從某狀態轉換到另一個狀態所採行的路徑。
 

@@ -6,7 +6,7 @@ title: 管理訊息
 topic-fix: Metrics
 uuid: 4d934ede-0c68-4dd5-ba37-9caf727cc717
 exl-id: 96436104-fe5d-4f50-80a9-9b6ad7401de2
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 管理訊息{#manage-messages}
+
+{#eol}
 
 檢視應用程式內和推送訊息的清單，包含每個訊息的上次更新時間及其狀態 (使用中或停用) 的相關資訊。
 

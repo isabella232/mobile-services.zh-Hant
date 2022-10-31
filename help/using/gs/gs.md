@@ -6,7 +6,7 @@ title: 快速入門
 topic-fix: Metrics
 uuid: a7ae7c5a-dab8-4603-b4cd-af73a2f09f71
 exl-id: 0c08e154-8747-45dc-9731-ab2a3e78bc5a
-source-git-commit: dbe3af75010fbf5195a3f93fc43cb696aaa32b65
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 97%
@@ -14,6 +14,8 @@ ht-degree: 97%
 ---
 
 # 快速入門{#getting-started}
+
+{#eol}
 
 此資訊可協助您瞭解及使用 Adobe Mobile Services。
 

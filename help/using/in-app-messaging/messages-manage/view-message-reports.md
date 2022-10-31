@@ -6,14 +6,16 @@ title: 檢視訊息報表
 topic-fix: Metrics
 uuid: 0ac73a81-388f-4dfd-84d5-21b8db4b8c83
 exl-id: b8a2dd7a-02e1-47ce-9e8e-c1419b707b44
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '478'
+ht-degree: 100%
 
 ---
 
 # 檢視訊息報表{#view-message-reports}
+
+{#eol}
 
 您可以檢視應用程式內和推送訊息的訊息報表。
 

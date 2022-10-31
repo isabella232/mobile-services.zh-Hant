@@ -6,7 +6,7 @@ title: 管理連結目的地
 topic-fix: Metrics
 uuid: 3a38d40d-b4c7-4f9f-aa6e-979613faaba2
 exl-id: 5d2ab0db-6371-434e-bf92-6013e78c8d8f
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 管理連結目的地{#manage-link-destinations}
+
+{#eol}
 
 您可以使用「連結目的地」頁面以編輯、封存、取消封存或刪除現有的目的地。
 

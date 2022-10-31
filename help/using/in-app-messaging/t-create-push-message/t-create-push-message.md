@@ -6,7 +6,7 @@ title: 建立推送訊息
 topic-fix: Metrics
 uuid: fb2a6026-f7e6-40e6-999e-b43db35d6c69
 exl-id: e7ad3797-17c7-41ad-8b65-d9f8e5b01960
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 建立推送訊息 {#create-a-push-message}
+
+{#eol}
 
 您可以從 Mobile Services UI 傳送推送訊息至 Analytics 區段，以便在與使用者互動時，運用健全的 Analytics 資料。
 

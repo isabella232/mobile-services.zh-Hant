@@ -3,7 +3,7 @@ description: 您可以將應用程式內訊息觸發器設為使用者從推送�
 title: 從推送訊息開啟應用程式時觸發應用程式內訊息
 uuid: e1c8e29d-1c2b-47b2-8ab2-6b6e15df86f6
 exl-id: 4496222f-b6f0-4fa1-86c6-149b590244d3
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 58%
@@ -11,6 +11,8 @@ ht-degree: 58%
 ---
 
 # 從推送訊息開啟應用程式時觸發應用程式內訊息{#trigger-an-in-app-message-when-the-app-is-opened-from-a-push-message}
+
+{#eol}
 
 您可以將應用程式內訊息觸發器設為使用者從推送訊息開啟應用程式時系統傳送的推送訊息 ID。
 
@@ -40,5 +42,5 @@ ht-degree: 58%
    在測試時，請記住以下資訊：
 
    * 儲存應用程式內訊息後，托管的設定檔案需要約45秒才會以新訊息更新。
-   * 當&#x200B;**new**&#x200B;啟動時，應用程式會尋找設定檔案更新（新的應用程式內訊息），因此您必須確定在按一下推送訊息時，應用程式正在引發新的啟動。
+   * 當有 **new** 啟動，因此您必須確保在按一下推送訊息時，應用程式會觸發新的啟動。
    這通常表示您必須確保已發生工作階段逾時。 預設逾時為5分鐘。

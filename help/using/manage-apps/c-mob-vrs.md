@@ -3,14 +3,16 @@ description: 虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套
 title: 虛擬報表套裝
 uuid: 3f467cad-43e7-4cd0-889b-89f8c61febbd
 exl-id: c9ce7f7c-2023-4a9d-9e4d-bacc21f9ad40
-source-git-commit: f18d65c738ba16d9f1459ca485d87be708cf23d2
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 71%
+ht-degree: 73%
 
 ---
 
 # 虛擬報表套裝 {#virtual-report-suites}
+
+{#eol}
 
 虛擬報表套裝 (VRS) 是透過將一個或多個區段定義套用至報表套裝所建立的報表套裝。這讓使用者可以在一個報表套裝裡保管其資料，但做法就像在個別報表套裝中管理資料。
 
@@ -51,7 +53,7 @@ VRS 可協助您完成下列作業:
 
 >[!IMPORTANT]
 >
->只有 Adobe Analytics 管理員可以在 Adobe Analytics 中建立和修改虛擬報表套裝。若要建立虛擬報表套裝，請參閱Adobe Analytics檔案中的[建立虛擬報表套裝](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html)。
+>只有 Adobe Analytics 管理員可以在 Adobe Analytics 中建立和修改虛擬報表套裝。若要建立虛擬報表套裝，請參閱 [建立虛擬報表套裝](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html?lang=zh-Hant) 在Adobe Analytics檔案中。
 
 每個 VRS 都有唯一的 ID。若要在 Adobe Mobile Services 使用者介面中檢視上層報表套裝 ID，請在「管理應用程式設定」頁面的&#x200B;**[!UICONTROL 應用程式資訊]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 更多詳情]**。
 
@@ -71,7 +73,7 @@ VRS是附加至父報表套裝的伺服器端區段定義。 因此，您無法�
 >
 >在 Mobile Services 使用者介面中，推送認證會附加於應用程式層級。
 
-若要確保推送訊息正確傳送，必須正確定義對象區段。 如需詳細資訊，請參閱[對象：定義並設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md)。
+若要確保推送訊息正確傳送，必須正確定義對象區段。 如需詳細資訊，請參閱 [對象：定義和設定推送訊息的對象區段](/help/using/in-app-messaging/t-create-push-message/c-audience-push-message.md).
 
 ## 瞭解時區 {#section_498E1EED22D741C3BDED44F01FACA72A}
 
@@ -119,5 +121,5 @@ VRS是附加至父報表套裝的伺服器端區段定義。 因此，您無法�
 
 以下是虛擬報表套裝的其他資訊:
 
-* 如需VRS的詳細資訊，請參閱[虛擬報表套裝概述](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html)。
+* 如需VRS的詳細資訊，請參閱 [虛擬報表套裝概觀](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=zh-Hant).
 * 如需規劃 VRS 實作的詳細資訊，請參閱[虛擬報表套裝工作流程](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-workflow.html)。

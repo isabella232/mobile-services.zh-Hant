@@ -6,14 +6,16 @@ title: 匯入或匯出贏取連結
 topic-fix: Metrics
 uuid: 94ea008a-473a-40c3-9fa8-a94eb0208c8f
 exl-id: 9be2377e-7f46-44f7-9c5e-1c20c617276d
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '101'
+ht-degree: 100%
 
 ---
 
 # 匯入或匯出贏取連結{#import-or-export-acquisition-links}
+
+{#eol}
 
 如果您偏好使用 .csv 檔案而非 Adobe Mobile Services 使用者介面來處理連結，您可以匯入或匯出贏取連結。
 

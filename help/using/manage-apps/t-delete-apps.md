@@ -6,7 +6,7 @@ title: 刪除應用程式
 topic-fix: Metrics
 uuid: 1721cce5-b368-4f05-a40b-e3f2348d96d8
 exl-id: 70b95aed-9e22-470b-b278-6c015334e92a
-source-git-commit: 5434d8809aac11b4ad6dd1a3c74dae7dd98f095a
+source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # 刪除應用程式{#delete-an-app}
+
+{#eol}
 
 您可從 Mobile Services 使用者介面刪除應用程式。
 
