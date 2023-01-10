@@ -6,7 +6,7 @@ user-guide-description: Mobile Services 是端對端解決方案，可協助您�
 source-git-commit: 8c74c479c357e008dbbaaee8eb11097582072470
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 # Mobile Services 指南 {#using}
 
 + [Adobe Mobile Services](home.md)
-+ [終止公告](eol.md)
++ [生命週期結束公告](eol.md)
 + 快速入門 {#get-started-ug}
    + [快速入門](gs/gs.md)
    + [角色與權限](gs/c-mob-roles-and-permissions.md)
