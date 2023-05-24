@@ -2,7 +2,7 @@
 description: 使用狀況報表顯示平均工作階段長度、每日和每月的參與使用者、升級及其他分析，協助您了解您的應用程式的使用狀況和使用頻率。「保留」報表可快速顯示在初次啟動、1 天、7 天和 28 天後的使用者保留層級。
 keywords: 行動
 solution: Experience Cloud Services,Analytics
-title: 報表
+title: 報告
 topic-fix: Reports,Metrics
 uuid: 2abc2bd1-dbae-4af1-9b8d-1df2f6d3a81f
 exl-id: a95dd9c9-49f3-41df-87bf-6a2ac0d46c5c

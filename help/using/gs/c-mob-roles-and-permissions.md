@@ -22,7 +22,7 @@ ht-degree: 46%
 
 ### Analytics 管理員
 
-Analytics管理員負責管理使用者群組並指派權限，其中一個是行動應用程式管理員。 Experience Cloud管理員會將您的Adobe ID連結至您的Adobe Analytics帳戶，讓您透過Adobe ID登入Mobile Services使用者介面。 如需Experience Cloud管理員的詳細資訊，請參閱 [管理Experience Cloud使用者和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hant) 中的「Experience Cloud中心介面元件」指南。
+Analytics管理員負責管理使用者群組並指派許可權，其中一個是行動應用程式管理員。 「Experience Cloud管理員」會將您的Adobe ID連結至您的Adobe Analytics帳戶，該帳戶可讓您使用Adobe ID登入Mobile Services使用者介面。 如需「Experience Cloud管理員」的詳細資訊，請參閱 [管理Experience Cloud使用者和產品](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hant) 在Experience Cloud中央介面元件指南中。
 
 >[!TIP]
 >
@@ -42,7 +42,7 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
 
 ### 應用程式與報表套裝
 
-所有Mobile Service應用程式都與報表套裝相連結。 如果使用者沒有報表套裝的存取權，將無法存取該報表套裝的相關應用程式。
+所有行動服務應用程式都與報表套裝連結。 如果使用者無權存取報表套裝，則無權存取該報表套裝的相關應用程式。
 
 ### Mobile Services 與 Analytics 功能
 
@@ -52,7 +52,7 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
 
 下列是 Mobile Services UI 的角色以及其相關的權限:
 
-### Analytics 管理員 權限
+### Analytics 管理員 許可權
 
 * 所有使用者與行動應用程式的管理員權限
 * 使用新報表套裝建立應用程式
@@ -68,14 +68,14 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
    * 啟用位置報告
    * 建立/更新/刪除變數和量度
 
-### 行動應用程式管理員 權限
+### 行動應用程式管理員 許可權
 
-* 所有使用者權限
+* 所有使用者許可權
 * 使用現有報表套裝建立應用程式
 * 「管理應用程式設定」
 
    * 設定應用程式的行動SDK選項
-   * 配置應用的UI設定
+   * 設定應用程式的UI設定
    * 設定連結的App Store應用程式
    * 設定應用程式的通用連結選項
    * 設定推送服務憑證和API金鑰
@@ -91,13 +91,13 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
 如需群組和使用者的詳細資訊，請參閱Adobe Analytics檔案中的下列內容：
 
 * [使用者群組設定（舊版）](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=zh-Hant)
-* [新增使用者至群組](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* [新增使用者至群組](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=zh-Hant)
 
 ### Mobile Services 使用者
 
-此角色具有僅限檢視的權限，且可在Mobile Services UI中提供意見反應。
+此角色具有僅限檢視的許可權，並可在Mobile Services使用者介面中提供意見回饋。
 
-* 在Mobile Services使用者介面上提供意見反應
+* 在Mobile Services使用者介面提供意見回饋
 * 檢視應用程式
 
    >[!IMPORTANT]
@@ -114,7 +114,7 @@ Analytics管理員負責管理使用者群組並指派權限，其中一個是�
 
 * 檢視和執行報表
 * 檢視行銷連結
-* 檢視及匯出舊版贏取連結
-* 檢視和匯出位置（地標）設定
+* 檢視和匯出舊版贏取連結
+* 檢視和匯出地點（地標）設定
 * 檢視推送訊息
 * 檢視應用程式內訊息

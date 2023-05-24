@@ -22,7 +22,7 @@ ht-degree: 85%
 1. 填寫&#x200B;**[!UICONTROL 「訪客 ID 服務」]**&#x200B;下方的欄位：
 
    * **[!UICONTROL 啟用]**
-啟用此選項即可使用 ID 服務。如需詳細資訊，請參閱 [Experience CloudID服務概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).
+啟用此選項即可使用 ID 服務。如需詳細資訊，請參閱 [Experience CloudID服務總覽](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html).
 
    * **[!UICONTROL 組織]**
-從下拉式清單中選取您的組織。[!UICONTROL Experience Cloud] 組織是可讓管理員設定群組和使用者，以及控制 [!UICONTROL Experience Cloud] 單一登入的實體。組織的作用就像一個登入公司，可跨越所有的 Experience Cloud 產品和解決方案。一般而言，組織是指您公司的名稱，而公司底下可能有很多組織。如需詳細資訊，請參閱 [Experience Cloud中的組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant) 中的「Experience Cloud中心介面元件」指南。
+從下拉式清單中選取您的組織。[!UICONTROL Experience Cloud] 組織是可讓管理員設定群組和使用者，以及控制 [!UICONTROL Experience Cloud] 單一登入的實體。組織的作用就像一個登入公司，可跨越所有的 Experience Cloud 產品和解決方案。一般而言，組織是指您公司的名稱，而公司底下可能有很多組織。如需詳細資訊，請參閱 [Experience Cloud中的組織](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hant) 在Experience Cloud中央介面元件指南中。

@@ -47,7 +47,7 @@ Adobe Mobile SDK 使用標準 iOS 和 Android 網路堆疊。針對 iOS，SDK �
 
 ### 如何疑難排解處理規則?
 
-請參閱 [處理規則提示與秘訣](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) 在Adobe Analytics檔案中。
+另請參閱 [處理規則的提示與秘訣](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-tips.html) (位於Adobe Analytics檔案中)。
 
 ### 可以將我的分析資料傳送至多個報表套裝嗎？
 

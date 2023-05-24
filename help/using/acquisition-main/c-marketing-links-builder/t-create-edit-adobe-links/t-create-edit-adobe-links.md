@@ -9,7 +9,7 @@ exl-id: a9b5c98d-77c1-4a40-96e5-f9e234d55ec5
 source-git-commit: 7cfaa5f6d1318151e87698a45eb6006f7850aad4
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
       下列預設集標記可供使用:
 
       * **自訂上下文資料**
-指定索引鍵和值。如果您新增自訂內容資料，必須建立處理規則。如需詳細資訊，請參閱 [處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) 在Adobe Analytics檔案中。
+指定索引鍵和值。如果您新增自訂內容資料，必須建立處理規則。如需詳細資訊，請參閱 [處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) (位於Adobe Analytics檔案中)。
 
       * **來源**
 指定原始反向連結，例如「電子報」或「首頁」。

@@ -50,4 +50,4 @@ ht-degree: 100%
 
       指定有效的 API 金鑰。如需有關取得 API 金鑰的詳細資訊，請參閱[設定應用程式以使用 APNS 或 FCM](/help/using/c-manage-app-settings/c-mob-confg-app/configure-push-messaging/configure-app-apns-gcm.md)。
 
-2. 按一下「**[!UICONTROL 儲存]**」。
+2. 按一下&#x200B;**[!UICONTROL 儲存]**。

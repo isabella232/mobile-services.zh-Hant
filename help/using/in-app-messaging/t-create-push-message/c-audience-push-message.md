@@ -103,7 +103,7 @@ ht-degree: 98%
 
    * **[!UICONTROL Analytics 區段]**
 
-      從下拉式清單中選取現有的 Adobe Analytics 區段。如需詳細資訊，請參閱 [區段產生器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) 在Adobe Analytics檔案中。
+      從下拉式清單中選取現有的 Adobe Analytics 區段。如需詳細資訊，請參閱 [區段產生器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (位於Adobe Analytics檔案中)。
 
    * **[!UICONTROL 自訂區段]**
 

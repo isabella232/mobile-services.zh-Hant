@@ -1,5 +1,5 @@
 ---
-description: 在應用程式和網站內連結對於維持使用者體驗非常重要。 了解通用連結和應用程式連結的運作方式，以及兩者之間的差異。
+description: 在應用程式和網站內進行連結對於維持使用者體驗非常重要。 瞭解通用連結和應用程式連結如何運作，以及兩者之間的差異。
 solution: Experience Cloud Services,Analytics
 title: 通用連結和應用程式連結指南
 topic-fix: Metrics
@@ -12,7 +12,7 @@ ht-degree: 96%
 
 ---
 
-# 通用連結與應用程式連結的比較：它們如何運作？ {#universal-links-and-app-links}
+# 通用連結和應用程式連結：如何運作？ {#universal-links-and-app-links}
 
 {#eol}
 

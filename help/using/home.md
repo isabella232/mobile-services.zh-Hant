@@ -11,16 +11,16 @@ ht-degree: 46%
 
 ---
 
-# AdobeMobile Services {#adobe-mobile-services}
+# Adobe Mobile Services {#adobe-mobile-services}
 
 本指南概述 Adobe Mobile Services 的技術文件和自助說明，此服務將 Adobe Experience Cloud 行動應用程式的行動行銷功能整合在一起，方便您瞭解並改善使用者與行動應用程式的互動。
 
-## 行動服務終止
+## 終止Mobile Services
 
-Mobile Services即將終止服務 **2022年12月31日**. 請參閱 [Mobile Services服務終止常見問題集](eol.md).
+Mobile Services生命週期結束日期 **2022年12月31日**. 請參閱 [Mobile Services生命週期結束常見問題集](eol.md).
 
 ## 4.x SDK終止服務
 
-終止支援4.x SDK **2021年8月31日**. 請參閱 [第4版行動SDK支援終止常見問題集](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). 如果貴組織仍需要4.x SDK，您可以 [下載SDK並存取檔案](https://github.com/Adobe-Marketing-Cloud/mobile-services) 在GitHub上。
+終止支援4.x SDK **2021年8月31日**. 請參閱 [第4版Mobile SDK支援終止常見問題集](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq). 如果您的組織仍需要4.x SDK，您可以 [下載SDK並存取檔案](https://github.com/Adobe-Marketing-Cloud/mobile-services) 在GitHub上。
 
-Adobe目前的行動行銷解決方案是Adobe Experience Platform SDK。 請參閱 [Adobe Experience Platform SDK檔案](https://aep-sdks.gitbook.io/docs/).
+Adobe目前的行動行銷解決方案為Adobe Experience Platform SDK。 請參閱 [Adobe Experience Platform SDK檔案](https://aep-sdks.gitbook.io/docs/).
