@@ -1,11 +1,10 @@
 ---
 title: Adobe Mobile Services生命週期結束常見問題集
 description: 取得有關Adobe Mobile Services生命週期結束公告常見問題的解答。
-exl-id: c5f44341-7b87-4530-b86e-17e2911a7959
-source-git-commit: c349c0f83df9d42b61a419ae71d6d2b67c5f7819
+source-git-commit: 0a4e0c9e6172231d8a9f9b561d0a7b7fb230473a
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -39,7 +38,7 @@ Adobe根據您組織的使用案例，提供三種轉變路徑。
 
 1. **應用程式內訊息和推播通知**：Adobe可將您的傳訊工作流程轉變為Adobe Journey Optimizer。 此產品可協助組織最佳化及個人化整個客戶歷程中的體驗，包括行動訊息。
 1. **贏取和深層連結**：贏取和深層連結可透過AdobeExchange Premier Partners計畫提供。 Adobe的合作夥伴團隊可以適當介紹，以確保您找到最符合需求的解決方案。
-1. **Places Service**：Places Service提供免費的地理位置功能。 請參閱 [Places Service檔案](https://experienceleague.adobe.com/docs/places/using/home.html).
+1. **Places Service**：Places Service提供免費的地理位置功能。 請參閱 [Places Service檔案](https://experienceleague.adobe.com/docs/places/using/home.html?lang=zh-Hant).
 
 ## 如有疑問，請前往何處？
 
